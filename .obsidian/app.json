@@ -1,0 +1,33 @@
+{
+  "livePreview": true,
+  "defaultViewMode": "preview",
+  "readableLineLength": false,
+  "strictLineBreaks": false,
+  "showFrontmatter": true,
+  "showLineNumber": false,
+  "showIndentGuide": true,
+  "rightToLeft": false,
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "en-US",
+    "it-IT"
+  ],
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "root",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "zzz_res/attachments",
+  "showInlineTitle": true,
+  "trashOption": "local",
+  "useTab": true,
+  "spellcheckDictionary": [
+    "readflag",
+    "ejs"
+  ],
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": true,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

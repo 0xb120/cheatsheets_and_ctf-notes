@@ -1,0 +1,150 @@
+---
+Ports: 80, 443, 8080
+Description: Is an application layer protocol in the Internet protocol suite model for distributed, collaborative, hypermedia information systems.
+---
+
+
+# Web Application Enumeration
+
+Main checks:
+
+- **Programming languages** and **frameworks** / **CMS**
+- **URLs** and **Extensions**
+- **Page contents** and **comments**
+- **Sitemaps**, **robots.txt** and **unnecessary exposed files**
+- **Web server**
+- **Server Headers**
+- **Administrative Consoles** (/manager/html, /phpmyadmin, etc.)
+- **Database software**
+- **Server OS**
+
+## Enumeration tools
+
+### Directory fuzzer
+
+- [fuff](../Tools/fuff.md)
+- [gobuster](../Tools/gobuster.md)
+- dirb
+- dirbuster
+- dirsearch
+- wfuzz
+- **good wordlists**
+	- [SecLists](https://github.com/danielmiessler/SecLists)
+	- [Assetnote Wordlist](https://wordlists.assetnote.io/)
+
+### Proxy
+
+- Burp Suite
+- zap
+- Caido
+
+### Plugins and utilities
+
+- SwitchyOmega (plugin)
+- FoxyProxy (plugin)
+- Cookie-Editor (plugin)
+- CookieManager - Cookie Editor (plugin)
+- Wappalyzer (plugin)
+- User-Agent Switcher (plugin)
+- User-Agent Switcher and Manager (plugin)
+
+### CMS Enumeration & Scanner
+
+- whatweb (tool)
+- WhatCMS (online)
+- CMSMap (tool)
+- [nikto](../Tools/nikto.md) (scanner)
+- wpscanner
+- [unSharepoint](https://blog.cys4.com/tool/2020/12/21/unSharePoint) (scanner)
+
+## Source Code Recovery
+
+### C#
+
+- [ILSpy](https://github.com/icsharpcode/ILSpy) (decompiler)
+- [dnSpy](../Tools/dnSpy.md) (decompiler and debugger)
+
+### Java 
+
+>[!tip] Related resources 
+>See also [Android 101](../Mobile%20Hacking/Android%20101.md) and [Android Application Security](../Mobile%20Hacking/Android%20Application%20Security.md)
+
+- [JD-GUI](../Tools/JD-GUI.md)
+- [jadx](../Tools/jadx.md)
+- [Bytecode Viewer](../Tools/Bytecode%20Viewer.md)
+
+## Source Code Analysis
+
+- If possible, always enable database query logging and verbose errors
+- Use debug print statements in interpreted code
+- Attempt to live-debug the target compiled application ([dnSpy](../Tools/dnSpy.md) makes this relatively easy for .NET applications. The same can be achieved in the Eclipse IDE for Java applications although with a bit more effort)
+- After checking unauthenticated areas, focus on areas of the application that are likely to receive less attention (i.e., authenticated portions of the application)
+- Investigate how sanitization of user input is performed. Is it done using a trusted, opensource library, or is a custom solution in place?
+
+## Black Box Analysis
+
+Focus on:
+- Validation
+- Sanitization
+- Normalization
+
+Evading restrictions:
+- [Evading Restrictions](../Web%20&%20Network%20Hacking/Evading%20Restrictions.md)
+
+---
+
+## Attacks and Vulnerabilities
+
+### Server side vulnerabilities
+
+- [Information Disclosure](../Web%20&%20Network%20Hacking/Information%20Disclosure.md)
+- [Remote Code Execution (RCE)](../Web%20&%20Network%20Hacking/Remote%20Code%20Execution%20(RCE).md)
+- [Command Injection](../Web%20&%20Network%20Hacking/Command%20Injection.md)
+- [SQL Injection](../Web%20&%20Network%20Hacking/SQL%20Injection.md)
+- [SQL Truncation](../Web%20&%20Network%20Hacking/SQL%20Truncation.md)
+- [Path Traversal](../Web%20&%20Network%20Hacking/Path%20Traversal.md)
+- [File Inclusion (LFI & RFI)](../Web%20&%20Network%20Hacking/File%20Inclusion%20(LFI%20&%20RFI).md)
+- [Authentication Attacks](../Web%20&%20Network%20Hacking/Authentication%20Attacks.md)
+- [Password Reset Poisoning](../Web%20&%20Network%20Hacking/Password%20Reset%20Poisoning.md)
+- [Access control vulnerabilities](../Web%20&%20Network%20Hacking/Access%20control%20vulnerabilities.md)
+- [Execution After Redirect (EAR)](../Web%20&%20Network%20Hacking/Execution%20After%20Redirect%20(EAR).md)
+- [Host Header attacks](../Web%20&%20Network%20Hacking/Host%20Header%20attacks.md)
+- [Business logic vulnerabilities](../Web%20&%20Network%20Hacking/Business%20logic%20vulnerabilities.md)
+- [Insecure File Upload](../Web%20&%20Network%20Hacking/Insecure%20File%20Upload.md)
+- [Server Side Request Forgery (SSRF)](../Web%20&%20Network%20Hacking/Server%20Side%20Request%20Forgery%20(SSRF).md)
+- [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md)
+- [Insecure Deserialization & Object Injection](../Web%20&%20Network%20Hacking/Insecure%20Deserialization%20&%20Object%20Injection.md)
+- [Server Side Template Injection (SSTI)](../Web%20&%20Network%20Hacking/Server%20Side%20Template%20Injection%20(SSTI).md)
+- [Web Cache Attacks](../Web%20&%20Network%20Hacking/Web%20Cache%20Attacks.md)
+- [JWT Vulnerabilities](../Web%20&%20Network%20Hacking/JWT%20Vulnerabilities.md)
+
+### Client side vulnerabilities
+
+- [Cross-Site Scripting (XSS)](../Web%20&%20Network%20Hacking/Cross-Site%20Scripting%20(XSS).md)
+- [Session Attacks (CSRF, session stealing, etc.)](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md)
+- [CORS based attacks](../Web%20&%20Network%20Hacking/CORS%20based%20attacks.md)
+- [Clickjacking](../Web%20&%20Network%20Hacking/Clickjacking.md)
+- [WebSockets](../Web%20&%20Network%20Hacking/WebSockets.md)
+- [Client-side template injection (CSTI)](../Web%20&%20Network%20Hacking/Client-side%20template%20injection%20(CSTI).md)
+- [DOM-based vulnerabilities](../Web%20&%20Network%20Hacking/DOM-based%20vulnerabilities.md)
+
+
+### Other web technologies vulnerabilities
+
+- [Domain Attacks](../Web%20&%20Network%20Hacking/Domain%20Attacks.md)
+- [HTTP Request Smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md)
+
+---
+
+- [Type Juggling](../Web%20&%20Network%20Hacking/Type%20Juggling.md)
+- [Prototype Pollution](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md)
+
+## Security Implementations and Mitigations
+
+- [Access control security models](../Web%20&%20Network%20Hacking/Access%20control%20security%20models.md)
+- [Cross-origin resource sharing (CORS)](../Web%20&%20Network%20Hacking/Cross-origin%20resource%20sharing%20(CORS).md)
+- [Same-origin policy (SOP)](../Web%20&%20Network%20Hacking/Same-origin%20policy%20(SOP).md)
+- [Content Security Policy (CSP)](../Web%20&%20Network%20Hacking/Content%20Security%20Policy%20(CSP).md)
+- [X-Frame-Options](../Web%20&%20Network%20Hacking/X-Frame-Options.md)
+- [Defenses against CSRF attacks](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Defenses%20against%20CSRF%20attacks)
+- [SameSite attribute on cookies](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#SameSite%20attribute%20on%20cookies)

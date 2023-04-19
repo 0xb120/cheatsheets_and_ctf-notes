@@ -1,0 +1,167 @@
+{
+  "workspaces": {
+    "Home+Project": {
+      "main": {
+        "id": "912d141e7b7100da",
+        "type": "split",
+        "children": [
+          {
+            "id": "5e28e1ff83001b4e",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "72d38f39798bf5b3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Home.md",
+                    "mode": "preview",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "53fe8dfc11c363df",
+                "type": "leaf",
+                "state": {
+                  "type": "obsidian-projects",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "1cfb917baa12fb03",
+        "type": "split",
+        "children": [
+          {
+            "id": "9c971390dc508109",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8ab711eaa4222edf",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "e94392e61da9c120",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              },
+              {
+                "id": "a1601c5574d5b14f",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "6eadd6eb80f8df01",
+                "type": "leaf",
+                "state": {
+                  "type": "file-tree-view",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "right": {
+        "id": "659b37494d493ae5",
+        "type": "split",
+        "children": [
+          {
+            "id": "497a4e903f6476bf",
+            "type": "tabs",
+            "dimension": 66.47286821705426,
+            "children": [
+              {
+                "id": "9f4f41ee67114463",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {}
+                }
+              },
+              {
+                "id": "7ef6fc25769fe693",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "0ca134c80578c5f2",
+            "type": "tabs",
+            "dimension": 33.52713178294574,
+            "children": [
+              {
+                "id": "92a8f5dacbdec5e4",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": false
+                  }
+                }
+              },
+              {
+                "id": "f3d8d9cbf3ebe9e0",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300
+      },
+      "active": "53fe8dfc11c363df"
+    }
+  },
+  "active": "Home+Project"
+}

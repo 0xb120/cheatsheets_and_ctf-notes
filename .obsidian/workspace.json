@@ -1,0 +1,276 @@
+{
+  "main": {
+    "id": "912d141e7b7100da",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e8385ee6f00a4d2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "038fead6675c3ce6",
+            "type": "leaf",
+            "state": {
+              "type": "database-plugin",
+              "state": {
+                "file": "Play ground/Projects/_project-db.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1cfb917baa12fb03",
+    "type": "split",
+    "children": [
+      {
+        "id": "9c971390dc508109",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d57f9feca1949a6c",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "a1601c5574d5b14f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e94392e61da9c120",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "8ab711eaa4222edf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 289.5
+  },
+  "right": {
+    "id": "659b37494d493ae5",
+    "type": "split",
+    "children": [
+      {
+        "id": "497a4e903f6476bf",
+        "type": "tabs",
+        "dimension": 57.84883720930233,
+        "children": [
+          {
+            "id": "f958bfa0f75aadb6",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "9f4f41ee67114463",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Play ground/Projects/_project-db.md"
+              }
+            }
+          },
+          {
+            "id": "7ef6fc25769fe693",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "e3b1d856ef54c18b",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "0ca134c80578c5f2",
+        "type": "tabs",
+        "dimension": 42.15116279069767,
+        "children": [
+          {
+            "id": "92a8f5dacbdec5e4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Play ground/Projects/_project-db.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "f3d8d9cbf3ebe9e0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Play ground/Projects/_project-db.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1b02ab1c108718d1",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Play ground/Projects/_project-db.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.3628873693012119,
+                  "close": true
+                }
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 326.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "homepage:Open homepage": false,
+      "switcher:Open quick switcher": false,
+      "command-palette:Open command palette": false,
+      "graph:Open graph view": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "templates:Insert template": true,
+      "workspaces:Manage workspace layouts": true,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "dbfolder:Create a new database table": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": true,
+      "file-tree-alternative:File Tree Alternative Plugin": true,
+      "canvas:Create new canvas": false
+    }
+  },
+  "active": "038fead6675c3ce6",
+  "lastOpenFiles": [
+    "Play ground/Projects/Belkin Modem.md",
+    "Play ground/Projects/CKFinder 2.md",
+    "Play ground/Projects/ntfy.md",
+    "Play ground/Projects/OpenCart.md",
+    "Play ground/Projects/Private Vault.md",
+    "Play ground/Projects/VirIT Mobile.md",
+    "Play ground/Projects/20230120_visuraauto.com.md",
+    "Home.md",
+    "Play ground/CTFs/Shocker.md",
+    "Dev, ICT & Cybersec/Tools/git.md",
+    "Communities/YouTube/_YT-Video-db.md",
+    "Communities/YouTube/2022001_BestPlatformsForEthicalHacking.md",
+    "Communities/YT Settings.md",
+    "zzz_res/templates/YT-Video.md",
+    "Communities/YouTube/2023002_Waffle-yOrder.md",
+    "Communities/YouTube/XXXXXXXX_CreateAnAndroidEnv.md",
+    "Play ground/Personal Blog workflow.canvas",
+    "Personal/To-do list.md",
+    "Personal/Travel/_travel-db.md",
+    "Personal/Book list/_book-db.md",
+    "Play ground/Projects/_project-db.md",
+    "Play ground/CTFs/_CTF-db.md",
+    "Communities/YouTube/YT-Dashboard.md",
+    "Communities/YouTube/_YT-Kanban.canvas",
+    "Communities/MeetHack/Android Application List.md",
+    "Communities/YouTube/XXXXXXXX_PrivateVault.md",
+    "zzz_res/templates/Format summary.md",
+    "Communities/MeetHack/Android Application Security Slides.md",
+    "Communities/MeetHack/MeetHack - Android Application Security 101.pdf",
+    "zzz_res/attachments/HTTP_req-smuggling-capturing_user_request.png",
+    "Communities/YouTube/Thumbnails/waffle-y_order_thumbnail.png",
+    "YouTube & Communities/Videos/Thumbnails/thumbnail2.png",
+    "YouTube & Communities/Personal blog workflow.canvas",
+    "Communities/YouTube/Thumbnails/ElfResources_thumbnail.png",
+    "zzz_res/attachments/waffle-y_regex101_4.png",
+    "zzz_res/attachments/waffle-y_regex101_3.png",
+    "zzz_res/attachments/waffle-y_regex101_2.png",
+    "zzz_res/attachments/waffle-y_regex101_1.png",
+    "YouTube & Communities/Videos/Thumbnails/thumbnail1.png",
+    "zzz_res/attachments/WAFfle-y_Order_bc7ec381b01f4d9187fad6632cc87721.png",
+    "YouTube & Communities/Videos/_YT-Kanban-manual.canvas",
+    "YouTube & Communities/Community dashboard.canvas",
+    "Untitled 1.canvas",
+    "export/Android Application Security Slides.zip",
+    "export/Android Application Security Slides/plugin/chalkboard/_style.css",
+    "export/Android Application Security Slides/plugin/chalkboard/img",
+    "export/Android Application Security Slides/plugin/chalkboard/plugin (copy).js",
+    "export/Android Application Security Slides/plugin/chalkboard/plugin.js",
+    "export/Android Application Security Slides/plugin/chalkboard/style.css",
+    "export/Android Application Security Slides/plugin/chalkboard",
+    "export/Android Application Security Slides/plugin/chart/chart.min.js",
+    "export/Android Application Security Slides/plugin/chart/plugin.js"
+  ]
+}

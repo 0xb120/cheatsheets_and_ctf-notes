@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "To-do list",
+      "path": "Personal/To-do list.md"
+    },
+    {
+      "type": "file",
+      "title": "_YT-Video-db",
+      "path": "Communities/YouTube/_YT-Video-db.md"
+    },
+    {
+      "type": "file",
+      "title": "_YT-Kanban",
+      "path": "Communities/YouTube/_YT-Kanban.canvas"
+    },
+    {
+      "type": "file",
+      "title": "_CTF-db",
+      "path": "Play ground/CTFs/_CTF-db.md"
+    },
+    {
+      "type": "file",
+      "title": "_project-db",
+      "path": "Play ground/Projects/_project-db.md"
+    },
+    {
+      "type": "file",
+      "title": "_book-db",
+      "path": "Personal/Book list/_book-db.md"
+    },
+    {
+      "type": "file",
+      "title": "_travel-db",
+      "path": "Personal/Travel/_travel-db.md"
+    }
+  ]
+}

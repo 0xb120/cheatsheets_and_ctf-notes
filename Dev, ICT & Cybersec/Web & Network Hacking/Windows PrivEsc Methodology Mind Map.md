@@ -1,0 +1,1 @@
+![|800](../../zzz_res/attachments/windows-privesc-mindmap.png)
