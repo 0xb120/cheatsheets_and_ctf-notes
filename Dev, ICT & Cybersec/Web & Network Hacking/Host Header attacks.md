@@ -116,7 +116,7 @@ X-Forwarded-Host: bad-stuff-here
 ```
 
 >[!example]
->For a pratical exmaple take a look to [Password reset poisoning via middleware](Password%20Reset%20Poisoning.md#Password%20reset%20poisoning%20via%20middleware).
+>For a pratical exmaple take a look to [Password reset poisoning via middleware](Password%20Reset%20Poisoning.md#Password%20reset%20poisoning%20via%20middleware) or [JWT authentication bypass via `X-HTTP-Method-Override` header](https://github.com/GoogleCloudPlatform/esp-v2/security/advisories/GHSA-6qmp-9p95-fc5f).
 
 
 Headers that may comes handy:

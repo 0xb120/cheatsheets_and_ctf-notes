@@ -36,7 +36,7 @@ Largest Column: standard
 
 # Android
 - [Android 101](Mobile%20Hacking/Android%20101.md)
-- [[Android Application Security]]
+- [Android Application Security](Mobile%20Hacking/Android%20Application%20Security.md)
 
 === end-multi-column
 
@@ -85,9 +85,10 @@ Number of Columns: 2
 Largest Column: standard
 ```
 
-# Stego & Forensic
+# Stego, Forensic and OSINT
 
 - [Stego 101](Stego%20&%20Forensic/Stego%20101.md)
+- [OSINT](Stego%20&%20Forensic/OSINT.md)
 
 --- column-end ---
 

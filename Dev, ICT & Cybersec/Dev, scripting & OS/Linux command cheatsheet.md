@@ -183,6 +183,16 @@ kali@kali:~$ cat error.txt
 ls: cannot access '/test': No such file or directory
 ```
 
+## Writing files using cat and redirection
+
+```bash
+kali@kali:~$ cat > file.txt << EOF
+Here the content of the file
+some other contents
+still the file
+now I can close it
+EOF
+```
 
 # Text Searching and Manipulation
 

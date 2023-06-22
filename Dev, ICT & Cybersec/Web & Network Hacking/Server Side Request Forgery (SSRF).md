@@ -78,6 +78,7 @@ Connection: close
 - Partial URLs in requests (eg. only a hostname or part of a URL path into request parameters)
 - URLs within data formats (eg. XML leading to SSRF using [XML External Entity Injection (XXE Injection)](XML%20External%20Entity%20Injection%20(XXE%20Injection).md))
 - Referer header or other headers ([Host header SSRF attacks (aka Routing-based SSRF)](Host%20Header%20attacks.md#Host%20header%20SSRF%20attacks%20(aka%20Routing-based%20SSRF)))
+- [SSRF registering an arbitrary OpenID Connect client application](OpenID%20Connect%20attacks.md#SSRF%20registering%20an%20arbitrary%20client%20application)
 
 ## SSRF evasion and bypasses
 

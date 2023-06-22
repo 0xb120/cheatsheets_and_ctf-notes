@@ -19,7 +19,7 @@ Use-cases:
 - Send negatives values in order to increase money or get arbitrary discounts: ![|440](../../zzz_res/attachments/BusinessLogic-ArbitraryDiscount.png)
 - Exploit integers overflows to get arbitrary discounts: ![|440](../../zzz_res/attachments/BusinessLogic-ArbitraryDiscount2.png) ![](../../zzz_res/attachments/BusinessLogic-ArbitraryDiscount3.png)
 - [SQL Truncation](SQL%20Truncation.md)
-- etc.
+- [HTTP Parameter Pollution (HPP)](HTTP%20Parameter%20Pollution%20(HPP).md)
 
 ### Making flawed assumptions about user behavior
 

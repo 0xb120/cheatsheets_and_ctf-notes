@@ -152,3 +152,13 @@ Looking at permissions from a deeper look, we can categorize them in the followi
 - `/sdcard` This directory contains a symbolic link of the directories DCIM, Downloads, Music, Pictures, etc.
 
 [^1]: https://en.wikipedia.org/wiki/Android_version_history
+
+## Deeplinks
+
+The deeplink mechanism is a feature found on most operating systems such as Windows, iOS, Linux, and Android. It allows programs to associate specific URLs or protocols with the operating system, enabling seamless redirection or opening of other programs when users interact with those URLs.
+
+On Android, installed apps can register deeplink URLs or protocols with the operating system. When a deeplink is triggered, the corresponding app handles it and determines the appropriate action to take.
+
+>[!example] Deeplink examples
+>- `samsungapps://MCSLaunch?action=each_event&url={{url}}`
+>- `intent://foo?action=bar`

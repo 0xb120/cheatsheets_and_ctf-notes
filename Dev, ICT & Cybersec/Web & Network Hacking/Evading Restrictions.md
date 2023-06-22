@@ -100,6 +100,7 @@ Some applications block input containing sensitive words or URLs, like `/admin` 
 You can circumvent the filter using:
 - Alternatives [Encoding examples](Evading%20Restrictions.md#Encoding%20examples) (like url-encode, hex, HTML entity, double url-encode, [XSS Filtering bypass](Cross-Site%20Scripting%20(XSS).md#XSS%20Filtering%20bypass), etc.)
 - Case variation
+- ["Matrioska" stings](Prototype%20Pollution%20client-side.md#Bypassing%20flawed%20key%20sanitization) (useful when the application fails to sanitize input recursively)
 
 ## Evading whitelist-based input filters
 
@@ -190,3 +191,5 @@ Many applications that place user input into file paths implement some kind of d
 - [XSS cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 - [A new era of SSRF](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017#1)
 - [Cache parameter cloaking](Web%20Cache%20Poisoning.md#Cache%20parameter%20cloaking)
+- [HTTP Parameter Pollution (HPP)](HTTP%20Parameter%20Pollution%20(HPP).md)
+- [HTTP Verb Tampering](HTTP%20Verb%20Tampering.md)

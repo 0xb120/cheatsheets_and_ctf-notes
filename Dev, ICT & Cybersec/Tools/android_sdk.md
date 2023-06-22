@@ -36,6 +36,9 @@ system-images;android-30;android-wear-cn;arm64-v8a                              
 
 # install a specific sdk
 .\sdkmanager.bat --install "system-images;android-29;google_apis;x86"
+
+# list installed sdk 
+.\sdkmanager.bat --list_installed
 ```
 
 ## avdmanager
@@ -104,8 +107,10 @@ generic_api29_google_apis_emulator
 .\emulator.exe -avd generic_28 -writable-system -scale 0.6
 ```
 
-Enable hardware buttons:
- 
+Enable hardware buttons [^avd-hw] :
+
+[^avd-hw]: [https://stackoverflow.com/questions/15100251/avd-hardware-buttons-not-enabled](https://stackoverflow.com/questions/15100251/avd-hardware-buttons-not-enabled)
+
 ```txt
 $ edit ~/.android/avd/<emulator name>/config.ini
 ...

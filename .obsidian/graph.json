@@ -3,10 +3,60 @@
   "search": "",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": true,
-  "showOrphans": false,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"Dev, ICT & Cybersec/Tools\"",
+      "color": {
+        "a": 1,
+        "rgb": 1463523
+      }
+    },
+    {
+      "query": "path:\"Play ground\"",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"Dev, ICT & Cybersec/Reversing & Binary Exploitation\"",
+      "color": {
+        "a": 1,
+        "rgb": 10965728
+      }
+    },
+    {
+      "query": "path:\"Dev, ICT & Cybersec/Mobile Hacking\"",
+      "color": {
+        "a": 1,
+        "rgb": 2001471
+      }
+    },
+    {
+      "query": "path:\"Dev, ICT & Cybersec/Dev, scripting & OS\"",
+      "color": {
+        "a": 1,
+        "rgb": 14606418
+      }
+    },
+    {
+      "query": "path:\"Dev, ICT & Cybersec/Web & Network Hacking\"",
+      "color": {
+        "a": 1,
+        "rgb": 5431518
+      }
+    },
+    {
+      "query": "path:\"Dev, ICT & Cybersec/Services\"",
+      "color": {
+        "a": 1,
+        "rgb": 13274180
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +67,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.19356659067902615,
-  "close": false
+  "scale": 0.29529683735596746,
+  "close": true
 }

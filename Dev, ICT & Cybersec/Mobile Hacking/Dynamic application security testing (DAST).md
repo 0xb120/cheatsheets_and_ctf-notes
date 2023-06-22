@@ -24,11 +24,33 @@ Main tasks include:
 Key security testing areas:
 - **Local Data Storage**, e.g. data leak to cloud storage, backups, logs, keyboard cache, db or local files
 - **Authentication and Authorization**, e.g. bypassing, insecure or wrongly implemented framework
-- **Interaction** with the **Mobile Platform**, e.g. IPC APIs misues, sensitive data or functionality exposure to other apps running on the device.
+- **Interaction** with the **Mobile Platform**, e.g. IPC APIs misuse, sensitive data or functionality exposure to other apps running on the device.
 - **Code Quality** and **Exploit Mitigation** e.g. injection and memory management issues, cross-site scripting
 - **Anti-Tampering** and **Anti-Reversing**
 
 # Security mechanism bypasses
+
+## General application patching
+
+Disassembling the app in order to remove the code responsible for the security check, and then [rebuild and sign the «patched» app](../Tools/APKTool.md#Rebuild%20files%20into%20APK).
+
+>[!tip]
+>If you can't re-build the APK once decompiled because of broken/misspelled resources, decompile only the application code using the `apktool d --no-res whos_that_pokemon.apk` command
+
+Inject debug statements inside the smali code:
+```java
+const-string v1, "TEST"
+invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+```
+
+Dalvik opcodes:
+
+```cardlink
+url: http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html
+title: "Dalvik opcodes"
+host: pallergabor.uw.hu
+```
+
 
 ## Bypassing Certificate Pinning
 
@@ -37,10 +59,9 @@ Key security testing areas:
 
 Evasion techniques:
 - **Device Trust Store**: install the proxy certificate into the device trust store (system certificate store or user certificate store based on the Android version and root availability). See [Push burpsuite certificate inside the system certificate store](../Tools/adb.md#Push%20burpsuite%20certificate%20inside%20the%20system%20certificate%20store)
-- **App patching**: disassembling the app in order to remove the code responsible for certificate pinning or implement user certificate trust configurations and then [rebuild and sign the «patched» app](../Tools/APKTool.md#Rebuild%20files%20into%20APK)
-    - **disassembly tools** + [APKTool](../Tools/APKTool.md)
-        - **Smali** code **knowledge** is required
-    - **network_security_config.xml +** Add **`android:networkSecurityConfig="@xml/network_security_config"`** to the **`<application>`** element in your application manifest.xml
+
+- [Application patching](Dynamic%20application%20security%20testing%20(DAST).md#General%20application%20patching)
+    - **`network_security_config.xml` +** Add **`android:networkSecurityConfig="@xml/network_security_config"`** to the **`<application>`** element in your application manifest.xml
     - **Apk-mitm**
 - **Runtime Manipulation**: runtime execution modification in order to invalidate certificate pinning validation
     - [Xposed!](../Tools/Xposed!.md) framework with [TrustMeAlready](../Tools/Xposed!.md#TrustMeAlready) or [SSLUnpinning - Certificate Pinning Bypass](../Tools/Xposed!.md#SSLUnpinning%20-%20Certificate%20Pinning%20Bypass) (root required)
@@ -55,8 +76,7 @@ Evasion techniques:
 >- Finally the latest certificate store is the “app itself”. Each application can include its own certificates, refusing to trust any other installed one, even those within the system certificate store. This technique is the so-called “certificate pinning”.
 
 
-
-### Bypassing Anti-Root
+## Bypassing Anti-Root
 
 >[!warning]
 > **Anti-Root Mechanism**: the application checks if the device is rooted by looking at different file-system areas. If implemented, it might block a rooted/jailbroken device to run the app or it might hide some sensitive functionalities.
@@ -76,7 +96,7 @@ Evasion techniques:
 
 ## DAST Tools
 - [adb](../Tools/adb.md#Dynamic%20analysis)
-- Frida
+- [Frida](../Tools/Frida.md)
 - objection
 - [drozer](../Tools/drozer.md)
 - [Xposed!](../Tools/Xposed!.md) + [Modules](../Tools/Xposed!.md#Modules)

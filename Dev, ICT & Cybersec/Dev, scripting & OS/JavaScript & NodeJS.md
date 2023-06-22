@@ -1,3 +1,6 @@
+>[!warning]
+>JavaScript uses a prototypal inheritance model, which is quite different from the class-based model used by many other languages.
+
 # Interchangeable syntax
 
 ```jsx
@@ -83,6 +86,12 @@ var person1 = new person("0xbro", 24);
 
 # Prototypes
 
+Every object in JavaScript is linked to another object of some kind, known as its prototype. By default, JavaScript automatically assigns new objects one of its built-in prototypes. 
+>[!example] 
+>strings are automatically assigned the built-in `String.prototype`.
+
+Objects automatically inherit all of the properties of their assigned prototype, unless they already have their own property with the same key. This enables developers to create new objects that can reuse the properties and methods of existing objects.
+
 One thing to note is that the prototype’s attributes can be changed/modified/deleted when executing the code and their reflects directly on any related object.
 
 ```jsx
@@ -112,107 +121,97 @@ function toString()
 >In a prototype-based program, **objects inherit properties/methods from classes**. 
 The classes are derived by adding properties/methods to an instance of another class or by adding them to an empty object.
 
+Whenever you reference a property of an object, the JavaScript engine first tries to access this directly on the object itself. If the object doesn't have a matching property, the JavaScript engine looks for it on the object's prototype instead.
+
 ![](../../zzz_res/attachments/inerit.png)
 
-## `__proto__` pollution
+Crucially, objects inherit properties not just from their immediate prototype, but from all objects above them in the prototype chain. In the example below, this means that the `username` object has access to the properties and methods of both `String.prototype` and `Object.prototype`.
 
->[!warning]
->Every object in JavaScript is simply a collection of key and value and every object inherits from the Object type in JavaScript. If you are able to pollute the Object type **each JavaScript object of the environment is going to be polluted!**
+![](../../zzz_res/attachments/prototype-chain.png)
 
-This is fairly simple, you just need to be able to modify some properties (key-value pairs) from an arbitrary JavaScript object, because as **each object inherits from `Object`**, **each object can access `Object` scheme**.
+>[!danger] 
+>`for...in` loop iterates over all of an object's enumerable properties, including ones that it has inherited via the prototype chain.
+>This also applies to arrays, where a `for...in` loop first iterates over each index, which is essentially just a numeric property key under the hood, before moving on to any inherited properties as well.
 
-```jsx
-function person(fullName) {
-    this.fullName = fullName;
+```js
+const myObject = { a: 1, b: 2 };
+
+// pollute the prototype with an arbitrary property
+Object.prototype.foo = 'bar';
+
+// confirm myObject doesn't have its own foo property
+myObject.hasOwnProperty('foo'); // false
+
+// list names of properties of myObject
+for(const propertyKey in myObject){
+    console.log(propertyKey);
 }
 
-var person1 = new person("0xbro");
-```
+// Output: a, b, foo
 
-From the previous example it's possible to **access the structure of `Object`** using the following ways:
+const myArray = ['a','b'];
+Object.prototype.foo = 'bar';
 
-```jsx
-> person1.__proto__.__proto__
-> person.__proto__.__proto__
-
-> person1.__proto__.__proto__ === person.__proto__.__proto__
-true
-```
-
-If now a property is added to the Object scheme, every JavaScript object will have access to the new property:
-
-```jsx
-> person1.__proto__.__proto__.printHello = function(){console.log("Hello");}
-function printHello()
-
-> person1.printHello()
-Hello
-
-> var test = {}
-undefined
-
-> test.printHello()
-Hello
-```
-
-Now **each JS object** will contain the new properties!****
-
-## `prototype` pollution
-
->[!warning]
->If you are able to modify the properties of a function, you can modify the `prototype` property of the function and **each new property that you adds here will be inherit by each object created from that function.**
->
->More reference: [Prototype Pollution](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md)
-
-```jsx
-function person(fullName) {
-    this.fullName = fullName;
+for(const arrayKey in myArray){
+    console.log(arrayKey);
 }
-var person1 = new person("0xbro");
-var person2 = new person("maoutis");
-var person3 = new person("testname");
+
+// Output: 0, 1, foo
 ```
 
-If I pollute a property of the **person** function, every object instantiated from **that function** is now polluted:
+## `__proto__`
 
-```jsx
-> person.prototype.sayHello = function(){console.log("Hello");} // Add function as new property
-function sayHello()
+Every object has a special property that you can use to access its prototype. Although this doesn't have a formally standardized name, `__proto__` is the de facto standard used by most browsers. If you're familiar with object-oriented languages, this property serves as both a getter and setter for the object's prototype. This means you can use it to read the prototype and its properties, and even reassign them if necessary.
 
-> person1.sayHello(); // inherits the function
-Hello
-undefined
-> person2.sayHello(); // inherits the function
-Hello
+```js
+// As with any property, you can access `__proto__` using either bracket or dot notation
+username.__proto__
+username['__proto__']
 
-> person3.constructor.prototype.sayHelloBis = function(){console.log("HelloBis");} // Add function as new property using the constructor reference 
-function sayHelloBis()
-
-> person3.sayHelloBis(); // inherits the function
-HelloBis
-
-> person2.sayHelloBis(); // inherits the function 
-HelloBis
-
-> var test = {};
-undefined
-> test.sayHello();
-Uncaught TypeError: test.sayHello is not a function // Error because the variable is not instanciated from "**person"**
+// You can even chain references to __proto__ to work your way up the prototype chain:
+username.__proto__                        // String.prototype
+username.__proto__.__proto__              // Object.prototype
+username.__proto__.__proto__.__proto__    // null
 ```
 
-There are 2 ways to abuse [Prototype Pollution](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md) to poison **EVERY** JS object (like with `__proto__`).
+## Modifying prototypes
 
-- pollute the property prototype of **`Object`**
+Although it's generally considered bad practice, it is possible to modify JavaScript's built-in prototypes just like any other object. This means developers can customize or override the behavior of built-in methods, and even add new methods to perform useful operations.
 
-```jsx
-Object.prototype.sayBye = function(){console.log("bye!")}
+```js
+String.prototype.removeWhitespace = function(){
+    // remove leading and trailing whitespace
+}
+
+// Thanks to the prototypal inheritance, all strings would then have access to this method
+let searchTerm = "  example ";
+searchTerm.removeWhitespace();    // "example"
 ```
 
-- poison the prototype of a constructor of a dictionary variable
+This behavior can expose the application to [Prototype Pollution](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md) vulnerabilities, both client-side or server-side. 
+
+## Array elements pollution
+
+Note that as you can pollute attributes of objects in JS, if you have access to pollute an array you can also **pollute values of the array** accessible **by indexes** (note that you cannot overwrite values, so you need to pollute indexes that are somehow used but not written).
 
 ```jsx
-something = {"a": "b"}
-something.constructor.prototype.sayHey = function(){console.log("Hey!")}
+c = [1,2]
+a = []
+a.constructor.prototype[1] = "yolo"
+b = []
+b[0] //undefined
+b[1] //"yolo"
+c[1] // 2 -- not
+```
+
+# `fetch()`
+
+The `Fetch` API provides a simple way for developers to trigger HTTP requests using JavaScript. Two arguments:
+- URL to which you send the request
+- Options object containing method, headers, body parameters, etc.
+
+```js
+fetch('https://normal-website.com/my-account/change-email', { method: 'POST', body: 'user=carlos&email=carlos%40ginandjuice.shop' })
 ```
 
 # **XMLHttpRequest (XHR)**

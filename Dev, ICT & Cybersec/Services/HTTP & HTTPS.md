@@ -110,6 +110,8 @@ Evading restrictions:
 - [Execution After Redirect (EAR)](../Web%20&%20Network%20Hacking/Execution%20After%20Redirect%20(EAR).md)
 - [Host Header attacks](../Web%20&%20Network%20Hacking/Host%20Header%20attacks.md)
 - [Business logic vulnerabilities](../Web%20&%20Network%20Hacking/Business%20logic%20vulnerabilities.md)
+- [HTTP Parameter Pollution (HPP)](../Web%20&%20Network%20Hacking/HTTP%20Parameter%20Pollution%20(HPP).md)
+- [HTTP Verb Tampering](../Web%20&%20Network%20Hacking/HTTP%20Verb%20Tampering.md)
 - [Insecure File Upload](../Web%20&%20Network%20Hacking/Insecure%20File%20Upload.md)
 - [Server Side Request Forgery (SSRF)](../Web%20&%20Network%20Hacking/Server%20Side%20Request%20Forgery%20(SSRF).md)
 - [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md)
@@ -117,6 +119,12 @@ Evading restrictions:
 - [Server Side Template Injection (SSTI)](../Web%20&%20Network%20Hacking/Server%20Side%20Template%20Injection%20(SSTI).md)
 - [Web Cache Attacks](../Web%20&%20Network%20Hacking/Web%20Cache%20Attacks.md)
 - [JWT Vulnerabilities](../Web%20&%20Network%20Hacking/JWT%20Vulnerabilities.md)
+- [Server-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Server-side%20prototype%20pollution%20vuln)
+- [Class Pollution](../Web%20&%20Network%20Hacking/Class%20Pollution.md)
+- [OAuth 2.0](../Web%20&%20Network%20Hacking/OAuth%202.0.md)
+- [OpenID Connect](../Web%20&%20Network%20Hacking/OpenID%20Connect.md)
+- [HTTP Request Smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md)
+- [Server-side pause-based desync](../Web%20&%20Network%20Hacking/Client-side%20desync%20attacks.md#Server-side%20pause-based%20desync)
 
 ### Client side vulnerabilities
 
@@ -127,24 +135,26 @@ Evading restrictions:
 - [WebSockets](../Web%20&%20Network%20Hacking/WebSockets.md)
 - [Client-side template injection (CSTI)](../Web%20&%20Network%20Hacking/Client-side%20template%20injection%20(CSTI).md)
 - [DOM-based vulnerabilities](../Web%20&%20Network%20Hacking/DOM-based%20vulnerabilities.md)
+- [Client-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Client-side%20prototype%20pollution%20vuln)
+- [Browser-powered request smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md#Browser-powered%20request%20smuggling)
 
 
 ### Other web technologies vulnerabilities
 
-- [Domain Attacks](../Web%20&%20Network%20Hacking/Domain%20Attacks.md)
-- [HTTP Request Smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md)
+
 
 ---
 
 - [Type Juggling](../Web%20&%20Network%20Hacking/Type%20Juggling.md)
-- [Prototype Pollution](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md)
 
 ## Security Implementations and Mitigations
 
 - [Access control security models](../Web%20&%20Network%20Hacking/Access%20control%20security%20models.md)
+- [Authentication](../Web%20&%20Network%20Hacking/Authentication.md)
 - [Cross-origin resource sharing (CORS)](../Web%20&%20Network%20Hacking/Cross-origin%20resource%20sharing%20(CORS).md)
 - [Same-origin policy (SOP)](../Web%20&%20Network%20Hacking/Same-origin%20policy%20(SOP).md)
 - [Content Security Policy (CSP)](../Web%20&%20Network%20Hacking/Content%20Security%20Policy%20(CSP).md)
 - [X-Frame-Options](../Web%20&%20Network%20Hacking/X-Frame-Options.md)
 - [Defenses against CSRF attacks](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Defenses%20against%20CSRF%20attacks)
 - [SameSite attribute on cookies](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#SameSite%20attribute%20on%20cookies)
+- [HTTP/2](../Web%20&%20Network%20Hacking/HTTP-2.md)

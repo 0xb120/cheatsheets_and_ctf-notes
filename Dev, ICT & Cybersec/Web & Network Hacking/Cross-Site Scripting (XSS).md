@@ -190,6 +190,9 @@ Extensive cheat sheets can be found at:
 - [Cross-Site Scripting (XSS) Cheat Sheet - 2022 Edition | Web Security Academy](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 - [Obfuscating attacks using encodings](https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings)
 - [XSS without parentheses and semi-colons](https://portswigger.net/research/xss-without-parentheses-and-semi-colons)
+- `eval(atob("base64"))`
+	- [eXtra Safe Security layers](../../Play%20ground/CTFs/eXtra%20Safe%20Security%20layers.md)
+	- [Mutation Lab](../../Play%20ground/CTFs/Mutation%20Lab.md)
 
 ## XSS Prevention [^1]
 

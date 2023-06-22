@@ -89,6 +89,7 @@ columns:
       - { label: "TryHackMe", value: "TryHackMe", color: "hsl(220,73%,53%)"}
       - { label: "X-MAS", value: "X-MAS", color: "hsl(103, 95%, 90%)"}
       - { label: "hxp", value: "hxp", color: "hsl(175, 95%, 90%)"}
+      - { label: "justCTF 2023", value: "justCTF 2023", color: "hsl(186, 95%, 90%)"}
     config:
       enable_media_view: true
       link_alias_enabled: true
@@ -168,10 +169,6 @@ columns:
       - { label: "1. In progress", value: "1. In progress", color: "hsl(27,100%,71%)"}
       - { label: "2. User", value: "2. User", color: "hsl(228,100%,70%)"}
       - { label: "0. TODO", value: "0. TODO", color: "hsl(267,100%,70%)"}
-      - { label: "0.Idea", value: "0.Idea", color: "hsl(151, 95%, 90%)"}
-      - { label: "1. Waiting", value: "1. Waiting", color: "hsl(141, 95%, 90%)"}
-      - { label: "2. On Going", value: "2. On Going", color: "hsl(262, 95%, 90%)"}
-      - { label: "2.Scripting", value: "2.Scripting", color: "hsl(192, 95%, 90%)"}
     config:
       enable_media_view: true
       link_alias_enabled: true
@@ -182,6 +179,7 @@ columns:
       footer_type: none
       persist_changes: false
       content_alignment: text-align-center
+      option_source: manual
   Retired:
     input: checkbox
     accessorKey: Retired
@@ -638,6 +636,12 @@ columns:
       - { label: "ej", value: "ej", color: "hsl(53, 95%, 90%)"}
       - { label: "ejs", value: "ejs", color: "hsl(295, 95%, 90%)"}
       - { label: "CVE-2022-29078", value: "CVE-2022-29078", color: "hsl(32, 95%, 90%)"}
+      - { label: "CSP-bypass", value: "CSP-bypass", color: "hsl(37, 95%, 90%)"}
+      - { label: "jsfuck", value: "jsfuck", color: "hsl(185, 95%, 90%)"}
+      - { label: "rack.session", value: "rack.session", color: "hsl(60, 95%, 90%)"}
+      - { label: "sinatra", value: "sinatra", color: "hsl(262, 95%, 90%)"}
+      - { label: "server-side_prototype-pollution", value: "server-side_prototype-pollution", color: "hsl(63, 95%, 90%)"}
+      - { label: "obfuscation", value: "obfuscation", color: "hsl(272, 95%, 90%)"}
     config:
       enable_media_view: true
       link_alias_enabled: true
@@ -666,7 +670,7 @@ config:
   frontmatter_quote_wrap: false
   row_templates_folder: /
   current_row_template: zzz_res/templates/HTB-challenge.md
-  pagination_size: 200
+  pagination_size: 25
   enable_js_formulas: false
   formula_folder_path: /
   inline_default: false
@@ -677,6 +681,7 @@ config:
   font_size: 16
   metadata_date_format: "yyyy-MM-dd HH:mm:ss"
   implementation: default
+  show_metadata_tags: false
 filters:
   enabled: false
   conditions:

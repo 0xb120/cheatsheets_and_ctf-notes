@@ -13,6 +13,9 @@ URL: https://ibotpeaches.github.io/Apktool/
 
 ```bash
 $ apktool d Application.apk
+
+# Decompile APKs without decompiling application resources
+$ apktool d --no-res whos_that_pokemon.apk
 ```
 
 # Rebuild files into APK

@@ -92,7 +92,13 @@ A web service that can be used to continuously change the IP associated to a DNS
 
 The tool keep changes the DNS record between the two IP chosen by the attacker, allowing to exploit the DNS rebinding vulnerability and redirect requests to that domain towards malicious IPs.
 
-[baby CachedView](https://www.notion.so/baby-CachedView-4b48c4c7e6a94d8c8a79f9ce9eed5234) 
+>[!example]
+>See the writeup for [baby CachedView](../../Play%20ground/CTFs/baby%20CachedView.md)
+
+## Other DNS attacks
+
+- [Domain Attacks](../Web%20&%20Network%20Hacking/Domain%20Attacks.md)
+
 
 ---
 

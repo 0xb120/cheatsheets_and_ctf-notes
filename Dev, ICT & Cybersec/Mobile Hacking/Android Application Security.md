@@ -7,6 +7,9 @@ During testing, therefore, it will be necessary to verify, in addition to tradit
 
 ## Android Env Setup
 
+![Android setup](Android%20setup.canvas)
+
+
 Requirements:
 - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/)
 - [Android SDK tool package](https://developer.android.com/studio#:~:text=Command%20line%20tools%20only)
@@ -21,6 +24,7 @@ Importing user certificates on Android 7 or higher:
 
 Port forwarding and network management:
 ![Port forwarding and network management](../Tools/android_sdk.md#Port%20forwarding%20and%20network%20management)
+
 
 ---
 
@@ -42,6 +46,11 @@ Largest Column: standard
 
 ---
 
-## External interesting researches
+# External interesting researches and vulnerabilities
 
-- [Attacking Android Antivirus Applications](https://blog.scrt.ch/2023/03/29/attacking-android-antivirus-applications/)
+- [Attacking Android Antivirus Applications - Intent redirection](https://blog.scrt.ch/2023/03/29/attacking-android-antivirus-applications/)
+- [TikTok uXSS and 1-Click RCE](https://dphoeniixx.medium.com/tiktok-for-android-1-click-rce-240266e78105)
+- [Attacking Android browsers via intent scheme URLs](https://www.mbsd.jp/Whitepaper/IntentScheme.pdf)
+- [Exploiting Android WebView Vulnerabilities](https://medium.com/mobis3c/exploiting-android-webview-vulnerabilities-e2bcff780892)
+- [XSS + unsecure deeplink causing arbitrary application installation](https://ssd-disclosure.com/ssd-advisory-galaxy-store-applications-installation-launching-without-user-interaction/)
+- [One-click/Open-redirect to own Samsung S22](https://starlabs.sg/blog/2023/06-the-old-the-new-and-the-bypass-one-clickopen-redirect-to-own-samsung-s22-at-pwn2own-2022/)

@@ -154,6 +154,64 @@ person.printName()
 print(person.name)
 ```
 
+### `__class__`
+
+The attribute points to the class that the object is an instance of:
+>[!tip]
+>You can think about `<instance>.__class__` in Python as `<instance>.constructor` in JavaScript.
+
+```python
+class Employee: pass # Creating an empty class
+
+emp = Employee()
+print(emp.__class__)
+#> <class '__main__.Employee'>
+```
+
+#### `__class__` attributes
+
+- `__qualname__` is an attribute that contains the class name:
+
+```python
+class Employee: pass # Creating an empty class
+emp = Employee()
+
+print(emp.__class__.__qualname__)
+#> Employee
+```
+
+- `__getattribute__` and `__setattr__` are *getter* and *setter* for a class attribute and returns/overwrites the attribute value:
+
+```python
+class Employee: pass # Creating an empty class
+
+emp = Employee()
+emp.name = "test"
+emp.__getattribute__('name')
+#> 'test'
+emp.name
+#> 'test'
+emp.__setattr__("name","new val")
+emp.name
+#> 'new val'
+```
+
+-  `__base__` points to the nearest parent class that it’s inheriting from, so if there is an inheritance chain, it will point to the last class that we inherit:
+
+```python
+class Employee: pass # Creating an empty class
+
+emp = Employee()
+emp
+#> <__main__.Employee object at 0x7f9ff0e4f3d0>
+emp.__class__
+#> <class '__main__.Employee'>
+emp.__class__.__base__
+#> <class 'object'>
+```
+
+
+
 ---
 
 ## Print raw bytes
@@ -348,6 +406,13 @@ p.interactive()
 ## builtins
 <iframe width="1060" height="415" src="https://sadh.life/post/builtins/" title="Python buildins" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+>[!tldr]- 
+>Dunder methods (also known as magic methods) are special methods that are implicitly invoked by all objects in Python during various operations, such as 
+`__str__()`, `__eq__()`, and `__call__()`. They are used to specify what objects of a class should do when used in various statements and with various operators.
+>
+>Dunder methods have their own default implementation for built-in classes, which we will be implicitly inheriting from when creating a new class, however, developers can override these methods and provide their own implementation when defining new classes.
+>
+>There are also other special attributes in every object in Python, such as `__class__`, `__doc__`, etc.
 
 # Python 2 vs 3 for binary exploitation
 

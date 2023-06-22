@@ -10,7 +10,7 @@ URL: https://developer.android.com/studio/releases/platform-tools
 
 - adb source code: https://android.googlesource.com/platform/packages/modules/adb/
 - frameworks base: https://android.googlesource.com/platform/frameworks/base/
-
+- Other commands: https://blog.testproject.io/2021/08/10/useful-adb-commands-for-android-testing/
 
 # General commands
 
@@ -37,15 +37,15 @@ $ adb kill-server
 $ adb tcpip <port>
 $ adb connect <IP> <port>
 $ adb usb
-
-# Specify which device adb should interact with
-$ adb -s "device_id" shell
 ```
 
 ## Spawn a shell
 
 ```bash
 $ adb shell
+
+# Specify which device adb should interact with
+$ adb -s "device_id" shell
 ```
 
 ## List all installed packages
@@ -59,13 +59,46 @@ $ adb shell pm list packages
 ```bash
 $ adb logcat
 $ adb logcat -d -f log.txt # -d just dump the file; -f save the log inside a file insted printing to stdout
+$ adb logcat *:E # dump only Error priority or higher
+$ adb logcat MyTag:I *:S # prints to the output log messages with the tag MyTag and priority level Info or higher. The *:S at the end will exclude the log from other tags with any priority
 ```
+
+- **V**: Verbose (lowest priority)
+- **D**: Debug
+- **I**: Info
+- **W**: Warning
+- **E**: Error
+- **F**: Fatal
+- **S**: Silent (highest priority. Nothing is printed)
 
 ## Push and pull files from the device
 
 ```bash
 $ adb push <file> <destination> # upload
 $ adb pull <file> <destination> # download
+```
+
+## Battery related commands
+
+```bash
+# Set battery to 1%
+adb shell dumpsys battery set level 1
+
+# connect/disconnect an AC charger
+adb shell dumpsys battery set ac 1
+
+# connect/disconnect an USB charger
+adb shell dumpsys battery set usb 1
+
+# Reset to standard
+adb shell dumpsys battery reset
+```
+
+## Take photos and videos
+
+```bash
+adb shell screenrecord /sdcard/Movies/video.mp4
+adb shell screencap -p /sdcard/Pictures/screenshot.png
 ```
 
 ---
@@ -97,7 +130,10 @@ $ sqlite3 /path/to/file
 sqlite> .tables
 Files             SubDirectory      android_metadata
 Notes             Types
+sqlite> select * from Notes;
 ```
+
+---
 
 # Dynamic analysis
 
@@ -126,9 +162,12 @@ cp burp-free.cer 9a5ba575.0
 .\adb.exe push 9a5ba575.0 /system/etc/security/cacerts
 .\adb.exe shell chmod 644 /system/etc/security/cacerts/9a5ba575.0
 .\adb.exe reboot
+```
 
-# or
+If the method above not worked and the emulator stuck on reboot [^solution] :
 
+[^solution]: https://stackoverflow.com/questions/63875910/android-emulator-stuck-on-reboot-after-adb-disable-verity-or-adb-remount
+```bash
 .\emulator.exe -avd <avd_name_here> -writable-system
 .\adb.exe root
 .\adb.exe shell avbctl disable-verification
@@ -162,4 +201,44 @@ adb shell content delete --uri content://com.techuz.privatevault/data/data/com.t
 
 ```bash
 adb shell am broadcast -a com.whereismywifeserver.intent.TEST --es sms_body "test from adb"
+```
+
+## Service interaction
+```xml
+<service  android:name="com.yourpackage.SomeService">
+     <intent-filter>
+            <action android:name="com.yourpackage.action.name.SHOW_TOAST" />
+     </intent-filter>
+ </service>
+```
+
+```bash
+adb shell am startservice -a com.yourpackage.action.name.SHOW_TOAST -e text "i did it" # for the @Override of onStart()
+```
+
+## Stop application
+
+```bash
+adb shell am force-stop
+```
+
+## Simulate input, tap, scroll and swipe
+
+```bash
+adb shell input text "this\ is\ some\ string"
+adb shell input tap 500 400
+adb shell input swipe 500 1000 500 100 # Perform a swipe gesture from the center to top
+adb shell input swipe 500 1000 500 100 5000 # Perform the same gesture slowly. Takes 5 seconds
+
+# Press Home button
+$ adb shell input keyevent KEYCODE_HOME
+
+# Press Camera button
+$ adb shell input keyevent KEYCODE_CAMERA
+
+# Press Back button
+$ adb shell input keyevent KEYCODE_BACK
+
+# Press Headset button
+$ adb shell input keyevent KEYCODE_HEADSETHOOK
 ```

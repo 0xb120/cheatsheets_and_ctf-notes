@@ -42,11 +42,39 @@ APK retrieving:
 	$ adb pull <APK_path>
 	```
 - Share application feature in Android (File Manager > Apps > Select an application > Share)
-- APK converters (unsafe, chose a trusted application!)
+- APK converters/external stores (unsafe, chose a trusted application!)
+	- https://apkcombo.com/
 	- https://apps.evozi.com/apk-downloader/?id=com.netflix.Speedtest
 - Android Market API on GitHub
 
----
+## Identify frameworks and components
+Modern APK are not programmed using plain Java. They are built using **frameworks** or **modern programming languages**, and it is essential to identify them in order to better analyze the application.
+
+### Kotlin
+
+Application written using **Kotlin** [^kotlin] can be recognized because they contain `.kt` files inside the APK archive as well as a `kotlin` folder. It supports both R8 and ProGuard for obfuscation and code shrinking [^kotlin-obf] . 
+
+[^kotlin]: https://kotlinlang.org/
+[^kotlin-obf]: https://developer.android.com/build/shrink-code
+
+Eventually you can also find references to annotations like `@kotlin.Metadata`, `kotlin/Metadata`, etc.
+
+
+### Flutter
+
+**Flutter** [^flutter] is an open-source UI framework for building beautiful, **natively compiled applications** for mobile, web, desktop, and embedded devices from a single codebase. The main programming language is DART. Flutter also provide a built-in obfuscation feature.
+
+[^flutter]: https://flutter.dev/
+
+Flutter application are usually very large in size because the Dart framework is statically linked in the application binary. We can confirm an application is built using flutter searching for `kernel_blob.bin`, `libflutter.so` and `libapp.so` inside the APK. 
+
+We can also extract Flutter Metadata from the application using a modified version of the flutter runtime library, using [reFlutter](https://github.com/Impact-I/reFlutter)
+
+>[!tldr] Flutter analyses
+>- https://www.guardsquare.com/blog/current-state-and-future-of-reversing-flutter-apps
+>- https://www.guardsquare.com/blog/obstacles-in-dart-decompilation-and-the-impact-on-flutter-app-security
+>- https://www.guardsquare.com/blog/how-classical-attacks-apply-to-flutter-apps
+>- https://cryptax.medium.com/reversing-an-android-sample-which-uses-flutter-23c3ff04b847
 
 ## Manifest and source code analysis
 
@@ -80,6 +108,7 @@ Search for:
 ---
 
 # Tools
+
 ```start-multi-column
 ID: ID_fpde
 Number of Columns: 2

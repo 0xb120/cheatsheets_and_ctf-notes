@@ -150,6 +150,8 @@ Supports scanning for Request Smuggling vulnerabilities, and also aids exploitat
 
 ![|900](../../zzz_res/attachments/request-smuggler.png)
 
+### Server-Side Prototype Pollution Scanner
+
 ### *Collaborator Everywhere
 
 Augments your in-scope proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator.

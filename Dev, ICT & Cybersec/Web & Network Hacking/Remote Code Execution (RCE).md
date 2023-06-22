@@ -12,7 +12,7 @@ Remote Code Execution is not a specific vulnerability but it’s a behavior achi
 - [Insecure Deserialization & Object Injection](Insecure%20Deserialization%20&%20Object%20Injection.md)
 - [Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md)
 - [SQL Injection](SQL%20Injection.md)
-- [Prototype Pollution](Prototype%20Pollution.md)
+- [Remote code execution via server-side prototype pollution](Prototype%20Pollution%20server-side.md#Remote%20code%20execution%20via%20server-side%20prototype%20pollution)
 - etc.
 
 ## Finding RCE vulnerabilities

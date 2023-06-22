@@ -4,16 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "9e8385ee6f00a4d2",
+        "id": "7c83156c99a2eb86",
         "type": "tabs",
         "children": [
           {
-            "id": "038fead6675c3ce6",
+            "id": "51983b113e048906",
             "type": "leaf",
             "state": {
-              "type": "database-plugin",
+              "type": "markdown",
               "state": {
-                "file": "Play ground/Projects/_project-db.md"
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -31,7 +34,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d57f9feca1949a6c",
+            "id": "6d0c57e83389f01e",
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
@@ -44,7 +47,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "android",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -54,10 +57,10 @@
             }
           },
           {
-            "id": "e94392e61da9c120",
+            "id": "6cc55868e1e4efcf",
             "type": "leaf",
             "state": {
-              "type": "starred",
+              "type": "bookmarks",
               "state": {}
             }
           },
@@ -72,11 +75,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 340.5
   },
   "right": {
     "id": "659b37494d493ae5",
@@ -101,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Play ground/Projects/_project-db.md"
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md"
               }
             }
           },
@@ -137,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Play ground/Projects/_project-db.md",
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Play ground/Projects/_project-db.md",
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +169,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Play ground/Projects/_project-db.md",
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -195,12 +198,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 440.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,55 +213,58 @@
       "obsidian-advanced-slides:Show Slide Preview": false,
       "templates:Insert template": true,
       "workspaces:Manage workspace layouts": true,
-      "obsidian-book-search-plugin:Create new book note": false,
       "dbfolder:Create a new database table": false,
+      "obsidian-book-search-plugin:Create new book note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": true,
-      "file-tree-alternative:File Tree Alternative Plugin": true,
-      "canvas:Create new canvas": false
+      "canvas:Create new canvas": false,
+      "file-tree-alternative:File Tree Alternative Plugin": true
     }
   },
-  "active": "038fead6675c3ce6",
+  "active": "51983b113e048906",
   "lastOpenFiles": [
-    "Play ground/Projects/Belkin Modem.md",
-    "Play ground/Projects/CKFinder 2.md",
-    "Play ground/Projects/ntfy.md",
-    "Play ground/Projects/OpenCart.md",
-    "Play ground/Projects/Private Vault.md",
-    "Play ground/Projects/VirIT Mobile.md",
-    "Play ground/Projects/20230120_visuraauto.com.md",
-    "Home.md",
-    "Play ground/CTFs/Shocker.md",
-    "Dev, ICT & Cybersec/Tools/git.md",
-    "Communities/YouTube/_YT-Video-db.md",
-    "Communities/YouTube/2022001_BestPlatformsForEthicalHacking.md",
-    "Communities/YT Settings.md",
-    "zzz_res/templates/YT-Video.md",
-    "Communities/YouTube/2023002_Waffle-yOrder.md",
-    "Communities/YouTube/XXXXXXXX_CreateAnAndroidEnv.md",
-    "Play ground/Personal Blog workflow.canvas",
-    "Personal/To-do list.md",
-    "Personal/Travel/_travel-db.md",
-    "Personal/Book list/_book-db.md",
-    "Play ground/Projects/_project-db.md",
-    "Play ground/CTFs/_CTF-db.md",
-    "Communities/YouTube/YT-Dashboard.md",
-    "Communities/YouTube/_YT-Kanban.canvas",
+    "Dev, ICT & Cybersec/Web & Network Hacking/SQL Injection.md",
+    "Dev, ICT & Cybersec/Tools/adb.md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
+    "Dev, ICT & Cybersec/Services/MySQL.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/SQL 101.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Host Header attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-origin resource sharing (CORS).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Android Application Security.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
+    "Play ground/CTFs/Acnologia Portal.md",
+    "Play ground/CTFs/eXtra Safe Security layers.md",
+    "Play ground/CTFs/Mutation Lab.md",
     "Communities/MeetHack/Android Application List.md",
-    "Communities/YouTube/XXXXXXXX_PrivateVault.md",
-    "zzz_res/templates/Format summary.md",
-    "Communities/MeetHack/Android Application Security Slides.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Client-side desync attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Request Smuggling.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP Request Smuggling.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting Browser-powered Request Smuggling.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/H2.TE smuggling vulnerabilities.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/H2.CL smuggling vulnerabilities.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP-2 downgrading.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP-2 Request Smuggling.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication.md",
+    "Home.md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Dynamic application security testing (DAST).md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Android setup.canvas",
+    "Communities/i3P",
     "Communities/MeetHack/MeetHack - Android Application Security 101.pdf",
-    "zzz_res/attachments/HTTP_req-smuggling-capturing_user_request.png",
-    "Communities/YouTube/Thumbnails/waffle-y_order_thumbnail.png",
-    "YouTube & Communities/Videos/Thumbnails/thumbnail2.png",
+    "zzz_res/attachments/perfect-product-2.png",
+    "zzz_res/attachments/perfect-product-1.png",
+    "zzz_res/attachments/dangerous-colors.png",
+    "zzz_res/attachments/dangerous-secret.png",
+    "zzz_res/attachments/MLSA2.png",
+    "zzz_res/attachments/MLSA1.png",
+    "zzz_res/attachments/client-side_desync_resp.png",
+    "zzz_res/attachments/desync-PoC-console.png",
+    "zzz_res/attachments/client-side_desync.png",
+    "Play ground/Personal Blog workflow.canvas",
+    "zzz_res/attachments/asp.sr_3.png",
+    "Personal/Games",
+    "Communities/YouTube/_YT-Kanban.canvas",
     "YouTube & Communities/Personal blog workflow.canvas",
-    "Communities/YouTube/Thumbnails/ElfResources_thumbnail.png",
-    "zzz_res/attachments/waffle-y_regex101_4.png",
-    "zzz_res/attachments/waffle-y_regex101_3.png",
-    "zzz_res/attachments/waffle-y_regex101_2.png",
-    "zzz_res/attachments/waffle-y_regex101_1.png",
-    "YouTube & Communities/Videos/Thumbnails/thumbnail1.png",
-    "zzz_res/attachments/WAFfle-y_Order_bc7ec381b01f4d9187fad6632cc87721.png",
     "YouTube & Communities/Videos/_YT-Kanban-manual.canvas",
     "YouTube & Communities/Community dashboard.canvas",
     "Untitled 1.canvas",
@@ -269,8 +274,6 @@
     "export/Android Application Security Slides/plugin/chalkboard/plugin (copy).js",
     "export/Android Application Security Slides/plugin/chalkboard/plugin.js",
     "export/Android Application Security Slides/plugin/chalkboard/style.css",
-    "export/Android Application Security Slides/plugin/chalkboard",
-    "export/Android Application Security Slides/plugin/chart/chart.min.js",
-    "export/Android Application Security Slides/plugin/chart/plugin.js"
+    "export/Android Application Security Slides/plugin/chalkboard"
   ]
 }

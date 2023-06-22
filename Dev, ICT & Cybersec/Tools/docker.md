@@ -50,7 +50,7 @@ docker run --rm <img_name>
 - **Bind specific ports** from the container to the operating system (host:container)
 
 ```bash
-docker run -p 3000:3000 <img_name\>
+docker run -p 3000:3000 <img_name>
 ```
 
 - **Detach** the container once running

@@ -39,6 +39,9 @@
 - [theHarvester](../Tools/theHarvester.md) (tool)
 - SearchDiggity (Windows)
 - [OSINT Framework](https://osintframework.com/) (misc)
+- [IntelTechniques](https://inteltechniques.com/tools/index.html) (misc)
+- [Sector035](https://sector035.nl/links) (misc)
+- [PIM Eyes](https://pimeyes.com/en) (face recognition)
 
 ---
 
@@ -74,6 +77,8 @@
 - [SSLLabs](https://www.ssllabs.com/ssltest/) (online)
 - client side data collectors (User Agent grabber, etc)
 - [Wayback Machine](http://web.archive.org/) (online)
+- [Web page archive](https://archive.fo/) (online)
+- [Google Web Cache](http://webcache.googleusercontent.com/search?q=cache:about:blank) (online)
 - [Screenshots.com](http://www.screenshots.com/) (online)
 - [Archive.today](https://archive.fo/) (online)
 - [Whatismybrowser.com](http://developers.whatismybrowser.com/) (online)
@@ -86,6 +91,11 @@
 - [Haveibeenpwned](https://haveibeenpwned.com/PwnedWebsites) (online)
 - [DeHashed](https://www.dehashed.com/) (online)
 - [IntelligenceX](https://intelx.io/?s=webmaster%40inforge.net) (online)
+- [Ghost Project](https://ghostproject.fr/console) (online)
+- [Snubase](https://snusbase.com/) (online)
+- [Cracked.io](https://cracked.io/) (online)
+- [LeakIX](https://leakix.net/) (online)
+- [Telemetr.io](https://telemetr.io/en/channels?channel=leaks) (online)
 
 ---
 
