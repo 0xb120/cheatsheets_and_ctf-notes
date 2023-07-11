@@ -53,7 +53,7 @@ AddType application/x-httpd-php .pwn
 
 Some time applications check only the "Content-type" header. In this case it is possible to bypass the control intercepting the upload request and changing the header from `Content-Type: application/x-php` to `Content-Type: image/png`
 
-## Magic-bytes and EfixData injection
+## Magic-bytes, EfixData injection and polyglot files
 
 Instead of implicitly trusting the `Content-Type` specified in a request, more secure servers try to verify that the contents of the file actually match what is expected.
 
@@ -81,6 +81,9 @@ $ exiftool -comment='<?=phpinfo()?>' [PathFoto]
 ```
 
 Then we need to find a way to change the image extension to a vulnerable one or otherwise, find a way to force the server into interpreting the image as a different type of file.
+
+Eg:
+- https://github.com/kunte0/phar-jpg-polyglot/tree/master
 
 ## Bypass file execution prevention in user-accessible directories
 

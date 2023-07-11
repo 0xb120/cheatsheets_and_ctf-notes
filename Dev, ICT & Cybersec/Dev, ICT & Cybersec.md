@@ -75,6 +75,7 @@ Largest Column: standard
 - [Java](Dev,%20scripting%20&%20OS/Java.md)
 - [Reversing and software memory 101](Reversing%20&%20Binary%20Exploitation/Reversing%20and%20software%20memory%20101.md)
 - [IoT 101](Dev,%20scripting%20&%20OS/IoT%20101.md)
+- [GraphQL](Web%20&%20Network%20Hacking/GraphQL.md)
 
 === end-multi-column
 

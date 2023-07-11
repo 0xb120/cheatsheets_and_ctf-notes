@@ -4,23 +4,78 @@
     "type": "split",
     "children": [
       {
-        "id": "7c83156c99a2eb86",
+        "id": "256724b35a50b685",
         "type": "tabs",
         "children": [
           {
-            "id": "51983b113e048906",
+            "id": "48a62699cd1e109c",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Play ground/Projects/opencart/OpenCart 4.0.2.1.canvas",
+                "viewState": {
+                  "x": 623.1172368934103,
+                  "y": 719.9580240975624,
+                  "zoom": -1.053336472622203
+                }
+              }
+            }
+          },
+          {
+            "id": "60f78dba07643a37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
+                "file": "Play ground/Projects/opencart/opencart 4.0.2.1.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ebb00d0a481623cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "966eaa73498ad72c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7389a5d58ce27f68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -47,7 +102,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "android",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -57,7 +112,7 @@
             }
           },
           {
-            "id": "6cc55868e1e4efcf",
+            "id": "c5db6fce94ae478b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,12 +129,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 340.5
+    "width": 332.5
   },
   "right": {
     "id": "659b37494d493ae5",
@@ -104,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md"
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md"
               }
             }
           },
@@ -140,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -169,7 +223,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -202,7 +256,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 440.5
+    "width": 333.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,60 +274,61 @@
       "file-tree-alternative:File Tree Alternative Plugin": true
     }
   },
-  "active": "51983b113e048906",
+  "active": "7389a5d58ce27f68",
   "lastOpenFiles": [
-    "Dev, ICT & Cybersec/Web & Network Hacking/SQL Injection.md",
-    "Dev, ICT & Cybersec/Tools/adb.md",
-    "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
-    "Dev, ICT & Cybersec/Services/MySQL.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/SQL 101.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Host Header attacks.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-origin resource sharing (CORS).md",
+    "zzz_res/attachments/Pasted image 20230709212945.png",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Prototype Pollution.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Prototype Pollution server-side.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Access control vulnerabilities.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
-    "Dev, ICT & Cybersec/Mobile Hacking/Android Application Security.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
-    "Play ground/CTFs/Acnologia Portal.md",
-    "Play ground/CTFs/eXtra Safe Security layers.md",
-    "Play ground/CTFs/Mutation Lab.md",
-    "Communities/MeetHack/Android Application List.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Client-side desync attacks.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Request Smuggling.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP Request Smuggling.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting Browser-powered Request Smuggling.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/H2.TE smuggling vulnerabilities.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/H2.CL smuggling vulnerabilities.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP-2 downgrading.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP-2 Request Smuggling.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication.md",
-    "Home.md",
-    "Dev, ICT & Cybersec/Mobile Hacking/Dynamic application security testing (DAST).md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Type Juggling (aka type confusion).md",
+    "Play ground/Projects/opencart/opencart 4.0.2.1.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/SQL Injection.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Business logic vulnerabilities.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Parameter Pollution (HPP).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Verb Tampering.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Host Header attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Poisoning.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Implementation flaws.md",
+    "Personal/Games/Minecraft.md",
+    "Dev, ICT & Cybersec/Tools/semgrep.md",
+    "Dev, ICT & Cybersec/Tools/john.md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Static application security testing (SAST).md",
+    "Play ground/Projects/opencart/OpenCart 4.0.2.1.canvas",
+    "Communities/i3P/3. Minimum viable product.md",
+    "Personal/To-do list.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/JavaScript & NodeJS.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Python.md",
+    "zzz_res/attachments/pause-based_CL0.png",
+    "zzz_res/attachments/XSS-using-HTTP2_tunneling-triggered.png",
+    "zzz_res/attachments/XSS-using-HTTP2_tunneling.png",
+    "zzz_res/attachments/HTTP-tunneled-request_cached.png",
+    "zzz_res/attachments/HTTP2-tunneling.png",
+    "Play ground/Personal Blog workflow.canvas",
+    "Play ground/Projects/asp.sr",
+    "Play ground/Projects/Belkin Modem",
+    "Play ground/Projects/CKFinder",
+    "Play ground/Projects/VirIT Mobile",
+    "Play ground/Projects/Private Vault",
+    "Play ground/Projects/opencart",
+    "zzz_res/attachments/Pasted image 20230702145610.png",
+    "zzz_res/attachments/CSP-policy-injection.png",
+    "zzz_res/attachments/xss-prefilled.png",
+    "zzz_res/attachments/Double-poisoning-XSS.png",
+    "zzz_res/attachments/DOM-XSS-from-cache.png",
     "Dev, ICT & Cybersec/Mobile Hacking/Android setup.canvas",
     "Communities/i3P",
     "Communities/MeetHack/MeetHack - Android Application Security 101.pdf",
-    "zzz_res/attachments/perfect-product-2.png",
-    "zzz_res/attachments/perfect-product-1.png",
-    "zzz_res/attachments/dangerous-colors.png",
-    "zzz_res/attachments/dangerous-secret.png",
-    "zzz_res/attachments/MLSA2.png",
-    "zzz_res/attachments/MLSA1.png",
-    "zzz_res/attachments/client-side_desync_resp.png",
-    "zzz_res/attachments/desync-PoC-console.png",
-    "zzz_res/attachments/client-side_desync.png",
-    "Play ground/Personal Blog workflow.canvas",
-    "zzz_res/attachments/asp.sr_3.png",
     "Personal/Games",
     "Communities/YouTube/_YT-Kanban.canvas",
     "YouTube & Communities/Personal blog workflow.canvas",
     "YouTube & Communities/Videos/_YT-Kanban-manual.canvas",
     "YouTube & Communities/Community dashboard.canvas",
     "Untitled 1.canvas",
-    "export/Android Application Security Slides.zip",
-    "export/Android Application Security Slides/plugin/chalkboard/_style.css",
-    "export/Android Application Security Slides/plugin/chalkboard/img",
-    "export/Android Application Security Slides/plugin/chalkboard/plugin (copy).js",
-    "export/Android Application Security Slides/plugin/chalkboard/plugin.js",
-    "export/Android Application Security Slides/plugin/chalkboard/style.css",
-    "export/Android Application Security Slides/plugin/chalkboard"
+    "export/Android Application Security Slides.zip"
   ]
 }

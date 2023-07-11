@@ -59,12 +59,17 @@ Main checks:
 
 ## Source Code Recovery
 
-### C#
+- Get it from cloud marketplaces (AWS, Azure, GCP) and reverse it
+- Get the docker image from Dockerhub
+- Contact sales or search for trial version
+- Leak the source code using vulnerabilities (LFI, XXE, RCE, etc.)
+
+### Decompile C\#
 
 - [ILSpy](https://github.com/icsharpcode/ILSpy) (decompiler)
 - [dnSpy](../Tools/dnSpy.md) (decompiler and debugger)
 
-### Java 
+### Decompile Java 
 
 >[!tip] Related resources 
 >See also [Android 101](../Mobile%20Hacking/Android%20101.md) and [Android Application Security](../Mobile%20Hacking/Android%20Application%20Security.md)
@@ -73,13 +78,21 @@ Main checks:
 - [jadx](../Tools/jadx.md)
 - [Bytecode Viewer](../Tools/Bytecode%20Viewer.md)
 
-## Source Code Analysis
+## White Box Analysis (Secure Code Review)
 
-- If possible, always enable database query logging and verbose errors
-- Use debug print statements in interpreted code
-- Attempt to live-debug the target compiled application ([dnSpy](../Tools/dnSpy.md) makes this relatively easy for .NET applications. The same can be achieved in the Eclipse IDE for Java applications although with a bit more effort)
-- After checking unauthenticated areas, focus on areas of the application that are likely to receive less attention (i.e., authenticated portions of the application)
-- Investigate how sanitization of user input is performed. Is it done using a trusted, opensource library, or is a custom solution in place?
+- If possible, always **enable database query logging** and **verbose errors**
+- Use **debug print statements** in interpreted code
+- Attempt to **live-debug** the target compiled application ([dnSpy](../Tools/dnSpy.md) makes this relatively easy for .NET applications. The same can be achieved in the Eclipse IDE for Java applications although with a bit more effort)
+- After checking **unauthenticated areas**, focus on **areas** of the application that are likely to receive less attention (i.e., authenticated portions of the application)
+- **Investigate how sanitization of user input is performed**. Is it done using a trusted, opensource library, or is a custom solution in place?
+
+### Source code analyses tools, rules and resources
+- [[semgrep]]
+- [CodeQL](../Tools/CodeQL.md)
+- [[graudit]] - https://github.com/wireghoul/graudit
+- [SonarSource](https://rules.sonarsource.com/) - 5000+ Static Analysis Rules across 30+ programming languages
+- [cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+- The Web Application Hacker Handbook - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL  
 
 ## Black Box Analysis
 
@@ -87,15 +100,18 @@ Focus on:
 - Validation
 - Sanitization
 - Normalization
+- APIs
+	- SOAP → WSDL (`?wsdl`)
+	- REST → Swagger, OpenAPI, Postman, etc.
 
 Evading restrictions:
 - [Evading Restrictions](../Web%20&%20Network%20Hacking/Evading%20Restrictions.md)
 
 ---
 
-## Attacks and Vulnerabilities
+# Attacks and Vulnerabilities
 
-### Server side vulnerabilities
+## Server side vulnerabilities
 
 - [Information Disclosure](../Web%20&%20Network%20Hacking/Information%20Disclosure.md)
 - [Remote Code Execution (RCE)](../Web%20&%20Network%20Hacking/Remote%20Code%20Execution%20(RCE).md)
@@ -117,7 +133,7 @@ Evading restrictions:
 - [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md)
 - [Insecure Deserialization & Object Injection](../Web%20&%20Network%20Hacking/Insecure%20Deserialization%20&%20Object%20Injection.md)
 - [Server Side Template Injection (SSTI)](../Web%20&%20Network%20Hacking/Server%20Side%20Template%20Injection%20(SSTI).md)
-- [Web Cache Attacks](../Web%20&%20Network%20Hacking/Web%20Cache%20Attacks.md)
+- [Web Cache Attacks](../Web%20&%20Network%20Hacking/Web%20Cache.md#Web%20Cache%20Attacks)
 - [JWT Vulnerabilities](../Web%20&%20Network%20Hacking/JWT%20Vulnerabilities.md)
 - [Server-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Server-side%20prototype%20pollution%20vuln)
 - [Class Pollution](../Web%20&%20Network%20Hacking/Class%20Pollution.md)
@@ -125,8 +141,11 @@ Evading restrictions:
 - [OpenID Connect](../Web%20&%20Network%20Hacking/OpenID%20Connect.md)
 - [HTTP Request Smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md)
 - [Server-side pause-based desync](../Web%20&%20Network%20Hacking/Client-side%20desync%20attacks.md#Server-side%20pause-based%20desync)
+- [Type Juggling (aka type confusion)](../Web%20&%20Network%20Hacking/Type%20Juggling%20(aka%20type%20confusion).md)
+- [Mass Assignment](../Web%20&%20Network%20Hacking/Mass%20Assignment.md)
+- [GraphQL vulnerabilities](../Web%20&%20Network%20Hacking/GraphQL%20vulnerabilities.md)
 
-### Client side vulnerabilities
+## Client side vulnerabilities
 
 - [Cross-Site Scripting (XSS)](../Web%20&%20Network%20Hacking/Cross-Site%20Scripting%20(XSS).md)
 - [Session Attacks (CSRF, session stealing, etc.)](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md)
@@ -137,17 +156,12 @@ Evading restrictions:
 - [DOM-based vulnerabilities](../Web%20&%20Network%20Hacking/DOM-based%20vulnerabilities.md)
 - [Client-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Client-side%20prototype%20pollution%20vuln)
 - [Browser-powered request smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md#Browser-powered%20request%20smuggling)
-
-
-### Other web technologies vulnerabilities
-
-
+- [Fetch Diversion](../Web%20&%20Network%20Hacking/Fetch%20Diversion.md)
 
 ---
 
-- [Type Juggling](../Web%20&%20Network%20Hacking/Type%20Juggling.md)
 
-## Security Implementations and Mitigations
+# Security Implementations and Mitigations
 
 - [Access control security models](../Web%20&%20Network%20Hacking/Access%20control%20security%20models.md)
 - [Authentication](../Web%20&%20Network%20Hacking/Authentication.md)

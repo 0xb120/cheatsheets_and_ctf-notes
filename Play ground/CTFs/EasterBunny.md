@@ -452,7 +452,7 @@ Connection: close
 
 # The Bug
 
-[Web cache poisoning | Web Security Academy](https://portswigger.net/web-security/web-cache-poisoning)
+[Web Cache Poisoning](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Web%20Cache%20Poisoning.md)
 
 Base-tag hijacking the cache:
 

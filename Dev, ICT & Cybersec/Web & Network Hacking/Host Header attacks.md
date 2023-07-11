@@ -85,6 +85,13 @@ Host: vulnerable-website.com
 Host: bad-stuff-here
 ```
 
+### Provide different ports
+
+```http
+GET /example HTTP/1.1
+Host: vulnerable-website.com:bad-stuff-here
+```
+
 ### Supply absolute URLs
 
 ```http
@@ -117,7 +124,6 @@ X-Forwarded-Host: bad-stuff-here
 
 >[!example]
 >For a pratical exmaple take a look to [Password reset poisoning via middleware](Password%20Reset%20Poisoning.md#Password%20reset%20poisoning%20via%20middleware) or [JWT authentication bypass via `X-HTTP-Method-Override` header](https://github.com/GoogleCloudPlatform/esp-v2/security/advisories/GHSA-6qmp-9p95-fc5f).
-
 
 Headers that may comes handy:
 - `X-Forwarded-Host`
@@ -274,8 +280,6 @@ X-Cache: hit
 <script type="text/javascript" src="//exploit-0a1a00c10309777b81f110ba012e00f3.exploit-server.net/resources/js/tracking.js">
 ...
 ```
-
-
 
 
 ### Host Header Injection + Broken Access Control + Authentication Bypass

@@ -1,6 +1,12 @@
 >[!warning]
 >JavaScript uses a prototypal inheritance model, which is quite different from the class-based model used by many other languages.
 
+>[!tip] Breakpoint
+>If you insert `debugger;` anywhere in the JS code, the execution will pause when that instruction is reached.
+
+>[!tip] AWAE snippets
+>Advanced XSS snippets for AWAE available here: https://mlcsec.com/posts/js-awae-prep/
+
 # Interchangeable syntax
 
 ```jsx
@@ -257,6 +263,25 @@ xhr.open('GET', 'http://www.google.com', true);
 xhr.send(null);
 ```
 
+# PostMessage and EventListener
+
+Listen for incoming messages:
+```html
+<script>
+    window.addEventListener('message', function(e) {
+        fetch("/" + encodeURIComponent(e.data.data))
+    }, false)
+</script>
+```
+
+Send messages to the top parent windows from an `iframe`:
+```html
+<script>
+parent.postMessage({type: 'onload', data: window.location.href}, '*')
+...
+</script>
+```
+
 # RCE payloads
 
 ```jsx
@@ -268,4 +293,5 @@ process.mainModule.require('child_process').execSync('echo+0xbro').toString()
 ```
 
 # XSS
-- [javascript-bypass-blacklists-techniques](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting#javascript-bypass-blacklists-techniques)
+
+![XSS cheat sheets & filtering bypass](../Web%20&%20Network%20Hacking/Cross-Site%20Scripting%20(XSS).md#XSS%20cheat%20sheets%20&%20filtering%20bypass)

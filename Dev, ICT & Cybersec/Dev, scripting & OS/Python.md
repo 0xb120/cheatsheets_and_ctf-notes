@@ -1,7 +1,24 @@
-# Python3 snippets
+
+## Versions and environment management
 
 >[!note]
 >See also how to use **multiple isolated versions of Python** using [pyenv](../Tools/pyenv.md).
+
+```bash
+# create a virtual environemnt named .venv containing the python standalone environment
+$ python3 -m venv .venv
+
+# active the virtual environment
+$ source .venv/bin/activate
+
+# disable the environment
+$ deactivate
+```
+
+# Python3 snippets
+
+>[!tip] AWAE snippets
+>Pre-built examples and trick available here: https://mlcsec.com/posts/python-awae-prep/
 
 ## Basic I/O
 

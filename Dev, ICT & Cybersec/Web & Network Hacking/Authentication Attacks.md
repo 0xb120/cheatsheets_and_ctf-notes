@@ -15,7 +15,8 @@ Techniques:
 	- [HTTP Verb Tampering](HTTP%20Verb%20Tampering.md)
 - [Session Attacks (CSRF, session stealing, etc.)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md)
 - [SQL Injection leading to authentication bypass](SQL%20Injection.md#Authentication%20Bypass)
--  [Type Juggling](Type%20Juggling.md)
+- [Mass Assignment](Mass%20Assignment.md)
+-  [Type Juggling (aka type confusion)](Type%20Juggling%20(aka%20type%20confusion).md)
 ```http
 POST /login HTTP/1.1
 Host: 0a690029038e65bfc04ed2d1007d0057.web-security-academy.net

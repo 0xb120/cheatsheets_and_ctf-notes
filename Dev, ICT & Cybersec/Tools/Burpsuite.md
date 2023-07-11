@@ -122,6 +122,8 @@ Detects NGINX alias traversal due to misconfiguration. The extension implements 
 
 ![|900](../../zzz_res/attachments/nginx-alias-traversal.png)
 
+Read [Hunting for Nginx Alias Traversals in the wild](https://labs.hakaioffsec.com/nginx-alias-traversal/) to better understand the vulnerability and how to exploit it
+
 ### *IIS Tilde Enumeration Scanner
 
 **Add an Active Scanner check** for detecting IIS Tilde Enumeration vulnerability and **add a new tab in the Burp UI to manually exploit the vulnerability**.

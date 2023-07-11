@@ -176,7 +176,8 @@ Many applications that place user input into file paths implement some kind of d
 
 ## Evading SQL query detection
 
-- [Bypass detections and avoid quotes and double quotes](SQL%20Injection.md#Bypass%20detections%20and%20avoid%20quotes%20and%20double%20quotes)
+- [Avoid quotes and double quotes](SQL%20Injection.md#Avoid%20quotes%20and%20double%20quotes)
+- [Abusing JSON-Based SQL to Bypass WAF](SQL%20Injection.md#Abusing%20JSON-Based%20SQL%20to%20Bypass%20WAF)
 
 ## Evading security controls using smuggling
 
@@ -186,7 +187,6 @@ Many applications that place user input into file paths implement some kind of d
 
 # Other resources
 
-- [Bypass detections and avoid quotes and double quotes](SQL%20Injection.md#Bypass%20detections%20and%20avoid%20quotes%20and%20double%20quotes)
 - [Obfuscating attacks using encodings](https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings)
 - [XSS cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 - [A new era of SSRF](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017#1)

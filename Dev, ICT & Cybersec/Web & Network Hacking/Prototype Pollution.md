@@ -7,7 +7,7 @@ It lets an attacker control properties of objects that would otherwise be inacce
 
 # High level overview
 
-Prototype pollution vulnerabilities typically arise when a function recursively merges an object containing user-controllable properties into an existing object, without first sanitizing the keys. This can allow an attacker to inject a property with a key like `__proto__`, along with arbitrary nested properties.
+Prototype pollution vulnerabilities typically arise when a function recursively merges an object containing user-controllable properties into an existing object (see also [Mass Assignment](Mass%20Assignment.md)), without first sanitizing the keys. This can allow an attacker to inject a property with a key like `__proto__`, along with arbitrary nested properties.
 
 It's possible to pollute any prototype object, but this most commonly occurs with the built-in global `Object.prototype.
 

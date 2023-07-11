@@ -84,6 +84,7 @@ Connection: close
 
 - [Evading Restrictions](Evading%20Restrictions.md)
 - [A New Era of SSRF](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017#1)
+- [DNS rebinding](../Services/DNS%20-%20Domain%20Name%20System.md#DNS%20rebinding)
 
 ## External resources
 

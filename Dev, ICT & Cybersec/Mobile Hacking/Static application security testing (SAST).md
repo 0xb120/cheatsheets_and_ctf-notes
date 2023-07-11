@@ -18,7 +18,7 @@ Main tasks include:
 
 Reversing is the process to **convert the compiled applications into human-readable source code**. Usually it is performed in order to understand the internal application functionality and search for vulnerabilities. Furthermore, reversing is a step in order to patch APK from security implementations.
 
-Reversing steps:
+General reversing steps:
 1. Retrieve the APK
 2. Retrieve the DEX from the APK
 3. Convert the DEX to JAR
@@ -76,6 +76,10 @@ We can also extract Flutter Metadata from the application using a modified versi
 >- https://www.guardsquare.com/blog/how-classical-attacks-apply-to-flutter-apps
 >- https://cryptax.medium.com/reversing-an-android-sample-which-uses-flutter-23c3ff04b847
 
+### ReactNative
+
+### Apache Cordova
+
 ## Manifest and source code analysis
 
 Search for:
@@ -88,7 +92,7 @@ Search for:
 - Dangerous code
     - SQL statements
     - Log enabled
-    - Insecure protocols
+    - Insecure protocols and deeplink
     - Weak cryptographic functions or key leaks
     - Weak WebView configuration
 - Check Configuration of Cryptographic Standard Algorithms
@@ -121,22 +125,26 @@ SAST can be performed via automatic open source tool which automatically decompi
 ### Automatic Tools
 - [MobSF](../Tools/MobSF.md)
 - MARA Framework
-- [Droidstat-x](https://github.com/integrity-sa/droidstatx) (code review)
-- Qark
-- Androwarn
+- [Droidstat-x](https://github.com/integrity-sa/droidstatx) 
+- [qark](../Tools/qark.md) (last commit on 2019)
+- [spotbug](../Tools/spotbug.md)
+- [AndroBugs](https://github.com/AndroBugs/AndroBugs_Framework) (deprecated)
+- [semgrep rules](https://github.com/mindedsecurity/semgrep-rules-android-security/tree/main/rules)
 
-### Manual Tools
-- [adb](../Tools/adb.md#Static%20analysis)
-- [drozer](../Tools/drozer.md)
+### General analyses tool
+
+- [apkid](../Tools/apkid.md)
+- [fsmon](https://github.com/nowsecure/fsmon)
 
 --- column-end ---
 
-## Android Reverse Engineering Tools
+### Android Reverse Engineering Tools
 - [APKTool](../Tools/APKTool.md)
 - [Bytecode Viewer](../Tools/Bytecode%20Viewer.md)
 - [jadx](../Tools/jadx.md)
 - [dex2jar](../Tools/dex2jar.md)
 - [JD-GUI](../Tools/JD-GUI.md)
+- [APKLab](https://github.com/APKLab/APKLab) (VSCode extension)
 - [simplify](../Tools/simplify.md)
 - [ClassNameDeobfuscator](https://github.com/HamiltonianCycle/ClassNameDeobfuscator)
 
