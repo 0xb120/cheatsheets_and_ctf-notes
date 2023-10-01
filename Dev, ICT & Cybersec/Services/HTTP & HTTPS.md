@@ -31,6 +31,7 @@ Main checks:
 - **good wordlists**
 	- [SecLists](https://github.com/danielmiessler/SecLists)
 	- [Assetnote Wordlist](https://wordlists.assetnote.io/)
+	- https://github.com/nice-registry/all-the-package-names (npm public package names)
 
 ### Proxy
 
@@ -57,6 +58,10 @@ Main checks:
 - wpscanner
 - [unSharepoint](https://blog.cys4.com/tool/2020/12/21/unSharePoint) (scanner)
 
+### Other useful tools
+
+- Collaborator / [cowitness](https://github.com/stolenusername/cowitness) (HTTP server and DNS server mimic)
+
 ## Source Code Recovery
 
 - Get it from cloud marketplaces (AWS, Azure, GCP) and reverse it
@@ -64,19 +69,9 @@ Main checks:
 - Contact sales or search for trial version
 - Leak the source code using vulnerabilities (LFI, XXE, RCE, etc.)
 
-### Decompile C\#
-
-- [ILSpy](https://github.com/icsharpcode/ILSpy) (decompiler)
-- [dnSpy](../Tools/dnSpy.md) (decompiler and debugger)
-
-### Decompile Java 
-
->[!tip] Related resources 
->See also [Android 101](../Mobile%20Hacking/Android%20101.md) and [Android Application Security](../Mobile%20Hacking/Android%20Application%20Security.md)
-
-- [JD-GUI](../Tools/JD-GUI.md)
-- [jadx](../Tools/jadx.md)
-- [Bytecode Viewer](../Tools/Bytecode%20Viewer.md)
+Further information inside the language specific notes:
+- [Java](../Dev,%20scripting%20&%20OS/Java.md)
+- [dotNET](../Dev,%20scripting%20&%20OS/dotNET.md)
 
 ## White Box Analysis (Secure Code Review)
 
@@ -87,13 +82,22 @@ Main checks:
 - **Investigate how sanitization of user input is performed**. Is it done using a trusted, opensource library, or is a custom solution in place?
 
 ### Source code analyses tools, rules and resources
+
+>[!tip]
+>Search for dangerous patterns or functions using regexes, both manually and with automated tools!
+
 - [[semgrep]]
 - [CodeQL](../Tools/CodeQL.md)
 - [[graudit]] - https://github.com/wireghoul/graudit
 - [SonarSource](https://rules.sonarsource.com/) - 5000+ Static Analysis Rules across 30+ programming languages
 - [cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
-- The Web Application Hacker Handbook - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL  
+- The Web Application Hacker Handbook - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL 
 
+For software updates and patches, focus on **diffing** [^patch] **older and newer version**:
+- Read every detail contained inside the advisory in order to understand the kind of vulnerability and what/where to search inside the code
+- Use the GitHub online editor or if you prefer, use [git and do patch diffing this way](../Tools/git.md#patch%20diffing)
+
+[^patch]: [AppSecSchool - How to Extract a Patch](../../Readwise/Articles/AppSecSchool%20-%20How%20to%20Extract%20a%20Patch.md)
 ## Black Box Analysis
 
 Focus on:
@@ -144,7 +148,7 @@ Evading restrictions:
 - [Type Juggling (aka type confusion)](../Web%20&%20Network%20Hacking/Type%20Juggling%20(aka%20type%20confusion).md)
 - [Mass Assignment](../Web%20&%20Network%20Hacking/Mass%20Assignment.md)
 - [GraphQL vulnerabilities](../Web%20&%20Network%20Hacking/GraphQL%20vulnerabilities.md)
-
+- [Race Condition](../Web%20&%20Network%20Hacking/Race%20Condition.md)
 ## Client side vulnerabilities
 
 - [Cross-Site Scripting (XSS)](../Web%20&%20Network%20Hacking/Cross-Site%20Scripting%20(XSS).md)

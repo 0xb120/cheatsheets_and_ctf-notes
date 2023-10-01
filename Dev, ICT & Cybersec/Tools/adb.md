@@ -139,9 +139,12 @@ sqlite> select * from Notes;
 
 ## Push burpsuite certificate inside the system certificate store
 
-- https://docs.mitmproxy.org/stable/howto-install-system-trusted-ca-android/
-- https://gist.github.com/pwlin/8a0d01e6428b7a96e2eb?permalink_comment_id=3927718#gistcomment-3927718
-- https://httptoolkit.com/docs/guides/android/#adb-interception
+### Android >= 7 & Android <14
+
+>[!tldr] TL.DR
+>- [Install System CA Certificate on Android Emulator](https://docs.mitmproxy.org/stable/howto-install-system-trusted-ca-android/)
+>- [Insert certificate into system certificate store by dylanninin](https://gist.github.com/pwlin/8a0d01e6428b7a96e2eb?permalink_comment_id=3927718#gistcomment-3927718)
+>- [ADB interception](https://httptoolkit.com/docs/guides/android/#adb-interception)
 
 ```bash
 # convert burpsuite certificate from der to cer/pem/crt
@@ -178,6 +181,98 @@ If the method above not worked and the emulator stuck on reboot [^solution] :
 .\adb.exe shell chmod 644 /system/etc/security/cacerts/9a5ba575.0
 .\adb.exe reboot
 ```
+
+### Android >14 [^certs-android-14]
+
+[^certs-android-14]: [httptoolkit.com - New Ways to Inject System CA Certificates in Android 14](../../Readwise/Articles/httptoolkit.com%20-%20New%20Ways%20to%20Inject%20System%20CA%20Certificates%20in%20Android%2014.md)
+
+>[!warning]
+>Both the techniques are **temporary**! The injected certificates only last until the next reboot.
+
+In Android 14, system-trusted CA certificates will generally live in `/apex/com.android.conscrypt/cacerts`, and all of `/apex` is immutable. This means that APEX cacerts path cannot be remounted as rewritable - remounts simply fail. 
+
+The reason is that `/apex` mount is [explicitly mounted](https://cs.android.com/android/platform/superproject/main/+/main:system/core/init/mount_namespace.cpp;l=97;drc=566c65239f1cf3fcb0d8745715e5ef1083d4bd3a) with PRIVATE propagation, so that all changes to mounts inside the `/apex` path are never shared between processes. However we are root, so using `nsenter`, we can run code in other namespaces!
+
+Bind-mounting through NSEnter:
+```bash
+mount -t tmpfs tmpfs /system/etc/security/cacerts
+
+# place the CA certificates you're interested in into this directory and set permissions & SELinux labels appropriately
+
+nsenter --mount=/proc/$ZYGOTE_PID/ns/mnt -- \
+    /bin/mount --bind /system/etc/security/cacerts /apex/com.android.conscrypt/cacerts
+    
+nsenter --mount=/proc/$APP_PID/ns/mnt -- \
+    /bin/mount --bind /system/etc/security/cacerts /apex/com.android.conscrypt/cacerts
+```
+
+Automated script:
+```bash
+# Create a separate temp directory, to hold the current certificates
+# Otherwise, when we add the mount we can't read the current certs anymore.
+mkdir -p -m 700 /data/local/tmp/tmp-ca-copy
+
+# Copy out the existing certificates
+cp /apex/com.android.conscrypt/cacerts/* /data/local/tmp/tmp-ca-copy/
+
+# Create the in-memory mount on top of the system certs folder
+mount -t tmpfs tmpfs /system/etc/security/cacerts
+
+# Copy the existing certs back into the tmpfs, so we keep trusting them
+mv /data/local/tmp/tmp-ca-copy/* /system/etc/security/cacerts/
+
+# Copy our new cert in, so we trust that too
+mv $CERTIFICATE_PATH /system/etc/security/cacerts/
+
+# Update the perms & selinux context labels
+chown root:root /system/etc/security/cacerts/*
+chmod 644 /system/etc/security/cacerts/*
+chcon u:object_r:system_file:s0 /system/etc/security/cacerts/*
+
+# Deal with the APEX overrides, which need injecting into each namespace:
+
+# First we get the Zygote process(es), which launch each app
+ZYGOTE_PID=$(pidof zygote || true)
+ZYGOTE64_PID=$(pidof zygote64 || true)
+# N.b. some devices appear to have both!
+
+# Apps inherit the Zygote's mounts at startup, so we inject here to ensure
+# all newly started apps will see these certs straight away:
+for Z_PID in "$ZYGOTE_PID $ZYGOTE64_PID"; do
+    # We use 'echo' below to trim spaces
+    nsenter --mount=/proc/$(echo $Z_PID)/ns/mnt -- \
+        /bin/mount --bind /system/etc/security/cacerts /apex/com.android.conscrypt/cacerts
+done
+
+# Then we inject the mount into all already running apps, so they
+# too see these CA certs immediately:
+
+# Get the PID of every process whose parent is one of the Zygotes:
+APP_PIDS=$(
+    echo "$ZYGOTE_PID $ZYGOTE64_PID" | \
+    xargs -n1 ps -o 'PID' -P | \
+    grep -v PID
+)
+
+# Inject into the mount namespace of each of those apps:
+for PID in $APP_PIDS; do
+    nsenter --mount=/proc/$PID/ns/mnt -- \
+        /bin/mount --bind /system/etc/security/cacerts /apex/com.android.conscrypt/cacerts &
+done
+wait # Launched in parallel - wait for completion here
+
+echo "System certificate injected"
+```
+
+Recursively remounting mountpoints: [^g1a55er]
+
+[^g1a55er]: [Android 14 Still Allows Modification of System Certificates, g1a55er](https://www.g1a55er.net/Android-14-Still-Allows-Modification-of-System-Certificates)
+
+- You can remount `/apex` manually, removing the PRIVATE propagation and making it writable (ironically, it seems that entirely removing private propagation _does_ propagate everywhere)
+- You copy out the entire contents of `/apex/com.android.conscrypt` elsewhere
+- Then you unmount `/apex/com.android.conscrypt` entirely - removing the read-only mount that immutably provides this module
+- Then you copy the contents back, so it lives into the `/apex` mount directly, where it can be modified (you need to do this quickly, as [apparently](https://infosec.exchange/@g1a55er/111069489513139531) you can see crashes otherwise)
+- This should take effect immediately, but they recommend killing `system_server` (restarting all apps) to get everything back into a consistent state
 
 ## Activity interaction
 

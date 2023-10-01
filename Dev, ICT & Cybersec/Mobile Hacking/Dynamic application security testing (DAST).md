@@ -98,7 +98,7 @@ Evasion techniques:
 
 Verify for each exported component what it does and if exposes private information or vulnerable behaviors.
 Some examples are:
-- [Arbitrary file read using exported content provider](../../Play%20ground/Projects/Private%20Vault/Private%20Vault.md#Arbitrary%20file%20read%20using%20exported%20content%20provider)
+- [Arbitrary file read using exported content provider](../../Play%20ground/Projects/Digital%20Private%20Vault/Digital%20Private%20Vault%20(summary).md#Arbitrary%20file%20read%20using%20exported%20content%20provider)
 - PIN/Authentication bypass using exported activities
 - [Intent redirection](https://blog.scrt.ch/2023/03/29/attacking-android-antivirus-applications/)
 

@@ -105,6 +105,7 @@ config:
   font_size: 16
   metadata_date_format: "yyyy-MM-dd HH:mm:ss"
   implementation: default
+  show_metadata_tags: false
 filters:
   enabled: false
   conditions:

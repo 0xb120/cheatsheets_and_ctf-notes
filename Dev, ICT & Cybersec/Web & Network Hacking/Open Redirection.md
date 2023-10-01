@@ -20,3 +20,13 @@ Host: vulnerable-website.com
 HTTP/1.1 301 Moved Permanently
 Location: //attacker-website.com/example/
 ```
+
+# Useful dorks
+
+```
+site:*site.com inurl: redirect
+site:*site.com inurl: url
+site:*site.com inurl: fallback
+site:*site.com inurl: target
+site:*site.com inurl: http
+```

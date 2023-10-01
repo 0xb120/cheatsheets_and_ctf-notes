@@ -181,22 +181,25 @@ var LinkMetadataParser = class {
     this.htmlDoc = htmlDoc;
   }
   parse() {
-    var _a, _b;
-    const title = (_a = this.getTitle()) == null ? void 0 : _a.replace(/\r\n|\n|\r/g, "").replace(/"/g, '\\"').trim();
-    if (!title)
-      return;
-    const description = (_b = this.getDescription()) == null ? void 0 : _b.replace(/\r\n|\n|\r/g, "").replace(/"/g, '\\"').trim();
-    const { hostname } = new URL(this.url);
-    const favicon = this.getFavicon();
-    const image = this.getImage();
-    return {
-      url: this.url,
-      title,
-      description,
-      host: hostname,
-      favicon,
-      image
-    };
+    return __async(this, null, function* () {
+      var _a, _b;
+      const title = (_a = this.getTitle()) == null ? void 0 : _a.replace(/\r\n|\n|\r/g, "").replace(/"/g, '\\"').trim();
+      if (!title)
+        return;
+      const description = (_b = this.getDescription()) == null ? void 0 : _b.replace(/\r\n|\n|\r/g, "").replace(/"/g, '\\"').trim();
+      const { hostname } = new URL(this.url);
+      const favicon = yield this.getFavicon();
+      const image = yield this.getImage();
+      return {
+        url: this.url,
+        title,
+        description,
+        host: hostname,
+        favicon,
+        image,
+        indent: 0
+      };
+    });
   }
   getTitle() {
     var _a, _b;
@@ -217,16 +220,58 @@ var LinkMetadataParser = class {
       return metaDescription;
   }
   getFavicon() {
-    var _a;
-    const favicon = (_a = this.htmlDoc.querySelector("link[rel='icon']")) == null ? void 0 : _a.getAttr("href");
-    if (favicon)
-      return favicon;
+    return __async(this, null, function* () {
+      var _a;
+      const favicon = (_a = this.htmlDoc.querySelector("link[rel='icon']")) == null ? void 0 : _a.getAttr("href");
+      if (favicon)
+        return yield this.fixImageUrl(favicon);
+    });
   }
   getImage() {
-    var _a;
-    const ogImage = (_a = this.htmlDoc.querySelector("meta[property='og:image']")) == null ? void 0 : _a.getAttr("content");
-    if (ogImage)
-      return ogImage;
+    return __async(this, null, function* () {
+      var _a;
+      const ogImage = (_a = this.htmlDoc.querySelector("meta[property='og:image']")) == null ? void 0 : _a.getAttr("content");
+      if (ogImage)
+        return yield this.fixImageUrl(ogImage);
+    });
+  }
+  fixImageUrl(url) {
+    return __async(this, null, function* () {
+      if (url === void 0)
+        return "";
+      const { hostname } = new URL(this.url);
+      let image = url;
+      if (url && url.startsWith("//")) {
+        const testUrlHttps = `https:${url}`;
+        const testUrlHttp = `http:${url}`;
+        if (yield checkUrlAccessibility(testUrlHttps)) {
+          image = testUrlHttps;
+        } else if (yield checkUrlAccessibility(testUrlHttp)) {
+          image = testUrlHttp;
+        }
+      } else if (url && url.startsWith("/") && hostname) {
+        const testUrlHttps = `https://${hostname}${url}`;
+        const testUrlHttp = `http://${hostname}${url}`;
+        const resUrlHttps = yield checkUrlAccessibility(testUrlHttps);
+        const resUrlHttp = yield checkUrlAccessibility(testUrlHttp);
+        if (resUrlHttps) {
+          image = testUrlHttps;
+        } else if (resUrlHttp) {
+          image = testUrlHttp;
+        }
+      }
+      function checkUrlAccessibility(url2) {
+        return __async(this, null, function* () {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.onload = () => resolve(true);
+            img.onerror = () => resolve(false);
+            img.src = url2;
+          });
+        });
+      }
+      return image;
+    });
   }
 };
 
@@ -327,6 +372,9 @@ var CodeBlockProcessor = class {
           el.appendChild(this.genErrorEl(error.message));
         } else if (error instanceof YamlParseError) {
           el.appendChild(this.genErrorEl(error.message));
+        } else if (error instanceof TypeError) {
+          el.appendChild(this.genErrorEl("internal links must be surrounded by quotes."));
+          console.log(error);
         } else {
           console.log("Code Block: cardlink unknown error", error);
         }
@@ -335,6 +383,14 @@ var CodeBlockProcessor = class {
   }
   parseLinkMetadataFromYaml(source) {
     let yaml;
+    let indent = -1;
+    source = source.split(/\r?\n|\r|\n/g).map((line) => line.replace(/^\t+/g, (tabs) => {
+      const n = tabs.length;
+      if (indent < 0) {
+        indent = n;
+      }
+      return " ".repeat(n);
+    })).join("\n");
     try {
       yaml = (0, import_obsidian3.parseYaml)(source);
     } catch (error) {
@@ -350,7 +406,8 @@ var CodeBlockProcessor = class {
       description: yaml.description,
       host: yaml.host,
       favicon: yaml.favicon,
-      image: yaml.image
+      image: yaml.image,
+      indent
     };
   }
   genErrorEl(errorMsg) {
@@ -364,6 +421,7 @@ var CodeBlockProcessor = class {
   genLinkEl(data) {
     const containerEl = document.createElement("div");
     containerEl.addClass("auto-card-link-container");
+    containerEl.setAttr("data-auto-card-link-depth", data.indent);
     const cardEl = document.createElement("a");
     cardEl.addClass("auto-card-link-card");
     cardEl.setAttr("href", data.url);
@@ -375,42 +433,51 @@ var CodeBlockProcessor = class {
     titleEl.addClass("auto-card-link-title");
     titleEl.textContent = data.title;
     mainEl.appendChild(titleEl);
-    const descriptionEl = document.createElement("div");
-    descriptionEl.addClass("auto-card-link-description");
     if (data.description) {
+      const descriptionEl = document.createElement("div");
+      descriptionEl.addClass("auto-card-link-description");
       descriptionEl.textContent = data.description;
+      mainEl.appendChild(descriptionEl);
     }
-    mainEl.appendChild(descriptionEl);
     const hostEl = document.createElement("div");
     hostEl.addClass("auto-card-link-host");
     mainEl.appendChild(hostEl);
     if (data.favicon) {
+      if (!CheckIf.isUrl(data.favicon))
+        data.favicon = this.getLocalImagePath(data.favicon);
       const faviconEl = document.createElement("img");
       faviconEl.addClass("auto-card-link-favicon");
-      if (data.favicon) {
-        faviconEl.setAttr("src", data.favicon);
-      }
-      faviconEl.setAttr("width", 14);
-      faviconEl.setAttr("height", 14);
-      faviconEl.setAttr("alt", "");
+      faviconEl.setAttr("src", data.favicon);
       hostEl.appendChild(faviconEl);
     }
-    const hostNameEl = document.createElement("span");
     if (data.host) {
+      const hostNameEl = document.createElement("span");
       hostNameEl.textContent = data.host;
+      hostEl.appendChild(hostNameEl);
     }
-    hostEl.appendChild(hostNameEl);
-    const thumbnailEl = document.createElement("div");
-    thumbnailEl.addClass("auto-card-link-thumbnail");
-    cardEl.appendChild(thumbnailEl);
-    const thumbnailImgEl = document.createElement("img");
-    thumbnailImgEl.addClass("auto-card-link-thumbnail-img");
     if (data.image) {
-      thumbnailImgEl.setAttr("src", data.image);
+      if (!CheckIf.isUrl(data.image))
+        data.image = this.getLocalImagePath(data.image);
+      const thumbnailEl = document.createElement("img");
+      thumbnailEl.addClass("auto-card-link-thumbnail");
+      thumbnailEl.setAttr("src", data.image);
+      thumbnailEl.setAttr("draggable", "false");
+      cardEl.appendChild(thumbnailEl);
     }
-    thumbnailImgEl.setAttr("alt", "");
-    thumbnailEl.appendChild(thumbnailImgEl);
+    new import_obsidian3.ButtonComponent(containerEl).setClass("auto-card-link-copy-url").setClass("clickable-icon").setIcon("copy").setTooltip(`Copy URL
+${data.url}`).onClick(() => {
+      navigator.clipboard.writeText(data.url);
+      new import_obsidian3.Notice("URL copied to your clipboard");
+    });
     return containerEl;
+  }
+  getLocalImagePath(link) {
+    var _a;
+    link = link.slice(2, -2);
+    const imageRelativePath = (_a = this.app.metadataCache.getFirstLinkpathDest((0, import_obsidian3.getLinkpath)(link), "")) == null ? void 0 : _a.path;
+    if (!imageRelativePath)
+      return link;
+    return this.app.vault.adapter.getResourcePath(imageRelativePath);
   }
 };
 

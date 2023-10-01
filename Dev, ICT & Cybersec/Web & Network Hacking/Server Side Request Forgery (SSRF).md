@@ -86,7 +86,8 @@ Connection: close
 - [A New Era of SSRF](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017#1)
 - [DNS rebinding](../Services/DNS%20-%20Domain%20Name%20System.md#DNS%20rebinding)
 
-## External resources
+## External resources and tools
 
 - [HackTrick (SSRF)](https://book.hacktricks.xyz/pentesting-web/ssrf-server-side-request-forgery)
 - [Targeting auxiliary systems](https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface#aux)
+- [SSRFPwned](https://github.com/blackhatethicalhacking/SSRFPwned) - Checks for SSRF using built-in custom Payloads after fetching URLs from Multiple Passive Sources & applying complex patterns aimed at SSRF

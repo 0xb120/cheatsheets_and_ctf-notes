@@ -2,7 +2,7 @@ Original article: [Fetch Diversion, acut3](https://acut3.github.io/bug-bounty/20
 
 # Diverting fetch requests
 
-Fetch diversion consists on tricking the victim into clicking a malicious link - created at-hoc - that will fetch the supposed request to a different API, eventually causing [DOM-based XSS](DOM-based%20vulnerabilities.md#DOM-based%20XSS), leaking secrets or making authenticated API call.
+Fetch diversion consists on tricking the victim into clicking a malicious link - created ad-hoc - that will fetch the supposed request to a different API, eventually causing [DOM-based XSS](DOM-based%20vulnerabilities.md#DOM-based%20XSS), leaking secrets or making authenticated API call.
 
 The vulnerability exploits [Path Traversal](Path%20Traversal.md) on the client-side in order to hijack legit API call to arbitrary APIs.
 
@@ -29,7 +29,7 @@ https://api.target.com/v2/malicious/path
 If the application allows [Insecure File Upload](Insecure%20File%20Upload.md), and if the uploaded file can be retrieved on a endpoint that can be reached with a Fetch Diversion, then we can control the response to any request we are able to divert. It can result in a [DOM-based XSS](DOM-based%20vulnerabilities.md#DOM-based%20XSS) if a property from the response is inserted into the DOM in an insecure way.
 
 >[!tip]
-> The `Content-Type` used to serve the uploaded file doesn’t matter. Since the application is making a simple fetch, it will happily treat the response as whatever it expects (usually `application/json`), irrespective of its stated `Content-Type`.
+>The `Content-Type` used to serve the uploaded file doesn’t matter. Since the application is making a simple fetch, it will happily treat the response as whatever it expects (usually `application/json`), irrespective of its stated `Content-Type`.
 
 Requirements:
 1. We need to be able to upload a file with arbitrary content, which will be served unmodified. If the back-end checks the content of the file or tries to process it in any way (image transcoding for example), it probably won’t be exploitable.

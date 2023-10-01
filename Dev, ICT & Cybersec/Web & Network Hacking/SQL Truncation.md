@@ -49,3 +49,7 @@ csrf=hthHgzrgwAoViTeeWlwYBUF3Uwbkcsdk&username=user2&email=attacker@aaaaaaaaaaaa
 Accessed the restricted area:
 
 ![](zzz_res/attachments/SQL-truncation3.png)
+
+## SQL Truncation in file upload leading to RCE
+
+Article: [RCE in admin panel via File Write](https://medium.com/@knownsec404team/the-analysis-of-mybb-18-20-from-stored-xss-to-rce-7234d7cc0e72#:~:text=generates%20the%20tag.-,RCE%20in%20Admin%20panel%20via%20File%20Write,-In%20the%20backend)

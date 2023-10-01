@@ -266,6 +266,27 @@ Extension for sending large numbers of HTTP requests and analyzing the results. 
 
 ![Untitled|900](../../zzz_res/attachments/Diogenes'%20Rage%2027860513f86a42b2aec2640a41096060%207.png)
 
+To use the single-packet attack in Turbo Intruder:
+
+1. Ensure that the target supports HTTP/2. The single-packet attack is incompatible with HTTP/1.
+2. Set the `engine=Engine.BURP2` and `concurrentConnections=1` configuration options for the request engine.
+3. When queueing your requests, group them by assigning them to a named gate using the `gate` argument for the `engine.queue()` method.
+4. To send all of the requests in a given group, open the respective gate with the `engine.openGate()` method.
+
+```py
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                            concurrentConnections=1,
+                            engine=Engine.BURP2
+                            )
+    
+    # queue 20 requests in gate '1'
+    for i in range(20):
+        engine.queue(target.req, gate='1')
+    
+    # send all requests in gate '1' in parallel
+    engine.openGate('1')
+```
 ### Content Type Converter
 
 Converts data within JSON2XML, XML2JSON, HTTP2JSON. HTTP2XML
@@ -303,3 +324,74 @@ Provides an automatic way to highlight HTTP requests based on headers content.
 Multithreaded logging extension for Burp Suite. In addition to logging requests and responses from all Burp Suite tools, the extension allows advanced filters to be defined to highlight interesting entries or filter logs to only those which match the filter.
 
 ![](../../zzz_res/attachments/logger++.png)
+
+---
+
+# BChecks
+
+One of the biggest benefits of BChecks is that they are much quicker and easier to write than a custom BApp extension.
+You can check out Portswigger’s [GitHub repo](https://github.com/PortSwigger/BChecks?ref=danaepp.com) to get a feel for what a BCheck script looks like.
+
+![](../../zzz_res/attachments/BCheck-1.png)
+
+```yaml
+metadata:
+     language: v1-beta
+     name: "Possible missing Authorization header"
+     description: "Tests potential API calls that don't have an Authorization header"
+     author: "Dana Epp"
+     tags: "CWE-864"
+```
+
+Every check script must contain a given / then statement containing one of the following:
+
+- given response then – The check runs once for each response audited.
+- given request then – The check runs once for each request audited.
+- given host then – The check runs once for each host audited.
+- given any insertion point then – The check runs once for each insertion point audited. Burp Scanner also uses this default option if you do not specify an insertion point type (i.e. you use given insertion point).
+- given query insertion point then – The check runs once for each query audited.
+- given header insertion point then – The check runs once for each header audited.
+- given body insertion point then – The check runs once for each set of body content audited.
+- given cookie insertion point then – The check runs once for each cookie audited.
+
+Final rule:
+```yaml
+metadata:
+     language: v1-beta
+     name: "Possible missing Authorization header"
+     description: "Tests potential API calls that don't have an Authorization header"
+     author: "Dana Epp"
+     tags: "CWE-864"
+
+given response then
+     if {to_lower(base.response.headers)} matches "application/json" then
+          if not ("authorization:" in {to_lower(base.response.headers)}) then
+               report issue:
+                    severity: medium
+                    confidence: firm
+                    detail: `Possible API call detected without an Authorization header at {base.request.url}.`
+                    remediation: "Check to see if the endpoint requires authorization or not."
+          end if
+     end if
+```
+
+More details on BChecks:
+- [Improve your API Security Testing with Burp BCheck Scripts](https://danaepp.com/improve-your-api-security-testing-with-burp-bcheck-scripts)
+
+# Tools integrating with burpsuite
+
+## Burp collector 
+
+>[!info] Download
+>GitHub: https://github.com/sAjibuu/Burp_Collector
+
+A Multi-Processing Tool for collecting and extracting information to an Excel file from a Burp Suite output file.
+
+```bash
+pip install -r requirements.txt  
+python -m spacy download en_core_web_sm
+```
+
+**Usage:**
+1. In Burp Suite: Right Click on the domain in the Target Scope — Select “save selected items” and then select “Base64-encode”.
+2. In Burp Suite: Navigate to Proxy — HTTP History — Press CTRL + A — Right Click — Select “save selected items” — Leave “Base64-encode” checked.

@@ -1,11 +1,11 @@
 ---
-Platform:
-  - X-MAS
+Platform: X-MAS
 Difficulty: Easy
-Category: Misc
+Category:
+  - Misc
 Status: 3. Complete
 Retired: true
-Tags:
+tags:
   - cracking-kdbx-files
   - steganography
   - blowfish

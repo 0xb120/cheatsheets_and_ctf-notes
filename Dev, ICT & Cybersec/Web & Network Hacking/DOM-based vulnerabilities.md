@@ -366,9 +366,13 @@ Exploit code opening the vulnerable page and focusing on the clobbered form `x`.
 <iframe src=https://YOUR-LAB-ID.web-security-academy.net/post?postId=3 onload="setTimeout(()=>this.src=this.src+'#x',500)">
 ```
 
+## DOM Clobbering + Prototype Pollution + XSS
+
+![](https://www.youtube.com/watch?v=AO7CDquZ690&t=22s&ab_channel=CryptoCat)
 
 ---
 
 # Tools
 
 - [DOM Invader](https://portswigger.net/burp/documentation/desktop/tools/dom-invader)
+- [DOMC Payload Generator](https://domclob.xyz/domc_payload_generator/) - Generates DOM Clobbering Attack Payload

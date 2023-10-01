@@ -1,11 +1,16 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Medium
-Platform:
-  - hxp
+Platform: hxp
 Retired: true
 Status: 3. Complete
-Tags: ""
+tags:
+  - XSS
+  - CSRF
+  - exploit-dev
+  - exploit-chain
+  - evasion
 ---
 
 >[!quote]

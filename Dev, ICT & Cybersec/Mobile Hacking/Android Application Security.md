@@ -18,13 +18,14 @@ Requirements:
 >[!tip]
 >Use the [android_sdk](../Tools/android_sdk.md) tools to download SDKs, build AVD and run emulators
 
-Importing user certificates on Android 7 or higher: 
-
-![Push burpsuite certificate inside the system certificate store](../Tools/adb.md#Push%20burpsuite%20certificate%20inside%20the%20system%20certificate%20store)
+Install custom certificates inside the system certificate store
+- [Android >= 7 & Android <14](../Tools/adb.md#Android%20>=%207%20&%20Android%20<14)
+- [Android >14](../Tools/adb.md#Android%20>14%20[%20certs-android-14])
 
 Port forwarding and network management:
 ![Port forwarding and network management](../Tools/android_sdk.md#Port%20forwarding%20and%20network%20management)
 
+Eventually, you can use [appetize](https://appetize.io/) to run and preview mobile apps with the browser
 
 ---
 

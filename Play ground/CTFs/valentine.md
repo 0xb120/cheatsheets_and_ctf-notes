@@ -1,11 +1,11 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
-Platform:
-  - hxp
+Platform: hxp
 Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - Express
   - ejs
   - OAST

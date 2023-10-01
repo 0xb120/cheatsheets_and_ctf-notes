@@ -69,7 +69,7 @@ smb://friendzone.htb/general/
 - [msfconsole (auxiliary modules)](../Tools/msfconsole.md#Auxiliary%20Modules)
 	  `auxiliary/scanner/smb/smb_version`
 
-- [Bash 101](../Penetration%20Testing%2022a2939ca2d04ade8aec0f0e7c4eeef5/Bash%20101%2097833af9ac924c0690dec875a29ba81c.md) > [bash script](../Penetration%20Testing%2022a2939ca2d04ade8aec0f0e7c4eeef5/Bash%20101%2097833af9ac924c0690dec875a29ba81c.md)
+- [Bash scripting](../Dev,%20scripting%20&%20OS/Bash%20101.md#Bash%20scripting)
 
 ```bash
 #!/bin/sh

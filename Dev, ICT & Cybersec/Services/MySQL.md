@@ -4,7 +4,7 @@ Description: MySQL is a freely available open source Relational Database Managem
 ---
 
 >[!info]
-> bla bla
+> MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter My, and "SQL", the acronym for Structured Query Language.
 
 
 # Basic Usage
@@ -276,6 +276,7 @@ common.log
 
 ## Enable database logging (for researching SQL Injection vuln.)
 
+MySQL and MariaDB:
 ```
 $ sudo nano /etc/mysql/my.cnf
 [mysqld]

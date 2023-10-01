@@ -124,17 +124,17 @@ SAST can be performed via automatic open source tool which automatically decompi
 
 ### Automatic Tools
 - [MobSF](../Tools/MobSF.md)
-- MARA Framework
-- [Droidstat-x](https://github.com/integrity-sa/droidstatx) 
-- [qark](../Tools/qark.md) (last commit on 2019)
-- [spotbug](../Tools/spotbug.md)
-- [AndroBugs](https://github.com/AndroBugs/AndroBugs_Framework) (deprecated)
 - [semgrep rules](https://github.com/mindedsecurity/semgrep-rules-android-security/tree/main/rules)
+- [mariana-trench](https://github.com/facebook/mariana-trench) (a security focused static analysis tool for Android and Java applications)
+- MARA Framework
+- [qark](../Tools/qark.md) (last commit on 2019)
 
 ### General analyses tool
 
 - [apkid](../Tools/apkid.md)
 - [fsmon](https://github.com/nowsecure/fsmon)
+- [pidcat](https://github.com/JakeWharton/pidcat)
+- [apkurlgrep](https://github.com/ndelphit/apkurlgrep) (extract endpoints from APK files)
 
 --- column-end ---
 
@@ -145,8 +145,8 @@ SAST can be performed via automatic open source tool which automatically decompi
 - [dex2jar](../Tools/dex2jar.md)
 - [JD-GUI](../Tools/JD-GUI.md)
 - [APKLab](https://github.com/APKLab/APKLab) (VSCode extension)
-- [simplify](../Tools/simplify.md)
-- [ClassNameDeobfuscator](https://github.com/HamiltonianCycle/ClassNameDeobfuscator)
+- [simplify](../Tools/simplify.md) (de-obfuscator)
+- [ClassNameDeobfuscator](https://github.com/HamiltonianCycle/ClassNameDeobfuscator) (de-obfuscator)
 
 === end-multi-column
 

@@ -49,6 +49,21 @@ git remote set-url origin git@github.com:MaOutis/maoutis.github.io.git
 git grep "token:" $(git rev-list --all)
 ```
 
+## patch diffing
+
+```bash
+git clone <url>
+git tag | grep v1
+...
+v1.1
+v1.0
+...
+git diff v1.1 v1.0
+...
+git diff v1.1 v1.0 > patch.diff
+grep +++ patch.diff
+```
+
 ---
 
 # External tools integrating with git

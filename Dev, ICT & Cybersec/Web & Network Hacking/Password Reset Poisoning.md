@@ -91,3 +91,7 @@ Server response (the integrated AV scanned the link without requiring user inter
 10.0.3.52       2023-06-30 08:48:12 +0000 "GET ?carlos=/login'>click+here</a>+to+login+with+your+new+password:+X5qD9PDfBN</p><p>Thanks,<br/>Support+team</p><i>This+email+has+been+scanned+by+the+MacCarthy+Email+Security+service</i> HTTP/1.1" 200 
 ...
 ```
+
+## Homograph attacks
+
+![Homograph characters](Evading%20Restrictions.md#Homograph%20characters)

@@ -347,6 +347,9 @@ s.close()
 
 ## requests
 
+>[!summary] Documentation
+>https://requests.readthedocs.io/en/latest/
+
 ```python
 import requests
 
@@ -434,3 +437,46 @@ p.interactive()
 # Python 2 vs 3 for binary exploitation
 
 <iframe width="660" height="415" src="https://www.youtube.com/embed/FxNS-zSS7MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Remote debug python application
+
+>[!tip] ptvsd
+>`ptvsd` [^ptvsd] is a Python debugger package for use with Visual Studio and Visual Studio Code.
+
+[^ptvsd]: https://github.com/microsoft/ptvsd
+
+```python
+# By default, ptvsd will start the debugger on port 5678
+import ptvsd
+ptvsd.enable_attach(redirect_output=True)
+print("Now ready for the IDE to connect to the debugger") 
+ptvsd.wait_for_attach()
+```
+
+From VSCode: 
+`debug panel > create a launch JSON file > Remote attach` :
+![](../../zzz_res/attachments/VSCode-remote-attach.png)
+Then fill `host`, `port` and `remoteRoot` with the root application folder on the server:
+```json
+{
+	// Use IntelliSense to learn about possible attributes.
+	// Hover to view descriptions of existing attributes.
+	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Python: Remote Attach",
+			"type": "python",
+			"request": "attach",
+			"port": 5678,
+			"host": "<Your_ERPNext_IP>",
+			"pathMappings": [
+				{
+				"localRoot": "${workspaceFolder}",
+				"remoteRoot": "/home/frappe/frappe-bench/"
+				}
+			]
+		}
+	]
+}
+```

@@ -1,12 +1,11 @@
 ---
-Category: Pwn
+Category:
+  - Pwn
 Difficulty: Easy
-Platform:
-  - HackTheBox
-  - Cyber Apocalypse 2022
+Platform: HackTheBox
 Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - leaking-stack
   - ret2libc
 ---

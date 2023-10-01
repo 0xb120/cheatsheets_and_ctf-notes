@@ -4,11 +4,15 @@
 ---
 
 # Google Hacking
+
 - [Google Hacking](Passive%20information%20gathering%20(OSINT).md#Google%20Hacking)
 - [Google Hacking DataBase](https://www.exploit-db.com/google-hacking-database)
 - FSDB
 - SLDB
 - BHDB
+
+External references:
+- [Mastering Google Dorking: Expanding Scope, Reconnaissance, and Resources](https://www.realinfosec.net/cybersecurity-academy/mastering-google-dorking/)
 
 ---
 

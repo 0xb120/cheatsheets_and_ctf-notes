@@ -1,11 +1,11 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
-Platform:
-  - Cyber Apocalypse 2022
+Platform: HackTheBox
 Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - IDOR
   - insecure-password-change
   - XSS

@@ -75,9 +75,10 @@ Logic flaws that are specific to the business domain or the purpose of the site.
 >[!example] Examples
 >**Discounting functionality**: consider an online shop that offers a 10% discount on orders over $1000. This could be vulnerable to abuse if the business logic fails to check whether the order was changed after the discount is applied. In this case, an attacker could simply add items to their cart until they hit the $1000 threshold, then remove the items they don't want before placing the order. They would then receive the discount on their order even though it no longer satisfies the intended criteria. 
 >
->Other possible vulnerabilities would be using the same one-shot discount code multiple times, using discount codes to buy more valuable promo codes, exploiting race conditions (see [Diogenes' Rage](../../Play%20ground/CTFs/Diogenes'%20Rage.md)) and other misconfigurations.
+>Other possible vulnerabilities would be using the same one-shot discount code multiple times, using discount codes to buy more valuable promo codes, exploiting [Race Condition](Race%20Condition.md) (see [Diogenes' Rage](../../Play%20ground/CTFs/Diogenes'%20Rage.md)) and other misconfigurations.
 > ![](../../zzz_res/attachments/business-logic_discount1.png)
 
+For e-commerce e stores refer to the following pdf: [Common Security Issues in FinanciallyOriented Web Applications](https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications.pdf), Soroush Dalili 
 ### Providing an encryption oracle
 
 Dangerous scenarios can occur when user-controllable input is encrypted and the resulting ciphertext is then made available to the user in some way. This kind of input is sometimes known as an "encryption oracle". An attacker can use this input to encrypt arbitrary data using the correct algorithm and asymmetric key.

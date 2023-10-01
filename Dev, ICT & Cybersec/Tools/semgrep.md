@@ -3,6 +3,41 @@ Description: Static code analysis tool with table support for C#, Go, Java, Java
 URL: https://github.com/returntocorp/semgrep
 ---
 
+# Basic usage
+
+## Automatic scan
+
+```bash
+$ semgrep scan --config=auto . -o output.txt
+
+Scanning across multiple languages:
+    <multilang> |  76 rules × 5178 files
+            php |  33 rules ×  931 files
+             js | 179 rules ×  372 files
+           html |   1 rule  ×   55 files
+           json |   4 rules ×   15 files
+           yaml |  28 rules ×    1 file
+           bash |   4 rules ×    1 file
+...
+Ran 1071 rules on 2589 files: 184 findings.
+```
+
+## Custom rule scan 
+
+>[!tldr] Rule list
+>Official rules can be found on https://semgrep.dev/explore
+
+```bash
+# Run a specific rulset against a file
+semgrep --config="RULESET-ID" PATH/TO/SRC
+
+# Run a specific custom rule
+semgrep --config=PATH/TO/MYRULE.YAML PATH/TO/SRC
+
+# Run a language specific ruleset against a full directory
+semgrep --config p/python .
+```
+
 
 # Expansion tool for/using semgrep
 

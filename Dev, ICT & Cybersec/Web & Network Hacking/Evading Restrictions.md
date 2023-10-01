@@ -80,6 +80,13 @@ Although not strictly a form of encoding, in some cases, you may be able to obfu
 CHAR(83)+CHAR(69)+CHAR(76)+CHAR(69)+CHAR(67)+CHAR(84) id FROM table; -- - Decoded in "SELECT id FROM table;"
 ```
 
+## Homograph characters
+
+Try to use homograph characters instead of classic ASCII ones and analyze how the server behaves. You may be able to perform [Authentication Attacks](Authentication%20Attacks.md), [Password Reset Poisoning](Password%20Reset%20Poisoning.md), and potentially perform account takeover.
+
+>[!example] 
+>Requesting a password reset for vítim@gmail.com (attacker controller email) it may be possible to obtain a password reset link for user victim@gmail.com
+
 ---
 
 # Evasion use cases
@@ -112,7 +119,7 @@ You can sometimes circumvent the filter by exploiting inconsistencies in URL par
 - Use the `#` character to indicate a URL fragment (`https://evil-host#expected-host`)
 - Leverage the DNS naming hierarchy to place required input into a fully-qualified DNS name that you control (`https://expected-host.evil-host`)
 - URL-encode characters to confuse the URL-parsing code. *This is particularly useful if the code that implements the filter handles URL-encoded characters differently than the code that performs the back-end HTTP request.* (`example@gmail.com` vs `example@gmail.com%0d`)
-- Exploit open redirection vulnerabilities to bypass strictly validated trusted domains (eg. imagine the server accepts only the domain weliketoshop.net, the following open redirect would allows an SSRF to 129.168.0.68: `http://weliketoshop.net/product/nextProduct?currentProductId=6&path=http://192.168.0.68/admin`)
+- Exploit [Open Redirection](Open%20Redirection.md) vulnerabilities to bypass strictly validated trusted domains (eg. imagine the server accepts only the domain weliketoshop.net, the following open redirect would allows an SSRF to 129.168.0.68: `http://weliketoshop.net/product/nextProduct?currentProductId=6&path=http://192.168.0.68/admin`)
 >[!example]
 >```http
 >POST /product/stock HTTP/1.1

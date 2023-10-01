@@ -4,3 +4,7 @@ URL: http://java-decompiler.github.io/
 ---
 
 ![](../../zzz_res/attachments/jd-gui.png)
+
+## Save all decompiled code as plain file
+
+`File` → `Save All Sources` and then unzip the archive

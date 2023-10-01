@@ -1,11 +1,11 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
-Platform:
-  - justCTF 2023
+Platform: justCTF 2023
 Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - ruby
   - forging-cookies
   - rack.session

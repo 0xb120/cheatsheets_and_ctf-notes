@@ -35,9 +35,9 @@ Three main macro-categories:
 ### Common sources of information disclosure
 
 - Files for web crawlers (`/robots.txt`, `/sitemap.xml`, etc.)
-- Directory listing
+- Directory listing → `intext: "Index of"`
 - Developer comments
-- Error messages
+- Error messages → `intext: error filetype: log`
 - Debugging data
 - User account page (combined with [Business logic vulnerabilities](Business%20logic%20vulnerabilities.md) and [Access control vulnerabilities](Access%20control%20vulnerabilities.md))
 - Source code disclosure (backup files, templates, temp files, etc.)

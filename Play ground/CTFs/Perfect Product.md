@@ -1,11 +1,11 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Medium
-Platform:
-  - justCTF 2023
+Platform: justCTF 2023
 Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - ejs
   - server-side_prototype-pollution
   - Express

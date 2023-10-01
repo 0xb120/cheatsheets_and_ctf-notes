@@ -498,7 +498,7 @@ neil@tenet:~/.local/share/nano$ cat -sn /usr/local/bin/enableSSH.sh
     51  checkAdded
 ```
 
-Looking at the source code it was possible to detect a **race condition** vulnerability in the `addKey()` function caused by the **insecure temporary save of the future content of root’s authorized_key**. This issue allowed to poison the temp file and inject inside the root’s `authorized_keys` a custom value, allowing to get a high privileged access to the machine.
+Looking at the source code it was possible to detect a **[Race Condition](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Race%20Condition.md)race condition** vulnerability in the `addKey()` function caused by the **insecure temporary save of the future content of root’s authorized_key**. This issue allowed to poison the temp file and inject inside the root’s `authorized_keys` a custom value, allowing to get a high privileged access to the machine.
 
 PoC of the insecure temp files (word writable file):
 

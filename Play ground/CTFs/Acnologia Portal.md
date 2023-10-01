@@ -1,11 +1,11 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Medium
-Platform:
-  - Cyber Apocalypse 2022
+Platform: HackTheBox
 Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - XSS
   - exploit-chain
   - flask

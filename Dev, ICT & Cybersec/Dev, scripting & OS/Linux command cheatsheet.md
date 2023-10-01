@@ -217,6 +217,18 @@ Removed void lines:
 cat /etc/ssh/sshd_config | grep -v '#' | grep .
 ```
 
+Other useful flags and examples: 
+```bash
+# search recursively and case-insensitive
+grep -ri "doGet" . 
+
+# search the whole word (-w) and show the matching line-number (-n) only inside .php files
+grep -rnw "eval(" . --include *.php --color 
+
+# search a string and only show filenames
+grep -rl "test" .
+```
+
 ## sed
 
 sed **performs text editing on a stream of text**, either a set of specific files or standard output.

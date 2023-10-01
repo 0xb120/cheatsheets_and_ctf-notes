@@ -4,31 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "256724b35a50b685",
+        "id": "700b3350ec2b130e",
         "type": "tabs",
         "children": [
           {
-            "id": "48a62699cd1e109c",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Play ground/Projects/opencart/OpenCart 4.0.2.1.canvas",
-                "viewState": {
-                  "x": 623.1172368934103,
-                  "y": 719.9580240975624,
-                  "zoom": -1.053336472622203
-                }
-              }
-            }
-          },
-          {
-            "id": "60f78dba07643a37",
+            "id": "0919b31d43375737",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Play ground/Projects/opencart/opencart 4.0.2.1.md",
+                "file": "Play ground/Projects/Project list.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -36,46 +21,19 @@
             }
           },
           {
-            "id": "ebb00d0a481623cf",
+            "id": "695bcad798b63b1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "966eaa73498ad72c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7389a5d58ce27f68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
+                "file": "Dev, ICT & Cybersec/Tools/adb.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -89,7 +47,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6d0c57e83389f01e",
+            "id": "c3613be8d3b5c6cf",
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
@@ -133,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 306.5
   },
   "right": {
     "id": "659b37494d493ae5",
@@ -158,7 +116,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md"
+                "file": "Play ground/Projects/Project list.md"
               }
             }
           },
@@ -180,8 +138,19 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "2921dec2e618073d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "0ca134c80578c5f2",
@@ -194,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
+                "file": "Play ground/Projects/Project list.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,12 +175,12 @@
             }
           },
           {
-            "id": "f3d8d9cbf3ebe9e0",
+            "id": "182ec8c1b1de05c0",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
+                "file": "Play ground/Projects/Project list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +192,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
+                "file": "Play ground/Projects/Project list.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -256,7 +225,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 333.5
+    "width": 342.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -267,68 +236,70 @@
       "obsidian-advanced-slides:Show Slide Preview": false,
       "templates:Insert template": true,
       "workspaces:Manage workspace layouts": true,
-      "dbfolder:Create a new database table": false,
+      "canvas:Create new canvas": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": true,
-      "canvas:Create new canvas": false,
-      "file-tree-alternative:File Tree Alternative Plugin": true
+      "file-tree-alternative:File Tree Alternative Plugin": true,
+      "dbfolder:Create a new database table": false
     }
   },
-  "active": "7389a5d58ce27f68",
+  "active": "0919b31d43375737",
   "lastOpenFiles": [
-    "zzz_res/attachments/Pasted image 20230709212945.png",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Prototype Pollution.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Prototype Pollution server-side.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Access control vulnerabilities.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Mass Assignment.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Type Juggling (aka type confusion).md",
-    "Play ground/Projects/opencart/opencart 4.0.2.1.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/SQL Injection.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Business logic vulnerabilities.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Parameter Pollution (HPP).md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Verb Tampering.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Host Header attacks.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Poisoning.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Implementation flaws.md",
-    "Personal/Games/Minecraft.md",
-    "Dev, ICT & Cybersec/Tools/semgrep.md",
-    "Dev, ICT & Cybersec/Tools/john.md",
-    "Dev, ICT & Cybersec/Mobile Hacking/Static application security testing (SAST).md",
-    "Play ground/Projects/opencart/OpenCart 4.0.2.1.canvas",
-    "Communities/i3P/3. Minimum viable product.md",
-    "Personal/To-do list.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/JavaScript & NodeJS.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Python.md",
-    "zzz_res/attachments/pause-based_CL0.png",
-    "zzz_res/attachments/XSS-using-HTTP2_tunneling-triggered.png",
-    "zzz_res/attachments/XSS-using-HTTP2_tunneling.png",
-    "zzz_res/attachments/HTTP-tunneled-request_cached.png",
-    "zzz_res/attachments/HTTP2-tunneling.png",
+    "zzz_res/templates/Projects (summary).md",
+    "Play ground/Projects/Project list.md",
+    "Play ground/Projects/VirIT Mobile/VirIT Mobile (summary).md",
+    "Play ground/Projects/Possible targets.md",
+    "Play ground/Projects/opencart/opencart 4.0.2.2 (summary).md",
+    "Play ground/Projects/Android Application List.md",
+    "Play ground/CTFs/_CTF-dashboard_wrapper.md",
     "Play ground/Personal Blog workflow.canvas",
-    "Play ground/Projects/asp.sr",
-    "Play ground/Projects/Belkin Modem",
-    "Play ground/Projects/CKFinder",
-    "Play ground/Projects/VirIT Mobile",
-    "Play ground/Projects/Private Vault",
-    "Play ground/Projects/opencart",
-    "zzz_res/attachments/Pasted image 20230702145610.png",
-    "zzz_res/attachments/CSP-policy-injection.png",
-    "zzz_res/attachments/xss-prefilled.png",
-    "zzz_res/attachments/Double-poisoning-XSS.png",
-    "zzz_res/attachments/DOM-XSS-from-cache.png",
-    "Dev, ICT & Cybersec/Mobile Hacking/Android setup.canvas",
-    "Communities/i3P",
-    "Communities/MeetHack/MeetHack - Android Application Security 101.pdf",
-    "Personal/Games",
-    "Communities/YouTube/_YT-Kanban.canvas",
-    "YouTube & Communities/Personal blog workflow.canvas",
-    "YouTube & Communities/Videos/_YT-Kanban-manual.canvas",
-    "YouTube & Communities/Community dashboard.canvas",
-    "Untitled 1.canvas",
-    "export/Android Application Security Slides.zip"
+    "Personal/Book list/_book-dashboard_wrapper.md",
+    "Personal/To-do list.md",
+    "Personal/Song quotes.md",
+    "Personal/How to read a paper.md",
+    "Personal/Dizionario dialetti.md",
+    "Communities/MeetHack/Android Application Security Slides.md",
+    "Readwise/Articles/Stefan Schiller - Unzipping Dangers OpenRefine Zip Slip Vulnerability.md",
+    "Readwise/Articles/Pierluigi Paganini - Alert! Patch Your TeamCity Instance to Avoid Server Hack.md",
+    "Readwise/Articles/httptoolkit.com - New Ways to Inject System CA Certificates in Android 14.md",
+    "Readwise/Articles/Catalin Cimpanu - Risky Biz News Chinese APT Hacks Subsidiaries, Pivots to Corporate Headquarters.md",
+    "Readwise/Articles/Catalin Cimpanu - Risky Biz News China Admits NSA Hacked Huawei.md",
+    "Readwise/Articles/AppSecSchool - How to Extract a Patch.md",
+    "Readwise/Articles/Alex Lauerman - Preparing for an Application Penetration Test.md",
+    "Dev, ICT & Cybersec/Tools/git.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Android Application Security.md",
+    "Dev, ICT & Cybersec/Tools/adb.md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Java.md",
+    "Play ground/Projects/opencart/OpenCart 4.0.2.2.canvas",
+    "Play ground/Projects/baldivive.it/baldivive.it.canvas",
+    "Play ground/Projects/informatica.uniroma2.it/www.informatica.uniroma2.it.canvas",
+    "Play ground/Projects/baldivive.it",
+    "Play ground/Projects/informatica.uniroma2.it",
+    "Readwise/Tweets",
+    "Play ground/CTFs/_CTF-dashboard.canvas",
+    "Personal/Book list/_book-dashboard.canvas",
+    "Play ground/Projects/opencart/scans/semgrep-auto",
+    "Play ground/Projects/opencart/scans/semgrep-php",
+    "Play ground/Projects/opencart/scans",
+    "Play ground/Projects/Super Bilders/superbilders.com.canvas",
+    "Play ground/Projects/Super Bilders/attachments",
+    "Play ground/Projects/Super Bilders/attachments/Superbilders_1.0_apkcombo.com.apk",
+    "Play ground/Projects/Super Bilders",
+    "Play ground/Projects/SVB/SVB.canvas",
+    "Play ground/Projects/SoundBarSetup_4825/SoundBarSetup_4825.canvas",
+    "Play ground/Projects/SVB",
+    "zzz_res/attachments/msfconsole-autopwn.png",
+    "Play ground/Projects/Vault - Hide Pics, App Lock/Vault - Hide Pics, App Lock.canvas",
+    "zzz_res/attachments/partial-construction-attack.png",
+    "zzz_res/attachments/time-sensitive-attack.png",
+    "zzz_res/attachments/multi-endpoint-collision-example.png",
+    "zzz_res/attachments/makePayment-multi-endpoint-collision.png",
+    "zzz_res/attachments/send-group-parallel.png",
+    "zzz_res/attachments/limit-overrun.png",
+    "zzz_res/attachments/multi-endpoint-collision.png",
+    "zzz_res/attachments/race-collision-sessionid.png",
+    "zzz_res/attachments/Pasted image 20230722222658.png"
   ]
 }

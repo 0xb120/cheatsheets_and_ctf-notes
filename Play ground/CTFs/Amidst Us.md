@@ -1,12 +1,14 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
-Platform:
- - "HackTheBox"
- - "Cyber Apocalypse 2022"
+Platform: HackTheBox
 Retired: true
 Status: 3. Complete
-Tags: CVE-2022-22817, RCE, python-PIL
+tags:
+  - CVE-2022-22817
+  - RCE
+  - python-PIL
 ---
 >[!quote]
 > The AmidstUs tribe is a notorious group of sleeper agents for hire. We have plausible reasons to believe they are working with Draeger, so we have to take action to uncover their identities. Ulysses and bonnie have infiltrated their HQ and came across this mysterious portal on one of the unlocked computers. Can you hack into it despite the low visibility and get them access?

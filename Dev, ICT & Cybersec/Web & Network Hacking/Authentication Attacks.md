@@ -15,6 +15,9 @@ Techniques:
 	- [HTTP Verb Tampering](HTTP%20Verb%20Tampering.md)
 - [Session Attacks (CSRF, session stealing, etc.)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md)
 - [SQL Injection leading to authentication bypass](SQL%20Injection.md#Authentication%20Bypass)
+	- Injection inside the login query
+	- Credential leaks
+	- Token leaks
 - [Mass Assignment](Mass%20Assignment.md)
 -  [Type Juggling (aka type confusion)](Type%20Juggling%20(aka%20type%20confusion).md)
 ```http
@@ -59,14 +62,20 @@ Connection: close
 - Exploiting flawed two-factor verification logic (eg. log in using own credentials but then change the value of the account identifier)
 - Exploiting other vulnerabilities (eg. [Host Header attacks](Host%20Header%20attacks.md)) or 3non-standard headers (eg. `X-Forwarded-for`, etc.) to intercept 2FA codes
 
-## Other authentication mechanisms
+## Other authentication mechanisms attacks
 
 - "Keep me log in" cookie brute-force or steal
-- [Password Reset Poisoning](Password%20Reset%20Poisoning.md)
+- Password reset attacks
+	- [Password Reset Poisoning](Password%20Reset%20Poisoning.md)
+	- Predictable password reset token (eg. [Sandwich Attack](https://versprite.com/blog/universally-unique-identifiers/) - brute force UUIDv1 token included in a limited range, [Time-sensitive attacks](Race%20Condition.md#Time-sensitive%20attacks), etc.)
+	- Leaking password reset token
 - Exploit application features (eg. password reset) to brute-force other user's password
 - [Session Attacks (CSRF, session stealing, etc.)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md)
 - [Access control vulnerabilities](Access%20control%20vulnerabilities.md) in password reset logic
 - [OAuth 2.0](OAuth%202.0.md) and [OAuth 2.0 attacks](OAuth%202.0%20attacks.md)
+
+>[!tip] Use Race Condition techniques to discover time-sensitive attacks
+>Using [Race Condition](Race%20Condition.md) technique may allow you to perform [Time-sensitive attacks](Race%20Condition.md#Time-sensitive%20attacks) and eventually bypass authentication, as in the case of timestamp usage when generating tokens, etc.
 
 ---
 

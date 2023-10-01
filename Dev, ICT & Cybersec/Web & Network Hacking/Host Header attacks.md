@@ -25,6 +25,7 @@ Host header is a potential vector for exploiting a range of other vulnerabilitie
 - [Business logic vulnerabilities](Business%20logic%20vulnerabilities.md)
 - [Server Side Request Forgery (SSRF)](Server%20Side%20Request%20Forgery%20(SSRF).md)
 - [Password Reset Poisoning](Password%20Reset%20Poisoning.md)
+- [Open Redirection](Open%20Redirection.md)
 - Classic server side vulnerabilities
 
 Host Header attacks can also be used to bypass WAFs and other kind of protections or to scan internal hosts and applications:

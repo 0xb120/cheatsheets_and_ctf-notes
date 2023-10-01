@@ -23,6 +23,31 @@ DIR [drive:][path][filename] [/A[[:]attributes]] [/B] [/C] [/D] [/L] [/N]
 - recursive: `dir /S`
 - show owner: `dir /Q`
 - order by: `dir /O:GN`
+- List SFN name: `dir /x` or `dir /-n`
+
+>[!warning] Short vs Long File Name (SFN vs LFN)
+
+**SFN** 
+
+> 8 chars filename + .  3 chars extension (eg. `TEST1234.XYZ`)
+- Necessary in FAT file-systems
+- Uppercase
+- Alphanumeric with some special characters
+- No spaces
+- Only one period
+
+**LFN**
+
+> 255 Characters, backward compatible with SFN
+
+- `Default.aspx` → `DEFAUL~1.ASP`
+- `Web.config` → `WEB~1.CON`
+
+In IIS, this can be abused to enumerate files and directories:
+- [Steelcon-2023-Beyond_Microsoft_IIS_Short_File_Name_Disclosure.pdf](https://github.com/irsdl/IIS-ShortName-Scanner/blob/master/presentation/Steelcon-2023-Beyond_Microsoft_IIS_Short_File_Name_Disclosure.pdf)
+- [IIS-ShortName-Scanner](https://github.com/irsdl/IIS-ShortName-Scanner/tree/master)
+- [IIS Tilde Enumeration Scanner](https://portswigger.net/bappstore/523ae48da61745aaa520ef689e75033b)
+-[Microsoft IIS tilde character “~” Vulnerability/Feature – Short File/Folder Name Disclosure](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://soroush.me/downloadable/microsoft_iis_tilde_character_vulnerability_feature.pdf)
 
 ### Copy, move, delete
 

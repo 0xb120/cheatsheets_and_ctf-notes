@@ -1,12 +1,11 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
-Platform:
-  - HackTheBox
-  - Cyber Apocalypse 2022
+Platform: HackTheBox
 Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - sqlite
   - webshell
   - SQL-Injection

