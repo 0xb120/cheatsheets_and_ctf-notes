@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Category": "multitext",
+    "Difficulty": "text",
+    "rating": "text",
+    "status": "text",
+    "Last time worked": "date",
+    "last-time": "date"
+  }
+}

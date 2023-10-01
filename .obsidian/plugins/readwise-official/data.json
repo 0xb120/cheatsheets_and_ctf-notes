@@ -1,0 +1,23 @@
+{
+  "token": "9F7AUvfGB6BFXj1FuTxmBqA8Sq0oYDTbPkch8ZI5Ok4eDZJBD4",
+  "readwiseDir": "Readwise",
+  "frequency": "60",
+  "triggerOnLoad": true,
+  "isSyncing": false,
+  "lastSyncFailed": false,
+  "lastSavedStatusID": 10698417,
+  "currentSyncStatusID": 0,
+  "refreshBooks": true,
+  "booksToRefresh": [],
+  "booksIDsMap": {
+    "Readwise/Articles/AppSecSchool - How to Extract a Patch.md": "32483938",
+    "Readwise/Articles/Alex Lauerman - Preparing for an Application Penetration Test.md": "32498830",
+    "Readwise/Articles/Pierluigi Paganini - Alert! Patch Your TeamCity Instance to Avoid Server Hack.md": "32521339",
+    "Readwise/Articles/Catalin Cimpanu - Risky Biz News China Admits NSA Hacked Huawei.md": "32522057",
+    "Readwise/Tweets/@Zealsham on Twitter - Tweets From 🦢Shammah Agwor⚡️.md": "32550098",
+    "Readwise/Articles/Stefan Schiller - Unzipping Dangers OpenRefine Zip Slip Vulnerability.md": "32623490",
+    "Readwise/Articles/Catalin Cimpanu - Risky Biz News Chinese APT Hacks Subsidiaries, Pivots to Corporate Headquarters.md": "32656758",
+    "Readwise/Articles/httptoolkit.com - New Ways to Inject System CA Certificates in Android 14.md": "32422690"
+  },
+  "reimportShowConfirmation": true
+}
