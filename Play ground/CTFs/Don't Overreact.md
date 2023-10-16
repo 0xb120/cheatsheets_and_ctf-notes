@@ -1,10 +1,13 @@
 ---
-Category: Mobile
+Category:
+  - Mobile
 Difficulty: Easy
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
-Tags: Android, React, hardcoded-key
+tags:
+  - Android
+  - React
+  - hardcoded-key
 ---
 >[!quote]
 >*Some web developers wrote this fancy new app! It's really cool, isn't it?*

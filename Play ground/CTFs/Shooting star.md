@@ -1,8 +1,8 @@
 ---
-Category: Pwn
+Category:
+  - Pwn
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 1. In progress
 ---
 >[!quote]

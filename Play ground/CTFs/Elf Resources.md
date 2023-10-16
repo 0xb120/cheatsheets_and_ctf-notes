@@ -1,10 +1,10 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Medium
 Platform: X-MAS
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - sqlite
   - SQL-Injection
   - pickle

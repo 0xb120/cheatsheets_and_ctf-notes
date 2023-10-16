@@ -1,10 +1,12 @@
 ---
-Category: Misc
+Category:
+  - Misc
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: crypto, old-ciphers
+tags:
+  - crypto
+  - old-ciphers
 ---
 >[!quote]
 >*Decrypt the code and find the Queen's secret!*

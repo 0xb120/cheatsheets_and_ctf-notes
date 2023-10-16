@@ -4,33 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "700b3350ec2b130e",
+        "id": "5cb839d4b44a3a01",
         "type": "tabs",
         "children": [
           {
-            "id": "0919b31d43375737",
+            "id": "cf76902dde255139",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Play ground/Projects/Project list.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "695bcad798b63b1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dev, ICT & Cybersec/Tools/adb.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -55,26 +37,26 @@
             }
           },
           {
+            "id": "c5db6fce94ae478b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
             "id": "a1601c5574d5b14f",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "OSWE",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "c5db6fce94ae478b",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
             }
           },
           {
@@ -87,7 +69,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -100,10 +83,10 @@
       {
         "id": "497a4e903f6476bf",
         "type": "tabs",
-        "dimension": 57.84883720930233,
+        "dimension": 36.658556366585564,
         "children": [
           {
-            "id": "f958bfa0f75aadb6",
+            "id": "a103b5b5ee1b155e",
             "type": "leaf",
             "state": {
               "type": "quiet-outline",
@@ -111,13 +94,11 @@
             }
           },
           {
-            "id": "9f4f41ee67114463",
+            "id": "b50298044abfff18",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Play ground/Projects/Project list.md"
-              }
+              "state": {}
             }
           },
           {
@@ -132,14 +113,6 @@
             }
           },
           {
-            "id": "e3b1d856ef54c18b",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
-          },
-          {
             "id": "2921dec2e618073d",
             "type": "leaf",
             "state": {
@@ -149,13 +122,53 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "93c550284300223b",
+        "type": "tabs",
+        "dimension": 26.520681265206814,
+        "children": [
+          {
+            "id": "1b02ab1c108718d1",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": -0.6,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.28284538653663965,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
       },
       {
         "id": "0ca134c80578c5f2",
         "type": "tabs",
-        "dimension": 42.15116279069767,
+        "dimension": 36.820762368207625,
         "children": [
           {
             "id": "92a8f5dacbdec5e4",
@@ -163,7 +176,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Play ground/Projects/Project list.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,44 +192,8 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Play ground/Projects/Project list.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "1b02ab1c108718d1",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "Play ground/Projects/Project list.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.3628873693012119,
-                  "close": true
-                }
               }
             }
           }
@@ -225,81 +201,78 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.5
+    "width": 370.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "homepage:Open homepage": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "graph:Open graph view": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
       "templates:Insert template": true,
-      "workspaces:Manage workspace layouts": true,
       "canvas:Create new canvas": false,
       "obsidian-book-search-plugin:Create new book note": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": true,
       "file-tree-alternative:File Tree Alternative Plugin": true,
-      "dbfolder:Create a new database table": false
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "0919b31d43375737",
+  "active": "cf76902dde255139",
   "lastOpenFiles": [
-    "zzz_res/templates/Projects (summary).md",
-    "Play ground/Projects/Project list.md",
-    "Play ground/Projects/VirIT Mobile/VirIT Mobile (summary).md",
-    "Play ground/Projects/Possible targets.md",
-    "Play ground/Projects/opencart/opencart 4.0.2.2 (summary).md",
-    "Play ground/Projects/Android Application List.md",
-    "Play ground/CTFs/_CTF-dashboard_wrapper.md",
-    "Play ground/Personal Blog workflow.canvas",
-    "Personal/Book list/_book-dashboard_wrapper.md",
+    "OSWE preparation.md",
     "Personal/To-do list.md",
-    "Personal/Song quotes.md",
-    "Personal/How to read a paper.md",
-    "Personal/Dizionario dialetti.md",
-    "Communities/MeetHack/Android Application Security Slides.md",
-    "Readwise/Articles/Stefan Schiller - Unzipping Dangers OpenRefine Zip Slip Vulnerability.md",
-    "Readwise/Articles/Pierluigi Paganini - Alert! Patch Your TeamCity Instance to Avoid Server Hack.md",
-    "Readwise/Articles/httptoolkit.com - New Ways to Inject System CA Certificates in Android 14.md",
-    "Readwise/Articles/Catalin Cimpanu - Risky Biz News Chinese APT Hacks Subsidiaries, Pivots to Corporate Headquarters.md",
-    "Readwise/Articles/Catalin Cimpanu - Risky Biz News China Admits NSA Hacked Huawei.md",
-    "Readwise/Articles/AppSecSchool - How to Extract a Patch.md",
-    "Readwise/Articles/Alex Lauerman - Preparing for an Application Penetration Test.md",
-    "Dev, ICT & Cybersec/Tools/git.md",
+    "Dev, ICT & Cybersec/Tools/SumatraPDF.md",
+    "Play ground/Projects/TP-Link Archer C50/TP-Link Archer C50 (summary).md",
+    "Personal/Book list/Advanced Web Attacks and Exploitation (OSWE).md",
+    "TP-Link Archer C50 (summary).md",
+    "Play ground/Projects/TP-Link Archer C50",
+    "Dev, ICT & Cybersec/Tools/vscode.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/JavaScript & NodeJS.md",
+    "Readwise/Articles/Paul Gerste - Remote Code Execution in Tutanota Desktop Due to Code Flaw.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Shell Cheatsheet.md",
+    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Shellcode.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/DOM-based vulnerabilities.md",
+    "Play ground/CTFs/eXtra Safe Security layers.md",
+    "Dev, ICT & Cybersec/Tools/Frida.md",
+    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Fuzzing.md",
+    "Readwise/Readwise inbox.md",
+    "Personal/Book list/_book-dashboard_wrapper.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/HTMX.md",
+    "Readwise/Articles/Gabor Matuz - Hacking HTMX Applications.md",
     "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Dev, ICT & Cybersec/Mobile Hacking/Android Application Security.md",
-    "Dev, ICT & Cybersec/Tools/adb.md",
-    "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Java.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Development fundamentals.md",
+    "Play ground/Projects/Project list.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Clickjacking.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Content Security Policy (CSP).md",
     "Play ground/Projects/opencart/OpenCart 4.0.2.2.canvas",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Pasted image 20231013115300.png",
+    "Play ground/Projects/opencart/phpinfo-admin.png",
+    "Dev, ICT & Cybersec/Web & Network Hacking/MIME-sniffing.png",
+    "Play ground/Projects/opencart/phpmyinfo.png",
+    "Play ground/Projects/opencart/attachments",
+    "Play ground/Projects/opencart/attachments/path-traversal_security-storage.png",
+    "Play ground/Projects/sito.itisavogadro.org",
+    "Play ground/Projects/TeamCity/CVE-2023-42793.canvas",
+    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/update/buildAgent.zip",
+    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/update/agentInstaller.exe",
+    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/update",
+    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/notificationRuleForm.jsp",
+    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/include-internal-tag.jsp",
+    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/tests/bulkInvestigateDialog.jsp",
+    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/tests/recentlyFailedTests.jsp",
+    "Personal/Book list/_book-dashboard.canvas",
+    "Play ground/Personal Blog workflow.canvas",
     "Play ground/Projects/baldivive.it/baldivive.it.canvas",
     "Play ground/Projects/informatica.uniroma2.it/www.informatica.uniroma2.it.canvas",
-    "Play ground/Projects/baldivive.it",
-    "Play ground/Projects/informatica.uniroma2.it",
-    "Readwise/Tweets",
     "Play ground/CTFs/_CTF-dashboard.canvas",
-    "Personal/Book list/_book-dashboard.canvas",
-    "Play ground/Projects/opencart/scans/semgrep-auto",
-    "Play ground/Projects/opencart/scans/semgrep-php",
-    "Play ground/Projects/opencart/scans",
     "Play ground/Projects/Super Bilders/superbilders.com.canvas",
-    "Play ground/Projects/Super Bilders/attachments",
-    "Play ground/Projects/Super Bilders/attachments/Superbilders_1.0_apkcombo.com.apk",
-    "Play ground/Projects/Super Bilders",
     "Play ground/Projects/SVB/SVB.canvas",
     "Play ground/Projects/SoundBarSetup_4825/SoundBarSetup_4825.canvas",
-    "Play ground/Projects/SVB",
     "zzz_res/attachments/msfconsole-autopwn.png",
-    "Play ground/Projects/Vault - Hide Pics, App Lock/Vault - Hide Pics, App Lock.canvas",
     "zzz_res/attachments/partial-construction-attack.png",
     "zzz_res/attachments/time-sensitive-attack.png",
     "zzz_res/attachments/multi-endpoint-collision-example.png",
-    "zzz_res/attachments/makePayment-multi-endpoint-collision.png",
-    "zzz_res/attachments/send-group-parallel.png",
-    "zzz_res/attachments/limit-overrun.png",
-    "zzz_res/attachments/multi-endpoint-collision.png",
-    "zzz_res/attachments/race-collision-sessionid.png",
-    "zzz_res/attachments/Pasted image 20230722222658.png"
+    "zzz_res/attachments/makePayment-multi-endpoint-collision.png"
   ]
 }

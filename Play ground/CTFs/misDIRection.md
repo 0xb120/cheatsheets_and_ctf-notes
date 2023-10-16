@@ -1,8 +1,8 @@
 ---
-Category: Misc
+Category:
+  - Misc
 Difficulty: Easy
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
 ---
 >[!quote]

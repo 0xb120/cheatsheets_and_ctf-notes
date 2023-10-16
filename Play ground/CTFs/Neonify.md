@@ -1,10 +1,15 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
-Tags: ERB, SSTI, evasion, regex, ruby
+tags:
+  - ERB
+  - SSTI
+  - evasion
+  - regex
+  - ruby
 ---
 >[!quote]
 > *It's time for a shiny new reveal for the first-ever text neonifier. Come test out our brand new website and make any text glow like a lo-fi neon tube!*

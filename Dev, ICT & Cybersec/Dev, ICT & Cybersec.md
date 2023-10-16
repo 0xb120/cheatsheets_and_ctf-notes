@@ -40,7 +40,7 @@
 	- [HTTP & HTTPS](Services/HTTP%20&%20HTTPS.md)
 	- [Evading Restrictions](Web%20&%20Network%20Hacking/Evading%20Restrictions.md)
 - [Post Exploitation](Web%20&%20Network%20Hacking/Post%20Exploitation.md)
-- [Reverse Shell Cheatsheet](Web%20&%20Network%20Hacking/Reverse%20Shell%20Cheatsheet.md)
+- [Shell Cheatsheet](Web%20&%20Network%20Hacking/Shell%20Cheatsheet.md)
 
 ---
 
@@ -54,6 +54,7 @@
 - [SQL 101](Dev,%20scripting%20&%20OS/SQL%20101.md)
 - [JavaScript & NodeJS](Dev,%20scripting%20&%20OS/JavaScript%20&%20NodeJS.md)
 - [AngularJS](Dev,%20scripting%20&%20OS/AngularJS.md)
+- [HTMX](Dev,%20scripting%20&%20OS/HTMX.md)
 - [Reversing and software memory 101](Reversing%20&%20Binary%20Exploitation/Reversing%20and%20software%20memory%20101.md)
 - [GraphQL](Web%20&%20Network%20Hacking/GraphQL.md)
 
@@ -98,4 +99,4 @@
 
 - [PwnDoc](https://github.com/pwndoc/pwndoc)
 - [Sysreport](https://github.com/Syslifters/sysreptor)
-
+- [Ghostwriter](https://github.com/GhostManager/Ghostwriter)

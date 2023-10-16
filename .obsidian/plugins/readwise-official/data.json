@@ -5,7 +5,7 @@
   "triggerOnLoad": true,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 10698417,
+  "lastSavedStatusID": 10913583,
   "currentSyncStatusID": 0,
   "refreshBooks": true,
   "booksToRefresh": [],
@@ -17,7 +17,19 @@
     "Readwise/Tweets/@Zealsham on Twitter - Tweets From 🦢Shammah Agwor⚡️.md": "32550098",
     "Readwise/Articles/Stefan Schiller - Unzipping Dangers OpenRefine Zip Slip Vulnerability.md": "32623490",
     "Readwise/Articles/Catalin Cimpanu - Risky Biz News Chinese APT Hacks Subsidiaries, Pivots to Corporate Headquarters.md": "32656758",
-    "Readwise/Articles/httptoolkit.com - New Ways to Inject System CA Certificates in Android 14.md": "32422690"
+    "Readwise/Articles/httptoolkit.com - New Ways to Inject System CA Certificates in Android 14.md": "32422690",
+    "Readwise/Articles/Catalin Cimpanu - Risky Biz News Disclosure Snafu Delays Critical Exim Patch More Than a Year.md": "32746924",
+    "Readwise/Articles/James Kettle - How I Choose a Security Research Topic.md": "32746996",
+    "Readwise/Articles/Paul Gerste - Remote Code Execution in Tutanota Desktop Due to Code Flaw.md": "32785535",
+    "Readwise/Articles/sourceforge.io - Free Real-Time Logfile Analyzer to Get Advanced Statistics (GNU GPL)..md": "32786097",
+    "Readwise/Articles/STAR Labs - (CVE-2023-2315) Path Traversal in OpenCart Versions 4.0.0.0 to 4.0.2.2.md": "32786171",
+    "Readwise/Articles/STAR Labs - Analysis of NodeBB Account Takeover Vulnerability.md": "32657156",
+    "Readwise/Tweets/@therceman on Twitter - Tweets From Anton.md": "32978041",
+    "Readwise/Articles/Crisdeo Nuel Siahaan - Bounty of an Insecure WebView (Part 1) XSS, but With Steroids.md": "32982017",
+    "Readwise/Articles/Start free - SocketSleuth Improving Security Testing for WebSocket Applications  Snyk.md": "32982598",
+    "Readwise/Articles/Aurélien Chalot - Browser Cache Smuggling.md": "33040596",
+    "Readwise/Articles/David Kutz-Marks - Attacking AWS Cognito With Pacu.md": "33065804",
+    "Readwise/Articles/Gabor Matuz - Hacking HTMX Applications.md": "33139717"
   },
   "reimportShowConfirmation": true
 }

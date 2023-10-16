@@ -1,10 +1,10 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Easy
 Platform: HackTheBox
-Retired: false
 Status: 2. User
-Tags:
+tags:
   - LDAP-enum
   - Windows
   - hardcoded-credentials

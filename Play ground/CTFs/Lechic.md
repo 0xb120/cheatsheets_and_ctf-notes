@@ -1,10 +1,16 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: PWNX
-Retired: true
 Status: 3. Complete
-Tags: CVE-2020-1938, Ghostcat, JSP, JSP-console, RCE-JSP, tomcat
+tags:
+  - CVE-2020-1938
+  - Ghostcat
+  - JSP
+  - JSP-console
+  - RCE-JSP
+  - tomcat
 ---
 # Set up
 

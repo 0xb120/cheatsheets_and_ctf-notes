@@ -1,10 +1,14 @@
 ---
-Category: Mobile
+Category:
+  - Mobile
 Difficulty: Easy
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
-Tags: Android, hardcoded-credentials, patching-APK, reversing
+tags:
+  - Android
+  - hardcoded-credentials
+  - patching-APK
+  - reversing
 ---
 >[!quote]
 > This app contains some unique keys. Can you get one?

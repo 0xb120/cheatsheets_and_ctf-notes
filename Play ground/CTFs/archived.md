@@ -3,7 +3,6 @@ Category:
   - Web
 Difficulty: Medium
 Platform: hxp
-Retired: true
 Status: 3. Complete
 tags:
   - XSS

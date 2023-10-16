@@ -1,11 +1,15 @@
 ---
-Category: Mobile
+Category:
+  - Mobile
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: Android, certificate-pinning-bypass, network_security_config.xml, patching-APK, reversing
-YT video overview: "https://www.notion.so/Intercept-HTTPS-on-non-rooted-Android-devices-HackTheBox-Anchored-2fc6ccc4b8ef4f288626b210643fbde4"
+tags:
+  - Android
+  - certificate-pinning-bypass
+  - network_security_config.xml
+  - patching-APK
+  - reversing
 ---
 >[!quote]
 > A client asked me to check if I can intercept the https request and get the value of the secret parameter that is passed along with the user's email. The application is intended to run in a non-rooted device. Can you help me find a way to intercept this value in plain text.

@@ -1,16 +1,17 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Medium
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - LFI
   - RCE
   - SQL-Injection
   - authentication-bypass
   - cap_sys_ptrace
-  - control tags
+  - control
+  - tags
   - credentials-reuse
   - gdb-privesc
   - mPDF

@@ -1,10 +1,12 @@
 ---
-Category: Misc
+Category:
+  - Misc
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: esoteric-lang, piet
+tags:
+  - esoteric-lang
+  - piet
 ---
 >[!quote]
 > Can you find the flag?

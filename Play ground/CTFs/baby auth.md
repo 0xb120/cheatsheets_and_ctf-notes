@@ -1,10 +1,12 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: authentication-bypass, broken-auth
+tags:
+  - authentication-bypass
+  - broken-auth
 ---
 >[!quote]
 > Who needs session integrity these days?

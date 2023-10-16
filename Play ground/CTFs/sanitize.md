@@ -1,10 +1,10 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - SQL-Injection
 ---
 >[!quote]

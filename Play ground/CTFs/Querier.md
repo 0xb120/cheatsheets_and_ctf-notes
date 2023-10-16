@@ -1,11 +1,13 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Medium
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
-  - Group Policy (GPP/GPO)
+tags:
+  - Group
+  - Policy
+  - (GPP/GPO)
   - MSSQL
   - UNC
   - Windows

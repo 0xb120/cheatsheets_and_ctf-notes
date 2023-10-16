@@ -1,10 +1,12 @@
 ---
-Category: Mobile
+Category:
+  - Mobile
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: Android, insecure-password-change
+tags:
+  - Android
+  - insecure-password-change
 ---
 >[!quote]
 >*A client asked me to perform security assessment on this password management application. Can you help me?*

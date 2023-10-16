@@ -1,10 +1,14 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
-Tags: LFI, code-review, log-poisoning, php-deserialization
+tags:
+  - LFI
+  - code-review
+  - log-poisoning
+  - php-deserialization
 ---
 >[!quote]
 >*Humanity has exploited our allies, the dart frogs, for far too long, take back the freedom of our lovely poisonous friends. Malicious input is out of the question when dart frogs meet industrialisation. 🐸*

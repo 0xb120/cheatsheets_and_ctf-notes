@@ -24,6 +24,7 @@ Main checks:
 
 - [fuff](../Tools/fuff.md)
 - [gobuster](../Tools/gobuster.md)
+- [feroxbuster](https://github.com/epi052/feroxbuster)
 - dirb
 - dirbuster
 - dirsearch
@@ -35,7 +36,7 @@ Main checks:
 
 ### Proxy
 
-- Burp Suite
+- [Burpsuite](../Tools/Burpsuite.md)
 - zap
 - Caido
 
@@ -61,13 +62,14 @@ Main checks:
 ### Other useful tools
 
 - Collaborator / [cowitness](https://github.com/stolenusername/cowitness) (HTTP server and DNS server mimic)
+- [ngrok](https://ngrok.com/)
 
 ## Source Code Recovery
 
 - Get it from cloud marketplaces (AWS, Azure, GCP) and reverse it
 - Get the docker image from Dockerhub
 - Contact sales or search for trial version
-- Leak the source code using vulnerabilities (LFI, XXE, RCE, etc.)
+- Leak the source code using vulnerabilities ([File Inclusion (LFI & RFI)](../Web%20&%20Network%20Hacking/File%20Inclusion%20(LFI%20&%20RFI).md), [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md), RCE, etc.)
 
 Further information inside the language specific notes:
 - [Java](../Dev,%20scripting%20&%20OS/Java.md)
@@ -91,7 +93,7 @@ Further information inside the language specific notes:
 - [[graudit]] - https://github.com/wireghoul/graudit
 - [SonarSource](https://rules.sonarsource.com/) - 5000+ Static Analysis Rules across 30+ programming languages
 - [cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
-- The Web Application Hacker Handbook - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL 
+- [The Web Application Hacker's Handbook](../../Personal/Book%20list/The%20Web%20Application%20Hacker's%20Handbook%20-%20Dafydd%20Stuttard%20Marcus%20Pinto.md) - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL 
 
 For software updates and patches, focus on **diffing** [^patch] **older and newer version**:
 - Read every detail contained inside the advisory in order to understand the kind of vulnerability and what/where to search inside the code
@@ -152,11 +154,14 @@ Evading restrictions:
 ## Client side vulnerabilities
 
 - [Cross-Site Scripting (XSS)](../Web%20&%20Network%20Hacking/Cross-Site%20Scripting%20(XSS).md)
+- [Cross-Site Script Inclusion (XSSI)](../Web%20&%20Network%20Hacking/Cross-Site%20Script%20Inclusion%20(XSSI).md)
+- [Client-side template injection (CSTI)](../Web%20&%20Network%20Hacking/Client-side%20template%20injection%20(CSTI).md)
+- [JSONP vulnerabilities](../Web%20&%20Network%20Hacking/JSONP%20vulnerabilities.md)
+- [MIME sniffing](../Web%20&%20Network%20Hacking/MIME%20sniffing.md)
 - [Session Attacks (CSRF, session stealing, etc.)](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md)
 - [CORS based attacks](../Web%20&%20Network%20Hacking/CORS%20based%20attacks.md)
 - [Clickjacking](../Web%20&%20Network%20Hacking/Clickjacking.md)
 - [WebSockets](../Web%20&%20Network%20Hacking/WebSockets.md)
-- [Client-side template injection (CSTI)](../Web%20&%20Network%20Hacking/Client-side%20template%20injection%20(CSTI).md)
 - [DOM-based vulnerabilities](../Web%20&%20Network%20Hacking/DOM-based%20vulnerabilities.md)
 - [Client-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Client-side%20prototype%20pollution%20vuln)
 - [Browser-powered request smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md#Browser-powered%20request%20smuggling)
@@ -173,6 +178,7 @@ Evading restrictions:
 - [Same-origin policy (SOP)](../Web%20&%20Network%20Hacking/Same-origin%20policy%20(SOP).md)
 - [Content Security Policy (CSP)](../Web%20&%20Network%20Hacking/Content%20Security%20Policy%20(CSP).md)
 - [X-Frame-Options](../Web%20&%20Network%20Hacking/X-Frame-Options.md)
+- [X-Content-Type-Options](../Web%20&%20Network%20Hacking/X-Content-Type-Options.md)
 - [Defenses against CSRF attacks](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Defenses%20against%20CSRF%20attacks)
 - [SameSite attribute on cookies](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#SameSite%20attribute%20on%20cookies)
 - [HTTP/2](../Web%20&%20Network%20Hacking/HTTP-2.md)

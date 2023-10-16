@@ -1,11 +1,10 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
-For YT: Yes
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
-Tags:
+tags:
   - OAST
   - base_tag-hijacking
   - cache-poisoning

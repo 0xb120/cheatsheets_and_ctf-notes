@@ -1,11 +1,14 @@
 ---
-Category: Mobile
+Category:
+  - Mobile
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: Android, hardcoded-credentials, patching-APK, reversing
-YT video overview: "https://www.notion.so/Reverse-and-Patch-an-easy-APK-HackTheBox-APKrypt-eb6bdbf9d7f14af5ab650e5a2c253ce8"
+tags:
+  - Android
+  - hardcoded-credentials
+  - patching-APK
+  - reversing
 ---
 >[!quote]
 > Can you get the ticket without the VIP code?

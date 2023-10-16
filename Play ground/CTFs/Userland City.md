@@ -1,11 +1,10 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Medium
-For YT: Yes
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
-Tags:
+tags:
   - CVE-2021-3129
   - RCE
   - laravel

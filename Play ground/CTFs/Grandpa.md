@@ -1,10 +1,10 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - CVE-2017-7269
   - MS14-070
   - ScStoragePathFromUrl

@@ -1,8 +1,8 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Easy
 Platform: PWNX
-Retired: true
 Status: 3. Complete
 ---
 # Resolution summary

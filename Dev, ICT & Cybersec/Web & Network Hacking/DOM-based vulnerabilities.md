@@ -158,9 +158,11 @@ DOM-based link-manipulation vulnerabilities arise when a script writes attacker-
 >- `element.src`
 >- `element.action`
 
-# DOM-based web message manipulation
+# DOM-based web message manipulation (postMessage vulnerabilities)
 
-Web message vulnerabilities arise when a script sends attacker-controllable data as a web message to another document within the browser. An attacker may be able to use the web message data as a source by constructing a web page that, if visited by a user, will cause the user's browser to send a web message containing data that is under the attacker's control.
+Web message vulnerabilities (aka postMessage vulnerabilities) arise when a script sends attacker-controllable data as a web message to another document within the browser. An attacker may be able to use the web message data as a source by constructing a web page that, if visited by a user, will cause the user's browser to send a web message containing data that is under the attacker's control. [^pdf]
+
+[^pdf]: [Hunting postMessage Vulnerabilities](https://appcheck-ng.com/wp-content/uploads/Hunting-postMessage-Vulnerabilities.pdf), Gary O’Leary-Steele 
 
 Target:
 ```javascript
@@ -176,8 +178,18 @@ Exploit:
 <iframe src="https://YOUR-LAB-ID.web-security-academy.net/" onload="this.contentWindow.postMessage('javascript:print()//normal-website.com','*')">
 ```
 
+See as examples:
+- [Understanding The PostMessage Vulnerabilities And Its Implications](https://payatu.com/blog/postmessage-vulnerabilities/#JavaScript_postMessage_Vulnerabilities)
+- [postMessage vulnerabilities](https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities)
+
 >[!tip]- Common source:
 >- `postMessage()`
+
+Tools for identifying `postMessage()` usage:
+1. **Using** [**MessPostage**](https://github.com/Sjord/messpostage) **Browser Extension:** Using this extension is an easy way to detect whenever an application usage postMessage() APIs. This also shows which messages were sent and where event listeners have been added:
+2. **Using Developer Tools:** The “Global Listener” feature present in the “Sources” pane of Developer tools can be used to identify the use of postMessage(). After opening the Global Listener, click on “messages” to view the message handlers.
+3. **Using** [**Posta**](https://github.com/benso-io/posta)**:** Posta is a tool for researching Cross-document Messaging communication. It allows you to track, explore and exploit `postMessage` vulnerabilities, and includes features such as replaying messages sent between windows within any attached browser.
+4. **Using** [**PMHook**](https://github.com/yehgdotnet/postmessagehook)**:** PMHook is a client-side JavaScript library designed to be used with TamperMonkey in the Chrome web browser. Executed immediately at page load, PMHook wraps the **EventTarget.addEventListener** method and logs any subsequent message event handers as they are added. The event handler functions themselves are also wrapped to log messages received by each handler.
 
 # DOM-based Ajax request-header manipulation
 

@@ -1,10 +1,12 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: RCE, command-injection
+tags:
+  - RCE
+  - command-injection
 ---
 >[!quote]
 > *We've built the most secure networking tool in the market, come and check it out!*

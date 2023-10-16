@@ -1,10 +1,10 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - CVE-2019-12840
   - RCE
   - miniserv

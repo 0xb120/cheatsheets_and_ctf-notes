@@ -1,10 +1,13 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: IDOR, authorization-bypass, broken-auth
+tags:
+  - IDOR
+  - authorization-bypass
+  - broken-auth
 ---
 >[!quote]
 > I'm so done with these bloody HR solutions coming from those bloody HR specialists, I don't need anyone monitoring my thoughts, or do I... ?****

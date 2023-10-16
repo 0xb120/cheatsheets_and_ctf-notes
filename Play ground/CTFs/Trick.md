@@ -1,10 +1,10 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Easy
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
-Tags:
+tags:
   - LFI
   - action.d
   - dns-enumeration

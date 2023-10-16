@@ -7,6 +7,10 @@ WebSocket connections are initiated over HTTP and are typically long-lived. Mess
 
 WebSockets are particularly useful in situations where low-latency or server-initiated messages are required, such as real-time feeds of financial data.
 
+>[!tip] Tooling for testing WebSockets
+>- [SocketSleuth](https://github.com/snyk/socketsleuth/) [^note]
+
+[^note]:[Start free - SocketSleuth Improving Security Testing for WebSocket Applications  Snyk](../../Readwise/Articles/Start%20free%20-%20SocketSleuth%20Improving%20Security%20Testing%20for%20WebSocket%20Applications%20%20Snyk.md#^af3f13)
 ## Establishing connections
 
 Protocols to open WebSocket:
@@ -84,3 +88,7 @@ In principle, practically any web security vulnerability might arise in relation
 10.0.4.85       2023-01-06 21:24:18 +0000 "GET /log?a={%22user%22:%22Hal%20Pline%22,%22content%22:%22No%20problem%20carlos,%20it&apos;s%20qhakj7ncjna6l17u20as%22} HTTP/1.1" 200 "User-Agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.124 Safari/537.36"
 |...
 >```
+
+This vulnerability was used against Gitpod to leak environment data and obtain SSH keys, bypassing [SameSite attribute on cookies](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#SameSite%20attribute%20on%20cookies), finally escalating to RCE. [^gitpod]
+
+[^gitpod]: [Gitpod remote code execution 0-day vulnerability via WebSockets](https://snyk.io/blog/gitpod-remote-code-execution-vulnerability-websockets/), snyk.io

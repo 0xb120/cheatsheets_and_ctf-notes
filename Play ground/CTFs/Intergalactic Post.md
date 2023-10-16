@@ -3,7 +3,6 @@ Category:
   - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
 tags:
   - sqlite

@@ -17,6 +17,11 @@ Possible inputs:
 
 Insert special query characters like `' " # \ -` and observe if some SQL errors are triggered or the application behave differently.
 
+>[!tip] Test SQL payload online
+>Dynamic SQL testing online: http://sqlfiddle.com/ [^demo]
+
+[^demo]: [Test SQL queries online against the specified DB](https://youtu.be/61kf4CEnOZk?si=7heW6R8LN0pkQth3&t=1291), IppSec
+
 ---
 
 ## Authentication Bypass
@@ -564,6 +569,20 @@ select CHAR(41,42,43,44,45) FROM XXX WHERE Y=Y;
 ```
 
 See also [Evading Restrictions](Evading%20Restrictions.md)
+
+### Avoid commas
+
+No Comma - bypass using OFFSET, FROM and JOIN: [^hacktricks-article]  [^ippsec-video]
+
+[^hacktricks-article]: [No commas bypass](https://book.hacktricks.xyz/pentesting-web/sql-injection#no-commas-bypass), book.hacktricks.xyz
+[^ippsec-video]: [SQL Injecting Beyond Strict Filters - Union Without Comma](https://www.youtube.com/watch?v=61kf4CEnOZk), IppSec
+
+```SQL
+LIMIT 0,1         -> LIMIT 1 OFFSET 0
+SUBSTR('SQL',1,1) -> SUBSTR('SQL' FROM 1 FOR 1).
+SELECT 1,2,3,4    -> UNION SELECT * FROM (SELECT 1)a JOIN (SELECT 2)b JOIN (SELECT 3)c JOIN (SELECT 4)d
+```
+
 
 ### Abusing JSON-Based SQL to Bypass WAF
 Original article: [{JS-ON: Security-OFF}: Abusing JSON-Based SQL to Bypass WAF](https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf); Team82 Research

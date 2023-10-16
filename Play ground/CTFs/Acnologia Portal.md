@@ -3,7 +3,6 @@ Category:
   - Web
 Difficulty: Medium
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
 tags:
   - XSS

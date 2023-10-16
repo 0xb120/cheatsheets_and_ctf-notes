@@ -1,10 +1,10 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Medium
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - python-coding
   - pickle-deserialization
 ---

@@ -8,6 +8,7 @@
     "rating": "text",
     "status": "text",
     "Last time worked": "date",
-    "last-time": "date"
+    "last-time": "date",
+    "Ports": "multitext"
   }
 }

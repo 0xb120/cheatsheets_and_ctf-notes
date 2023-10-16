@@ -1,5 +1,5 @@
 ---
-alias: HTTP/2
+aliases: HTTP/2
 ---
 
 # Introduction

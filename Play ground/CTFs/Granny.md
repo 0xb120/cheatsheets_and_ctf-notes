@@ -1,10 +1,10 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - HTTP-PUT
   - MS14_058
   - arbitrary-file-upload

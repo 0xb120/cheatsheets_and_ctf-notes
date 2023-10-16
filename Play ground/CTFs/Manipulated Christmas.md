@@ -4,7 +4,6 @@ Difficulty: Easy
 Category:
   - Misc
 Status: 3. Complete
-Retired: true
 tags:
   - cracking-kdbx-files
   - steganography

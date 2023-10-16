@@ -1,10 +1,10 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - RCE
   - __init__.py
   - code-review
@@ -14,7 +14,6 @@ Tags:
   - python-tarfile
   - zip-slip
   - flask
-YT video overview: https://www.notion.so/Exploit-Zip-Slip-vulnerability-in-python-tarfile-HackTheBox-Slippy-a403d0b32b4941509b9da3904d970237
 ---
 >[!quote]
 > *You've found a portal for a firmware upgrade service, responsible for the deployment and maintenance of rogue androids hunting humans outside the tractor city. The question is... what are you going to do about it?*

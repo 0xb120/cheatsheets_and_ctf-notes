@@ -1,11 +1,14 @@
 ---
-Category: Mobile
+Category:
+  - Mobile
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: Android, certificate-pinning-bypass, frida, reversing
-YT video overview: "https://www.notion.so/Android-Application-Pinning-Bypass-HackTheBox-Pinned-1224aa23f64f4953bfb00d5afbdd282e"
+tags:
+  - Android
+  - certificate-pinning-bypass
+  - frida
+  - reversing
 ---
 >[!quote]
 > *This app has stored my credentials and I can only login automatically. I tried to intercept the login request and restore my password, but this seems to be a secure connection. Can you help bypass this security restriction and intercept the password in plaintext?*

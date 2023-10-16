@@ -1,10 +1,10 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Medium
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - CVE-2017-1000207
   - credentials-reuse
   - hardcoded-credentials

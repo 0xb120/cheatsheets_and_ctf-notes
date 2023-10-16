@@ -1,10 +1,17 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
-Tags: CVE-2017-8291, CVE-2018-16509, GhostButt, Ghostscript, RCE, insecure-file-upload, python-PIL
+tags:
+  - CVE-2017-8291
+  - CVE-2018-16509
+  - GhostButt
+  - Ghostscript
+  - RCE
+  - insecure-file-upload
+  - python-PIL
 ---
 >[!quote]
 >*Bees are comfy 🍯

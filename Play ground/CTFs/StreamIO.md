@@ -1,10 +1,10 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Medium
 Platform: HackTheBox
-Retired: true
 Status: 2. User
-Tags:
+tags:
   - LFI
   - MSSQL
   - RCE

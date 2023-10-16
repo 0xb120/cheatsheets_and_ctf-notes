@@ -13,7 +13,7 @@
   "newFileLocation": "root",
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "./",
+  "attachmentFolderPath": "./attachments",
   "showInlineTitle": true,
   "trashOption": "local",
   "useTab": true,

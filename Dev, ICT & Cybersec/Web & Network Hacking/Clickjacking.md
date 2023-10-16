@@ -69,11 +69,19 @@ PoC:
 
 ## Combining clickjacking with a DOM XSS attack
 
-Assuming that the attacker has first identified the XSS exploit. The XSS exploit is then combined with the iframe target URL so that the user clicks on the button or link and consequently executes the DOM XSS attack.
+Assuming that the attacker has first identified the [Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md) exploit. The XSS exploit is then combined with the iframe target URL so that the user clicks on the button or link and consequently executes the DOM XSS attack.
 
 ```html
 <iframe name="victim_frame" src="https://0a96001203426ee2c0660906001e008e.web-security-academy.net/feedback?name=<img+src+onerror=print()>&email=a@b.com&subject=xss&message=this+form+is+vulnerable+to+xss"></iframe>
 ```
+
+## UI redressing and XSS
+
+[Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md) and UI redressing can be combined in order to re-define any CSS style included in the original page in order to hijack the original behavior.
+
+In Tutanota, for example, there was no isolation between the application itself and the email body, so any CSS styles included in the email may also apply to other elements of the UI. This can be abused by an attacker to make the _Save Attachment_ button transparent and also stretch it over the whole application's UI. This form of UI redressing leaves the victim no choice but to unknowingly click the invisible button. [^tutanota]
+
+[^tutanota]: [Paul Gerste - Remote Code Execution in Tutanota Desktop Due to Code Flaw](../../Readwise/Articles/Paul%20Gerste%20-%20Remote%20Code%20Execution%20in%20Tutanota%20Desktop%20Due%20to%20Code%20Flaw.md#^024bf8)
 
 ## Multistep clickjacking
 

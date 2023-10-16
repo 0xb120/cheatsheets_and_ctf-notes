@@ -1,10 +1,10 @@
 ---
-Category: Pwn
+Category:
+  - Pwn
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - PIE
   - code-review
   - leaking-stack

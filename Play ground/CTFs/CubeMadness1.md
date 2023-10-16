@@ -1,10 +1,14 @@
 ---
-Category: GamePwn
+Category:
+  - GamePwn
 Difficulty: Easy
 Platform: HackTheBox
-Retired: false
 Status: 3. Complete
-Tags: Unity, memory-editing, memory-inspection, reversing
+tags:
+  - Unity
+  - memory-editing
+  - memory-inspection
+  - reversing
 ---
 >[!quote]
 > *Gotta collect them all.*

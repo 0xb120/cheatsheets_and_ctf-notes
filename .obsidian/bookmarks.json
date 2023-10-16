@@ -6,14 +6,50 @@
       "path": "Home.md"
     },
     {
-      "type": "file",
-      "ctime": 1689928623798,
-      "path": "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md"
+      "type": "group",
+      "ctime": 1697019635519,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1689928623798,
+          "path": "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1687718425372,
+          "path": "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md"
+        }
+      ],
+      "title": "Cheatsheet"
     },
     {
-      "type": "file",
-      "ctime": 1687718425372,
-      "path": "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md"
+      "type": "group",
+      "ctime": 1696344229004,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1695590405679,
+          "path": "Play ground/Projects/Project list.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1696344216071,
+          "path": "Play ground/Projects/Todo training and research.md",
+          "title": "Todo training and research"
+        },
+        {
+          "type": "file",
+          "ctime": 1695680223851,
+          "path": "Play ground/Projects/Possible targets.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1695680547945,
+          "path": "Play ground/CTFs/_CTF-dashboard_wrapper.md",
+          "title": "CTF list"
+        }
+      ],
+      "title": "Projects and works"
     },
     {
       "type": "file",
@@ -22,19 +58,8 @@
     },
     {
       "type": "file",
-      "ctime": 1695590405679,
-      "path": "Play ground/Projects/Project list.md"
-    },
-    {
-      "type": "file",
-      "ctime": 1695680223851,
-      "path": "Play ground/Projects/Possible targets.md"
-    },
-    {
-      "type": "file",
-      "ctime": 1695680547945,
-      "path": "Play ground/CTFs/_CTF-dashboard_wrapper.md",
-      "title": "CTF list"
+      "ctime": 1696272067572,
+      "path": "Readwise/Readwise inbox.md"
     },
     {
       "type": "file",

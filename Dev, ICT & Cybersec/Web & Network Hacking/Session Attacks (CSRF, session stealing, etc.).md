@@ -207,6 +207,8 @@ SameSite can have three different values:
 
 ### Referer-based validation
 
+^7c9e8d
+
 Some applications make use of the HTTP Referer header to attempt to defend against CSRF attacks, by verifying that the request originated from the application's own domain.
 
 #### Common bypasses and flaws
@@ -232,7 +234,7 @@ Some applications make use of the HTTP Referer header to attempt to defend again
 >```
 
 - **Validation of Referer can be circumvented**:
-  Some applications validate the `Referer` header in a naive way that can be bypassed (eg. appending or adding at the end of the query string the desired domain). Hwever, refer to [Evading Restrictions](Evading%20Restrictions.md) for further techniques.
+  Some applications validate the `Referer` header in a naive way that can be bypassed (eg. appending or adding at the end of the query string the desired domain). However, refer to [evading restrinctions](Evading%20Restrictions.md#Other%20resources) for further techniques.
 >[!warning]
 >Although you may be able to identify this behavior using Burp, you will often find that this approach no longer works when you go to test your proof-of-concept in a browser. In an attempt to reduce the risk of sensitive data being leaked in this way, **many browsers now strip the query string from the Referer header by default**. You can override this behavior by making sure that the response containing your exploit has the `Referrer-Policy: unsafe-url` header set. This ensures that the full URL will be sent, including the query string.
 

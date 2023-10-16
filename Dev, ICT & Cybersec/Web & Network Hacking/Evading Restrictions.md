@@ -200,3 +200,7 @@ Many applications that place user input into file paths implement some kind of d
 - [Cache parameter cloaking](Web%20Cache%20Poisoning.md#Cache%20parameter%20cloaking)
 - [HTTP Parameter Pollution (HPP)](HTTP%20Parameter%20Pollution%20(HPP).md)
 - [HTTP Verb Tampering](HTTP%20Verb%20Tampering.md)
+- [Empty Referer bypass](https://tutorialboy.medium.com/talking-about-jsonp-hijacking-vulnerability-f1668ec633c5#:~:text=Empty%20Referer%20bypass) 
+	- using `<iframe>`
+	- using `<head><meta name=”referrer” content=”no-referrer”></head>`
+	- using `<iframe src=data://text/html;base64,...>`

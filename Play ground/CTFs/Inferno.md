@@ -1,10 +1,12 @@
 ---
-Category: Misc
+Category:
+  - Misc
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: esoteric-lang, malbolge
+tags:
+  - esoteric-lang
+  - malbolge
 ---
 >[!quote]
 > *Download the provided file*

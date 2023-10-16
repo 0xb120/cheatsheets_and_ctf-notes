@@ -87,6 +87,7 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     __publicField(this, "loaded", false);
     __publicField(this, "tabIndex", 0);
     __publicField(this, "pluginTabIndex", 0);
+    __publicField(this, "seen", []);
     __publicField(this, "settingCache", new Map());
     __publicField(this, "searchAppended", false);
     __publicField(this, "activeIndex", -1);
@@ -116,7 +117,7 @@ var SettingsSearch = class extends import_obsidian.Plugin {
   }
   buildResources() {
     const tab = this.app.setting.settingTabs[this.tabIndex];
-    if (tab) {
+    if (tab && tab.id !== void 0 && !this.seen.includes(tab.id)) {
       this.getTabResources(tab);
       this.tabIndex++;
       setTimeout(() => this.buildResources());
@@ -243,6 +244,7 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     }
     if (this.app.setting.activeTab?.id == tab.id)
       return;
+    this.seen.push(tab.id);
     tab.containerEl.detach();
     tab.hide();
   }
@@ -261,7 +263,9 @@ var SettingsSearch = class extends import_obsidian.Plugin {
     this.register(around(this.app.setting, {
       addSettingTab: function(next) {
         return function(tab) {
-          self.getTabResources(tab);
+          if (tab && tab.id !== void 0 && !self.seen.includes(tab.id)) {
+            self.getTabResources(tab);
+          }
           return next.call(this, tab);
         };
       }

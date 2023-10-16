@@ -74,7 +74,7 @@ cd <SHAREDD_FOLDER>
 
 - **Mounting that directory** in a client machine, and **as root copying** inside the mounted folder our come compiled payload that will abuse the SUID permission, give to it **SUID** rights, and **execute from the victim** machine that binary. [^1]
 
-[^1]: [C](../Web%20&%20Network%20Hacking/Reverse%20Shell%20Cheatsheet.md#C)
+[^1]: [C](../Web%20&%20Network%20Hacking/Shell%20Cheatsheet.md#C)
 
 ```bash
 #Attacker, as root user

@@ -18,6 +18,13 @@ In addition to whitelisting specific domains, content security policy also provi
 - The CSP directive can specify a nonce (a random value) and the same value must be used in the tag that loads a script. If the values do not match, then the script will not execute. To be effective as a control, the nonce must be securely generated on each page load and not be guessable by an attacker.
 - The CSP directive can specify a hash of the contents of the trusted script. If the hash of the actual script does not match the value specified in the directive, then the script will not execute. If the content of the script ever changes, then you will of course need to update the hash value that is specified in the directive.
 
+>[!warning] CSP and Electron applications
+>What does the `script-src 'self'` CSP value mean for `file://` URLs used in Electron App? 
+>
+>It allows **any file from the file system** to be loaded! [^csp-electron]
+
+[^csp-electron]: [Paul Gerste - Remote Code Execution in Tutanota Desktop Due to Code Flaw](../../Readwise/Articles/Paul%20Gerste%20-%20Remote%20Code%20Execution%20in%20Tutanota%20Desktop%20Due%20to%20Code%20Flaw.md#^ee5e7a)
+
 ## CSP Evasion
 
 ### Using `img` and dangling markup
@@ -87,4 +94,4 @@ Further examples:
 
 - [AngularJS CSP bypass](../Dev,%20scripting%20&%20OS/AngularJS.md#AngularJS%20CSP%20bypass)
 - [Ambushed by AngularJS: a hidden CSP bypass in Piwik PRO](https://portswigger.net/research/ambushed-by-angularjs-a-hidden-csp-bypass-in-piwik-pro)
-
+- [Bypass CSP using MIME sniffing](MIME%20sniffing.md#Bypass%20CSP%20using%20MIME%20sniffing)

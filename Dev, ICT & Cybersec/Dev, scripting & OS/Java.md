@@ -18,6 +18,9 @@ javac -source 1.8 -target 1.8 test.java
 # Create a JAR archive
 jar cmvf META-INF/MANIFEST.MF test.jar test.class
 
+# Create a WAR file
+jar -cvf ../webshell.war *
+
 # Execute java program
 java -jar test.jar
 java test.class
@@ -75,7 +78,7 @@ We can use [Process Explorer](../Tools/Sysinternals%20Suite.md#Process%20Explore
 - User running the process
 - ...
 
-When analyzing Java application it's also always good searching 
+When analyzing Java application it's also always good searching:
 - the `WEB-INF` folder → which is the Java’s default configuration folder path
 - `web.xml` → a deployment descriptor file which determine how URLs map to servlets, which URLs require authentication, and other information
 ```xml

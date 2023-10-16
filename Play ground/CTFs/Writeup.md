@@ -1,10 +1,10 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
-Status: 3. Complete
-Tags:
+status: 3. Complete
+tags:
   - CMS-Made-Simple
   - CVE-2019-9053
   - SQL-Injection

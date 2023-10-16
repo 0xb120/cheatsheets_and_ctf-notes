@@ -1,10 +1,13 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: code-review, deobfuscation, reversing
+tags:
+  - code-review
+  - deobfuscation
+  - reversing
 ---
 >[!quote]
 >*We want to update our website but we are unable to because the developer who coded this left today. Can you take a look?* 

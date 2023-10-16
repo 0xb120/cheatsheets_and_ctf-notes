@@ -1,10 +1,10 @@
 ---
-Category: Pwn
+Category:
+  - Pwn
 Difficulty: Easy
 Platform: TryHackMe
-Retired: true
 Status: 3. Complete
-Tags: []
+tags:
 ---
 # Set up
 

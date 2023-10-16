@@ -1,10 +1,14 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Medium
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags: brute-force, code-review, python-coding, reversing
+tags:
+  - brute-force
+  - code-review
+  - python-coding
+  - reversing
 ---
 >[!summary]
 >*Could you please check the console of your Chrome?*

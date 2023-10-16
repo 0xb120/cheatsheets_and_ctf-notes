@@ -1,11 +1,10 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Easy
-For YT: Yes
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - RCE
   - authentication-bypass
   - code-review

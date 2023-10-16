@@ -1,10 +1,10 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Hard
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - Adminer
   - CVE-2020-35476
   - CVE-2021-21311

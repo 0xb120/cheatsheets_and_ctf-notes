@@ -3,7 +3,6 @@ Category:
   - Web
 Difficulty: Medium
 Platform: justCTF 2023
-Retired: true
 Status: 3. Complete
 tags:
   - ejs

@@ -1,10 +1,11 @@
 ---
-Category: Blockchain
+Category:
+  - Blockchain
 Difficulty: Easy
 Platform: X-MAS
-Retired: true
 Status: 1. In progress
-Tags: Blockchain
+tags:
+  - Blockchain
 ---
 
 >[!quote]

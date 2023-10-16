@@ -16,6 +16,17 @@ URL: https://portswigger.net/burp
 
 ## Traffic Auditor
 
+### Sensitive Discoverer
+
+SensitiveDiscoverer is a Burp Suite extension to scan for particular pattern or file extensions inside HTTP messages. With this extension you can automatically search for sensitive strings in HTTP messages. It uses a list of Regular Expressions and File Extensions to match for in each message. The plugin is available with a pre-defined set of Regular Expression and File Extensions, but you can also add your custom lists.
+
+Features:
+- Multithreaded scan of messages
+- Pre-defined set of regex
+- Many filters to skip irrelevant messages
+- Customizable regexes lists
+- Import regexes from CSV/JSON files
+- Export results to CSV/JSON files
 ### *Retire.js
 
 Integrates Burp with the Retire.js repository to find vulnerable JavaScript libraries. It passively looks at JavaScript files loaded and identifies those which are vulnerable.
@@ -47,6 +58,13 @@ Monitors traffic and looks for request parameter values (longer than 3 character
 
 ![|700](../../zzz_res/attachments/reflected-parameters.png)
 
+### *Detect Dynamic JS
+
+This extension compares JavaScript files with each other to detect dynamically generated content and content that is only accessible when the user is authenticated. This occasionally contains not only code but also _data_ with user or session information. User/session information can then be checked for potential leakage. This extension is supposed to help hunting for exploitable situations.
+
+To trigger the extension, simply launch a passive scan of your JavaScript files that you have requested as authenticated user. Despite being a passive scan, the extension will generate one or sometimes two request per script without cookies to get the non-authenticated version of the script.
+
+If the same script is found to contain differing content, the extension will report an issue in the Target tab.
 ### *CSRF Scanner
 
 Used to passively scan for [Cross-Site Request Forgery (CSRF)](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF)). A dedicated tab allows to customize token's names, etc. The scanner send requests passively in background.
@@ -154,6 +172,29 @@ Supports scanning for Request Smuggling vulnerabilities, and also aids exploitat
 
 ### Server-Side Prototype Pollution Scanner
 
+To use this extension simply right-click on a request, go to the extensions menu then server side prototype pollution and choose one of the scan options:
+- Body scan - Scans JSON bodies with the techniques
+- Body dot scan - Scans JSON bodies using dots, for example __proto__.x
+- Body square scan - Scans JSON bodies using square bracket syntax such as __proto__[x]
+- Param scan - Scan JSON inside query parameters and others. Note there has to be existing JSON in the base request.
+- Param dot scan - Scans for JSON inside query parameters using the dot syntax.
+- Param square scan - Scans for JSON inside query parameters using square bracket syntax.
+- Add js property scan - Used to find leaking JavaScript code by adding query parameters such as constructor.
+- JS property param scan - Used to find leaking JavaScript code by manipulating parameters with names like constructor.
+- Async body scan - Attempts to find prototype pollution asynchronously using the --inspect flag.
+- Async param scan - Attempts to find prototype pollution asynchronously using the --inspect flag inside query parameters and others.
+- Full scan - Tries to find prototype pollution using all the methods.
+
+Multiple techniques are used to detect prototype pollution and are described in the PortSwigger blog post.
+- JSON spaces
+- Async
+- Status
+- Options
+- Blitz
+- Exposed headers
+- Reflection
+- Non reflected property
+
 ### *Collaborator Everywhere
 
 Augments your in-scope proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator.
@@ -168,6 +209,17 @@ Implements most attacks that seem feasible for file uploads. The extension is te
 
 ![|900](../../zzz_res/attachments/upload-scanner.png)
 
+### *Oauth Scanner
+
+This extension provides a way to discover OAUTHv2/OpenID vulnerabilities.
+
+The main features are:
+- Add Passive and Active Scanner checks
+- Try to identify OAuthv2 issues and common misconfigurations
+- Try to identify OpenID issues and common misconfigurations
+- Manipulate the standard Insertion Points identified by Burp, in such a way as to reduce user-induced errors.
+
+For more details, source code, bug reporting, etc., please refer to the author github page
 ### *CORS, Additional CORS Checks
 
 This extension can be used to test websites for CORS misconfigurations. It can spot trivial misconfigurations like arbitrary origin reflection, but also more sublte ones where a regex is not properly configured. "CORS* Additional CORS Checks" can be run in either **automatic** or **manual mode**.
@@ -237,12 +289,9 @@ Adds a new tab to Burp's HTTP message editor, and displays JSON messages in deco
 
 ![|800](../../zzz_res/attachments/json-decoder.png)
 
-### JSON Query
+### JQ
 
-Parse and beautify JSON responses. Query JSON with JSONPath.
-
-![|800](../../zzz_res/attachments/json-qeury.png)
-
+Burpsuite integration of [jq](jq.md)
 ### *GraphQL Raider
 
 The gql query and variables are extracted from the unreadable json body and displayed in separate tabs. Not only the variables are extracted as insertion point for the scanner. Furthermore the values inside the query are also extracted as insertion point for the scanner.
@@ -303,6 +352,11 @@ tag-based conversion tool that supports various escapes and encodings.
 
 ![](../../zzz_res/attachments/hackvector.png)
 
+### Request Minimizer
+
+This extension performs HTTP request minimization. It deletes parameters that are not relevant such as: random ad cookies, cachebusting nonces, etc.
+Two actions are added to the context menu in Repeater: Minimize in current tab and Minimize in new tab.
+As each parameter is removed, the extension repeats the request to ensure the response matches. Only parameters that do not affect the response are removed.
 ### Copy As Python-Requests
 
 This extension copies selected request(s) as Python-Requests invocations.

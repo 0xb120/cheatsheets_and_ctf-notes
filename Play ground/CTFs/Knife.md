@@ -1,11 +1,12 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
-  - PHP 8.1.0-dev
+tags:
+  - PHP
+  - 8.1.0-dev
   - backdoor
   - knife
   - vi-privesc

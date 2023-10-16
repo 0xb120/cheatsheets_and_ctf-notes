@@ -2,9 +2,7 @@
 Category:
   - Web
 Difficulty: Medium
-For YT: Yes
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
 tags:
   - OAST

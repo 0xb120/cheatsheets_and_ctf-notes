@@ -1,3 +1,8 @@
+---
+tags:
+  - training
+---
+
 ### Before registering for AWAE Lab:
 
 - [ ] [Get comfortable with python requests library](https://requests.readthedocs.io/en/master/)
@@ -63,11 +68,11 @@
 - [x] [Server Side JS Injection](https://ckarande.gitbooks.io/owasp-nodegoat-tutorial/content/tutorial/a1_-_server_side_js_injection.html)
 - [x] [Remote Code Execution in math.js](https://capacitorset.github.io/mathjs/)
 - [x] [Arbitrary code execution in fast-redact](https://itnext.io/how-i-exploited-a-remote-code-execution-vulnerability-in-fast-redact-9e69fa35572f)
-- [ ] [NVIDIA GeForce Experience OS Command Injection - [ ] CVE-2019-5678](https://rhinosecuritylabs.com/application-security/nvidia-rce-cve-2019-5678/)
-- [ ] [SetTimeout and SetInterval use eval therefore are evil](https://idiallo.com/javascript/settimeout-and-setinterval-and-setevil)
-- [ ] [Pentesting Node.js Application : Nodejs Application Security](https://www.websecgeeks.com/2017/04/pentesting-nodejs-application-nodejs.html)
-- [ ] [NodeJS remote debugging with vscode](https://maikthulhu.github.io/2019-05-17-remote-debugging-node-vscode/)
-- [ ] [Escape NodeJS Sandboxes](https://blog.netspi.com/escape-nodejs-sandboxes/)
+- [x] [NVIDIA GeForce Experience OS Command Injection - [ ] CVE-2019-5678](https://rhinosecuritylabs.com/application-security/nvidia-rce-cve-2019-5678/)
+- [x] [SetTimeout and SetInterval use eval therefore are evil](https://idiallo.com/javascript/settimeout-and-setinterval-and-setevil)
+- [x] [Pentesting Node.js Application : Nodejs Application Security](https://www.websecgeeks.com/2017/04/pentesting-nodejs-application-nodejs.html)
+- [x] [NodeJS remote debugging with vscode](https://maikthulhu.github.io/2019-05-17-remote-debugging-node-vscode/)
+- [x] [Escape NodeJS Sandboxes](https://blog.netspi.com/escape-nodejs-sandboxes/)
 
 #### PHP Type Juggling:
 
@@ -143,10 +148,10 @@
 
 #### Websocekts InSecurity
 
-- [ ] [Introduction to WebSockets](https://portswigger.net/web-security/websockets)
-- [ ] [[Video] Hacking with Websocket - [ ] BlackHat](https://www.youtube.com/watch?v=-ALjHUqSz_Y)
-- [ ] [Remote Hardware takeover via Websocket Hijacking](https://www.netsparker.com/blog/web-security/remote-hardware-takeover-via-vulnerable-admin-software/)
-- [ ] [Cross-Site WebSocket Hijacking to full Session Compromise](https://www.notsosecure.com/how-cross-site-websocket-hijacking-could-lead-to-full-session-compromise/)
+- [x] [Introduction to WebSockets](https://portswigger.net/web-security/websockets)
+- [x] [[Video] Hacking with Websocket - [ ] BlackHat](https://www.youtube.com/watch?v=-ALjHUqSz_Y)
+- [x] [Remote Hardware takeover via Websocket Hijacking](https://www.netsparker.com/blog/web-security/remote-hardware-takeover-via-vulnerable-admin-software/)
+- [x] [Cross-Site WebSocket Hijacking to full Session Compromise](https://www.notsosecure.com/how-cross-site-websocket-hijacking-could-lead-to-full-session-compromise/)
 
 #### Source Code Audit
 

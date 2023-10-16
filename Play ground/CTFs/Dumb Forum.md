@@ -1,10 +1,10 @@
 ---
-Category: Web
+Category:
+  - Web
 Difficulty: Medium
 Platform: m0leCon
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - SSTI
   - jinja
   - flask

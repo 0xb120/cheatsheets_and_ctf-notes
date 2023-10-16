@@ -62,7 +62,7 @@ PG_RETURN_VOID();
 ```
 
 >[!tip] Tip and tricks
->- Reverse shell extension code can be found in [UDF Postgres](../Web%20&%20Network%20Hacking/Reverse%20Shell%20Cheatsheet.md#UDF%20Postgres) 
+>- Reverse shell extension code can be found in [UDF Postgres](../Web%20&%20Network%20Hacking/Shell%20Cheatsheet.md#UDF%20Postgres) 
 >- If you can't download the DLL from anywhere and you need to directly create it using the SQL Injection, use PostgreSQL [Large Objects](https://www.postgresql.org/docs/9.2/largeobjects.html) mentioned in [Reading & Writing files](../Web%20&%20Network%20Hacking/SQL%20Injection.md#Reading%20&%20Writing%20files)
 
 

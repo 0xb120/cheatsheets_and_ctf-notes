@@ -1,12 +1,14 @@
 ---
-Category: B2R
+Category:
+  - B2R
 Difficulty: Easy
 Platform: HackTheBox
-Retired: true
 Status: 3. Complete
-Tags:
+tags:
   - ActiveDirectory
-  - Group Policy (GPP/GPO)
+  - Group
+  - Policy
+  - (GPP/GPO)
   - Kerberoasting
   - Windows
   - anonymous-smb
