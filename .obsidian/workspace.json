@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -74,7 +74,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -103,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md"
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md"
               }
             }
           },
@@ -141,7 +142,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -183,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,12 +226,13 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "7bf29a4b24693fcd",
+  "active": "8ab711eaa4222edf",
   "lastOpenFiles": [
-    "Readwise/Articles/PortSwigger Blog - Introducing Bambdas.md",
     "Readwise/Articles/Catalin Cimpanu - Risky Biz News Clop Is Coming After Your SysAid Servers.md",
-    "Play ground/Projects/opencart/OpenCart 4.0.2.3.canvas",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
     "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
+    "Readwise/Articles/PortSwigger Blog - Introducing Bambdas.md",
+    "Play ground/Projects/opencart/OpenCart 4.0.2.3.canvas",
     "Dev, ICT & Cybersec/Dev, scripting & OS/Java.md",
     "Play ground/Projects/opencart/attachments/email.png",
     "Dev, ICT & Cybersec/Tools/semgrep.md",
@@ -248,7 +250,6 @@
     "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Extensible Stylesheet Language Transformations Injection (XSLT Injection).md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Server Side Template Injection (SSTI).md",
-    "Server-Side Includes Injection (SSI).md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Edge-Side Includes Injection (ESI).md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
     "Dev, ICT & Cybersec/Services/Apache JServ Protocol (AJP).md",

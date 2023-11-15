@@ -140,7 +140,7 @@ Evading restrictions:
 - [Extensible Stylesheet Language Transformations Injection (XSLT Injection)](../Web%20&%20Network%20Hacking/Extensible%20Stylesheet%20Language%20Transformations%20Injection%20(XSLT%20Injection).md)
 - [Insecure Deserialization & Object Injection](../Web%20&%20Network%20Hacking/Insecure%20Deserialization%20&%20Object%20Injection.md)
 - [Server Side Template Injection (SSTI)](../Web%20&%20Network%20Hacking/Server%20Side%20Template%20Injection%20(SSTI).md)
-- [Server-Side Includes Injection (SSI)](../../Server-Side%20Includes%20Injection%20(SSI).md)
+- [Server-Side Includes Injection (SSI)](../Web%20&%20Network%20Hacking/Server-Side%20Includes%20Injection%20(SSI).md)
 - [Edge-Side Includes Injection (ESI)](../Web%20&%20Network%20Hacking/Edge-Side%20Includes%20Injection%20(ESI).md)
 - [Web Cache Attacks](../Web%20&%20Network%20Hacking/Web%20Cache.md#Web%20Cache%20Attacks)
 - [JWT Vulnerabilities](../Web%20&%20Network%20Hacking/JWT%20Vulnerabilities.md)
