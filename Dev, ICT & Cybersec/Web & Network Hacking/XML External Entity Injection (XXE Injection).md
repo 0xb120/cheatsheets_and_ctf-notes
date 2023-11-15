@@ -147,9 +147,34 @@ There are various types of XXE attacks:
 <!ENTITY xxe SYSTEM "https://www.example.com/text.txt">]><foo>&xxe;</foo>
 ```
 
+#### Blind XXE to SSRF to RCE
+
+A blind XXE with SSRF capabilities was used to deploy arbitrary services. After some research in PeopleSoft's `pspc.war`, which contains the Axis instance, it appears the `Deploy` class of the `org.apache.pluto.portalImpl` package contains interesting methods. First, `addToEntityReg(String[] args)` allows us to add arbitrary data at the end of an XML file. Second, `copy(file1, file2)` allows us to copy it anywhere. This is enough to get a shell, by inserting a JSP payload in our XML, and copying it into the webroot. [^xxe2shell]
+
+[^xxe2shell]: [ORACLE PEOPLESOFT REMOTE CODE EXECUTION: BLIND XXE TO SYSTEM SHELL](https://www.ambionics.io/blog/oracle-peoplesoft-xxe-to-rce), ambionics.io
+
+Axis call to perform arbitrary GET/POST SOAP requests:
+```http
+GET /pspc/services/SomeService?method=!--><myMethod+attr="x"><test>y</test></myMethod
+
+--- RESPONSE ---
+
+<?xml version="1.0" encoding="utf-8"?>
+<soapenv:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:api="http://127.0.0.1/Integrics/Enswitch/API"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <!--><myMethod attr="x"><test>y</test></myMethod>
+    </!--><myMethod attr="x"><test>y</test></myMethod>
+  </soapenv:Body>
+</soapenv:Envelope>
+```
+
+
 ### XXE: Remote Attack - Through External Xml Inclusion
 
-Example: [WAFfle-y Order](https://www.notion.so/WAFfle-y-Order-bc7ec381b01f4d9187fad6632cc87721) 
+Example: [WAFfle-y Order](../../Play%20ground/CTFs/WAFfle-y%20Order.md)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -246,7 +271,9 @@ This DTD carries out the following steps:
 ### XInclude attacks
 
 >[!abstract]
->Some applications receive client-submitted data, embed it on the server-side into an XML document, and then parse the document. An example of this occurs when client-submitted data is placed into a back-end SOAP request, which is then processed by the backend SOAP service.
+>Some applications receive client-submitted data, embed it on the server-side into an XML document, and then parse the document. An example of this occurs when client-submitted data is placed into a back-end SOAP request, which is then processed by the backend SOAP service. 
+>
+>See [Edge-Side Includes Injection (ESI)](Edge-Side%20Includes%20Injection%20(ESI).md) and [Edge-Side Includes Injection (ESI)](Edge-Side%20Includes%20Injection%20(ESI).md) for further references.
 
 In this situation, you cannot carry out a classic XXE attack, because you don't control the entire XML document and so cannot define or modify a `DOCTYPE` element. However, you might be able to use `XInclude` instead. `XInclude` is a part of the XML specification that allows an XML document to be built from sub-documents. You can place an `XInclude` attack within any data value in an XML document, so the attack can be performed in situations where you only control a single item of data that is placed into a server-side XML document.
 
@@ -264,8 +291,10 @@ In this situation, you cannot carry out a classic XXE attack, because you don't 
 
 ---
 
-# External examples
+# Other examples
 
 - [https://github.com/payloadbox/xxe-injection-payload-list](https://github.com/payloadbox/xxe-injection-payload-list)
 - [What is XXE (XML external entity) injection? Tutorial & Examples | Web Security Academy](https://portswigger.net/web-security/xxe)
 - [What is a blind XXE attack? Tutorial & Examples | Web Security Academy](https://portswigger.net/web-security/xxe/blind)
+- [WAFfle-y Order](../../Play%20ground/CTFs/WAFfle-y%20Order.md)
+- https://www.synack.com/blog/a-deep-dive-into-xxe-injection/

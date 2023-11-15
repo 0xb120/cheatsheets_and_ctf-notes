@@ -26,6 +26,7 @@ URL: https://www.docker.com/
 | docker stop \<cont_id\> | Stop the selected container |
 | docker rm \<cont_id\> | Delete the selected container |
 | docker attach \<cont_id\> | Attach to the selected container |
+| docker logs | Print full `stdout` and `stderr` |
 
 ### docker advanced commands
 
@@ -76,3 +77,4 @@ docker run -v $PWD:/pwd
 ```bash
 docker exec -it <cont_id> /bin/bash
 ```
+

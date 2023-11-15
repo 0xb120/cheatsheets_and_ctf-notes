@@ -25,8 +25,6 @@ Main checks:
 - [fuff](../Tools/fuff.md)
 - [gobuster](../Tools/gobuster.md)
 - [feroxbuster](https://github.com/epi052/feroxbuster)
-- dirb
-- dirbuster
 - dirsearch
 - wfuzz
 - **good wordlists**
@@ -63,11 +61,13 @@ Main checks:
 
 - Collaborator / [cowitness](https://github.com/stolenusername/cowitness) (HTTP server and DNS server mimic)
 - [ngrok](https://ngrok.com/)
+- [Out-of-Band Exfiltration Tools](../../Readwise/Articles/Piyush%20Kumawat%20(securitycipher)%20-%20Out-of-Band%20Exfiltration%20Tools.md#^3bac3c)
 
 ## Source Code Recovery
 
+There are various path you can try follow to retrieve an application source code:
 - Get it from cloud marketplaces (AWS, Azure, GCP) and reverse it
-- Get the docker image from Dockerhub
+- Get the docker image from [Dockerhub](https://hub.docker.com/)
 - Contact sales or search for trial version
 - Leak the source code using vulnerabilities ([File Inclusion (LFI & RFI)](../Web%20&%20Network%20Hacking/File%20Inclusion%20(LFI%20&%20RFI).md), [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md), RCE, etc.)
 
@@ -106,7 +106,7 @@ Focus on:
 - Validation
 - Sanitization
 - Normalization
-- APIs
+- [Web Services & APIs](../Web%20&%20Network%20Hacking/Web%20Services%20&%20APIs.md)
 	- SOAP → WSDL (`?wsdl`)
 	- REST → Swagger, OpenAPI, Postman, etc.
 
@@ -137,8 +137,11 @@ Evading restrictions:
 - [Insecure File Upload](../Web%20&%20Network%20Hacking/Insecure%20File%20Upload.md)
 - [Server Side Request Forgery (SSRF)](../Web%20&%20Network%20Hacking/Server%20Side%20Request%20Forgery%20(SSRF).md)
 - [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md)
+- [Extensible Stylesheet Language Transformations Injection (XSLT Injection)](../Web%20&%20Network%20Hacking/Extensible%20Stylesheet%20Language%20Transformations%20Injection%20(XSLT%20Injection).md)
 - [Insecure Deserialization & Object Injection](../Web%20&%20Network%20Hacking/Insecure%20Deserialization%20&%20Object%20Injection.md)
 - [Server Side Template Injection (SSTI)](../Web%20&%20Network%20Hacking/Server%20Side%20Template%20Injection%20(SSTI).md)
+- [Server-Side Includes Injection (SSI)](../../Server-Side%20Includes%20Injection%20(SSI).md)
+- [Edge-Side Includes Injection (ESI)](../Web%20&%20Network%20Hacking/Edge-Side%20Includes%20Injection%20(ESI).md)
 - [Web Cache Attacks](../Web%20&%20Network%20Hacking/Web%20Cache.md#Web%20Cache%20Attacks)
 - [JWT Vulnerabilities](../Web%20&%20Network%20Hacking/JWT%20Vulnerabilities.md)
 - [Server-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Server-side%20prototype%20pollution%20vuln)
@@ -151,6 +154,7 @@ Evading restrictions:
 - [Mass Assignment](../Web%20&%20Network%20Hacking/Mass%20Assignment.md)
 - [GraphQL vulnerabilities](../Web%20&%20Network%20Hacking/GraphQL%20vulnerabilities.md)
 - [Race Condition](../Web%20&%20Network%20Hacking/Race%20Condition.md)
+- [ReDoS](../Web%20&%20Network%20Hacking/ReDoS.md)
 ## Client side vulnerabilities
 
 - [Cross-Site Scripting (XSS)](../Web%20&%20Network%20Hacking/Cross-Site%20Scripting%20(XSS).md)
@@ -166,6 +170,13 @@ Evading restrictions:
 - [Client-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Client-side%20prototype%20pollution%20vuln)
 - [Browser-powered request smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md#Browser-powered%20request%20smuggling)
 - [Fetch Diversion](../Web%20&%20Network%20Hacking/Fetch%20Diversion.md)
+- [ReDoS](../Web%20&%20Network%20Hacking/ReDoS.md)
+
+
+## API-specific attacks
+
+- [SOAPAction spoofing](../Web%20&%20Network%20Hacking/SOAPAction%20spoofing.md)
+- 
 
 ---
 

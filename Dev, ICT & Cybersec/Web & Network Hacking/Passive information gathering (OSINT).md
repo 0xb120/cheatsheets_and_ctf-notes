@@ -3,6 +3,12 @@
 
 ---
 
+# Misc command line tools
+
+- [waybackurls](https://github.com/tomnomnom/waybackurls) - Fetch all the URLs that the Wayback Machine knows about for a domain
+- [gau](https://github.com/lc/gau) - Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
+
+---
 # Google Hacking
 
 - [Google Hacking](Passive%20information%20gathering%20(OSINT).md#Google%20Hacking)

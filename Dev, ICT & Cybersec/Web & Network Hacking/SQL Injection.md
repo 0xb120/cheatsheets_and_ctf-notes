@@ -250,6 +250,10 @@ In second-order SQL injection (also known as **stored SQL injection**), the appl
 
 Second-order SQL injection often arises in situations where developers are aware of SQL injection vulnerabilities, and so safely handle the initial placement of the input into the database. When the data is later processed, it is deemed to be safe, since it was previously placed into the database safely. At this point, the data is handled in an unsafe way, because the developer wrongly deems it to be trusted.
 
+>[!example]- Second-order SQL Injection example
+><iframe width="560" height="315" src="https://www.youtube.com/embed/YmRDV0JR4qg?si=BgIvP96IOQyJ3Xww&amp;start=378" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+You can automate the discovery and exploitation of 2nd order SQLi with [sqlmap](../Tools/sqlmap.md#Testing%202nd%20order%20SQL%20Injection)
 
 ---
 

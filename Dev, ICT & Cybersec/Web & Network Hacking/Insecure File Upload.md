@@ -92,6 +92,11 @@ Then we need to find a way to change the image extension to a vulnerable one or 
 Eg:
 - https://github.com/kunte0/phar-jpg-polyglot/tree/master
 
+See also:
+- CVE-2023-33466 - Exploiting Healthcare Servers with Polyglot Files [^33466]
+
+[^33466]: [Exploiting Healthcare Servers with Polyglot Files](xploiting Healthcare Servers with Polyglot Files), shielder.com
+
 ## Bypass file execution prevention in user-accessible directories
 
 Generally, the second line of defense is to stop the server from executing any scripts that do slip through the net.

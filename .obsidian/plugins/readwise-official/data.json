@@ -5,7 +5,7 @@
   "triggerOnLoad": true,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 10913583,
+  "lastSavedStatusID": 11380696,
   "currentSyncStatusID": 0,
   "refreshBooks": true,
   "booksToRefresh": [],
@@ -14,7 +14,6 @@
     "Readwise/Articles/Alex Lauerman - Preparing for an Application Penetration Test.md": "32498830",
     "Readwise/Articles/Pierluigi Paganini - Alert! Patch Your TeamCity Instance to Avoid Server Hack.md": "32521339",
     "Readwise/Articles/Catalin Cimpanu - Risky Biz News China Admits NSA Hacked Huawei.md": "32522057",
-    "Readwise/Tweets/@Zealsham on Twitter - Tweets From 🦢Shammah Agwor⚡️.md": "32550098",
     "Readwise/Articles/Stefan Schiller - Unzipping Dangers OpenRefine Zip Slip Vulnerability.md": "32623490",
     "Readwise/Articles/Catalin Cimpanu - Risky Biz News Chinese APT Hacks Subsidiaries, Pivots to Corporate Headquarters.md": "32656758",
     "Readwise/Articles/httptoolkit.com - New Ways to Inject System CA Certificates in Android 14.md": "32422690",
@@ -29,7 +28,19 @@
     "Readwise/Articles/Start free - SocketSleuth Improving Security Testing for WebSocket Applications  Snyk.md": "32982598",
     "Readwise/Articles/Aurélien Chalot - Browser Cache Smuggling.md": "33040596",
     "Readwise/Articles/David Kutz-Marks - Attacking AWS Cognito With Pacu.md": "33065804",
-    "Readwise/Articles/Gabor Matuz - Hacking HTMX Applications.md": "33139717"
+    "Readwise/Articles/Gabor Matuz - Hacking HTMX Applications.md": "33139717",
+    "Readwise/Articles/Piyush Kumawat (securitycipher) - Out-of-Band Exfiltration Tools.md": "33441259",
+    "Readwise/Articles/Penetration Testing and CyberSecurity Solution - SecureLayer7 - What Is PCI DSS Compliance.md": "33269923",
+    "Readwise/Articles/Assetnote - RCE in Progress WS_FTP Ad Hoc via IIS HTTP Modules.md": "33523215",
+    "Readwise/Articles/Full Disclosure - [KIS-2023-10] SugarCRM = 13.0.1 (GetControl) Server-Side Template Injection Vulnerability.md": "33686731",
+    "Readwise/Articles/Full Disclosure - [KIS-2023-11] SugarCRM = 13.0.1 (Set_note_attachment) Unrestricted File Upload Vulnerability.md": "33686736",
+    "Readwise/Articles/Naveen Sunkavally - NextGen Mirth Connect Remote Code Execution Vulnerability.md": "33686784",
+    "Readwise/Articles/Phil Nash - A Comprehensive Guide to the Dangers of Regular Expressions in JavaScript.md": "33688752",
+    "Readwise/Articles/Catalin Cimpanu - Risky Biz News SEC Charges SolarWinds and Its CISO.md": "33755774",
+    "Readwise/Articles/Michael Weber - Refresh Compromising F5 BIG-IP With Request Smuggling  CVE-2023-46747.md": "33813249",
+    "Readwise/Articles/Rachid.A - A web cache deception chained to a CSRF, the recipe.md": "33813977",
+    "Readwise/Articles/Catalin Cimpanu - Risky Biz News Clop Is Coming After Your SysAid Servers.md": "34157495",
+    "Readwise/Articles/PortSwigger Blog - Introducing Bambdas.md": "34157709"
   },
   "reimportShowConfirmation": true
 }

@@ -686,6 +686,19 @@ Deserialized data id: '\' UNION SELECT NULL, NULL, NULL, CAST(password AS numeri
 <p class=is-warning>java.io.IOException: org.postgresql.util.PSQLException: ERROR: invalid input syntax for type numeric: &quot;lpag2mjh4m8k3qvx87p2&quot;</p>
 ```
 
+### CVE-2023-34040 - Java Deserialization in Spring Kafka
+
+>Overwriting the `ObjectInputStream` function becomes widespread use for defending against Java deserialization attack. It could make this problem alleviated. When overwriting the `ObjectInputStream`, the `resolveClass` would be hooked and potentially dangerous functions revoking might be found out. [^34040]
+
+[^34040]: [Java Deserialization Vulnerability Still Alive](https://blog.pyn3rd.com/2023/10/20/Java-Deserialization-Vulnerability-Still-Alive/), pyn3rd.com
+
+![](attachments/34040_1.png)
+
+I could simply escape this verification in a way of encapsulation. After initializing `CustomExceptionClass` , it could be inputted into the instance of `DeserializationExeception` as an argument. Last step is to embed the `CommonCollection6` gadget in a static code block.
+
+In conclusion, the weakness of customized `ObjectInputStream` contributes to Spring Kafka deserialization vulnerability. It only verifies the top layer function in stack.
+
+
 ## dotNET
 
 ### XML Serialization

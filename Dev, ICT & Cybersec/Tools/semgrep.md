@@ -38,7 +38,28 @@ semgrep --config=PATH/TO/MYRULE.YAML PATH/TO/SRC
 semgrep --config p/python .
 ```
 
+# Custom rules
 
+- [Android rules](https://github.com/mindedsecurity/semgrep-rules-android-security/tree/main/rules) by mindedsecurity
+
+## Developing custom rules
+
+Four main elements can be used inside custom rules [^pattern-syntax] :
+
+[^pattern-syntax]: https://semgrep.dev/docs/writing-rules/pattern-syntax/
+
+|Element|Description|
+|---|---|
+|`...`|Match a sequence of zero or more items such as arguments, statements, parameters, fields, characters.|
+|`"..."`|Match any single hardcoded string.|
+|`$A`|Match variables, functions, arguments, classes, object methods, imports, exceptions, and more.|
+|`<...` e `...>`|Match an expression ("e") that could be deeply nested within another expression.|
+
+Semgrep also supports taint [^taint], join [^join] and extract [^extract] modes. 
+
+[^taint]: https://semgrep.dev/docs/writing-rules/data-flow/taint-mode/
+[^join]: https://semgrep.dev/docs/writing-rules/experiments/join-mode/overview/
+[^extract]: https://semgrep.dev/docs/writing-rules/experiments/extract-mode/
 # Expansion tool for/using semgrep
 
 ## route-detect [^1]

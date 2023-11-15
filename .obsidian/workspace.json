@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "5cb839d4b44a3a01",
+        "id": "fae5507abbf9a826",
         "type": "tabs",
         "children": [
           {
-            "id": "cf76902dde255139",
+            "id": "7bf29a4b24693fcd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -50,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "OSWE",
+                "query": "openc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -69,12 +74,11 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 306.5
+    "width": 338.5
   },
   "right": {
     "id": "659b37494d493ae5",
@@ -98,7 +102,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md"
+              }
             }
           },
           {
@@ -107,8 +113,8 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabetical",
-                "useHierarchy": false
+                "sortOrder": "frequency",
+                "useHierarchy": true
               }
             }
           },
@@ -135,6 +141,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -147,7 +154,7 @@
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": false,
+                  "collapse-display": true,
                   "showArrow": false,
                   "textFadeMultiplier": -0.6,
                   "nodeSizeMultiplier": 1,
@@ -157,7 +164,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.28284538653663965,
+                  "scale": 0.380479500657112,
                   "close": true
                 }
               }
@@ -176,6 +183,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,6 +200,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -216,63 +225,63 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "cf76902dde255139",
+  "active": "7bf29a4b24693fcd",
   "lastOpenFiles": [
-    "OSWE preparation.md",
-    "Personal/To-do list.md",
-    "Dev, ICT & Cybersec/Tools/SumatraPDF.md",
+    "Readwise/Articles/PortSwigger Blog - Introducing Bambdas.md",
+    "Readwise/Articles/Catalin Cimpanu - Risky Biz News Clop Is Coming After Your SysAid Servers.md",
+    "Play ground/Projects/opencart/OpenCart 4.0.2.3.canvas",
+    "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Java.md",
+    "Play ground/Projects/opencart/attachments/email.png",
+    "Dev, ICT & Cybersec/Tools/semgrep.md",
     "Play ground/Projects/TP-Link Archer C50/TP-Link Archer C50 (summary).md",
-    "Personal/Book list/Advanced Web Attacks and Exploitation (OSWE).md",
-    "TP-Link Archer C50 (summary).md",
-    "Play ground/Projects/TP-Link Archer C50",
-    "Dev, ICT & Cybersec/Tools/vscode.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/JavaScript & NodeJS.md",
-    "Readwise/Articles/Paul Gerste - Remote Code Execution in Tutanota Desktop Due to Code Flaw.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Shell Cheatsheet.md",
-    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
-    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Shellcode.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/DOM-based vulnerabilities.md",
-    "Play ground/CTFs/eXtra Safe Security layers.md",
-    "Dev, ICT & Cybersec/Tools/Frida.md",
-    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Fuzzing.md",
+    "Personal/Music/Nayt.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP Request Smuggling.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Deception.md",
+    "Readwise/Articles/Rachid.A - A web cache deception chained to a CSRF, the recipe.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Poisoning.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/ReDoS.md",
     "Readwise/Readwise inbox.md",
-    "Personal/Book list/_book-dashboard_wrapper.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/HTMX.md",
-    "Readwise/Articles/Gabor Matuz - Hacking HTMX Applications.md",
+    "Readwise/Articles/Phil Nash - A Comprehensive Guide to the Dangers of Regular Expressions in JavaScript.md",
     "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Development fundamentals.md",
+    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Extensible Stylesheet Language Transformations Injection (XSLT Injection).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Server Side Template Injection (SSTI).md",
+    "Server-Side Includes Injection (SSI).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Edge-Side Includes Injection (ESI).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
+    "Dev, ICT & Cybersec/Services/Apache JServ Protocol (AJP).md",
     "Play ground/Projects/Project list.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Clickjacking.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Content Security Policy (CSP).md",
-    "Play ground/Projects/opencart/OpenCart 4.0.2.2.canvas",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Pasted image 20231013115300.png",
-    "Play ground/Projects/opencart/phpinfo-admin.png",
-    "Dev, ICT & Cybersec/Web & Network Hacking/MIME-sniffing.png",
-    "Play ground/Projects/opencart/phpmyinfo.png",
+    "Communities/YouTube/_YT-dashboard.canvas",
+    "Play ground/CTFs/_CTF-dashboard_wrapper.md",
+    "Personal/To-do list.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/ESI-injection.png",
+    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/34040_1.png",
+    "Dev, ICT & Cybersec/Web & Network Hacking/attachments",
+    "Communities/YouTube/attachments/2023005_atch1.png",
+    "Communities/YouTube/attachments/2023005_atch2.png",
+    "Communities/YouTube/attachments",
+    "Communities/YouTube/Thumbnails/UMDCTF-OSINT.png",
+    "Communities/YouTube/Thumbnails/Thumbnail2.png",
+    "Communities/YouTube/Thumbnails/androidenv-Thumbnail-2.png",
+    "Communities/YouTube/Thumbnails/androidenv-Thumbnail-1.png",
+    "Communities/YouTube/Thumbnails/ElfResources_thumbnail.png",
+    "Communities/YouTube/Thumbnails",
+    "Communities/YouTube",
+    "Play ground/Projects/opencart/report",
+    "Play ground/Projects/uisp.it",
+    "Play ground/Projects/disclosure-policy-v1.0.pdf",
+    "Play ground/Projects/TP-Link Archer C50",
     "Play ground/Projects/opencart/attachments",
-    "Play ground/Projects/opencart/attachments/path-traversal_security-storage.png",
     "Play ground/Projects/sito.itisavogadro.org",
     "Play ground/Projects/TeamCity/CVE-2023-42793.canvas",
-    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/update/buildAgent.zip",
-    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/update/agentInstaller.exe",
-    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/update",
-    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/notificationRuleForm.jsp",
-    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/include-internal-tag.jsp",
-    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/tests/bulkInvestigateDialog.jsp",
-    "Play ground/Projects/TeamCity/documentation/TeamCity/webapps/ROOT/tests/recentlyFailedTests.jsp",
     "Personal/Book list/_book-dashboard.canvas",
     "Play ground/Personal Blog workflow.canvas",
     "Play ground/Projects/baldivive.it/baldivive.it.canvas",
     "Play ground/Projects/informatica.uniroma2.it/www.informatica.uniroma2.it.canvas",
     "Play ground/CTFs/_CTF-dashboard.canvas",
     "Play ground/Projects/Super Bilders/superbilders.com.canvas",
-    "Play ground/Projects/SVB/SVB.canvas",
-    "Play ground/Projects/SoundBarSetup_4825/SoundBarSetup_4825.canvas",
-    "zzz_res/attachments/msfconsole-autopwn.png",
-    "zzz_res/attachments/partial-construction-attack.png",
-    "zzz_res/attachments/time-sensitive-attack.png",
-    "zzz_res/attachments/multi-endpoint-collision-example.png",
-    "zzz_res/attachments/makePayment-multi-endpoint-collision.png"
+    "Play ground/Projects/SVB/SVB.canvas"
   ]
 }

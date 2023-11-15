@@ -204,3 +204,4 @@ Many applications that place user input into file paths implement some kind of d
 	- using `<iframe>`
 	- using `<head><meta name=”referrer” content=”no-referrer”></head>`
 	- using `<iframe src=data://text/html;base64,...>`
+- Use [4-ZERO-3](https://github.com/Dheerajmadhukar/4-ZERO-3)

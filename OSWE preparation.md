@@ -132,11 +132,11 @@ tags:
 
 #### XML External Entity (XXE) Attack
 
-- [ ] [A Deep Dive into XXE Injection](https://www.synack.com/blog/a-deep-dive-into-xxe-injection/)
-- [ ] [From XXE to RCE: Pwn2Win CTF 2018 Writeup](https://bookgin.tw/2018/12/04/from-xxe-to-rce-pwn2win-ctf-2018-writeup/)
-- [ ] [Blind XXE to RCE](https://www.ambionics.io/blog/oracle-peoplesoft-xxe-to-rce)
-- [ ] [Apache Flex BlazeDS XXE Vulnerabilty](https://codewhitesec.blogspot.com/2015/08/cve-2015-3269-apache-flex-blazeds-xxe.html)
-- [ ] [WebLogic EJBTaglibDescriptor XXE](https://medium.com/@knownsec404team/weblogic-ejbtaglibdescriptor-xxe-vulnerability-analysis-cve-2019-2888-bd649f5fcfa6)
+- [x] [A Deep Dive into XXE Injection](https://www.synack.com/blog/a-deep-dive-into-xxe-injection/)
+- [x] [From XXE to RCE: Pwn2Win CTF 2018 Writeup](https://bookgin.tw/2018/12/04/from-xxe-to-rce-pwn2win-ctf-2018-writeup/)
+- [x] [Blind XXE to RCE](https://www.ambionics.io/blog/oracle-peoplesoft-xxe-to-rce)
+- [x] [Apache Flex BlazeDS XXE Vulnerabilty](https://codewhitesec.blogspot.com/2015/08/cve-2015-3269-apache-flex-blazeds-xxe.html)
+- [x] [WebLogic EJBTaglibDescriptor XXE](https://medium.com/@knownsec404team/weblogic-ejbtaglibdescriptor-xxe-vulnerability-analysis-cve-2019-2888-bd649f5fcfa6)
 
 #### Server Side Template Injection (SSTI)
 

@@ -25,3 +25,4 @@ aliases: Visual Studio Code
 
 # Debug different languages
 - [Remote Debugging NodeJS](../Dev,%20scripting%20&%20OS/JavaScript%20&%20NodeJS.md#Remote%20Debugging%20NodeJS)
+- [Remote debug python application](../Dev,%20scripting%20&%20OS/Python.md#Remote%20debug%20python%20application)

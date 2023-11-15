@@ -22,3 +22,7 @@ Salesforce [^salesforce] is big proponent of a metadata-driven design.
 
 [^mddp]: https://ebaas.github.io/blog/MetadataDrivenArchitecture/
 [^salesforce]: https://www.salesforce.com/
+
+# API conventions
+
+- [Web Services & APIs](../Web%20&%20Network%20Hacking/Web%20Services%20&%20APIs.md)

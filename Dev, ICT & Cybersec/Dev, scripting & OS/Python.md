@@ -59,19 +59,36 @@ arg2 = argv[2]
 #!/usr/bin/python3
 import urllib.parse, argparse
 
-parser = argparse.ArgumentParser(description="Exploit Spiky Tamagotchi")
-parser.add_argument("-i","--ip", help="target IP")
-parser.add_argument("-p","--port", help="target port")
-parser.add_argument("-c","--cmd", help="command to execute")
-parser.add_argument("--username", help="login username (deafult: admin)", default="admin")
+argparser = argparse.ArgumentParser(description="Exploit for OpenCart (Admin) - Authenticated Remote Command Execution (RCE) known as CVE-foo-bar.")
 
-args = parser.parse_args()
+argparser.add_argument("-u", "--url", help="Target URL (e.g. http://192.168.1.100/opencart)", required=True,  default="http://127.0.0.1/opencart")
+argparser.add_argument("-path", "--admin_path", help="Path to the admin back-office panel", required=True, default="/admin")
+argparser.add_argument("-usr","--username", help="Username having the common/security write-privilege enabled", required=True)
+argparser.add_argument("-psw", "--password", help="Password", required=True)
+argparser.add_argument("-v", "--verbose", action="store_true", required=False, default=False, help="Verbose mode")
 
-if not(args.ip and args.port and args.cmd):
-    print("Usage: exploit.py -i <ip> -p <port> -c <cmd>")
-    exit 0
+args = argparser.parse_args()
 
 ...
+$ python3 poc.py
+usage: poc.py [-h] -u URL -path ADMIN_PATH -usr USERNAME -psw PASSWORD [-v]
+poc.py: error: the following arguments are required: -u/--url, -path/--admin_path, -usr/--username, -psw/--password
+
+$ python3 poc.py -h
+usage: poc.py [-h] -u URL -path ADMIN_PATH -usr USERNAME -psw PASSWORD [-v]
+
+Exploit for OpenCart (Admin) - Authenticated Remote Command Execution (RCE) known as CVE-foo-bar.
+
+options:
+  -h, --help            show this help message and exit
+  -u URL, --url URL     Target URL (e.g. http://192.168.1.100/opencart)
+  -path ADMIN_PATH, --admin_path ADMIN_PATH
+                        Path to the admin back-office panel
+  -usr USERNAME, --username USERNAME
+                        Username having the common/security write-privilege enabled
+  -psw PASSWORD, --password PASSWORD
+                        Password
+  -v, --verbose         Verbose mode
 ```
 
 ## Basic statements
@@ -441,7 +458,7 @@ p.interactive()
 # Remote debug python application
 
 >[!tip] ptvsd
->`ptvsd` [^ptvsd] is a Python debugger package for use with Visual Studio and Visual Studio Code.
+>`ptvsd` [^ptvsd] is a Python debugger package for use with Visual Studio and [Visual Studio Code](../Tools/vscode.md).
 
 [^ptvsd]: https://github.com/microsoft/ptvsd
 
@@ -479,4 +496,71 @@ Then fill `host`, `port` and `remoteRoot` with the root application folder on th
 		}
 	]
 }
+```
+
+# Sample python exploit
+
+```python
+#!/usr/bin/env python3
+
+# Exploit Title: OpenCart (Admin) - Authenticated Remote Command Execution (RCE)
+# Date: asd
+# Exploit Author: 0xbro
+# Discovery Date: 2023-10-11
+# Vendor Homepage: asd
+# Software Links : asd
+# Version: asd
+# Tested on:
+# CVE: asd
+# Category: WebApps
+# Tested on OS: asd
+
+# Writeup: 
+# Advisory: 
+
+import argparse
+import logging
+import validators
+
+DEFAULT_LOGGING_LEVEL = logging.INFO
+
+def parse_arguments():
+    argparser = argparse.ArgumentParser(description="Exploit for OpenCart (Admin) - Authenticated Remote Command Execution (RCE) known as CVE-foo-bar.")
+
+    argparser.add_argument("-u", "--url", help="Target URL (e.g. http://192.168.1.100/opencart)", required=True, default="http://127.0.0.1/opencart")
+    argparser.add_argument("-path", "--admin_path", help="Path to the admin back-office panel", required=True, default="/admin")
+    argparser.add_argument("-usr","--username", help="Username having the common/security write-privilege enabled", required=True)
+    argparser.add_argument("-pwd", "--password", help="Password", required=True)
+    argparser.add_argument("-v", "--verbose", action="store_true", required=False, default=False, help="Verbose mode")
+    
+    return argparser.parse_args()
+
+def validate_input(args):
+    if not validators.url(args.url):
+        raise ValueError("Invalid target URL!")
+
+    if not args.admin_path.strip().startswith("/"):
+        raise ValueError("Invalid admin path!")
+
+def exploit():
+    pass
+
+def main():
+    args = parse_arguments()
+    logging_level = DEFAULT_LOGGING_LEVEL
+    
+    if args.verbose:
+        logging_level = logging.DEBUG
+    logging.basicConfig(level=logging_level, format="%(asctime)s - %(levelname)s - %(message)s")
+
+    validate_input(args)
+    url = args.url.strip()
+    admin_path = args.admin_path.strip()
+    username = args.username.strip()
+    password = args.password.strip()
+
+    exploit()
+
+if __name__ == "__main__":
+    main()
 ```

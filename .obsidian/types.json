@@ -9,6 +9,8 @@
     "status": "text",
     "Last time worked": "date",
     "last-time": "date",
-    "Ports": "multitext"
+    "Ports": "multitext",
+    "Publish_date": "date",
+    "publish-date": "date"
   }
 }

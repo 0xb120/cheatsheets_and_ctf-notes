@@ -8,8 +8,8 @@
 - `*.jar` = Java Archive, is a compressed data archive used to distribute collections of Java classes
 - `*.war` = Web Application Archive, is used to collect multiple JARs and static content, such as HTML, into a single archive
 - `*.ear` = Enterprise Application Archive, contain multiple JARs and WARs to consolidate multiple web applications into a single file
-- `.do` extension in URL = used for URL mapping scheme in compiled Java code
-- `.jsp` = Java Server Pages
+- `*.do` extension in URL = used for URL mapping scheme in compiled Java code
+- `*.jsp` = Java Server Pages
 
 ```bash
 # Compile a Java source code
@@ -65,10 +65,12 @@ jshell> /exit
 find . -iname '*.jar' -exec cp {} ALL_JARS \;
 ```
 
-- Compact all JAR files into one single "huge" JAR: https://frycos.github.io/vulns4free/2022/05/24/security-code-audit-fails.html
+- Compact all JAR files into one single "huge" JAR [^jarjarbigs]
 - Debug all the things using **Eclipse IDE for Enterprise Java and Web Developers** or **Eclipse IDE for Java Developers**
-	- Search or setup a **JDWP** (Java Debug Wire Protocol) interface our Eclipse instance could talk to
+	- Search or setup a **JDWP** (Java Debug Wire Protocol) interface our Eclipse instance could talk to [^compact-jar]
 
+[^compact-jar]: [Security Code Audit - For Fun and Fails](https://frycos.github.io/vulns4free/2022/05/24/security-code-audit-fails.html), frycos
+[^jarjarbigs]: [jarjarbigs](https://github.com/mogwailabs/jarjarbigs), mogwailabs
 
 ## Servlet mappings
 
@@ -97,6 +99,16 @@ When analyzing Java application it's also always good searching:
 - `doGet`, `doPost`, `doPut`, `doDelete`, `doCopy`, `doOptions`, `doFilter` etc. implementations inside decompiled source code
 - `request.getParameter`
 
+
+## Black-box information and source-code gathering 
+
+If you find a [Path Traversal](../Web%20&%20Network%20Hacking/Path%20Traversal.md) or a [File Inclusion (LFI & RFI)](../Web%20&%20Network%20Hacking/File%20Inclusion%20(LFI%20&%20RFI).md) vulnerability in a Java application, look at the following files to extract as much information as possible (and eventually also the application source):
+- `/proc/self/cmdline` to understand how the web server was executed and with which arguments (often contains useful full path)
+- `/proc/self/environ` to exfiltrate every available environment variable (often contains full path, credential and other useful information)
+- `/proc/self/map` to understand which JAR, WAR o EAR files have been imported and where they are located
+- `/proc/self/fd/{1..999}` to exfiltrate `STDOUT`, `STDERR` and every file loaded by the application (including JAR files, WAR, etc.)
+- Web server logs and configuration files (read the relative documentation or use some dedicated wordlist)
+
 ## Decompile Java
 
 >[!tip] Related resources 
@@ -106,8 +118,12 @@ When analyzing Java application it's also always good searching:
 - [jadx](../Tools/jadx.md)
 - [Bytecode Viewer](../Tools/Bytecode%20Viewer.md)
 
+
+
 ---
 
 # External researches on Java products
 
-- [FortiNAC - Just a few more RCEs](https://frycos.github.io/vulns4free/2023/06/18/fortinac.html), frycos
+- FortiNAC - Just a few more RCEs [^FortiNAC-RCEs]
+
+[^FortiNAC-RCEs]: [FortiNAC - Just a few more RCEs](https://frycos.github.io/vulns4free/2023/06/18/fortinac.html), frycos

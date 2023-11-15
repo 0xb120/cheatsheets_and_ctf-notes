@@ -1,7 +1,7 @@
 Every further information, such as software versions, open ports, etc. gathered from specific checks on every single service.
 
 # Common services
-![_Services_DB](../Services/_Services_DB.md)
+- [Services list](../Services/Services%20list.md)
 
 ## Framework and multi-purpose tools
 
