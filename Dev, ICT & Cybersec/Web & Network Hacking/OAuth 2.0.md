@@ -64,7 +64,7 @@ This request contains the following noteworthy parameters, usually provided in t
 - `redirect_uri`: URI to which the user's browser should be redirected when sending the authorization code to the client application. It is also called *callback URI* or *callback endpoint*
 - `response_type`: determines which kind of response the client application is expecting and, therefore, which flow (grant type) it wants to initiate. In this case `response_type=code`
 - `scope`: specify which subset of the user's data the client application wants to access
-- `state`: Stores a unique, unguessable value that is tied to the current session on the client application. This parameter serves as a form of [CSRF token](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#CSRF%20tokens) for the client application by making sure that the request to its `/callback` endpoint is from the same person who initiated the OAuth flow.
+- `state`: Stores a unique, unguessable value that is tied to the current session on the client application. This parameter serves as a form of [CSRF token](Session%20Attacks%20and%20Session%20Prediction.md#CSRF%20tokens) for the client application by making sure that the request to its `/callback` endpoint is from the same person who initiated the OAuth flow.
 
 2. Users are redirected to a login page, where they will be prompted to log in to their account with the OAuth provider. They will then be presented with a list of data that the client application wants to access.
 

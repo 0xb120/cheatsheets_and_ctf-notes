@@ -361,6 +361,8 @@ return;
 
 # Groovy (Jenkins)
 
+Valid for [Jenkins](../Dev,%20scripting%20&%20OS/Jenkins.md)
+
 Reverse Shell:
 
 ```java

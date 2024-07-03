@@ -13,7 +13,7 @@ Techniques:
 	- Account locking disclosing registered users
 	- Flawed brute-force protections resetting the counter every valid login or for any different IP
 	- [HTTP Verb Tampering](HTTP%20Verb%20Tampering.md)
-- [Session Attacks (CSRF, session stealing, etc.)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md)
+- [Session Attacks and Session Prediction](Session%20Attacks%20and%20Session%20Prediction.md)
 - [SQL Injection leading to authentication bypass](SQL%20Injection.md#Authentication%20Bypass)
 	- Injection inside the login query
 	- Credential leaks
@@ -60,8 +60,9 @@ Connection: close
 - [Business logic vulnerabilities](Business%20logic%20vulnerabilities.md) (eg. browsing the site before submitting the 2FA code, editing server responses to bypass client side validation, etc.)
 - Brute-forcing 2FA codes
 - Exploiting flawed two-factor verification logic (eg. log in using own credentials but then change the value of the account identifier)
-- Exploiting other vulnerabilities (eg. [Host Header attacks](Host%20Header%20attacks.md)) or 3non-standard headers (eg. `X-Forwarded-for`, etc.) to intercept 2FA codes
+- Exploiting other vulnerabilities (eg. [Host Header attacks](Host%20Header%20attacks.md)) or 3non-standard headers (eg. `X-Forwarded-for` [^xff], etc.) to intercept 2FA codes
 
+[^xff]: [HTTP Toolkit - What Is X-Forwarded-for and When Can You Trust It](../../Readwise/Articles/HTTP%20Toolkit%20-%20What%20Is%20X-Forwarded-for%20and%20When%20Can%20You%20Trust%20It.md)
 ## Other authentication mechanisms attacks
 
 - "Keep me log in" cookie brute-force or steal
@@ -70,7 +71,7 @@ Connection: close
 	- Predictable password reset token (eg. [Sandwich Attack](https://versprite.com/blog/universally-unique-identifiers/) - brute force UUIDv1 token included in a limited range, [Time-sensitive attacks](Race%20Condition.md#Time-sensitive%20attacks), etc.)
 	- Leaking password reset token
 - Exploit application features (eg. password reset) to brute-force other user's password
-- [Session Attacks (CSRF, session stealing, etc.)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md)
+- [Session Attacks and Session Prediction](Session%20Attacks%20and%20Session%20Prediction.md)
 - [Access control vulnerabilities](Access%20control%20vulnerabilities.md) in password reset logic
 - [OAuth 2.0](OAuth%202.0.md) and [OAuth 2.0 attacks](OAuth%202.0%20attacks.md)
 

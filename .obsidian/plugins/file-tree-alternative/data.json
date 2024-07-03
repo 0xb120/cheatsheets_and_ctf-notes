@@ -8,6 +8,8 @@
   "showFilesFromSubFoldersButton": true,
   "revealActiveFileButton": false,
   "excludedExtensions": "",
+  "hideAttachments": false,
+  "attachmentsFolderName": "attachments",
   "folderIcon": "default",
   "folderCount": true,
   "folderCountOption": "notes",
@@ -22,5 +24,6 @@
   "fileNameIsHeader": false,
   "folderNote": false,
   "deleteFileOption": "trash",
-  "showFileNameAsFullPath": false
+  "showFileNameAsFullPath": false,
+  "bookmarksEvents": false
 }

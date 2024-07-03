@@ -74,7 +74,7 @@ While the file was being loaded, the web editor would conveniently display statu
 
 ## Forcing authenticated requests (CSRF)
 
-Applications that use a custom header (like `Authorization` or `X-CSRF-Token`) or require `Content-Type: application/json` are normally immune to [Cross-Site Request Forgery (CSRF)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF)) (barring CORS misconfiguration). But since we’re diverting a legitimate call issued by the application itself, we’re gaining the ability to make calls with our victim’s headers.
+Applications that use a custom header (like `Authorization` or `X-CSRF-Token`) or require `Content-Type: application/json` are normally immune to [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md) (barring CORS misconfiguration). But since we’re diverting a legitimate call issued by the application itself, we’re gaining the ability to make calls with our victim’s headers.
 
 Keep in mind though that only the path and query parameters can be controlled. We will have to do with whatever method and body the diverted request happens to have.
 

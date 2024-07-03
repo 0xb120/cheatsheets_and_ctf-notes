@@ -46,17 +46,21 @@
 
 # Development
 
-- [Development fundamentals](Dev,%20scripting%20&%20OS/Development%20fundamentals.md)
 - [Dynamic Servers](Dev,%20scripting%20&%20OS/Dynamic%20Servers.md)
+- [Development fundamentals](Dev,%20scripting%20&%20OS/Development%20fundamentals.md)
+	- [Jenkins](Dev,%20scripting%20&%20OS/Jenkins.md)
+- [CICD security](Dev,%20scripting%20&%20OS/CICD%20security.md)
 - [Java](Dev,%20scripting%20&%20OS/Java.md)
 - [Python](Dev,%20scripting%20&%20OS/Python.md)
 - [dotNET](Dev,%20scripting%20&%20OS/dotNET.md)
 - [SQL 101](Dev,%20scripting%20&%20OS/SQL%20101.md)
+- [NoSQL 101](Dev,%20scripting%20&%20OS/NoSQL%20101.md)
 - [JavaScript & NodeJS](Dev,%20scripting%20&%20OS/JavaScript%20&%20NodeJS.md)
 - [AngularJS](Dev,%20scripting%20&%20OS/AngularJS.md)
 - [HTMX](Dev,%20scripting%20&%20OS/HTMX.md)
 - [Reversing and software memory 101](Reversing%20&%20Binary%20Exploitation/Reversing%20and%20software%20memory%20101.md)
 - [GraphQL](Web%20&%20Network%20Hacking/GraphQL.md)
+- [Solidity](Dev,%20scripting%20&%20OS/Solidity.md)
 
 ---
 
@@ -74,6 +78,8 @@
 - [cloud_metadata.txt](https://gist.github.com/jhaddix/78cece26c91c6263653f31ba453e273b)
 - [AWS](Cloud/AWS.md)
 - [IoT 101](Dev,%20scripting%20&%20OS/IoT%20101.md)
+	- [Route to Safety: Navigating Router Pitfalls](https://starlabs.sg/blog/2024/route-to-safety-navigating-router-pitfalls/)
+	- [Blog on Shielder - Hunting for ~~Un~~authenticated N-Days in Asus Routers](../Readwise/Articles/Blog%20on%20Shielder%20-%20Hunting%20for%20~~Un~~authenticated%20N-Days%20in%20Asus%20Routers.md)
 
 ---
 

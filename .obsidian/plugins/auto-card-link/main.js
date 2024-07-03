@@ -183,10 +183,10 @@ var LinkMetadataParser = class {
   parse() {
     return __async(this, null, function* () {
       var _a, _b;
-      const title = (_a = this.getTitle()) == null ? void 0 : _a.replace(/\r\n|\n|\r/g, "").replace(/"/g, '\\"').trim();
+      const title = (_a = this.getTitle()) == null ? void 0 : _a.replace(/\r\n|\n|\r/g, "").replace(/\\/g, "\\\\").replace(/"/g, '\\"').trim();
       if (!title)
         return;
-      const description = (_b = this.getDescription()) == null ? void 0 : _b.replace(/\r\n|\n|\r/g, "").replace(/"/g, '\\"').trim();
+      const description = (_b = this.getDescription()) == null ? void 0 : _b.replace(/\r\n|\n|\r/g, "").replace(/\\/g, "\\\\").replace(/"/g, '\\"').trim();
       const { hostname } = new URL(this.url);
       const favicon = yield this.getFavicon();
       const image = yield this.getImage();
@@ -572,11 +572,13 @@ var ObsidianAutoCardLink = class extends import_obsidian4.Plugin {
   enhanceSelectedURL(editor) {
     const selectedText = (EditorExtensions.getSelectedText(editor) || "").trim();
     const codeBlockGenerator = new CodeBlockGenerator(editor);
-    if (CheckIf.isUrl(selectedText)) {
-      codeBlockGenerator.convertUrlToCodeBlock(selectedText);
-    } else if (CheckIf.isLinkedUrl(selectedText)) {
-      const url = this.getUrlFromLink(selectedText);
-      codeBlockGenerator.convertUrlToCodeBlock(url);
+    for (const line of selectedText.split(/[\n ]/)) {
+      if (CheckIf.isUrl(line)) {
+        codeBlockGenerator.convertUrlToCodeBlock(line);
+      } else if (CheckIf.isLinkedUrl(line)) {
+        const url = this.getUrlFromLink(line);
+        codeBlockGenerator.convertUrlToCodeBlock(url);
+      }
     }
   }
   manualPasteAndEnhanceURL(editor) {

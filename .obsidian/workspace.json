@@ -4,16 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "fae5507abbf9a826",
+        "id": "52b5e387437ddb26",
         "type": "tabs",
         "children": [
           {
-            "id": "7bf29a4b24693fcd",
+            "id": "30e30fe7c4af00f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
+                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c0c15f090e0da20b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "zzz_res/templates/Format summary.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -34,7 +47,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c3613be8d3b5c6cf",
+            "id": "a1093cafd8a307e1",
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
@@ -55,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "openc",
+                "query": "SOQL",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -75,7 +88,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -88,23 +101,15 @@
       {
         "id": "497a4e903f6476bf",
         "type": "tabs",
-        "dimension": 36.658556366585564,
+        "dimension": 40.50387596899225,
         "children": [
-          {
-            "id": "a103b5b5ee1b155e",
-            "type": "leaf",
-            "state": {
-              "type": "quiet-outline",
-              "state": {}
-            }
-          },
           {
             "id": "b50298044abfff18",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md"
+                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md"
               }
             }
           },
@@ -125,16 +130,27 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
+          },
+          {
+            "id": "315dca84ea405e0a",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "93c550284300223b",
         "type": "tabs",
-        "dimension": 26.520681265206814,
+        "dimension": 22.674418604651162,
         "children": [
           {
             "id": "1b02ab1c108718d1",
@@ -142,7 +158,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
+                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -165,7 +181,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.380479500657112,
+                  "scale": 0.38047950065711234,
                   "close": true
                 }
               }
@@ -176,7 +192,7 @@
       {
         "id": "0ca134c80578c5f2",
         "type": "tabs",
-        "dimension": 36.820762368207625,
+        "dimension": 36.82170542635659,
         "children": [
           {
             "id": "92a8f5dacbdec5e4",
@@ -184,7 +200,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
+                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +217,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
+                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -211,7 +227,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 370.5
+    "width": 361.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -220,69 +236,69 @@
       "graph:Open graph view": false,
       "templates:Insert template": true,
       "canvas:Create new canvas": false,
+      "workspaces:Manage workspace layouts": false,
       "obsidian-book-search-plugin:Create new book note": false,
-      "file-tree-alternative:File Tree Alternative Plugin": true,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "workspaces:Manage workspace layouts": false
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "obsidian-kanban:Create new board": false
     }
   },
-  "active": "8ab711eaa4222edf",
+  "active": "30e30fe7c4af00f9",
   "lastOpenFiles": [
-    "Readwise/Articles/Catalin Cimpanu - Risky Biz News Clop Is Coming After Your SysAid Servers.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Server-Side Includes Injection (SSI).md",
-    "Play ground/Projects/opencart/opencart 4.0.2.3 (summary) - CVE-2023-47444.md",
-    "Readwise/Articles/PortSwigger Blog - Introducing Bambdas.md",
-    "Play ground/Projects/opencart/OpenCart 4.0.2.3.canvas",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Java.md",
-    "Play ground/Projects/opencart/attachments/email.png",
-    "Dev, ICT & Cybersec/Tools/semgrep.md",
-    "Play ground/Projects/TP-Link Archer C50/TP-Link Archer C50 (summary).md",
-    "Personal/Music/Nayt.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP Request Smuggling.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Deception.md",
-    "Readwise/Articles/Rachid.A - A web cache deception chained to a CSRF, the recipe.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Poisoning.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/ReDoS.md",
-    "Readwise/Readwise inbox.md",
-    "Readwise/Articles/Phil Nash - A Comprehensive Guide to the Dangers of Regular Expressions in JavaScript.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Development fundamentals.md",
+    "Dev, ICT & Cybersec/Cloud/Salesforce.md",
+    "Dev, ICT & Cybersec/Cloud/attachments/salesforce-getConfigData.png",
+    "Dev, ICT & Cybersec/Cloud/attachments/salesforce-getObjectInfo.png",
+    "Dev, ICT & Cybersec/Cloud/attachments/salesforce-app-js.png",
+    "Dev, ICT & Cybersec/Cloud/attachments",
+    "zzz_res/templates/Format summary.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Salesforce.md",
+    "Communities/YouTube/XXXXXXXX_SearchForBehavioursNotExploits.md",
+    "Communities/YouTube/_YT-dashboard.canvas",
     "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Play ground/Projects/Project list.md",
+    "Play ground/CTFs/Gilroy.md",
+    "Play ground/CTFs/_CTF-dashboard_wrapper.md",
+    "Readwise/Readwise inbox.md",
+    "Personal/Book list/_book-dashboard_wrapper.md",
+    "Play ground/Projects/TeamCity/CVE-2023-42793 (summary).md",
+    "Play ground/Projects/TeamCity/CVE-2023-42793.canvas",
+    "Communities/YouTube/XXXXXXX_TeamCity CVE-2023-42793.md",
+    "TeamCity.md",
+    "Personal/Music/Nayt.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Extensible Stylesheet Language Transformations Injection (XSLT Injection).md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Server Side Template Injection (SSTI).md",
+    "Readwise/Tweets/@LiveOverflow on Twitter - Nice Writeup for Anybody....md",
+    "Readwise/Articles/Rory McNamara - Breaking Caches and Bypassing Istio RBAC With HTTP Response Header Injection.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/XML External Entity Injection (XXE Injection).md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Edge-Side Includes Injection (ESI).md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
-    "Dev, ICT & Cybersec/Services/Apache JServ Protocol (AJP).md",
-    "Play ground/Projects/Project list.md",
-    "Communities/YouTube/_YT-dashboard.canvas",
-    "Play ground/CTFs/_CTF-dashboard_wrapper.md",
-    "Personal/To-do list.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/ESI-injection.png",
-    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/34040_1.png",
-    "Dev, ICT & Cybersec/Web & Network Hacking/attachments",
-    "Communities/YouTube/attachments/2023005_atch1.png",
-    "Communities/YouTube/attachments/2023005_atch2.png",
-    "Communities/YouTube/attachments",
-    "Communities/YouTube/Thumbnails/UMDCTF-OSINT.png",
-    "Communities/YouTube/Thumbnails/Thumbnail2.png",
-    "Communities/YouTube/Thumbnails/androidenv-Thumbnail-2.png",
-    "Communities/YouTube/Thumbnails/androidenv-Thumbnail-1.png",
-    "Communities/YouTube/Thumbnails/ElfResources_thumbnail.png",
-    "Communities/YouTube/Thumbnails",
-    "Communities/YouTube",
-    "Play ground/Projects/opencart/report",
-    "Play ground/Projects/uisp.it",
-    "Play ground/Projects/disclosure-policy-v1.0.pdf",
-    "Play ground/Projects/TP-Link Archer C50",
-    "Play ground/Projects/opencart/attachments",
-    "Play ground/Projects/sito.itisavogadro.org",
-    "Play ground/Projects/TeamCity/CVE-2023-42793.canvas",
-    "Personal/Book list/_book-dashboard.canvas",
-    "Play ground/Personal Blog workflow.canvas",
-    "Play ground/Projects/baldivive.it/baldivive.it.canvas",
-    "Play ground/Projects/informatica.uniroma2.it/www.informatica.uniroma2.it.canvas",
+    "Dev, ICT & Cybersec/Web & Network Hacking/JWT Vulnerabilities.md",
+    "Dev, ICT & Cybersec/Tools/Burpsuite.md",
+    "Readwise/Articles/PortSwigger Blog - Introducing Bambdas.md",
+    "Play ground/Projects/opencart/OpenCart 4.0.2.3.canvas",
+    "Play ground/Projects/PaperCut/CVE-2023-39143/CVE-2023-39143.canvas",
+    "Play ground/Projects/PaperCut/CVE-2023-39143",
+    "Play ground/Projects/PaperCut",
     "Play ground/CTFs/_CTF-dashboard.canvas",
-    "Play ground/Projects/Super Bilders/superbilders.com.canvas",
-    "Play ground/Projects/SVB/SVB.canvas"
+    "Play ground/Personal Blog workflow.canvas",
+    "Play ground/CTFs/attachments/gilroy-8.png",
+    "Play ground/CTFs/attachments/gilroy-7.png",
+    "Play ground/CTFs/attachments/gilroy-6.png",
+    "Play ground/CTFs/attachments/gilroy-5.png",
+    "Play ground/CTFs/attachments/gilroy-4.png",
+    "Play ground/CTFs/attachments/gilroy-3.png",
+    "Play ground/CTFs/attachments/gilroy-2.png",
+    "Play ground/Projects/Woox R4040/Woox R4040.canvas",
+    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.jadx",
+    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/names-map",
+    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9/000185e9.jadxmd",
+    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9",
+    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9/000185e9.java",
+    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9",
+    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata",
+    "Play ground/Projects/comunica.regione.piemonte.it/comunica.regione.piemonte.it.canvas",
+    "Play ground/Projects/SociableKit/www.sociablekit.com.canvas",
+    "Play ground/Projects/informatica.uniroma2.it/www.informatica.uniroma2.it.canvas"
   ]
 }

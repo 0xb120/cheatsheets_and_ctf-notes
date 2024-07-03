@@ -67,6 +67,7 @@ Evasion techniques:
     - [Xposed!](../Tools/Xposed!.md) framework with [TrustMeAlready](../Tools/Xposed!.md#TrustMeAlready) or [SSLUnpinning - Certificate Pinning Bypass](../Tools/Xposed!.md#SSLUnpinning%20-%20Certificate%20Pinning%20Bypass) (root required)
     - [Frida](../Tools/Frida.md)
     - [objection](../Tools/objection.md) (non-root, see the [following video](https://www.youtube.com/watch?v=qaJBWcueCIA&ab_channel=CorSecure))
+    - Flutter-specific: https://blog.mindedsecurity.com/2024/05/bypassing-certificate-pinning-on.html
 - **Improper Cert Management**: the server certificate might be stored in unsafe locations, (Documents directory, application files) therefore replaced with our own proxy certificate
 
 >[!note]
@@ -98,9 +99,14 @@ Evasion techniques:
 
 Verify for each exported component what it does and if exposes private information or vulnerable behaviors.
 Some examples are:
-- [Arbitrary file read using exported content provider](../../Play%20ground/Projects/Digital%20Private%20Vault/Digital%20Private%20Vault%20(summary).md#Arbitrary%20file%20read%20using%20exported%20content%20provider)
+- [Arbitrary file read using exported content provider](../../Play%20ground/Projects/Digital%20Private%20Vault/Digital%20Private%20Vault%20(summary).md#Arbitrary%20file%20read%20using%20exported%20content%20provider) [^file-read-content-provider-element]
 - PIN/Authentication bypass using exported activities
-- [Intent redirection](https://blog.scrt.ch/2023/03/29/attacking-android-antivirus-applications/)
+- Intent redirection [^intent-redir-1][^intent-redir-2][^intent-redir-3]
+
+[^file-read-content-provider-element]: [Element Android (<1.6.12) Sensitive file disclosure via share activity](https://www.shielder.com/advisories/element-android-sensitive-file-disclosure/), shielder.com
+[^intent-redir-1]: [Attacking Android Antivirus Applications](https://blog.scrt.ch/2023/03/29/attacking-android-antivirus-applications/), blog.scrt.ch
+[^intent-redir-2]: [Element Android (<1.6.12) Intent Redirection](https://www.shielder.com/advisories/element-android-intent-redirection/), shielder.com
+[^intent-redir-3]: [Element Android CVE-2024-26131, CVE-2024-26132 - Never Take Intents From Strangers](https://www.shielder.com/blog/2024/04/element-android-cve-2024-26131-cve-2024-26132-never-take-intents-from-strangers/), shielder.com
 
 ## WebView attacks
 

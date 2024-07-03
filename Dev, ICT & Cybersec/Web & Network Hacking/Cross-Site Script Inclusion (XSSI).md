@@ -1,5 +1,5 @@
 Cross Site Script Inclusion (CSSI or XSSI) vulnerability allows sensitive data leakage across-origin or cross-domain boundaries.
-XSSI is a client-side attack similar to [Cross-Site Request Forgery (CSRF)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF)) but has a different purpose: is uses JavaScript on the client side to leak sensitive data from authenticated sessions.
+XSSI is a client-side attack similar to [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md) but has a different purpose: is uses JavaScript on the client side to leak sensitive data from authenticated sessions.
 
 By default, websites are only allowed to access data if they are from the same origin because of the [Same-origin policy (SOP)](Same-origin%20policy%20(SOP).md). However, this policy is not applicable for HTML `<script>` tag inclusions. When the browser opens a website with `<script>` tags, the resources are fetched from the cross-origin domain. The resources then run in the same context as the including site or browser, which presents the opportunity to leak sensitive data.
 

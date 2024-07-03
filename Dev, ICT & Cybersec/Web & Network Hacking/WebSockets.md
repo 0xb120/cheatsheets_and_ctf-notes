@@ -55,7 +55,7 @@ In principle, practically any web security vulnerability might arise in relation
 
 ## Cross-site WebSockets hijacking (CSWSH)
 
- Cross-site WebSockets hijacking is a [Cross-Site Request Forgery (CSRF)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF)) vulnerability on a WebSocket handshake. It arises when the WebSocket handshake request relies solely on HTTP cookies for session handling and does not contain any CSRF tokens or other unpredictable values. 
+ Cross-site WebSockets hijacking is a [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md) vulnerability on a WebSocket handshake. It arises when the WebSocket handshake request relies solely on HTTP cookies for session handling and does not contain any CSRF tokens or other unpredictable values. 
  
  Unlike regular CSRF, the attacker gains **two-way interaction** with the compromised application. What happens next in the attack depends entirely on the application's logic and how it is using [WebSockets](https://portswigger.net/web-security/websockets). The attack might involve: 
 - Sending WebSocket messages to perform unauthorized actions on behalf of the victim user.
@@ -89,6 +89,8 @@ In principle, practically any web security vulnerability might arise in relation
 |...
 >```
 
-This vulnerability was used against Gitpod to leak environment data and obtain SSH keys, bypassing [SameSite attribute on cookies](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#SameSite%20attribute%20on%20cookies), finally escalating to RCE. [^gitpod]
+This vulnerability was used against Gitpod to leak environment data and obtain SSH keys, bypassing [SameSite attribute on cookies](Session%20Attacks%20and%20Session%20Prediction.md#SameSite%20attribute%20on%20cookies), finally escalating to RCE. [^gitpod]
+The same vulnerability was also used to get RCE against MeshCentral [^meshcentral-cswsh]
 
 [^gitpod]: [Gitpod remote code execution 0-day vulnerability via WebSockets](https://snyk.io/blog/gitpod-remote-code-execution-vulnerability-websockets/), snyk.io
+[^meshcentral-cswsh]: [MeshCentral Cross-Site Websocket Hijacking Vulnerability (CVE-2024-26135)](https://www.praetorian.com/blog/meshcentral-cross-site-websocket-hijacking-vulnerability/), praetorian.com

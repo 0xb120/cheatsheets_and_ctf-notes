@@ -75,6 +75,7 @@ We can also extract Flutter Metadata from the application using a modified versi
 >- https://www.guardsquare.com/blog/obstacles-in-dart-decompilation-and-the-impact-on-flutter-app-security
 >- https://www.guardsquare.com/blog/how-classical-attacks-apply-to-flutter-apps
 >- https://cryptax.medium.com/reversing-an-android-sample-which-uses-flutter-23c3ff04b847
+>- https://blog.mindedsecurity.com/2024/05/bypassing-certificate-pinning-on.html
 
 ### ReactNative
 
@@ -85,7 +86,7 @@ We can also extract Flutter Metadata from the application using a modified versi
 Search for:
 - Over privileged apps
 - Insecure configurations
-    - Exported components
+    - Exported components [^element-android-cve]
     - Insecure Android attributes (`allowBackup`, `debuggable`, `sharedUserId`)
 - Dangerous permissions which can affect user privacy or charge consumption
 - Usage of system-level permissions
@@ -109,17 +110,12 @@ Search for:
         - Locate uses of the cryptographic primitives in the code.
         - Some of the most frequently used classes and interfaces
 
----
+[^element-android-cve]: [Element Android (<1.6.12) Sensitive file disclosure via share activity](https://www.shielder.com/advisories/element-android-sensitive-file-disclosure/), shielder.com
 
 # Tools
 
-```start-multi-column
-ID: ID_fpde
-Number of Columns: 2
-Largest Column: standard
-```
-
 ## SAST Tools
+
 SAST can be performed via automatic open source tool which automatically decompile the app and enforce controls or through a manual effort.
 
 ### Automatic Tools
@@ -136,8 +132,6 @@ SAST can be performed via automatic open source tool which automatically decompi
 - [pidcat](https://github.com/JakeWharton/pidcat)
 - [apkurlgrep](https://github.com/ndelphit/apkurlgrep) (extract endpoints from APK files)
 
---- column-end ---
-
 ### Android Reverse Engineering Tools
 - [APKTool](../Tools/APKTool.md)
 - [Bytecode Viewer](../Tools/Bytecode%20Viewer.md)
@@ -147,6 +141,4 @@ SAST can be performed via automatic open source tool which automatically decompi
 - [APKLab](https://github.com/APKLab/APKLab) (VSCode extension)
 - [simplify](../Tools/simplify.md) (de-obfuscator)
 - [ClassNameDeobfuscator](https://github.com/HamiltonianCycle/ClassNameDeobfuscator) (de-obfuscator)
-
-=== end-multi-column
 

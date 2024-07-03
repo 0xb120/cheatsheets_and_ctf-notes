@@ -41,6 +41,7 @@ semgrep --config p/python .
 # Custom rules
 
 - [Android rules](https://github.com/mindedsecurity/semgrep-rules-android-security/tree/main/rules) by mindedsecurity
+- https://github.com/akabe1/akabe1-semgrep-rulesiOS (swift) rules by akabe1
 
 ## Developing custom rules
 

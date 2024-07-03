@@ -18,7 +18,7 @@ settings:
         title: Folder Pane | Folder Name Font Size
         description: Set folder pane font size in px
         type: variable-number
-        default: 13
+        default: 14
         format: px
     -
         id: oz-fta-folder-icon-color
@@ -56,7 +56,7 @@ settings:
         title: File Pane | File Name Font Size
         description: Set file pane font size in px
         type: variable-number
-        default: 12
+        default: 13
         format: px
     -
         id: oz-fta-file-pane-file-name-color
@@ -210,6 +210,10 @@ settings:
     display: inline-block;
 }
 
+.oz-nav-file {
+    border-bottom: 1px solid var(--divider-color);
+}
+
 div.oz-nav-file.is-active,
 div.oz-nav-file.is-active div.oz-nav-file-title,
 div.oz-nav-file.is-active div.oz-nav-file-title-content {
@@ -219,7 +223,7 @@ div.oz-nav-file.is-active div.oz-nav-file-title-content {
 }
 
 .is-folder-active {
-    color: var(--oz-fta-all-panes-active-text-color);
+    color: var(--oz-fta-all-panes-active-text-color) !important;
     font-weight: bold;
 }
 
@@ -400,14 +404,9 @@ div.oz-folder-name.is-root-folder {
     flex: 1;
 }
 
-.oz-coffee-div,
-.oz-tip-div {
+.oz-coffee-div {
     text-align: center;
     margin-top: 10px;
-}
-
-.oz-tip-div img {
-    border-radius: 10px;
 }
 
 #file-tree-divider {

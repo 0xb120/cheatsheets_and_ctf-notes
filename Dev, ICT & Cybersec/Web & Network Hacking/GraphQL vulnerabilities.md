@@ -6,7 +6,7 @@ GraphQL vulnerabilities generally arise due to implementation and design flaws. 
 Some of the most common vulnerabilities in GraphQL are:
 - [Information Disclosure](Information%20Disclosure.md)
 - [Access control vulnerabilities](Access%20control%20vulnerabilities.md)
-- [Cross-Site Request Forgery (CSRF)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF))
+- [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md)
 - [Privilege Escalation](Privilege%20Escalation.md)
 
 # Finding GraphQL endpoints [^1]
@@ -84,7 +84,7 @@ Connection: close
 {"query": "query IntrospectionQuery {\r\n\t__schema {\r\n\t\tqueryType {\r\n\t\t\tname\r\n\t\t}\r\n\t\tmutationType {\r\n\t\t\tname\r\n\t\t}\r\n\t\tsubscriptionType {\r\n\t\t\tname\r\n\t\t}\r\n\t\ttypes {\r\n\t\t ...FullType\r\n\t\t}\r\n\t\tdirectives {\r\n\t\t\tname\r\n\t\t\tdescription\r\n\t\t\targs {\r\n\t\t\t\t...InputValue\r\n\t\t}\r\n\t\t}\r\n\t}\r\n}\r\n\r\nfragment FullType on __Type {\r\n\tkind\r\n\tname\r\n\tdescription\r\n\tfields(includeDeprecated: true) {\r\n\t\tname\r\n\t\tdescription\r\n\t\targs {\r\n\t\t\t...InputValue\r\n\t\t}\r\n\t\ttype {\r\n\t\t\t...TypeRef\r\n\t\t}\r\n\t\tisDeprecated\r\n\t\tdeprecationReason\r\n\t}\r\n\tinputFields {\r\n\t\t...InputValue\r\n\t}\r\n\tinterfaces {\r\n\t\t...TypeRef\r\n\t}\r\n\tenumValues(includeDeprecated: true) {\r\n\t\tname\r\n\t\tdescription\r\n\t\tisDeprecated\r\n\t\tdeprecationReason\r\n\t}\r\n\tpossibleTypes {\r\n\t\t...TypeRef\r\n\t}\r\n}\r\n\r\nfragment InputValue on __InputValue {\r\n\tname\r\n\tdescription\r\n\ttype {\r\n\t\t...TypeRef\r\n\t}\r\n\tdefaultValue\r\n}\r\n\r\nfragment TypeRef on __Type {\r\n\tkind\r\n\tname\r\n\tofType {\r\n\t\tkind\r\n\t\tname\r\n\t\tofType {\r\n\t\t\tkind\r\n\t\t\tname\r\n\t\t\tofType {\r\n\t\t\t\tkind\r\n\t\t\t\tname\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n}"}
 ```
 
-You can view relationships between schema entities more easily using a [GraphQL visualizer](http://nathanrandal.com/graphql-visualizer/).
+You can view relationships between schema entities more easily using a [GraphQL visualizer](http://nathanrandal.com/graphql-visualizer/) or [graphql-voyager](https://graphql-kit.com/graphql-voyager/).
 
 ![](../../zzz_res/attachments/graphql-visualizer-example.png)
 
@@ -213,7 +213,7 @@ HTTP/1.1 200 OK
 
 ## GraphQL CSRF
 
-GraphQL can be used as a vector for [Cross-Site Request Forgery (CSRF)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF)) attacks, whereby an attacker creates an exploit that causes a victim's browser to send a malicious query as the victim user. These vulnerabilities can arise where a GraphQL endpoint does not validate the content type of the requests sent to it and no CSRF tokens are implemented.
+GraphQL can be used as a vector for [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md) attacks, whereby an attacker creates an exploit that causes a victim's browser to send a malicious query as the victim user. These vulnerabilities can arise where a GraphQL endpoint does not validate the content type of the requests sent to it and no CSRF tokens are implemented.
 
 To defend against GraphQL CSRF vulnerabilities, ensure the following:
 - Your GraphQL API only accepts queries over JSON-encoded POST.

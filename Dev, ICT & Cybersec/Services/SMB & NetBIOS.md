@@ -352,3 +352,4 @@ sudo reg.py domain.local/USERNAME@MACHINE.htb -hashes 1a3487d42adaa12332bdb34a87
 ## Other references
 - [139,445 - Pentesting SMB](https://book.hacktricks.xyz/pentesting/pentesting-smb)
 - [PWK Notes: SMB Enumeration Checklist [Updated]](https://0xdf.gitlab.io/2018/12/02/pwk-notes-smb-enumeration-checklist-update1.html)
+- [SMB Enumeration cheatsheet](https://0xdf.gitlab.io/2024/03/21/smb-cheat-sheet.html) by 0xdf

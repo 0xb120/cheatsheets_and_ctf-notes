@@ -7,6 +7,9 @@
 
 - [waybackurls](https://github.com/tomnomnom/waybackurls) - Fetch all the URLs that the Wayback Machine knows about for a domain
 - [gau](https://github.com/lc/gau) - Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
+- [Porch Pirate](https://github.com/mandconsultinggroup/porch-pirate) [^porch-pirate] - Porch Pirate is the most comprehensive Postman recon / OSINT client and framework that facilitates the automated discovery and exploitation of API endpoints and secrets committed to workspaces, collections, requests, users and teams.
+
+[^porch-pirate]: [Plundering Postman With Porch Pirate](../../Readwise/Articles/Mand%20Consulting%20Group%20-%20Plundering%20Postman%20With%20Porch%20Pirate.md), mandconsulting.ca
 
 ---
 # Google Hacking

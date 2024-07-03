@@ -117,6 +117,7 @@ PoC for leaking arbitrary files when converting HTML to PDF:
 ## SSRF evasion and bypasses
 
 - [Evading Restrictions](Evading%20Restrictions.md)
+- [SSRF bypass list by h4x0r_fr34k](../../Readwise/Tweets/@h4x0r_fr34k%20on%20Twitter%20-%20Tweets%20From%20VAIDIK%20PANDYA.md#^2da607)
 - [A New Era of SSRF](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017#1)
 - [DNS rebinding](../Services/DNS%20-%20Domain%20Name%20System.md#DNS%20rebinding)
 

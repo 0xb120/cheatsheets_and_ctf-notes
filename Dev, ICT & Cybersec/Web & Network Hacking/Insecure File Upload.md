@@ -95,7 +95,7 @@ Eg:
 See also:
 - CVE-2023-33466 - Exploiting Healthcare Servers with Polyglot Files [^33466]
 
-[^33466]: [Exploiting Healthcare Servers with Polyglot Files](xploiting Healthcare Servers with Polyglot Files), shielder.com
+[^33466]: [Exploiting Healthcare Servers with Polyglot Files](https://www.shielder.com/blog/2023/10/cve-2023-33466-exploiting-healthcare-servers-with-polyglot-files/), shielder.com
 
 ## Bypass file execution prevention in user-accessible directories
 

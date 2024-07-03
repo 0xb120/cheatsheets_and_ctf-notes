@@ -4,8 +4,9 @@
 >[!tip] Breakpoint
 >If you insert `debugger;` anywhere in the JS code, the execution will pause when that instruction is reached.
 
->[!tip] AWAE snippets
->Advanced XSS snippets for AWAE available here: https://mlcsec.com/posts/js-awae-prep/
+>[!tip] Snippets and handy books
+>- [JS AWAE Prep](https://mlcsec.com/posts/js-awae-prep/), mlcsec.com
+>- [JavaScript for hackers - Gareth Heyes](../../Personal/Book%20list/JavaScript%20for%20hackers%20-%20Gareth%20Heyes.md)
 
 # Install and run a custom Node app
 

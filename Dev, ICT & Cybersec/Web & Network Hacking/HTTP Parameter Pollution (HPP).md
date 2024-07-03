@@ -18,9 +18,45 @@ Some web technologies parse the first or the last occurrence of the parameter, s
 
 ![|1000](../../zzz_res/attachments/server-parsing.png)
 
-# Examples
+## Testing for server-side parameter pollution
 
-## Business logic bypass
+>[!hint]
+>To test for server-side parameter pollution in the query string, place query syntax characters like `#`, `&`, and = in your input and observe how the application responds. [^sspp]
+
+[^sspp]: [Server-Side Parameter Pollution](https://portswigger.net/web-security/api-testing/server-side-parameter-pollution), portswigger.com
+
+Consider a vulnerable application that enables you to search for other users based on their username. When you search for a user, your browser makes the following request:
+
+```http
+GET /userSearch?name=peter&back=/home
+```
+
+To retrieve user information, the server queries an internal API with the following request:
+
+```http
+GET /users/search?name=peter&publicProfile=true
+```
+
+You can use a URL-encoded `#` character to attempt to truncate the server-side request. To help you interpret the response, you could also add a string after the `#` character.
+
+For example, you could modify the query string to the following:
+
+```http
+GET /userSearch?name=peter%23foo&back=/home
+```
+
+The front-end will try to access the following URL:
+
+```http
+GET /users/search?name=peter#foo&publicProfile=true
+```
+
+Review the response for clues about whether the query has been truncated. For example, if the response returns the user `peter`, the server-side query may have been truncated. If an `Invalid name` error message is returned, the application may have treated `foo` as part of the username. This suggests that the server-side request may not have been truncated.
+
+If you're able to truncate the server-side request, this removes the requirement for the `publicProfile` field to be set to true. You may be able to exploit this to return non-public user profiles.
+## Examples
+
+### Business logic bypass
 
 If with the request below accounA pays 1000 euros to accountB
 
@@ -31,16 +67,16 @@ https://www.anybank.com/send/?from=accountA&to=accountB&amount=10000
 Injecting a new `from` parameter at the end of the string may cause the payment coming from accountC instead of accountA
 
 ```http
-https://www.anybank.com/send/?from=accountA&to=accountB&amount=10000&from=accountC
+https://www.anybank.com/send/?from=accountA&to=accountB&amount=10000%26from=accountC
 ```
 
-## Authentication bypass and account takeover
+### Authentication bypass and account takeover
 
 The same issue can be used to achieve [authentication bypass](Authentication%20Attacks.md) or account takeover by intercepting 2FA or OTP intended for other users:
 
 ![](../../zzz_res/attachments/HPP-OTP.png)
 
-## OAuth redirect_url whitelist bypass
+### OAuth redirect_url whitelist bypass
 
 HPP can also be used to bypass `redirect_uri` whitelisting in [OAuth 2.0 attacks](OAuth%202.0%20attacks.md):
 ```http

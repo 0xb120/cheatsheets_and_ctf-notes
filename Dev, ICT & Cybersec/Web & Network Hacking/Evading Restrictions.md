@@ -55,6 +55,26 @@ Unicode escape sequences consist of the prefix `\u` followed by the four-digit h
 <a href="javascript\u{0000000003a}alert(1)">Click me</a>
 ```
 
+## Unicode normalization
+
+Unicode normalization is a process that ensures different binary representations of characters are standardized to the same binary value. This process is crucial in dealing with strings in programming and data processing. [^unicode-norm]
+
+[^unicode-norm]: [Unicode normalization](https://book.hacktricks.xyz/pentesting-web/unicode-injection/unicode-normalization), hacktricks.xyz
+
+An example of how Unicode normalise two different bytes representing the same character:
+
+```php
+unicodedata.normalize("NFKD","chloe\u0301") == unicodedata.normalize("NFKD", "chlo\u00e9")
+```
+
+**A list of Unicode equivalent characters can be found here:** [https://appcheck-ng.com/wp-content/uploads/unicode_normalization.html](https://appcheck-ng.com/wp-content/uploads/unicode_normalization.html) and [https://0xacb.com/normalization_table](https://0xacb.com/normalization_table)
+
+If you can find inside a webapp a value that is being echoed back, you could try to send **‘KELVIN SIGN’ (U+0212A)** which **normalises to "K"** (you can send it as `%e2%84%aa`). **If a "K" is echoed back**, then, some kind of **Unicode normalisation** is being performed.
+
+Other **example**: `%F0%9D%95%83%E2%85%87%F0%9D%99%A4%F0%9D%93%83%E2%85%88%F0%9D%94%B0%F0%9D%94%A5%F0%9D%99%96%F0%9D%93%83` after **unicode** is `Leonishan`.
+
+<iframe width="660" height="415" src="https://www.youtube.com/embed/SMC1HDFGwvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Hex & octal escaping
 
 Another option when injecting into a string context is to use hex escapes, which represent characters using their hexadecimal code point, prefixed with \x. For example, the lowercase letter a is represented by `\x61`.
@@ -96,10 +116,14 @@ Try to use homograph characters instead of classic ASCII ones and analyze how th
 Some applications block input containing hostnames like `127.0.0.1` and `localhost`.
 
 You can circumvent the filer using:
-- Alternative IP representation of `127.0.0.1` (such as `2130706433`, `017700000001`, or `127.1`.)
+- Alternative IP representation of `127.0.0.1` (such as `2130706433`, `017700000001`, or `127.1`.) [^localhost-bypass]
 - IPv6 (`0000:0000:0000:0000:0000:0000:0000:0001` or `: :1`)
-- Your own domain name that resolves to `127.0.0.1`
+- Your own domain name that resolves to `127.0.0.1` or any other desired IP [^nip.io][^dns-reb]
 
+[^nip.io]: [nip.io](https://nip.io/)
+[^dns-reb]: [DNS rebinding](../Services/DNS%20-%20Domain%20Name%20System.md#DNS%20rebinding)
+
+[^localhost-bypass]: [SSRF bypass list by h4x0r_fr34k](../../Readwise/Tweets/h4x0r_fr34k%20on%20Twitter%20-%20Tweets%20From%20VAIDIK%20PANDYA.md#^2da607)
 ## Evading match case strings
 
 Some applications block input containing sensitive words or URLs, like `/admin` or SQL statements.
@@ -190,6 +214,14 @@ Many applications that place user input into file paths implement some kind of d
 
 - [Exploiting HTTP Request Smuggling](Exploiting%20HTTP%20Request%20Smuggling.md)
 
+## Evading Secure Cookies using the Path attribute
+
+Cookies having the Secure flag cannot be used with JavaScript. 
+However, a common bypass, is setting a specific cookie for a specific path using the `path` attribute.
+In the cookie specification and implementation, specifically dedicated cookies implementing the `path` attribute are prioritised over global ones.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SMC1HDFGwvU?si=kW8PsmPfBkteYBnu&amp;start=932" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ---
 
 # Other resources
@@ -205,3 +237,4 @@ Many applications that place user input into file paths implement some kind of d
 	- using `<head><meta name=”referrer” content=”no-referrer”></head>`
 	- using `<iframe src=data://text/html;base64,...>`
 - Use [4-ZERO-3](https://github.com/Dheerajmadhukar/4-ZERO-3)
+- [Exploit parser differential and get mXSS (CVE-2023-47479 writeup)](https://www.sonarsource.com/blog/reply-to-calc-the-attack-chain-to-compromise-mailspring/)

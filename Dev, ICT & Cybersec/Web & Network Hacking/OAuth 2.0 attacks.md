@@ -93,7 +93,7 @@ Set-Cookie: session=WV7jzAGDYK9SBwX0D2foyLoJpTX2GHmH; Secure; HttpOnly; SameSite
 
 ## Flawed CSRF protection
 
-The `state` parameter should ideally contain an unguessable value, such as the hash of something tied to the user's session when it first initiates the OAuth flow. This value is then passed back and forth between the client application and the OAuth service as a form of [CSRF token](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#CSRF%20tokens) for the client application. It it is not included in the authorization request, it can potentially means that attackers can initiate an OAuth flow themselves before tricking a user's browser into completing it, like in  [Cross-Site Request Forgery (CSRF)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF)) attacks.
+The `state` parameter should ideally contain an unguessable value, such as the hash of something tied to the user's session when it first initiates the OAuth flow. This value is then passed back and forth between the client application and the OAuth service as a form of [CSRF token](Session%20Attacks%20and%20Session%20Prediction.md#CSRF%20tokens) for the client application. It it is not included in the authorization request, it can potentially means that attackers can initiate an OAuth flow themselves before tricking a user's browser into completing it, like in [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md) attacks.
 
 AOuth request:
 ```http
@@ -148,6 +148,10 @@ Host: 0a1200a904c75c9186bbb696002f00c8.web-security-academy.net
 HTTP/2 200 OK
 Set-Cookie: session=UzautQP5DWmLraPPTYOpT7HrIpSQ9Jpk; Secure; HttpOnly; SameSite=None
 ```
+
+Video example: REDACTED: $20,000 OAuth Bounty (FT. Nagli) [^video]
+
+[^video]: [REDACTED: $20,000 OAuth Bounty (FT. Nagli)](https://www.youtube.com/watch?v=VLgB2fDEMVg&ab_channel=NahamSec), youtube.com
 
 ## Flawed redirect_uri validation
 

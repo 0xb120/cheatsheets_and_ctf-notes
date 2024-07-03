@@ -7,6 +7,8 @@ During testing, therefore, it will be necessary to verify, in addition to tradit
 
 ## Android Env Setup
 
+https://developer.android.com/codelabs/basic-android-kotlin-compose-first-app#0
+
 ![Android setup](Android%20setup.canvas)
 
 

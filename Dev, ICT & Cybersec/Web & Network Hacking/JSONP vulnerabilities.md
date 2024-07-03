@@ -44,14 +44,14 @@ parseResponse({"Name": "Clem", "Id": 1234, "Rank": 7});
 ```
 # JSONP vulnerabilities
 
-JSONP makes it possible to access data from another website in a [Cross-Site Request Forgery (CSRF)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF))-like style attack:
+JSONP makes it possible to access data from another website in a [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md)-like style attack:
 1. The attacker’s site includes the JSONP URL as a script. 
 2. The browser performs the request, and sends cookies along if the user is authenticated. 
 3. The JSONP will return the data for the authenticated user, and the attacker’s site can read that.
 
 ## Cross-site Request Forgery & Data Leakage
 
-Naive deployments of JSONP are subject to [Cross-Site Request Forgery (CSRF)](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF)) attacks. Because the HTML `<script>` element does not respect the [Same-origin policy (SOP)](Same-origin%20policy%20(SOP).md) in web browser implementations, a malicious page can request and obtain JSON data belonging to another site. This will allow the JSON-encoded data to be evaluated in the context of the malicious page, possibly divulging passwords or other sensitive data if the user is currently logged into the other site.
+Naive deployments of JSONP are subject to [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md) attacks. Because the HTML `<script>` element does not respect the [Same-origin policy (SOP)](Same-origin%20policy%20(SOP).md) in web browser implementations, a malicious page can request and obtain JSON data belonging to another site. This will allow the JSON-encoded data to be evaluated in the context of the malicious page, possibly divulging passwords or other sensitive data if the user is currently logged into the other site.
 
 Application JSONP endpoint:
 ```http

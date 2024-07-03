@@ -62,6 +62,7 @@ jshell> /exit
 
 - Easy copy for interesting files into a custom directory:
 ```bash
+mkdir ALL_JARS
 find . -iname '*.jar' -exec cp {} ALL_JARS \;
 ```
 

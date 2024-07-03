@@ -29,7 +29,7 @@ In addition to whitelisting specific domains, content security policy also provi
 
 ### Using `img` and dangling markup
 
-It's quite common for a CSP to block resources like `script`. However, many CSPs do allow image requests. This means you can often use `img` elements to make requests to external servers in order to disclose [CSRF tokens](Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#CSRF%20tokens), for example.
+It's quite common for a CSP to block resources like `script`. However, many CSPs do allow image requests. This means you can often use `img` elements to make requests to external servers in order to disclose [CSRF tokens](Cross-Site%20Request%20Forgery%20(CSRF).md#CSRF%20tokens), for example.
 
 From the research: [Evading CSP with DOM-based dangling markup](https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup)
 
@@ -95,3 +95,6 @@ Further examples:
 - [AngularJS CSP bypass](../Dev,%20scripting%20&%20OS/AngularJS.md#AngularJS%20CSP%20bypass)
 - [Ambushed by AngularJS: a hidden CSP bypass in Piwik PRO](https://portswigger.net/research/ambushed-by-angularjs-a-hidden-csp-bypass-in-piwik-pro)
 - [Bypass CSP using MIME sniffing](MIME%20sniffing.md#Bypass%20CSP%20using%20MIME%20sniffing)
+- Bypass CSP using [JSONP](JSONP%20vulnerabilities.md#JSON%20with%20Padding%20(JSONP)) as a gadget [^CSP-JSONP]
+
+[^CSP-JSONP]: [Riding the Waves of API Versioning Unmasking a Stored XSS Vulnerability, CSP Bypass Using YouTube OEmbed](../../Readwise/Articles/SMHTahsin33%20-%20Riding%20the%20Waves%20of%20API%20Versioning%20Unmasking%20a%20Stored%20XSS%20Vulnerability,%20CSP%20Bypass%20Using%20YouTube%20OEmbed.md), SMHTahsin33

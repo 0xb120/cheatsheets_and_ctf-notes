@@ -128,7 +128,7 @@ X-Forwarded-Host: bad-stuff-here
 
 Headers that may comes handy:
 - `X-Forwarded-Host`
-- `X-Forwarded-For`
+- `X-Forwarded-For` [^xff]
 - `X-Host`
 - `X-Forwarded-Server`
 - `X-HTTP-Host-Override`
@@ -139,6 +139,7 @@ Headers that may comes handy:
 
 You can use [*Collaborator Everywhere](../Tools/Burpsuite.md#*Collaborator%20Everywhere) or [Param Miner](../Tools/Burpsuite.md#Param%20Miner) with the "Guess headers" option to automatically probe for supported headers.
 
+[^xff]: [What Is X-Forwarded-for and When Can You Trust It?](../../Readwise/Articles/HTTP%20Toolkit%20-%20What%20Is%20X-Forwarded-for%20and%20When%20Can%20You%20Trust%20It.md)
 ### Connection state attacks [^conn-attacks]
 
 [^conn-attacks]: https://portswigger.net/research/browser-powered-desync-attacks#state

@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "#Team",
+  "search": "",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -55,6 +55,13 @@
         "a": 1,
         "rgb": 13274180
       }
+    },
+    {
+      "query": "path:Communities/YouTube  ",
+      "color": {
+        "a": 1,
+        "rgb": 11339013
+      }
     }
   ],
   "collapse-display": true,
@@ -67,6 +74,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.4901995062698038,
+  "scale": 0.12688258148168333,
   "close": false
 }

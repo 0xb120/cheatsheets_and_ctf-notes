@@ -43,7 +43,7 @@ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/w
 Connection: close
 ```
 
-*Switching HTTP methods*:
+*Switching HTTP methods* [^id607491520] :
 ```http
 POST /admin-roles HTTP/1.1
 Host: 0a64002703929c3fc08c45b800460050.web-security-academy.net
@@ -65,6 +65,7 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 Connection: close
 ```
 
+[^id607491520]: [@therceman on Twitter - Tweets From Anton](../../Readwise/Tweets/@therceman%20on%20Twitter%20-%20Tweets%20From%20Anton.md#^65ab72)
 ## Horizontal privilege escalation
 
 Horizontal privilege escalation arises when a user is able to gain access to resources belonging to another user, instead of their own resources of that type. 

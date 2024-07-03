@@ -1,6 +1,9 @@
 # Intent 101
 
 [Intents](https://developer.android.com/reference/android/content/Intent) are the key of **internal communication** between the elements that make up an application. They are abstract descriptions containing information about the operation to be performed.
+
+An intent is basically a data structure that embodies the full description of an operation, the data passed to that operation, and it is the main entity passed along between applications when launching or interacting with other components in the same application or in other applications installed on the device.
+
 ![|800](../../zzz_res/attachments/intents.png)
 
 Two forms of intents exist:

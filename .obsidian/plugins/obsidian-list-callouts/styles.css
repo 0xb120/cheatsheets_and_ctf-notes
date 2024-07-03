@@ -3,7 +3,7 @@
 name: List Callouts
 id: list-callouts
 settings:
-  - 
+  -
     id: lc-bg-top
     title: "Callout Padding: Top"
     type: variable-number-slider
@@ -12,7 +12,7 @@ settings:
     min: 0
     max: 60
     step: 1
-  - 
+  -
     id: lc-bg-right
     title: "Callout Padding: Right"
     type: variable-number-slider
@@ -21,7 +21,7 @@ settings:
     min: 0
     max: 60
     step: 1
-  - 
+  -
     id: lc-bg-bottom
     title: "Callout Padding: Bottom"
     type: variable-number-slider
@@ -30,34 +30,34 @@ settings:
     min: 0
     max: 60
     step: 1
-  - 
+  -
     id: lc-bg-left
     title: "Callout Padding: Left"
     type: variable-number-slider
-    default: 17
+    default: 21
     format: px
     min: 0
     max: 60
     step: 1
-  - 
+  -
     id: lc-bg-left-checkbox-lp
     title: "Callout Padding: Left (live preview checkbox)"
     type: variable-number-slider
-    default: 30
+    default: 28
     format: px
     min: 0
     max: 60
     step: 1
-  - 
+  -
     id: lc-bg-left-checkbox
     title: "Callout Padding: Left (source checkbox)"
     type: variable-number-slider
-    default: 50
+    default: 55
     format: px
     min: 0
     max: 60
     step: 1
-  - 
+  -
     id: lc-bg-top-reading
     title: "Callout Padding: Top (reading mode)"
     type: variable-number-slider
@@ -66,7 +66,7 @@ settings:
     min: 0
     max: 60
     step: 1
-  - 
+  -
     id: lc-bg-right-reading
     title: "Callout Padding: Right (reading mode)"
     type: variable-number-slider
@@ -75,7 +75,7 @@ settings:
     min: 0
     max: 60
     step: 1
-  - 
+  -
     id: lc-bg-bottom-reading
     title: "Callout Padding: Bottom (reading mode)"
     type: variable-number-slider
@@ -84,7 +84,7 @@ settings:
     min: 0
     max: 60
     step: 1
-  - 
+  -
     id: lc-bg-left-reading
     title: "Callout Padding: Left (reading mode)"
     type: variable-number-slider
@@ -99,9 +99,9 @@ settings:
   --lc-bg-top: 0px;
   --lc-bg-right: 0px;
   --lc-bg-bottom: 0px;
-  --lc-bg-left: 17px;
-  --lc-bg-left-checkbox: 50px;
-  --lc-bg-left-checkbox-lp: 30px;
+  --lc-bg-left: 21px;
+  --lc-bg-left-checkbox: 55px;
+  --lc-bg-left-checkbox-lp: 28px;
 
   --lc-bg-top-reading: 0px;
   --lc-bg-right-reading: 0px;
@@ -120,13 +120,14 @@ settings:
   display: block;
   padding: inherit;
   z-index: -1;
+  pointer-events: none;
 }
 
-.task-list-label ~ .lc-list-bg {
+.HyperMD-task-line > .lc-list-bg {
   left: calc(-1 * var(--lc-bg-left-checkbox-lp));
 }
 
-.markdown-source-view:not(.is-live-preview) .cm-formatting-task ~ .lc-list-bg {
+.markdown-source-view:not(.is-live-preview) .HyperMD-task-line > .lc-list-bg {
   left: calc(-1 * var(--lc-bg-left-checkbox));
 }
 
@@ -143,6 +144,7 @@ settings:
   font-family: var(--font-monospace);
   font-weight: bold;
   color: rgb(var(--lc-callout-color));
+  pointer-events: none;
 }
 
 .lc-list-marker > svg {
@@ -217,18 +219,34 @@ settings:
 	--icon-color-hover: var(--text-normal);
 	--icon-color-active: var(--text-accent);
 	--icon-color-focused: var(--text-normal);
+
   background-color: var(--background-primary);
   border: 1px solid var(--background-modifier-border);
   border-radius: var(--radius-m);
   width: 250px;
   height: 200px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
   position: absolute;
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
+  flex-direction: column;
+  gap: 8px;
   z-index: 10;
   padding: 4px;
   box-shadow: var(--shadow-s);
+}
+
+.lc-menu-search input {
+  width: 100%;
+}
+
+.lc-menu-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-grow: 1;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
 }

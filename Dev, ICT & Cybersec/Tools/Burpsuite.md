@@ -67,7 +67,7 @@ To trigger the extension, simply launch a passive scan of your JavaScript files 
 If the same script is found to contain differing content, the extension will report an issue in the Target tab.
 ### *CSRF Scanner
 
-Used to passively scan for [Cross-Site Request Forgery (CSRF)](../Web%20&%20Network%20Hacking/Session%20Attacks%20(CSRF,%20session%20stealing,%20etc.).md#Cross-Site%20Request%20Forgery%20(CSRF)). A dedicated tab allows to customize token's names, etc. The scanner send requests passively in background.
+Used to passively scan for [Cross-Site Request Forgery (CSRF)](../Web%20&%20Network%20Hacking/Cross-Site%20Request%20Forgery%20(CSRF).md). A dedicated tab allows to customize token's names, etc. The scanner send requests passively in background.
 
 ![|800](../../zzz_res/attachments/CSRF-scanner.png)
 ![|500](../../zzz_res/attachments/CSRF-scanner2.png)
@@ -431,6 +431,69 @@ given response then
 
 More details on BChecks:
 - [Improve your API Security Testing with Burp BCheck Scripts](https://danaepp.com/improve-your-api-security-testing-with-burp-bcheck-scripts)
+
+# Bambdas
+
+Have you heard of Bambdas? They're a unique new way to customize Burp Suite directly from the UI, using only small snippets of Java. [^intro-bambdas] 
+
+[^intro-bambdas]: [PortSwigger Blog - Introducing Bambdas](../../Readwise/Articles/PortSwigger%20Blog%20-%20Introducing%20Bambdas.md)
+
+Examples (more examples and hints can be found in the article Refining your HTTP perspective, with bambdas [^adjusting-your-http-perspective-with-bambdas]):
+
+[^adjusting-your-http-perspective-with-bambdas]: [Refining your HTTP perspective, with bambdas](https://portswigger.net/research/adjusting-your-http-perspective-with-bambdas), James Kettle; portswigger.net
+
+*Find requests with a specific cookie value*
+```java
+//Find requests with a specific cookie value
+if (requestResponse.request().hasParameter("foo", HttpParameterType.COOKIE)) {
+	var cookieValue = requestResponse
+		.request()
+		.parameter("foo", HttpParameterType.COOKIE)
+		.value();
+
+	return cookieValue.contains("1337");
+}
+
+return false;
+```
+
+*Find JSON responses with wrong Content-Type*
+```java
+//Find JSON respones with wrong Content-Type
+//The content is probably json but the content type is not application/json
+
+var contentType = requestResponse.response().headerValue("Content-Type");
+
+if (contentType != null && !contentType.contains("application/json")) {
+ String body = requestResponse.response().bodyToString().trim();
+    
+ return body.startsWith( "{" ) || body.startsWith( "[" );
+}
+
+return false;
+```
+
+*Find role within JWT claims*
+```java
+//Find role within JWT claims
+var body = requestResponse.response().bodyToString().trim();
+
+if (requestResponse.response().hasHeader("authorization")) {
+    var authValue = requestResponse.response().headerValue("authorization");
+    
+    if (authValue.startsWith("Bearer ey")) {
+        var tokens = authValue.split("\\.");
+        
+        if (tokens.length == 3) {
+            var decodedClaims = utilities().base64Utils().decode(tokens[1],         Base64DecodingOptions.URL).toString();
+            
+      return decodedClaims.toLowerCase().contains("role");
+        }
+    }
+}
+
+return false;
+```
 
 # Tools integrating with burpsuite
 

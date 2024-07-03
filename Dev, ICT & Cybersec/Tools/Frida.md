@@ -90,3 +90,8 @@ setTimeout(function () {
 [Android Emulator 5554::com.example.whosthatpokemon ]-> Intrinsics.areEqual is called: first=asd, second=Terrapulseonic
 Intrinsics.areEqual result=false
 ```
+
+## Android SSL Pinning Bypass scripts
+
+- https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/
+- https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/
