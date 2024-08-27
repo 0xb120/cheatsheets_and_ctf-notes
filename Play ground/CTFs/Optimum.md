@@ -5,8 +5,6 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2014-6287
-  - CVE-2016-0099
   - HFS
   - MS16-032
   - RCE

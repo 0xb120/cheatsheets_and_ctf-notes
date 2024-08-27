@@ -5,7 +5,6 @@ Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2021-3129
   - RCE
   - laravel
   - laravel-debug_mode

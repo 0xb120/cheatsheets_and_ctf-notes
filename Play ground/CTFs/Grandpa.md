@@ -5,7 +5,6 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2017-7269
   - MS14-070
   - ScStoragePathFromUrl
   - kernel-exploit

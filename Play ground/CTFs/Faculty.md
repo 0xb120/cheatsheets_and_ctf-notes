@@ -13,7 +13,7 @@ tags:
   - control
   - tags
   - credentials-reuse
-  - gdb-privesc
+  - privesc/gdb
   - mPDF
   - meta-git
   - process-injection-privesc

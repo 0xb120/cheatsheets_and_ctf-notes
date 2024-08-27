@@ -46,18 +46,26 @@ $ adb shell
 
 # Specify which device adb should interact with
 $ adb -s "device_id" shell
+
+# Use the USB device
+$ adb -d shell 
 ```
 
-## List all installed packages
+## List and interact with installed packages
 
 ```bash
 $ adb shell pm list packages
+$ adb shell pm list packages -3 # List only third party packages
+
+# Clear the application info without removing the app
+$ adb shell pm clear <package_name>
 ```
 
 ## Inspect device log
 
 ```bash
 $ adb logcat
+$ adb logcat -v <log_format>
 $ adb logcat -d -f log.txt # -d just dump the file; -f save the log inside a file insted printing to stdout
 $ adb logcat *:E # dump only Error priority or higher
 $ adb logcat MyTag:I *:S # prints to the output log messages with the tag MyTag and priority level Info or higher. The *:S at the end will exclude the log from other tags with any priority

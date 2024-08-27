@@ -10,7 +10,6 @@ tags:
   - OAST
   - SSTI
   - RCE
-  - CVE-2022-29078
 ---
 
 # Introduction and setup

@@ -229,6 +229,12 @@ grep -rnw "eval(" . --include *.php --color
 grep -rl "test" .
 ```
 
+Extract specific JSON fields using regex:
+
+```bash
+cat file.json | grep -Eo '(json-field-name)":"((\\"|[^"])*)'
+```
+
 ## sed
 
 sed **performs text editing on a stream of text**, either a set of specific files or standard output.

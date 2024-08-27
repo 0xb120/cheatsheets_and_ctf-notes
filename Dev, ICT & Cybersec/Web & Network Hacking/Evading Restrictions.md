@@ -229,6 +229,7 @@ In the cookie specification and implementation, specifically dedicated cookies i
 - [Obfuscating attacks using encodings](https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings)
 - [XSS cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 - [A new era of SSRF](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017#1)
+- [SSRF: A complete guide to exploiting advanced SSRF vulnerabilities](https://blog.intigriti.com/hacking-tools/ssrf-a-complete-guide-to-exploiting-advanced-ssrf-vulnerabilities)
 - [Cache parameter cloaking](Web%20Cache%20Poisoning.md#Cache%20parameter%20cloaking)
 - [HTTP Parameter Pollution (HPP)](HTTP%20Parameter%20Pollution%20(HPP).md)
 - [HTTP Verb Tampering](HTTP%20Verb%20Tampering.md)
@@ -238,3 +239,6 @@ In the cookie specification and implementation, specifically dedicated cookies i
 	- using `<iframe src=data://text/html;base64,...>`
 - Use [4-ZERO-3](https://github.com/Dheerajmadhukar/4-ZERO-3)
 - [Exploit parser differential and get mXSS (CVE-2023-47479 writeup)](https://www.sonarsource.com/blog/reply-to-calc-the-attack-chain-to-compromise-mailspring/)
+- Bypass [WAFs](../Dev,%20scripting%20&%20OS/WAF.md) exploiting their length-limitations [^nowafplease]
+
+[^nowafplease]: [Bad Sector Labs Blog - Jun 17 2024 Last Week in Security (LWiS) - 2024-06-17](../../Readwise/Articles/Bad%20Sector%20Labs%20Blog%20-%20Jun%2017%202024%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-06-17.md#^88de29)

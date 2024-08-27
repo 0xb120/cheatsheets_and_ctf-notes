@@ -12,7 +12,7 @@ tags:
   - python-PIL
   - python-coding
   - python-pytesseract
-  - relative-paths-hijacking-privesc
+  - privesc/relative-paths-hijacking
   - Linux
 ---
 ![Late.png](../../zzz_res/attachments/Late.png)

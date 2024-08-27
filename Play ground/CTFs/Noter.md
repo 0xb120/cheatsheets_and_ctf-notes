@@ -9,7 +9,7 @@ tags:
   - MySQL
   - MySQL-privesc
   - RCE
-  - UDF-privesc
+  - privesc/UDF
   - authentication-bypass
   - code-review
   - command-injection

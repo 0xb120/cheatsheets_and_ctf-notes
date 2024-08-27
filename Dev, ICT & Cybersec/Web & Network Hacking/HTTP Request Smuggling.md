@@ -76,3 +76,4 @@ Browser-powered request smuggling attacks turn victim's web browser into a desyn
 - [HTTP Desync Attacks: Request Smuggling Reborn, PortSwigger](https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn)
 - https://portswigger.net/research/http2
 - [Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling, PortSwigger](https://portswigger.net/research/browser-powered-desync-attacks)
+- [Making desync attacks easy with TRACE](https://portswigger.net/research/trace-desync-attack), portswigger.net

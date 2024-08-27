@@ -8,7 +8,7 @@ tags:
   - ACL
   - RCE
   - SNMP
-  - SNMP-privesc
+  - privesc/SNMP
   - SeedDMS
   - arbitrary-file-upload
   - cockpit

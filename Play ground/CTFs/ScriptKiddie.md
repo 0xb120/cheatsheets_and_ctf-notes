@@ -5,10 +5,9 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2020-7384
   - command-injection
   - insecure-file-permissions
-  - msfconsole-privesc
+  - privesc/msfconsole
   - Linux
 ---
 ## Introduction

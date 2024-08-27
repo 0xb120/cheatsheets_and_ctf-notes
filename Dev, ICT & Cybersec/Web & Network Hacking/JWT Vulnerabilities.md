@@ -66,7 +66,7 @@ JSON Web Token can be read and verified using different tools, one of which is [
 - Tamper data without modifying anything and check for errors or differences in response
 - Check where the token originated in your proxy's request history. It should be created on the server, not the client. 
   If it was first seen coming from the client-side then the **key** is accessible to client-side code - seek it out!
-- Check if the token lasts more than 24h... maybe it never expires. If there is a "exp" filed, check if the server is correctly handling it.****
+- Check if the token lasts more than 24h... maybe it never expires. If there is a "exp" filed, check if the server is correctly handling it.
 - Brute-force HMAC secret (use some [well-known secrets wordlist](https://github.com/wallarm/jwt-secrets/blob/master/jwt.secrets.list))
     
     ```bash

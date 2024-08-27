@@ -5,8 +5,6 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2009-2265
-  - CVE-2010-2861
   - ColdFusion
   - SeImpersonatePrivilege
   - arbitrary-file-upload

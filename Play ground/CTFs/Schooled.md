@@ -5,9 +5,6 @@ Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2020-14321
-  - CVE-2020-25627
-  - CVE-2020-25629
   - FreeBSD
   - GTFObins
   - Moodle
@@ -15,7 +12,7 @@ tags:
   - hardcoded-credentials
   - moodle-custom-plugin
   - moodle-log-in-as
-  - pkg-privesc
+  - privesc/pkg
   - XSS
 ---
 # Resolution summary

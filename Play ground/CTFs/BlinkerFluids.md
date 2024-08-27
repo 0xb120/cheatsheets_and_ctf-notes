@@ -5,7 +5,6 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2021-23639
   - RCE
   - md-to-pdf
 ---

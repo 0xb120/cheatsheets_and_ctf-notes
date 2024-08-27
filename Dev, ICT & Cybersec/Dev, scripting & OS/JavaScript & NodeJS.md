@@ -2,7 +2,7 @@
 >JavaScript uses a prototypal inheritance model, which is quite different from the class-based model used by many other languages.
 
 >[!tip] Breakpoint
->If you insert `debugger;` anywhere in the JS code, the execution will pause when that instruction is reached.
+>If you insert `debugger;` anywhere in the JS code, the execution will pause when that instruction is reached. You can also use other [67 Weird Debugging Tricks Your Browser Doesn't Want You to Know](../../Readwise/Articles/norbauer.com%20-%2067%20Weird%20Debugging%20Tricks%20Your%20Browser%20Doesn't%20Want%20You%20to%20Know.md) for debugging local JS code. 
 
 >[!tip] Snippets and handy books
 >- [JS AWAE Prep](https://mlcsec.com/posts/js-awae-prep/), mlcsec.com
@@ -330,6 +330,18 @@ parent.postMessage({type: 'onload', data: window.location.href}, '*')
 </script>
 ```
 
+## JSON2HTTP using JS
+
+
+Using `URLSearchParams` [^json2http]
+
+```js
+const myParams = {'foo': 'hi there', 'bar': '???'};
+const u = new URLSearchParams(myParams).toString();
+console.log(u);
+```
+
+[^JSON2HTTP]: [fpilee - Is there any native function to convert json to url parameters](../../Readwise/Articles/fpilee%20-%20Is%20there%20any%20native%20function%20to%20convert%20json%20to%20url%20parameters.md#^8adf85)
 # RCE payloads
 
 ```jsx

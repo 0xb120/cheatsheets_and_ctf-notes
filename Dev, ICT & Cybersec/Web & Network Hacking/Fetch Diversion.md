@@ -1,10 +1,16 @@
+---
+alias: Client Side Path Traversal (CSPT)
+---
+
 Original article: [Fetch Diversion, acut3](https://acut3.github.io/bug-bounty/2023/01/03/fetch-diversion.html#diverting-fetch-requests)
 
 # Diverting fetch requests
 
 Fetch diversion consists on tricking the victim into clicking a malicious link - created ad-hoc - that will fetch the supposed request to a different API, eventually causing [DOM-based XSS](DOM-based%20vulnerabilities.md#DOM-based%20XSS), leaking secrets or making authenticated API call.
 
-The vulnerability exploits [Path Traversal](Path%20Traversal.md) on the client-side in order to hijack legit API call to arbitrary APIs.
+The vulnerability exploits [Path Traversal](Path%20Traversal.md) on the client-side [^CSPT] in order to hijack legit API call to arbitrary APIs.
+
+[^CSPT]: [Bypassing WAFs to Exploit CSPT Using Encoding Levels](https://matanber.com/blog/cspt-levels), matanber.com
 
 >[!example]
 >Browser URL `https://app.target.com/#/users/123456/profile` fetch requests to the API endpoint `https://api.target.com/v2/users/123456/profile`

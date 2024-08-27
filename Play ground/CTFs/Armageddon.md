@@ -5,14 +5,13 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2018-7600
   - Drupal
   - Drupalgeddon2
   - MySQL
   - credentials-reuse
   - dirty_sock
   - hardcoded-credentials
-  - snap-privesc
+  - privesc/snap
   - weak-credentials
   - Linux
 ---

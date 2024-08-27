@@ -6,7 +6,7 @@ Platform: HackTheBox
 Status: 3. Complete
 tags:
   - cron
-  - cron-privesc
+  - privesc/cron
   - insecure-file-permissions
   - phpbash
   - webshell

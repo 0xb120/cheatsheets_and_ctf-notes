@@ -11,7 +11,7 @@ tags:
   - LFI
   - RCE
   - credentials-reuse
-  - nmap-privesc
+  - privesc/nmap
   - voip
   - Linux
 ---

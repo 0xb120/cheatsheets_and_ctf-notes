@@ -6,12 +6,11 @@ Platform: HackTheBox
 Status: 3. Complete
 tags:
   - LFI
-  - action.d
   - dns-enumeration
   - dns-zone-transfer
   - evasion
   - fail2ban
-  - fail2ban-privesc
+  - privesc/fail2ban
   - Linux
 ---
 ![Trick.png](../../zzz_res/attachments/Trick.png)

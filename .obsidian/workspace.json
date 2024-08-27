@@ -4,29 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "52b5e387437ddb26",
+        "id": "47239938cc468c0a",
         "type": "tabs",
         "children": [
           {
-            "id": "30e30fe7c4af00f9",
+            "id": "6a5083f28af96069",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md",
-                "mode": "preview",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c0c15f090e0da20b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "zzz_res/templates/Format summary.md",
+                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
@@ -47,7 +34,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a1093cafd8a307e1",
+            "id": "ac48de087a5fdfe3",
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
@@ -68,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SOQL",
+                "query": "dotNET",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -104,13 +91,11 @@
         "dimension": 40.50387596899225,
         "children": [
           {
-            "id": "b50298044abfff18",
+            "id": "cecdd88dce19730c",
             "type": "leaf",
             "state": {
-              "type": "outline",
-              "state": {
-                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md"
-              }
+              "type": "quiet-outline",
+              "state": {}
             }
           },
           {
@@ -119,7 +104,7 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabetical",
                 "useHierarchy": true
               }
             }
@@ -131,26 +116,28 @@
               "type": "all-properties",
               "state": {
                 "sortOrder": "frequency",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               }
             }
           },
           {
-            "id": "315dca84ea405e0a",
+            "id": "aa1966157214a77f",
             "type": "leaf",
             "state": {
-              "type": "quiet-outline",
-              "state": {}
+              "type": "file-properties",
+              "state": {
+                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md"
+              }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       },
       {
         "id": "93c550284300223b",
         "type": "tabs",
-        "dimension": 22.674418604651162,
+        "dimension": 22.674418604651166,
         "children": [
           {
             "id": "1b02ab1c108718d1",
@@ -158,7 +145,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md",
+                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -167,12 +154,12 @@
                   "localForelinks": true,
                   "localInterlinks": true,
                   "showTags": true,
-                  "showAttachments": false,
+                  "showAttachments": true,
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
+                  "collapse-display": false,
+                  "showArrow": true,
                   "textFadeMultiplier": -0.6,
                   "nodeSizeMultiplier": 1,
                   "lineSizeMultiplier": 1,
@@ -181,7 +168,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.38047950065711234,
+                  "scale": 0.20809835898999118,
                   "close": true
                 }
               }
@@ -200,7 +187,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md",
+                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -217,7 +204,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md",
+                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -233,72 +220,73 @@
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
+      "canvas:Create new canvas": false,
       "graph:Open graph view": false,
       "templates:Insert template": true,
-      "canvas:Create new canvas": false,
       "workspaces:Manage workspace layouts": false,
       "obsidian-book-search-plugin:Create new book note": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "file-tree-alternative:File Tree Alternative Plugin": true,
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "30e30fe7c4af00f9",
+  "active": "7ef6fc25769fe693",
   "lastOpenFiles": [
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Development fundamentals.md",
-    "Dev, ICT & Cybersec/Cloud/Salesforce.md",
+    "Readwise/Articles/admin - Source Code Disclosure in ASP.NET Apps.md",
+    "Readwise/Articles/PortSwigger Research - Fickle PDFs Exploiting Browser Rendering Discrepancies.md",
+    "Readwise/Articles/PortSwigger Research - Introducing SignSaboteur Forge Signed Web Tokens With Ease.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Request Smuggling.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Host Header attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Client-side desync attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Client Side Attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Exploitation.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Password Attacks.md",
+    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Linux command cheatsheet.md",
+    "Dev, ICT & Cybersec/Stego & Forensic/Stego 101.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Domain Attacks.md",
+    "Play ground/CTFs/Letter Dispair.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/JSONP vulnerabilities.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/XML External Entity Injection (XXE Injection).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Poisoning.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure File Upload.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/JWT Vulnerabilities.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Internal information gathering.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Dumping Passwords and Credentials.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication.md",
+    "Readwise/Readwise inbox.md",
+    "Personal/Book list/_book-dashboard_wrapper.md",
+    "Play ground/Personal Blog workflow.canvas",
+    "Play ground/CTFs/_CTF-dashboard.canvas",
+    "Communities/YouTube/_YT-dashboard.canvas",
+    "Dev, ICT & Cybersec/Tools/attachments/SSRF-regex.png",
+    "Dev, ICT & Cybersec/Tools/attachments",
+    "zzz_res/attachments/annotated-OWASP_Code_Review_Guide_v2.pdf",
+    "Personal/Book list/_book-dashboard.canvas",
+    "Communities/MeetHack/MeetHack - Android Application Security 101.pdf",
+    "Play ground/Projects/c2me/connected2.me.canvas",
+    "Play ground/Projects/baldivive.it/baldivive.it.canvas",
+    "Play ground/Projects/opencart/OpenCart 4.0.2.3.canvas",
+    "Play ground/Projects/disclosure-policy-v1.0.pdf",
+    "Play ground/Projects/SociableKit/www.sociablekit.com.canvas",
     "Dev, ICT & Cybersec/Cloud/attachments/salesforce-getConfigData.png",
     "Dev, ICT & Cybersec/Cloud/attachments/salesforce-getObjectInfo.png",
     "Dev, ICT & Cybersec/Cloud/attachments/salesforce-app-js.png",
     "Dev, ICT & Cybersec/Cloud/attachments",
-    "zzz_res/templates/Format summary.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Salesforce.md",
-    "Communities/YouTube/XXXXXXXX_SearchForBehavioursNotExploits.md",
-    "Communities/YouTube/_YT-dashboard.canvas",
-    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Play ground/Projects/Project list.md",
-    "Play ground/CTFs/Gilroy.md",
-    "Play ground/CTFs/_CTF-dashboard_wrapper.md",
-    "Readwise/Readwise inbox.md",
-    "Personal/Book list/_book-dashboard_wrapper.md",
-    "Play ground/Projects/TeamCity/CVE-2023-42793 (summary).md",
     "Play ground/Projects/TeamCity/CVE-2023-42793.canvas",
-    "Communities/YouTube/XXXXXXX_TeamCity CVE-2023-42793.md",
-    "TeamCity.md",
-    "Personal/Music/Nayt.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Extensible Stylesheet Language Transformations Injection (XSLT Injection).md",
-    "Readwise/Tweets/@LiveOverflow on Twitter - Nice Writeup for Anybody....md",
-    "Readwise/Articles/Rory McNamara - Breaking Caches and Bypassing Istio RBAC With HTTP Response Header Injection.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/XML External Entity Injection (XXE Injection).md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Edge-Side Includes Injection (ESI).md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/JWT Vulnerabilities.md",
-    "Dev, ICT & Cybersec/Tools/Burpsuite.md",
-    "Readwise/Articles/PortSwigger Blog - Introducing Bambdas.md",
-    "Play ground/Projects/opencart/OpenCart 4.0.2.3.canvas",
     "Play ground/Projects/PaperCut/CVE-2023-39143/CVE-2023-39143.canvas",
     "Play ground/Projects/PaperCut/CVE-2023-39143",
     "Play ground/Projects/PaperCut",
-    "Play ground/CTFs/_CTF-dashboard.canvas",
-    "Play ground/Personal Blog workflow.canvas",
     "Play ground/CTFs/attachments/gilroy-8.png",
     "Play ground/CTFs/attachments/gilroy-7.png",
     "Play ground/CTFs/attachments/gilroy-6.png",
     "Play ground/CTFs/attachments/gilroy-5.png",
     "Play ground/CTFs/attachments/gilroy-4.png",
     "Play ground/CTFs/attachments/gilroy-3.png",
-    "Play ground/CTFs/attachments/gilroy-2.png",
-    "Play ground/Projects/Woox R4040/Woox R4040.canvas",
     "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.jadx",
     "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/names-map",
-    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9/000185e9.jadxmd",
-    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9",
-    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9/000185e9.java",
-    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9",
-    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata",
-    "Play ground/Projects/comunica.regione.piemonte.it/comunica.regione.piemonte.it.canvas",
-    "Play ground/Projects/SociableKit/www.sociablekit.com.canvas",
-    "Play ground/Projects/informatica.uniroma2.it/www.informatica.uniroma2.it.canvas"
+    "Play ground/Projects/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9/000185e9.jadxmd"
   ]
 }

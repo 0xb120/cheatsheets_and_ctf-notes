@@ -7,7 +7,7 @@ Status: 3. Complete
 tags:
   - GTFObins
   - Shellshock
-  - perl-privesc
+  - privesc/perl
   - Linux
 ---
 # Resolution summary

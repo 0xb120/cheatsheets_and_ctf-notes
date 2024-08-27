@@ -47,3 +47,14 @@ DebuggableAttribute.DebuggingModes.EnableEditAndContinue)]
 ```
 
 Once done, *Compile* and save the edited assembly (`File > Save Module`).
+
+# Known vulnerable components and tricks
+
+## .NET Remoting
+
+[.NET Remoting](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-netod/bfd49902-36d7-4479-bf75-a2431bd99039) is a Microsoft application programming interface (API) for interprocess communication released in 2002 with the 1.0 version of .NET Framework.
+
+- [Breaking .NET Through Serialization](https://media.blackhat.com/bh-us-12/Briefings/Forshaw/BH_US_12_Forshaw_Are_You_My_Type_WP.pdf), BH_US_12_Forshaw_Are_You_My_Type_WP.pdf
+- [From Blackbox .NET Remoting to Unauthenticated Remote Code Execution](https://code-white.com/blog/2023-07-from-blackbox-dotnet-remoting-to-rce/), code-white.com
+- [Teaching the Old .NET Remoting New Exploitation Tricks](https://code-white.com/blog/teaching-the-old-net-remoting-new-exploitation-tricks/), code-white.com
+- [Leaking ObjRefs to Exploit HTTP .NET Remoting](https://code-white.com/blog/leaking-objrefs-to-exploit-http-dotnet-remoting/), code-white.com

@@ -190,7 +190,7 @@ See as examples:
 
 Tools for identifying `postMessage()` usage:
 1. **Using** [**MessPostage**](https://github.com/Sjord/messpostage) **Browser Extension:** Using this extension is an easy way to detect whenever an application usage postMessage() APIs. This also shows which messages were sent and where event listeners have been added:
-2. **Using Developer Tools:** The “Global Listener” feature present in the “Sources” pane of Developer tools can be used to identify the use of `postMessage()`. After opening the `Global Listener`, click on “`messages`” to view the message handlers. [^debug-post-message]
+2. **Using Developer Tools** [^dev-tool-debug]: The “Global Listener” feature present in the “Sources” pane of Developer tools can be used to identify the use of `postMessage()`. After opening the `Global Listener`, click on “`messages`” to view the message handlers. [^debug-post-message]
 	```js
 	monitorEvents(window, 'message')
 	// On Firefox
@@ -201,6 +201,7 @@ Tools for identifying `postMessage()` usage:
 2. **Using** [**PMHook**](https://github.com/yehgdotnet/postmessagehook)**:** PMHook is a client-side JavaScript library designed to be used with TamperMonkey in the Chrome web browser. Executed immediately at page load, PMHook wraps the **EventTarget.addEventListener** method and logs any subsequent message event handers as they are added. The event handler functions themselves are also wrapped to log messages received by each handler.
 
 [^debug-post-message]: [How to debug postMessages](https://arthurdenner.medium.com/how-to-debug-postmessages-320d50056d0), arthurdenner.medium.com
+[^dev-tool-debug]: [67 Weird Debugging Tricks Your Browser Doesn't Want You to Know](../../Readwise/Articles/norbauer.com%20-%2067%20Weird%20Debugging%20Tricks%20Your%20Browser%20Doesn't%20Want%20You%20to%20Know.md), norbauser.com
 # DOM-based Ajax request-header manipulation
 
 Ajax request-header manipulation vulnerabilities arise when a script writes attacker-controllable data into the request header of an Ajax request that is issued using an `XmlHttpRequest` object. An attacker may be able to use this vulnerability to construct a URL that, if visited by another user, will set an arbitrary header in the subsequent Ajax request.

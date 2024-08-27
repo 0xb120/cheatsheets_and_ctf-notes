@@ -1,7 +1,7 @@
 {
   "patch_color": false,
-  "primary_color_light": "#a30000",
-  "primary_color_dark": "#e60000",
+  "primary_color_light": "#18a058",
+  "primary_color_dark": "#63e2b7",
   "rainbow_line": true,
   "rainbow_color_1": "#FD8B1F",
   "rainbow_color_2": "#FFDF00",
@@ -13,9 +13,13 @@
   "markdown": true,
   "expand_level": "3",
   "hide_unsearched": true,
-  "auto_expand": false,
+  "auto_expand_ext": "only-expand",
   "regex_search": false,
   "ellipsis": false,
   "label_direction": "left",
-  "drag_modify": true
+  "drag_modify": true,
+  "locate_by_cursor": false,
+  "show_popover_key": "ctrlKey",
+  "remember_state": true,
+  "export_format": "{title}"
 }

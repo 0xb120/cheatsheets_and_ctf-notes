@@ -6,7 +6,7 @@ Platform: HackTheBox
 Status: 3. Complete
 tags:
   - DDNS
-  - cp-privesc
+  - privesc/cp
   - insecure-credentials
   - insecure-file-permissions
   - nsupdate

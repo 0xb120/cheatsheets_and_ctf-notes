@@ -8,10 +8,9 @@ tags:
   - Android
   - Baron
   - Samedit
-  - CVE-2021-3156
   - RCE
   - command-injection
-  - sudo-privesc
+  - privesc/sudo
   - Linux
 ---
 ![RouterSpace.png](../../zzz_res/attachments/RouterSpace.png)

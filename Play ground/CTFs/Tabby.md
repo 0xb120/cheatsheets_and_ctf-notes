@@ -8,7 +8,7 @@ tags:
   - LFI
   - WAR
   - cracking-zip-files
-  - lxd-privesc
+  - privesc/lxd
   - tomcat
   - Linux
 ---

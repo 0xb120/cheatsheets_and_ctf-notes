@@ -5,7 +5,6 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2008-4250
   - MS08-067
   - RCE
   - Windows

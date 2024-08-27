@@ -5,10 +5,9 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2019-16278
   - GTFObins
   - RCE
-  - journalctl-privesc
+  - privesc/journalctl
   - nostromo
   - ssh-keys-cracking
   - Linux

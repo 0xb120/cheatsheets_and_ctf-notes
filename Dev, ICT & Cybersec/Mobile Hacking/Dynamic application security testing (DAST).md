@@ -99,16 +99,19 @@ Evasion techniques:
 
 Verify for each exported component what it does and if exposes private information or vulnerable behaviors.
 Some examples are:
-- [Arbitrary file read using exported content provider](../../Play%20ground/Projects/Digital%20Private%20Vault/Digital%20Private%20Vault%20(summary).md#Arbitrary%20file%20read%20using%20exported%20content%20provider) [^file-read-content-provider-element]
+- Arbitrary file read using exported content provider [^file-read-content-provider-vault][^file-read-content-provider-element]
 - PIN/Authentication bypass using exported activities
 - Intent redirection [^intent-redir-1][^intent-redir-2][^intent-redir-3]
 
+[^file-read-content-provider-vault]: [Arbitrary file interaction using an exported content provider](https://0xbro.red/disclosures/disclosed-vulnerabilities/digital-private-vault/#arbitrary-file-interaction-using-an-exported-content-provider), 0xbro.red
 [^file-read-content-provider-element]: [Element Android (<1.6.12) Sensitive file disclosure via share activity](https://www.shielder.com/advisories/element-android-sensitive-file-disclosure/), shielder.com
 [^intent-redir-1]: [Attacking Android Antivirus Applications](https://blog.scrt.ch/2023/03/29/attacking-android-antivirus-applications/), blog.scrt.ch
 [^intent-redir-2]: [Element Android (<1.6.12) Intent Redirection](https://www.shielder.com/advisories/element-android-intent-redirection/), shielder.com
 [^intent-redir-3]: [Element Android CVE-2024-26131, CVE-2024-26132 - Never Take Intents From Strangers](https://www.shielder.com/blog/2024/04/element-android-cve-2024-26131-cve-2024-26132-never-take-intents-from-strangers/), shielder.com
 
-## WebView attacks
+## WebView attacks [^web-view-attacks]
+
+[^web-view-attacks]: [The 2024 Guide to Android WebView Vulnerabilities](../../Readwise/Articles/SecureLayer7%20Lab%20-%20The%202024%20Guide%20to%20Android%20WebView%20Vulnerabilities.md), securelayer7.net
 
 **Remote WebView** **debugging** allow to access the device webview with your laptop **Chrome Developer Tools.** The **device** needs to be **accessible** by the PC (via USB, local emulator, local network...) and running the debuggable WebView, then access `chrome://inspect/#devices`:
 
@@ -253,6 +256,17 @@ function execute(cmd){
 execute(['/system/bin/sh','-c','echo \"mwr\" > /mnt/sdcard/mwr.txt']);
 </script>
 ```
+
+## Arbitrary File Write to Remote Code Execution
+
+Different techniques how to [escalate an arbitrary file write vulnerability in Android apps to arbitrary code execution](../../Readwise/Tweets/@LiveOverflow%20on%20Twitter%20-%20I'm%20Looking%20for%20Differen....md): 
+
+- Method 1: Overwriting native libraries (NDK) bundled with the .apk
+- Method 2: Overwriting .dex files in large apps thanks to multidex feature
+- Method 3: When the app itself implements some custom code execution that can be abused
+
+Examples:
+- [RCE in Adobe Acrobat Reader for Android](../../Readwise/Articles/hulkvision.github.io%20-%20RCE%20in%20Adobe%20Acrobat%20Reader%20for%20Android.md), hulkvision.github.io
 
 
 ---

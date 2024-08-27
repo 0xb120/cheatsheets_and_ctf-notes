@@ -39,6 +39,7 @@
 - [Exploitation](Web%20&%20Network%20Hacking/Exploitation.md)
 	- [HTTP & HTTPS](Services/HTTP%20&%20HTTPS.md)
 	- [Evading Restrictions](Web%20&%20Network%20Hacking/Evading%20Restrictions.md)
+	- [James Kettle - How I Choose a Security Research Topic](../Readwise/Articles/James%20Kettle%20-%20How%20I%20Choose%20a%20Security%20Research%20Topic.md)
 - [Post Exploitation](Web%20&%20Network%20Hacking/Post%20Exploitation.md)
 - [Shell Cheatsheet](Web%20&%20Network%20Hacking/Shell%20Cheatsheet.md)
 

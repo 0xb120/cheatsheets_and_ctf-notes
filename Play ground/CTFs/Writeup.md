@@ -6,9 +6,8 @@ Platform: HackTheBox
 status: 3. Complete
 tags:
   - CMS-Made-Simple
-  - CVE-2019-9053
   - SQL-Injection
-  - relative-paths-hijacking-privesc
+  - privesc/relative-paths-hijacking
   - Linux
 ---
 ### Improved ability

@@ -101,6 +101,9 @@ message={
 }&aura.pageURI=/s/?language=en_US&aura.token=null
 ```
 
+>[!tip]
+>You can use the [salesforce/lightning-burp](https://github.com/salesforce/lightning-burp) [burpsuite extension](../Tools/Burpsuite.md#Useful%20extensions) plugin for better handling Lightning
+
 The important fields are:
 - `message`: contains all the fields used to perform **Actions** (`ACTION$getParsedRichTextValue`) on a specific **Controller** (`ui.communities.components.aura.components.forceCommunity.richText.RichTextController`) for querying **Objects**.
 - `aura.context`: is used to manage the session for the current user

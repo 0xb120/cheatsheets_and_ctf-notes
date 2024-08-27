@@ -9,7 +9,7 @@ tags:
   - bash-history
   - credentials-reuse
   - git
-  - git-privesc
+  - privesc/git
   - pickle-deserialization
   - Linux
 ---

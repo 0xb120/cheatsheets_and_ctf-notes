@@ -3,15 +3,13 @@ Category:
   - B2R
 Difficulty: Easy
 Platform: HackTheBox
-Status: 3. Complete
+status: 3. Complete
 tags:
-  - .mdb
-  - .pst
   - Windows
   - anonymous-ftp
   - credentials-in-wcm
   - insecure-credentials
-  - runas-privesc
+  - privesc/runas
 ---
 # Resolution summary
 

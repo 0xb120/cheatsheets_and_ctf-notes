@@ -6,10 +6,6 @@ Platform: HackTheBox
 Status: 3. Complete
 tags:
   - Adminer
-  - CVE-2020-35476
-  - CVE-2021-21311
-  - CVE-2021-25294
-  - CVE-2021-32749
   - Linux
   - OpenCats
   - RCE

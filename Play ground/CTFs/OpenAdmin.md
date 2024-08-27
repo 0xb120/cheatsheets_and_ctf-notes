@@ -11,7 +11,7 @@ tags:
   - command-injection
   - credentials-reuse
   - hardcoded-credentials
-  - nano-privesc
+  - privesc/nano
   - port-forwarding
   - ssh-keys-cracking
   - Linux

@@ -5,7 +5,6 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2007-2447
   - RCE
   - Samba
   - exploit-dev

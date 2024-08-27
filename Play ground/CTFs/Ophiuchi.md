@@ -5,10 +5,9 @@ Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2017-1000207
   - credentials-reuse
   - hardcoded-credentials
-  - relative-paths-hijacking-privesc
+  - privesc/relative-paths-hijacking
   - reversing
   - snakeyaml
   - yaml-deserialization

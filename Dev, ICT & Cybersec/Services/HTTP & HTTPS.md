@@ -85,7 +85,8 @@ Further information inside the language specific notes:
 
 - If possible, always **enable database query logging** and **verbose errors**
 - Use **debug print statements** in interpreted code
-- Attempt to **live-debug** the target compiled application ([dnSpy](../Tools/dnSpy.md) makes this relatively easy for .NET applications. The same can be achieved in the Eclipse IDE for Java applications although with a bit more effort)
+- Attempt to **live-debug** the target application ([dnSpy](../Tools/dnSpy.md) makes this relatively easy for .NET applications. The same can be achieved in the Eclipse IDE for Java applications although with a bit more effort)
+	- For client-side languages: [67 Weird Debugging Tricks Your Browser Doesn't Want You to Know](../../Readwise/Articles/norbauer.com%20-%2067%20Weird%20Debugging%20Tricks%20Your%20Browser%20Doesn't%20Want%20You%20to%20Know.md)
 - After checking **unauthenticated areas**, focus on **areas** of the application that are likely to receive less attention (i.e., authenticated portions of the application)
 - **Investigate how sanitization of user input is performed**. Is it done using a trusted, opensource library, or is a custom solution in place?
 
@@ -96,10 +97,11 @@ Further information inside the language specific notes:
 
 - [[semgrep]]
 - [CodeQL](../Tools/CodeQL.md)
+- [snyk.io](https://app.snyk.io/)
 - [[graudit]] - https://github.com/wireghoul/graudit
 - [SonarSource](https://rules.sonarsource.com/) - 5000+ Static Analysis Rules across 30+ programming languages
 - [cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
-- [The Web Application Hacker's Handbook](../../Personal/Book%20list/The%20Web%20Application%20Hacker's%20Handbook%20-%20Dafydd%20Stuttard%20Marcus%20Pinto.md) - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL 
+- [The Web Application Hacker's Handbook](../../Personal/Book%20list/The%20Web%20Application%20Hacker's%20Handbook%20-%20Dafydd%20Stuttard%20Marcus%20Pinto.md) and [OWASP Code Review Guide v2](../../Personal/Book%20list/OWASP%20Code%20Review%20Guide%20v2.md) - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL 
 
 For software updates and patches, focus on **diffing** [^patch][^patch-2] **older and newer version**:
 - Read every detail contained inside the advisory in order to understand the kind of vulnerability and what/where to search inside the code
@@ -109,6 +111,15 @@ For software updates and patches, focus on **diffing** [^patch][^patch-2] **olde
 [^patch]: [AppSecSchool - How to Extract a Patch](../../Readwise/Articles/AppSecSchool%20-%20How%20to%20Extract%20a%20Patch.md)
 [^patch-2]: [Blog on Shielder - Hunting for ~~Un~~authenticated N-Days in Asus Routers](../../Readwise/Articles/Blog%20on%20Shielder%20-%20Hunting%20for%20~~Un~~authenticated%20N-Days%20in%20Asus%20Routers.md#id696283770)
 ## Black Box Analysis
+
+Black box pentesting [^black-box-pt] refers to a security test done by third party penetration testers. These external experts act like threat actors to check how safe a computer system is. 
+
+- The tester doesn’t know anything about the system before starting.
+- They only use information anyone can find online.
+- They can’t see the system’s code or how it’s built inside.
+- They try to find and use weak spots like a real hacker would.
+
+[^black-box-pt]: [What is Black Box Penetration Testing?](https://blog.securelayer7.net/black-box-penetration-testing/), securelayer7.net
 
 Focus on:
 - Validation
@@ -207,3 +218,4 @@ Evading restrictions:
 - [Defenses against CSRF attacks](../Web%20&%20Network%20Hacking/Cross-Site%20Request%20Forgery%20(CSRF).md#Defenses%20against%20CSRF%20attacks)
 - [SameSite attribute](../Web%20&%20Network%20Hacking/SameSite%20attribute.md)
 - [HTTP/2](../Web%20&%20Network%20Hacking/HTTP-2.md)
+- [WAF](../Dev,%20scripting%20&%20OS/WAF.md)

@@ -5,8 +5,6 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2017-8291
-  - CVE-2018-16509
   - GhostButt
   - Ghostscript
   - RCE

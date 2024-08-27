@@ -95,3 +95,6 @@ Intrinsics.areEqual result=false
 
 - https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/
 - https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/
+
+# External resources and writeup
+- [Frida on Java applications and applets in 2024](https://security.humanativaspa.it/frida-on-java-applets-in-2024/), humanativaspa.it

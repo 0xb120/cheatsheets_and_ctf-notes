@@ -5,14 +5,12 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2019-17671
-  - CVE-2021-3560
   - authorization-bypass
   - credentials-reuse
-  - polkit-privesc
-  - rocket.chat
+  - privesc/polkit
   - wordpress
   - Linux
+  - rocket-chat
 ---
 ![Paper.png](../../zzz_res/attachments/Paper.png)
 

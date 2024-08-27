@@ -6,10 +6,9 @@ Platform: HackTheBox
 Status: 3. Complete
 tags:
   - PHP
-  - 8.1.0-dev
   - backdoor
   - knife
-  - vi-privesc
+  - privesc/vi
   - Linux
 ---
 # Resolution summary

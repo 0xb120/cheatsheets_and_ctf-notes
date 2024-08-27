@@ -4,7 +4,7 @@ Category:
 Difficulty: Easy
 Platform: CICD Goat
 tags: 
-status:
+Status: 1. In progress
 ---
 >[!quote]
 Who. Are. You? You just have read permissions… is that enough? Use your access to the *Wonderland/caterpillar* repository to steal the flag2 secret, which is stored in the Jenkins credential store [^jenkins-creds].

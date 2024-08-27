@@ -5,7 +5,7 @@
   "triggerOnLoad": true,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 15071136,
+  "lastSavedStatusID": 15824693,
   "currentSyncStatusID": 0,
   "refreshBooks": true,
   "booksToRefresh": [],
@@ -60,13 +60,19 @@
     "Readwise/Articles/SecureLayer7 Lab - The 2024 Guide to Android WebView Vulnerabilities.md": "41480133",
     "Readwise/Articles/Gareth Heyes - Using Form Hijacking to Bypass CSP.md": "41481007",
     "Readwise/Articles/jorgegalindo - Do not try to be the smartest in the room; try to be the kindest.md": "41555380",
-    "Readwise/Articles/SecureLayer7 Lab - Analysis of CVE-2023-39143 – PaperCut RCE.md": "41555859",
     "Readwise/Articles/Bad Sector Labs Blog - Jun 17 2024 Last Week in Security (LWiS) - 2024-06-17.md": "41586288",
-    "Readwise/Articles/hulkvision.github.io - RCE in Adobe Acrobat Reader for Android.md": "41610470",
     "Readwise/Tweets/@LiveOverflow on Twitter - I'm Looking for Differen....md": "41610477",
     "Readwise/Articles/David Yesland - CVE-2024-1212  Unauthenticated Command Injection  In Progress Kemp LoadMaster.md": "41703398",
     "Readwise/Articles/Rory McNamara - Breaking Caches and Bypassing Istio RBAC With HTTP Response Header Injection.md": "41704321",
-    "Readwise/Tweets/@LiveOverflow on Twitter - Nice Writeup for Anybody....md": "41754562"
+    "Readwise/Tweets/@LiveOverflow on Twitter - Nice Writeup for Anybody....md": "41754562",
+    "Readwise/Articles/d8rh8r - Using SMS for Location.md": "42116946",
+    "Readwise/Tweets/@orange_8361 on Twitter - Tweets From Orange Tsai  🍊.md": "42677809",
+    "Readwise/Articles/Seytonic - How They Tracked the Trump Shooter's Phone.md": "42811775",
+    "Readwise/Articles/Connor Ford - Version Tracking in Ghidra.md": "43376639",
+    "Readwise/Articles/hulkvision.github.io - RCE in Adobe Acrobat Reader for Android.md": "41610470",
+    "Readwise/Articles/PortSwigger Research - Introducing SignSaboteur Forge Signed Web Tokens With Ease.md": "43403911",
+    "Readwise/Articles/PortSwigger Research - Fickle PDFs Exploiting Browser Rendering Discrepancies.md": "43404150",
+    "Readwise/Articles/admin - Source Code Disclosure in ASP.NET Apps.md": "43405304"
   },
   "reimportShowConfirmation": true
 }

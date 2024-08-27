@@ -8,7 +8,6 @@ tags:
   - RCE
   - code-review
   - php-code-injection
-  - php-mail()-RCE
   - webshell
 ---
 >[!quote]

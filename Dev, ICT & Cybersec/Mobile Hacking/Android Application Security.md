@@ -57,3 +57,4 @@ Largest Column: standard
 - [Exploiting Android WebView Vulnerabilities](https://medium.com/mobis3c/exploiting-android-webview-vulnerabilities-e2bcff780892)
 - [XSS + unsecure deeplink causing arbitrary application installation](https://ssd-disclosure.com/ssd-advisory-galaxy-store-applications-installation-launching-without-user-interaction/)
 - [One-click/Open-redirect to own Samsung S22](https://starlabs.sg/blog/2023/06-the-old-the-new-and-the-bypass-one-clickopen-redirect-to-own-samsung-s22-at-pwn2own-2022/)
+- [Android File Write to RCE](../../Readwise/Tweets/@LiveOverflow%20on%20Twitter%20-%20I'm%20Looking%20for%20Differen....md)

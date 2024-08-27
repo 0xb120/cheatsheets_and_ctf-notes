@@ -6,14 +6,12 @@ Platform: HackTheBox
 Status: 3. Complete
 tags:
   - Bludit
-  - CVE-2019-14287
-  - CVE-2019-16113
   - RCE
   - brute-force
   - custom-wordlist
   - hardcoded-credentials
   - password-guessing
-  - sudo-privesc
+  - privesc/sudo
   - Linux
 ---
 # Resolution summary

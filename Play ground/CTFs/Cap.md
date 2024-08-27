@@ -5,9 +5,8 @@ Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - .pcap
   - IDOR
-  - cap_setuid-privesc
+  - privesc/cap_setuid
   - credentials-reuse
   - Linux
 ---

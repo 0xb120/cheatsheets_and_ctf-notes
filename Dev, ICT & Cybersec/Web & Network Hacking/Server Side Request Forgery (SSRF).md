@@ -126,3 +126,4 @@ PoC for leaking arbitrary files when converting HTML to PDF:
 - [HackTrick (SSRF)](https://book.hacktricks.xyz/pentesting-web/ssrf-server-side-request-forgery)
 - [Targeting auxiliary systems](https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface#aux)
 - [SSRFPwned](https://github.com/blackhatethicalhacking/SSRFPwned) - Checks for SSRF using built-in custom Payloads after fetching URLs from Multiple Passive Sources & applying complex patterns aimed at SSRF
+- [SSRF: A complete guide to exploiting advanced SSRF vulnerabilities](https://blog.intigriti.com/hacking-tools/ssrf-a-complete-guide-to-exploiting-advanced-ssrf-vulnerabilities)

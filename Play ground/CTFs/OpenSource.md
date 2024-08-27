@@ -10,7 +10,7 @@ tags:
   - flask
   - flask-debug_mode
   - git
-  - git-hook-privesc
+  - privesc/git-hook
   - hardcoded-credentials
   - insecure-file-upload
   - path-traversal

@@ -6,8 +6,6 @@ Platform: HackTheBox
 Status: 3. Complete
 tags:
   - CRFL-injection
-  - CVE-2018-19571
-  - CVE-2018-19585
   - GitLab
   - SSRF
   - credentials-reuse

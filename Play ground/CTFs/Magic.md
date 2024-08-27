@@ -12,7 +12,7 @@ tags:
   - filtering-bypass
   - insecure-file-upload
   - port-forwarding
-  - relative-paths-hijacking-privesc
+  - privesc/relative-paths-hijacking
   - suid
   - Linux
 ---

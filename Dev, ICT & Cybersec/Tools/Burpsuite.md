@@ -7,7 +7,32 @@ URL: https://portswigger.net/burp
 >1. Create a user with the same uid, gid and name of the original one (or use root)
 >2. Copy the .jar file of burpsuite-pro
 >3. Copy the `/root/.java/.userPrefs/burp/prefs.xml` file
+>4. Launch the JAR file using the desired parameters [^burp-cmd-param]
 
+[^burp-cmd-param]: [Launching Burp Suite from the command line](https://portswigger.net/burp/documentation/desktop/troubleshooting/launch-from-command-line), portswigger.net
+
+# Tip and tricks
+
+## Fix burpsuite browser not opening
+
+- You need to find the chrome-sandbox binary bundled with your burpsuite : `find ~ -type f -name "chrome-sandbox"`
+	- Result should be something like this : `/home/YourUser/BurpSuitePro/burpbrowser/126.0.6478.55/chrome-sandbox`
+- then: `sudo chown root:root /home/YourUser/BurpSuitePro/burpbrowser/126.0.6478.55/chrome-sandbox && sudo chmod 4755 /home/YourUser/BurpSuitePro/burpbrowser/126.0.6478.55/chrome-sandbox`
+
+## Discover [SSRF](../Web%20&%20Network%20Hacking/Server%20Side%20Request%20Forgery%20(SSRF).md) easier using match and replace for any URL
+
+Set a match & replace rule to match any URL in a request and replace it with your canary token / URL that you control!
+
+![](attachments/SSRF-regex.png)
+
+## Develop your custom extensions 
+Reference: https://security.humanativaspa.it/tag/montoya-api/
+1. [Setting up the environment + Hello World](https://security.humanativaspa.it/extending-burp-suite-for-fun-and-profit-the-montoya-way-part-1/)
+2. [Inspecting and tampering HTTP requests and responses](https://security.humanativaspa.it/extending-burp-suite-for-fun-and-profit-the-montoya-way-part-2)
+3. [Inspecting and tampering WebSocket messages](https://security.humanativaspa.it/extending-burp-suite-for-fun-and-profit-the-montoya-way-part-3/)
+4. [Creating new tabs for processing HTTP requests and responses](https://security.humanativaspa.it/extending-burp-suite-for-fun-and-profit-the-montoya-way-part-4/)
+5. [Adding new functionalities to the context menu (accessible by right-clicking)](https://security.humanativaspa.it/extending-burp-suite-for-fun-and-profit-the-montoya-way-part-5/)
+6. [Adding new checks to Burp Suite Active and Passive Scanner](https://security.humanativaspa.it/extending-burp-suite-for-fun-and-profit-the-montoya-way-part-6)
 
 # Useful extensions
 
@@ -27,32 +52,46 @@ Features:
 - Customizable regexes lists
 - Import regexes from CSV/JSON files
 - Export results to CSV/JSON files
-### *Retire.js
+### *Retire.js 🔝
 
 Integrates Burp with the Retire.js repository to find vulnerable JavaScript libraries. It passively looks at JavaScript files loaded and identifies those which are vulnerable.
 
 ![|500](../../zzz_res/attachments/retire-js.png)
 
-### *Software Vulnerability Scanner
+### *Software Vulnerability Scanner 🔝
 
 Scans for vulnerabilities in detected software versions using the Vulners.com API. It adds a new page where you can analyze all the findings and add your custom regex to inspect for, and it also adds issues to the target page.
 
 ![|500](../../zzz_res/attachments/software-vuln-scanner.png)
 
-### *Software Version Reporter
+### *Software Version Reporter 🔝
 
 Passively detects server software version numbers during scanning, spidering etc. It summarizes all the findings within a dedicated tab but it also generates issues within the Target tab.
 
 ![|500](../../zzz_res/attachments/software-version-reporter.png)
 ![|500](../../zzz_res/attachments/software-version-reporter2.png)
 
-### *JS Miner
+### *JS Miner 🔝
 
 Find interesting stuff inside static files, like secrets, credentials, subdomains, API endpoint, etc. It **can be used both passively (default) or actively** (through the "Extensions" menu).
 
 ![|500](../../zzz_res/attachments/JS-miner.png)
 
-### *Reflected Parameters
+### *Additional Scanner Check 🔝
+
+This extension provides some additional passive Scanner checks:
+
+- DOM-based XSS (regular expressions are based on those from https://code.google.com/p/domxsswiki/wiki/FindingDOMXSS)
+- Missing HTTP headers:
+    - Strict-Transport-Security
+    - X-Content-Type-Options: nosniff
+    - X-XSS-Protection
+- Multiple occurrences of the checked headers
+- Redirection from HTTP to HTTPS
+
+All checks can be enabled separately in an extension tab and a default config can be stored.
+
+### *Reflected Parameters 🔝
 
 Monitors traffic and looks for request parameter values (longer than 3 characters) that are reflected in the response. **Launch active scans against those parameters** from the apposite tab.
 
@@ -72,7 +111,7 @@ Used to passively scan for [Cross-Site Request Forgery (CSRF)](../Web%20&%20Netw
 ![|800](../../zzz_res/attachments/CSRF-scanner.png)
 ![|500](../../zzz_res/attachments/CSRF-scanner2.png)
 
-### *Error Message Checks
+### *Error Message Checks 🔝
 
 This extension passively reports detailed server error messages. You can configure arbitrary match results from the apposite tab.
 
@@ -99,7 +138,7 @@ This extension checks for usage of HTML5 features that have potential security r
 
 ## Active scanner enhancement
 
-### *Active Scan++
+### *Active Scan++ 🔝
 
 ActiveScan++ extends Burp Suite's **active and passive scanning capabilities** with host header attacks, edge side includes, XML attacks, input transofmrations, blind code injection and CVEs. To invoke these checks, **just run a normal active scan**.
 
@@ -107,7 +146,7 @@ ActiveScan++ extends Burp Suite's **active and passive scanning capabilities** w
 
 Adds more than 80+ unique security test cases and new strategies to discover different kind of J2EE vulnerabilities.
 
-### *Backslash Powered Scanning
+### *Backslash Powered Scanning 🔝
 
 This extension **complements Burp's active scanner** by using a novel approach capable of finding and confirming both known and unknown classes of server-side injection vulnerabilities. Evolved from classic manual techniques, this approach reaps many of the benefits of manual testing including casual WAF evasion, a tiny network footprint, and flexibility in the face of input filtering. Run the scan from the `Extension > Backslash Powered Scanner > diff-scan`
 
@@ -118,11 +157,40 @@ This extension **complements Burp's active scanner** by using a novel approach c
 
 Gives Burp Suite the ability to find Java deserialization vulnerabilities. It **adds checks to both the active and passive scanner** and can also be used in an **"Intruder like" manual mode**, with a dedicated tab.
 
+The extension allows the user to _discover and exploit_ Java Deserialization Vulnerabilities with different encodings (Raw, Base64, Ascii Hex, GZIP, Base64 GZIP) when the following libraries are loaded in the target JVM:
+
+- Apache Commons Collections 3 (up to 3.2.1), with five different chains
+- Apache Commons Collections 4 (up to 4.4.0), with two different chains
+- Spring (up to 4.2.2)
+- Java 6 and Java 7 (up to Jdk7u21) without any weak library
+- Hibernate 5
+- JSON
+- Rome
+- Java 8 (up to Jdk8u20) without any weak library
+- Apache Commons BeanUtils
+- Javassist/Weld
+- JBoss Interceptors
+- Mozilla Rhino (two different chains)
+- Vaadin
+
 ![|600](../../zzz_res/attachments/java-deserializarion-scanner.png)
 
-### *Freddy, Deserialization Bug Finder
+### *Freddy, Deserialization Bug Finder (Java and .NET)
 
 Helps with detecting and exploiting serialization libraries/APIs **with passive and active scans**.
+
+Freddy Features:
+
+- **Passive Scanning** - Freddy can passively detect the use of potentially dangerous serialization libraries and APIs by watching for type specifiers or other signatures in HTTP requests and by monitoring HTTP responses for exceptions issued by the target libraries. For example the library FastJson uses a JSON field $types to specify the type of the serialized object.
+- **Active Scanning** - Freddy includes active scanning functionality which attempts to both detect and, where possible, exploit affected libraries.
+
+Active scanning attempts to detect the use of vulnerable libraries using three methods:
+
+- **Exception Based** - In exception-based active scanning, Freddy inserts data into the HTTP request that should trigger a known target-specific exception or error message. If this error message is observed in the application's response then an issue is raised.
+- **Time Based** - In some cases time-based payloads can be used for detection because operating system command execution is triggered during deserialization and this action blocks execution until the OS command has finished executing. Freddy uses payloads containing ping [-n|-c] 21 127.0.0.1 in order to induce a time delay in these cases.
+- **Collaborator Based** - Collaborator-based payloads work either by issuing a nslookup command to resolve the Burp Suite Collaborator-generated domain name, or by attempting to load remote classes from the domain name into a Java application. Freddy checks for new Collaborator issues every 60 seconds and marks them in the issues list with RCE (Collaborator).
+
+Supported target: **Java** and **.NET**
 
 ![|750](../../zzz_res/attachments/freddy-deserialization.png)
 
@@ -150,7 +218,7 @@ Read [Hunting for Nginx Alias Traversals in the wild](https://labs.hakaioffsec.c
 
 ## Fuzzing & Tiny scan
 
-### *403 Bypasser
+### *403 Bypasser 🔝
 
 Tries different bypass techniques, including method switching, `..;` permutations, different headers, etc. 
 The scan can be started from the `Extensions > 403 Bypasser` menu.
@@ -158,7 +226,7 @@ The scan can be started from the `Extensions > 403 Bypasser` menu.
 ![](../../zzz_res/attachments/403-bypasser1.png)
 ![](../../zzz_res/attachments/403-bypasser2.png)
 
-### Param Miner
+### Param Miner 🔝
 
 Identifies hidden, unlinked parameters. It's particularly useful for finding web cache poisoning vulnerabilities.
 
@@ -203,7 +271,7 @@ Augments your in-scope proxy traffic by injecting non-invasive headers designed 
 
 Fork of James Kettle's excellent Collaborator Everywhere, with the injection parameters changed to payloads for the critical log4j CVE-2021-44228 vulnerability.
 
-### *Upload Scanner
+### *Upload Scanner 🔝
 
 Implements most attacks that seem feasible for file uploads. The extension is testing various attacks and is divided into modules. Each module handles several attacks of the same category.
 
@@ -226,11 +294,17 @@ This extension can be used to test websites for CORS misconfigurations. It can s
 
 ![|900](../../zzz_res/attachments/additional-cors-checks.png)
 
-### Command Injection Attacker
+### Command Injection Attacker 🔝
 
 A comprehensive OS command injection payload generator. This extension is a customizable payload generator, suitable for detecting OS command injection flaws during dynamic testing.
 
 ![|900](../../zzz_res/attachments/shelling.png)
+
+### nowafpls
+
+[nowafpls](https://github.com/assetnote/nowafpls) [^nowafpls] is a simple Burp plugin which will contextually insert this junk data into your HTTP request inside the repeater tab. You can select from a preset amount of junk data you want inserted, or you can insert an arbitrary amount of junk data by selecting the "Custom" option. 
+
+[^nowafpls]: [Bad Sector Labs Blog - Jun 17 2024 Last Week in Security (LWiS) - 2024-06-17](../../Readwise/Articles/Bad%20Sector%20Labs%20Blog%20-%20Jun%2017%202024%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-06-17.md#^88de29)
 
 ## API
 
@@ -254,7 +328,7 @@ Give to the extension the cookies of a low privileged user and navigate the webs
 
 ![|900](../../zzz_res/attachments/autorize.png)
 
-### Auth Analyzer
+### Auth Analyzer 🔝
 
 Helps you to find authorization bugs. Just navigate through the web application with a high privileged user and let the Auth Analyzer repeat your requests for any defined non-privileged user. With the possibility to define Parameters the Auth Analyzer is able to extract and replace parameter values automatically.
 
@@ -275,7 +349,7 @@ JWT4B lets you decode and manipulate JSON web tokens on the fly, check their val
 ![|800](../../zzz_res/attachments/json-web-tokens1.png)
 ![|800](../../zzz_res/attachments/json-web-tokens2.png)
 
-### JWT Editor
+### JWT Editor 🔝
 
 Extension and standalone application for editing, signing, verifying, encrypting and decrypting JSON Web Tokens. Automatic detection and in-line editing of JWTs within HTTP requests/responses, signing and encrypting of tokens and automation of several well-known attacks against JWT implementations.
 
@@ -289,7 +363,7 @@ Adds a new tab to Burp's HTTP message editor, and displays JSON messages in deco
 
 ![|800](../../zzz_res/attachments/json-decoder.png)
 
-### JQ
+### JQ 🔝
 
 Burpsuite integration of [jq](jq.md)
 ### *GraphQL Raider
@@ -299,7 +373,7 @@ The gql query and variables are extracted from the unreadable json body and disp
 ![](../../zzz_res/attachments/graphql-rider1.png)
 ![](../../zzz_res/attachments/graphql-rider2.png)
 
-### *InQL Introspection GraphQL Scanner
+### *InQL Introspection GraphQL Scanner 🔝
 
 A full featured framework for enumerating and testing GraphQL.
 
@@ -307,9 +381,9 @@ A full featured framework for enumerating and testing GraphQL.
 
 
 
-## Quality of life improvements and feature ehnancments
+## Quality of life improvements and feature enhancements
 
-### Turbo Intruder
+### Turbo Intruder 🔝
 
 Extension for sending large numbers of HTTP requests and analyzing the results. It's intended to complement Burp Intruder by handling attacks that require extreme speed or complexity.
 
@@ -336,7 +410,7 @@ def queueRequests(target, wordlists):
     # send all requests in gate '1' in parallel
     engine.openGate('1')
 ```
-### Content Type Converter
+### Content Type Converter 🔝
 
 Converts data within JSON2XML, XML2JSON, HTTP2JSON. HTTP2XML
 
@@ -346,7 +420,7 @@ Converts data within JSON2XML, XML2JSON, HTTP2JSON. HTTP2XML
 
 Beautifies .NET requests to make the body parameters more human readable. Built-in parameters like \_\_VIEWSTATE have their values masked. Form field names have the auto-generated part of their name removed.
 
-### Hackvector
+### Hackvector 🔝
 
 tag-based conversion tool that supports various escapes and encodings.
 
@@ -357,7 +431,7 @@ tag-based conversion tool that supports various escapes and encodings.
 This extension performs HTTP request minimization. It deletes parameters that are not relevant such as: random ad cookies, cachebusting nonces, etc.
 Two actions are added to the context menu in Repeater: Minimize in current tab and Minimize in new tab.
 As each parameter is removed, the extension repeats the request to ensure the response matches. Only parameters that do not affect the response are removed.
-### Copy As Python-Requests
+### Copy As Python-Requests 🔝
 
 This extension copies selected request(s) as Python-Requests invocations.
 
@@ -367,17 +441,45 @@ Captures response times for requests made by all Burp tools. It could be useful 
 
 ![|900](../../zzz_res/attachments/request-timer.png)
 
-### Request Highlighter
+### Request Highlighter 🔝
 
 Provides an automatic way to highlight HTTP requests based on headers content.
 
 ![](../../zzz_res/attachments/request-highlighter.png)
 
-### Logger++
+### Logger++ 🔝
 
 Multithreaded logging extension for Burp Suite. In addition to logging requests and responses from all Burp Suite tools, the extension allows advanced filters to be defined to highlight interesting entries or filter logs to only those which match the filter.
 
 ![](../../zzz_res/attachments/logger++.png)
+
+### Socket Sleuth
+
+- WebSocket history
+- Websocket intruder
+    - JSONRPC method discovery
+    - Sniper
+        - Simple List
+        - Numeric
+- Websocket AutoRepeater
+    - Similar to AutoRepeater and Autorize but for WebSockets
+    - Allows the contents of a source websocket to automatically be replayed in a target socket
+    - When setup with two unique sessions, this allows for automated AuthZ testing
+- Interception Rules
+- Match & Replace Rules
+    - Basic string
+    - Hex encoded string (useful when working with non string payloads)
+    - Regex
+
+### Response Grepper 🔝
+
+This extension will auto-extract and display values from HTTP Response bodies based on a Regular Expression, similarly to the "Grep - Extract" feature in Burp Intruder but will work on any Responses. This can be helpful when trying to perform manual reconnaissance or building an injection in Burp Repeater, without having to scroll through multiple matches in the Response search results.
+
+### Scalpel 🔝
+
+[Scalpel](../../Readwise/Articles/Noël%20Maccary%20-%20Scalpel%20A%20Burp%20Suite%20Extension%20to%20Edit%20HTTP%20Traffic,%20in%20Python%203.md) is a **Burp extension** for intercepting and rewriting HTTP traffic, either on the fly or in the Repeater, using Python 3 scripts. Basically is a Match-and-Replace feature under steroids.
+
+Install it from GitHub: https://github.com/ambionics/scalpel
 
 ---
 

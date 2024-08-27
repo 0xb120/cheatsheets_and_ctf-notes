@@ -5,14 +5,13 @@ Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CVE-2019-5736
   - JWT
   - RCE
   - SSRF
   - authorization-bypass
   - docker-exec-privesc
   - insecure-file-permissions
-  - runc-privesc
+  - privesc/runc
   - Linux
 ---
 ## Introduction

@@ -5,7 +5,6 @@ Difficulty: Easy
 Platform: PWNX
 Status: 3. Complete
 tags:
-  - CVE-2020-1938
   - Ghostcat
   - JSP
   - JSP-console

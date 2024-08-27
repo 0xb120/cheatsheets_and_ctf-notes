@@ -9,7 +9,7 @@ tags:
   - autologin
   - credentials-reuse
   - hardcoded-credentials
-  - initctl-privesc
+  - privesc/initctl
   - insecure-file-permissions
   - wordpress
   - wordpress-custom-plugin
