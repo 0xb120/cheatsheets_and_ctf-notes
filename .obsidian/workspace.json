@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
-                "mode": "preview",
+                "file": "Dev, ICT & Cybersec/Tools/Burpsuite.md",
+                "mode": "source",
                 "backlinks": true,
                 "source": false
               }
@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dotNET",
+                "query": "#tools",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -127,12 +127,21 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md"
+                "file": "Dev, ICT & Cybersec/Tools/Burpsuite.md"
+              }
+            }
+          },
+          {
+            "id": "8461e389670820c8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Dev, ICT & Cybersec/Tools/Burpsuite.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "93c550284300223b",
@@ -145,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
+                "file": "Dev, ICT & Cybersec/Tools/Burpsuite.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -187,7 +196,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
+                "file": "Dev, ICT & Cybersec/Tools/Burpsuite.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +213,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
+                "file": "Dev, ICT & Cybersec/Tools/Burpsuite.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -230,11 +239,23 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "7ef6fc25769fe693",
+  "active": "6a5083f28af96069",
   "lastOpenFiles": [
+    "Readwise/Articles/Start free - SocketSleuth Improving Security Testing for WebSocket Applications  Snyk.md",
+    "Readwise/Articles/PortSwigger Research - Introducing SignSaboteur Forge Signed Web Tokens With Ease.md",
+    "Readwise/Articles/Piyush Kumawat (securitycipher) - Out-of-Band Exfiltration Tools.md",
+    "Readwise/Articles/Noël Maccary - Scalpel A Burp Suite Extension to Edit HTTP Traffic, in Python 3.md",
+    "Readwise/Articles/Mand Consulting Group - Plundering Postman With Porch Pirate.md",
+    "Readwise/Articles/Frycos Security Diary - Hacking Like Hollywood With Hard-Coded Secrets.md",
+    "Readwise/Articles/Federico Dotta - Java Applet + Serialization in 2024! What Could Go Wrong.md",
+    "Readwise/Articles/David Kutz-Marks - Attacking AWS Cognito With Pacu.md",
+    "Readwise/Articles/Charles Fol - Introducing Wrapwrap Using PHP Filters to Wrap a File With a Prefix and Suffix.md",
+    "Readwise/Articles/Bad Sector Labs Blog - Jun 17 2024 Last Week in Security (LWiS) - 2024-06-17.md",
+    "Readwise/Tweets/@0xTib3rius on Twitter - Tweets From Tib3rius.md",
+    "Dev, ICT & Cybersec/Tools/Burpsuite.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
     "Readwise/Articles/admin - Source Code Disclosure in ASP.NET Apps.md",
     "Readwise/Articles/PortSwigger Research - Fickle PDFs Exploiting Browser Rendering Discrepancies.md",
-    "Readwise/Articles/PortSwigger Research - Introducing SignSaboteur Forge Signed Web Tokens With Ease.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Request Smuggling.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Host Header attacks.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Client-side desync attacks.md",
@@ -246,18 +267,6 @@
     "Dev, ICT & Cybersec/Stego & Forensic/Stego 101.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Domain Attacks.md",
     "Play ground/CTFs/Letter Dispair.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/JSONP vulnerabilities.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/XML External Entity Injection (XXE Injection).md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Poisoning.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure File Upload.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/JWT Vulnerabilities.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Internal information gathering.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Dumping Passwords and Credentials.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication.md",
-    "Readwise/Readwise inbox.md",
-    "Personal/Book list/_book-dashboard_wrapper.md",
     "Play ground/Personal Blog workflow.canvas",
     "Play ground/CTFs/_CTF-dashboard.canvas",
     "Communities/YouTube/_YT-dashboard.canvas",

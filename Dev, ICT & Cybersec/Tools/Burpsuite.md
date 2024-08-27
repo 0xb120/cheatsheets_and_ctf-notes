@@ -481,6 +481,13 @@ This extension will auto-extract and display values from HTTP Response bodies ba
 
 Install it from GitHub: https://github.com/ambionics/scalpel
 
+### Copier 🔝
+
+Copier is a Burp Suite extension (compatible with both Community and Professional editions) which allows users to easily copy requests and responses while making automated modifications using custom rules. [^copier]
+
+[^copier]: https://github.com/Tib3rius/Copier
+
+
 ---
 
 # BChecks
