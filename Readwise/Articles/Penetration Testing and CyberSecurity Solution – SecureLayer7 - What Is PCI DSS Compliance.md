@@ -1,0 +1,16172 @@
+---
+author: Penetration Testing and CyberSecurity Solution – SecureLayer7
+aliases:
+  - What Is PCI DSS Compliance?
+tags:
+  - readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-08-20
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-08
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-09
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-09
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-09
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-09
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-09
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-09
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-10
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-10
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-10
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-10
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+> Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+> PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+> By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+> PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+> Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+> It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+> Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+> encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+> Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+> organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+> Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+> This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+> Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+> This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+> Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+> This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+> t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+> Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+> In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+> Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+> These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+> Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+> Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+> Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+> Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+> Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+> Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-11
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-12
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-13
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-13
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-13
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-13
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-13
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-13
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-13
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-13
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-13
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-14
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-14
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-16
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-16
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-16
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-17
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-18
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-25
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-25
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-25
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-25
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-25
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-25
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-26
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
+---
+author: "Penetration Testing and CyberSecurity Solution – SecureLayer7"
+aliases: "What Is PCI DSS Compliance?"
+tags: RW_inbox, readwise/articles
+url: https://blog.securelayer7.net/what-is-pci-dss-compliance/
+date: 2024-09-26
+---
+# What Is PCI DSS Compliance?
+
+![rw-book-cover](https://blog.securelayer7.net/wp-content/uploads/2023/10/What-is-PCI-DSS-Compliance-1200x675-1.png)
+
+## Highlights
+
+
+Organizations that handle payment card information, such as credit card details, must prioritize the protection of this data to prevent unauthorized access and potential breaches. This is where PCI DSS compliance comes into play.
+> [View Highlight](https://read.readwise.io/read/01hcy88mzarsf6ztn4b8ckxy7b)
+
+
+
+PCI DSS, which stands for Payment Card Industry Data Security Standard, is a globally recognized set of security standards developed by major card brands, including Visa, Mastercard, American Express, Discover, and JCB.
+> [View Highlight](https://read.readwise.io/read/01hcy892m9wf92bepcx7esrw31)
+
+
+
+By complying with these standards, businesses demonstrate their commitment to maintaining the confidentiality, integrity, and availability of cardholder data throughout its lifecycle.
+> [View Highlight](https://read.readwise.io/read/01hcy8dq9cbrtfhjtsh2r8jaen)
+
+
+
+PCI DSS lays out a comprehensive set of requirements that organizations must meet to achieve compliance. These requirements serve as the foundation for establishing a secure environment for handling payment card data.
+> [View Highlight](https://read.readwise.io/read/01hcy8jngmg3ya285bm9g3emmb)
+
+
+
+Build and Maintain a Secure Network
+> [View Highlight](https://read.readwise.io/read/01hcy8k4e7k6ref2zjhezs1mmy)
+
+
+
+It includes implementing firewalls, utilizing secure configurations for network devices, and restricting access to cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy8m1xd4kgdyn24719jh9w6)
+
+
+
+Protect Cardholder Data
+> [View Highlight](https://read.readwise.io/read/01hcy8md2k1p6x8e5ec8cc2r40)
+
+
+
+encryption of cardholder data during transmission and storage, as well as secure cryptographic key management.
+> [View Highlight](https://read.readwise.io/read/01hcy8mx34bv4tq7j97patkkh0)
+
+
+
+Maintain a Vulnerability Management Program
+> [View Highlight](https://read.readwise.io/read/01hcy8n3ygc3ke034sv4nvent7)
+
+
+
+organizations must maintain an effective vulnerability management program
+> [View Highlight](https://read.readwise.io/read/01hcy8n9mc4dc1j3mfc8yh36f7)
+
+
+
+Implement Strong Access Control Measures
+> [View Highlight](https://read.readwise.io/read/01hcy94qps8s4xqm1h5byh3gxk)
+
+
+
+This requirement focuses on restricting access to cardholder data to authorized personnel only.
+> [View Highlight](https://read.readwise.io/read/01hcy95n8f36m3r0dzz9mc65y2)
+
+
+
+Regularly Monitor and Test Networks
+> [View Highlight](https://read.readwise.io/read/01hcy96286x4khkpaz4zb3pwp3)
+
+
+
+This requirement entails implementing logging and log management, conducting regular security testing, and performing penetration testing.
+> [View Highlight](https://read.readwise.io/read/01hcy96jantn6g71gqfrxhmz2g)
+
+
+
+Maintain an Information Security Policy
+> [View Highlight](https://read.readwise.io/read/01hcy96saf0jx5rxsr33wch2m8)
+
+
+
+This requirement involves developing and maintaining a policy that addresses information security
+> [View Highlight](https://read.readwise.io/read/01hcy97qe0012ndmpjwdakp3ye)
+
+
+
+t should encompass areas such as acceptable use, security awareness, and incident response procedures.
+> [View Highlight](https://read.readwise.io/read/01hcy97sydgd1jsmtb0665bn8k)
+
+
+
+Steps for Achieving Compliance
+> [View Highlight](https://read.readwise.io/read/01hcy999evj49bzdyyhbbfwykt)
+
+
+
+In the world of PCI DSS compliance, organizations are classified into different levels based on the volume of payment card transactions they process annually.
+> [View Highlight](https://read.readwise.io/read/01hcy9kt11pt5tz8j552sfh7pw)
+
+
+
+Level 1: Merchants processing more than 6 million card transactions on a yearly basis.
+> [View Highlight](https://read.readwise.io/read/01hcy9ky9f4a11jjk0pk54m30h)
+
+
+
+These requirements include conducting annual on-site assessments by a Qualified Security Assessor (QSA), submitting an annual Report on Compliance (ROC), and implementing additional security controls to safeguard cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9mpd10rpzp2wpe590cc7n)
+
+
+
+Level 2: Merchants that process 1 to 6 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9mrpp2xxmra19v2bq9rf2)
+
+
+
+Level 2 merchants are typically required to complete an annual self-assessment questionnaire (SAQ) and conduct quarterly network vulnerability scans to ensure ongoing security.
+> [View Highlight](https://read.readwise.io/read/01hcy9n066vd0q0kft7h81jc51)
+
+
+
+Level 3: Merchants that process 20,000 to 1 million transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n2nd2me12b5etaq1rbpe)
+
+
+
+Level 3 merchants are generally required to complete an annual SAQ, conduct quarterly network vulnerability scans, and implement specific security controls to protect cardholder data.
+> [View Highlight](https://read.readwise.io/read/01hcy9n54wfvtsegjj4q01gc7j)
+
+
+
+Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
+> [View Highlight](https://read.readwise.io/read/01hcy9n89n5xe7kmd5p4b46x8h)
+
+
+
+Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
+> [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
+
