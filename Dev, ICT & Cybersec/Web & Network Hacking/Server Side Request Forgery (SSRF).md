@@ -119,6 +119,7 @@ PoC for leaking arbitrary files when converting HTML to PDF:
 - [Evading Restrictions](Evading%20Restrictions.md)
 - [SSRF bypass list by h4x0r_fr34k](../../Readwise/Tweets/@h4x0r_fr34k%20on%20Twitter%20-%20Tweets%20From%20VAIDIK%20PANDYA.md#^2da607)
 - [A New Era of SSRF](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017#1)
+- [PortSwigger Research - Introducing the URL Validation Bypass Cheat Sheet](../../Readwise/Articles/PortSwigger%20Research%20-%20Introducing%20the%20URL%20Validation%20Bypass%20Cheat%20Sheet.md) #tools 
 - [DNS rebinding](../Services/DNS%20-%20Domain%20Name%20System.md#DNS%20rebinding)
 
 ## External resources and tools
@@ -127,3 +128,4 @@ PoC for leaking arbitrary files when converting HTML to PDF:
 - [Targeting auxiliary systems](https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface#aux)
 - [SSRFPwned](https://github.com/blackhatethicalhacking/SSRFPwned) - Checks for SSRF using built-in custom Payloads after fetching URLs from Multiple Passive Sources & applying complex patterns aimed at SSRF
 - [SSRF: A complete guide to exploiting advanced SSRF vulnerabilities](https://blog.intigriti.com/hacking-tools/ssrf-a-complete-guide-to-exploiting-advanced-ssrf-vulnerabilities)
+- [Introducing the URL Validation Bypass Cheat Sheet](../../Readwise/Articles/PortSwigger%20Research%20-%20Introducing%20the%20URL%20Validation%20Bypass%20Cheat%20Sheet.md) #tools 

@@ -65,7 +65,7 @@ Magic method used with **deserialization** (`unserialize()`, `__unserialize()`):
 
 ### Classis PHP Object Injection vulnerability
 
-Example from [**Toxic**](https://www.notion.so/Toxic-39ca22b681c0491cac18bdda0a7c5614) 
+Example from [Toxic](../../Play%20ground/CTFs/Toxic.md)
 
 ```php
 <?php
@@ -782,6 +782,10 @@ Exploit (an `ExecCMD` is defined as well inside the server source code and uses 
 Further references:
 - [DotNetNuke Cookie Deserialization Remote Code Execution (RCE) - CVE-2017-9822](https://github.com/murataydemir/CVE-2017-9822)
 
+### Other .NET Deserialization
+
+- [RCE in Progress WS_FTP Ad Hoc via IIS HTTP Modules](../../Readwise/Articles/Assetnote%20-%20RCE%20in%20Progress%20WS_FTP%20Ad%20Hoc%20via%20IIS%20HTTP%20Modules.md)
+
 ## YAML
 
 **Old versions** of pyyaml (like SnakeYAML) were vulnerable to deserialisations attacks if you **didn't specify the Loader** when loading something: `yaml.load(data)`
@@ -853,6 +857,7 @@ Useful tools are:
 	- `JRMPClient` is another universal chain that you can use for initial detection. It causes the server to try establishing a TCP connection to the supplied IP address.
 - [phpgcc](https://github.com/ambionics/phpggc)
 - Existing writeups with known chains
+	- [POP Chain in WordPress 6.4.2](../../Readwise/Articles/Ram%20Gall%20-%20PSA%20Critical%20POP%20Chain%20Allowing%20Remote%20Code%20Execution%20Patched%20in%20WordPress%206.4.2.md)
 
 >[!tip] ysoserial in Java 16+
 >In Java versions 16 and above, you need to set a series of command-line arguments for Java to run ysoserial:

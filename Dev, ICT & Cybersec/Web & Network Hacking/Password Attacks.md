@@ -90,7 +90,7 @@ Kali Linux includes a number of these dictionary files in the `/usr/share/wordli
 
 ---
 
-# Common Network Service Attack Methods
+# Common Network Service Brute-Forces
 
 >[!tip]
 >Bear in mind that password attacks against network services are **noisy**, and in some cases, **dangerous**. Multiple failed login attempts will usually generate **logs** and **warnings** on the target system and may even **lock out accounts** after a pre-defined number of failed login attempts. This could be disastrous during a penetration test, preventing users from accessing production systems until an administrator re-enables the account. Keep this in mind before blindly running a network-based brute force attack.
@@ -240,7 +240,7 @@ For example, some applications like Internet Explorer and Windows Defender use t
 
 ---
 
-# Cracking other type of files
+# Cracking password-protected files
 
 ## Cracking ZIP files
 

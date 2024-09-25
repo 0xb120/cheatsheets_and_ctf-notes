@@ -1,5 +1,8 @@
 Session Fixation occurs when an attacker can fixate a (valid) session identifier. The attacker will then have to trick the victim into logging into the application using the aforementioned session identifier. If the victim does so, the attacker can proceed to a Session Hijacking attack (since the session identifier is already known).
 
+>[!attention]
+>If you have control over an apex domain, you can cross-fixate cookies on other subdomains using [Cookie Tossing](Cookie%20Tossing.md) and [Cookie Eviction](Cookie%20Eviction.md)
+
 Such bugs usually occur when session identifiers (such as cookies) are being accepted from _URL Query Strings_ or _Post Data_, but it can happens also from a Local/Physical attack vector.
 
 1. Attacker manages to obtain a valid session identifier

@@ -45,6 +45,7 @@ APK retrieving:
 - APK converters/external stores (unsafe, chose a trusted application!)
 	- https://apkcombo.com/
 	- https://apps.evozi.com/apk-downloader/?id=com.netflix.Speedtest
+	- [apkd](../../Readwise/Articles/httpsgithub.comkiber-io%20-%20GitHub%20-%20kiber-ioapkd%20APK%20downloader%20from%20few%20sources.md) #tools - APK Downloader is a tool that allows you to easily download APK files from popular app stores
 - Android Market API on GitHub
 
 ## Identify frameworks and components
@@ -95,7 +96,7 @@ Search for:
     - Log enabled
     - Insecure protocols and deeplink
     - Weak cryptographic functions or key leaks
-    - Weak WebView configuration
+    - [Weak WebView configuration](Dynamic%20application%20security%20testing%20(DAST).md#WebView%20attacks%20[%20web-view-attacks])
 - Check Configuration of Cryptographic Standard Algorithms
     - `Cipher`
     - `Mac`

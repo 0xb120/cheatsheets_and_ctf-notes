@@ -9,7 +9,6 @@
   "obsidian-emoji-toolbar",
   "file-tree-alternative",
   "highlightr-plugin",
-  "multi-column-markdown",
   "obsidian-reading-time",
   "better-word-count",
   "obsidian-advanced-slides",
@@ -17,5 +16,7 @@
   "obsidian-list-callouts",
   "readwise-official",
   "advanced-canvas",
-  "obsidian-quiet-outline"
+  "obsidian-quiet-outline",
+  "obsidian-paste-image-rename",
+  "code-styler"
 ]

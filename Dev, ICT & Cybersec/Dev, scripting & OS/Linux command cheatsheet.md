@@ -235,6 +235,8 @@ Extract specific JSON fields using regex:
 cat file.json | grep -Eo '(json-field-name)":"((\\"|[^"])*)'
 ```
 
+grep has some other counterparts "on-steroids" that can be used to search also inside other non-textual files:
+- [rga](../../Readwise/Articles/httpsgithub.comphiresky%20-%20GitHub%20-%20phireskyripgrep-all%20rga%20ripgrep,%20but%20also%20search%20in%20PDFs,%20E-Books,%20Office%20documents,%20zip,%20tar.gz,%20etc..md) - ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
 ## sed
 
 sed **performs text editing on a stream of text**, either a set of specific files or standard output.

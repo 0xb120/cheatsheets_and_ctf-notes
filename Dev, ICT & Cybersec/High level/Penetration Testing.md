@@ -28,8 +28,18 @@ Gray Box Penetration Testing combines elements of both Black Box and White Box t
 | Typical Use Cases | External vulnerability assessments, regulatory compliance | Complex systems, sensitive data, potential insider threats | Internal audits, code reviews, development stage testing |
 | Advantages        | Realistic external perspective, unbiased                  | Balanced view, efficient, comprehensive                    | Detailed, thorough, uncovering hidden flaws              |
 |Disadvantages|May overlook internal issues, time-consuming|Dependent on level of partial knowledge|Potential bias, less realistic external scenario|
+
+# How much does cost a Penetration Test activity
+
+Generally, most application penetration tests average around 5 days, although they can vary from two days to six weeks for a single application. Hourly rates vary, $200 to $300 per hour is generally what most penetration testing firms charge.  
+
+Given an average project of 40 hours that is $250 per hour, that multiplies out to roughly a $10,000 price tag. I would estimate that 90% of application assessments are performed for between $4,000 and $30,000 [^pt-cost] . 
+
+[^pt-cost]: [Preparing for an Application Penetration Test](../../Readwise/Articles/Alex%20Lauerman%20-%20Preparing%20for%20an%20Application%20Penetration%20Test.md); Alex Lauerman
+
 # External Resources
 
 - [A Brief Guide to Black Box Penetration Testing](https://blog.securelayer7.net/black-box-penetration-testing/) 
 - [Gray Box Penetration Testing: The Essential Guide](https://blog.securelayer7.net/gray-box-penetration-testing/)
 - [All You Need to Know about White Box Penetration Testing](https://blog.securelayer7.net/white-box-penetration-testing/)
+

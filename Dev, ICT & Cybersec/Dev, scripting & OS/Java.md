@@ -119,7 +119,9 @@ If you find a [Path Traversal](../Web%20&%20Network%20Hacking/Path%20Traversal.m
 - [jadx](../Tools/jadx.md)
 - [Bytecode Viewer](../Tools/Bytecode%20Viewer.md)
 
+# Java tricks
 
+- [Hiding Payloads in Java Source Code Strings](../../Readwise/Articles/PortSwigger%20Research%20-%20Hiding%20Payloads%20in%20Java%20Source%20Code%20Strings.md), PortSwigger Research
 
 ---
 

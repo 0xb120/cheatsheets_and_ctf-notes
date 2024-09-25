@@ -1,3 +1,7 @@
+>[!tip] [Arch Cloud Labs - 5 Years of InfoSec Focused Homelabbing](../Readwise/Articles/Arch%20Cloud%20Labs%20-%205%20Years%20of%20InfoSec%20Focused%20Homelabbing.md)
+>I, and likely you have a backlog of books, articles, Humble Bundle deals, and U-Demy courses that have piled up over the years. When you do identify time to dive into the backlog of `$THINGS_TO_READ` consider how you could immediately play with some of these concepts you’re learning in almost a “REPL” like fashion. 
+>
+>By identifying a way to **immediately apply** what you’re learning or experimenting with, you can get those neurons firing and help make technical concepts stick and test assumptions you may have about a given topic/tool/API/etc…  
 
 # Linux 101
 
@@ -32,20 +36,17 @@
 
 ---
 
-# Network & Web
-
-- [Information Gathering](Web%20&%20Network%20Hacking/Information%20Gathering.md)
-- [Vulnerability Scanning](Web%20&%20Network%20Hacking/Vulnerability%20Scanning.md)
-- [Exploitation](Web%20&%20Network%20Hacking/Exploitation.md)
-	- [HTTP & HTTPS](Services/HTTP%20&%20HTTPS.md)
-	- [Evading Restrictions](Web%20&%20Network%20Hacking/Evading%20Restrictions.md)
-	- [James Kettle - How I Choose a Security Research Topic](../Readwise/Articles/James%20Kettle%20-%20How%20I%20Choose%20a%20Security%20Research%20Topic.md)
-- [Post Exploitation](Web%20&%20Network%20Hacking/Post%20Exploitation.md)
-- [Shell Cheatsheet](Web%20&%20Network%20Hacking/Shell%20Cheatsheet.md)
-
----
-
 # Development
+
+>[!tip]
+>If you need do fly-tests agains sample scripts, queries, specific functions, regex, etc.
+>- [Explainshell.com](https://explainshell.com/)
+>- [OneCompiler](https://onecompiler.com/)
+>- [Decompiler Explorer (dogbolt)](https://dogbolt.org/)
+>- [Compiler Explorer (godbolt)](https://godbolt.org/)
+>- [DebuggexBeta](https://www.debuggex.com/)
+>- [Regex101](https://regex101.com/)
+>- [Crontab guru](https://crontab.guru/#09,39_*_*_*_*)
 
 - [Dynamic Servers](Dev,%20scripting%20&%20OS/Dynamic%20Servers.md)
 - [Development fundamentals](Dev,%20scripting%20&%20OS/Development%20fundamentals.md)
@@ -65,6 +66,26 @@
 
 ---
 
+# Vulnerability research
+
+- [Vulnerability research essentials](High%20level/Vulnerability%20research%20101.md)
+	- [Searching for known vulnerabilities and exploits](High%20level/Vulnerability%20research%20101.md#Searching%20for%20known%20vulnerabilities%20and%20exploits)
+	- [From CTFs to CVEs](../Readwise/Articles/Arch%20Cloud%20Labs%20-%205%20Years%20of%20InfoSec%20Focused%20Homelabbing.md#From%20CTFs%20to%20CVEs)
+
+---
+
+# Network & Web
+
+- [Information Gathering](Web%20&%20Network%20Hacking/Information%20Gathering.md)
+- [Vulnerability Scanning](Web%20&%20Network%20Hacking/Vulnerability%20Scanning.md)
+- [Exploitation](Web%20&%20Network%20Hacking/Exploitation.md)
+	- [HTTP & HTTPS](Services/HTTP%20&%20HTTPS.md)
+	- [Evading Restrictions](Web%20&%20Network%20Hacking/Evading%20Restrictions.md)
+- [Post Exploitation](Web%20&%20Network%20Hacking/Post%20Exploitation.md)
+- [Shell Cheatsheet](Web%20&%20Network%20Hacking/Shell%20Cheatsheet.md)
+
+---
+
 # Android
 
 - [Android 101](Mobile%20Hacking/Android%20101.md)
@@ -74,10 +95,14 @@
 
 ---
 
-# Cloud & IoT
-
+# Cloud 
 - [cloud_metadata.txt](https://gist.github.com/jhaddix/78cece26c91c6263653f31ba453e273b)
 - [AWS](Cloud/AWS.md)
+
+
+---
+# IoT
+
 - [IoT 101](Dev,%20scripting%20&%20OS/IoT%20101.md)
 	- [Route to Safety: Navigating Router Pitfalls](https://starlabs.sg/blog/2024/route-to-safety-navigating-router-pitfalls/)
 	- [Blog on Shielder - Hunting for ~~Un~~authenticated N-Days in Asus Routers](../Readwise/Articles/Blog%20on%20Shielder%20-%20Hunting%20for%20~~Un~~authenticated%20N-Days%20in%20Asus%20Routers.md)
@@ -102,8 +127,11 @@
 
 ---
 
-# Reporting tools
+# Reporting
 
 - [PwnDoc](https://github.com/pwndoc/pwndoc)
 - [Sysreport](https://github.com/Syslifters/sysreptor)
 - [Ghostwriter](https://github.com/GhostManager/Ghostwriter)
+
+For templates and idea about good reports:
+- [Penetration Testing Reports: A Powerful Template and Guide](../Readwise/Articles/TreyCraf7%20-%20Penetration%20Testing%20Reports%20A%20Powerful%20Template%20and%20Guide.md)

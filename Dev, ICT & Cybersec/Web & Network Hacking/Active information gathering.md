@@ -90,12 +90,3 @@ file_put_contents('/var/www/html/fp/fingerprint.txt', print_r($data, true),
 FILE_APPEND | LOCK_EX);
 ?>
 ```
-
----
-# Physical Tracking
-
-- [Using SMS for Location](../../Readwise/Articles/d8rh8r%20-%20Using%20SMS%20for%20Location.md)
-- Tracking location using *mobile ad data* [^ad-data]
-- [SS7 Attack](../../Readwise/Articles/d8rh8r%20-%20FIsher%20Price%20“My%20First%20SS7%20Attack”.md)
-
-[^ad-data]: [How They Tracked the Trump Shooter's Phone](../../Readwise/Articles/Seytonic%20-%20How%20They%20Tracked%20the%20Trump%20Shooter's%20Phone.md), Seytonic

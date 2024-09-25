@@ -41,7 +41,10 @@ In addition to these primary attributes, there are a number of secondary attribu
 - `extras` - This is a `Bundle` of any additional information. This can be used to provide extended information to the component.
 
 >[!info]
->There are a variety of standard Intent action and category constants defined in the Intent class, but applications can also define their own. These strings use Java-style scoping, to ensure they are unique -- for example, the standard `ACTION_VIEW` is called "`android.intent.action.VIEW`".
+>There are a variety of standard Intent action and category constants defined in the Intent class [^intent-list], but applications can also define their own. These strings use Java-style scoping, to ensure they are unique -- for example, the standard `ACTION_VIEW` is called "`android.intent.action.VIEW`".
+
+
+[^intent-list]: https://cs.android.com/android/platform/superproject/main/+/main:frameworks/base/core/res/AndroidManifest.xml;l=29?q=SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED&start=11
 
 ## Intent resolution
 

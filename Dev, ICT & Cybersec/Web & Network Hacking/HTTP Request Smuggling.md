@@ -77,3 +77,4 @@ Browser-powered request smuggling attacks turn victim's web browser into a desyn
 - https://portswigger.net/research/http2
 - [Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling, PortSwigger](https://portswigger.net/research/browser-powered-desync-attacks)
 - [Making desync attacks easy with TRACE](https://portswigger.net/research/trace-desync-attack), portswigger.net
+- [Refresh: Compromising F5 BIG-IP With Request Smuggling | CVE-2023-46747](../../Readwise/Articles/Michael%20Weber%20-%20Refresh%20Compromising%20F5%20BIG-IP%20With%20Request%20Smuggling%20%20CVE-2023-46747.md)

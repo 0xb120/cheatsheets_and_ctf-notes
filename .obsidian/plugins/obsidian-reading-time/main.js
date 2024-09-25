@@ -5,30 +5,51 @@ if you want to view the source, please visit the github repository of this plugi
 
 var __create = Object.create;
 var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
 var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
+var __spreadProps = (a, b) => __defProps(a, __getOwnPropDescs(b));
 var __commonJS = (cb, mod) => function __require() {
-  return mod || (0, cb[Object.keys(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
 };
 var __export = (target, all) => {
-  __markAsModule(target);
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
 };
-var __reExport = (target, module2, desc) => {
-  if (module2 && typeof module2 === "object" || typeof module2 === "function") {
-    for (let key of __getOwnPropNames(module2))
-      if (!__hasOwnProp.call(target, key) && key !== "default")
-        __defProp(target, key, { get: () => module2[key], enumerable: !(desc = __getOwnPropDesc(module2, key)) || desc.enumerable });
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
   }
-  return target;
+  return to;
 };
-var __toModule = (module2) => {
-  return __reExport(__markAsModule(__defProp(module2 != null ? __create(__getProtoOf(module2)) : {}, "default", module2 && module2.__esModule && "default" in module2 ? { get: () => module2.default, enumerable: true } : { value: module2, enumerable: true })), module2);
-};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var __async = (__this, __arguments, generator) => {
   return new Promise((resolve, reject) => {
     var fulfilled = (value) => {
@@ -134,7 +155,12 @@ var require_pretty_ms = __commonJS({
           const millisecondsDecimalDigits = typeof options.millisecondsDecimalDigits === "number" ? options.millisecondsDecimalDigits : 0;
           const roundedMiliseconds = millisecondsAndBelow >= 1 ? Math.round(millisecondsAndBelow) : Math.ceil(millisecondsAndBelow);
           const millisecondsString = millisecondsDecimalDigits ? millisecondsAndBelow.toFixed(millisecondsDecimalDigits) : roundedMiliseconds;
-          add(Number.parseFloat(millisecondsString, 10), "millisecond", "ms", millisecondsString);
+          add(
+            Number.parseFloat(millisecondsString, 10),
+            "millisecond",
+            "ms",
+            millisecondsString
+          );
         }
       } else {
         const seconds = milliseconds / 1e3 % 60;
@@ -158,84 +184,16 @@ var require_pretty_ms = __commonJS({
   }
 });
 
-// node_modules/reading-time/lib/reading-time.js
-var require_reading_time = __commonJS({
-  "node_modules/reading-time/lib/reading-time.js"(exports, module2) {
-    "use strict";
-    function codeIsInRanges(number, arrayOfRanges) {
-      return arrayOfRanges.some(([lowerBound, upperBound]) => lowerBound <= number && number <= upperBound);
-    }
-    function isCJK(c) {
-      if (typeof c !== "string") {
-        return false;
-      }
-      const charCode = c.charCodeAt(0);
-      return codeIsInRanges(charCode, [
-        [12352, 12447],
-        [19968, 40959],
-        [44032, 55203],
-        [131072, 191456]
-      ]);
-    }
-    function isAnsiWordBound(c) {
-      return " \n\r	".includes(c);
-    }
-    function isPunctuation(c) {
-      if (typeof c !== "string") {
-        return false;
-      }
-      const charCode = c.charCodeAt(0);
-      return codeIsInRanges(charCode, [
-        [33, 47],
-        [58, 64],
-        [91, 96],
-        [123, 126],
-        [12288, 12351],
-        [65280, 65519]
-      ]);
-    }
-    function readingTime2(text, options = {}) {
-      let words = 0, start = 0, end = text.length - 1;
-      const wordsPerMinute = options.wordsPerMinute || 200;
-      const isWordBound = options.wordBound || isAnsiWordBound;
-      while (isWordBound(text[start]))
-        start++;
-      while (isWordBound(text[end]))
-        end--;
-      const normalizedText = `${text}
-`;
-      for (let i = start; i <= end; i++) {
-        if (isCJK(normalizedText[i]) || !isWordBound(normalizedText[i]) && (isWordBound(normalizedText[i + 1]) || isCJK(normalizedText[i + 1]))) {
-          words++;
-        }
-        if (isCJK(normalizedText[i])) {
-          while (i <= end && (isPunctuation(normalizedText[i + 1]) || isWordBound(normalizedText[i + 1]))) {
-            i++;
-          }
-        }
-      }
-      const minutes = words / wordsPerMinute;
-      const time = Math.round(minutes * 60 * 1e3);
-      const displayed = Math.ceil(minutes.toFixed(2));
-      return {
-        text: displayed + " min read",
-        minutes,
-        time,
-        words
-      };
-    }
-    module2.exports = readingTime2;
-  }
-});
-
 // src/main.ts
-__export(exports, {
+var main_exports = {};
+__export(main_exports, {
   default: () => ReadingTime
 });
-var import_obsidian2 = __toModule(require("obsidian"));
+module.exports = __toCommonJS(main_exports);
+var import_obsidian2 = require("obsidian");
 
 // src/settings.ts
-var import_obsidian = __toModule(require("obsidian"));
+var import_obsidian = require("obsidian");
 var RT_DEFAULT_SETTINGS = {
   readingSpeed: 200,
   format: "default",
@@ -255,22 +213,100 @@ var ReadingTimeSettingsTab = class extends import_obsidian.PluginSettingTab {
         yield this.plugin.saveSettings().then(this.plugin.calculateReadingTime);
       }));
     });
-    new import_obsidian.Setting(this.containerEl).setName("Format").setDesc("Choose the output format").addDropdown((dropdown) => dropdown.addOption("default", "Default (10 min)").addOption("compact", "Compact (10m)").addOption("simple", "Simple (10m 4s)").addOption("verbose", "Verbose (10 minutes 4 seconds)").addOption("digital", "Colon Notation (10:04)").setValue(this.plugin.settings.format).onChange((value) => __async(this, null, function* () {
-      this.plugin.settings.format = value;
-      yield this.plugin.saveSettings().then(this.plugin.calculateReadingTime);
-    })));
-    new import_obsidian.Setting(this.containerEl).setName("Append Text").setDesc("Append 'read' to formatted string.").addText((text) => text.setValue(this.plugin.settings.appendText).onChange((value) => __async(this, null, function* () {
-      this.plugin.settings.appendText = value.trim();
-      yield this.plugin.saveSettings().then(this.plugin.calculateReadingTime);
-    })));
+    new import_obsidian.Setting(this.containerEl).setName("Format").setDesc("Choose the output format").addDropdown(
+      (dropdown) => dropdown.addOption("default", "Default (10 min)").addOption("compact", "Compact (10m)").addOption("simple", "Simple (10m 4s)").addOption("verbose", "Verbose (10 minutes 4 seconds)").addOption("digital", "Colon Notation (10:04)").setValue(this.plugin.settings.format).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.format = value;
+        yield this.plugin.saveSettings().then(this.plugin.calculateReadingTime);
+      }))
+    );
+    new import_obsidian.Setting(this.containerEl).setName("Append Text").setDesc("Append 'read' to formatted string.").addText(
+      (text) => text.setValue(this.plugin.settings.appendText).onChange((value) => __async(this, null, function* () {
+        this.plugin.settings.appendText = value.trim();
+        yield this.plugin.saveSettings().then(this.plugin.calculateReadingTime);
+      }))
+    );
   }
 };
 
+// src/lib/reading-time/index.ts
+function codeIsInRanges(number, arrayOfRanges) {
+  return arrayOfRanges.some(
+    ([lowerBound, upperBound]) => lowerBound <= number && number <= upperBound
+  );
+}
+var isCJK = (c) => {
+  const charCode = c.charCodeAt(0);
+  return codeIsInRanges(charCode, [
+    // Hiragana (Katakana not included on purpose,
+    // context: https://github.com/ngryman/reading-time/pull/35#issuecomment-853364526)
+    // If you think Katakana should be included and have solid reasons, improvement is welcomed
+    [12352, 12447],
+    // CJK Unified ideographs
+    [19968, 40959],
+    // Hangul
+    [44032, 55203],
+    // CJK extensions
+    [131072, 191456]
+  ]);
+};
+var isAnsiWordBound = (c) => {
+  return " \n\r	".includes(c);
+};
+var isPunctuation = (c) => {
+  const charCode = c.charCodeAt(0);
+  return codeIsInRanges(charCode, [
+    [33, 47],
+    [58, 64],
+    [91, 96],
+    [123, 126],
+    // CJK Symbols and Punctuation
+    [12288, 12351],
+    // Full-width ASCII punctuation variants
+    [65280, 65519]
+  ]);
+};
+function countWords(text, options = {}) {
+  let words = 0, start = 0, end = text.length - 1;
+  const { wordBound: isWordBound = isAnsiWordBound } = options;
+  while (isWordBound(text[start]))
+    start++;
+  while (isWordBound(text[end]))
+    end--;
+  const normalizedText = `${text}
+`;
+  for (let i = start; i <= end; i++) {
+    if (isCJK(normalizedText[i]) || !isWordBound(normalizedText[i]) && (isWordBound(normalizedText[i + 1]) || isCJK(normalizedText[i + 1]))) {
+      words++;
+    }
+    if (isCJK(normalizedText[i])) {
+      while (i <= end && (isPunctuation(normalizedText[i + 1]) || isWordBound(normalizedText[i + 1]))) {
+        i++;
+      }
+    }
+  }
+  return { total: words };
+}
+function readingTimeWithCount(words, options = {}) {
+  const { wordsPerMinute = 200 } = options;
+  const minutes = words.total / wordsPerMinute;
+  const time = Math.round(minutes * 60 * 1e3);
+  const displayed = Math.ceil(parseFloat(minutes.toFixed(2)));
+  return {
+    minutes: displayed,
+    time
+  };
+}
+function readingTime(text, options = {}) {
+  const words = countWords(text, options);
+  return __spreadProps(__spreadValues({}, readingTimeWithCount(words, options)), {
+    words
+  });
+}
+
 // src/helpers.ts
-var import_pretty_ms = __toModule(require_pretty_ms());
-var ReadTime = require_reading_time();
+var import_pretty_ms = __toESM(require_pretty_ms());
 function readingTimeText(text, plugin) {
-  const result = ReadTime(text, {
+  const result = readingTime(text, {
     wordsPerMinute: plugin.settings.readingSpeed
   });
   let options = {
@@ -281,21 +317,21 @@ function readingTimeText(text, plugin) {
       break;
     case "compact":
       if (result.time > 36e5) {
-        options.unitCount = 2;
+        options = __spreadProps(__spreadValues({}, options), { unitCount: 2 });
       } else {
-        options.compact = true;
+        options = __spreadProps(__spreadValues({}, options), { compact: true });
       }
       break;
     case "verbose":
-      options.verbose = true;
+      options = __spreadProps(__spreadValues({}, options), { verbose: true });
       break;
     case "digital":
-      options.colonNotation = true;
+      options = __spreadProps(__spreadValues({}, options), { colonNotation: true });
       break;
     case "default":
-      return plugin.settings.appendText ? result.text : result.text.replace(" read", "");
+      return plugin.settings.appendText ? `${result.minutes} min read` : `${result.minutes} min`;
   }
-  let output = (0, import_pretty_ms.default)(result.time, options);
+  const output = (0, import_pretty_ms.default)(result.time, options);
   return plugin.settings.appendText ? `${output} ${plugin.settings.appendText}` : output;
 }
 
@@ -326,13 +362,27 @@ var ReadingTime = class extends import_obsidian2.Plugin {
           new ReadingTimeModal(this.app, editor, this).open();
         }
       });
-      this.registerEvent(this.app.workspace.on("file-open", this.calculateReadingTime));
-      this.registerEvent(this.app.workspace.on("editor-change", (0, import_obsidian2.debounce)(this.calculateReadingTime, 1e3)));
+      this.registerEvent(
+        this.app.workspace.on("layout-change", this.calculateReadingTime)
+      );
+      this.registerEvent(
+        this.app.workspace.on("file-open", this.calculateReadingTime)
+      );
+      this.registerEvent(
+        this.app.workspace.on(
+          "editor-change",
+          (0, import_obsidian2.debounce)(this.calculateReadingTime, 1e3)
+        )
+      );
     });
   }
   loadSettings() {
     return __async(this, null, function* () {
-      this.settings = Object.assign({}, RT_DEFAULT_SETTINGS, yield this.loadData());
+      this.settings = Object.assign(
+        {},
+        RT_DEFAULT_SETTINGS,
+        yield this.loadData()
+      );
     });
   }
   saveSettings() {
@@ -350,7 +400,7 @@ var ReadingTimeModal = class extends import_obsidian2.Modal {
   onOpen() {
     const { contentEl, titleEl } = this;
     titleEl.setText("Reading Time of Selected Text");
-    const stats = readingTime(this.editor.getSelection(), this.plugin);
+    const stats = readingTimeText(this.editor.getSelection(), this.plugin);
     contentEl.setText(`${stats} (at ${this.plugin.settings.readingSpeed} wpm)`);
   }
   onClose() {

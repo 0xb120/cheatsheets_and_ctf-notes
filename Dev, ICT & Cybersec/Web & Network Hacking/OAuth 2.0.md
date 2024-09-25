@@ -35,18 +35,21 @@ When OAuth is used for authentication, however, the standardized OpenID Connect 
 
 ## OAuth 2.0 grant types
 
-There are numerous different ways that the actual OAuth process can be implemented. These are known as OAuth "*flows*" or "*grant types*". 
+There are numerous different ways that the actual OAuth process can be implemented. These are known as OAuth "*flows*", "*grant types*", **response mode** [^response-mode] or **response types** [^grant-types]. 
+
+[^response-mode]: [Response modes](../../Readwise/Articles/Detectify%20-%20Account%20Hijacking%20Using%20“Dirty%20Dancing”%20in%20Sign-in%20OAuth-flows.md#Response%20modes), Detectify
 
 >[!summary] 
 >OAuth grant type determines the exact sequence of steps that are involved in the OAuth process. The grant type also affects how the client application communicates with the OAuth service at each stage, including how the access token itself is sent.
 
-There are several different grant types, each with varying levels of complexity and security considerations. We'll focus on the "authorization code" and "implicit" grant types as these are by far the most common. Broadly speaking, those two grant types involve the following stages:
+There are several different grant types [^grant-types], each with varying levels of complexity and security considerations. We'll focus on the "authorization code" and "implicit" grant types as these are by far the most common. Broadly speaking, those two grant types involve the following stages:
 
 1. The client application **requests access to a subset of the user's data**, specifying which grant type they want to use and what kind of access they want.
 2. The **user is prompted to log in to the OAuth service** and explicitly give their consent for the requested access.
 3. The **client application receives a unique access token** that proves they have permission from the user to access the requested data. Exactly how this happens varies significantly depending on the grant type.
 4. The **client application uses this access token to make API calls** fetching the relevant data from the resource server.
 
+[^grant-types]: [Response types](../../Readwise/Articles/Detectify%20-%20Account%20Hijacking%20Using%20“Dirty%20Dancing”%20in%20Sign-in%20OAuth-flows.md#Response%20types), Detectify
 ### Authorization code grant type
 
 Process:

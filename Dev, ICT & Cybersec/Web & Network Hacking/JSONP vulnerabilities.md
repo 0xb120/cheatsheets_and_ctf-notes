@@ -93,6 +93,7 @@ Including script elements from remote servers allows the remote servers to injec
 
 ## Callback name manipulation and reflected file download attack
 
+[SMHTahsin33 - Riding the Waves of API Versioning Unmasking a Stored XSS Vulnerability, CSP Bypass Using YouTube OEmbed](../../Readwise/Articles/SMHTahsin33%20-%20Riding%20the%20Waves%20of%20API%20Versioning%20Unmasking%20a%20Stored%20XSS%20Vulnerability,%20CSP%20Bypass%20Using%20YouTube%20OEmbed.md)
 
 # Detect hidden attack surface
 

@@ -1,3 +1,0 @@
-Hourly rates vary, $200 to $300 per hour is generally what most penetration testing firms charge. Given an average project of 40 hours that is $250 per hour, that multiplies out to roughly a $10,000 price tag. I would estimate that 90% of application assessments are performed for between $4,000 and $30,000. [^1]
-
-[^1]: [Preparing for an Application Penetration Test](../../Readwise/Articles/Alex%20Lauerman%20-%20Preparing%20for%20an%20Application%20Penetration%20Test.md), Alex Lauerman

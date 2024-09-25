@@ -1,7 +1,7 @@
 >[!question] What is MIME sniffing?
 >"MIME sniffing" can be broadly defined as the practice adopted by browsers to determine the effective MIME type of a web resource by examining the content of the response instead of relying on the **Content-Type** header.
 
-![](attachments/Pasted%20image%2020231013115300.png)
+![](attachments/MimeSniffing.png)
 # MIME type
 
 MIME stands for "Multipurpose Internet Mail Extensions". A browser usually identifies a resource’s MIME type by observing the `Content-Type` response header in an HTTP response.

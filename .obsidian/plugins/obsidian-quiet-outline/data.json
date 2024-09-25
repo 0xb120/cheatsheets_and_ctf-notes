@@ -1,7 +1,7 @@
 {
-  "patch_color": false,
-  "primary_color_light": "#18a058",
-  "primary_color_dark": "#63e2b7",
+  "patch_color": true,
+  "primary_color_light": "#a01818",
+  "primary_color_dark": "#e36464",
   "rainbow_line": true,
   "rainbow_color_1": "#FD8B1F",
   "rainbow_color_2": "#FFDF00",

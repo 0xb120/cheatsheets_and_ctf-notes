@@ -33,7 +33,7 @@ It's quite common for a CSP to block resources like `script`. However, many CSPs
 
 From the research: [Evading CSP with DOM-based dangling markup](https://portswigger.net/research/evading-csp-with-dom-based-dangling-markup)
 
-![XSS + Dangling Markup + CSP bypass + CSRF](Cross-Site%20Scripting%20(XSS).md#XSS%20+%20Dangling%20Markup%20+%20CSP%20bypass%20+%20CSRF)
+![XSS + Dangling Markup + CSP bypass + CSRF](HTML%20and%20CSS%20Injection.md#XSS%20+%20Dangling%20Markup%20+%20CSP%20bypass%20+%20CSRF)
 
 ### Policy injection
 
@@ -96,5 +96,8 @@ Further examples:
 - [Ambushed by AngularJS: a hidden CSP bypass in Piwik PRO](https://portswigger.net/research/ambushed-by-angularjs-a-hidden-csp-bypass-in-piwik-pro)
 - [Bypass CSP using MIME sniffing](MIME%20sniffing.md#Bypass%20CSP%20using%20MIME%20sniffing)
 - Bypass CSP using [JSONP](JSONP%20vulnerabilities.md#JSON%20with%20Padding%20(JSONP)) as a gadget [^CSP-JSONP]
+- Misconfigured CSP [^csp-in-the-wild]
+
+[^csp-in-the-wild]: [Misconfigured CSP In the wild](../../Readwise/Articles/Gareth%20Heyes%20-%20Using%20Form%20Hijacking%20to%20Bypass%20CSP.md#In%20the%20wild), Gareth Heyes - Using Form Hijacking to Bypass CSP
 
 [^CSP-JSONP]: [Riding the Waves of API Versioning Unmasking a Stored XSS Vulnerability, CSP Bypass Using YouTube OEmbed](../../Readwise/Articles/SMHTahsin33%20-%20Riding%20the%20Waves%20of%20API%20Versioning%20Unmasking%20a%20Stored%20XSS%20Vulnerability,%20CSP%20Bypass%20Using%20YouTube%20OEmbed.md), SMHTahsin33

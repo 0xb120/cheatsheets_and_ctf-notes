@@ -22,6 +22,8 @@ namespace dotnetapp
 
 # Working with dotNET and C\#
 
+- [Advanced .NET Exploitation Training](https://summoning.team/) public course by Summoning Team
+
 ## Decompile C\#
 
 - [ILSpy](https://github.com/icsharpcode/ILSpy) (decompiler)

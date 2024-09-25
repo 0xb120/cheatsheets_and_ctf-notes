@@ -33,19 +33,10 @@ Eventually, you can use [appetize](https://appetize.io/) to run and preview mobi
 
 ## Types of analyses
 
-```start-multi-column
-ID: ID_qh3p
-Number of Columns: 2
-Largest Column: standard
-```
-
 ### [Static application security testing (SAST)](Static%20application%20security%20testing%20(SAST).md)
 
---- column-end ---
 
 ### [Dynamic application security testing (DAST)](Dynamic%20application%20security%20testing%20(DAST).md)
-
-=== end-multi-column
 
 ---
 
@@ -54,7 +45,6 @@ Largest Column: standard
 - [Attacking Android Antivirus Applications - Intent redirection](https://blog.scrt.ch/2023/03/29/attacking-android-antivirus-applications/)
 - [TikTok uXSS and 1-Click RCE](https://dphoeniixx.medium.com/tiktok-for-android-1-click-rce-240266e78105)
 - [Attacking Android browsers via intent scheme URLs](https://www.mbsd.jp/Whitepaper/IntentScheme.pdf)
-- [Exploiting Android WebView Vulnerabilities](https://medium.com/mobis3c/exploiting-android-webview-vulnerabilities-e2bcff780892)
 - [XSS + unsecure deeplink causing arbitrary application installation](https://ssd-disclosure.com/ssd-advisory-galaxy-store-applications-installation-launching-without-user-interaction/)
 - [One-click/Open-redirect to own Samsung S22](https://starlabs.sg/blog/2023/06-the-old-the-new-and-the-bypass-one-clickopen-redirect-to-own-samsung-s22-at-pwn2own-2022/)
 - [Android File Write to RCE](../../Readwise/Tweets/@LiveOverflow%20on%20Twitter%20-%20I'm%20Looking%20for%20Differen....md)

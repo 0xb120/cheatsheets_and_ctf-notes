@@ -12,15 +12,32 @@ To probe for CL.0 vulnerabilities, first send a request containing another parti
 >4.  **Change the `Connection` header to `keep-alive`.**
 >5.  Send the sequence and check the responses.
 
+Sample request:
 ```http
 POST /vulnerable-endpoint HTTP/1.1                       # HTTP/1.1 200 OK
 Host: vulnerable-website.com
 Connection: keep-alive
 Content-Type: application/x-www-form-urlencoded
-Content-Length: 34
+Content-Length: CORRECT
 
 GET /hopefully404 HTTP/1.1
-Foo: xGET / HTTP/1.1                                     # HTTP/1.1 404 Not Found (!!!)
+Foo: x
+```
+
+Resulting request in the server queue:
+```http
+POST /vulnerable-endpoint HTTP/1.1                       # HTTP/1.1 200 OK
+Host: vulnerable-website.com
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: CORRECT
+
+GET /hopefully404 HTTP/1.1
+Foo: xGET / HTTP/1.1                                     # 
+
+--- SERVER RESPONSE ---
+
+HTTP/1.1 404 Not Found (!!!)
 Host: vulnerable-website.com
 ```
 
@@ -28,3 +45,8 @@ In the example above, the follow-up request for the home page has received a 404
 
 >[!tip]
 >In the wild, we've mostly observed this behavior on endpoints that simply aren't expecting `POST` requests, so they implicitly assume that no requests have a body. Endpoints that trigger server-level redirects and requests for static files are prime candidates.
+
+# Examples
+
+- [From Akamai to F5 to NTLM... With Love.](../../Readwise/Articles/Malicious%20Group%20-%20From%20Akamai%20to%20F5%20to%20NTLM...%20With%20Love..md)
+- https://portswigger.net/web-security/request-smuggling/browser/cl-0

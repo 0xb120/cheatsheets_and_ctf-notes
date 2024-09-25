@@ -443,13 +443,18 @@ p.interactive()
 ## builtins
 <iframe width="1060" height="415" src="https://sadh.life/post/builtins/" title="Python buildins" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
->[!tldr]- 
+>[!tldr] 
 >Dunder methods (also known as magic methods) are special methods that are implicitly invoked by all objects in Python during various operations, such as 
 `__str__()`, `__eq__()`, and `__call__()`. They are used to specify what objects of a class should do when used in various statements and with various operators.
 >
 >Dunder methods have their own default implementation for built-in classes, which we will be implicitly inheriting from when creating a new class, however, developers can override these methods and provide their own implementation when defining new classes.
 >
 >There are also other special attributes in every object in Python, such as `__class__`, `__doc__`, etc.
+
+
+# Python quirks and tricks
+
+- [`os.path.join`](../../Readwise/Tweets/@0xTib3rius%20on%20Twitter%20-%20Tweets%20From%20Tib3rius.md)
 
 # Python 2 vs 3 for binary exploitation
 

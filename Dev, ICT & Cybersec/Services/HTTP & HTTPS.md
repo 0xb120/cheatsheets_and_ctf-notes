@@ -1,6 +1,9 @@
 ---
-Ports: 80, 443, 8080
+Ports:
+  - 80, 443, 8080
 Description: Is an application layer protocol in the Internet protocol suite model for distributed, collaborative, hypermedia information systems.
+aliases:
+  - Web Application Security
 ---
 
 
@@ -8,7 +11,7 @@ Description: Is an application layer protocol in the Internet protocol suite mod
 
 Main checks:
 
-- **Programming languages** and **frameworks** / **CMS**
+- **Programming languages** and **frameworks** / **CMS** [^whatCMS]
 - **URLs** and **Extensions**
 - **Page contents** and **comments**
 - **Sitemaps**, **robots.txt** and **unnecessary exposed files**
@@ -17,6 +20,8 @@ Main checks:
 - **Administrative Consoles** (/manager/html, /phpmyadmin, etc.)
 - **Database software**
 - **Server OS**
+
+[^whatCMS]: [What CMS Is This Site Using?](https://whatcms.org/)
 
 ## Enumeration tools
 
@@ -99,9 +104,13 @@ Further information inside the language specific notes:
 - [CodeQL](../Tools/CodeQL.md)
 - [snyk.io](https://app.snyk.io/)
 - [[graudit]] - https://github.com/wireghoul/graudit
+- [weggli](https://github.com/weggli-rs/weggli) and C/C++ ruleset from Marco Ivaldi [^ivaldi-weggli]
 - [SonarSource](https://rules.sonarsource.com/) - 5000+ Static Analysis Rules across 30+ programming languages
 - [cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
-- [The Web Application Hacker's Handbook](../../Personal/Book%20list/The%20Web%20Application%20Hacker's%20Handbook%20-%20Dafydd%20Stuttard%20Marcus%20Pinto.md) and [OWASP Code Review Guide v2](../../Personal/Book%20list/OWASP%20Code%20Review%20Guide%20v2.md) - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL 
+- [The Web Application Hacker's Handbook](../../Personal/Book%20list/The%20Web%20Application%20Hacker's%20Handbook%20-%20Dafydd%20Stuttard%20Marcus%20Pinto.md) and [OWASP Code Review Guide v2](../../Personal/Book%20list/OWASP%20Code%20Review%20Guide%20v2.md) - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL
+- [How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes](../../Readwise/Articles/Alex%20Thomas%20-%20How%20to%20Find%20XSS%20(Cross-Site%20Scripting)%20Vulnerabilities%20in%20WordPress%20Plugins%20and%20Themes.md#How%20to%20Find%20XSS%20(Cross-Site%20Scripting)%20Vulnerabilities%20in%20WordPress%20Plugins%20and%20Themes)
+
+[^ivaldi-weggli]: [A Collection of Weggli Patterns for C/C++ Vulnerability Research](../../Readwise/Articles/Marco%20Ivaldi%20-%20A%20Collection%20of%20Weggli%20Patterns%20for%20CC++%20Vulnerability%20Research.md), Marco Ivaldi
 
 For software updates and patches, focus on **diffing** [^patch][^patch-2] **older and newer version**:
 - Read every detail contained inside the advisory in order to understand the kind of vulnerability and what/where to search inside the code
@@ -127,7 +136,9 @@ Focus on:
 - Normalization
 - [Web Services & APIs](../Web%20&%20Network%20Hacking/Web%20Services%20&%20APIs.md)
 	- SOAP → WSDL (`?wsdl`)
-	- REST → Swagger, OpenAPI, Postman, etc.
+	- REST → Swagger [^swagger-xss], OpenAPI, Postman, etc.
+
+[^swagger-xss]: [Hacking Swagger-Ui - From XSS to Account Takeovers](../../Readwise/Articles/Dawid%20Moczadło%20-%20Hacking%20Swagger-Ui%20-%20From%20XSS%20to%20Account%20Takeovers.md)
 
 Evading restrictions:
 - [Evading Restrictions](../Web%20&%20Network%20Hacking/Evading%20Restrictions.md)
@@ -178,24 +189,32 @@ Evading restrictions:
 - [ReDoS](../Web%20&%20Network%20Hacking/ReDoS.md)
 ## Client side vulnerabilities
 
+- [HTML and CSS Injection](../Web%20&%20Network%20Hacking/HTML%20and%20CSS%20Injection.md)
 - [Cross-Site Scripting (XSS)](../Web%20&%20Network%20Hacking/Cross-Site%20Scripting%20(XSS).md)
 - [Cross-Site Script Inclusion (XSSI)](../Web%20&%20Network%20Hacking/Cross-Site%20Script%20Inclusion%20(XSSI).md)
 - [Client-side template injection (CSTI)](../Web%20&%20Network%20Hacking/Client-side%20template%20injection%20(CSTI).md)
 - [JSONP vulnerabilities](../Web%20&%20Network%20Hacking/JSONP%20vulnerabilities.md)
 - [MIME sniffing](../Web%20&%20Network%20Hacking/MIME%20sniffing.md)
+- [Header Fixation](../Web%20&%20Network%20Hacking/Header%20Fixation.md)
 - [Session Attacks and Session Prediction](../Web%20&%20Network%20Hacking/Session%20Attacks%20and%20Session%20Prediction.md)
 	- [Cross-Site Request Forgery (CSRF)](../Web%20&%20Network%20Hacking/Cross-Site%20Request%20Forgery%20(CSRF).md)
 	- [Session Fixation](../Web%20&%20Network%20Hacking/Session%20Fixation.md)
-	- [Open Redirection](../Web%20&%20Network%20Hacking/Open%20Redirection.md)
-- [CORS based attacks](../Web%20&%20Network%20Hacking/CORS%20based%20attacks.md)
+- [Open Redirection](../Web%20&%20Network%20Hacking/Open%20Redirection.md)
+- Cross-Origin based attacks
+	- [CORS based attacks](../Web%20&%20Network%20Hacking/CORS%20based%20attacks.md)
+	- [Cross-Origin Request Forgery (CORF)](../Web%20&%20Network%20Hacking/Cross-Origin%20Request%20Forgery%20(CORF).md) (must be in SameSite scenario)
+- [SameSite](../Web%20&%20Network%20Hacking/SameSite%20Cookie%20Attribute.md) based attacks
+	- [Cross-Origin Request Forgery (CORF)](../Web%20&%20Network%20Hacking/CORS%20based%20attacks.md#Cross-Origin%20Request%20Forgery%20(CORF))
+	- [Cookie Tossing](../Web%20&%20Network%20Hacking/Cookie%20Tossing.md)
+	- [Cookie Eviction (Cookie Jar Overflow)](../Web%20&%20Network%20Hacking/Cookie%20Eviction.md)
 - [Clickjacking](../Web%20&%20Network%20Hacking/Clickjacking.md)
 - [WebSockets](../Web%20&%20Network%20Hacking/WebSockets.md)
 - [DOM-based vulnerabilities](../Web%20&%20Network%20Hacking/DOM-based%20vulnerabilities.md)
+	- [Universal Code Execution by Chaining Messages in Browser Extensions](../../Readwise/Articles/Spaceraccoon's%20Blog%20-%20Universal%20Code%20Execution%20by%20Chaining%20Messages%20in%20Browser%20Extensions.md)
 - [Client-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Client-side%20prototype%20pollution%20vuln)
 - [Browser-powered request smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md#Browser-powered%20request%20smuggling)
 - [Fetch Diversion](../Web%20&%20Network%20Hacking/Fetch%20Diversion.md)
 - [ReDoS](../Web%20&%20Network%20Hacking/ReDoS.md)
-
 
 ## API-specific attacks
 
@@ -216,6 +235,8 @@ Evading restrictions:
 - [X-Frame-Options](../Web%20&%20Network%20Hacking/X-Frame-Options.md)
 - [X-Content-Type-Options](../Web%20&%20Network%20Hacking/X-Content-Type-Options.md)
 - [Defenses against CSRF attacks](../Web%20&%20Network%20Hacking/Cross-Site%20Request%20Forgery%20(CSRF).md#Defenses%20against%20CSRF%20attacks)
-- [SameSite attribute](../Web%20&%20Network%20Hacking/SameSite%20attribute.md)
+- [HttpOnly Cookie Attribute](../Web%20&%20Network%20Hacking/HttpOnly%20Cookie%20Attribute.md)
+- [SameSite Cookie Attribute](../Web%20&%20Network%20Hacking/SameSite%20Cookie%20Attribute.md)
 - [HTTP/2](../Web%20&%20Network%20Hacking/HTTP-2.md)
 - [WAF](../Dev,%20scripting%20&%20OS/WAF.md)
+- [Captcha](../Dev,%20scripting%20&%20OS/Captcha.md)

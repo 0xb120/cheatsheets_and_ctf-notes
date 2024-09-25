@@ -19,11 +19,24 @@ URL: https://portswigger.net/burp
 	- Result should be something like this : `/home/YourUser/BurpSuitePro/burpbrowser/126.0.6478.55/chrome-sandbox`
 - then: `sudo chown root:root /home/YourUser/BurpSuitePro/burpbrowser/126.0.6478.55/chrome-sandbox && sudo chmod 4755 /home/YourUser/BurpSuitePro/burpbrowser/126.0.6478.55/chrome-sandbox`
 
-## Discover [SSRF](../Web%20&%20Network%20Hacking/Server%20Side%20Request%20Forgery%20(SSRF).md) easier using match and replace for any URL
+## Match and replace tricks
+### Discover [SSRF](../Web%20&%20Network%20Hacking/Server%20Side%20Request%20Forgery%20(SSRF).md) easier using match and replace for any URL
 
 Set a match & replace rule to match any URL in a request and replace it with your canary token / URL that you control!
 
 ![](attachments/SSRF-regex.png)
+
+### Template in wordlists + match and replace
+
+Typically to find this class of bug, we would use “Fuzzing - path traversal (single file)” then simply replace the `{FILE}` pattern with a file which we know is present on the target system - `/etc/passwd` is usually a good bet. [^match-and-replace-regex] 
+
+```regex
+Match [\{FILE\}] replace with [/etc/hosts]
+```
+
+[^match-and-replace-regex]: [GitLab Arbitrary File Read (CVE-2023-2825) Analysis](../../Readwise/Articles/Sonny%20-%20GitLab%20Arbitrary%20File%20Read%20(CVE-2023-2825)%20Analysis.md#Highlights)
+
+---
 
 ## Develop your custom extensions 
 Reference: https://security.humanativaspa.it/tag/montoya-api/
@@ -426,6 +439,13 @@ tag-based conversion tool that supports various escapes and encodings.
 
 ![](../../zzz_res/attachments/hackvector.png)
 
+### SignSaboteur 
+
+SignSaboteur [^SignSaboteur] is a Burp Suite extension for editing, signing, verifying, and attacking signed tokens. It supports different types of tokens, including Django, Flask, and Express.
+
+The extension provides automatic detection and in-line editing of tokens within HTTP request / response pairs and WebSocket messages, signing of tokens and automation of brute force attacks. You can modify the signed tokens in the Proxy and Repeater message editors. There are a number of built-in handy editors for JSON, timestamps and HEX strings.
+
+[^SignSaboteur]: [Introducing SignSaboteur: Forge Signed Web Tokens With Ease](../../Readwise/Articles/PortSwigger%20Research%20-%20Introducing%20SignSaboteur%20Forge%20Signed%20Web%20Tokens%20With%20Ease.md), PortSwigger Research
 ### Request Minimizer
 
 This extension performs HTTP request minimization. It deletes parameters that are not relevant such as: random ad cookies, cachebusting nonces, etc.
@@ -483,12 +503,9 @@ Install it from GitHub: https://github.com/ambionics/scalpel
 
 ### Copier 🔝
 
-Copier is a Burp Suite extension (compatible with both Community and Professional editions) which allows users to easily copy requests and responses while making automated modifications using custom rules. [^copier]
+[Copier](../../Readwise/Articles/Tib3rius%20-%20My%20NEW%20Burp%20Extension%20Will%20Help%20You%20Write%20Reports!.md) is a Burp Suite extension (compatible with both Community and Professional editions) which allows users to easily copy requests and responses while making automated modifications using custom rules. [^copier]
 
 [^copier]: https://github.com/Tib3rius/Copier
-
-
----
 
 # BChecks
 
@@ -547,10 +564,6 @@ Have you heard of Bambdas? They're a unique new way to customize Burp Suite dire
 
 [^intro-bambdas]: [PortSwigger Blog - Introducing Bambdas](../../Readwise/Articles/PortSwigger%20Blog%20-%20Introducing%20Bambdas.md)
 
-Examples (more examples and hints can be found in the article Refining your HTTP perspective, with bambdas [^adjusting-your-http-perspective-with-bambdas]):
-
-[^adjusting-your-http-perspective-with-bambdas]: [Refining your HTTP perspective, with bambdas](https://portswigger.net/research/adjusting-your-http-perspective-with-bambdas), James Kettle; portswigger.net
-
 *Find requests with a specific cookie value*
 ```java
 //Find requests with a specific cookie value
@@ -603,6 +616,12 @@ if (requestResponse.response().hasHeader("authorization")) {
 
 return false;
 ```
+
+More examples and hints can be found
+- Refining your HTTP perspective, with bambdas [^adjusting-your-http-perspective-with-bambdas]
+- [PortSwigger Research - Finding That One Weird Endpoint, With Bambdas](../../Readwise/Articles/PortSwigger%20Research%20-%20Finding%20That%20One%20Weird%20Endpoint,%20With%20Bambdas.md)
+
+[^adjusting-your-http-perspective-with-bambdas]: [Refining your HTTP perspective, with bambdas](https://portswigger.net/research/adjusting-your-http-perspective-with-bambdas), James Kettle; portswigger.net
 
 # Tools integrating with burpsuite
 

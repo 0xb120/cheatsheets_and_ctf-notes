@@ -1,26 +1,35 @@
 Information disclosure, also known as **information leakage**, is when a website unintentionally reveals sensitive information to its users.
-Although some of this information will be of limited use, it can potentially be a starting point for exposing an additional attack surface, which may contain other interesting vulnerabilities.
+Although some of this information will be of limited use, **it can potentially be a starting point for exposing an additional attack surface, which may contain other interesting vulnerabilities.**
+
+>[!important]
+>Information disclosure vulnerabilities are a gold cave for complex vulnerability chains!
 
 Three main macro-categories:
 
 -   Data about other users, such as usernames or financial information
 -   Sensitive commercial or business data
 -   Technical details about the website and its infrastructure
+	- [0xdf hacks stuff - Default 404 Pages](../../Readwise/Articles/0xdf%20hacks%20stuff%20-%20Default%20404%20Pages.md)
 
 ## Basic information disclosure examples
 
--   Revealing the names of hidden directories, their structure, and their contents via a `robots.txt` file or directory listing
--   Providing access to source code files via temporary backups
--   Explicitly mentioning database table or column names in error messages
--   Unnecessarily exposing highly sensitive information, such as credit card details
--   Hard-coding API keys, IP addresses, database credentials, and so on in the source code
--   Hinting at the existence or absence of resources, usernames, and so on via subtle differences in application behavior
+- Revealing the names of hidden directories, their structure, and their contents via a `robots.txt` file or directory listing
+- Providing access to source code files via temporary backups
+- Explicitly mentioning database table or column names in error messages
+- Unnecessarily exposing highly sensitive information, such as credit card details
+- Hard-coding API keys, IP addresses, database credentials, and so on in the source code
+- Hinting at the existence or absence of resources, usernames, and so on via subtle differences in application behavior
+- Disclosing **secrets** used for sensitive functions (eg. CSRF-token generation, password-reset tokens, authorization checks, etc.) [^secret-fragments]
+
+[^secret-fragments]: [Ambionics - Secret Fragments Remote Code Execution on Symfony Based Websites](../../Readwise/Articles/Ambionics%20-%20Secret%20Fragments%20Remote%20Code%20Execution%20on%20Symfony%20Based%20Websites.md)
 
 ### How can they arise?
 
 - Failure to remove internal content from public content
 - Insecure configuration of the website and related technologies
 - Flawed design and behavior of the application
+	- [File Inclusion (LFI & RFI)](File%20Inclusion%20(LFI%20&%20RFI).md)
+	- [Access control vulnerabilities](Access%20control%20vulnerabilities.md)
 
 ## How to test for information disclosure vulnerabilities
 

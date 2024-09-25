@@ -257,6 +257,12 @@ execute(['/system/bin/sh','-c','echo \"mwr\" > /mnt/sdcard/mwr.txt']);
 </script>
 ```
 
+### In the wild WebView attacks
+
+- [Bounty of an Insecure WebView (Part 1)](../../Readwise/Articles/Crisdeo%20Nuel%20Siahaan%20-%20Bounty%20of%20an%20Insecure%20WebView%20(Part%201)%20XSS,%20but%20With%20Steroids.md)
+- [Exploiting Android WebView Vulnerabilities](https://medium.com/mobis3c/exploiting-android-webview-vulnerabilities-e2bcff780892)
+- [WebView addJavascriptInterface Remote Code Execution](https://labs.withsecure.com/publications/webview-addjavascriptinterface-remote-code-execution)
+
 ## Arbitrary File Write to Remote Code Execution
 
 Different techniques how to [escalate an arbitrary file write vulnerability in Android apps to arbitrary code execution](../../Readwise/Tweets/@LiveOverflow%20on%20Twitter%20-%20I'm%20Looking%20for%20Differen....md): 

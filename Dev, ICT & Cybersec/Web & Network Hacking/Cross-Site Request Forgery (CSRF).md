@@ -2,6 +2,9 @@
 >[!question] What is CSRF?
 >Cross-site request forgery (also known as CSRF) is a web security vulnerability that allows an attacker to induce users to perform actions that they do not intend to perform. This allows attacker to partially circumvent the [Same-origin policy (SOP)](Same-origin%20policy%20(SOP).md).
 
+>[!note]
+>If you find yourself in a SameSite scenario, you can perform [Cross-Origin Request Forgery (CORF)](Cross-Origin%20Request%20Forgery%20(CORF).md) attacks.
+
 An HTTP request can be generated in thousands of ways, including with the following code:
 
 ```html
@@ -75,7 +78,7 @@ email=test%40test.com&csrf=waQRtvxCwZbNaHazxoQTU9HXCFw4PZ6S
 >```
 
 - **CSRF token is simply duplicated in a cookie**:
-  In a further variation on the preceding vulnerability, some applications do not maintain any server-side record of tokens that have been issued, but instead duplicate each token within a cookie and a request parameter. This is sometimes called the "double submit" defense against CSRF. Like before, the attacker can again perform a CSRF attack if the web site contains any cookie setting functionality. Here, the attacker doesn't need to obtain a valid token of their own.
+  In a further variation on the preceding vulnerability, some applications do not maintain any server-side record of tokens that have been issued, but instead duplicate each token within a cookie and a request parameter (**double-submit pattern**). This is sometimes called the "double submit" defense against CSRF. Like before, the attacker can again perform a CSRF attack if the web site contains any [Cookie Fixation](Header%20Fixation.md) or [Cookie Tossing](Cookie%20Tossing.md) vulnerability. Here, the attacker doesn't need to obtain a valid token of their own.
   >[!example]
   >```http
   >POST /email/change HTTP/1.1
@@ -85,18 +88,23 @@ Content-Length: 68
 Cookie: session=1DQGdzYbOJQzLP7460tfyiv3do7MjyPw; csrf=R8ov2YBfTYmzFyjit8o2hKBuoIjXXVpa
 >
 >csrf=R8ov2YBfTYmzFyjit8o2hKBuoIjXXVpa&email=wiener@normal-user.com
->```
+>``` 
+^a150b3
 
+![](attachments/CORF-double-submit.png)
 ### SameSite attribute on cookies
 
->[!question] What is the [SameSite attribute](SameSite%20attribute.md) for cookies?
+>[!question] What is the [SameSite Cookie Attribute](SameSite%20Cookie%20Attribute.md) for cookies?
 >SameSite is a browser security mechanism that determines when a website's cookies are included in requests originating from other websites. As requests to perform sensitive actions typically require an authenticated session cookie, the appropriate SameSite restrictions may prevent an attacker from triggering these actions cross-site.
 
 #### Common bypasses and flaws
-- [Bypass SameSite Lax restrictions using GET requests](SameSite%20attribute.md#Bypass%20SameSite%20Lax%20restrictions%20using%20GET%20requests)
-- [Bypass SameSite Lax restrictions with newly issued cookies](SameSite%20attribute.md#Bypass%20SameSite%20Lax%20restrictions%20with%20newly%20issued%20cookies)
-- [Bypass SameSite restrictions using on-site gadgets](SameSite%20attribute.md#Bypass%20SameSite%20restrictions%20using%20on-site%20gadgets)
-- [Bypass SameSite restrictions via vulnerable sibling domains](SameSite%20attribute.md#Bypass%20SameSite%20restrictions%20via%20vulnerable%20sibling%20domains)
+- [Bypass SameSite Lax restrictions using GET requests](SameSite%20Cookie%20Attribute.md#Bypass%20SameSite%20Lax%20restrictions%20using%20GET%20requests)
+- [Bypass SameSite Lax restrictions with newly issued cookies](SameSite%20Cookie%20Attribute.md#Bypass%20SameSite%20Lax%20restrictions%20with%20newly%20issued%20cookies)
+- [Bypass SameSite restrictions using on-site gadgets](SameSite%20Cookie%20Attribute.md#Bypass%20SameSite%20restrictions%20using%20on-site%20gadgets)
+- [Bypass SameSite restrictions via vulnerable sibling domains](SameSite%20Cookie%20Attribute.md#Bypass%20SameSite%20restrictions%20via%20vulnerable%20sibling%20domains)
+	- In this case we are talking about [Cross-Origin Request Forgery (CORF)](Cross-Origin%20Request%20Forgery%20(CORF).md) attacks because SameSite does not apply
+
+
 
 ### Referer-based validation
 
@@ -148,4 +156,5 @@ Some applications make use of the HTTP Referer header to attempt to defend again
 >  </body>
 ></html>
 >```
-
+- **Using [Open Redirection](Open%20Redirection.md)**:
+  If you can find a DOM-based Open Redirection vulnerability, you can use it to instantiate your CSRF attack and chain it with method switching.

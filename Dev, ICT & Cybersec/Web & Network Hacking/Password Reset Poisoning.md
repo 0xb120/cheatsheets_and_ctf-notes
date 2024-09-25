@@ -5,7 +5,7 @@
 
 - [Host Header attacks](Host%20Header%20attacks.md)
 - Poisoning via middleware ([Non-standard headers override](Host%20Header%20attacks.md#Non-standard%20headers%20override)) (`X-Forwarded-Host`, `X-Forwarded-For`, `X-Remote-IP`, `X-Remote-Addr`, `X-Originating-IP`): consider using [Collaborator Everywhere](https://portswigger.net/bappstore/2495f6fb364d48c3b6c984e226c02968#:~:text=This%20extension%20augments%20your%20in,and%20browse%20the%20target%20website.)
-- [Dangling markup injection](Cross-Site%20Scripting%20(XSS).md#Dangling%20markup%20injection)
+- [Dangling markup injection](HTML%20and%20CSS%20Injection.md#Dangling%20markup%20injection)
 
 >[!warning]
 >Some time automated mail filters click link instead of the user!

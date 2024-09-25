@@ -78,10 +78,14 @@ Logic flaws that are specific to the business domain or the purpose of the site.
 >Other possible vulnerabilities would be using the same one-shot discount code multiple times, using discount codes to buy more valuable promo codes, exploiting [Race Condition](Race%20Condition.md) (see [Diogenes' Rage](../../Play%20ground/CTFs/Diogenes'%20Rage.md)) and other misconfigurations.
 > ![](../../zzz_res/attachments/business-logic_discount1.png)
 
-For e-commerce e stores refer to the following pdf: [Common Security Issues in FinanciallyOriented Web Applications](https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications.pdf), Soroush Dalili 
+For e-commerce e stores refer to the following articles: 
+- [Common Security Issues in FinanciallyOriented Web Applications](https://soroush.me/downloadable/common-security-issues-in-financially-orientated-web-applications.pdf), Soroush Dalili 
+- [Hunting Down the Top 5 Most Common Price Manipulation Vulnerabilities in E-Commerce Websites](../../Readwise/Articles/intigriti%20-%20Hunting%20Down%20the%20Top%205%20Most%20Common%20Price%20Manipulation%20Vulnerabilities%20in%20E-Commerce%20Websites.md), Intigriti
 ### Providing an encryption oracle
 
-Dangerous scenarios can occur when user-controllable input is encrypted and the resulting ciphertext is then made available to the user in some way. This kind of input is sometimes known as an "encryption oracle". An attacker can use this input to encrypt arbitrary data using the correct algorithm and asymmetric key.
+Dangerous scenarios can occur when user-controllable input is encrypted and the resulting ciphertext is then made available to the user in some way. This kind of input is sometimes known as an "encryption oracle" [^whatsup-gold-cve]. An attacker can use this input to encrypt arbitrary data using the correct algorithm and asymmetric key.
+
+[^whatsup-gold-cve]: [Breaking Down Barriers: Exploiting Pre-Auth SQL Injection in WhatsUp Gold CVE-2024-6670](../../Readwise/Articles/Summoning%20Team%20-%20Breaking%20Down%20Barriers%20Exploiting%20Pre-Auth%20SQL%20Injection%20in%20WhatsUp%20Gold%20CVE-2024-6670.md), Summoning Team
 
 This becomes dangerous when there are other user-controllable inputs in the application that expect data encrypted with the same algorithm. In this case, an attacker could potentially use the encryption oracle to generate valid, encrypted input and then pass it into other sensitive functions.
 

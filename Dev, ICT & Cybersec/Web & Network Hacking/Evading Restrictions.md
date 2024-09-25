@@ -230,6 +230,7 @@ In the cookie specification and implementation, specifically dedicated cookies i
 - [XSS cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 - [A new era of SSRF](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017#1)
 - [SSRF: A complete guide to exploiting advanced SSRF vulnerabilities](https://blog.intigriti.com/hacking-tools/ssrf-a-complete-guide-to-exploiting-advanced-ssrf-vulnerabilities)
+- [Introducing the URL Validation Bypass Cheat Sheet](../../Readwise/Articles/PortSwigger%20Research%20-%20Introducing%20the%20URL%20Validation%20Bypass%20Cheat%20Sheet.md) #tools 
 - [Cache parameter cloaking](Web%20Cache%20Poisoning.md#Cache%20parameter%20cloaking)
 - [HTTP Parameter Pollution (HPP)](HTTP%20Parameter%20Pollution%20(HPP).md)
 - [HTTP Verb Tampering](HTTP%20Verb%20Tampering.md)

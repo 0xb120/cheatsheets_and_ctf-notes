@@ -226,7 +226,9 @@ Existing file:
 
 ![](../../zzz_res/attachments/XXE-local_DTD_2.png)
 
-After you have tested a list of common DTD files to locate a file that is present, you then need to obtain a copy of the file and review it to find an entity that you can redefine. Since many common systems that include DTD files are open source, you can normally quickly obtain a copy of files through internet search.
+After you have tested a list of common DTD files [^dtd-finder] to locate a file that is present, you then need to obtain a copy of the file and review it to find an entity that you can redefine. Since many common systems that include DTD files are open source, you can normally quickly obtain a copy of files through internet search.
+
+[^dtd-finder]: [dtd-finder list](https://github.com/GoSecure/dtd-finder/tree/master/list?ref=labs.watchtowr.com), GitHub
 
 ```bash
 $ cat /usr/share/yelp/dtd/docbookx.dtd | head
@@ -298,3 +300,4 @@ In this situation, you cannot carry out a classic XXE attack, because you don't 
 - [What is a blind XXE attack? Tutorial & Examples | Web Security Academy](https://portswigger.net/web-security/xxe/blind)
 - [WAFfle-y Order](../../Play%20ground/CTFs/WAFfle-y%20Order.md)
 - https://www.synack.com/blog/a-deep-dive-into-xxe-injection/
+- [Sonny - XXE, You Can Depend on Me](../../Readwise/Articles/Sonny%20-%20XXE,%20You%20Can%20Depend%20on%20Me.md)
