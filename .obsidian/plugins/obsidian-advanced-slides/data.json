@@ -6,7 +6,7 @@
   "enableOverview": true,
   "enableMenu": true,
   "enablePointer": true,
-  "enableTimeBar": false,
+  "enableTimeBar": true,
   "theme": "black",
   "highlightTheme": "zenburn",
   "transition": "slide",
@@ -17,5 +17,5 @@
   "showGrid": false,
   "autoComplete": "inPreview",
   "paneMode": "split",
-  "motm": "2023-03-19T13:36:15.069Z"
+  "motm": "2024-10-04T15:52:34.902Z"
 }

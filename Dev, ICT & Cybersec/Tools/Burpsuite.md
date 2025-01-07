@@ -16,8 +16,8 @@ URL: https://portswigger.net/burp
 ## Fix burpsuite browser not opening
 
 - You need to find the chrome-sandbox binary bundled with your burpsuite : `find ~ -type f -name "chrome-sandbox"`
-	- Result should be something like this : `/home/YourUser/BurpSuitePro/burpbrowser/126.0.6478.55/chrome-sandbox`
-- then: `sudo chown root:root /home/YourUser/BurpSuitePro/burpbrowser/126.0.6478.55/chrome-sandbox && sudo chmod 4755 /home/YourUser/BurpSuitePro/burpbrowser/126.0.6478.55/chrome-sandbox`
+	- Result should be something like this: `/home/kali/.BurpSuite/burpbrowser/126.0.6478.55/chrome-sandbox`
+- then: `sudo chown root:root /home/kali/.BurpSuite/burpbrowser/*/chrome-sandbox && sudo chmod 4755 /home/kali/.BurpSuite/burpbrowser/*/chrome-sandbox`
 
 ## Match and replace tricks
 ### Discover [SSRF](../Web%20&%20Network%20Hacking/Server%20Side%20Request%20Forgery%20(SSRF).md) easier using match and replace for any URL
@@ -166,6 +166,11 @@ This extension **complements Burp's active scanner** by using a novel approach c
 ![|750](../../zzz_res/attachments/backslash-powered-scanner.png)
 ![](../../zzz_res/attachments/backslash-powered-scanner2.png)
 
+### *URL Fuzzer
+
+Fuzz URLs with all available ASCII characters to identify parser inconsistencies. Based on the work of Rafael da Costa Santos (https://rafa.hashnode.dev/exploiting-http-parsers-inconsistencies) and Orange Tsai (https://youtu.be/28xWcRegncw?si=t6BcScfQsz-2wFap).
+Usage
+Run an active scan against a target, and view results as issues.
 ### Java Deserialization Scanner
 
 Gives Burp Suite the ability to find Java deserialization vulnerabilities. It **adds checks to both the active and passive scanner** and can also be used in an **"Intruder like" manual mode**, with a dedicated tab.
@@ -290,7 +295,7 @@ Implements most attacks that seem feasible for file uploads. The extension is te
 
 ![|900](../../zzz_res/attachments/upload-scanner.png)
 
-### *Oauth Scanner
+### *OAuth Scan
 
 This extension provides a way to discover OAUTHv2/OpenID vulnerabilities.
 
@@ -347,12 +352,6 @@ Helps you to find authorization bugs. Just navigate through the web application 
 
 ![|900](../../zzz_res/attachments/auth-analyzer.png)
 
-### AuthMatrix
-
-Provides a simple way to test authorization in web applications and web services. Testers focus on thoroughly defining tables of users, roles, and requests for their specific target application upfront. These tables are displayed through the UI in a similar format to that of an access control matrix.
-
-![|900](../../zzz_res/attachments/AuthMatrix.png)
-
 ## JSON and JWT analysis
 
 ### JSON Web Tokens
@@ -369,12 +368,6 @@ Extension and standalone application for editing, signing, verifying, encrypting
 ![JKWS_injection_1|800](../../zzz_res/attachments/JKWS_injection_1.png)
 ![JKWS_injection_2|800](../../zzz_res/attachments/JKWS_injection_2.png)
 ![JKWS_injection_3|800](../../zzz_res/attachments/JKWS_injection_3.png)
-
-### JSON Decoder
-
-Adds a new tab to Burp's HTTP message editor, and displays JSON messages in decoded form.
-
-![|800](../../zzz_res/attachments/json-decoder.png)
 
 ### JQ 🔝
 
@@ -429,6 +422,12 @@ Converts data within JSON2XML, XML2JSON, HTTP2JSON. HTTP2XML
 
 ![](../../zzz_res/attachments/content-type-converter.png)
 
+### JSON&HTTPP 🔝
+
+Burp Suite Plugin: Convert the json text that returns the body into HTTP request parameters.
+
+https://github.com/gh0stkey/JSONandHTTPP
+
 ### .NET Beautifier
 
 Beautifies .NET requests to make the body parameters more human readable. Built-in parameters like \_\_VIEWSTATE have their values masked. Form field names have the auto-generated part of their name removed.
@@ -446,14 +445,17 @@ SignSaboteur [^SignSaboteur] is a Burp Suite extension for editing, signing, ver
 The extension provides automatic detection and in-line editing of tokens within HTTP request / response pairs and WebSocket messages, signing of tokens and automation of brute force attacks. You can modify the signed tokens in the Proxy and Repeater message editors. There are a number of built-in handy editors for JSON, timestamps and HEX strings.
 
 [^SignSaboteur]: [Introducing SignSaboteur: Forge Signed Web Tokens With Ease](../../Readwise/Articles/PortSwigger%20Research%20-%20Introducing%20SignSaboteur%20Forge%20Signed%20Web%20Tokens%20With%20Ease.md), PortSwigger Research
-### Request Minimizer
-
-This extension performs HTTP request minimization. It deletes parameters that are not relevant such as: random ad cookies, cachebusting nonces, etc.
-Two actions are added to the context menu in Repeater: Minimize in current tab and Minimize in new tab.
-As each parameter is removed, the extension repeats the request to ensure the response matches. Only parameters that do not affect the response are removed.
 ### Copy As Python-Requests 🔝
 
 This extension copies selected request(s) as Python-Requests invocations.
+
+### Copy As a FFUF command 🔝
+
+This extension is for FFUF command generation.
+Usage
+- Modify the request - place the "FUZZ" keyword in the request
+- Right-click and choose the "Copy as FFUF Command" from Context Menu
+- The command is copied to your clipboard to be used in other tools
 
 ### Request Timer
 
@@ -467,11 +469,33 @@ Provides an automatic way to highlight HTTP requests based on headers content.
 
 ![](../../zzz_res/attachments/request-highlighter.png)
 
-### Logger++ 🔝
+### Response Grepper 🔝
 
-Multithreaded logging extension for Burp Suite. In addition to logging requests and responses from all Burp Suite tools, the extension allows advanced filters to be defined to highlight interesting entries or filter logs to only those which match the filter.
+This extension will auto-extract and display values from HTTP Response bodies based on a Regular Expression, similarly to the "Grep - Extract" feature in Burp Intruder but will work on any Responses. This can be helpful when trying to perform manual reconnaissance or building an injection in Burp Repeater, without having to scroll through multiple matches in the Response search results.
 
-![](../../zzz_res/attachments/logger++.png)
+![](attachments/response-grepper.png)
+### HTTP Mock 🔝
+
+Match and replace under steroids. Set specific responses for specific HTTP requests
+
+
+### Scalpel 🔝
+
+[Scalpel](../../Readwise/Articles/Noël%20Maccary%20-%20Scalpel%20A%20Burp%20Suite%20Extension%20to%20Edit%20HTTP%20Traffic,%20in%20Python%203.md) is a **Burp extension** for intercepting and rewriting HTTP traffic, either on the fly or in the Repeater, using Python 3 scripts. Basically is a Match-and-Replace feature under steroids.
+
+Install it from GitHub: https://github.com/ambionics/scalpel
+
+### Request Minimizer
+
+This extension performs HTTP request minimization. It deletes parameters that are not relevant such as: random ad cookies, cachebusting nonces, etc.
+Two actions are added to the context menu in Repeater: Minimize in current tab and Minimize in new tab.
+As each parameter is removed, the extension repeats the request to ensure the response matches. Only parameters that do not affect the response are removed.
+### Copier 🔝
+
+[Copier](../../Readwise/Articles/Tib3rius%20-%20My%20NEW%20Burp%20Extension%20Will%20Help%20You%20Write%20Reports!.md) is a Burp Suite extension (compatible with both Community and Professional editions) which allows users to easily copy requests and responses while making automated modifications using custom rules. [^copier]
+
+[^copier]: https://github.com/Tib3rius/Copier
+
 
 ### Socket Sleuth
 
@@ -491,21 +515,11 @@ Multithreaded logging extension for Burp Suite. In addition to logging requests 
     - Hex encoded string (useful when working with non string payloads)
     - Regex
 
-### Response Grepper 🔝
+### Logger++ 🔝
 
-This extension will auto-extract and display values from HTTP Response bodies based on a Regular Expression, similarly to the "Grep - Extract" feature in Burp Intruder but will work on any Responses. This can be helpful when trying to perform manual reconnaissance or building an injection in Burp Repeater, without having to scroll through multiple matches in the Response search results.
+Multithreaded logging extension for Burp Suite. In addition to logging requests and responses from all Burp Suite tools, the extension allows advanced filters to be defined to highlight interesting entries or filter logs to only those which match the filter.
 
-### Scalpel 🔝
-
-[Scalpel](../../Readwise/Articles/Noël%20Maccary%20-%20Scalpel%20A%20Burp%20Suite%20Extension%20to%20Edit%20HTTP%20Traffic,%20in%20Python%203.md) is a **Burp extension** for intercepting and rewriting HTTP traffic, either on the fly or in the Repeater, using Python 3 scripts. Basically is a Match-and-Replace feature under steroids.
-
-Install it from GitHub: https://github.com/ambionics/scalpel
-
-### Copier 🔝
-
-[Copier](../../Readwise/Articles/Tib3rius%20-%20My%20NEW%20Burp%20Extension%20Will%20Help%20You%20Write%20Reports!.md) is a Burp Suite extension (compatible with both Community and Professional editions) which allows users to easily copy requests and responses while making automated modifications using custom rules. [^copier]
-
-[^copier]: https://github.com/Tib3rius/Copier
+![](../../zzz_res/attachments/logger++.png)
 
 # BChecks
 
@@ -622,6 +636,13 @@ More examples and hints can be found
 - [PortSwigger Research - Finding That One Weird Endpoint, With Bambdas](../../Readwise/Articles/PortSwigger%20Research%20-%20Finding%20That%20One%20Weird%20Endpoint,%20With%20Bambdas.md)
 
 [^adjusting-your-http-perspective-with-bambdas]: [Refining your HTTP perspective, with bambdas](https://portswigger.net/research/adjusting-your-http-perspective-with-bambdas), James Kettle; portswigger.net
+
+### Custom columns
+
+You can use bambdas also to extract values from responses (eg. graphql operation nomes) and populate custom columns with them. 
+
+Example:
+- [Tib3rius - What Are Bambdas and Why Should I Care](../../Readwise/Articles/Tib3rius%20-%20What%20Are%20Bambdas%20and%20Why%20Should%20I%20Care.md)
 
 # Tools integrating with burpsuite
 

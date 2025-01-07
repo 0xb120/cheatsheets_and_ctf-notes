@@ -22,10 +22,11 @@
     "ejs"
   ],
   "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "A4",
+    "includeName": false,
+    "pageSize": "Letter",
     "landscape": false,
     "margin": "0",
-    "downscalePercent": 90
-  }
+    "downscalePercent": 85
+  },
+  "promptDelete": false
 }

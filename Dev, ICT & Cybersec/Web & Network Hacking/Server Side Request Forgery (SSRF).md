@@ -129,3 +129,4 @@ PoC for leaking arbitrary files when converting HTML to PDF:
 - [SSRFPwned](https://github.com/blackhatethicalhacking/SSRFPwned) - Checks for SSRF using built-in custom Payloads after fetching URLs from Multiple Passive Sources & applying complex patterns aimed at SSRF
 - [SSRF: A complete guide to exploiting advanced SSRF vulnerabilities](https://blog.intigriti.com/hacking-tools/ssrf-a-complete-guide-to-exploiting-advanced-ssrf-vulnerabilities)
 - [Introducing the URL Validation Bypass Cheat Sheet](../../Readwise/Articles/PortSwigger%20Research%20-%20Introducing%20the%20URL%20Validation%20Bypass%20Cheat%20Sheet.md) #tools 
+- [NTLM Credential Theft in Python Windows Applications](https://www.horizon3.ai/attack-research/disclosures/ntlm-credential-theft-in-python-windows-applications/), horizon3.ai

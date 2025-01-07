@@ -4,3 +4,11 @@ An [activity](https://developer.android.com/reference/android/app/Activity)  s n
 The activities are managed by the system through specific methods. Below the flow representing the life cycle of an activity.
 
 ![|450](../../zzz_res/attachments/activities.png)
+
+The activities that can be launched using the launcher can be recognized by their filters:
+```xml
+<intent-filter>
+	<action android:name="android.intent.action.MAIN"/>
+	<category android:name="android.intent.category.LAUNCHER"/>
+</intent-filter>
+```

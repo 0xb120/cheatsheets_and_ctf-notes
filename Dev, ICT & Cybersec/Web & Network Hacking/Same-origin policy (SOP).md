@@ -9,6 +9,8 @@ See "Universal XSS" for further references about this kind of attacks.
 
 ## Same-origin policy examples
 
+![|900](attachments/Origin-example.png)
+
 Example source: `http://normal-website.com/example/example.html`
 
 | Url accessed                              | Access permitted                   |

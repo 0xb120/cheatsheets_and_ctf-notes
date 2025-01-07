@@ -143,3 +143,6 @@ SAST can be performed via automatic open source tool which automatically decompi
 - [simplify](../Tools/simplify.md) (de-obfuscator)
 - [ClassNameDeobfuscator](https://github.com/HamiltonianCycle/ClassNameDeobfuscator) (de-obfuscator)
 
+### Diffing
+
+- [Compare Folders](../Tools/vscode.md#^397c19)

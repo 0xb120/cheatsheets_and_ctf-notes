@@ -61,6 +61,10 @@ sp_addsrvrolemember 'hacker', 'sysadmin'
 >https://blog.xpnsec.com/extracting-master-mdf-hashes/
 >
 
+### MSSQL Credential Objects
+
+[Scott Sutherland - Hijacking SQL Server Credentials Using Agent Jobs for Domain Privilege Escalation](../../Readwise/Articles/Scott%20Sutherland%20-%20Hijacking%20SQL%20Server%20Credentials%20Using%20Agent%20Jobs%20for%20Domain%20Privilege%20Escalation.md)
+
 ---
 
 # Enumeration

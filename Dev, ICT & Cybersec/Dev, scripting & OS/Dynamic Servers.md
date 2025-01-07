@@ -12,6 +12,10 @@ python3 -m http.server [port]
 python -m SimpleHTTPServer [port]
 ```
 
+#### Flask custom server
+
+→ [Sample Flask Web Server](Python.md#Sample%20Flask%20Web%20Server)
+
 ### PHP server
 
 ```bash

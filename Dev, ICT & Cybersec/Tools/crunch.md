@@ -11,4 +11,7 @@ crunch 4 4 -f /usr/share/crunch/charset.lst mixalpha -o mixalpha.txt
 # , Upper case alpha char
 # % Numeric char
 # ^ Special char (space included)
+
+# generate wordlists with exactly 850 entires per file
+crunch 16 16 FLTUSEN,11,%0410 -c 850 -o START
 ```

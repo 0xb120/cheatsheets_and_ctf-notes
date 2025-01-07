@@ -9,9 +9,12 @@
 - [gau](https://github.com/lc/gau) - Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
 - [Porch Pirate](https://github.com/mandconsultinggroup/porch-pirate) [^porch-pirate] - Porch Pirate is the most comprehensive Postman recon / OSINT client and framework that facilitates the automated discovery and exploitation of API endpoints and secrets committed to workspaces, collections, requests, users and teams.
 - [waymore](https://github.com/xnl-h4ck3r/waymore) [^waymore-tweet]
+- [Recon for Bug Bounty: 8 Essential Tools for Performing Effective Reconnaissance](../../Readwise/Articles/novasecio%20-%20Recon%20for%20Bug%20Bounty%208%20Essential%20Tools%20for%20Performing%20Effective%20Reconnaissance.md)
+- [urlfinder](https://github.com/projectdiscovery/urlfinder) [^urlfinder] - passively gathering URLs without active scanning
 
 [^porch-pirate]: [Plundering Postman With Porch Pirate](../../Readwise/Articles/Mand%20Consulting%20Group%20-%20Plundering%20Postman%20With%20Porch%20Pirate.md), mandconsulting.ca
 [^waymore-tweet]: [@xnl_h4ck3r on Twitter - Tweets From  XNL -Н4cĸ3r](../../Readwise/Tweets/@xnl_h4ck3r%20on%20Twitter%20-%20Tweets%20From%20%20XNL%20-Н4cĸ3r.md#^3d52ca)
+[^urlfinder]: [Last Week in Security (LWiS) - 2024-12-02](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-12-02.md#^e83851)
 
 ---
 # Google Hacking
@@ -86,6 +89,7 @@ External references:
 
 # Monitoring sites & Crawler
 - [shodan](https://www.shodan.io/) (online)
+	- [Complete Guide to Finding More Vulnerabilities With Shodan and Censys](../../Readwise/Articles/novasecio%20-%20Complete%20Guide%20to%20Finding%20More%20Vulnerabilities%20With%20Shodan%20and%20Censys.md)
 - [netcraft](https://www.netcraft.com/) (online)
 - [crunchbase](https://www.crunchbase.com/) (online)
 - [Security Headers](https://securityheaders.com/) (online)
@@ -98,6 +102,7 @@ External references:
 - [Archive.today](https://archive.fo/) (online)
 - [Whatismybrowser.com](http://developers.whatismybrowser.com/) (online)
 - [CommonCrawl](https://commoncrawl.org/) (online)
+
 
 ---
 

@@ -56,6 +56,7 @@ $ adb -d shell
 ```bash
 $ adb shell pm list packages
 $ adb shell pm list packages -3 # List only third party packages
+$ adb shell pm path <package_name> # Get the full path of the APK
 
 # Clear the application info without removing the app
 $ adb shell pm clear <package_name>
@@ -144,6 +145,7 @@ sqlite> select * from Notes;
 ---
 
 # Dynamic analysis
+
 
 ## Push burpsuite certificate inside the system certificate store
 

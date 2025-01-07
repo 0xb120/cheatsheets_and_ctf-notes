@@ -16,6 +16,8 @@ Different types of XSS:
 
 - **Self XSS**: Self-XSS involves similar application behavior to regular reflected XSS, however it cannot be triggered in normal ways via a crafted URL or a cross-domain request. Instead, the vulnerability is only triggered if the victim themselves submits the XSS payload from their browser.
 
+- [Blind XSS](../../Readwise/Articles/novasecio%20-%20Hunting%20for%20Blind%20XSS%20Vulnerabilities%20A%20Complete%20Guide.md)
+
 Possible attacks and risks:
 
 - Theft of cookies and session tokens
@@ -206,6 +208,7 @@ Extensive cheat sheets can be found at:
 - Bypass CSP using [JSONP](JSONP%20vulnerabilities.md#JSON%20with%20Padding%20(JSONP)) as a gadget [^CSP-JSONP]
 - [XSS + phpinfo](HttpOnly%20Cookie%20Attribute.md#XSS%20+%20phpinfo)
 - [Rhino Security Labs - Silverpeas App Multiple CVEs Leading to File Read on Server](../../Readwise/Articles/Rhino%20Security%20Labs%20-%20Silverpeas%20App%20Multiple%20CVEs%20Leading%20to%20File%20Read%20on%20Server.md)
+- [Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup](../../Readwise/Articles/Bug%20Bounty%20Reports%20Explained%20-%20$25k%20GitHub%20Account%20Takeover%20&%20justCTF%202023%20CSRF+XSS%20Writeup.md) (parsing vs tokenization ft. html namespaces)
 
 [^CSP-JSONP]: [Riding the Waves of API Versioning Unmasking a Stored XSS Vulnerability, CSP Bypass Using YouTube OEmbed](../../Readwise/Articles/SMHTahsin33%20-%20Riding%20the%20Waves%20of%20API%20Versioning%20Unmasking%20a%20Stored%20XSS%20Vulnerability,%20CSP%20Bypass%20Using%20YouTube%20OEmbed.md), SMHTahsin33
 

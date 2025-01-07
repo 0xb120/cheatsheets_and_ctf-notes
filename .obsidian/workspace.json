@@ -4,20 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "af89ce5f154fa7aa",
+        "id": "981490fa75ee0f73",
         "type": "tabs",
         "children": [
           {
-            "id": "7e3f9542ee98a2a4",
+            "id": "5a0946ca1b567d2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Personal/Book list/Hacking - Alex Wagner.md",
+                "file": "Readwise/Readwise inbox.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Readwise inbox"
             }
           }
         ]
@@ -38,7 +40,9 @@
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
-              "state": {}
+              "state": {},
+              "icon": "sheets-in-box",
+              "title": "File Tree"
             }
           },
           {
@@ -46,7 +50,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -55,13 +61,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "open redirection",
+                "query": "nikto",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -71,10 +79,13 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +105,9 @@
             "type": "leaf",
             "state": {
               "type": "quiet-outline",
-              "state": {}
+              "state": {},
+              "icon": "lines-of-text",
+              "title": "Quiet Outline"
             }
           },
           {
@@ -103,9 +116,11 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -117,7 +132,9 @@
                 "sortOrder": "frequency",
                 "showSearch": true,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -126,8 +143,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Personal/Book list/Hacking - Alex Wagner.md"
-              }
+                "file": "Play ground/Targets/mistermagorium.com/mistermagorium.com.canvas"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for mistermagorium.com"
             }
           },
           {
@@ -136,8 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Personal/Book list/Hacking - Alex Wagner.md"
-              }
+                "file": "Readwise/Readwise inbox.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Readwise inbox"
             }
           }
         ]
@@ -153,7 +174,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Personal/Book list/Hacking - Alex Wagner.md",
+                "file": "Readwise/Readwise inbox.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -176,10 +197,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.1387322393266608,
+                  "scale": 0.20809835898999118,
                   "close": true
                 }
-              }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Readwise inbox"
             }
           }
         ]
@@ -195,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Personal/Book list/Hacking - Alex Wagner.md",
+                "file": "Readwise/Readwise inbox.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +226,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": false
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Readwise inbox"
             }
           },
           {
@@ -212,17 +237,19 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Personal/Book list/Hacking - Alex Wagner.md",
+                "file": "Play ground/Targets/mistermagorium.com/mistermagorium.com.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from mistermagorium.com"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 361.5
+    "width": 366.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -238,63 +265,63 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "7e3f9542ee98a2a4",
+  "active": "5a0946ca1b567d2a",
   "lastOpenFiles": [
-    "Personal/Book list/Ethical Hacking and Penetration Testing Guide - Rafay Baloch.md",
-    "Personal/Book list/Learning Pentesting for Android Devices - Aditya Gupta.md",
-    "Personal/Book list/Mobile Application Penetration Testing - Vijay Kumar Velu.md",
-    "Personal/Book list/The Web Application Hacker's Handbook - Dafydd Stuttard Marcus Pinto.md",
-    "Personal/Book list/The Car Hacker's Handbook - Craig Smith.md",
-    "Personal/Book list/PoC or GTFO - Manul Laphroaig.md",
-    "Personal/Book list/Penetration Testing A Hands-On Introduction to Hacking - Georgia Weidman.md",
     "Personal/To-do list.md",
-    "Personal/Song quotes.md",
-    "Personal/How to read a paper.md",
-    "Communities/YT Settings and tools.md",
-    "Communities/MeetHack/CICD Goat.md",
-    "Communities/MeetHack/Android Application Security Slides.md",
-    "Readwise/Readwise inbox.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Open Redirection.md",
-    "Readwise/Articles/News ≈ Packet Storm - Using YouTube to Steal Your Files.md",
-    "Play ground/Targets/opencart/OpenCart 4.0.2.3.canvas",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Linux command cheatsheet.md",
-    "Readwise/Articles/httpsgithub.comphiresky - GitHub - phireskyripgrep-all rga ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc..md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Internal information gathering.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Information Disclosure.md",
+    "Readwise/Articles/novasecio - Intigriti Bug Bytes 219 - December 2024.md",
     "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Bash 101.md",
-    "Readwise/Articles/Veritasium - I Hacked My Friend's Phone to Show How Easy It Is.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Information Gathering.md",
-    "Readwise/Articles/d8rh8r - FIsher Price “My First SS7 Attack”.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Python.md",
-    "Play ground/Targets/htmly",
-    "Communities/Inforge/Cybersec Hacking Mind Map.canvas",
-    "Communities/Inforge/attachments/Pasted image 20240916182121.png",
-    "Communities/Inforge/attachments",
-    "Communities/Inforge",
-    "Play ground/Targets/Mirth Connect",
-    "Readwise/Articles/attachments/dirty-dance-gadget-3.png",
-    "Readwise/Articles/attachments/dirty-dance-gadget-2.png",
-    "Readwise/Articles/attachments/dirty-dange-gadget-1.png",
-    "Readwise/Articles/attachments/zoom-toa-poc-graph.png",
-    "Readwise/Articles/attachments/zoom-ato-client-side-poc.png",
-    "Play ground/Targets/VICIdial/VICIdial Android",
-    "Play ground/Targets/VICIdial/VICIdial Web",
-    "Play ground/Targets/VICIdial",
-    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/PHP-register-global.png",
-    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/cookie-serialization-for-browsers.png",
-    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/sync-token-fixation-3.png",
-    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/sync-token-pattern-2.png",
-    "Play ground/Targets/OpenCMS",
-    "Play ground/Targets/Apache/OFBiz",
-    "Play ground/Targets/Apache",
-    "Play ground/Targets/Adobe Acrobat/Acrobat Reader (Android)/Acrobat Reader (Android).canvas",
-    "Communities/YouTube/_YT-dashboard.canvas",
-    "zzz_res/templates/canvas-template.canvas",
-    "zzz_res/templates/cheatsheet-canvas.canvas",
-    "Play ground/CTFs/_CTF-dashboard.canvas",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP-2.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Internal information gathering.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Passive information gathering (OSINT).md",
+    "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
+    "Readwise/Readwise inbox.md",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-12-16.md",
+    "Dev, ICT & Cybersec/Tools/tmux.md",
+    "Readwise/Articles/Anurag Mondal - From Informational to Critical Chaining & Elevating Web Vulnerabilities.md",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-12-02.md",
+    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Fuzzing.md",
+    "Dev, ICT & Cybersec/Stego & Forensic/OSINT.md",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-11-25.md",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-01-06.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/DOM-based vulnerabilities.md",
+    "Dev, ICT & Cybersec/Tools/CodeQL.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Same-origin policy (SOP).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/SameSite Cookie Attribute.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/Site-example.png",
+    "Dev, ICT & Cybersec/Web & Network Hacking/attachments/Origin-example.png",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-origin resource sharing (CORS).md",
+    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+    "Readwise/Articles/Madison Oliver - Securing Our Home Labs Frigate Code Review.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
+    "Readwise/Articles/novasecio - Hunting for Blind XSS Vulnerabilities A Complete Guide.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
     "Play ground/Personal Blog workflow.canvas",
     "Personal/Book list/_book-dashboard.canvas",
-    "Play ground/Targets/SociableKit/www.sociablekit.com.canvas"
+    "Communities/YouTube/_YT-dashboard.canvas",
+    "Communities/Inforge/Cybersec Hacking Mind Map.canvas",
+    "Play ground/Targets/Wordpress-plugins",
+    "Readwise/Articles/attachments/PortSwigger Research - Fickle PDFs Exploiting Browser Rendering Discrepancies - 2.png",
+    "Readwise/Articles/attachments/PortSwigger Research - Fickle PDFs Exploiting Browser Rendering Discrepancies - 1.png",
+    "Play ground/Targets/PaperCut",
+    "Readwise/Articles/attachments/Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup-poc.png",
+    "Readwise/Articles/attachments/livedomng-2.png",
+    "Readwise/Articles/attachments/livedomng-1.png",
+    "Readwise/Articles/attachments/tokenizer-vs-parser.png",
+    "Play ground/Targets/Vault - Hide Pics, App Lock/Vault - Hide Pics, App Lock (20241122).canvas",
+    "Play ground/Test.canvas",
+    "Play ground/Targets/TeamCity/CVE-2023-42793.canvas",
+    "Play ground/Targets/SVB/SVB.canvas",
+    "Play ground/Targets/SociableKit/www.sociablekit.com.canvas",
+    "Play ground/Targets/comunica.regione.piemonte.it/comunica.regione.piemonte.it.canvas",
+    "Play ground/Targets/Calculator - Hide Photo Video/calculator-hide-mobsf-report.pdf",
+    "Play ground/Targets/uisp.it/areariservata2.uisp.it",
+    "Play ground/Targets/uisp.it/tesseramento.uisp.it",
+    "Play ground/Targets/SicuraNext/SicuraNext-Challenge-Report_v1.0.pdf",
+    "Play ground/Targets/SicuraNext/attachments/graph.png",
+    "Play ground/Targets/SicuraNext/challenge-1/burp/20241115_challenge-1.burp.backup.temp_20241119_090018",
+    "Play ground/Targets/SicuraNext/challenge-1/burp/20241115_challenge-1.burp.backup.temp_20241119_083018",
+    "Play ground/Targets/SicuraNext/challenge-1/burp/20241115_challenge-1.burp.backup.temp_20241119_080018",
+    "Play ground/Targets/SicuraNext/challenge-1/burp/20241115_challenge-1.burp.backup.temp_20241119_073018",
+    "Play ground/Targets/SicuraNext/attachments/cracked-passwords.png"
   ]
 }

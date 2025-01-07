@@ -41,6 +41,7 @@
 >[!tip]
 >If you need do fly-tests agains sample scripts, queries, specific functions, regex, etc.
 >- [Explainshell.com](https://explainshell.com/)
+>- [SQL Fiddle](https://sqlfiddle.com/)
 >- [OneCompiler](https://onecompiler.com/)
 >- [Decompiler Explorer (dogbolt)](https://dogbolt.org/)
 >- [Compiler Explorer (godbolt)](https://godbolt.org/)

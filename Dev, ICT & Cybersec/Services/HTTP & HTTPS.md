@@ -61,6 +61,7 @@ Main checks:
 - [nikto](../Tools/nikto.md) (scanner)
 - wpscanner
 - [unSharepoint](https://blog.cys4.com/tool/2020/12/21/unSharePoint) (scanner)
+- [misconfig mapper](../../Readwise/Articles/novasecio%20-%20Intigriti%20Bug%20Bytes%20219%20-%20December%202024.md#^4a91a1) - automate security misconfiguration detection on your list of targets
 
 ### Other useful tools
 
@@ -103,7 +104,7 @@ Further information inside the language specific notes:
 - [[semgrep]]
 - [CodeQL](../Tools/CodeQL.md)
 - [snyk.io](https://app.snyk.io/)
-- [[graudit]] - https://github.com/wireghoul/graudit
+- [graudit](https://github.com/wireghoul/graudit) - grep rough audit - source code auditing tool
 - [weggli](https://github.com/weggli-rs/weggli) and C/C++ ruleset from Marco Ivaldi [^ivaldi-weggli]
 - [SonarSource](https://rules.sonarsource.com/) - 5000+ Static Analysis Rules across 30+ programming languages
 - [cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
@@ -203,8 +204,10 @@ Evading restrictions:
 - Cross-Origin based attacks
 	- [CORS based attacks](../Web%20&%20Network%20Hacking/CORS%20based%20attacks.md)
 	- [Cross-Origin Request Forgery (CORF)](../Web%20&%20Network%20Hacking/Cross-Origin%20Request%20Forgery%20(CORF).md) (must be in SameSite scenario)
+	- [Cross-Application Cookie Exposure](../../Readwise/Articles/Anurag%20Mondal%20-%20From%20Informational%20to%20Critical%20Chaining%20&%20Elevating%20Web%20Vulnerabilities.md)
 - [SameSite](../Web%20&%20Network%20Hacking/SameSite%20Cookie%20Attribute.md) based attacks
-	- [Cross-Origin Request Forgery (CORF)](../Web%20&%20Network%20Hacking/CORS%20based%20attacks.md#Cross-Origin%20Request%20Forgery%20(CORF))
+	- [Cross-Origin Request Forgery (CORF)](../Web%20&%20Network%20Hacking/Cross-Origin%20Request%20Forgery%20(CORF).md#Cross-Origin%20Request%20Forgery%20(CORF))
+	- [Cross-Application Cookie Exposure](../../Readwise/Articles/Anurag%20Mondal%20-%20From%20Informational%20to%20Critical%20Chaining%20&%20Elevating%20Web%20Vulnerabilities.md)
 	- [Cookie Tossing](../Web%20&%20Network%20Hacking/Cookie%20Tossing.md)
 	- [Cookie Eviction (Cookie Jar Overflow)](../Web%20&%20Network%20Hacking/Cookie%20Eviction.md)
 - [Clickjacking](../Web%20&%20Network%20Hacking/Clickjacking.md)

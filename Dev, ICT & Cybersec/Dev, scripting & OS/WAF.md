@@ -44,3 +44,8 @@ Choosing the right WAF implementation depends on the organization’s specific n
 | F5 BIG-IP WAAP        | 20 MB (configurable)                                   |
 | Palo Alto             | 10 MB                                                  |
 | Cloud Armor by Google | 8 KB (can be increased to 128 KB)                      |
+# Bypass WAFs
+
+- [When WAFs Go Awry: Common Detection & Evasion Techniques for Web Application Firewalls](../../Readwise/Articles/Admin%20-%20When%20WAFs%20Go%20Awry%20Common%20Detection%20&%20Evasion%20Techniques%20for%20Web%20Application%20Firewalls.md)
+- [Evading Restrictions](../Web%20&%20Network%20Hacking/Evading%20Restrictions.md)
+- [PortSwigger Research - Bypassing WAFs With the Phantom $Version Cookie](../../Readwise/Articles/PortSwigger%20Research%20-%20Bypassing%20WAFs%20With%20the%20Phantom%20$Version%20Cookie.md)

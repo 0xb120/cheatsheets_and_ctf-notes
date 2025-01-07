@@ -1,5 +1,7 @@
 >[!question] What is the DOM?
 >The **Document Object Model** (DOM) is a web browser's hierarchical representation of the elements on the page.
+>
+>Use https://livedom.bentkowski.info/ if you need to analyse DOM code at runtime
 
 DOM-based vulnerabilities arise when a website contains JavaScript that takes an attacker-controllable value, known as a source, and passes it into a dangerous function, known as a sink.
 
@@ -399,3 +401,6 @@ Exploit code opening the vulnerable page and focusing on the clobbered form `x`.
 
 - [DOM Invader](https://portswigger.net/burp/documentation/desktop/tools/dom-invader)
 - [DOMC Payload Generator](https://domclob.xyz/domc_payload_generator/) - Generates DOM Clobbering Attack Payload
+- [DOMspy](https://github.com/GangGreenTemperTatum/DOMspy) [^domspy]
+
+[^domspy]: [Erik - Last Week in Security (LWiS) - 2025-01-06](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-01-06.md#^5d4fbd)

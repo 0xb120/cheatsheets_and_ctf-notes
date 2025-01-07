@@ -34,3 +34,10 @@ date: 2024-08-20
 > You may have noticed above that the user had to browse to *exactly* the same URL as the attacker had exploited, critically, including the `X-Accel-Expires` header injection. This is because, by default, NGINX will take the full request URI, including query arguments, and use that to key the cache for future lookups. This means that to retrieve the same response that the attacker primed, the victim’s request must result in the same cache key. In our application, the exploitation of the response header injection requires HTTP query parameters, which will end up in the cache key. However, if the vulnerable application can be exploited in a way that doesn’t modify the cache key (for example, headers being reflected in the response), this could result in a much wider impact on every user browsing to a standard page — without the need to use an attacker-supplied link.
 > [View Highlight](https://read.readwise.io/read/01j104cjf2xn8n5qe59179r3tf)
 
+## New highlights added October 17, 2024 at 10:53 AM
+
+
+Caching in NGINX
+ When appropriately configured with a cache path, NGINX will cache or not cache responses based on the HTTP response headers present. Specifically, the `Cache-Control` and `Expires` headers can be used to define what responses are cached and for how long.
+> [View Highlight](https://read.readwise.io/read/01jacrem8exahgfqj5xc1wr8p5)
+

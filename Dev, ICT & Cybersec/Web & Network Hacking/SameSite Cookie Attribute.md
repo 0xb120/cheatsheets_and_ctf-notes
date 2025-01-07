@@ -16,7 +16,9 @@ They provide partial protections against various cross-site attacks, including:
 >- [Cookie Tossing](Cookie%20Tossing.md)
 >- [Cookie Eviction](Cookie%20Eviction.md)
 
+
 In the context of SameSite cookie restrictions, a **site** is defined as a combination of **scheme** + the **top-level domain** + **one additional level of the domain**:
+![|900](attachments/Site-example.png)
 - `http://app.example.com` and `https://app.example.com` are considered two distinct sites.
 - `http://app.example.com` and `http://app2.example.com` are considered the **same site** (because 3rd level domain and below are not considered)
 

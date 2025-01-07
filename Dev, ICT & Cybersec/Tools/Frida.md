@@ -14,6 +14,8 @@ URL: https://frida.re/
 
 # Frida server
 
+Frida server can be used only if you have root privileges! [Patch APKs with frida using objection](objection.md#Patch%20APKs%20with%20frida%20using%20objection) if you do not have them.
+
 >[!info] Download
 >https://github.com/frida/frida/releases
 
@@ -30,6 +32,10 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 127.0.0.1:27042         0.0.0.0:*               LISTEN      7846/frida-server-16.0.11-android-x86
 ```
 
+Attach to the frida server using
+```sh
+$ frida -U -f com.example.package -l script.js
+```
 ### Expose the frida server on a public port
 
 ```bash
@@ -40,8 +46,39 @@ Proto Recv-Q Send-Q Local Address           Foreign Address         State       
 tcp        0      0 0.0.0.0:27042           0.0.0.0:*               LISTEN      4990/frida-server-16.0.11-android-x86
 ```
 
+# Frida REPL
+
+The Frida REPL (Read-Eval-Print-Loop) is a JavaScript interpreter, and so we can directly run JavaScript statements. You can also specify built-ins non-JavaScript commands specifying them with `%` (eg. `%help`).
+
 # Script examples
 
+## Instantiating classes and objects
+
+```js
+Java.perform(() => {
+    console.log("Started frida script!")
+    let FlagClass = Java.use("io.hextree.fridatarget.FlagClass")
+    console.log(FlagClass.flagFromStaticMethod())
+    
+    let FlagInstance = FlagClass.$new()
+    console.log(FlagInstance.flagFromInstanceMethod())
+
+    console.log(FlagInstance.flagIfYouCallMeWithSesame("sesame"))
+})
+```
+
+## Trace active activities
+
+```js
+Java.perform(() => {
+    let ActivityClass = Java.use("android.app.Activity");
+    ActivityClass.onResume.implementation = function() {
+        console.log("Activity resumed:", this.getClass().getName());
+        // Call original onResume method
+        this.onResume();
+    }
+})
+```
 ## Hooking a custom function
 
 Original source: https://github.com/kush412/CTF_WriteUps/blob/master/UMDCTF2023/UMDCTF2023.md
@@ -95,6 +132,27 @@ Intrinsics.areEqual result=false
 
 - https://codeshare.frida.re/@akabe1/frida-multiple-unpinning/
 - https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/
+
+# frida-trace
+
+## trace function calls
+
+To make it work, we need to **instrument each function** we want to trace.
+
+We can use the syntax `-j classname!methodname`, using wildcards, to specify everything we want to include, and `-J classname!methodname`, suing wildcards, to specify anything we want to exclude:
+
+```bash
+frida-trace -U -j 'io.hextree.Class!button_click_handler' FridaTarget
+frida-trace -U -j 'io.hextree.*!*' FridaTarget
+frida-trace -U -j 'io.hextree.*!*password*' FridaTarget # all functions that include the word "password"
+frida-trace -U -j 'io.hextree.*!*' -J '*AnnoyingClass!*' FridaTarget 
+```
+
+## trace native libraries
+
+```bash
+frida-trace -U -I 'libhextree.so' 'io.hextree.*!*' FridaTarget
+```
 
 # External resources and writeup
 - [Frida on Java applications and applets in 2024](https://security.humanativaspa.it/frida-on-java-applets-in-2024/), humanativaspa.it

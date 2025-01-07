@@ -1,6 +1,6 @@
 {
   "snapToObjects": true,
-  "snapToGrid": true,
+  "snapToGrid": false,
   "newFileLocation": "current",
   "defaultWheelBehavior": "zoom",
   "zoomBreakpoint": 2.39

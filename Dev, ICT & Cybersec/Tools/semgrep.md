@@ -40,6 +40,7 @@ semgrep --config p/python .
 
 # Custom rules
 
+- [semgrep-rules](https://github.com/semgrep/semgrep-rules/tree/develop) official repo
 - [Android rules](https://github.com/mindedsecurity/semgrep-rules-android-security/tree/main/rules) by mindedsecurity
 - https://github.com/akabe1/akabe1-semgrep-rulesiOS (swift) rules by akabe1
 
@@ -61,6 +62,62 @@ Semgrep also supports taint [^taint], join [^join] and extract [^extract] modes.
 [^taint]: https://semgrep.dev/docs/writing-rules/data-flow/taint-mode/
 [^join]: https://semgrep.dev/docs/writing-rules/experiments/join-mode/overview/
 [^extract]: https://semgrep.dev/docs/writing-rules/experiments/extract-mode/
+
+Example:
+```yml title:"tainted-file-inclusion-for-opencart.yml"
+rules:
+- id: tainted-file-inclusion
+  mode: taint
+  pattern-sources:
+  - patterns:
+    - pattern-either:
+      - pattern: $OBJ->request->get['...']
+      - pattern: $OBJ->request->post['...']
+      - pattern: $OBJ->request->cookie['...']
+      - pattern: $OBJ->request->server['...']
+  pattern-sanitizers:
+  - patterns:
+    - pattern-either:
+      - pattern-inside: basename($PATH, ...)
+      - pattern-inside: linkinfo($PATH, ...)
+      - pattern-inside: readlink($PATH, ...)
+      - pattern-inside: realpath($PATH, ...)
+      - pattern-inside: include_safe(...)
+  pattern-sinks:
+  - patterns:
+    - pattern-inside: $FUNC(...);
+    - pattern: $VAR
+    - metavariable-regex:
+        metavariable: $FUNC
+        regex: \b(include|include_once|require|require_once)\b
+  severity: WARNING
+  languages: [php]
+  message: >-
+    Detected non-constant file inclusion. This can lead to Local File Inclusion (LFI) or Remote File Inclusion
+    (RFI) if user input reaches this statement. LFI and RFI could lead to sensitive files being obtained
+    by attackers. Instead, explicitly specify what to include. If that is not a viable solution, validate
+    user input thoroughly.
+  metadata:
+    category: security
+    subcategory:
+    - vuln
+    technology:
+    - php
+    confidence: LOW
+    likelihood: HIGH
+    impact: MEDIUM
+    owasp:
+    - A03:2021 - Injection
+    cwe:
+    - "CWE-98: Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote\
+      \ File Inclusion')"
+    references:
+    - https://www.php.net/manual/en/function.include.php
+    - https://github.com/FloeDesignTechnologies/phpcs-security-audit/blob/master/Security/Sniffs/BadFunctions/EasyRFISniff.php
+    - https://en.wikipedia.org/wiki/File_inclusion_vulnerability#Types_of_Inclusion
+```
+
+
 # Expansion tool for/using semgrep
 
 ## route-detect [^1]
@@ -80,32 +137,32 @@ Supported web frameworks (`route-detect` IDs in parentheses):
 
 Use the `which` subcommand to point `semgrep` at the correct web application rules:
 
-```
+```sh
 $ semgrep --config $(routes which django) path/to/django/code
 ```
 
 Use the `viz` subcommand to visualize route information in your browser:
 
-```
+```sh
 $ semgrep --json --config $(routes which django) --output routes.json path/to/django/code
 $ routes viz --browser routes.json
 ```
 
 If you're not sure which framework to look for, you can use the special `all` ID to check everything:
 
-```
+```sh
 $ semgrep --json --config $(routes which all) --output routes.json path/to/code
 ```
 
 If you have custom authn or authz logic, you can copy `route-detect`'s rules:
 
-```
+```sh
 $ cp $(routes which django) my-django.yml
 ```
 
 Then you can modify the rule as necessary and run it like above:
 
-```
+```sh
 $ semgrep --json --config my-django.yml --output routes.json path/to/django/code
 $ routes viz --browser routes.json
 ```

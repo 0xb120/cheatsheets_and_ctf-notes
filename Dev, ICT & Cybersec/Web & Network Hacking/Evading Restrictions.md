@@ -228,6 +228,7 @@ In the cookie specification and implementation, specifically dedicated cookies i
 
 - [Obfuscating attacks using encodings](https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings)
 - [XSS cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
+- [PortSwigger Research - Concealing Payloads in URL Credentials](../../Readwise/Articles/PortSwigger%20Research%20-%20Concealing%20Payloads%20in%20URL%20Credentials.md)
 - [A new era of SSRF](https://portswigger.net/research/top-10-web-hacking-techniques-of-2017#1)
 - [SSRF: A complete guide to exploiting advanced SSRF vulnerabilities](https://blog.intigriti.com/hacking-tools/ssrf-a-complete-guide-to-exploiting-advanced-ssrf-vulnerabilities)
 - [Introducing the URL Validation Bypass Cheat Sheet](../../Readwise/Articles/PortSwigger%20Research%20-%20Introducing%20the%20URL%20Validation%20Bypass%20Cheat%20Sheet.md) #tools 
@@ -241,5 +242,9 @@ In the cookie specification and implementation, specifically dedicated cookies i
 - Use [4-ZERO-3](https://github.com/Dheerajmadhukar/4-ZERO-3)
 - [Exploit parser differential and get mXSS (CVE-2023-47479 writeup)](https://www.sonarsource.com/blog/reply-to-calc-the-attack-chain-to-compromise-mailspring/)
 - Bypass [WAFs](../Dev,%20scripting%20&%20OS/WAF.md) exploiting their length-limitations [^nowafplease]
+- [When WAFs Go Awry: Common Detection & Evasion Techniques for Web Application Firewalls](../../Readwise/Articles/Admin%20-%20When%20WAFs%20Go%20Awry%20Common%20Detection%20&%20Evasion%20Techniques%20for%20Web%20Application%20Firewalls.md)
+- [Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup](../../Readwise/Articles/Bug%20Bounty%20Reports%20Explained%20-%20$25k%20GitHub%20Account%20Takeover%20&%20justCTF%202023%20CSRF+XSS%20Writeup.md) (parsing vs tokenization ft. html namespaces)
+- [Bypassing WAFs With the Phantom $Version Cookie](../../Readwise/Articles/PortSwigger%20Research%20-%20Bypassing%20WAFs%20With%20the%20Phantom%20$Version%20Cookie.md)
+
 
 [^nowafplease]: [Bad Sector Labs Blog - Jun 17 2024 Last Week in Security (LWiS) - 2024-06-17](../../Readwise/Articles/Bad%20Sector%20Labs%20Blog%20-%20Jun%2017%202024%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-06-17.md#^88de29)

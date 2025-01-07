@@ -53,3 +53,15 @@ There are three pieces of information in the Intent that are used for resolution
 - The **type** is retrieved from the Intent's data, if not already supplied in the Intent. Like the action, if a type is included in the intent (either explicitly or implicitly in its data), then this must be listed by the component as one it handles.
 - For data that is not a `content:` URI and where no explicit type is included in the Intent, instead the **scheme** of the intent data (such as `http:` or `mailto:`) is considered. Again like the action, if we are matching a scheme it must be listed by the component as one it can handle.
 - The categories, if supplied, must all be listed by the activity as categories it handles. That is, if you include the categories `CATEGORY_LAUNCHER` and `CATEGORY_ALTERNATIVE`, then you will only resolve to components with an intent that lists both of those categories. Activities will very often need to support the `CATEGORY_DEFAULT` so that they can be found by `Context.startActivity()`.
+
+# Intent vulnerabilities
+
+## Insecure Intent Return (Reflect Intent / Intent Reflection)
+
+When an application receive a specific intent and sends it elsewhere from user controllable input, it can be exploited to get access to non-exported components or permissions 
+
+Eg. 
+- Forging and receiving back a `FLAG_GRANT_READ_URI_PERMISSION` [^content-provider-flag-grant]
+- Exploiting other application privileges to gain access to restricted components or features
+
+[^content-provider-flag-grant]: [Arbitrary file read/write from non-exported content providers that have the `grantUriPermission` enabled.](Content%20Providers.md#^b4a712)

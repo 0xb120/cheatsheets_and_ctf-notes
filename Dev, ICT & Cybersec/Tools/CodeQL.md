@@ -53,3 +53,8 @@ dependencies:
 ./codeql query run ~/Projects/codeql-prj/queries/query2.ql -d ~/Projects/codeql-prj/db
 ```
 
+# Other resources
+- [CodeQL-Community-Packs](https://github.com/GitHubSecurityLab/CodeQL-Community-Packs/) [^1] - Collection of community-driven CodeQL query, library and extension packs
+
+
+[^1]: [Erik - Last Week in Security (LWiS) - 2025-01-06](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-01-06.md#^994fd4)

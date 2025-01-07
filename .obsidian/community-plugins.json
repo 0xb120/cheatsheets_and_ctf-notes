@@ -15,8 +15,10 @@
   "auto-card-link",
   "obsidian-list-callouts",
   "readwise-official",
-  "advanced-canvas",
   "obsidian-quiet-outline",
   "obsidian-paste-image-rename",
-  "code-styler"
+  "code-styler",
+  "obsidian-link-converter",
+  "advanced-canvas",
+  "better-export-pdf"
 ]

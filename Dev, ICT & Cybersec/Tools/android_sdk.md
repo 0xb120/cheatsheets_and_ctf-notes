@@ -105,7 +105,13 @@ generic_api29_google_apis_emulator
 
 # start a device in writable mode with a bigger GUI
 .\emulator.exe -avd generic_28 -writable-system -scale 0.6
+
+# start a device and log the internet traffic inside a dump file
+.\emulator.exe -avd generic_28 -tcpdump emulator.cap
 ```
+
+>[!warning]
+>In some cases tcpdump does not capture the Wi-Fi interface. If your emulator's packet capture does not include any HTTP traffic, try to disable the phone's Wi-Fi.
 
 Enable hardware buttons [^avd-hw] :
 

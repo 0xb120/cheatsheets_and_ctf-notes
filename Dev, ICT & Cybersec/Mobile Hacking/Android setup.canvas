@@ -1,22 +1,160 @@
 {
-	"nodes":[
-		{"type":"group","id":"ad3416eff7a81cf5","x":-160,"y":-500,"width":1260,"height":740,"color":"#4e63ca","label":"Windows"},
-		{"type":"text","text":"**WSL**\n172.22.172.244 ","id":"3f3c320d3584ca01","x":-140,"y":-200,"width":250,"height":160,"color":"2"},
-		{"type":"text","text":"Host\n","id":"9a227ce73f00d8bf","x":-139,"y":-460,"width":1219,"height":77},
-		{"type":"text","text":"172.22.160.1","id":"7e7a412444fe9646","x":-139,"y":-383,"width":250,"height":60},
-		{"type":"text","text":"**Kali VM**\n192.168.72.128","id":"d7e3e4ff6acdf145","x":766,"y":-200,"width":314,"height":160,"color":"1"},
-		{"type":"text","text":"192.168.72.1","id":"0eeee06d899f8310","x":798,"y":-383,"width":250,"height":60},
-		{"type":"text","text":"**Android Virtual Router**\n10.0.2.1","id":"384c23e3c53569a9","x":325,"y":-200,"width":250,"height":160,"color":"4"},
-		{"type":"text","text":"**Android Emulator**\n10.0.2.15-10.0.2.16","id":"e345d00d9b66a158","x":471,"y":40,"width":250,"height":160,"color":"4"},
-		{"type":"text","text":"127.0.0.1","id":"d1b54612b22a7c4e","x":325,"y":-383,"width":250,"height":50},
-		{"type":"text","text":"**Alias to Host**\n10.0.2.2","id":"925d069bf4caba38","x":75,"y":80,"width":250,"height":80,"color":"4"}
-	],
-	"edges":[
-		{"id":"cd84c61c4c72744d","fromNode":"384c23e3c53569a9","fromSide":"bottom","toNode":"e345d00d9b66a158","toSide":"top","fromEnd":"arrow"},
-		{"id":"efe321a97ffafd58","fromNode":"3f3c320d3584ca01","fromSide":"top","toNode":"7e7a412444fe9646","toSide":"bottom","fromEnd":"arrow"},
-		{"id":"75958dbc8db8c48b","fromNode":"d7e3e4ff6acdf145","fromSide":"top","toNode":"0eeee06d899f8310","toSide":"bottom","fromEnd":"arrow"},
-		{"id":"d5d260df037c1001","fromNode":"925d069bf4caba38","fromSide":"top","toNode":"d1b54612b22a7c4e","toSide":"left"},
-		{"id":"a2cc3f1767cb7868","fromNode":"925d069bf4caba38","fromSide":"right","toNode":"e345d00d9b66a158","toSide":"left","fromEnd":"arrow"},
-		{"id":"828502250f25a2cf","fromNode":"384c23e3c53569a9","fromSide":"top","toNode":"d1b54612b22a7c4e","toSide":"bottom","fromEnd":"arrow"}
-	]
+  "nodes": [
+    {
+      "type": "group",
+      "id": "ad3416eff7a81cf5",
+      "styleAttributes": {},
+      "x": -160,
+      "y": -500,
+      "width": 1260,
+      "height": 740,
+      "color": "#4e63ca",
+      "label": "Windows"
+    },
+    {
+      "type": "text",
+      "text": "**WSL**\n172.22.172.244 ",
+      "id": "3f3c320d3584ca01",
+      "styleAttributes": {},
+      "x": -140,
+      "y": -200,
+      "width": 250,
+      "height": 160,
+      "color": "2"
+    },
+    {
+      "type": "text",
+      "text": "Host\n",
+      "id": "9a227ce73f00d8bf",
+      "styleAttributes": {},
+      "x": -139,
+      "y": -460,
+      "width": 1219,
+      "height": 77
+    },
+    {
+      "type": "text",
+      "text": "172.22.160.1",
+      "id": "7e7a412444fe9646",
+      "styleAttributes": {},
+      "x": -139,
+      "y": -383,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "**Kali VM**\n192.168.72.128",
+      "id": "d7e3e4ff6acdf145",
+      "styleAttributes": {},
+      "x": 766,
+      "y": -200,
+      "width": 314,
+      "height": 160,
+      "color": "1"
+    },
+    {
+      "type": "text",
+      "text": "192.168.72.1",
+      "id": "0eeee06d899f8310",
+      "styleAttributes": {},
+      "x": 798,
+      "y": -383,
+      "width": 250,
+      "height": 60
+    },
+    {
+      "type": "text",
+      "text": "**Android Virtual Router**\n10.0.2.1",
+      "id": "384c23e3c53569a9",
+      "styleAttributes": {},
+      "x": 325,
+      "y": -200,
+      "width": 250,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "type": "text",
+      "text": "**Android Emulator**\n10.0.2.15-10.0.2.16",
+      "id": "e345d00d9b66a158",
+      "styleAttributes": {},
+      "x": 471,
+      "y": 40,
+      "width": 250,
+      "height": 160,
+      "color": "4"
+    },
+    {
+      "type": "text",
+      "text": "127.0.0.1",
+      "id": "d1b54612b22a7c4e",
+      "styleAttributes": {},
+      "x": 325,
+      "y": -383,
+      "width": 250,
+      "height": 50
+    },
+    {
+      "type": "text",
+      "text": "**Alias to Host**\n10.0.2.2",
+      "id": "925d069bf4caba38",
+      "styleAttributes": {},
+      "x": 75,
+      "y": 80,
+      "width": 250,
+      "height": 80,
+      "color": "4"
+    }
+  ],
+  "edges": [
+    {
+      "id": "cd84c61c4c72744d",
+      "fromNode": "384c23e3c53569a9",
+      "fromSide": "bottom",
+      "toNode": "e345d00d9b66a158",
+      "toSide": "top",
+      "fromEnd": "arrow"
+    },
+    {
+      "id": "efe321a97ffafd58",
+      "fromNode": "3f3c320d3584ca01",
+      "fromSide": "top",
+      "toNode": "7e7a412444fe9646",
+      "toSide": "bottom",
+      "fromEnd": "arrow"
+    },
+    {
+      "id": "75958dbc8db8c48b",
+      "fromNode": "d7e3e4ff6acdf145",
+      "fromSide": "top",
+      "toNode": "0eeee06d899f8310",
+      "toSide": "bottom",
+      "fromEnd": "arrow"
+    },
+    {
+      "id": "d5d260df037c1001",
+      "fromNode": "925d069bf4caba38",
+      "fromSide": "top",
+      "toNode": "d1b54612b22a7c4e",
+      "toSide": "left"
+    },
+    {
+      "id": "a2cc3f1767cb7868",
+      "fromNode": "925d069bf4caba38",
+      "fromSide": "right",
+      "toNode": "e345d00d9b66a158",
+      "toSide": "left",
+      "fromEnd": "arrow"
+    },
+    {
+      "id": "828502250f25a2cf",
+      "fromNode": "384c23e3c53569a9",
+      "fromSide": "top",
+      "toNode": "d1b54612b22a7c4e",
+      "toSide": "bottom",
+      "fromEnd": "arrow"
+    }
+  ],
+  "metadata": {}
 }

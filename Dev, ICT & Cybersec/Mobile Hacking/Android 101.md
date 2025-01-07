@@ -40,7 +40,7 @@ As mentioned earlier, the **architecture of the Android** system is based on the
 1. **Linux Kernel:** The first layer, as well as the foundation of the entire Android platform, is the Linux kernel. It allows Android to take advantage of [key security features](https://source.android.com/security/overview/kernel-security.html) and allows device manufacturers to develop hardware drivers for a well-known kernel.
 2. **Hardware Abstraction Layer** ([HAL](https://source.android.com/devices/architecture/hal-types)): It is an abstraction layer that provides standard interfaces to interact with the hardware components of the system properly. Starting with Android 8.0 this layer has been completely rewritten, thus resulting in two different HALs: the [newer one](https://source.android.com/devices/architecture/hal-types) and the respective [legacy version](https://source.android.com/devices/architecture/hal).
 3. **Middleware**: The layer commonly called middleware is actually composed of two sub-elements.
-    - **Native Libraries:** These are native libraries, written in C and C++, that allow the correct functioning of various components such as ART and HAL. They can be invoked by applications through the Java API Frameworks or they can be accessed directly through native code in case you use the Android NDK during development.
+    - **Native Libraries:** These are native libraries, written in C and C++, that allow the correct functioning of various components such as ART and HAL. They can be invoked by applications through the [Java Native Interface (JNI)](Java%20Native%20Interface%20(JNI).md) or they can be accessed directly through native code in case you use the Android NDK during development.
     - **Android Runtime** (ART): is the key element that manages the execution of apps within the system. Until Android 5.0, code execution was managed by the [Dalvik Virtual Machine](https://en.wikipedia.org/wiki/Dalvik_(software)) (DVM), now obsolete. It was replaced by the [Android Runtime](https://source.android.com/devices/tech/dalvik/index.html) (ART), written to run multiple virtual machines on low-memory devices, executing DEX files, a byte code format designed specifically for Android and optimized to minimize memory footprint.
         ![](../../zzz_res/attachments/JVM-vs-DVM.png)The fundamental difference between Dalvik and ART is how the byte code is executed. In Dalvik, byte code is translated into machine code at run time, a process known as just-in-time (JIT) compilation. JIT compilation negatively affects performance because the must be executed each time the application runs. To improve performance, ART introduced ahead-of-time (AOT) compilation. As the name suggests, apps are precompiled before they run for the first time. The precompiled machine code is then used for all subsequent runs, aiding in timing and power consumption.
 
@@ -49,7 +49,7 @@ As mentioned earlier, the **architecture of the Android** system is based on the
 
 ## APK and Android Application Components
 
-The files that can be installed on Android are called [Android application packages](https://en.wikipedia.org/wiki/Android_application_package), abbreviated as **APK** files. This is the format that Google has decided to use to distribute and allow the installation of applications on the systems of their invention. APK files are nothing more than archives (like .zipper files) and as such they can be unpacked.
+The files that can be installed on Android are called [Android application packages](https://en.wikipedia.org/wiki/Android_application_package), abbreviated as **APK** files. This is the format that Google has decided to use to distribute and allow the installation of applications on the systems of their invention. **APK files are nothing more than archives** (like .zipper files) and as such they can be unpacked.
 
 Within an APK file, the most common and important elements are:
 
@@ -68,6 +68,8 @@ The main components that can be found in APKs are:
 - [Services](Services.md)
 - [Broadcast Receivers](../../Broadcast%20Receivers.md)
 - [Content Providers](../../Content%20Providers.md)
+- [WebViews](WebViews.md)
+
 
 
 ## Building process of an APK [^build]
@@ -119,18 +121,25 @@ From a high-level overview, we can distinguish 2 types of permissions: 
 If we look at the **permission documentation** [^permissions] we can see a lot of other permissions that are not present and mapped to a special GID. 
 
 
-Looking at permissions from a deeper look, we can categorize them in the following categories:
+Looking at permissions from a deeper look, we can categorize them in three main categories:
 
-1. **Install-time permissions**: Install-time permissions give your app limited access to restricted data, and they allow your app to perform restricted actions that minimally affect the system or other apps. When you declare install-time permissions in your app, the system automatically grants your app the permissions when the user installs your app. An app store presents an install-time permission notice to the user when they view an app's details page. Android includes several sub-types of install-time permissions, including normal permissions and signature permissions.
+Permissions that can be granted to every app:
 
-2. **Normal permissions**: These permissions allow access to data and actions that extend beyond your app's sandbox. However, the data and actions present very little risk to the user's privacy, and the operation of other apps. The system assigns the "normal" protection level to normal permissions, as shown on the [permissions API reference page](https://developer.android.com/reference/android/Manifest.permission).
+- **Install-time permissions**: Install-time permissions give your app limited access to restricted data, and they allow your app to perform restricted actions that minimally affect the system or other apps. When you declare install-time permissions in your app, the system automatically grants your app the permissions when the user installs your app. An app store presents an install-time permission notice to the user when they view an app's details page. Android includes several sub-types of install-time permissions, including normal permissions and signature permissions.
 
-3. **Signature permissions**: If the app declares a signature permission that another app has defined, and if the two apps are signed by the same certificate, then the system grants the permission to the first app at install time. Otherwise, that first app cannot be granted the permission.
+- **Normal permissions**: These permissions allow access to data and actions that extend beyond your app's sandbox. However, the data and actions present very little risk to the user's privacy, and the operation of other apps. The system assigns the "**normal**" protection level to normal permissions, as shown on the [permissions API reference page](https://developer.android.com/reference/android/Manifest.permission).
 
-4. **Runtime permissions**: Runtime permissions, also known as dangerous permissions, give your app additional access to restricted data, and they allow your app to perform restricted actions that more substantially affect the system and other apps. Therefore, you need to [request runtime permissions](https://developer.android.com/training/permissions/requesting) in your app before you can access the restricted data or perform restricted actions. When your app requests a runtime permission, the system presents a runtime permission prompt. Many runtime permissions access *private user data*, a special type of restricted data that includes potentially sensitive information. Examples of private user data include location and contact information. The microphone and camera provide access to particularly sensitive information. Therefore, the system helps you [explain why your app accesses this information](https://developer.android.com/training/permissions/explaining-access). The system assigns the "dangerous" protection level to runtime permissions, as shown on the [permissions API reference page](https://developer.android.com/reference/android/Manifest.permission).
+- **Runtime permissions**: Runtime permissions, also known as **dangerous** permissions, give your app additional access to restricted data, and they allow your app to perform restricted actions that more substantially affect the system and other apps. Therefore, you need to [request runtime permissions](https://developer.android.com/training/permissions/requesting) in your app before you can access the restricted data or perform restricted actions. When your app requests a runtime permission, the system presents a runtime permission prompt. Many runtime permissions access *private user data*, a special type of restricted data that includes potentially sensitive information. Examples of private user data include location and contact information. The microphone and camera provide access to particularly sensitive information. Therefore, the system helps you [explain why your app accesses this information](https://developer.android.com/training/permissions/explaining-access). The system assigns the "dangerous" protection level to runtime permissions, as shown on the [permissions API reference page](https://developer.android.com/reference/android/Manifest.permission).
 
-5. **Special permissions**: Special permissions correspond to particular app operations. Only the platform and OEMs can define special permissions. Additionally, the platform and OEMs usually define special permissions when they want to protect access to particularly powerful actions, such as drawing over other apps. The **Special app access** page in system settings contains a set of user-toggleable operations. Many of these operations are implemented as special permissions. Each special permission has its own implementation details. The instructions for using each special permission appear on the [permissions API reference page](https://developer.android.com/reference/android/Manifest.permission). The system assigns the "appop" protection level to special permissions.
+Permissions that can be granted only to system app or using signatures:
 
+- **Signature permissions**: If the app declares a signature permission that another app has defined, and if the two apps are signed by the same certificate, then the system grants the permission to the first app at install time. Otherwise, that first app cannot be granted the permission.
+
+- **Special permissions**: Special permissions correspond to particular app operations. Only the platform and OEMs can define special permissions. Additionally, the platform and OEMs usually define special permissions when they want to protect access to particularly powerful actions, such as drawing over other apps. The **Special app access** page in system settings contains a set of user-toggleable operations. Many of these operations are implemented as special permissions. Each special permission has its own implementation details. The instructions for using each special permission appear on the [permissions API reference page](https://developer.android.com/reference/android/Manifest.permission). The system assigns the "appop" protection level to special permissions.
+
+Custom permissions defined by each app or vendor.
+>[!info]
+>The system does not allow two apps with two conflicting custom permissions to be installed at the same time!
 
 ## Special directories
 
@@ -153,6 +162,13 @@ Looking at permissions from a deeper look, we can categorize them in the followi
 
 [^1]: https://en.wikipedia.org/wiki/Android_version_history
 
+
+>[!note]
+>Android has different certificate store:
+>- The “system” one, which is also the default one checked by apps, is located in `/system/etc/security/cacerts/`. This certificate store is pre-populated when the OS is installed the first time and cannot be modified or altered without root privileges.
+>- The “user” one, located in `/data/misc/user/0/cacerts-added/`, contains trusted CA certificates manually installed by the user of the device. Those certificates were trusted by default before Android 7, but now a day each application has to specifically opt to trust them.
+>- `/apex/com.android.conscrypt/cacerts` is the standard system certificate store from Android 14
+>- the “app itself”. Each application can include its own certificates, refusing to trust any other installed one, even those within the system certificate store. This technique is the so-called “certificate pinning”.
 ## Deeplinks
 
 The deeplink mechanism is a feature found on most operating systems such as Windows, iOS, Linux, and Android. It allows programs to associate specific URLs or protocols with the operating system, enabling seamless redirection or opening of other programs when users interact with those URLs.
@@ -162,3 +178,4 @@ On Android, installed apps can register deeplink URLs or protocols with the oper
 >[!example] Deeplink examples
 >- `samsungapps://MCSLaunch?action=each_event&url={{url}}`
 >- `intent://foo?action=bar`
+

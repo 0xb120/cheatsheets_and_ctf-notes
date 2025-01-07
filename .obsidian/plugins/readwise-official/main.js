@@ -9476,6 +9476,7 @@ const DEFAULT_SETTINGS = {
     "currentSyncStatusID": 0,
     "refreshBooks": false,
     "booksToRefresh": [],
+    "failedBooks": [],
     "booksIDsMap": {},
     "reimportShowConfirmation": true
 };
@@ -9539,7 +9540,9 @@ class ReadwisePlugin extends obsidian.Plugin {
     getExportStatus(statusID, buttonContext) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                const response = yield fetch(`${baseURL}/api/get_export_status?exportStatusId=${statusID}`, {
+                const response = yield fetch(
+                // status of archive build from this endpoint
+                `${baseURL}/api/get_export_status?exportStatusId=${statusID}`, {
                     headers: this.getAuthHeaders(),
                 });
                 if (response && response.ok) {
@@ -9590,6 +9593,7 @@ class ReadwisePlugin extends obsidian.Plugin {
             this.settings.isSyncing = true;
             yield this.saveSettings();
             const parentDeleted = !(yield this.app.vault.adapter.exists(this.settings.readwiseDir));
+            // kickoff archive build form this endpoint
             let url = `${baseURL}/api/obsidian/init?parentPageDeleted=${parentDeleted}`;
             if (statusId) {
                 url += `&statusID=${statusId}`;
@@ -9665,6 +9669,7 @@ class ReadwisePlugin extends obsidian.Plugin {
     }
     downloadExport(exportID, buttonContext) {
         return __awaiter(this, void 0, void 0, function* () {
+            // download archive from this endpoint
             let artifactURL = `${baseURL}/api/download_artifact/${exportID}`;
             if (exportID <= this.settings.lastSavedStatusID) {
                 console.log(`Readwise Official plugin: Already saved data from export ${exportID}`);
@@ -9740,18 +9745,22 @@ class ReadwisePlugin extends obsidian.Plugin {
                             contentToSave = existingContent + contents;
                         }
                         yield this.fs.write(originalName, contentToSave);
-                        yield this.removeBooksFromRefresh([bookID]);
                     }
                     catch (e) {
                         console.log(`Readwise Official plugin: error writing ${processedFileName}:`, e);
                         this.notice(`Readwise: error while writing ${processedFileName}: ${e}`, true, 4, true);
                         if (bookID) {
                             // handles case where user doesn't have `settings.refreshBooks` enabled
-                            yield this.addBookToRefresh(bookID);
+                            yield this.addToFailedBooks(bookID);
+                            yield this.saveSettings();
+                            return;
                         }
                         // communicate with readwise?
                     }
+                    yield this.removeBooksFromRefresh([bookID]);
+                    yield this.removeBookFromFailedBooks([bookID]);
                 }
+                yield this.saveSettings();
             }
             // close the ZipReader
             yield zipReader.close();
@@ -9812,33 +9821,34 @@ class ReadwisePlugin extends obsidian.Plugin {
         return __awaiter(this, void 0, void 0, function* () {
             if (!this.settings.token)
                 return;
-            const targetBookIds = bookIds || this.settings.booksToRefresh;
-            // add potentially-missing books to booksToRefresh (TODO - prob a lil inefficient? 🤷)
-            const knownFilesPaths = Object.keys(this.settings.booksIDsMap);
-            const shouldGetMissingBooks = this.settings.refreshBooks && !(bookIds === null || bookIds === void 0 ? void 0 : bookIds.length);
-            if (shouldGetMissingBooks) {
-                for (const knownFilePath of knownFilesPaths) {
-                    const file = this.app.vault.getAbstractFileByPath(knownFilePath);
-                    if (!file) {
-                        const bookId = this.settings.booksIDsMap[knownFilePath];
-                        targetBookIds.push(bookId);
-                    }
-                }
-            }
-            const hasNeverSynced = !knownFilesPaths.length;
-            if (hasNeverSynced) {
-                this.notice("Preparing initial Readwise sync...", true);
-                yield this.queueExport();
-                return;
+            let targetBookIds = [
+                // try to sync provided bookIds
+                ...(bookIds || []),
+                // always try to sync failedBooks
+                ...this.settings.failedBooks,
+            ];
+            // only sync `booksToRefresh` items if "resync deleted files" enabled
+            if (this.settings.refreshBooks) {
+                targetBookIds = [
+                    ...targetBookIds,
+                    ...this.settings.booksToRefresh,
+                ];
             }
             if (!targetBookIds.length) {
-                console.log('Readwise Official plugin: no targetBookIds, triggering check for other updates...');
-                yield this.queueExport(null, null, auto);
+                console.log('Readwise Official plugin: no targetBookIds, checking for new highlights');
+                // no need to hit refresh_book_export;
+                // just check if there's new highlights from the server
+                yield this.queueExport();
                 return;
             }
             console.log('Readwise Official plugin: refreshing books', { targetBookIds });
             try {
-                const response = yield fetch(`${baseURL}/api/refresh_book_export`, {
+                const response = yield fetch(
+                // add books to next archive build from this endpoint
+                // NOTE: should only end up calling this endpoint when:
+                // 1. there are failedBooks
+                // 2. there are booksToRefresh
+                `${baseURL}/api/refresh_book_export`, {
                     headers: Object.assign(Object.assign({}, this.getAuthHeaders()), { 'Content-Type': 'application/json' }),
                     method: "POST",
                     body: JSON.stringify({ exportTarget: 'obsidian', books: targetBookIds })
@@ -9860,11 +9870,23 @@ class ReadwisePlugin extends obsidian.Plugin {
             }
         });
     }
+    addToFailedBooks(bookId) {
+        return __awaiter(this, void 0, void 0, function* () {
+            // NOTE: settings.failedBooks was added after initial settings schema,
+            // so not all users may have it, hence the fallback to DEFAULT_SETTINGS.failedBooks
+            let failedBooks = [...(this.settings.failedBooks || DEFAULT_SETTINGS.failedBooks)];
+            failedBooks.push(bookId);
+            console.log(`Readwise Official plugin: added book id ${bookId} to failed books`);
+            this.settings.failedBooks = failedBooks;
+            // don't forget to save after!
+            // but don't do that here; this allows batching when removing multiple books.
+        });
+    }
     addBookToRefresh(bookId) {
         return __awaiter(this, void 0, void 0, function* () {
-            let booksToRefresh = this.settings.booksToRefresh;
+            let booksToRefresh = [...this.settings.booksToRefresh];
             booksToRefresh.push(bookId);
-            console.log(`Readwise Official plugin: added book id ${bookId} to refresh later`);
+            console.log(`Readwise Official plugin: added book id ${bookId} to failed books`);
             this.settings.booksToRefresh = booksToRefresh;
             yield this.saveSettings();
         });
@@ -9875,7 +9897,18 @@ class ReadwisePlugin extends obsidian.Plugin {
                 return;
             console.log(`Readwise Official plugin: removing book ids ${bookIds.join(', ')} from refresh list`);
             this.settings.booksToRefresh = this.settings.booksToRefresh.filter(n => !bookIds.includes(n));
-            yield this.saveSettings();
+            // don't forget to save after!
+            // but don't do that here; this allows batching when removing multiple books.
+        });
+    }
+    removeBookFromFailedBooks(bookIds = []) {
+        return __awaiter(this, void 0, void 0, function* () {
+            if (!bookIds.length)
+                return;
+            console.log(`Readwise Official plugin: removing book ids ${bookIds.join(', ')} from failed list`);
+            this.settings.failedBooks = this.settings.failedBooks.filter(n => !bookIds.includes(n));
+            // don't forget to save after!
+            // but don't do that here; this allows batching when removing multiple books.
         });
     }
     reimportFile(vault, fileName) {
@@ -9884,6 +9917,9 @@ class ReadwisePlugin extends obsidian.Plugin {
                 this.notice("Deleting and reimporting file...", true);
                 yield vault.delete(vault.getAbstractFileByPath(fileName));
                 const bookId = this.settings.booksIDsMap[fileName];
+                yield this.addBookToRefresh(bookId);
+                // specifically re-sync this one file (not this.settings.booksToRefresh)
+                // because the user may have `settings.refreshBooks` disabled
                 yield this.syncBookHighlights([bookId]);
             }
             catch (e) {
@@ -10001,6 +10037,22 @@ class ReadwisePlugin extends obsidian.Plugin {
                     yield this.syncBookHighlights(undefined, true);
                 }
                 yield this.configureSchedule();
+                this.app.vault.on("delete", (file) => __awaiter(this, void 0, void 0, function* () {
+                    const bookId = this.settings.booksIDsMap[file.path];
+                    if (bookId) {
+                        // NOTE: because `on(delete)` also adds to `booksToRefresh`,
+                        // the ID will be duplicated in `booksToRefresh`.
+                        yield this.addBookToRefresh(bookId);
+                    }
+                    delete this.settings.booksIDsMap[file.path];
+                    // BUG: `on("delete")` events have no sequantial guarantees.
+                    // meaning: if a user deletes many files at once,
+                    // there is no guarantee that the event will be handled
+                    // in any specific order. this can lead to reality
+                    // drifting as book ID is deleted/saved as all the delete
+                    // events compete to remove the book ID from the map and save.
+                    yield this.saveSettings();
+                }));
             }));
         });
     }
@@ -10194,3 +10246,5 @@ class ReadwiseSettingTab extends obsidian.PluginSettingTab {
 }
 
 module.exports = ReadwisePlugin;
+
+/* nosourcemap */

@@ -32,6 +32,8 @@ Supported extensions:
 - **Perl**: .pl, .cgi
 - **Erlang Yaws Web Serve**r: .yaws
 
+>[!tip] [novasecio - Insecure File Uploads A Complete Guide to Finding Advanced File Upload Vulnerabilities](../../Readwise/Articles/novasecio%20-%20Insecure%20File%20Uploads%20A%20Complete%20Guide%20to%20Finding%20Advanced%20File%20Upload%20Vulnerabilities.md)
+>Don't know if you're dealing with an exclusion list or an allow list? Try uploading a file with a random extension, if it got accepted, you're likely dealing with a blacklist, otherwise, it's likely a strictly defined allow list.
 ## Overriding the server configuration
 
 Servers typically won't execute files unless they have been configured to do so. Many servers, however, allow developers to create special configuration files within individual directories in order to override or add to one or more of the global settings:

@@ -792,6 +792,7 @@ Further references:
 
 - [SnakeYaml Deserilization exploited](https://swapneildash.medium.com/snakeyaml-deserilization-exploited-b4a2c5ac0858)
 - [Swagger YAML Parser Vulnerability (CVE-2017-1000207 and CVE-2017-1000208)](https://securitylab.github.com/research/swagger-yaml-parser-vulnerability/)
+- [Securing Our Home Labs: Frigate Code Review](../../Readwise/Articles/Madison%20Oliver%20-%20Securing%20Our%20Home%20Labs%20Frigate%20Code%20Review.md)
 
 Example from [Ophiuchi](https://www.notion.so/Ophiuchi-c77afe7fb3a2427f8a11b60265ed968b) 
 

@@ -569,3 +569,35 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+
+# Sample Flask Web Server 
+
+```python title:server.py
+from flask import Flask, jsonify, send_file
+import zipfile, io
+
+app = Flask(__name__)
+
+@app.route('/map.json')
+def serve_map():
+    # This is where you would define the JSON response or fetch it from a file or database
+    response = {
+        "maps-0.13.0_0-path": "maps",
+        "maps-0.13.0_0":
+        [
+            { 
+                "name": "hextree-android_continent", 
+                "size": "812K", "time": "2024-02" },
+        ]
+    }
+    return jsonify(response)
+
+@app.route('/map.zip')
+def map_archive():
+    # TODO: create malicious ZIP file
+    return "mock zip"
+
+if __name__ == '__main__':
+    app.run(debug=True, port=1234)
+```
