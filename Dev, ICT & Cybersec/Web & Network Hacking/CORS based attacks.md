@@ -42,6 +42,12 @@ function reqListener() {
 </script>
 ```
 
+### CSRF and CORF thanks to the Simple Requests concept
+
+CORS misconfigurations can be escalated to [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md) and [Cross-Origin Request Forgery (CORF)](Cross-Origin%20Request%20Forgery%20(CORF).md) thanks to the Simple Requests concept [^simple-req-cors].
+
+[^simple-req-cors]: [Paul Gerste - Never Underestimate CSRF Why Origin Reflection Is a Bad Idea](../../Readwise/Articles/Paul%20Gerste%20-%20Never%20Underestimate%20CSRF%20Why%20Origin%20Reflection%20Is%20a%20Bad%20Idea.md)
+
 ## Errors parsing Origin headers
 
 Some applications that support access from multiple origins do so by using a whitelist of allowed origins. When a CORS request is received, the supplied origin is compared to the whitelist. If the origin appears on the whitelist then it is reflected in the `Access-Control-Allow-Origin` header so that access is granted.

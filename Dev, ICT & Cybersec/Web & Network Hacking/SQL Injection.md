@@ -420,3 +420,4 @@ SELECT remote_test($$calc.exe$$, 3);
 - [PayloadsAllTheThings - MSSQL](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/MSSQL%20Injection.md#mssql-command-execution)
 - [From MSSQL to RCE](https://www.tarlogic.com/en/blog/red-team-tales-0x01/)
 - [PayloadsAllTheThings/SQLite Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md)
+- [Advanced SQL Injection Techniques by nav1n0x](https://nav1n0x.gitbook.io/advanced-sql-injection-techniques?__readwiseLocation=)

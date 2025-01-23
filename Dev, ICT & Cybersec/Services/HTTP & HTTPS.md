@@ -62,6 +62,7 @@ Main checks:
 - wpscanner
 - [unSharepoint](https://blog.cys4.com/tool/2020/12/21/unSharePoint) (scanner)
 - [misconfig mapper](../../Readwise/Articles/novasecio%20-%20Intigriti%20Bug%20Bytes%20219%20-%20December%202024.md#^4a91a1) - automate security misconfiguration detection on your list of targets
+- [MrmtwojApache-Vulnerability-Testing Apache HTTP Server Vulnerability Testing Tool](../../Readwise/Articles/httpsgithub.commrmtwoj%20-%20MrmtwojApache-Vulnerability-Testing%20Apache%20HTTP%20Server%20Vulnerability%20Testing%20Tool%20%20PoC%20for%20CVE-2024-38472%20,%20CVE-2024-39573%20,%20CVE-2024-38477%20,%20CVE-2024-38476%20,%20CVE-2024-38475%20,%20CVE-2024-38474%20,%20CVE-2024-38473%20,%20CVE-2023-38709.md)
 
 ### Other useful tools
 
@@ -113,13 +114,14 @@ Further information inside the language specific notes:
 
 [^ivaldi-weggli]: [A Collection of Weggli Patterns for C/C++ Vulnerability Research](../../Readwise/Articles/Marco%20Ivaldi%20-%20A%20Collection%20of%20Weggli%20Patterns%20for%20CC++%20Vulnerability%20Research.md), Marco Ivaldi
 
-For software updates and patches, focus on **diffing** [^patch][^patch-2] **older and newer version**:
+For software updates and patches, focus on **diffing** [^patch][^patch-2][^patch-3] **older and newer version**:
 - Read every detail contained inside the advisory in order to understand the kind of vulnerability and what/where to search inside the code
 - Use the GitHub online editor or if you prefer, use [git and do patch diffing this way](../Tools/git.md#patch%20diffing)
 - When analyzing and researching N-days, follows the [CVE North Stars](https://cve-north-stars.github.io/) (a method to kickstart vulnerability research by taking advantage of the CVE information freely available)
 
 [^patch]: [AppSecSchool - How to Extract a Patch](../../Readwise/Articles/AppSecSchool%20-%20How%20to%20Extract%20a%20Patch.md)
 [^patch-2]: [Blog on Shielder - Hunting for ~~Un~~authenticated N-Days in Asus Routers](../../Readwise/Articles/Blog%20on%20Shielder%20-%20Hunting%20for%20~~Un~~authenticated%20N-Days%20in%20Asus%20Routers.md#id696283770)
+[^patch-3]: [WordPress CVE Reversing](https://patchstack.com/academy/wordpress/getting-started/cve-reversing/)
 ## Black Box Analysis
 
 Black box pentesting [^black-box-pt] refers to a security test done by third party penetration testers. These external experts act like threat actors to check how safe a computer system is. 

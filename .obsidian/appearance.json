@@ -6,7 +6,5 @@
   "cssTheme": "",
   "theme": "obsidian",
   "baseFontSize": 17,
-  "enabledCssSnippets": [
-    "justify"
-  ]
+  "enabledCssSnippets": []
 }

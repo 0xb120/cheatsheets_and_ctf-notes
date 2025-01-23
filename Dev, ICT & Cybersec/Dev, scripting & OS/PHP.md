@@ -88,5 +88,6 @@ You can verify if XDEBUG is enabled searching the xdebug info inside the `phpinf
 ```
 
 When you make a request to [http://localhost:8080?XDEBUG_SESSION_START=1](http://localhost:8080/?XDEBUG_SESSION_START=1) the execution should be halted. `XDEBUG_SESSION_START` argument instructs Xdebug to start debugging the request. [^xdebug-step-debug]
+You can also set a cookie names `xDEBUG_SESSION` with any value to automatically debug EVERY request.
 
 [^xdebug-step-debug]: [Step debugging](https://xdebug.org/docs/step_debug), xdebug.org

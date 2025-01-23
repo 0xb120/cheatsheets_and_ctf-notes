@@ -408,6 +408,11 @@ print(session)
 resp = s.post(url, data = jsonData, headers=headers, cookies=session)
 ```
 
+## requirements
+
+```sh
+$ pipreqs . --force --ignore plugins,semgrep-rules,code
+```
 ## pwntools
 
 >[!summary]

@@ -133,6 +133,8 @@
 - [PwnDoc](https://github.com/pwndoc/pwndoc)
 - [Sysreport](https://github.com/Syslifters/sysreptor)
 - [Ghostwriter](https://github.com/GhostManager/Ghostwriter)
+- [Tib3rius - My NEW Burp Extension Will Help You Write Reports!](../Readwise/Articles/Tib3rius%20-%20My%20NEW%20Burp%20Extension%20Will%20Help%20You%20Write%20Reports!.md)
 
 For templates and idea about good reports:
 - [Penetration Testing Reports: A Powerful Template and Guide](../Readwise/Articles/TreyCraf7%20-%20Penetration%20Testing%20Reports%20A%20Powerful%20Template%20and%20Guide.md)
+- [NahamSec - How to Write a Pentest Report That Gets Your Findings Fixed](../Readwise/Articles/NahamSec%20-%20How%20to%20Write%20a%20Pentest%20Report%20That%20Gets%20Your%20Findings%20Fixed.md)

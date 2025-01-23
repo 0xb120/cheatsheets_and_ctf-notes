@@ -81,7 +81,7 @@ Connection: close
 - "Keep me log in" cookie brute-force or steal
 - Password reset attacks
 	- [Password Reset Poisoning](Password%20Reset%20Poisoning.md)
-	- Predictable password reset token (eg. [Sandwich Attack](https://versprite.com/blog/universally-unique-identifiers/) - brute force UUIDv1 token included in a limited range, [Time-sensitive attacks](Race%20Condition.md#Time-sensitive%20attacks), etc.)
+	- Predictable password reset token (eg. [Sandwich Attack](../../Readwise/Articles/Nathan%20Touati%20-%20Sandwich%20Attacks%20From%20Reset%20Password%20to%20Account%20Takeover.md) - brute force UUIDv1 token included in a limited range, [Time-sensitive attacks](Race%20Condition.md#Time-sensitive%20attacks), etc.)
 	- Leaking password reset token
 - Exploit application features (eg. password reset) to brute-force other user's password
 - [Access control vulnerabilities](Access%20control%20vulnerabilities.md) in password reset logic

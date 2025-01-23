@@ -1,6 +1,7 @@
 ---
 Description: Discover vulnerabilities across a codebase with _CodeQL_, our industry-leading semantic code analysis engine. _CodeQL_ lets you query code as though it were data.
 URL: https://github.com/github/codeql
+url: https://frycos.github.io/vulns4free/2022/12/02/rce-in-20-minutes.html
 ---
 
 >[!abstract] Official documentation
@@ -55,6 +56,7 @@ dependencies:
 
 # Other resources
 - [CodeQL-Community-Packs](https://github.com/GitHubSecurityLab/CodeQL-Community-Packs/) [^1] - Collection of community-driven CodeQL query, library and extension packs
+- [Pre-Auth RCE With CodeQL in Under 20 Minutes](../../Readwise/Articles/Frycos%20Security%20Diary%20-%20Pre-Auth%20RCE%20With%20CodeQL%20in%20Under%2020%20Minutes.md), frycos.github.io
 
 
 [^1]: [Erik - Last Week in Security (LWiS) - 2025-01-06](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-01-06.md#^994fd4)

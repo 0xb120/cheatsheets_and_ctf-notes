@@ -4,22 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "981490fa75ee0f73",
+        "id": "ed315e284c68a7e3",
         "type": "tabs",
         "children": [
           {
-            "id": "5a0946ca1b567d2a",
+            "id": "ee0cfa1d5a528ba7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Dev, ICT & Cybersec/Tools/semgrep.md",
                 "mode": "preview",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Readwise inbox"
+              "title": "semgrep"
             }
           }
         ]
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nikto",
+                "query": "WordPress for Security Audit",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -84,8 +84,7 @@
               "title": "Files"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -174,7 +173,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Dev, ICT & Cybersec/Tools/semgrep.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -197,12 +196,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.20809835898999118,
+                  "scale": 0.26362619210246263,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Readwise inbox"
+              "title": "Graph of semgrep"
             }
           }
         ]
@@ -218,7 +217,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Dev, ICT & Cybersec/Tools/semgrep.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,7 +227,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Readwise inbox"
+              "title": "Backlinks for semgrep"
             }
           },
           {
@@ -237,19 +236,18 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Play ground/Targets/mistermagorium.com/mistermagorium.com.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from mistermagorium.com"
+              "title": "Outgoing links"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 366.5
+    "width": 435.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -259,69 +257,70 @@
       "graph:Open graph view": false,
       "templates:Insert template": true,
       "workspaces:Manage workspace layouts": false,
+      "obsidian-kanban:Create new board": false,
       "obsidian-book-search-plugin:Create new book note": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false,
       "obsidian-advanced-slides:Show Slide Preview": false,
-      "file-tree-alternative:File Tree Alternative Plugin": true,
-      "obsidian-kanban:Create new board": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5a0946ca1b567d2a",
+  "active": "ee0cfa1d5a528ba7",
   "lastOpenFiles": [
-    "Personal/To-do list.md",
-    "Readwise/Articles/novasecio - Intigriti Bug Bytes 219 - December 2024.md",
+    "Play ground/Targets/Wordpress/Wordpress.md",
+    "Dev, ICT & Cybersec/Tools/semgrep.md",
+    "Dev, ICT & Cybersec/Tools/CodeQL.md",
+    "Play ground/Targets/Wordpress/Plugins/Wordpress Plugins.md",
+    "Readwise/Articles/Antoine Gicquel - WordPress for Security Audit.md",
+    "Readwise/Articles/Antoine Gicquel - Web Architect - An Introduction.md",
+    "Readwise/Articles/Eddie Zhang, Aug 27 - CVE Hunting Made Easy.md",
+    "Readwise/Articles/Alex Thomas - How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes.md",
+    "Dev, ICT & Cybersec/Tools/Burpsuite.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
+    "Play ground/Targets/Wordpress/Plugins/vulnerability-playground/privesc-todo.md",
+    "Readwise/Articles/clearbluejar - Decompilation Debugging.md",
     "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP-2.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Internal information gathering.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Passive information gathering (OSINT).md",
+    "Readwise/Articles/Ram Gall - PSA Critical POP Chain Allowing Remote Code Execution Patched in WordPress 6.4.2.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Race Condition.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
+    "Readwise/Articles/Nathan Touati - Sandwich Attacks From Reset Password to Account Takeover.md",
+    "Untitled.md",
+    "Readwise/Articles/PortSwigger Research - Stealing HttpOnly Cookies With the Cookie Sandwich Technique.md",
+    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+    "Readwise/Articles/0x999.net - Exploring Javascript Events & Bypassing WAFs via Character Normalization.md",
     "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
     "Readwise/Readwise inbox.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-12-16.md",
-    "Dev, ICT & Cybersec/Tools/tmux.md",
-    "Readwise/Articles/Anurag Mondal - From Informational to Critical Chaining & Elevating Web Vulnerabilities.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-12-02.md",
-    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Fuzzing.md",
-    "Dev, ICT & Cybersec/Stego & Forensic/OSINT.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-11-25.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-01-06.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/DOM-based vulnerabilities.md",
-    "Dev, ICT & Cybersec/Tools/CodeQL.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Same-origin policy (SOP).md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/SameSite Cookie Attribute.md",
+    "Readwise/Articles/httpsgithub.comwapiti-scanner - Wapiti-ScannerWapiti Web Vulnerability Scanner Written in Python3.md",
+    "Readwise/Tweets/@orange_8361 on Twitter - Tweets From Orange Tsai  🍊.md",
+    "Readwise/Tweets/@smaury92 on Twitter - If You Are Interested In....md",
+    "Communities/YouTube/_YT-dashboard.canvas",
+    "Play ground/Personal Blog workflow.canvas",
+    "Communities/YouTube/attachments/Pasted Image 20250122133633_487.png",
+    "Communities/YouTube/attachments/2023005_atch2.png",
+    "Communities/YouTube/attachments/software-architecture.excalidrawlib",
+    "Excalidraw",
+    "Communities/YouTube/attachments/2023005_atch1.png",
+    "Play ground/Targets/Wordpress/Plugins/vulnerability-playground",
+    "Play ground/Targets/Wordpress/Plugins",
+    "Play ground/Targets/Wordpress/Core",
+    "Play ground/Targets/Wordpress",
+    "Play ground/Targets/vulnerability research process and management.canvas",
+    "Play ground/Targets/opencart/OpenCart 4.0.2.3.canvas",
+    "Play ground/Targets/opencart/OpenCart-4.canvas",
+    "Play ground/Targets/Adobe Acrobat/Acrobat Reader (Android)/Acrobat Reader (Android).canvas",
+    "Play ground/Targets/Vault - Hide Pics, App Lock/Vault - Hide Pics, App Lock (20241122).canvas",
+    "Readwise/Articles/attachments/codeql-run-query.png",
+    "Readwise/Articles/attachments/vscode-ql-menu.png",
+    "Readwise/Articles/attachments/codeql-ext-vscode.png",
+    "zzz_res/templates/cheatsheet-canvas.canvas",
+    "zzz_res/templates/canvas-template.canvas",
     "Dev, ICT & Cybersec/Web & Network Hacking/attachments/Site-example.png",
     "Dev, ICT & Cybersec/Web & Network Hacking/attachments/Origin-example.png",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-origin resource sharing (CORS).md",
-    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
-    "Readwise/Articles/Madison Oliver - Securing Our Home Labs Frigate Code Review.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
-    "Readwise/Articles/novasecio - Hunting for Blind XSS Vulnerabilities A Complete Guide.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
-    "Play ground/Personal Blog workflow.canvas",
     "Personal/Book list/_book-dashboard.canvas",
-    "Communities/YouTube/_YT-dashboard.canvas",
-    "Communities/Inforge/Cybersec Hacking Mind Map.canvas",
     "Play ground/Targets/Wordpress-plugins",
     "Readwise/Articles/attachments/PortSwigger Research - Fickle PDFs Exploiting Browser Rendering Discrepancies - 2.png",
     "Readwise/Articles/attachments/PortSwigger Research - Fickle PDFs Exploiting Browser Rendering Discrepancies - 1.png",
     "Play ground/Targets/PaperCut",
-    "Readwise/Articles/attachments/Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup-poc.png",
-    "Readwise/Articles/attachments/livedomng-2.png",
-    "Readwise/Articles/attachments/livedomng-1.png",
-    "Readwise/Articles/attachments/tokenizer-vs-parser.png",
-    "Play ground/Targets/Vault - Hide Pics, App Lock/Vault - Hide Pics, App Lock (20241122).canvas",
-    "Play ground/Test.canvas",
-    "Play ground/Targets/TeamCity/CVE-2023-42793.canvas",
-    "Play ground/Targets/SVB/SVB.canvas",
-    "Play ground/Targets/SociableKit/www.sociablekit.com.canvas",
-    "Play ground/Targets/comunica.regione.piemonte.it/comunica.regione.piemonte.it.canvas",
     "Play ground/Targets/Calculator - Hide Photo Video/calculator-hide-mobsf-report.pdf",
-    "Play ground/Targets/uisp.it/areariservata2.uisp.it",
-    "Play ground/Targets/uisp.it/tesseramento.uisp.it",
-    "Play ground/Targets/SicuraNext/SicuraNext-Challenge-Report_v1.0.pdf",
-    "Play ground/Targets/SicuraNext/attachments/graph.png",
-    "Play ground/Targets/SicuraNext/challenge-1/burp/20241115_challenge-1.burp.backup.temp_20241119_090018",
-    "Play ground/Targets/SicuraNext/challenge-1/burp/20241115_challenge-1.burp.backup.temp_20241119_083018",
-    "Play ground/Targets/SicuraNext/challenge-1/burp/20241115_challenge-1.burp.backup.temp_20241119_080018",
-    "Play ground/Targets/SicuraNext/challenge-1/burp/20241115_challenge-1.burp.backup.temp_20241119_073018",
-    "Play ground/Targets/SicuraNext/attachments/cracked-passwords.png"
+    "Play ground/Targets/uisp.it/areariservata2.uisp.it"
   ]
 }

@@ -3,7 +3,6 @@
   "obsidian-kanban",
   "url-into-selection",
   "obsidian-book-search-plugin",
-  "code-block-copy",
   "dataview",
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-emoji-toolbar",
@@ -20,5 +19,6 @@
   "code-styler",
   "obsidian-link-converter",
   "advanced-canvas",
-  "better-export-pdf"
+  "better-export-pdf",
+  "obsidian-excalidraw-plugin"
 ]
