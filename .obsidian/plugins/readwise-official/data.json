@@ -5,7 +5,7 @@
   "triggerOnLoad": true,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 18277559,
+  "lastSavedStatusID": 18473670,
   "currentSyncStatusID": 0,
   "refreshBooks": true,
   "booksToRefresh": [
@@ -7168,7 +7168,8 @@
     "Readwise/Articles/PortSwigger Research - Stealing HttpOnly Cookies With the Cookie Sandwich Technique.md": "48026137",
     "Readwise/Articles/0x999.net - Exploring Javascript Events & Bypassing WAFs via Character Normalization.md": "48049207",
     "Readwise/Articles/Nathan Touati - Sandwich Attacks From Reset Password to Account Takeover.md": "48050396",
-    "Readwise/Articles/Antoine Gicquel - WordPress for Security Audit.md": "47643186"
+    "Readwise/Articles/Antoine Gicquel - WordPress for Security Audit.md": "47643186",
+    "Readwise/Articles/Alex Thomas - WordPress Security Research Series WordPress Request Architecture and Hooks.md": "48061448"
   },
   "reimportShowConfirmation": true
 }

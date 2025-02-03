@@ -19928,6 +19928,9 @@ function copyAttributes(node, attributes) {
     node.setAttribute(attr.name, attr.value);
   });
 }
+function isNumber(str) {
+  return !isNaN(parseFloat(str));
+}
 
 // src/pdf.ts
 async function getDestPosition(pdfDoc) {
@@ -20154,27 +20157,31 @@ function setMetadata(pdfDoc, { title, author, keywords, subject, creator, create
   pdfDoc.setModificationDate(new Date(updated_at != null ? updated_at : /* @__PURE__ */ new Date()));
 }
 async function exportToPDF(outputFile, config, w, { doc, frontMatter }) {
-  var _a, _b, _c, _d, _e, _f, _g, _h, _i;
+  var _a, _b, _c, _d, _e, _f, _g, _h, _i, _j;
   console.log("output pdf:", outputFile);
   let pageSize = config["pageSize"];
   if (config["pageSize"] == "Custom" && config["pageWidth"] && config["pageHeight"]) {
     pageSize = {
-      width: parseFloat((_a = config["pageWidth"]) != null ? _a : "0") / 25.4,
-      height: parseFloat((_b = config["pageHeight"]) != null ? _b : "0") / 25.4
+      width: parseFloat((_a = config["pageWidth"]) != null ? _a : "210") / 25.4,
+      height: parseFloat((_b = config["pageHeight"]) != null ? _b : "297") / 25.4
     };
+  }
+  let scale2 = (_c = config == null ? void 0 : config["scale"]) != null ? _c : 100;
+  if (scale2 > 200 || scale2 < 10) {
+    scale2 = 100;
   }
   const printOptions = {
     landscape: config == null ? void 0 : config["landscape"],
     printBackground: config == null ? void 0 : config["printBackground"],
     generateTaggedPDF: config == null ? void 0 : config["generateTaggedPDF"],
     pageSize,
-    scale: config["scale"] / 100,
+    scale: scale2 / 100,
     margins: {
       marginType: "default"
     },
     displayHeaderFooter: config["displayHeader"] || config["displayFooter"],
-    headerTemplate: config["displayHeader"] ? (_c = frontMatter == null ? void 0 : frontMatter["headerTemplate"]) != null ? _c : config["headerTemplate"] : "<span></span>",
-    footerTemplate: config["displayFooter"] ? (_d = frontMatter == null ? void 0 : frontMatter["footerTemplate"]) != null ? _d : config["footerTemplate"] : "<span></span>"
+    headerTemplate: config["displayHeader"] ? (_d = frontMatter == null ? void 0 : frontMatter["headerTemplate"]) != null ? _d : config["headerTemplate"] : "<span></span>",
+    footerTemplate: config["displayFooter"] ? (_e = frontMatter == null ? void 0 : frontMatter["footerTemplate"]) != null ? _e : config["footerTemplate"] : "<span></span>"
   };
   if (config.marginType == "0") {
     printOptions["margins"] = {
@@ -20199,10 +20206,10 @@ async function exportToPDF(outputFile, config, w, { doc, frontMatter }) {
   } else if (config.marginType == "3") {
     printOptions["margins"] = {
       marginType: "custom",
-      top: parseFloat((_e = config["marginTop"]) != null ? _e : "0") / 25.4,
-      bottom: parseFloat((_f = config["marginBottom"]) != null ? _f : "0") / 25.4,
-      left: parseFloat((_g = config["marginLeft"]) != null ? _g : "0") / 25.4,
-      right: parseFloat((_h = config["marginRight"]) != null ? _h : "0") / 25.4
+      top: parseFloat((_f = config["marginTop"]) != null ? _f : "0") / 25.4,
+      bottom: parseFloat((_g = config["marginBottom"]) != null ? _g : "0") / 25.4,
+      left: parseFloat((_h = config["marginLeft"]) != null ? _h : "0") / 25.4,
+      right: parseFloat((_i = config["marginRight"]) != null ? _i : "0") / 25.4
     };
   }
   try {
@@ -20211,7 +20218,7 @@ async function exportToPDF(outputFile, config, w, { doc, frontMatter }) {
       headings: getHeadingTree(doc),
       frontMatter,
       displayMetadata: config == null ? void 0 : config.displayMetadata,
-      maxLevel: parseInt((_i = config == null ? void 0 : config.maxLevel) != null ? _i : "6")
+      maxLevel: parseInt((_j = config == null ? void 0 : config.maxLevel) != null ? _j : "6")
     });
     await fs.writeFile(outputFile, data);
     if (config.open) {
@@ -20307,6 +20314,11 @@ body {
     break-inside: avoid;
     break-after: auto;
   }
+}
+
+img.__canvas__ {
+  width: 100% !important;
+  height: 100% !important;
 }
 `;
 function getPatchStyle() {
@@ -20760,8 +20772,7 @@ ${px2mm(width)}\xD7${px2mm(height)}mm`;
       await this.appendWebviews(el);
       this.togglePrintSize();
     });
-    const contentEl = wrapper.createDiv();
-    contentEl.setAttribute("style", "width:320px;margin-left:16px;");
+    const contentEl = wrapper.createDiv({ attr: { class: "setting-wrapper" } });
     contentEl.addEventListener("keyup", (event) => {
       if (event.key === "Enter") {
         handleExport();
@@ -20769,8 +20780,15 @@ ${px2mm(width)}\xD7${px2mm(height)}mm`;
     });
     this.generateForm(contentEl);
     const handleExport = async () => {
+      var _a2, _b2;
       this.plugin.settings.prevConfig = this.config;
       await this.plugin.saveSettings();
+      if (this.config["pageSize"] == "Custom") {
+        if (!isNumber((_a2 = this.config["pageWidth"]) != null ? _a2 : "") || !isNumber((_b2 = this.config["pageHeight"]) != null ? _b2 : "")) {
+          alert("When the page size is Custom, the Width/Height cannot be empty.");
+          return;
+        }
+      }
       if (this.multiplePdf) {
         const outputPath = await getOutputPath(title);
         console.log("output:", outputPath);

@@ -110,6 +110,12 @@ Monitors traffic and looks for request parameter values (longer than 3 character
 
 ![|700](../../zzz_res/attachments/reflected-parameters.png)
 
+### *Paramalyzer 🔝
+
+This extension can improve efficiency of manual parameter analysis for web penetration tests of either complex or numerous applications. This can assist in tasks such as identifying sensitive data, identifying hash algorithms, decoding parameters, and determining which parameters are reflected in the response.
+
+This extension performs an in-depth and intelligent parameter analysis of all in-scope Burp traffic. Results are displayed in an interactive table and can be sent directly to other Burp tools such as Repeater.
+
 ### *Detect Dynamic JS
 
 This extension compares JavaScript files with each other to detect dynamically generated content and content that is only accessible when the user is authenticated. This occasionally contains not only code but also _data_ with user or session information. User/session information can then be checked for potential leakage. This extension is supposed to help hunting for exploitable situations.

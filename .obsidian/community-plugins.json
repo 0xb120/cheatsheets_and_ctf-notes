@@ -1,24 +1,21 @@
 [
   "settings-search",
-  "obsidian-kanban",
   "url-into-selection",
   "obsidian-book-search-plugin",
   "dataview",
-  "cm-editor-syntax-highlight-obsidian",
   "obsidian-emoji-toolbar",
   "file-tree-alternative",
   "highlightr-plugin",
   "obsidian-reading-time",
-  "better-word-count",
   "obsidian-advanced-slides",
   "auto-card-link",
   "obsidian-list-callouts",
   "readwise-official",
   "obsidian-quiet-outline",
-  "obsidian-paste-image-rename",
   "code-styler",
-  "obsidian-link-converter",
   "advanced-canvas",
   "better-export-pdf",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "obsidian-projects",
+  "obsidian-git"
 ]
