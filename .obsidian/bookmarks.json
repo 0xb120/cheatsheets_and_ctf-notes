@@ -17,6 +17,11 @@
     },
     {
       "type": "file",
+      "ctime": 1740747846320,
+      "path": "Personal/TODO.md"
+    },
+    {
+      "type": "file",
       "ctime": 1696272067572,
       "path": "Readwise/Readwise inbox.md"
     },
@@ -70,13 +75,7 @@
         {
           "type": "file",
           "ctime": 1730308606591,
-          "path": "Play ground/Targets/Project List.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1695680547945,
-          "path": "Play ground/CTFs/_CTF-dashboard_wrapper.md",
-          "title": "CTF list"
+          "path": "Play ground/Targets/Vulnerability Research Targets.md"
         },
         {
           "type": "file",
@@ -91,12 +90,6 @@
         }
       ],
       "title": "Projects and works"
-    },
-    {
-      "type": "file",
-      "ctime": 1695680530332,
-      "path": "Personal/Book list/_book-dashboard_wrapper.md",
-      "title": "Book list"
     }
   ]
 }

@@ -9,7 +9,6 @@ tags:
   - Nagios/XI
 url: https://riskybiznews.substack.com/p/china-says-nsa-hacked-huawei
 date: 2024-08-20
-product: "[[../../Targets/Nagios/Nagios XI/Nagios XI|Nagios XI]]"
 ---
 # Risky Biz News: China Admits NSA Hacked Huawei
 

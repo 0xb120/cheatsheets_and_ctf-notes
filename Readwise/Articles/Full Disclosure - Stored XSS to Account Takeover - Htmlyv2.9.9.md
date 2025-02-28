@@ -8,7 +8,6 @@ tags:
   - htmly
 url: https://seclists.org/fulldisclosure/2024/Sep/42
 date: 2024-09-25
-product: "[[../../Play ground/Targets/htmly/htmly|htmly]]"
 ---
 # Stored XSS to Account Takeover - Htmlyv2.9.9
 

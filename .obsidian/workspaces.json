@@ -6,32 +6,20 @@
         "type": "split",
         "children": [
           {
-            "id": "5e28e1ff83001b4e",
+            "id": "7b3098e0ae46f99e",
             "type": "tabs",
             "children": [
               {
-                "id": "72d38f39798bf5b3",
+                "id": "1f35466f5882b3de",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Home.md",
-                    "mode": "preview",
-                    "backlinks": false,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "53fe8dfc11c363df",
-                "type": "leaf",
-                "state": {
-                  "type": "obsidian-projects",
-                  "state": {}
+                  "type": "empty",
+                  "state": {},
+                  "icon": "lucide-file",
+                  "title": "New tab"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "vertical"
@@ -45,21 +33,23 @@
             "type": "tabs",
             "children": [
               {
-                "id": "8ab711eaa4222edf",
+                "id": "ac48de087a5fdfe3",
                 "type": "leaf",
                 "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
+                  "type": "file-tree-view",
+                  "state": {},
+                  "icon": "sheets-in-box",
+                  "title": "File Tree"
                 }
               },
               {
-                "id": "e94392e61da9c120",
+                "id": "c5db6fce94ae478b",
                 "type": "leaf",
                 "state": {
-                  "type": "starred",
-                  "state": {}
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "Bookmarks"
                 }
               },
               {
@@ -68,28 +58,45 @@
                 "state": {
                   "type": "search",
                   "state": {
-                    "query": "",
+                    "query": "graphql",
                     "matchingCase": false,
                     "explainSearch": false,
-                    "collapseAll": false,
+                    "collapseAll": true,
                     "extraContext": false,
                     "sortOrder": "alphabetical"
-                  }
+                  },
+                  "icon": "lucide-search",
+                  "title": "Search"
                 }
               },
               {
-                "id": "6eadd6eb80f8df01",
+                "id": "8ab711eaa4222edf",
                 "type": "leaf",
                 "state": {
-                  "type": "file-tree-view",
-                  "state": {}
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "Files"
+                }
+              },
+              {
+                "id": "f6c7831e85d653f1",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {},
+                  "icon": "git-pull-request",
+                  "title": "Source Control"
                 }
               }
             ]
           }
         ],
         "direction": "horizontal",
-        "width": 300
+        "width": 338.5
       },
       "right": {
         "id": "659b37494d493ae5",
@@ -98,14 +105,16 @@
           {
             "id": "497a4e903f6476bf",
             "type": "tabs",
-            "dimension": 66.47286821705426,
+            "dimension": 40.50387596899225,
             "children": [
               {
-                "id": "9f4f41ee67114463",
+                "id": "cecdd88dce19730c",
                 "type": "leaf",
                 "state": {
-                  "type": "outline",
-                  "state": {}
+                  "type": "quiet-outline",
+                  "state": {},
+                  "icon": "lines-of-text",
+                  "title": "Quiet Outline"
                 }
               },
               {
@@ -115,8 +124,97 @@
                   "type": "tag",
                   "state": {
                     "sortOrder": "frequency",
-                    "useHierarchy": true
-                  }
+                    "useHierarchy": true,
+                    "showSearch": true,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "Tags"
+                }
+              },
+              {
+                "id": "2921dec2e618073d",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": true,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "All properties"
+                }
+              },
+              {
+                "id": "aa1966157214a77f",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "File properties for dotNET"
+                }
+              },
+              {
+                "id": "8461e389670820c8",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "Outline of dotNET"
+                }
+              }
+            ],
+            "currentTab": 4
+          },
+          {
+            "id": "93c550284300223b",
+            "type": "tabs",
+            "dimension": 22.674418604651166,
+            "children": [
+              {
+                "id": "1b02ab1c108718d1",
+                "type": "leaf",
+                "state": {
+                  "type": "localgraph",
+                  "state": {
+                    "options": {
+                      "collapse-filter": false,
+                      "search": "",
+                      "localJumps": 2,
+                      "localBacklinks": false,
+                      "localForelinks": true,
+                      "localInterlinks": true,
+                      "showTags": true,
+                      "showAttachments": false,
+                      "hideUnresolved": false,
+                      "collapse-color-groups": true,
+                      "colorGroups": [],
+                      "collapse-display": false,
+                      "showArrow": true,
+                      "textFadeMultiplier": -0.6,
+                      "nodeSizeMultiplier": 1,
+                      "lineSizeMultiplier": 1,
+                      "collapse-forces": true,
+                      "centerStrength": 0.518713248970312,
+                      "repelStrength": 10,
+                      "linkStrength": 1,
+                      "linkDistance": 250,
+                      "scale": 0.3396609293254898,
+                      "close": true
+                    }
+                  },
+                  "icon": "lucide-git-fork",
+                  "title": "Graph view"
                 }
               }
             ]
@@ -124,7 +222,7 @@
           {
             "id": "0ca134c80578c5f2",
             "type": "tabs",
-            "dimension": 33.52713178294574,
+            "dimension": 36.82170542635659,
             "children": [
               {
                 "id": "92a8f5dacbdec5e4",
@@ -135,32 +233,54 @@
                     "collapseAll": true,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
-                    "showSearch": false,
+                    "showSearch": true,
                     "searchQuery": "",
                     "backlinkCollapsed": false,
                     "unlinkedCollapsed": false
-                  }
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks"
                 }
               },
               {
-                "id": "f3d8d9cbf3ebe9e0",
+                "id": "182ec8c1b1de05c0",
                 "type": "leaf",
                 "state": {
                   "type": "outgoing-link",
                   "state": {
+                    "file": "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
-                  }
+                  },
+                  "icon": "links-going-out",
+                  "title": "Outgoing links from Dev, ICT & Cybersec"
                 }
               }
-            ],
-            "currentTab": 1
+            ]
           }
         ],
         "direction": "horizontal",
-        "width": 300
+        "width": 435.5
       },
-      "active": "53fe8dfc11c363df"
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Open quick switcher": false,
+          "command-palette:Open command palette": false,
+          "canvas:Create new canvas": false,
+          "obsidian-excalidraw-plugin:New drawing": false,
+          "obsidian-kanban:Create new board": false,
+          "graph:Open graph view": false,
+          "templates:Insert template": true,
+          "workspaces:Manage workspace layouts": true,
+          "obsidian-advanced-slides:Show Slide Preview": true,
+          "obsidian-book-search-plugin:Create new book note": true,
+          "file-tree-alternative:File Tree Alternative Plugin": true,
+          "obsidian-projects:Open projects": false,
+          "obsidian-git:Open Git source control": true
+        }
+      },
+      "active": "1f35466f5882b3de",
+      "mtime": "2025-02-28T14:02:48+01:00"
     }
   },
   "active": "Home+Project"

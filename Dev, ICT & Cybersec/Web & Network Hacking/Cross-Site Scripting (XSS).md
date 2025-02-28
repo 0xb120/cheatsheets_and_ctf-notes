@@ -18,6 +18,8 @@ Different types of XSS:
 
 - [Blind XSS](../../Readwise/Articles/novasecio%20-%20Hunting%20for%20Blind%20XSS%20Vulnerabilities%20A%20Complete%20Guide.md)
 
+- [mXSS](../../Readwise/Articles/sonarsource.com%20-%20mXSS%20The%20Vulnerability%20Hiding%20in%20Your%20Code.md)
+
 Possible attacks and risks:
 
 - Theft of cookies and session tokens
@@ -197,7 +199,6 @@ Extensive cheat sheets can be found at:
 
 - [Multi-purpose snippets - JS AWAE Prep](https://mlcsec.com/posts/js-awae-prep/)
 - [[Evading Restrictions.md]]
-- [Cross-Site Scripting (XSS) Cheat Sheet - 2022 Edition | Web Security Academy](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 - [javascript-bypass-blacklists-techniques](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting#javascript-bypass-blacklists-techniques)
 - [Obfuscating attacks using encodings](https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings)
 - [XSS without parentheses and semi-colons](https://portswigger.net/research/xss-without-parentheses-and-semi-colons)
@@ -232,3 +233,5 @@ Extensive cheat sheets can be found at:
 - DOM Invader
 - [How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes](../../Readwise/Articles/Alex%20Thomas%20-%20How%20to%20Find%20XSS%20(Cross-Site%20Scripting)%20Vulnerabilities%20in%20WordPress%20Plugins%20and%20Themes.md)
 - [Common XSS Sources](../../Readwise/Articles/Alex%20Thomas%20-%20How%20to%20Find%20XSS%20(Cross-Site%20Scripting)%20Vulnerabilities%20in%20WordPress%20Plugins%20and%20Themes.md#Common%20XSS%20Sources)
+- [Cross-Site Scripting (XSS) Cheat Sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
+- [mXSS Cheatsheet](https://sonarsource.github.io/mxss-cheatsheet/)

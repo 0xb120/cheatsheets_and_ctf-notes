@@ -240,9 +240,9 @@ In the cookie specification and implementation, specifically dedicated cookies i
 	- using `<head><meta name=”referrer” content=”no-referrer”></head>`
 	- using `<iframe src=data://text/html;base64,...>`
 - Use [4-ZERO-3](https://github.com/Dheerajmadhukar/4-ZERO-3)
-- [Exploit parser differential and get mXSS (CVE-2023-47479 writeup)](https://www.sonarsource.com/blog/reply-to-calc-the-attack-chain-to-compromise-mailspring/)
 - Bypass [WAFs](../Dev,%20scripting%20&%20OS/WAF.md) exploiting their length-limitations [^nowafplease]
 - [When WAFs Go Awry: Common Detection & Evasion Techniques for Web Application Firewalls](../../Readwise/Articles/Admin%20-%20When%20WAFs%20Go%20Awry%20Common%20Detection%20&%20Evasion%20Techniques%20for%20Web%20Application%20Firewalls.md)
+- [mXSS](../../Readwise/Articles/sonarsource.com%20-%20mXSS%20The%20Vulnerability%20Hiding%20in%20Your%20Code.md)
 - [Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup](../../Readwise/Articles/Bug%20Bounty%20Reports%20Explained%20-%20$25k%20GitHub%20Account%20Takeover%20&%20justCTF%202023%20CSRF+XSS%20Writeup.md) (parsing vs tokenization ft. html namespaces)
 - [Bypassing WAFs With the Phantom $Version Cookie](../../Readwise/Articles/PortSwigger%20Research%20-%20Bypassing%20WAFs%20With%20the%20Phantom%20$Version%20Cookie.md)
 

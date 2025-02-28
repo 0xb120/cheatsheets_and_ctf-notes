@@ -10,7 +10,6 @@ tags:
   - vulnerability-research/todo
 url: https://hulkvision.github.io/blog/post1/
 date: 2024-08-20
-product: "[[../../Targets/Adobe Acrobat/Acrobat Reader (Android)/Acrobat Reader (Android)|Acrobat Reader (Android)]]"
 ---
 # RCE in Adobe Acrobat Reader for Android
 

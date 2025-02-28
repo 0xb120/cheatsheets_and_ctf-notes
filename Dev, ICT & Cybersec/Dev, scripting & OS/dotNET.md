@@ -31,7 +31,7 @@ namespace dotnetapp
 
 ## Debugging dotNET
 
-Some optimization may prevent trivial debugging of dotNET application. One of the ways these optimizations manifest themselves in a debugging session is by preventing us from setting breakpoints at arbitrary code lines.
+Some optimization may prevent trivial debugging of #dotNET application. One of the ways these optimizations manifest themselves in a debugging session is by preventing us from setting breakpoints at arbitrary code lines.
 
 Fortunately, there is a way to modify how a target executable is optimized at runtime [^debug-easy] :
 

@@ -8,7 +8,6 @@ tags:
   - OpenCMS
 url: https://labs.watchtowr.com/xxe-you-can-depend-on-me-opencms/
 date: 2024-08-20
-product: "[[../../Play ground/Targets/OpenCMS/OpenCMS|OpenCMS]]"
 ---
 # XXE, You Can Depend on Me
 

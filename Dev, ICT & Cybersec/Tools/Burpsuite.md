@@ -65,6 +65,7 @@ Features:
 - Customizable regexes lists
 - Import regexes from CSV/JSON files
 - Export results to CSV/JSON files
+
 ### *Retire.js 🔝
 
 Integrates Burp with the Retire.js repository to find vulnerable JavaScript libraries. It passively looks at JavaScript files loaded and identifies those which are vulnerable.
@@ -90,6 +91,10 @@ Find interesting stuff inside static files, like secrets, credentials, subdomain
 
 ![|500](../../zzz_res/attachments/JS-miner.png)
 
+### *JS Link Finder
+
+Burp Extension for a passively scanning JavaScript files for endpoint links. - Export results the text file - Exclude specific 'js' files e.g. jquery, google-analytics
+
 ### *Additional Scanner Check 🔝
 
 This extension provides some additional passive Scanner checks:
@@ -110,11 +115,13 @@ Monitors traffic and looks for request parameter values (longer than 3 character
 
 ![|700](../../zzz_res/attachments/reflected-parameters.png)
 
-### *Paramalyzer 🔝
+### Paramalyzer 🔝
 
 This extension can improve efficiency of manual parameter analysis for web penetration tests of either complex or numerous applications. This can assist in tasks such as identifying sensitive data, identifying hash algorithms, decoding parameters, and determining which parameters are reflected in the response.
 
 This extension performs an in-depth and intelligent parameter analysis of all in-scope Burp traffic. Results are displayed in an interactive table and can be sent directly to other Burp tools such as Repeater.
+
+See the doc: https://jgillam.github.io/burp-paramalyzer/
 
 ### *Detect Dynamic JS
 
@@ -135,6 +142,10 @@ Used to passively scan for [Cross-Site Request Forgery (CSRF)](../Web%20&%20Netw
 This extension passively reports detailed server error messages. You can configure arbitrary match results from the apposite tab.
 
 ![](../../zzz_res/attachments/error-message-checks.png)
+
+### *WAFDetect 🔝
+
+This extension passively detects the presence of a web application firewall (WAF) from HTTP responses.
 
 ### CSP Auditor
 
@@ -161,7 +172,7 @@ This extension checks for usage of HTML5 features that have potential security r
 
 ActiveScan++ extends Burp Suite's **active and passive scanning capabilities** with host header attacks, edge side includes, XML attacks, input transofmrations, blind code injection and CVEs. To invoke these checks, **just run a normal active scan**.
 
-### *J2EEScan
+### *J2EEScan 🔝
 
 Adds more than 80+ unique security test cases and new strategies to discover different kind of J2EE vulnerabilities.
 
@@ -318,6 +329,22 @@ This extension can be used to test websites for CORS misconfigurations. It can s
 
 ![|900](../../zzz_res/attachments/additional-cors-checks.png)
 
+### Additional CSRF Checks 🔝
+
+This extension helps find weak CSRF-protection that can be bypassed. For example, content type based protection for API (Rest API, GraphQL API, etc) or CSRF-protection based on obscure data formats (binary format, etc) are known to be weak. Some tricks to bypass CSRF-protection were presented at [ZeroNights 2017 conference](https://2017.zeronights.org/report/tricks-bypassing-csrf-protection/).
+
+The extension is not a scanner. This extension is a trade-off between manual and fully automatic check. The extension automatically makes changes to POST/PUT/DELETE/PATCH requests and highlights modified requests in the Proxy HTTP history.
+
+The Settings tab provides the following options:
+
+- Enable/disable EasyCSRF extension.
+- Modify all or only in-scope requests.
+- Remove HTTP headers that are used for CSRF-protection.
+- Remove CSRF-token from parameters. URL-encoded, multipart, JSON parameters are supported.
+- Change PUT/DELETE/PATCH method to POST.
+- Convert URL-encoded body to JSON format.
+- Set text/plain value for Content-Type header.
+- Change POST/PUT/DELETE/PATCH request to GET request for url-encoded requests.
 ### Command Injection Attacker 🔝
 
 A comprehensive OS command injection payload generator. This extension is a customizable payload generator, suitable for detecting OS command injection flaws during dynamic testing.
@@ -502,7 +529,6 @@ As each parameter is removed, the extension repeats the request to ensure the re
 
 [^copier]: https://github.com/Tib3rius/Copier
 
-
 ### Socket Sleuth
 
 - WebSocket history
@@ -521,6 +547,17 @@ As each parameter is removed, the extension repeats the request to ensure the re
     - Hex encoded string (useful when working with non string payloads)
     - Regex
 
+
+### Magic Byte Selector
+
+Burp Suite Extension for inserting a magic byte into a request.
+
+Available magic bytes:
+- JPG
+- PNG
+- JPEG
+- GIF89a
+- GIF87a
 ### Logger++ 🔝
 
 Multithreaded logging extension for Burp Suite. In addition to logging requests and responses from all Burp Suite tools, the extension allows advanced filters to be defined to highlight interesting entries or filter logs to only those which match the filter.

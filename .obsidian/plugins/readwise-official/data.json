@@ -5,7 +5,7 @@
   "triggerOnLoad": true,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 18473670,
+  "lastSavedStatusID": 18943028,
   "currentSyncStatusID": 0,
   "refreshBooks": true,
   "booksToRefresh": [
@@ -7169,7 +7169,27 @@
     "Readwise/Articles/0x999.net - Exploring Javascript Events & Bypassing WAFs via Character Normalization.md": "48049207",
     "Readwise/Articles/Nathan Touati - Sandwich Attacks From Reset Password to Account Takeover.md": "48050396",
     "Readwise/Articles/Antoine Gicquel - WordPress for Security Audit.md": "47643186",
-    "Readwise/Articles/Alex Thomas - WordPress Security Research Series WordPress Request Architecture and Hooks.md": "48061448"
+    "Readwise/Articles/Alex Thomas - WordPress Security Research Series WordPress Request Architecture and Hooks.md": "48061448",
+    "Readwise/Articles/PortSwigger Research - Bypassing Character Blocklists With Unicode Overflows.md": "48407096",
+    "Readwise/Articles/0xdf - Analysis of CVE-2023-37474 in CopyParty.md": "48207256",
+    "Readwise/Articles/Blog – Snyk - Agent Hijacking The True Impact of Prompt Injection Attacks.md": "48433224",
+    "Readwise/Articles/blig.one - Flatt Security XSS Challenge - Writeup.md": "48439092",
+    "Readwise/Articles/blackbird-eu - Creating Custom Wordlists for Bug Bounty Targets A Complete Guide.md": "48439448",
+    "Readwise/Articles/blackbird-eu - Exploiting PDF Generators A Complete Guide to Finding SSRF Vulnerabilities in PDF Generators.md": "48439822",
+    "Readwise/Articles/sonarsource.com - Encoding Differentials Why Charset Matters.md": "43409395",
+    "Readwise/Articles/Luke Jahnke - Cross-Site POST Requests Without a Content-Type Header.md": "48517912",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-02-10.md": "48753269",
+    "Readwise/Articles/httpsgithub.comChocapikk - GitHub - ChocapikkWpprobe A Fast WordPress Plugin Enumeration Tool.md": "49166762",
+    "Readwise/Articles/PortSwigger Research - Shadow Repeater AI-Enhanced Manual Testing.md": "49166874",
+    "Readwise/Articles/dojo-yeswehack.com - WAF-Bypass - Encoding.md": "49166922",
+    "Readwise/Articles/Assetnote Research - How an Obscure PHP Footgun Led to RCE in Craft CMS.md": "49167374",
+    "Readwise/Articles/Assetnote Research - NginxApache Path Confusion to Auth Bypass in PAN-OS.md": "49167827",
+    "Readwise/Articles/Benjamin Harris - 8 Million Requests Later, We Made the SolarWinds Supply Chain Attack Look Amateur.md": "49195607",
+    "Readwise/Articles/Sonny - Get FortiRekt, I Am the Super_Admin Now - FortiOS Authentication Bypass CVE-2024-55591.md": "49198175",
+    "Readwise/Articles/Doyensec's Blog - Common OAuth Vulnerabilities.md": "49219859",
+    "Readwise/Articles/Sonny - The Best Security Is When We All Agree to Keep Everything Secret (Except the Secrets) - NAKIVO Backup & Replication.md": "49220305",
+    "Readwise/Articles/repzret.blogspot.com - Abusing Libxml2 Quirks to Bypass SAML Authentication on GitHub Enterprise.md": "49221240",
+    "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md": "49223249"
   },
   "reimportShowConfirmation": true
 }

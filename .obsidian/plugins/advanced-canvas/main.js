@@ -1683,7 +1683,7 @@ __export(main_exports, {
   default: () => AdvancedCanvasPlugin
 });
 module.exports = __toCommonJS(main_exports);
-var import_obsidian12 = require("obsidian");
+var import_obsidian14 = require("obsidian");
 
 // src/quicksettings.ts
 var import_obsidian2 = require("obsidian");
@@ -1691,10 +1691,51 @@ var import_obsidian2 = require("obsidian");
 // src/settings.ts
 var import_obsidian = require("obsidian");
 
+// src/utils/text-helper.ts
+var TextHelper = class {
+  static toCamelCase(str) {
+    return str.replace(/-./g, (x) => x[1].toUpperCase());
+  }
+};
+
 // src/canvas-extensions/advanced-styles/style-config.ts
+function styleAttributeValidator(json) {
+  var _a;
+  const hasKey = json.key !== void 0;
+  const hasLabel = json.label !== void 0;
+  const hasOptions = Array.isArray(json.options);
+  if (!hasKey)
+    console.error('Style attribute is missing the "key" property');
+  if (!hasLabel)
+    console.error('Style attribute is missing the "label" property');
+  if (!hasOptions)
+    console.error('Style attribute is missing the "options" property or it is not an array');
+  json.key = TextHelper.toCamelCase(json.key);
+  let optionsValid = true;
+  let hasDefault = false;
+  for (const option of json.options) {
+    const hasIcon = option.icon !== void 0;
+    const hasLabel2 = option.label !== void 0;
+    const hasValue = option.value !== void 0;
+    if (!hasIcon)
+      console.error(`Style attribute option (${(_a = option.value) != null ? _a : option.label}) is missing the "icon" property`);
+    if (!hasLabel2)
+      console.error(`Style attribute option (${option.value}) is missing the "label" property`);
+    if (!hasValue)
+      console.error(`Style attribute option (${option.label}) is missing the "value" property`);
+    if (!hasIcon || !hasLabel2 || !hasValue)
+      optionsValid = false;
+    if (option.value === null)
+      hasDefault = true;
+  }
+  if (!hasDefault)
+    console.error('Style attribute is missing a default option (option with a "value" of null)');
+  const isValid = hasKey && hasLabel && hasOptions && optionsValid && hasDefault;
+  return isValid ? json : null;
+}
 var BUILTIN_NODE_STYLE_ATTRIBUTES = [
   {
-    datasetKey: "textAlign",
+    key: "textAlign",
     label: "Text Alignment",
     nodeTypes: ["text"],
     options: [
@@ -1716,7 +1757,7 @@ var BUILTIN_NODE_STYLE_ATTRIBUTES = [
     ]
   },
   {
-    datasetKey: "shape",
+    key: "shape",
     label: "Shape",
     nodeTypes: ["text"],
     options: [
@@ -1763,7 +1804,7 @@ var BUILTIN_NODE_STYLE_ATTRIBUTES = [
     ]
   },
   {
-    datasetKey: "border",
+    key: "border",
     label: "Border",
     options: [
       {
@@ -1791,7 +1832,7 @@ var BUILTIN_NODE_STYLE_ATTRIBUTES = [
 ];
 var BUILTIN_EDGE_STYLE_ATTRIBUTES = [
   {
-    datasetKey: "path",
+    key: "path",
     label: "Path Style",
     options: [
       {
@@ -1817,7 +1858,7 @@ var BUILTIN_EDGE_STYLE_ATTRIBUTES = [
     ]
   },
   {
-    datasetKey: "arrow",
+    key: "arrow",
     label: "Arrow Style",
     options: [
       {
@@ -1859,11 +1900,16 @@ var BUILTIN_EDGE_STYLE_ATTRIBUTES = [
         icon: "arrow-circle-outline",
         label: "Circle Outline",
         value: "circle-outline"
+      },
+      {
+        icon: "tally-1",
+        label: "Blunt",
+        value: "blunt"
       }
     ]
   },
   {
-    datasetKey: "pathfindingMethod",
+    key: "pathfindingMethod",
     label: "Pathfinding Method",
     options: [
       {
@@ -1909,6 +1955,7 @@ var CanvasEvent = {
     After: `${PLUGIN_EVENT_PREFIX}:viewport-changed:after`
   },
   NodeMoved: `${PLUGIN_EVENT_PREFIX}:node-moved`,
+  NodeResized: `${PLUGIN_EVENT_PREFIX}:node-resized`,
   DoubleClick: `${PLUGIN_EVENT_PREFIX}:double-click`,
   DraggingStateChanged: `${PLUGIN_EVENT_PREFIX}:dragging-state-changed`,
   NodeCreated: `${PLUGIN_EVENT_PREFIX}:node-created`,
@@ -1918,6 +1965,10 @@ var CanvasEvent = {
   NodeChanged: `${PLUGIN_EVENT_PREFIX}:node-changed`,
   EdgeChanged: `${PLUGIN_EVENT_PREFIX}:edge-changed`,
   NodeTextContentChanged: `${PLUGIN_EVENT_PREFIX}:node-text-content-changed`,
+  EdgeConnectionDragging: {
+    Before: `${PLUGIN_EVENT_PREFIX}:edge-connection-dragging:before`,
+    After: `${PLUGIN_EVENT_PREFIX}:edge-connection-dragging:after`
+  },
   NodeRemoved: `${PLUGIN_EVENT_PREFIX}:node-removed`,
   EdgeRemoved: `${PLUGIN_EVENT_PREFIX}:edge-removed`,
   OnCopy: `${PLUGIN_EVENT_PREFIX}:copy`,
@@ -1981,8 +2032,8 @@ var VariableBreakpointCanvasExtension = class extends CanvasExtension {
 // src/settings.ts
 var README_URL = "https://github.com/Developer-Mike/obsidian-advanced-canvas?tab=readme-ov-file";
 var ASK_FOR_DONATION_DELAY = 1e3 * 60 * 60 * 24 * 7;
-var SPENT_HOURS = 150;
-var RECEIVED_DONATIONS = 234;
+var SPENT_HOURS = 175;
+var RECEIVED_DONATIONS = 244;
 var HOURLY_RATE_GOAL = 20;
 var KOFI_PAGE_URL = "https://ko-fi.com/X8X27IA08";
 var KOFI_BADGE_URI = "data:image/webp;base64,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";
@@ -2018,7 +2069,10 @@ var DEFAULT_SETTINGS_VALUES = {
   zoomToClonedNode: true,
   cloneNodeMargin: 20,
   expandNodeStepSize: 20,
+  floatingEdgeFeatureEnabled: false,
+  newEdgeFromSideFloating: false,
   flipEdgeFeatureEnabled: true,
+  betterExportFeatureEnabled: true,
   betterReadonlyEnabled: true,
   disableNodePopup: false,
   disableZoom: false,
@@ -2038,6 +2092,7 @@ var DEFAULT_SETTINGS_VALUES = {
   useArrowKeysToChangeSlides: true,
   usePgUpPgDownKeysToChangeSlides: true,
   zoomToSlideWithoutPadding: true,
+  useUnclampedZoomWhilePresenting: false,
   slideTransitionAnimationDuration: 0.5,
   slideTransitionAnimationIntensity: 1.25,
   canvasEncapsulationEnabled: true,
@@ -2238,6 +2293,18 @@ var SETTINGS = {
       }
     }
   },
+  floatingEdgeFeatureEnabled: {
+    label: "Floating edges (auto edge side)",
+    description: "Create edges that are automatically placed on the most suitable side of the node by dragging the edge over the target node without placing it over a specific side connection point.",
+    infoSection: "auto-edge-side",
+    children: {
+      newEdgeFromSideFloating: {
+        label: "New edge from side floating",
+        description: 'When enabled, the "from" side of the edge will always be floating.',
+        type: "boolean"
+      }
+    }
+  },
   flipEdgeFeatureEnabled: {
     label: "Flip edges",
     description: "Flip the direction of edges using the popup menu.",
@@ -2349,6 +2416,11 @@ var SETTINGS = {
       zoomToSlideWithoutPadding: {
         label: "Zoom to slide without padding",
         description: "When enabled, the canvas will zoom to the slide without padding.",
+        type: "boolean"
+      },
+      useUnclampedZoomWhilePresenting: {
+        label: "Use unclamped zoom while presenting",
+        description: "When enabled, the zoom will not be clamped while presenting.",
         type: "boolean"
       },
       slideTransitionAnimationDuration: {
@@ -2523,12 +2595,12 @@ var AdvancedCanvasPluginSettingTab = class extends import_obsidian.PluginSetting
       new import_obsidian.Setting(nestedContainerEl).setName(styleAttribute.label).addDropdown(
         (dropdown) => {
           var _a;
-          return dropdown.addOptions(Object.fromEntries(styleAttribute.options.map((option) => [option.value, option.value === null ? `${option.label} (default)` : option.label]))).setValue((_a = this.settingsManager.getSetting(settingId)[styleAttribute.datasetKey]) != null ? _a : "null").onChange(async (value) => {
+          return dropdown.addOptions(Object.fromEntries(styleAttribute.options.map((option) => [option.value, option.value === null ? `${option.label} (default)` : option.label]))).setValue((_a = this.settingsManager.getSetting(settingId)[styleAttribute.key]) != null ? _a : "null").onChange(async (value) => {
             const newValue = this.settingsManager.getSetting(settingId);
             if (value === "null")
-              delete newValue[styleAttribute.datasetKey];
+              delete newValue[styleAttribute.key];
             else
-              newValue[styleAttribute.datasetKey] = value;
+              newValue[styleAttribute.key] = value;
             await this.settingsManager.setSetting({
               [settingId]: newValue
             });
@@ -2686,7 +2758,7 @@ var SearchStyleAttributeModal = class extends SearchKeyValueSettingModal {
     return "Type to search style attributes...";
   }
   getAllSuggestions() {
-    return this.setting.getParameters(this.settingsManager).map((styleAttribute) => [styleAttribute.datasetKey, styleAttribute]);
+    return this.setting.getParameters(this.settingsManager).map((styleAttribute) => [styleAttribute.key, styleAttribute]);
   }
   doesSuggestionMatchQuery(key, value, query) {
     return key.toLowerCase().includes(query.toLowerCase()) || value.label.toLowerCase().includes(query.toLowerCase());
@@ -2729,9 +2801,9 @@ var SetStyleAttributeModal = class extends SearchKeyValueSettingModal {
   onSelectedSuggestion(key, _value) {
     const newValue = this.settingsManager.getSetting(this.settingsKey);
     if (key === null)
-      delete newValue[this.styleAttribute.datasetKey];
+      delete newValue[this.styleAttribute.key];
     else
-      newValue[this.styleAttribute.datasetKey] = key;
+      newValue[this.styleAttribute.key] = key;
     this.settingsManager.setSetting({
       [this.settingsKey]: newValue
     });
@@ -2961,6 +3033,27 @@ var DebugHelper = class {
     console.log("EdgeAdded Efficiency:", this.edgeAddedCount / canvas.edges.size);
     console.log("EdgeChanged Efficiency:", this.edgeChangedCount / canvas.edges.size);
   }
+  static markBBox(canvas, bbox, duration = -1) {
+    const node = canvas.createTextNode({
+      pos: { x: bbox.minX, y: bbox.minY },
+      size: { width: bbox.maxX - bbox.minX, height: bbox.maxY - bbox.minY },
+      text: "",
+      focus: false
+    });
+    node.setData({
+      ...node.getData(),
+      id: "debug-bbox",
+      color: "1",
+      styleAttributes: {
+        border: "invisible"
+      }
+    });
+    if (duration >= 0) {
+      setTimeout(() => {
+        canvas.removeNode(node);
+      }, duration);
+    }
+  }
 };
 
 // src/utils/migration-helper.ts
@@ -3032,6 +3125,10 @@ var WindowsManager = class {
   }
 };
 
+// src/patchers/canvas-patcher.ts
+var import_view = require("@codemirror/view");
+var import_json_stable_stringify = __toESM(require_json_stable_stringify());
+
 // node_modules/monkey-around/mjs/index.js
 function around(obj, factories) {
   const removers = Object.keys(factories).map((key) => around1(obj, key, factories[key]));
@@ -3066,25 +3163,41 @@ function around1(obj, method, createWrapper) {
   }
 }
 
+// src/patchers/canvas-patcher.ts
+var import_obsidian4 = require("obsidian");
+
 // src/utils/patch-helper.ts
-var PatchHelper = class {
-  static tryPatchWorkspacePrototype(plugin, getTarget, functions) {
+var PatchHelper = class _PatchHelper {
+  static OverrideExisting(fn) {
+    return Object.assign(fn, { __overrideExisting: true });
+  }
+  static patchPrototype(plugin, target, patches) {
+    return _PatchHelper.patch(plugin, target, patches, true);
+  }
+  static patch(plugin, object, patches, prototype = false) {
+    if (!object)
+      return null;
+    const target = prototype ? object.constructor.prototype : object;
+    for (const key of Object.keys(patches)) {
+      const patch = patches[key];
+      if (patch == null ? void 0 : patch.__overrideExisting) {
+        if (typeof target[key] !== "function")
+          throw new Error(`Method ${String(key)} does not exist on target`);
+      }
+    }
+    const uninstaller = around(target, patches);
+    plugin.register(uninstaller);
+    return object;
+  }
+  static tryPatchWorkspacePrototype(plugin, getTarget, patches) {
     return new Promise((resolve) => {
-      const tryPatch = () => {
-        const target = getTarget();
-        if (!target)
-          return null;
-        const uninstaller = around(target.constructor.prototype, functions);
-        plugin.register(uninstaller);
-        return target;
-      };
-      const result = tryPatch();
+      const result = _PatchHelper.patchPrototype(plugin, getTarget(), patches);
       if (result) {
         resolve(result);
         return;
       }
       const listener = plugin.app.workspace.on("layout-change", () => {
-        const result2 = tryPatch();
+        const result2 = _PatchHelper.patchPrototype(plugin, getTarget(), patches);
         if (result2) {
           plugin.app.workspace.offref(listener);
           resolve(result2);
@@ -3093,19 +3206,7 @@ var PatchHelper = class {
       plugin.registerEvent(listener);
     });
   }
-  static patchObjectPrototype(plugin, target, functions) {
-    const uninstaller = around(target.constructor.prototype, functions);
-    plugin.register(uninstaller);
-  }
-  static patchObjectInstance(plugin, target, functions) {
-    const uninstaller = around(target, functions);
-    plugin.register(uninstaller);
-  }
 };
-
-// src/patchers/canvas-patcher.ts
-var import_obsidian4 = require("obsidian");
-var import_view = require("@codemirror/view");
 
 // node_modules/tiny-jsonc/dist/index.js
 var stringOrCommentRe = /("(?:\\?[^])*?")|(\/\/.*)|(\/\*[^]*?\*\/)/g;
@@ -3122,9 +3223,6 @@ var JSONC = {
 };
 var dist_default = JSONC;
 
-// src/patchers/canvas-patcher.ts
-var import_json_stable_stringify = __toESM(require_json_stable_stringify());
-
 // src/patchers/patcher.ts
 var Patcher = class {
   constructor(plugin) {
@@ -3132,551 +3230,6 @@ var Patcher = class {
     this.patch();
   }
 };
-
-// src/patchers/canvas-patcher.ts
-var CanvasPatcher = class extends Patcher {
-  async patch() {
-    const that = this;
-    await new Promise((resolve) => this.plugin.app.workspace.onLayoutReady(() => resolve()));
-    const getCanvasView = async () => {
-      var _a;
-      const canvasLeaf = (_a = this.plugin.app.workspace.getLeavesOfType("canvas")) == null ? void 0 : _a.first();
-      if (!canvasLeaf)
-        return null;
-      if ((0, import_obsidian4.requireApiVersion)("1.7.2"))
-        await canvasLeaf.loadIfDeferred();
-      return canvasLeaf.view;
-    };
-    let canvasView = await getCanvasView();
-    canvasView != null ? canvasView : canvasView = await new Promise((resolve) => {
-      const event = this.plugin.app.workspace.on("layout-change", async () => {
-        const newCanvasView = await getCanvasView();
-        if (!newCanvasView)
-          return;
-        resolve(newCanvasView);
-        this.plugin.app.workspace.offref(event);
-      });
-      this.plugin.registerEvent(event);
-    });
-    PatchHelper.patchObjectPrototype(this.plugin, canvasView, {
-      getViewData: (next) => function(...args) {
-        const canvasData = this.canvas.getData();
-        try {
-          return (0, import_json_stable_stringify.default)(canvasData, { space: 2 });
-        } catch (e) {
-          console.error("Failed to stringify canvas data using json-stable-stringify:", e);
-          try {
-            return JSON.stringify(canvasData, null, 2);
-          } catch (e2) {
-            console.error("Failed to stringify canvas data using JSON.stringify:", e2);
-            return next.call(this, ...args);
-          }
-        }
-      },
-      setViewData: (next) => function(json, ...args) {
-        json = json !== "" ? json : "{}";
-        let result;
-        try {
-          result = next.call(this, json, ...args);
-        } catch (e) {
-          console.error("Invalid JSON, repairing through Advanced Canvas:", e);
-          that.plugin.createFileSnapshot(this.file.path, json);
-          json = JSON.stringify(dist_default.parse(json), null, 2);
-          result = next.call(this, json, ...args);
-        }
-        that.triggerWorkspaceEvent(CanvasEvent.CanvasChanged, this.canvas);
-        return result;
-      }
-    });
-    PatchHelper.patchObjectPrototype(this.plugin, canvasView.canvas, {
-      markViewportChanged: (next) => function(...args) {
-        that.triggerWorkspaceEvent(CanvasEvent.ViewportChanged.Before, this);
-        const result = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.ViewportChanged.After, this);
-        return result;
-      },
-      markMoved: (next) => function(node) {
-        const result = next.call(this, node);
-        that.triggerWorkspaceEvent(CanvasEvent.NodeMoved, this, node);
-        return result;
-      },
-      onDoubleClick: (next) => function(event) {
-        const preventDefault = { value: false };
-        that.triggerWorkspaceEvent(CanvasEvent.DoubleClick, this, event, preventDefault);
-        if (!preventDefault.value)
-          next.call(this, event);
-      },
-      setDragging: (next) => function(dragging) {
-        const result = next.call(this, dragging);
-        that.triggerWorkspaceEvent(CanvasEvent.DraggingStateChanged, this, dragging);
-        return result;
-      },
-      getContainingNodes: (next) => function(bbox) {
-        const result = next.call(this, bbox);
-        that.triggerWorkspaceEvent(CanvasEvent.ContainingNodesRequested, this, bbox, result);
-        return result;
-      },
-      updateSelection: (next) => function(update) {
-        const oldSelection = new Set(this.selection);
-        const result = next.call(this, update);
-        that.triggerWorkspaceEvent(CanvasEvent.SelectionChanged, this, oldSelection, (update2) => next.call(this, update2));
-        return result;
-      },
-      createTextNode: (next) => function(...args) {
-        const node = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node);
-        return node;
-      },
-      createFileNode: (next) => function(...args) {
-        const node = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node);
-        return node;
-      },
-      createFileNodes: (next) => function(...args) {
-        const nodes = next.call(this, ...args);
-        nodes.forEach((node) => that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node));
-        return nodes;
-      },
-      createGroupNode: (next) => function(...args) {
-        const node = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node);
-        return node;
-      },
-      createLinkNode: (next) => function(...args) {
-        const node = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node);
-        return node;
-      },
-      addNode: (next) => function(node) {
-        that.patchNode(node);
-        return next.call(this, node);
-      },
-      addEdge: (next) => function(edge) {
-        that.patchEdge(edge);
-        if (!this.viewportChanged)
-          that.triggerWorkspaceEvent(CanvasEvent.EdgeCreated, this, edge);
-        return next.call(this, edge);
-      },
-      removeNode: (next) => function(node) {
-        const result = next.call(this, node);
-        if (!this.isClearing)
-          that.triggerWorkspaceEvent(CanvasEvent.NodeRemoved, this, node);
-        return result;
-      },
-      removeEdge: (next) => function(edge) {
-        const result = next.call(this, edge);
-        if (!this.isClearing)
-          that.triggerWorkspaceEvent(CanvasEvent.EdgeRemoved, this, edge);
-        return result;
-      },
-      handleCopy: (next) => function(...args) {
-        this.isCopying = true;
-        const result = next.call(this, ...args);
-        this.isCopying = false;
-        return result;
-      },
-      getSelectionData: (next) => function(...args) {
-        const result = next.call(this, ...args);
-        if (this.isCopying)
-          that.triggerWorkspaceEvent(CanvasEvent.OnCopy, this, result);
-        return result;
-      },
-      zoomToBbox: (next) => function(bbox) {
-        that.triggerWorkspaceEvent(CanvasEvent.ZoomToBbox.Before, this, bbox);
-        const result = next.call(this, bbox);
-        that.triggerWorkspaceEvent(CanvasEvent.ZoomToBbox.After, this, bbox);
-        return result;
-      },
-      setReadonly: (next) => function(readonly) {
-        const result = next.call(this, readonly);
-        that.triggerWorkspaceEvent(CanvasEvent.ReadonlyChanged, this, readonly);
-        return result;
-      },
-      undo: (next) => function(...args) {
-        const result = next.call(this, ...args);
-        this.importData(this.getData(), true);
-        that.triggerWorkspaceEvent(CanvasEvent.Undo, this);
-        return result;
-      },
-      redo: (next) => function(...args) {
-        const result = next.call(this, ...args);
-        this.importData(this.getData(), true);
-        that.triggerWorkspaceEvent(CanvasEvent.Redo, this);
-        return result;
-      },
-      clear: (next) => function(...args) {
-        this.isClearing = true;
-        const result = next.call(this, ...args);
-        this.isClearing = false;
-        return result;
-      },
-      /*setData: (next: any) => function (...args: any) {
-        //
-        const result = next.call(this, ...args)
-        //
-        return result
-      },*/
-      getData: (next) => function(...args) {
-        const result = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.DataRequested, this, result);
-        return result;
-      },
-      importData: (next) => function(data, clearCanvas, silent) {
-        const targetFilePath = this.view.file.path;
-        const setData = (data2) => {
-          if (!this.view.file || this.view.file.path !== targetFilePath)
-            return;
-          this.importData(data2, true, true);
-        };
-        if (!silent)
-          that.triggerWorkspaceEvent(CanvasEvent.LoadData, this, data, setData);
-        const result = next.call(this, data, clearCanvas);
-        return result;
-      },
-      requestSave: (next) => function(...args) {
-        that.triggerWorkspaceEvent(CanvasEvent.CanvasSaved.Before, this);
-        const result = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.CanvasSaved.After, this);
-        return result;
-      }
-    });
-    PatchHelper.patchObjectPrototype(this.plugin, canvasView.canvas.menu, {
-      render: (next) => function(...args) {
-        const result = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.PopupMenuCreated, this.canvas);
-        next.call(this);
-        return result;
-      }
-    });
-    PatchHelper.patchObjectPrototype(this.plugin, canvasView.canvas.nodeInteractionLayer, {
-      setTarget: (next) => function(node) {
-        const result = next.call(this, node);
-        that.triggerWorkspaceEvent(CanvasEvent.NodeInteraction, this.canvas, node);
-        return result;
-      }
-    });
-    this.plugin.registerEditorExtension([import_view.EditorView.updateListener.of((update) => {
-      if (!update.docChanged)
-        return;
-      const editor = update.state.field(import_obsidian4.editorInfoField);
-      const node = editor.node;
-      if (!node)
-        return;
-      that.triggerWorkspaceEvent(CanvasEvent.NodeTextContentChanged, node.canvas, node, update);
-    })]);
-    this.plugin.app.workspace.iterateAllLeaves((leaf) => {
-      if (leaf.view.getViewType() !== "canvas")
-        return;
-      const canvasView2 = leaf.view;
-      canvasView2.leaf.rebuildView();
-    });
-  }
-  patchNode(node) {
-    const that = this;
-    PatchHelper.patchObjectInstance(this.plugin, node, {
-      setData: (next) => function(data, addHistory) {
-        const result = next.call(this, data);
-        if (node.initialized && !node.isDirty) {
-          node.isDirty = true;
-          that.triggerWorkspaceEvent(CanvasEvent.NodeChanged, this.canvas, node);
-          delete node.isDirty;
-        }
-        this.canvas.data = this.canvas.getData();
-        this.canvas.view.requestSave();
-        if (addHistory)
-          this.canvas.pushHistory(this.canvas.data);
-        return result;
-      },
-      setIsEditing: (next) => function(editing, ...args) {
-        const result = next.call(this, editing, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.NodeEditingStateChanged, this.canvas, node, editing);
-        return result;
-      },
-      updateBreakpoint: (next) => function(breakpoint) {
-        const breakpointRef = { value: breakpoint };
-        that.triggerWorkspaceEvent(CanvasEvent.NodeBreakpointChanged, this.canvas, node, breakpointRef);
-        return next.call(this, breakpointRef.value);
-      },
-      getBBox: (next) => function(...args) {
-        const result = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.NodeBBoxRequested, this.canvas, node, result);
-        return result;
-      }
-    });
-    this.runAfterInitialized(node, () => {
-      this.triggerWorkspaceEvent(CanvasEvent.NodeAdded, node.canvas, node);
-      this.triggerWorkspaceEvent(CanvasEvent.NodeChanged, node.canvas, node);
-    });
-  }
-  patchEdge(edge) {
-    const that = this;
-    PatchHelper.patchObjectInstance(this.plugin, edge, {
-      setData: (next) => function(data, addHistory) {
-        const result = next.call(this, data);
-        if (edge.initialized && !edge.isDirty) {
-          edge.isDirty = true;
-          that.triggerWorkspaceEvent(CanvasEvent.EdgeChanged, this.canvas, edge);
-          delete edge.isDirty;
-        }
-        this.canvas.data = this.canvas.getData();
-        this.canvas.view.requestSave();
-        if (addHistory)
-          this.canvas.pushHistory(this.canvas.getData());
-        return result;
-      },
-      render: (next) => function(...args) {
-        const result = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.EdgeChanged, this.canvas, edge);
-        return result;
-      },
-      getCenter: (next) => function(...args) {
-        const result = next.call(this, ...args);
-        that.triggerWorkspaceEvent(CanvasEvent.EdgeCenterRequested, this.canvas, edge, result);
-        return result;
-      }
-    });
-    this.runAfterInitialized(edge, () => {
-      this.triggerWorkspaceEvent(CanvasEvent.EdgeAdded, edge.canvas, edge);
-    });
-  }
-  runAfterInitialized(canvasElement, onReady) {
-    if (canvasElement.initialized) {
-      onReady();
-      return;
-    }
-    const that = this;
-    const uninstall = around(canvasElement, {
-      initialize: (next) => function(...args) {
-        const result = next.call(this, ...args);
-        onReady();
-        uninstall();
-        return result;
-      }
-    });
-    that.plugin.register(uninstall);
-  }
-  triggerWorkspaceEvent(event, ...args) {
-    this.plugin.app.workspace.trigger(event, ...args);
-  }
-};
-
-// src/patchers/metadata-cache-patcher.ts
-var import_obsidian5 = require("obsidian");
-
-// src/utils/hash-helper.ts
-var import_crypto = __toESM(require("crypto"));
-var HashHelper = class {
-  static hash(str) {
-    return import_crypto.default.createHash("sha256").update(str).digest("hex");
-  }
-};
-
-// src/utils/path-helper.ts
-var PathHelper = class {
-  static extension(path) {
-    return path.includes(".") ? path.split(".").pop() : void 0;
-  }
-};
-
-// src/patchers/metadata-cache-patcher.ts
-var MetadataCachePatcher = class extends Patcher {
-  async patch() {
-    if (!this.plugin.settings.getSetting("canvasMetadataCompatibilityEnabled"))
-      return;
-    const that = this;
-    await PatchHelper.patchObjectPrototype(this.plugin, this.plugin.app.metadataCache, {
-      getCache: (next) => function(filepath, ...args) {
-        if (PathHelper.extension(filepath) === "canvas") {
-          if (!this.fileCache.hasOwnProperty(filepath))
-            return null;
-          const hash = this.fileCache[filepath].hash;
-          return this.metadataCache[hash] || null;
-        }
-        return next.call(this, filepath, ...args);
-      },
-      onCreateOrModify: (next) => async function(file, ...args) {
-        if (PathHelper.extension(file.path) !== "canvas")
-          return next.call(this, file, ...args);
-        this.saveFileCache(file.path, {
-          hash: HashHelper.hash(file.path),
-          // Hash wouldn't get set in the original function
-          mtime: file.stat.mtime,
-          size: file.stat.size
-        });
-        this.resolveLinks(file.path);
-      },
-      resolveLinks: (next) => async function(filepath, ...args) {
-        var _a;
-        if (PathHelper.extension(filepath) !== "canvas")
-          return next.call(this, filepath, ...args);
-        const file = this.vault.getAbstractFileByPath(filepath);
-        if (!(file instanceof import_obsidian5.TFile))
-          return;
-        const fileCache = this.fileCache[file.path];
-        if (!fileCache)
-          return;
-        const content = JSON.parse((_a = await this.vault.cachedRead(file)) != null ? _a : "{}");
-        if (!(content == null ? void 0 : content.nodes))
-          return;
-        const fileNodesEmbeds = content.nodes.filter((node) => node.type === "file" && node.file).map((node) => node.file).map((path) => ({
-          link: path,
-          original: path,
-          displayText: path,
-          position: { start: { line: 0, col: 0, offset: 0 }, end: { line: 0, col: 0, offset: 0 } }
-        }));
-        const textEncoder = new TextEncoder();
-        const textNodesMetadataPromises = content.nodes.filter((node) => node.type === "text" && node.text).map((node) => node.text).map((text) => textEncoder.encode(text).buffer).map((buffer) => this.computeMetadataAsync(buffer));
-        const textNodesMetadata = await Promise.all(textNodesMetadataPromises);
-        const textNodesEmbeds = textNodesMetadata.map((metadata) => metadata.embeds || []).flat();
-        const textNodesLinks = textNodesMetadata.map((metadata) => metadata.links || []).flat();
-        this.metadataCache[fileCache.hash] = {
-          v: 1,
-          embeds: [
-            ...fileNodesEmbeds,
-            ...textNodesEmbeds
-          ],
-          links: [
-            ...textNodesLinks
-          ]
-        };
-        this.resolvedLinks[file.path] = [...fileNodesEmbeds, ...textNodesEmbeds, ...textNodesLinks].reduce((acc, cacheEntry) => {
-          acc[cacheEntry.link] = (acc[cacheEntry.link] || 0) + 1;
-          return acc;
-        }, {});
-        if (!that.plugin.settings.getSetting("treatFileNodeEdgesAsLinks"))
-          return;
-        for (const edge of (content == null ? void 0 : content.edges) || []) {
-          const from = content.nodes.find((node) => node.id === edge.fromNode);
-          const to = content.nodes.find((node) => node.id === edge.toNode);
-          if (!from || !to)
-            continue;
-          if (from.type !== "file" || to.type !== "file" || !from.file || !to.file)
-            continue;
-          this.registerInternalLinkAC(file.name, from.file, to.file);
-          if (!(edge.toEnd !== "none" || edge.fromEnd === "arrow"))
-            this.registerInternalLinkAC(file.name, to.file, from.file);
-        }
-      },
-      registerInternalLinkAC: (_next) => function(canvasName, from, to) {
-        var _a, _b, _c, _d;
-        const fromFileHash = (_b = (_a = this.fileCache[from]) == null ? void 0 : _a.hash) != null ? _b : HashHelper.hash(from);
-        const fromFileMetadataCache = (_c = this.metadataCache[fromFileHash]) != null ? _c : { v: 1 };
-        this.metadataCache[fromFileHash] = {
-          ...fromFileMetadataCache,
-          links: [
-            ...fromFileMetadataCache.links || [],
-            {
-              link: to,
-              original: to,
-              displayText: `${canvasName} \u2192 ${to}`,
-              position: { start: { line: 0, col: 0, offset: 0 }, end: { line: 0, col: 0, offset: 0 } }
-            }
-          ]
-        };
-        this.resolvedLinks[from] = {
-          ...this.resolvedLinks[from],
-          [to]: (((_d = this.resolvedLinks[from]) == null ? void 0 : _d[to]) || 0) + 1
-        };
-      }
-    });
-    this.plugin.app.workspace.onLayoutReady(() => {
-      const graphViews = [...this.plugin.app.workspace.getLeavesOfType("graph"), ...this.plugin.app.workspace.getLeavesOfType("localgraph")];
-      for (const view of graphViews)
-        view.rebuildView();
-    });
-  }
-};
-
-// src/patchers/backlinks-patcher.ts
-var import_obsidian6 = require("obsidian");
-var BacklinksPatcher = class extends Patcher {
-  constructor() {
-    super(...arguments);
-    this.isRecomputingBacklinks = false;
-  }
-  async patch() {
-    if (!this.plugin.settings.getSetting("canvasMetadataCompatibilityEnabled"))
-      return;
-    const that = this;
-    const backlinkPatch = PatchHelper.tryPatchWorkspacePrototype(this.plugin, () => {
-      var _a, _b;
-      return (_b = (_a = this.plugin.app.workspace.getLeavesOfType("backlink").first()) == null ? void 0 : _a.view) == null ? void 0 : _b.backlink;
-    }, {
-      recomputeBacklink: (next) => function(file, ...args) {
-        that.isRecomputingBacklinks = true;
-        const result = next.call(this, file, ...args);
-        that.isRecomputingBacklinks = false;
-        return result;
-      }
-    });
-    const vaultPatch = PatchHelper.patchObjectPrototype(this.plugin, this.plugin.app.vault, {
-      recurseChildrenAC: (_next) => function(origin, traverse) {
-        for (var stack = [origin]; stack.length > 0; ) {
-          var current = stack.pop();
-          if (current) {
-            traverse(current);
-            if (current instanceof import_obsidian6.TFolder)
-              stack = stack.concat(current.children);
-          }
-        }
-      },
-      getMarkdownFiles: (next) => function(file, ...args) {
-        if (!that.isRecomputingBacklinks)
-          return next.call(this, file, ...args);
-        var files = [];
-        var root = this.getRoot();
-        this.recurseChildrenAC(root, (child) => {
-          if (child instanceof import_obsidian6.TFile && (child.extension === "md" || child.extension === "canvas")) {
-            files.push(child);
-          }
-        });
-        return files;
-      }
-    });
-    const [backlink] = await Promise.all([backlinkPatch, vaultPatch]);
-    backlink.recomputeBacklink(this.plugin.app.workspace.getActiveFile());
-  }
-};
-
-// src/patchers/outgoing-links-patcher.ts
-var OutgoingLinksPatcher = class extends Patcher {
-  async patch() {
-    if (!this.plugin.settings.getSetting("canvasMetadataCompatibilityEnabled"))
-      return;
-    const that = this;
-    const outgoingLinkPatch = PatchHelper.tryPatchWorkspacePrototype(this.plugin, () => {
-      var _a, _b;
-      return (_b = (_a = this.plugin.app.workspace.getLeavesOfType("outgoing-link").first()) == null ? void 0 : _a.view) == null ? void 0 : _b.outgoingLink;
-    }, {
-      recomputeLinks: (next) => function(...args) {
-        var _a;
-        const isCanvas = ((_a = this.file) == null ? void 0 : _a.extension) === "canvas";
-        if (isCanvas)
-          this.file.extension = "md";
-        const result = next.call(this, ...args);
-        if (isCanvas)
-          this.file.extension = "canvas";
-        return result;
-      },
-      recomputeUnlinked: (next) => function(...args) {
-        var _a;
-        const isCanvas = ((_a = this.file) == null ? void 0 : _a.extension) === "canvas";
-        if (isCanvas)
-          this.file.extension = "md";
-        const result = next.call(this, ...args);
-        if (isCanvas)
-          this.file.extension = "canvas";
-        return result;
-      }
-    });
-    const [outgoingLink] = await Promise.all([outgoingLinkPatch]);
-    outgoingLink.recomputeLinks();
-    outgoingLink.recomputeUnlinked();
-  }
-};
-
-// src/utils/canvas-helper.ts
-var import_obsidian7 = require("obsidian");
 
 // src/utils/bbox-helper.ts
 var BBoxHelper = class {
@@ -3782,7 +3335,635 @@ var BBoxHelper = class {
   }
 };
 
+// src/patchers/canvas-patcher.ts
+var CanvasPatcher = class extends Patcher {
+  async patch() {
+    const that = this;
+    await new Promise((resolve) => this.plugin.app.workspace.onLayoutReady(() => resolve()));
+    const getCanvasView = async () => {
+      var _a;
+      const canvasLeaf = (_a = this.plugin.app.workspace.getLeavesOfType("canvas")) == null ? void 0 : _a.first();
+      if (!canvasLeaf)
+        return null;
+      if ((0, import_obsidian4.requireApiVersion)("1.7.2"))
+        await canvasLeaf.loadIfDeferred();
+      return canvasLeaf.view;
+    };
+    let canvasView = await getCanvasView();
+    canvasView != null ? canvasView : canvasView = await new Promise((resolve) => {
+      const event = this.plugin.app.workspace.on("layout-change", async () => {
+        const newCanvasView = await getCanvasView();
+        if (!newCanvasView)
+          return;
+        resolve(newCanvasView);
+        this.plugin.app.workspace.offref(event);
+      });
+      this.plugin.registerEvent(event);
+    });
+    PatchHelper.patchPrototype(this.plugin, canvasView, {
+      getViewData: PatchHelper.OverrideExisting((next) => function(...args) {
+        const canvasData = this.canvas.getData();
+        try {
+          const stringified = (0, import_json_stable_stringify.default)(canvasData, { space: 2 });
+          if (stringified === void 0)
+            throw new Error("Failed to stringify canvas data using json-stable-stringify");
+          return stringified;
+        } catch (e) {
+          console.error("Failed to stringify canvas data using json-stable-stringify:", e);
+          try {
+            return JSON.stringify(canvasData, null, 2);
+          } catch (e2) {
+            console.error("Failed to stringify canvas data using JSON.stringify:", e2);
+            return next.call(this, ...args);
+          }
+        }
+      }),
+      setViewData: PatchHelper.OverrideExisting((next) => function(json, ...args) {
+        json = json !== "" ? json : "{}";
+        let result;
+        try {
+          result = next.call(this, json, ...args);
+        } catch (e) {
+          console.error("Invalid JSON, repairing through Advanced Canvas:", e);
+          that.plugin.createFileSnapshot(this.file.path, json);
+          json = JSON.stringify(dist_default.parse(json), null, 2);
+          result = next.call(this, json, ...args);
+        }
+        that.triggerWorkspaceEvent(CanvasEvent.CanvasChanged, this.canvas);
+        return result;
+      })
+    });
+    PatchHelper.patchPrototype(this.plugin, canvasView.canvas, {
+      markViewportChanged: PatchHelper.OverrideExisting((next) => function(...args) {
+        that.triggerWorkspaceEvent(CanvasEvent.ViewportChanged.Before, this);
+        const result = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.ViewportChanged.After, this);
+        return result;
+      }),
+      markMoved: PatchHelper.OverrideExisting((next) => function(node) {
+        const result = next.call(this, node);
+        if (!this.viewportChanged) {
+          if (node.prevX !== node.x || node.prevY !== node.y)
+            that.triggerWorkspaceEvent(CanvasEvent.NodeMoved, this, node, !this.isDragging);
+          if (node.prevWidth !== node.width || node.prevHeight !== node.height)
+            that.triggerWorkspaceEvent(CanvasEvent.NodeResized, this, node);
+        }
+        node.prevX = node.x;
+        node.prevY = node.y;
+        node.prevWidth = node.width;
+        node.prevHeight = node.height;
+        return result;
+      }),
+      onDoubleClick: PatchHelper.OverrideExisting((next) => function(event) {
+        const preventDefault = { value: false };
+        that.triggerWorkspaceEvent(CanvasEvent.DoubleClick, this, event, preventDefault);
+        if (!preventDefault.value)
+          next.call(this, event);
+      }),
+      setDragging: PatchHelper.OverrideExisting((next) => function(dragging) {
+        const result = next.call(this, dragging);
+        that.triggerWorkspaceEvent(CanvasEvent.DraggingStateChanged, this, dragging);
+        return result;
+      }),
+      getContainingNodes: PatchHelper.OverrideExisting((next) => function(bbox) {
+        const result = next.call(this, bbox);
+        that.triggerWorkspaceEvent(CanvasEvent.ContainingNodesRequested, this, bbox, result);
+        return result;
+      }),
+      updateSelection: PatchHelper.OverrideExisting((next) => function(update) {
+        const oldSelection = new Set(this.selection);
+        const result = next.call(this, update);
+        that.triggerWorkspaceEvent(CanvasEvent.SelectionChanged, this, oldSelection, (update2) => next.call(this, update2));
+        return result;
+      }),
+      createTextNode: PatchHelper.OverrideExisting((next) => function(...args) {
+        const node = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node);
+        return node;
+      }),
+      createFileNode: PatchHelper.OverrideExisting((next) => function(...args) {
+        const node = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node);
+        return node;
+      }),
+      createFileNodes: PatchHelper.OverrideExisting((next) => function(...args) {
+        const nodes = next.call(this, ...args);
+        nodes.forEach((node) => that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node));
+        return nodes;
+      }),
+      createGroupNode: PatchHelper.OverrideExisting((next) => function(...args) {
+        const node = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node);
+        return node;
+      }),
+      createLinkNode: PatchHelper.OverrideExisting((next) => function(...args) {
+        const node = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.NodeCreated, this, node);
+        return node;
+      }),
+      addNode: PatchHelper.OverrideExisting((next) => function(node) {
+        that.patchNode(node);
+        return next.call(this, node);
+      }),
+      addEdge: PatchHelper.OverrideExisting((next) => function(edge) {
+        that.patchEdge(edge);
+        if (!this.viewportChanged)
+          that.triggerWorkspaceEvent(CanvasEvent.EdgeCreated, this, edge);
+        return next.call(this, edge);
+      }),
+      removeNode: PatchHelper.OverrideExisting((next) => function(node) {
+        const result = next.call(this, node);
+        if (!this.isClearing)
+          that.triggerWorkspaceEvent(CanvasEvent.NodeRemoved, this, node);
+        return result;
+      }),
+      removeEdge: PatchHelper.OverrideExisting((next) => function(edge) {
+        const result = next.call(this, edge);
+        if (!this.isClearing)
+          that.triggerWorkspaceEvent(CanvasEvent.EdgeRemoved, this, edge);
+        return result;
+      }),
+      handleCopy: PatchHelper.OverrideExisting((next) => function(...args) {
+        this.isCopying = true;
+        const result = next.call(this, ...args);
+        this.isCopying = false;
+        return result;
+      }),
+      getSelectionData: PatchHelper.OverrideExisting((next) => function(...args) {
+        const result = next.call(this, ...args);
+        if (this.isCopying)
+          that.triggerWorkspaceEvent(CanvasEvent.OnCopy, this, result);
+        return result;
+      }),
+      zoomToBbox: PatchHelper.OverrideExisting((next) => function(bbox) {
+        that.triggerWorkspaceEvent(CanvasEvent.ZoomToBbox.Before, this, bbox);
+        const result = next.call(this, bbox);
+        that.triggerWorkspaceEvent(CanvasEvent.ZoomToBbox.After, this, bbox);
+        return result;
+      }),
+      setReadonly: PatchHelper.OverrideExisting((next) => function(readonly) {
+        const result = next.call(this, readonly);
+        that.triggerWorkspaceEvent(CanvasEvent.ReadonlyChanged, this, readonly);
+        return result;
+      }),
+      undo: PatchHelper.OverrideExisting((next) => function(...args) {
+        const result = next.call(this, ...args);
+        this.importData(this.getData(), true);
+        that.triggerWorkspaceEvent(CanvasEvent.Undo, this);
+        return result;
+      }),
+      redo: PatchHelper.OverrideExisting((next) => function(...args) {
+        const result = next.call(this, ...args);
+        this.importData(this.getData(), true);
+        that.triggerWorkspaceEvent(CanvasEvent.Redo, this);
+        return result;
+      }),
+      clear: PatchHelper.OverrideExisting((next) => function(...args) {
+        this.isClearing = true;
+        const result = next.call(this, ...args);
+        this.isClearing = false;
+        return result;
+      }),
+      /*setData: PatchHelper.OverrideExisting(next => function (...args: any): void {
+        //
+        const result = next.call(this, ...args)
+        //
+        return result
+      }),*/
+      getData: PatchHelper.OverrideExisting((next) => function(...args) {
+        const result = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.DataRequested, this, result);
+        return result;
+      }),
+      importData: PatchHelper.OverrideExisting((next) => function(data, clearCanvas, silent) {
+        const targetFilePath = this.view.file.path;
+        const setData = (data2) => {
+          if (!this.view.file || this.view.file.path !== targetFilePath)
+            return;
+          this.importData(data2, true, true);
+        };
+        if (!silent)
+          that.triggerWorkspaceEvent(CanvasEvent.LoadData, this, data, setData);
+        const result = next.call(this, data, clearCanvas);
+        return result;
+      }),
+      requestSave: PatchHelper.OverrideExisting((next) => function(...args) {
+        that.triggerWorkspaceEvent(CanvasEvent.CanvasSaved.Before, this);
+        const result = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.CanvasSaved.After, this);
+        return result;
+      })
+    });
+    PatchHelper.patchPrototype(this.plugin, canvasView.canvas.menu, {
+      render: PatchHelper.OverrideExisting((next) => function(...args) {
+        const result = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.PopupMenuCreated, this.canvas);
+        next.call(this);
+        return result;
+      })
+    });
+    PatchHelper.patchPrototype(this.plugin, canvasView.canvas.nodeInteractionLayer, {
+      setTarget: PatchHelper.OverrideExisting((next) => function(node) {
+        const result = next.call(this, node);
+        that.triggerWorkspaceEvent(CanvasEvent.NodeInteraction, this.canvas, node);
+        return result;
+      })
+    });
+    this.plugin.registerEditorExtension([import_view.EditorView.updateListener.of((update) => {
+      if (!update.docChanged)
+        return;
+      const editor = update.state.field(import_obsidian4.editorInfoField);
+      const node = editor.node;
+      if (!node)
+        return;
+      that.triggerWorkspaceEvent(CanvasEvent.NodeTextContentChanged, node.canvas, node, update);
+    })]);
+    this.plugin.app.workspace.iterateAllLeaves((leaf) => {
+      if (leaf.view.getViewType() !== "canvas")
+        return;
+      const canvasView2 = leaf.view;
+      canvasView2.leaf.rebuildView();
+    });
+  }
+  patchNode(node) {
+    const that = this;
+    PatchHelper.patch(this.plugin, node, {
+      setData: PatchHelper.OverrideExisting((next) => function(data, addHistory) {
+        const result = next.call(this, data);
+        if (node.initialized && !node.isDirty) {
+          node.isDirty = true;
+          that.triggerWorkspaceEvent(CanvasEvent.NodeChanged, this.canvas, node);
+          delete node.isDirty;
+        }
+        this.canvas.data = this.canvas.getData();
+        this.canvas.view.requestSave();
+        if (addHistory)
+          this.canvas.pushHistory(this.canvas.data);
+        return result;
+      }),
+      setIsEditing: PatchHelper.OverrideExisting((next) => function(editing, ...args) {
+        const result = next.call(this, editing, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.NodeEditingStateChanged, this.canvas, node, editing);
+        return result;
+      }),
+      updateBreakpoint: PatchHelper.OverrideExisting((next) => function(breakpoint) {
+        const breakpointRef = { value: breakpoint };
+        that.triggerWorkspaceEvent(CanvasEvent.NodeBreakpointChanged, this.canvas, node, breakpointRef);
+        return next.call(this, breakpointRef.value);
+      }),
+      getBBox: PatchHelper.OverrideExisting((next) => function(...args) {
+        const result = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.NodeBBoxRequested, this.canvas, node, result);
+        return result;
+      }),
+      onConnectionPointerdown: PatchHelper.OverrideExisting((next) => function(e, side) {
+        const addEdgeEventRef = that.plugin.app.workspace.on(CanvasEvent.EdgeAdded, (_canvas, edge) => {
+          that.triggerWorkspaceEvent(CanvasEvent.EdgeConnectionDragging.Before, this.canvas, edge, e, true, "to");
+          that.plugin.app.workspace.offref(addEdgeEventRef);
+          document.addEventListener("pointerup", (e2) => {
+            that.triggerWorkspaceEvent(CanvasEvent.EdgeConnectionDragging.After, this.canvas, edge, e2, true, "to");
+          }, { once: true });
+        });
+        const result = next.call(this, e, side);
+        return result;
+      })
+    });
+    this.runAfterInitialized(node, () => {
+      this.triggerWorkspaceEvent(CanvasEvent.NodeAdded, node.canvas, node);
+      this.triggerWorkspaceEvent(CanvasEvent.NodeChanged, node.canvas, node);
+    });
+  }
+  patchEdge(edge) {
+    const that = this;
+    PatchHelper.patch(this.plugin, edge, {
+      setData: PatchHelper.OverrideExisting((next) => function(data, addHistory) {
+        const result = next.call(this, data);
+        if (this.initialized && !this.isDirty) {
+          this.isDirty = true;
+          that.triggerWorkspaceEvent(CanvasEvent.EdgeChanged, this.canvas, this);
+          delete this.isDirty;
+        }
+        this.canvas.data = this.canvas.getData();
+        this.canvas.view.requestSave();
+        if (addHistory)
+          this.canvas.pushHistory(this.canvas.getData());
+        return result;
+      }),
+      render: PatchHelper.OverrideExisting((next) => function(...args) {
+        const result = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.EdgeChanged, this.canvas, this);
+        return result;
+      }),
+      getCenter: PatchHelper.OverrideExisting((next) => function(...args) {
+        const result = next.call(this, ...args);
+        that.triggerWorkspaceEvent(CanvasEvent.EdgeCenterRequested, this.canvas, this, result);
+        return result;
+      }),
+      onConnectionPointerdown: PatchHelper.OverrideExisting((next) => function(e) {
+        const result = next.call(this, e);
+        const eventPos = this.canvas.posFromEvt(e);
+        const fromPos = BBoxHelper.getCenterOfBBoxSide(this.from.node.getBBox(), this.from.side);
+        const toPos = BBoxHelper.getCenterOfBBoxSide(this.to.node.getBBox(), this.to.side);
+        const draggingSide = Math.hypot(eventPos.x - fromPos.x, eventPos.y - fromPos.y) > Math.hypot(eventPos.x - toPos.x, eventPos.y - toPos.y) ? "to" : "from";
+        that.triggerWorkspaceEvent(CanvasEvent.EdgeConnectionDragging.Before, this.canvas, this, e, false, draggingSide);
+        document.addEventListener("pointerup", (e2) => {
+          that.triggerWorkspaceEvent(CanvasEvent.EdgeConnectionDragging.After, this.canvas, this, e2, false, draggingSide);
+        }, { once: true });
+        return result;
+      })
+    });
+    this.runAfterInitialized(edge, () => {
+      this.triggerWorkspaceEvent(CanvasEvent.EdgeAdded, edge.canvas, edge);
+    });
+  }
+  runAfterInitialized(canvasElement, onReady) {
+    if (canvasElement.initialized) {
+      onReady();
+      return;
+    }
+    const that = this;
+    const uninstall = around(canvasElement, {
+      initialize: (next) => function(...args) {
+        const result = next.call(this, ...args);
+        onReady();
+        uninstall();
+        return result;
+      }
+    });
+    that.plugin.register(uninstall);
+  }
+  triggerWorkspaceEvent(event, ...args) {
+    this.plugin.app.workspace.trigger(event, ...args);
+  }
+};
+
+// src/patchers/metadata-cache-patcher.ts
+var import_obsidian5 = require("obsidian");
+
+// src/utils/hash-helper.ts
+var HashHelper = class _HashHelper {
+  static async getFileHash(plugin, file) {
+    const bytes = await plugin.app.vault.readBinary(file);
+    const cryptoBytes = await crypto.subtle.digest("SHA-256", new Uint8Array(bytes));
+    return _HashHelper.arrayBufferToHexString(cryptoBytes);
+  }
+  static arrayBufferToHexString(buffer) {
+    const uint8Array = new Uint8Array(buffer);
+    const hexArray = [];
+    for (const byte of uint8Array) {
+      hexArray.push((byte >>> 4).toString(16));
+      hexArray.push((byte & 15).toString(16));
+    }
+    return hexArray.join("");
+  }
+};
+
+// src/utils/path-helper.ts
+var PathHelper = class {
+  static extension(path) {
+    return path.includes(".") ? path.split(".").pop() : void 0;
+  }
+};
+
+// src/patchers/metadata-cache-patcher.ts
+var MetadataCachePatcher = class extends Patcher {
+  async patch() {
+    if (!this.plugin.settings.getSetting("canvasMetadataCompatibilityEnabled"))
+      return;
+    const that = this;
+    PatchHelper.patchPrototype(this.plugin, this.plugin.app.metadataCache, {
+      getCache: PatchHelper.OverrideExisting((next) => function(filepath, ...args) {
+        if (PathHelper.extension(filepath) === "canvas") {
+          if (!this.fileCache.hasOwnProperty(filepath))
+            return null;
+          const hash = this.fileCache[filepath].hash;
+          return this.metadataCache[hash] || null;
+        }
+        return next.call(this, filepath, ...args);
+      }),
+      computeFileMetadataAsync: PatchHelper.OverrideExisting((next) => async function(file, ...args) {
+        var _a;
+        if (PathHelper.extension(file.path) !== "canvas")
+          return next.call(this, file, ...args);
+        const fileHash = await HashHelper.getFileHash(that.plugin, file);
+        this.saveFileCache(file.path, {
+          hash: fileHash,
+          // Hash wouldn't get set in the original function
+          mtime: file.stat.mtime,
+          size: file.stat.size
+        });
+        const content = JSON.parse((_a = await this.vault.cachedRead(file)) != null ? _a : "{}");
+        if (!(content == null ? void 0 : content.nodes))
+          return;
+        const fileNodesEmbeds = content.nodes.filter((node) => node.type === "file" && node.file).map((node) => [node.id, node.file]).map(([nodeId, file2]) => ({
+          link: file2,
+          original: file2,
+          displayText: file2,
+          position: {
+            nodeId,
+            start: { line: 0, col: 0, offset: 0 },
+            end: { line: 0, col: 0, offset: 0 }
+          }
+        }));
+        const textEncoder = new TextEncoder();
+        const textNodes = content.nodes.filter((node) => node.type === "text" && node.text);
+        const textNodesIds = textNodes.map((node) => node.id);
+        const textNodesMetadataPromises = textNodes.map((node) => textEncoder.encode(node.text).buffer).map((buffer) => this.computeMetadataAsync(buffer));
+        const textNodesMetadata = await Promise.all(textNodesMetadataPromises);
+        const textNodesEmbeds = textNodesMetadata.map((metadata, index) => (metadata.embeds || []).map((embed2) => ({
+          ...embed2,
+          position: {
+            nodeId: textNodesIds[index],
+            ...embed2.position
+          }
+        }))).flat();
+        const textNodesLinks = textNodesMetadata.map((metadata, index) => (metadata.links || []).map((link) => ({
+          ...link,
+          position: {
+            nodeId: textNodesIds[index],
+            ...link.position
+          }
+        }))).flat();
+        this.metadataCache[fileHash] = {
+          v: 1,
+          embeds: [
+            ...fileNodesEmbeds,
+            ...textNodesEmbeds
+          ],
+          links: [
+            ...textNodesLinks
+          ],
+          nodes: {
+            ...textNodesMetadata.reduce((acc, metadata, index) => {
+              acc[textNodesIds[index]] = metadata;
+              return acc;
+            }, {})
+          }
+        };
+        this.trigger("changed", file, "", this.metadataCache[fileHash]);
+        this.resolveLinks(file.path, content);
+      }),
+      resolveLinks: PatchHelper.OverrideExisting((next) => async function(filepath, cachedContent) {
+        var _a, _b, _c;
+        if (PathHelper.extension(filepath) !== "canvas")
+          return next.call(this, filepath);
+        const file = this.vault.getAbstractFileByPath(filepath);
+        if (!file)
+          return;
+        const metadataCache = this.metadataCache[(_a = this.fileCache[filepath]) == null ? void 0 : _a.hash];
+        if (!metadataCache)
+          return;
+        const metadataReferences = [...metadataCache.links || [], ...metadataCache.embeds || []];
+        this.resolvedLinks[filepath] = metadataReferences.reduce((acc, metadataReference) => {
+          const resolvedLinkpath = this.getFirstLinkpathDest(metadataReference.link, filepath);
+          if (!resolvedLinkpath)
+            return acc;
+          acc[resolvedLinkpath.path] = (acc[resolvedLinkpath.path] || 0) + 1;
+          return acc;
+        }, {});
+        if (that.plugin.settings.getSetting("treatFileNodeEdgesAsLinks")) {
+          for (const edge of cachedContent.edges || []) {
+            const from = (_b = cachedContent.nodes) == null ? void 0 : _b.find((node) => node.id === edge.fromNode);
+            const to = (_c = cachedContent.nodes) == null ? void 0 : _c.find((node) => node.id === edge.toNode);
+            if (!from || !to)
+              continue;
+            if (from.type !== "file" || to.type !== "file" || !from.file || !to.file)
+              continue;
+            this.registerInternalLinkAC(file.name, from.file, to.file);
+            if (!(edge.toEnd !== "none" || edge.fromEnd === "arrow"))
+              this.registerInternalLinkAC(file.name, to.file, from.file);
+          }
+        }
+        this.trigger("resolve", file);
+        this.trigger("resolved");
+      }),
+      registerInternalLinkAC: (_next) => async function(canvasName, from, to) {
+        var _a, _b, _c, _d;
+        if (from === to)
+          return;
+        const fromFile = this.vault.getAbstractFileByPath(from);
+        if (!fromFile || !(fromFile instanceof import_obsidian5.TFile))
+          return;
+        if (!["md", "canvas"].includes(fromFile.extension))
+          return;
+        const fromFileHash = (_b = (_a = this.fileCache[from]) == null ? void 0 : _a.hash) != null ? _b : await HashHelper.getFileHash(that.plugin, fromFile);
+        const fromFileMetadataCache = (_c = this.metadataCache[fromFileHash]) != null ? _c : { v: 1 };
+        this.metadataCache[fromFileHash] = {
+          ...fromFileMetadataCache,
+          links: [
+            ...fromFileMetadataCache.links || [],
+            {
+              link: to,
+              original: to,
+              displayText: `${canvasName} \u2192 ${to}`,
+              position: { start: { line: 0, col: 0, offset: 0 }, end: { line: 0, col: 0, offset: 0 } }
+            }
+          ]
+        };
+        this.resolvedLinks[from] = {
+          ...this.resolvedLinks[from],
+          [to]: (((_d = this.resolvedLinks[from]) == null ? void 0 : _d[to]) || 0) + 1
+        };
+      }
+    });
+    this.plugin.registerEvent(this.plugin.app.vault.on("modify", (file) => {
+      if (PathHelper.extension(file.path) !== "canvas")
+        return;
+      this.plugin.app.metadataCache.computeFileMetadataAsync(file);
+    }));
+  }
+};
+
+// src/patchers/backlinks-patcher.ts
+var import_obsidian6 = require("obsidian");
+var BacklinksPatcher = class extends Patcher {
+  constructor() {
+    super(...arguments);
+    this.isRecomputingBacklinks = false;
+  }
+  async patch() {
+    if (!this.plugin.settings.getSetting("canvasMetadataCompatibilityEnabled"))
+      return;
+    const that = this;
+    const backlinkPatch = PatchHelper.tryPatchWorkspacePrototype(this.plugin, () => {
+      var _a, _b;
+      return (_b = (_a = this.plugin.app.workspace.getLeavesOfType("backlink").first()) == null ? void 0 : _a.view) == null ? void 0 : _b.backlink;
+    }, {
+      recomputeBacklink: PatchHelper.OverrideExisting((next) => function(file, ...args) {
+        that.isRecomputingBacklinks = true;
+        const result = next.call(this, file, ...args);
+        that.isRecomputingBacklinks = false;
+        return result;
+      })
+    });
+    const vaultPatch = PatchHelper.patchPrototype(this.plugin, this.plugin.app.vault, {
+      recurseChildrenAC: (_next) => function(origin, traverse) {
+        for (var stack = [origin]; stack.length > 0; ) {
+          var current = stack.pop();
+          if (current) {
+            traverse(current);
+            if (current instanceof import_obsidian6.TFolder)
+              stack = stack.concat(current.children);
+          }
+        }
+      },
+      getMarkdownFiles: PatchHelper.OverrideExisting((next) => function(...args) {
+        if (!that.isRecomputingBacklinks)
+          return next.call(this, ...args);
+        var files = [];
+        var root = this.getRoot();
+        this.recurseChildrenAC(root, (child) => {
+          if (child instanceof import_obsidian6.TFile && (child.extension === "md" || child.extension === "canvas")) {
+            files.push(child);
+          }
+        });
+        return files;
+      })
+    });
+    const [backlink] = await Promise.all([backlinkPatch, vaultPatch]);
+    backlink.recomputeBacklink(this.plugin.app.workspace.getActiveFile());
+  }
+};
+
+// src/patchers/outgoing-links-patcher.ts
+var OutgoingLinksPatcher = class extends Patcher {
+  async patch() {
+    if (!this.plugin.settings.getSetting("canvasMetadataCompatibilityEnabled"))
+      return;
+    const that = this;
+    const outgoingLinkPatch = PatchHelper.tryPatchWorkspacePrototype(this.plugin, () => {
+      var _a, _b;
+      return (_b = (_a = this.plugin.app.workspace.getLeavesOfType("outgoing-link").first()) == null ? void 0 : _a.view) == null ? void 0 : _b.outgoingLink;
+    }, {
+      recomputeLinks: PatchHelper.OverrideExisting((next) => function(...args) {
+        var _a;
+        const isCanvas = ((_a = this.file) == null ? void 0 : _a.extension) === "canvas";
+        if (isCanvas)
+          this.file.extension = "md";
+        const result = next.call(this, ...args);
+        if (isCanvas)
+          this.file.extension = "canvas";
+        return result;
+      }),
+      recomputeUnlinked: PatchHelper.OverrideExisting((next) => function(...args) {
+        var _a;
+        const isCanvas = ((_a = this.file) == null ? void 0 : _a.extension) === "canvas";
+        if (isCanvas)
+          this.file.extension = "md";
+        const result = next.call(this, ...args);
+        if (isCanvas)
+          this.file.extension = "canvas";
+        return result;
+      })
+    });
+    const [outgoingLink] = await Promise.all([outgoingLinkPatch]);
+    outgoingLink.recomputeLinks();
+    outgoingLink.recomputeUnlinked();
+  }
+};
+
 // src/utils/canvas-helper.ts
+var import_obsidian7 = require("obsidian");
 var _CanvasHelper = class _CanvasHelper {
   static canvasCommand(plugin, check, run) {
     return (checking) => {
@@ -3896,29 +4077,42 @@ var _CanvasHelper = class _CanvasHelper {
       y: (viewBounds.minY + viewBounds.maxY) / 2 - nodeSize.height / 2
     };
   }
-  static getBBox(canvasNodes) {
-    let minX = Infinity;
-    let minY = Infinity;
-    let maxX = -Infinity;
-    let maxY = -Infinity;
-    for (const node of canvasNodes) {
-      const nodeData = node.getData ? node.getData() : node;
-      minX = Math.min(minX, nodeData.x);
-      minY = Math.min(minY, nodeData.y);
-      maxX = Math.max(maxX, nodeData.x + nodeData.width);
-      maxY = Math.max(maxY, nodeData.y + nodeData.height);
-    }
-    return { minX, minY, maxX, maxY };
+  static getBBox(canvasElements) {
+    const bBoxes = canvasElements.map((element) => {
+      if (element.getBBox)
+        return element.getBBox();
+      const nodeData = element;
+      if (nodeData.x !== void 0 && nodeData.y !== void 0 && nodeData.width !== void 0 && nodeData.height !== void 0)
+        return { minX: nodeData.x, minY: nodeData.y, maxX: nodeData.x + nodeData.width, maxY: nodeData.y + nodeData.height };
+      return null;
+    }).filter((bbox) => bbox !== null);
+    return BBoxHelper.combineBBoxes(bBoxes);
   }
-  static zoomToBBox(canvas, bbox) {
-    const PADDING_CORRECTION_FACTOR = 1 / 1.1;
-    const zoomedBBox = BBoxHelper.scaleBBox(bbox, PADDING_CORRECTION_FACTOR);
-    canvas.zoomToBbox(zoomedBBox);
-    const scaleFactor = Math.min(
-      canvas.canvasRect.width / (bbox.maxX - bbox.minX),
-      canvas.canvasRect.height / (bbox.maxY - bbox.minY)
-    );
-    canvas.tZoom = Math.log2(scaleFactor);
+  static zoomToRealBBox(canvas, bbox) {
+    if (canvas.canvasRect.width === 0 || canvas.canvasRect.height === 0)
+      return;
+    const widthZoom = canvas.canvasRect.width / (bbox.maxX - bbox.minX);
+    const heightZoom = canvas.canvasRect.height / (bbox.maxY - bbox.minY);
+    const zoom = canvas.screenshotting ? Math.min(widthZoom, heightZoom) : Math.clamp(Math.min(widthZoom, heightZoom), -4, 1);
+    canvas.tZoom = Math.log2(zoom);
+    canvas.zoomCenter = null;
+    canvas.tx = (bbox.minX + bbox.maxX) / 2;
+    canvas.ty = (bbox.minY + bbox.maxY) / 2;
+    canvas.markViewportChanged();
+  }
+  static getSmallestAllowedZoomBBox(canvas, bbox) {
+    if (canvas.screenshotting)
+      return bbox;
+    if (canvas.canvasRect.width === 0 || canvas.canvasRect.height === 0)
+      return bbox;
+    const widthZoom = canvas.canvasRect.width / (bbox.maxX - bbox.minX);
+    const heightZoom = canvas.canvasRect.height / (bbox.maxY - bbox.minY);
+    const requiredZoom = Math.min(widthZoom, heightZoom);
+    if (requiredZoom > _CanvasHelper.MAX_ALLOWED_ZOOM) {
+      const scaleFactor = requiredZoom / _CanvasHelper.MAX_ALLOWED_ZOOM;
+      return BBoxHelper.scaleBBox(bbox, scaleFactor);
+    }
+    return bbox;
   }
   static addStyleAttributesToPopup(plugin, canvas, styleAttributes, currentStyleAttributes, setStyleAttribute) {
     if (!plugin.settings.getSetting("combineCustomStylesInDropdown"))
@@ -3929,9 +4123,9 @@ var _CanvasHelper = class _CanvasHelper {
   static addStyleAttributesButtons(canvas, stylableAttributes, currentStyleAttributes, setStyleAttribute) {
     var _a;
     for (const stylableAttribute of stylableAttributes) {
-      const selectedStyle = (_a = stylableAttribute.options.find((option) => currentStyleAttributes[stylableAttribute.datasetKey] === option.value)) != null ? _a : stylableAttribute.options.find((value) => value.value === null);
+      const selectedStyle = (_a = stylableAttribute.options.find((option) => currentStyleAttributes[stylableAttribute.key] === option.value)) != null ? _a : stylableAttribute.options.find((value) => value.value === null);
       const menuOption = _CanvasHelper.createExpandablePopupMenuOption({
-        id: `menu-option-${stylableAttribute.datasetKey}`,
+        id: `menu-option-${stylableAttribute.key}`,
         label: stylableAttribute.label,
         icon: selectedStyle.icon
       }, stylableAttribute.options.map((styleOption) => ({
@@ -3939,7 +4133,7 @@ var _CanvasHelper = class _CanvasHelper {
         icon: styleOption.icon,
         callback: () => {
           setStyleAttribute(stylableAttribute, styleOption.value);
-          currentStyleAttributes[stylableAttribute.datasetKey] = styleOption.value;
+          currentStyleAttributes[stylableAttribute.key] = styleOption.value;
           (0, import_obsidian7.setIcon)(menuOption, styleOption.icon);
           menuOption.dispatchEvent(new Event("click"));
         }
@@ -3989,7 +4183,7 @@ var _CanvasHelper = class _CanvasHelper {
         stylableAttributeElement.classList.add("tappable");
         const iconElement = document.createElement("div");
         iconElement.classList.add("menu-item-icon");
-        let selectedStyle = (_c = stylableAttribute.options.find((option) => currentStyleAttributes[stylableAttribute.datasetKey] === option.value)) != null ? _c : stylableAttribute.options.find((value) => value.value === null);
+        let selectedStyle = (_c = stylableAttribute.options.find((option) => currentStyleAttributes[stylableAttribute.key] === option.value)) != null ? _c : stylableAttribute.options.find((value) => value.value === null);
         (0, import_obsidian7.setIcon)(iconElement, selectedStyle.icon);
         stylableAttributeElement.appendChild(iconElement);
         const labelElement = document.createElement("div");
@@ -4029,7 +4223,7 @@ var _CanvasHelper = class _CanvasHelper {
               icon: styleOption.icon,
               callback: () => {
                 setStyleAttribute(stylableAttribute, styleOption.value);
-                currentStyleAttributes[stylableAttribute.datasetKey] = styleOption.value;
+                currentStyleAttributes[stylableAttribute.key] = styleOption.value;
                 selectedStyle = styleOption;
                 (0, import_obsidian7.setIcon)(iconElement, styleOption.icon);
                 styleMenuDropdownSubmenuElement.remove();
@@ -4082,6 +4276,7 @@ var _CanvasHelper = class _CanvasHelper {
   }
 };
 _CanvasHelper.GRID_SIZE = 20;
+_CanvasHelper.MAX_ALLOWED_ZOOM = 1;
 var CanvasHelper = _CanvasHelper;
 
 // src/canvas-extensions/group-canvas-extension.ts
@@ -4219,8 +4414,8 @@ var PresentationCanvasExtension = class extends CanvasExtension {
       (canvas) => this.onPopupMenuCreated(canvas)
     ));
     this.plugin.registerEvent(this.plugin.app.workspace.on(
-      CanvasEvent.NodeMoved,
-      (canvas, node) => this.onNodeMoved(canvas, node)
+      CanvasEvent.NodeResized,
+      (canvas, node) => this.onNodeResized(canvas, node)
     ));
   }
   onCanvasChanged(canvas) {
@@ -4257,7 +4452,7 @@ var PresentationCanvasExtension = class extends CanvasExtension {
       })
     );
   }
-  onNodeMoved(_canvas, node) {
+  onNodeResized(_canvas, node) {
     const nodeData = node.getData();
     if (!nodeData.sideRatio)
       return;
@@ -4338,28 +4533,29 @@ var PresentationCanvasExtension = class extends CanvasExtension {
   async animateNodeTransition(canvas, fromNode, toNode) {
     const useCustomZoomFunction = this.plugin.settings.getSetting("zoomToSlideWithoutPadding");
     const animationDurationMs = this.plugin.settings.getSetting("slideTransitionAnimationDuration") * 1e3;
+    const toNodeBBox = CanvasHelper.getSmallestAllowedZoomBBox(canvas, toNode.getBBox());
     if (animationDurationMs > 0 && fromNode) {
       const animationIntensity = this.plugin.settings.getSetting("slideTransitionAnimationIntensity");
-      const currentNodeBBoxEnlarged = BBoxHelper.scaleBBox(fromNode.getBBox(), animationIntensity);
+      const fromNodeBBox = CanvasHelper.getSmallestAllowedZoomBBox(canvas, fromNode.getBBox());
+      const currentNodeBBoxEnlarged = BBoxHelper.scaleBBox(fromNodeBBox, animationIntensity);
       if (useCustomZoomFunction)
-        CanvasHelper.zoomToBBox(canvas, currentNodeBBoxEnlarged);
+        CanvasHelper.zoomToRealBBox(canvas, currentNodeBBoxEnlarged);
       else
         canvas.zoomToBbox(currentNodeBBoxEnlarged);
       await sleep(animationDurationMs / 2);
       if (fromNode.getData().id !== toNode.getData().id) {
-        const nextNodeBBoxEnlarged = BBoxHelper.scaleBBox(toNode.getBBox(), animationIntensity + 0.1);
+        const nextNodeBBoxEnlarged = BBoxHelper.scaleBBox(toNodeBBox, animationIntensity + 0.1);
         if (useCustomZoomFunction)
-          CanvasHelper.zoomToBBox(canvas, nextNodeBBoxEnlarged);
+          CanvasHelper.zoomToRealBBox(canvas, nextNodeBBoxEnlarged);
         else
           canvas.zoomToBbox(nextNodeBBoxEnlarged);
         await sleep(animationDurationMs / 2);
       }
     }
-    let nodeBBox = toNode.getBBox();
     if (useCustomZoomFunction)
-      CanvasHelper.zoomToBBox(canvas, nodeBBox);
+      CanvasHelper.zoomToRealBBox(canvas, toNodeBBox);
     else
-      canvas.zoomToBbox(nodeBBox);
+      canvas.zoomToBbox(toNodeBBox);
   }
   async startPresentation(canvas, tryContinue = false) {
     if (!tryContinue || this.visitedNodeIds.length === 0) {
@@ -4379,6 +4575,8 @@ var PresentationCanvasExtension = class extends CanvasExtension {
     canvas.wrapperEl.requestFullscreen();
     canvas.wrapperEl.classList.add("presentation-mode");
     canvas.setReadonly(true);
+    if (this.plugin.settings.getSetting("useUnclampedZoomWhilePresenting"))
+      canvas.screenshotting = true;
     canvas.wrapperEl.onkeydown = (e) => {
       if (this.plugin.settings.getSetting("useArrowKeysToChangeSlides")) {
         if (e.key === "ArrowRight")
@@ -4428,6 +4626,8 @@ var PresentationCanvasExtension = class extends CanvasExtension {
     canvas.wrapperEl.onkeydown = null;
     canvas.wrapperEl.onfullscreenchange = null;
     canvas.setReadonly(false);
+    if (this.plugin.settings.getSetting("useUnclampedZoomWhilePresenting"))
+      canvas.screenshotting = false;
     canvas.wrapperEl.classList.remove("presentation-mode");
     if (document.fullscreenElement)
       document.exitFullscreen();
@@ -4472,11 +4672,7 @@ var PresentationCanvasExtension = class extends CanvasExtension {
     if (!fromNode)
       return;
     const toNodeId = this.visitedNodeIds.last();
-    if (!toNodeId)
-      return;
-    let toNode = canvas.nodes.get(toNodeId);
-    if (!toNode)
-      return;
+    let toNode = toNodeId ? canvas.nodes.get(toNodeId) : null;
     if (!toNode) {
       toNode = fromNode;
       this.visitedNodeIds.push(fromNodeId);
@@ -4679,7 +4875,7 @@ var import_obsidian9 = require("obsidian");
 var FileNameModal = class extends import_obsidian9.SuggestModal {
   constructor(app, parentPath, fileExtension) {
     super(app);
-    this.parentPath = parentPath;
+    this.parentPath = parentPath.replace(/^\//, "").replace(/\/$/, "");
     this.fileExtension = fileExtension;
   }
   getSuggestions(query) {
@@ -4687,8 +4883,10 @@ var FileNameModal = class extends import_obsidian9.SuggestModal {
     if (queryWithoutExtension === "")
       return [];
     const queryWithExtension = queryWithoutExtension + "." + this.fileExtension;
-    const suggestions = [`${this.parentPath}/${queryWithExtension}`, queryWithExtension].filter((s) => this.app.vault.getAbstractFileByPath(s) === null);
-    return suggestions;
+    const suggestions = [queryWithExtension];
+    if (this.parentPath.length > 0)
+      suggestions.splice(0, 0, `${this.parentPath}/${queryWithExtension}`);
+    return suggestions.filter((s) => this.app.vault.getAbstractFileByPath(s) === null);
   }
   renderSuggestion(text, el) {
     el.setText(text);
@@ -4787,14 +4985,18 @@ var EncapsulateCanvasExtension = class extends CanvasExtension {
     ));
   }
   async encapsulateSelection(canvas) {
-    var _a;
+    var _a, _b, _c, _d;
     const selection = canvas.getSelectionData();
-    const sourceFileFolder = (_a = canvas.view.file.parent) == null ? void 0 : _a.path;
-    if (!sourceFileFolder)
-      return;
+    const canvasSettings = this.plugin.app.internalPlugins.plugins.canvas.instance.options;
+    const defaultNewCanvasLocation = canvasSettings.newFileLocation;
+    let targetFolderPath = this.plugin.app.vault.getRoot().path;
+    if (defaultNewCanvasLocation === "current")
+      targetFolderPath = (_c = (_b = (_a = canvas.view.file) == null ? void 0 : _a.parent) == null ? void 0 : _b.path) != null ? _c : targetFolderPath;
+    else if (defaultNewCanvasLocation === "folder")
+      targetFolderPath = (_d = canvasSettings.newFileFolderPath) != null ? _d : targetFolderPath;
     const targetFilePath = await new FileNameModal(
       this.plugin.app,
-      sourceFileFolder,
+      targetFolderPath,
       "canvas"
     ).awaitInput();
     const newFileData = { nodes: selection.nodes, edges: selection.edges };
@@ -4858,6 +5060,15 @@ var CommandsCanvasExtension = class extends CanvasExtension {
         this.plugin,
         (canvas) => canvas.selection.size > 0,
         (canvas) => canvas.zoomToSelection()
+      )
+    });
+    this.plugin.addCommand({
+      id: "zoom-to-fit",
+      name: "Zoom to fit",
+      checkCallback: CanvasHelper.canvasCommand(
+        this.plugin,
+        (_canvas) => true,
+        (canvas) => canvas.zoomToFit()
       )
     });
     for (const direction of DIRECTIONS) {
@@ -5148,7 +5359,11 @@ var PortalsCanvasExtension = class extends CanvasExtension {
     ));
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       CanvasEvent.NodeMoved,
-      (canvas, node) => this.onNodeMoved(canvas, node)
+      (canvas, node, _keyboard) => this.onNodeMoved(canvas, node)
+    ));
+    this.plugin.registerEvent(this.plugin.app.workspace.on(
+      CanvasEvent.NodeResized,
+      (canvas, node) => this.onNodeResized(canvas, node)
     ));
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       CanvasEvent.DraggingStateChanged,
@@ -5173,6 +5388,11 @@ var PortalsCanvasExtension = class extends CanvasExtension {
           if (newData.nodes.length === data.nodes.length && newData.edges.length === data.edges.length)
             return;
           setData(newData);
+          for (const nodeData of [...newData.nodes, ...newData.nodes.slice().reverse()]) {
+            if (nodeData.type !== "file" || !nodeData.portalToFile)
+              continue;
+            this.onOpenPortalResized(canvas, canvas.nodes.get(nodeData.id));
+          }
         });
       }
     ));
@@ -5272,6 +5492,13 @@ var PortalsCanvasExtension = class extends CanvasExtension {
     } else
       (_a = this.restoreObjectSnappingState) == null ? void 0 : _a.call(this);
   }
+  getContainingNodes(canvas, portalNodeData) {
+    var _a;
+    const nestedNodesIdMap = (_a = portalNodeData.portalIdMaps) == null ? void 0 : _a.nodeIdMap;
+    if (!nestedNodesIdMap)
+      return [];
+    return Object.keys(nestedNodesIdMap).map((refNodeId) => canvas.nodes.get(refNodeId)).filter((node) => node !== void 0);
+  }
   onNodeMoved(canvas, node) {
     const nodeData = node.getData();
     if (nodeData.type !== "file" || !nodeData.portalToFile)
@@ -5279,25 +5506,12 @@ var PortalsCanvasExtension = class extends CanvasExtension {
     this.onOpenPortalMoved(canvas, node);
   }
   onOpenPortalMoved(canvas, portalNode) {
-    var _a;
     let portalNodeData = portalNode.getData();
-    const nestedNodesIdMap = (_a = portalNode.getData().portalIdMaps) == null ? void 0 : _a.nodeIdMap;
-    if (!nestedNodesIdMap)
-      return;
-    const nestedNodes = Object.keys(nestedNodesIdMap).map((refNodeId) => canvas.nodes.get(refNodeId)).filter((node) => node !== void 0);
-    const sourceBBox = CanvasHelper.getBBox(nestedNodes);
-    const targetSize = this.getPortalSize(sourceBBox);
-    if (portalNodeData.width !== targetSize.width || portalNodeData.height !== targetSize.height) {
-      portalNode.setData({
-        ...portalNodeData,
-        width: targetSize.width,
-        height: targetSize.height
-      });
-      return;
-    }
+    const nestedNodes = this.getContainingNodes(canvas, portalNodeData);
+    const containingNodesBBox = CanvasHelper.getBBox(nestedNodes);
     const portalOffset = {
-      x: portalNodeData.x - sourceBBox.minX + PORTAL_PADDING,
-      y: portalNodeData.y - sourceBBox.minY + PORTAL_PADDING
+      x: portalNodeData.x - containingNodesBBox.minX + PORTAL_PADDING,
+      y: portalNodeData.y - containingNodesBBox.minY + PORTAL_PADDING
     };
     for (const nestedNode of nestedNodes) {
       const nestedNodeData = nestedNode.getData();
@@ -5306,6 +5520,26 @@ var PortalsCanvasExtension = class extends CanvasExtension {
         x: nestedNodeData.x + portalOffset.x,
         y: nestedNodeData.y + portalOffset.y
       });
+    }
+  }
+  onNodeResized(canvas, node) {
+    const nodeData = node.getData();
+    if (nodeData.type !== "file" || !nodeData.portalToFile)
+      return;
+    this.onOpenPortalResized(canvas, node);
+  }
+  onOpenPortalResized(canvas, portalNode) {
+    let portalNodeData = portalNode.getData();
+    const nestedNodes = this.getContainingNodes(canvas, portalNodeData);
+    const containingNodesBBox = CanvasHelper.getBBox(nestedNodes);
+    const targetSize = this.getPortalSize(containingNodesBBox);
+    if (portalNodeData.width !== targetSize.width || portalNodeData.height !== targetSize.height) {
+      portalNode.setData({
+        ...portalNodeData,
+        width: targetSize.width,
+        height: targetSize.height
+      });
+      return;
     }
   }
   removePortalCanvasData(_canvas, data) {
@@ -5461,12 +5695,6 @@ var PortalsCanvasExtension = class extends CanvasExtension {
         portalId: portalNodeData.id
       });
     }
-    const nestedNodesBBox = CanvasHelper.getBBox(addedData.nodes);
-    const targetSize = this.getPortalSize(nestedNodesBBox);
-    portalNodeData.closedPortalWidth = portalNodeData.width;
-    portalNodeData.closedPortalHeight = portalNodeData.height;
-    portalNodeData.width = targetSize.width;
-    portalNodeData.height = targetSize.height;
     return addedData;
   }
   getPortalSize(sourceBBox) {
@@ -5552,7 +5780,7 @@ var BetterDefaultSettingsCanvasExtension = class extends CanvasExtension {
         break;
     }
   }
-  enforceNodeGridAlignment(canvas, node) {
+  enforceNodeGridAlignment(_canvas, node) {
     if (!this.plugin.settings.getSetting("alignNewNodesToGrid"))
       return;
     const nodeData = node.getData();
@@ -5912,17 +6140,1206 @@ var FlipEdgeCanvasExtension = class extends CanvasExtension {
   }
 };
 
+// node_modules/html-to-image/es/util.js
+function resolveUrl(url, baseUrl) {
+  if (url.match(/^[a-z]+:\/\//i)) {
+    return url;
+  }
+  if (url.match(/^\/\//)) {
+    return window.location.protocol + url;
+  }
+  if (url.match(/^[a-z]+:/i)) {
+    return url;
+  }
+  const doc = document.implementation.createHTMLDocument();
+  const base = doc.createElement("base");
+  const a = doc.createElement("a");
+  doc.head.appendChild(base);
+  doc.body.appendChild(a);
+  if (baseUrl) {
+    base.href = baseUrl;
+  }
+  a.href = url;
+  return a.href;
+}
+var uuid = (() => {
+  let counter = 0;
+  const random = () => (
+    // eslint-disable-next-line no-bitwise
+    `0000${(Math.random() * 36 ** 4 << 0).toString(36)}`.slice(-4)
+  );
+  return () => {
+    counter += 1;
+    return `u${random()}${counter}`;
+  };
+})();
+function toArray(arrayLike) {
+  const arr = [];
+  for (let i = 0, l = arrayLike.length; i < l; i++) {
+    arr.push(arrayLike[i]);
+  }
+  return arr;
+}
+function px(node, styleProperty) {
+  const win = node.ownerDocument.defaultView || window;
+  const val = win.getComputedStyle(node).getPropertyValue(styleProperty);
+  return val ? parseFloat(val.replace("px", "")) : 0;
+}
+function getNodeWidth(node) {
+  const leftBorder = px(node, "border-left-width");
+  const rightBorder = px(node, "border-right-width");
+  return node.clientWidth + leftBorder + rightBorder;
+}
+function getNodeHeight(node) {
+  const topBorder = px(node, "border-top-width");
+  const bottomBorder = px(node, "border-bottom-width");
+  return node.clientHeight + topBorder + bottomBorder;
+}
+function getImageSize(targetNode, options = {}) {
+  const width = options.width || getNodeWidth(targetNode);
+  const height = options.height || getNodeHeight(targetNode);
+  return { width, height };
+}
+function getPixelRatio() {
+  let ratio;
+  let FINAL_PROCESS;
+  try {
+    FINAL_PROCESS = process;
+  } catch (e) {
+  }
+  const val = FINAL_PROCESS && FINAL_PROCESS.env ? FINAL_PROCESS.env.devicePixelRatio : null;
+  if (val) {
+    ratio = parseInt(val, 10);
+    if (Number.isNaN(ratio)) {
+      ratio = 1;
+    }
+  }
+  return ratio || window.devicePixelRatio || 1;
+}
+var canvasDimensionLimit = 16384;
+function checkCanvasDimensions(canvas) {
+  if (canvas.width > canvasDimensionLimit || canvas.height > canvasDimensionLimit) {
+    if (canvas.width > canvasDimensionLimit && canvas.height > canvasDimensionLimit) {
+      if (canvas.width > canvas.height) {
+        canvas.height *= canvasDimensionLimit / canvas.width;
+        canvas.width = canvasDimensionLimit;
+      } else {
+        canvas.width *= canvasDimensionLimit / canvas.height;
+        canvas.height = canvasDimensionLimit;
+      }
+    } else if (canvas.width > canvasDimensionLimit) {
+      canvas.height *= canvasDimensionLimit / canvas.width;
+      canvas.width = canvasDimensionLimit;
+    } else {
+      canvas.width *= canvasDimensionLimit / canvas.height;
+      canvas.height = canvasDimensionLimit;
+    }
+  }
+}
+function createImage(url) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.decode = () => resolve(img);
+    img.onload = () => resolve(img);
+    img.onerror = reject;
+    img.crossOrigin = "anonymous";
+    img.decoding = "async";
+    img.src = url;
+  });
+}
+async function svgToDataURL(svg) {
+  return Promise.resolve().then(() => new XMLSerializer().serializeToString(svg)).then(encodeURIComponent).then((html) => `data:image/svg+xml;charset=utf-8,${html}`);
+}
+async function nodeToDataURL(node, width, height) {
+  const xmlns = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(xmlns, "svg");
+  const foreignObject = document.createElementNS(xmlns, "foreignObject");
+  svg.setAttribute("width", `${width}`);
+  svg.setAttribute("height", `${height}`);
+  svg.setAttribute("viewBox", `0 0 ${width} ${height}`);
+  foreignObject.setAttribute("width", "100%");
+  foreignObject.setAttribute("height", "100%");
+  foreignObject.setAttribute("x", "0");
+  foreignObject.setAttribute("y", "0");
+  foreignObject.setAttribute("externalResourcesRequired", "true");
+  svg.appendChild(foreignObject);
+  foreignObject.appendChild(node);
+  return svgToDataURL(svg);
+}
+var isInstanceOfElement = (node, instance) => {
+  if (node instanceof instance)
+    return true;
+  const nodePrototype = Object.getPrototypeOf(node);
+  if (nodePrototype === null)
+    return false;
+  return nodePrototype.constructor.name === instance.name || isInstanceOfElement(nodePrototype, instance);
+};
+
+// node_modules/html-to-image/es/clone-pseudos.js
+function formatCSSText(style) {
+  const content = style.getPropertyValue("content");
+  return `${style.cssText} content: '${content.replace(/'|"/g, "")}';`;
+}
+function formatCSSProperties(style) {
+  return toArray(style).map((name) => {
+    const value = style.getPropertyValue(name);
+    const priority = style.getPropertyPriority(name);
+    return `${name}: ${value}${priority ? " !important" : ""};`;
+  }).join(" ");
+}
+function getPseudoElementStyle(className, pseudo, style) {
+  const selector = `.${className}:${pseudo}`;
+  const cssText = style.cssText ? formatCSSText(style) : formatCSSProperties(style);
+  return document.createTextNode(`${selector}{${cssText}}`);
+}
+function clonePseudoElement(nativeNode, clonedNode, pseudo) {
+  const style = window.getComputedStyle(nativeNode, pseudo);
+  const content = style.getPropertyValue("content");
+  if (content === "" || content === "none") {
+    return;
+  }
+  const className = uuid();
+  try {
+    clonedNode.className = `${clonedNode.className} ${className}`;
+  } catch (err) {
+    return;
+  }
+  const styleElement = document.createElement("style");
+  styleElement.appendChild(getPseudoElementStyle(className, pseudo, style));
+  clonedNode.appendChild(styleElement);
+}
+function clonePseudoElements(nativeNode, clonedNode) {
+  clonePseudoElement(nativeNode, clonedNode, ":before");
+  clonePseudoElement(nativeNode, clonedNode, ":after");
+}
+
+// node_modules/html-to-image/es/mimes.js
+var WOFF = "application/font-woff";
+var JPEG = "image/jpeg";
+var mimes = {
+  woff: WOFF,
+  woff2: WOFF,
+  ttf: "application/font-truetype",
+  eot: "application/vnd.ms-fontobject",
+  png: "image/png",
+  jpg: JPEG,
+  jpeg: JPEG,
+  gif: "image/gif",
+  tiff: "image/tiff",
+  svg: "image/svg+xml",
+  webp: "image/webp"
+};
+function getExtension(url) {
+  const match = /\.([^./]*?)$/g.exec(url);
+  return match ? match[1] : "";
+}
+function getMimeType(url) {
+  const extension = getExtension(url).toLowerCase();
+  return mimes[extension] || "";
+}
+
+// node_modules/html-to-image/es/dataurl.js
+function getContentFromDataUrl(dataURL) {
+  return dataURL.split(/,/)[1];
+}
+function isDataUrl(url) {
+  return url.search(/^(data:)/) !== -1;
+}
+function makeDataUrl(content, mimeType) {
+  return `data:${mimeType};base64,${content}`;
+}
+async function fetchAsDataURL(url, init, process2) {
+  const res = await fetch(url, init);
+  if (res.status === 404) {
+    throw new Error(`Resource "${res.url}" not found`);
+  }
+  const blob = await res.blob();
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onerror = reject;
+    reader.onloadend = () => {
+      try {
+        resolve(process2({ res, result: reader.result }));
+      } catch (error) {
+        reject(error);
+      }
+    };
+    reader.readAsDataURL(blob);
+  });
+}
+var cache = {};
+function getCacheKey(url, contentType, includeQueryParams) {
+  let key = url.replace(/\?.*/, "");
+  if (includeQueryParams) {
+    key = url;
+  }
+  if (/ttf|otf|eot|woff2?/i.test(key)) {
+    key = key.replace(/.*\//, "");
+  }
+  return contentType ? `[${contentType}]${key}` : key;
+}
+async function resourceToDataURL(resourceUrl, contentType, options) {
+  const cacheKey = getCacheKey(resourceUrl, contentType, options.includeQueryParams);
+  if (cache[cacheKey] != null) {
+    return cache[cacheKey];
+  }
+  if (options.cacheBust) {
+    resourceUrl += (/\?/.test(resourceUrl) ? "&" : "?") + (/* @__PURE__ */ new Date()).getTime();
+  }
+  let dataURL;
+  try {
+    const content = await fetchAsDataURL(resourceUrl, options.fetchRequestInit, ({ res, result }) => {
+      if (!contentType) {
+        contentType = res.headers.get("Content-Type") || "";
+      }
+      return getContentFromDataUrl(result);
+    });
+    dataURL = makeDataUrl(content, contentType);
+  } catch (error) {
+    dataURL = options.imagePlaceholder || "";
+    let msg = `Failed to fetch resource: ${resourceUrl}`;
+    if (error) {
+      msg = typeof error === "string" ? error : error.message;
+    }
+    if (msg) {
+      console.warn(msg);
+    }
+  }
+  cache[cacheKey] = dataURL;
+  return dataURL;
+}
+
+// node_modules/html-to-image/es/clone-node.js
+async function cloneCanvasElement(canvas) {
+  const dataURL = canvas.toDataURL();
+  if (dataURL === "data:,") {
+    return canvas.cloneNode(false);
+  }
+  return createImage(dataURL);
+}
+async function cloneVideoElement(video, options) {
+  if (video.currentSrc) {
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    canvas.width = video.clientWidth;
+    canvas.height = video.clientHeight;
+    ctx === null || ctx === void 0 ? void 0 : ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    const dataURL2 = canvas.toDataURL();
+    return createImage(dataURL2);
+  }
+  const poster = video.poster;
+  const contentType = getMimeType(poster);
+  const dataURL = await resourceToDataURL(poster, contentType, options);
+  return createImage(dataURL);
+}
+async function cloneIFrameElement(iframe) {
+  var _a;
+  try {
+    if ((_a = iframe === null || iframe === void 0 ? void 0 : iframe.contentDocument) === null || _a === void 0 ? void 0 : _a.body) {
+      return await cloneNode(iframe.contentDocument.body, {}, true);
+    }
+  } catch (_b) {
+  }
+  return iframe.cloneNode(false);
+}
+async function cloneSingleNode(node, options) {
+  if (isInstanceOfElement(node, HTMLCanvasElement)) {
+    return cloneCanvasElement(node);
+  }
+  if (isInstanceOfElement(node, HTMLVideoElement)) {
+    return cloneVideoElement(node, options);
+  }
+  if (isInstanceOfElement(node, HTMLIFrameElement)) {
+    return cloneIFrameElement(node);
+  }
+  return node.cloneNode(false);
+}
+var isSlotElement = (node) => node.tagName != null && node.tagName.toUpperCase() === "SLOT";
+async function cloneChildren(nativeNode, clonedNode, options) {
+  var _a, _b;
+  let children = [];
+  if (isSlotElement(nativeNode) && nativeNode.assignedNodes) {
+    children = toArray(nativeNode.assignedNodes());
+  } else if (isInstanceOfElement(nativeNode, HTMLIFrameElement) && ((_a = nativeNode.contentDocument) === null || _a === void 0 ? void 0 : _a.body)) {
+    children = toArray(nativeNode.contentDocument.body.childNodes);
+  } else {
+    children = toArray(((_b = nativeNode.shadowRoot) !== null && _b !== void 0 ? _b : nativeNode).childNodes);
+  }
+  if (children.length === 0 || isInstanceOfElement(nativeNode, HTMLVideoElement)) {
+    return clonedNode;
+  }
+  await children.reduce((deferred, child) => deferred.then(() => cloneNode(child, options)).then((clonedChild) => {
+    if (clonedChild) {
+      clonedNode.appendChild(clonedChild);
+    }
+  }), Promise.resolve());
+  return clonedNode;
+}
+function cloneCSSStyle(nativeNode, clonedNode) {
+  const targetStyle = clonedNode.style;
+  if (!targetStyle) {
+    return;
+  }
+  const sourceStyle = window.getComputedStyle(nativeNode);
+  if (sourceStyle.cssText) {
+    targetStyle.cssText = sourceStyle.cssText;
+    targetStyle.transformOrigin = sourceStyle.transformOrigin;
+  } else {
+    toArray(sourceStyle).forEach((name) => {
+      let value = sourceStyle.getPropertyValue(name);
+      if (name === "font-size" && value.endsWith("px")) {
+        const reducedFont = Math.floor(parseFloat(value.substring(0, value.length - 2))) - 0.1;
+        value = `${reducedFont}px`;
+      }
+      if (isInstanceOfElement(nativeNode, HTMLIFrameElement) && name === "display" && value === "inline") {
+        value = "block";
+      }
+      if (name === "d" && clonedNode.getAttribute("d")) {
+        value = `path(${clonedNode.getAttribute("d")})`;
+      }
+      targetStyle.setProperty(name, value, sourceStyle.getPropertyPriority(name));
+    });
+  }
+}
+function cloneInputValue(nativeNode, clonedNode) {
+  if (isInstanceOfElement(nativeNode, HTMLTextAreaElement)) {
+    clonedNode.innerHTML = nativeNode.value;
+  }
+  if (isInstanceOfElement(nativeNode, HTMLInputElement)) {
+    clonedNode.setAttribute("value", nativeNode.value);
+  }
+}
+function cloneSelectValue(nativeNode, clonedNode) {
+  if (isInstanceOfElement(nativeNode, HTMLSelectElement)) {
+    const clonedSelect = clonedNode;
+    const selectedOption = Array.from(clonedSelect.children).find((child) => nativeNode.value === child.getAttribute("value"));
+    if (selectedOption) {
+      selectedOption.setAttribute("selected", "");
+    }
+  }
+}
+function decorate(nativeNode, clonedNode) {
+  if (isInstanceOfElement(clonedNode, Element)) {
+    cloneCSSStyle(nativeNode, clonedNode);
+    clonePseudoElements(nativeNode, clonedNode);
+    cloneInputValue(nativeNode, clonedNode);
+    cloneSelectValue(nativeNode, clonedNode);
+  }
+  return clonedNode;
+}
+async function ensureSVGSymbols(clone, options) {
+  const uses = clone.querySelectorAll ? clone.querySelectorAll("use") : [];
+  if (uses.length === 0) {
+    return clone;
+  }
+  const processedDefs = {};
+  for (let i = 0; i < uses.length; i++) {
+    const use = uses[i];
+    const id = use.getAttribute("xlink:href");
+    if (id) {
+      const exist = clone.querySelector(id);
+      const definition = document.querySelector(id);
+      if (!exist && definition && !processedDefs[id]) {
+        processedDefs[id] = await cloneNode(definition, options, true);
+      }
+    }
+  }
+  const nodes = Object.values(processedDefs);
+  if (nodes.length) {
+    const ns = "http://www.w3.org/1999/xhtml";
+    const svg = document.createElementNS(ns, "svg");
+    svg.setAttribute("xmlns", ns);
+    svg.style.position = "absolute";
+    svg.style.width = "0";
+    svg.style.height = "0";
+    svg.style.overflow = "hidden";
+    svg.style.display = "none";
+    const defs = document.createElementNS(ns, "defs");
+    svg.appendChild(defs);
+    for (let i = 0; i < nodes.length; i++) {
+      defs.appendChild(nodes[i]);
+    }
+    clone.appendChild(svg);
+  }
+  return clone;
+}
+async function cloneNode(node, options, isRoot) {
+  if (!isRoot && options.filter && !options.filter(node)) {
+    return null;
+  }
+  return Promise.resolve(node).then((clonedNode) => cloneSingleNode(clonedNode, options)).then((clonedNode) => cloneChildren(node, clonedNode, options)).then((clonedNode) => decorate(node, clonedNode)).then((clonedNode) => ensureSVGSymbols(clonedNode, options));
+}
+
+// node_modules/html-to-image/es/embed-resources.js
+var URL_REGEX = /url\((['"]?)([^'"]+?)\1\)/g;
+var URL_WITH_FORMAT_REGEX = /url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g;
+var FONT_SRC_REGEX = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
+function toRegex(url) {
+  const escaped = url.replace(/([.*+?^${}()|\[\]\/\\])/g, "\\$1");
+  return new RegExp(`(url\\(['"]?)(${escaped})(['"]?\\))`, "g");
+}
+function parseURLs(cssText) {
+  const urls = [];
+  cssText.replace(URL_REGEX, (raw, quotation, url) => {
+    urls.push(url);
+    return raw;
+  });
+  return urls.filter((url) => !isDataUrl(url));
+}
+async function embed(cssText, resourceURL, baseURL, options, getContentFromUrl) {
+  try {
+    const resolvedURL = baseURL ? resolveUrl(resourceURL, baseURL) : resourceURL;
+    const contentType = getMimeType(resourceURL);
+    let dataURL;
+    if (getContentFromUrl) {
+      const content = await getContentFromUrl(resolvedURL);
+      dataURL = makeDataUrl(content, contentType);
+    } else {
+      dataURL = await resourceToDataURL(resolvedURL, contentType, options);
+    }
+    return cssText.replace(toRegex(resourceURL), `$1${dataURL}$3`);
+  } catch (error) {
+  }
+  return cssText;
+}
+function filterPreferredFontFormat(str, { preferredFontFormat }) {
+  return !preferredFontFormat ? str : str.replace(FONT_SRC_REGEX, (match) => {
+    while (true) {
+      const [src, , format] = URL_WITH_FORMAT_REGEX.exec(match) || [];
+      if (!format) {
+        return "";
+      }
+      if (format === preferredFontFormat) {
+        return `src: ${src};`;
+      }
+    }
+  });
+}
+function shouldEmbed(url) {
+  return url.search(URL_REGEX) !== -1;
+}
+async function embedResources(cssText, baseUrl, options) {
+  if (!shouldEmbed(cssText)) {
+    return cssText;
+  }
+  const filteredCSSText = filterPreferredFontFormat(cssText, options);
+  const urls = parseURLs(filteredCSSText);
+  return urls.reduce((deferred, url) => deferred.then((css) => embed(css, url, baseUrl, options)), Promise.resolve(filteredCSSText));
+}
+
+// node_modules/html-to-image/es/embed-images.js
+async function embedProp(propName, node, options) {
+  var _a;
+  const propValue = (_a = node.style) === null || _a === void 0 ? void 0 : _a.getPropertyValue(propName);
+  if (propValue) {
+    const cssString = await embedResources(propValue, null, options);
+    node.style.setProperty(propName, cssString, node.style.getPropertyPriority(propName));
+    return true;
+  }
+  return false;
+}
+async function embedBackground(clonedNode, options) {
+  if (!await embedProp("background", clonedNode, options)) {
+    await embedProp("background-image", clonedNode, options);
+  }
+  if (!await embedProp("mask", clonedNode, options)) {
+    await embedProp("mask-image", clonedNode, options);
+  }
+}
+async function embedImageNode(clonedNode, options) {
+  const isImageElement = isInstanceOfElement(clonedNode, HTMLImageElement);
+  if (!(isImageElement && !isDataUrl(clonedNode.src)) && !(isInstanceOfElement(clonedNode, SVGImageElement) && !isDataUrl(clonedNode.href.baseVal))) {
+    return;
+  }
+  const url = isImageElement ? clonedNode.src : clonedNode.href.baseVal;
+  const dataURL = await resourceToDataURL(url, getMimeType(url), options);
+  await new Promise((resolve, reject) => {
+    clonedNode.onload = resolve;
+    clonedNode.onerror = reject;
+    const image = clonedNode;
+    if (image.decode) {
+      image.decode = resolve;
+    }
+    if (image.loading === "lazy") {
+      image.loading = "eager";
+    }
+    if (isImageElement) {
+      clonedNode.srcset = "";
+      clonedNode.src = dataURL;
+    } else {
+      clonedNode.href.baseVal = dataURL;
+    }
+  });
+}
+async function embedChildren(clonedNode, options) {
+  const children = toArray(clonedNode.childNodes);
+  const deferreds = children.map((child) => embedImages(child, options));
+  await Promise.all(deferreds).then(() => clonedNode);
+}
+async function embedImages(clonedNode, options) {
+  if (isInstanceOfElement(clonedNode, Element)) {
+    await embedBackground(clonedNode, options);
+    await embedImageNode(clonedNode, options);
+    await embedChildren(clonedNode, options);
+  }
+}
+
+// node_modules/html-to-image/es/apply-style.js
+function applyStyle(node, options) {
+  const { style } = node;
+  if (options.backgroundColor) {
+    style.backgroundColor = options.backgroundColor;
+  }
+  if (options.width) {
+    style.width = `${options.width}px`;
+  }
+  if (options.height) {
+    style.height = `${options.height}px`;
+  }
+  const manual = options.style;
+  if (manual != null) {
+    Object.keys(manual).forEach((key) => {
+      style[key] = manual[key];
+    });
+  }
+  return node;
+}
+
+// node_modules/html-to-image/es/embed-webfonts.js
+var cssFetchCache = {};
+async function fetchCSS(url) {
+  let cache2 = cssFetchCache[url];
+  if (cache2 != null) {
+    return cache2;
+  }
+  const res = await fetch(url);
+  const cssText = await res.text();
+  cache2 = { url, cssText };
+  cssFetchCache[url] = cache2;
+  return cache2;
+}
+async function embedFonts(data, options) {
+  let cssText = data.cssText;
+  const regexUrl = /url\(["']?([^"')]+)["']?\)/g;
+  const fontLocs = cssText.match(/url\([^)]+\)/g) || [];
+  const loadFonts = fontLocs.map(async (loc) => {
+    let url = loc.replace(regexUrl, "$1");
+    if (!url.startsWith("https://")) {
+      url = new URL(url, data.url).href;
+    }
+    return fetchAsDataURL(url, options.fetchRequestInit, ({ result }) => {
+      cssText = cssText.replace(loc, `url(${result})`);
+      return [loc, result];
+    });
+  });
+  return Promise.all(loadFonts).then(() => cssText);
+}
+function parseCSS(source) {
+  if (source == null) {
+    return [];
+  }
+  const result = [];
+  const commentsRegex = /(\/\*[\s\S]*?\*\/)/gi;
+  let cssText = source.replace(commentsRegex, "");
+  const keyframesRegex = new RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})", "gi");
+  while (true) {
+    const matches = keyframesRegex.exec(cssText);
+    if (matches === null) {
+      break;
+    }
+    result.push(matches[0]);
+  }
+  cssText = cssText.replace(keyframesRegex, "");
+  const importRegex = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;
+  const combinedCSSRegex = "((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})";
+  const unifiedRegex = new RegExp(combinedCSSRegex, "gi");
+  while (true) {
+    let matches = importRegex.exec(cssText);
+    if (matches === null) {
+      matches = unifiedRegex.exec(cssText);
+      if (matches === null) {
+        break;
+      } else {
+        importRegex.lastIndex = unifiedRegex.lastIndex;
+      }
+    } else {
+      unifiedRegex.lastIndex = importRegex.lastIndex;
+    }
+    result.push(matches[0]);
+  }
+  return result;
+}
+async function getCSSRules(styleSheets, options) {
+  const ret = [];
+  const deferreds = [];
+  styleSheets.forEach((sheet) => {
+    if ("cssRules" in sheet) {
+      try {
+        toArray(sheet.cssRules || []).forEach((item, index) => {
+          if (item.type === CSSRule.IMPORT_RULE) {
+            let importIndex = index + 1;
+            const url = item.href;
+            const deferred = fetchCSS(url).then((metadata) => embedFonts(metadata, options)).then((cssText) => parseCSS(cssText).forEach((rule) => {
+              try {
+                sheet.insertRule(rule, rule.startsWith("@import") ? importIndex += 1 : sheet.cssRules.length);
+              } catch (error) {
+                console.error("Error inserting rule from remote css", {
+                  rule,
+                  error
+                });
+              }
+            })).catch((e) => {
+              console.error("Error loading remote css", e.toString());
+            });
+            deferreds.push(deferred);
+          }
+        });
+      } catch (e) {
+        const inline = styleSheets.find((a) => a.href == null) || document.styleSheets[0];
+        if (sheet.href != null) {
+          deferreds.push(fetchCSS(sheet.href).then((metadata) => embedFonts(metadata, options)).then((cssText) => parseCSS(cssText).forEach((rule) => {
+            inline.insertRule(rule, sheet.cssRules.length);
+          })).catch((err) => {
+            console.error("Error loading remote stylesheet", err);
+          }));
+        }
+        console.error("Error inlining remote css file", e);
+      }
+    }
+  });
+  return Promise.all(deferreds).then(() => {
+    styleSheets.forEach((sheet) => {
+      if ("cssRules" in sheet) {
+        try {
+          toArray(sheet.cssRules || []).forEach((item) => {
+            ret.push(item);
+          });
+        } catch (e) {
+          console.error(`Error while reading CSS rules from ${sheet.href}`, e);
+        }
+      }
+    });
+    return ret;
+  });
+}
+function getWebFontRules(cssRules) {
+  return cssRules.filter((rule) => rule.type === CSSRule.FONT_FACE_RULE).filter((rule) => shouldEmbed(rule.style.getPropertyValue("src")));
+}
+async function parseWebFontRules(node, options) {
+  if (node.ownerDocument == null) {
+    throw new Error("Provided element is not within a Document");
+  }
+  const styleSheets = toArray(node.ownerDocument.styleSheets);
+  const cssRules = await getCSSRules(styleSheets, options);
+  return getWebFontRules(cssRules);
+}
+async function getWebFontCSS(node, options) {
+  const rules = await parseWebFontRules(node, options);
+  const cssTexts = await Promise.all(rules.map((rule) => {
+    const baseUrl = rule.parentStyleSheet ? rule.parentStyleSheet.href : null;
+    return embedResources(rule.cssText, baseUrl, options);
+  }));
+  return cssTexts.join("\n");
+}
+async function embedWebFonts(clonedNode, options) {
+  const cssText = options.fontEmbedCSS != null ? options.fontEmbedCSS : options.skipFonts ? null : await getWebFontCSS(clonedNode, options);
+  if (cssText) {
+    const styleNode = document.createElement("style");
+    const sytleContent = document.createTextNode(cssText);
+    styleNode.appendChild(sytleContent);
+    if (clonedNode.firstChild) {
+      clonedNode.insertBefore(styleNode, clonedNode.firstChild);
+    } else {
+      clonedNode.appendChild(styleNode);
+    }
+  }
+}
+
+// node_modules/html-to-image/es/index.js
+async function toSvg(node, options = {}) {
+  const { width, height } = getImageSize(node, options);
+  const clonedNode = await cloneNode(node, options, true);
+  await embedWebFonts(clonedNode, options);
+  await embedImages(clonedNode, options);
+  applyStyle(clonedNode, options);
+  const datauri = await nodeToDataURL(clonedNode, width, height);
+  return datauri;
+}
+async function toCanvas(node, options = {}) {
+  const { width, height } = getImageSize(node, options);
+  const svg = await toSvg(node, options);
+  const img = await createImage(svg);
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d");
+  const ratio = options.pixelRatio || getPixelRatio();
+  const canvasWidth = options.canvasWidth || width;
+  const canvasHeight = options.canvasHeight || height;
+  canvas.width = canvasWidth * ratio;
+  canvas.height = canvasHeight * ratio;
+  if (!options.skipAutoScale) {
+    checkCanvasDimensions(canvas);
+  }
+  canvas.style.width = `${canvasWidth}`;
+  canvas.style.height = `${canvasHeight}`;
+  if (options.backgroundColor) {
+    context.fillStyle = options.backgroundColor;
+    context.fillRect(0, 0, canvas.width, canvas.height);
+  }
+  context.drawImage(img, 0, 0, canvas.width, canvas.height);
+  return canvas;
+}
+async function toPng(node, options = {}) {
+  const canvas = await toCanvas(node, options);
+  return canvas.toDataURL();
+}
+
+// src/canvas-extensions/export-canvas-extension.ts
+var import_obsidian12 = require("obsidian");
+var MAX_ALLOWED_LOADING_TIME = 1e4;
+var ExportCanvasExtension = class extends CanvasExtension {
+  isEnabled() {
+    return "betterExportFeatureEnabled";
+  }
+  init() {
+    this.plugin.addCommand({
+      id: "export-all-as-image",
+      name: "Export canvas as image",
+      checkCallback: CanvasHelper.canvasCommand(
+        this.plugin,
+        (canvas) => canvas.nodes.size > 0,
+        (canvas) => this.showExportImageSettingsModal(canvas, null)
+      )
+    });
+    this.plugin.addCommand({
+      id: "export-selected-as-image",
+      name: "Export selected nodes as image",
+      checkCallback: CanvasHelper.canvasCommand(
+        this.plugin,
+        (canvas) => canvas.selection.size > 0,
+        (canvas) => this.showExportImageSettingsModal(
+          canvas,
+          canvas.getSelectionData().nodes.map((nodeData) => canvas.nodes.get(nodeData.id)).filter((node) => node !== void 0)
+        )
+      )
+    });
+  }
+  async showExportImageSettingsModal(canvas, nodesToExport) {
+    const modal = new import_obsidian12.Modal(this.plugin.app);
+    modal.setTitle("Export image settings");
+    let pixelRatioSetting = null;
+    let noFontExportSetting = null;
+    let transparentBackgroundSetting = null;
+    const updateDynamicSettings = () => {
+      var _a, _b, _c, _d, _e, _f;
+      if (svg) {
+        (_a = pixelRatioSetting == null ? void 0 : pixelRatioSetting.settingEl) == null ? void 0 : _a.hide();
+        (_b = noFontExportSetting == null ? void 0 : noFontExportSetting.settingEl) == null ? void 0 : _b.show();
+        (_c = transparentBackgroundSetting == null ? void 0 : transparentBackgroundSetting.settingEl) == null ? void 0 : _c.hide();
+      } else {
+        (_d = pixelRatioSetting == null ? void 0 : pixelRatioSetting.settingEl) == null ? void 0 : _d.show();
+        (_e = noFontExportSetting == null ? void 0 : noFontExportSetting.settingEl) == null ? void 0 : _e.hide();
+        (_f = transparentBackgroundSetting == null ? void 0 : transparentBackgroundSetting.settingEl) == null ? void 0 : _f.show();
+      }
+    };
+    let svg = false;
+    new import_obsidian12.Setting(modal.contentEl).setName("Export file format").setDesc("Choose the file format to export the canvas as.").addDropdown(
+      (dropdown) => dropdown.addOptions({
+        png: "PNG",
+        svg: "SVG"
+      }).setValue(svg ? "svg" : "png").onChange((value) => {
+        svg = value === "svg";
+        updateDynamicSettings();
+      })
+    );
+    let pixelRatioFactor = 1;
+    pixelRatioSetting = new import_obsidian12.Setting(modal.contentEl).setName("Pixel ratio").setDesc("Higher pixel ratios result in higher resolution images but also larger file sizes.").addSlider(
+      (slider) => slider.setDynamicTooltip().setLimits(0.2, 5, 0.1).setValue(pixelRatioFactor).onChange((value) => pixelRatioFactor = value)
+    );
+    let noFontExport = true;
+    noFontExportSetting = new import_obsidian12.Setting(modal.contentEl).setName("Skip font export").setDesc("This will not include the fonts in the exported SVG. This will make the SVG file smaller.").addToggle(
+      (toggle) => toggle.setValue(noFontExport).onChange((value) => noFontExport = value)
+    );
+    let watermark = false;
+    new import_obsidian12.Setting(modal.contentEl).setName("Show logo").setDesc("This will add an Obsidian + Advanced Canvas logo to the bottom left.").addToggle(
+      (toggle) => toggle.setValue(watermark).onChange((value) => watermark = value)
+    );
+    let garbledText = false;
+    new import_obsidian12.Setting(modal.contentEl).setName("Privacy mode").setDesc("This will obscure any text on your canvas.").addToggle(
+      (toggle) => toggle.setValue(garbledText).onChange((value) => garbledText = value)
+    );
+    let transparentBackground = false;
+    transparentBackgroundSetting = new import_obsidian12.Setting(modal.contentEl).setName("Transparent background").setDesc("This will make the background of the image transparent.").addToggle(
+      (toggle) => toggle.setValue(transparentBackground).onChange((value) => transparentBackground = value)
+    );
+    new import_obsidian12.Setting(modal.contentEl).addButton(
+      (button) => button.setButtonText("Save").setCta().onClick(async () => {
+        modal.close();
+        this.exportImage(
+          canvas,
+          nodesToExport,
+          svg,
+          svg ? 1 : pixelRatioFactor,
+          svg ? noFontExport : false,
+          watermark,
+          garbledText,
+          svg ? true : transparentBackground
+        );
+      })
+    );
+    updateDynamicSettings();
+    modal.open();
+  }
+  async exportImage(canvas, nodesToExport, svg, pixelRatioFactor, noFontExport, watermark, garbledText, transparentBackground) {
+    var _a, _b, _c;
+    const isWholeCanvas = nodesToExport === null;
+    if (!nodesToExport)
+      nodesToExport = [...canvas.nodes.values()];
+    const nodesToExportIds = nodesToExport.map((node) => node.getData().id);
+    const edgesToExport = [...canvas.edges.values()].filter((edge) => {
+      const edgeData = edge.getData();
+      return nodesToExportIds.includes(edgeData.fromNode) && nodesToExportIds.includes(edgeData.toNode);
+    });
+    const backgroundColor = transparentBackground ? void 0 : window.getComputedStyle(canvas.canvasEl).getPropertyValue("--canvas-background");
+    new import_obsidian12.Notice("Exporting the canvas. Please wait...");
+    const interactionBlocker = this.getInteractionBlocker();
+    document.body.appendChild(interactionBlocker);
+    canvas.screenshotting = true;
+    canvas.canvasEl.classList.add("is-exporting");
+    if (garbledText)
+      canvas.canvasEl.classList.add("is-text-garbled");
+    let watermarkEl = null;
+    const cachedSelection = new Set(canvas.selection);
+    canvas.deselectAll();
+    const cachedViewport = { x: canvas.x, y: canvas.y, zoom: canvas.zoom };
+    try {
+      const targetBoundingBox = CanvasHelper.getBBox([...nodesToExport, ...edgesToExport]);
+      let enlargedTargetBoundingBox = BBoxHelper.scaleBBox(targetBoundingBox, 1.1);
+      const enlargedTargetBoundingBoxSize = { width: enlargedTargetBoundingBox.maxX - enlargedTargetBoundingBox.minX, height: enlargedTargetBoundingBox.maxY - enlargedTargetBoundingBox.minY };
+      const canvasElSize = { width: canvas.canvasEl.clientWidth, height: canvas.canvasEl.clientHeight };
+      const requiredPixelRatio = Math.max(enlargedTargetBoundingBoxSize.width / canvasElSize.width, enlargedTargetBoundingBoxSize.height / canvasElSize.height);
+      const pixelRatio = svg ? void 0 : Math.round(requiredPixelRatio * pixelRatioFactor);
+      watermarkEl = watermark ? this.getWatermark(enlargedTargetBoundingBox) : null;
+      if (watermarkEl)
+        canvas.canvasEl.appendChild(watermarkEl);
+      const actualAspectRatio = canvas.canvasRect.width / canvas.canvasRect.height;
+      const targetAspectRatio = (enlargedTargetBoundingBox.maxX - enlargedTargetBoundingBox.minX) / (enlargedTargetBoundingBox.maxY - enlargedTargetBoundingBox.minY);
+      let adjustedBoundingBox = { ...enlargedTargetBoundingBox };
+      if (actualAspectRatio > targetAspectRatio) {
+        const targetHeight = enlargedTargetBoundingBox.maxY - enlargedTargetBoundingBox.minY;
+        const actualWidth = targetHeight * actualAspectRatio;
+        adjustedBoundingBox.maxX = enlargedTargetBoundingBox.minX + actualWidth;
+      } else {
+        const targetWidth = enlargedTargetBoundingBox.maxX - enlargedTargetBoundingBox.minX;
+        const actualHeight = targetWidth / actualAspectRatio;
+        adjustedBoundingBox.maxY = enlargedTargetBoundingBox.minY + actualHeight;
+      }
+      CanvasHelper.zoomToRealBBox(canvas, adjustedBoundingBox);
+      canvas.setViewport(canvas.tx, canvas.ty, canvas.tZoom);
+      await sleep(10);
+      let canvasScale = parseFloat(((_a = canvas.canvasEl.style.transform.match(/scale\((\d+(\.\d+)?)\)/)) == null ? void 0 : _a[1]) || "1");
+      const edgePathsBBox = BBoxHelper.combineBBoxes(edgesToExport.map((edge) => {
+        const edgeCenter = edge.getCenter();
+        const labelWidth = edge.labelElement ? edge.labelElement.wrapperEl.getBoundingClientRect().width / canvasScale : 0;
+        return { minX: edgeCenter.x - labelWidth / 2, minY: edgeCenter.y, maxX: edgeCenter.x + labelWidth / 2, maxY: edgeCenter.y };
+      }));
+      const enlargedEdgePathsBBox = BBoxHelper.enlargeBBox(edgePathsBBox, 1.1);
+      enlargedTargetBoundingBox = BBoxHelper.combineBBoxes([enlargedTargetBoundingBox, enlargedEdgePathsBBox]);
+      adjustedBoundingBox = BBoxHelper.combineBBoxes([adjustedBoundingBox, enlargedEdgePathsBBox]);
+      CanvasHelper.zoomToRealBBox(canvas, adjustedBoundingBox);
+      canvas.setViewport(canvas.tx, canvas.ty, canvas.tZoom);
+      await sleep(10);
+      const canvasViewportBBox = canvas.getViewportBBox();
+      canvasScale = parseFloat(((_b = canvas.canvasEl.style.transform.match(/scale\((\d+(\.\d+)?)\)/)) == null ? void 0 : _b[1]) || "1");
+      let width = (canvasViewportBBox.maxX - canvasViewportBBox.minX) * canvasScale;
+      let height = (canvasViewportBBox.maxY - canvasViewportBBox.minY) * canvasScale;
+      if (actualAspectRatio > targetAspectRatio)
+        width = height * targetAspectRatio;
+      else
+        height = width / targetAspectRatio;
+      let unloadedNodes = nodesToExport.filter((node) => node.initialized === false || node.isContentMounted === false);
+      const startTimestamp = performance.now();
+      while (unloadedNodes.length > 0 && performance.now() - startTimestamp < MAX_ALLOWED_LOADING_TIME) {
+        await sleep(10);
+        unloadedNodes = nodesToExport.filter((node) => node.initialized === false || node.isContentMounted === false);
+        console.info(`Waiting for ${unloadedNodes.length} nodes to finish loading...`);
+      }
+      if (unloadedNodes.length === 0) {
+        const nodeElements = nodesToExport.map((node) => node.nodeEl);
+        const edgePathAndArrowElements = edgesToExport.map((edge) => [edge.lineGroupEl, edge.lineEndGroupEl]).flat();
+        const edgeLabelElements = edgesToExport.map((edge) => {
+          var _a2;
+          return (_a2 = edge.labelElement) == null ? void 0 : _a2.wrapperEl;
+        }).filter((labelElement) => labelElement !== void 0);
+        const filter = (element) => {
+          var _a2, _b2, _c2, _d;
+          if (((_a2 = element.classList) == null ? void 0 : _a2.contains("canvas-node")) && !nodeElements.includes(element))
+            return false;
+          if (((_c2 = (_b2 = element.parentElement) == null ? void 0 : _b2.classList) == null ? void 0 : _c2.contains("canvas-edges")) && !edgePathAndArrowElements.includes(element))
+            return false;
+          if (((_d = element.classList) == null ? void 0 : _d.contains("canvas-path-label-wrapper")) && !edgeLabelElements.includes(element))
+            return false;
+          return true;
+        };
+        const options = {
+          pixelRatio,
+          backgroundColor,
+          height,
+          width,
+          filter
+        };
+        if (noFontExport)
+          options.fontEmbedCSS = "";
+        const imageDataUri = svg ? await toSvg(canvas.canvasEl, options) : await toPng(canvas.canvasEl, options);
+        let baseFilename = `${((_c = canvas.view.file) == null ? void 0 : _c.basename) || "Untitled"}`;
+        if (!isWholeCanvas)
+          baseFilename += ` - Selection of ${nodesToExport.length}`;
+        const filename = `${baseFilename}.${svg ? "svg" : "png"}`;
+        const downloadEl = document.createElement("a");
+        downloadEl.href = imageDataUri;
+        downloadEl.download = filename;
+        downloadEl.click();
+      } else {
+        const ERROR_MESSAGE = "Export cancelled: Nodes did not finish loading in time";
+        new import_obsidian12.Notice(ERROR_MESSAGE);
+        console.error(ERROR_MESSAGE);
+      }
+    } finally {
+      canvas.screenshotting = false;
+      canvas.canvasEl.classList.remove("is-exporting");
+      if (garbledText)
+        canvas.canvasEl.classList.remove("is-text-garbled");
+      if (watermarkEl)
+        canvas.canvasEl.removeChild(watermarkEl);
+      canvas.updateSelection(() => canvas.selection = cachedSelection);
+      canvas.setViewport(cachedViewport.x, cachedViewport.y, cachedViewport.zoom);
+      interactionBlocker.remove();
+    }
+  }
+  getInteractionBlocker() {
+    const interactionBlocker = document.createElement("div");
+    interactionBlocker.classList.add("progress-bar-container");
+    const progressBar = document.createElement("div");
+    progressBar.classList.add("progress-bar");
+    interactionBlocker.appendChild(progressBar);
+    const progressBarMessage = document.createElement("div");
+    progressBarMessage.classList.add("progress-bar-message", "u-center-text");
+    progressBarMessage.innerText = "Generating image...";
+    progressBar.appendChild(progressBarMessage);
+    const progressBarIndicator = document.createElement("div");
+    progressBarIndicator.classList.add("progress-bar-indicator");
+    progressBar.appendChild(progressBarIndicator);
+    const progressBarLine = document.createElement("div");
+    progressBarLine.classList.add("progress-bar-line");
+    progressBarIndicator.appendChild(progressBarLine);
+    const progressBarSublineIncrease = document.createElement("div");
+    progressBarSublineIncrease.classList.add("progress-bar-subline", "mod-increase");
+    progressBarIndicator.appendChild(progressBarSublineIncrease);
+    const progressBarSublineDecrease = document.createElement("div");
+    progressBarSublineDecrease.classList.add("progress-bar-subline", "mod-decrease");
+    progressBarIndicator.appendChild(progressBarSublineDecrease);
+    return interactionBlocker;
+  }
+  getWatermark(bbox) {
+    const bboxWidth = bbox.maxX - bbox.minX;
+    const width = Math.max(200, bboxWidth * 0.3);
+    const WATERMARK_SIZE = { width: 215, height: 25 };
+    const height = WATERMARK_SIZE.height / WATERMARK_SIZE.width * width;
+    const watermarkPadding = {
+      x: bboxWidth * 0.02,
+      y: bboxWidth * 0.014
+    };
+    bbox.maxY += height + watermarkPadding.y;
+    const watermarkEl = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    watermarkEl.id = "watermark-ac";
+    watermarkEl.style.transform = `translate(${bbox.minX + watermarkPadding.x}px, ${bbox.maxY - height - watermarkPadding.y}px)`;
+    watermarkEl.setAttrs({
+      viewBox: `0 0 ${WATERMARK_SIZE.width} ${WATERMARK_SIZE.height}`,
+      width: width.toString(),
+      fill: "currentColor"
+    });
+    watermarkEl.innerHTML = '<path d="M7 14.6a12 12 0 0 1 2.8-.6 10 10 0 0 1 .5-8.8l.4-.7a32.9 32.9 0 0 0 .9-2.3v-1c-.1-.4-.3-.7-.7-1.1-.6-.2-1.1 0-1.6.3L4.2 5.1c-.3.2-.5.6-.6 1l-.4 3a14.6 14.6 0 0 1 3.7 5.5Zm-4-4.2-.1.3-2.8 6c-.2.7-.1 1.4.4 1.9L4.8 23a8.7 8.7 0 0 0 .8-8.7c-.7-1.8-1.9-3.2-2.6-4Z"/><path d="M5.8 23.5H6a23.8 23.8 0 0 1 7.4 1.4c1.2.4 2.3-.5 2.5-1.7a7 7 0 0 1 .8-2.7c-.8-2-1.6-3.2-2.6-4a5 5 0 0 0-2.9-1.3c-1.6-.2-3 .2-4 .5.6 2.3.4 5-1.4 7.8Z"/><path d="m17.4 19.3 2-3c0-.4 0-.7-.2-1a18 18 0 0 1-2-3.5c-.7-1.4-.7-3.5-.8-4.6 0-.4 0-.7-.3-1l-3.4-4.3v.6L12 4l-.5 1-.3.6A11 11 0 0 0 10 9.4c0 1.3 0 2.8.9 4.7h.4c1.1.2 2.3.6 3.5 1.6 1 .8 1.8 2 2.5 3.6ZM39.8 4.5c-6 0-10.3 3.7-10.3 8.9 0 5.1 4.3 8.9 10.3 8.9 5.9 0 10.2-3.8 10.2-9 0-5-4.3-8.8-10.2-8.8Zm0 3.5c3.5 0 6.1 2.1 6.1 5.4 0 3.2-2.6 5.4-6.1 5.4-3.6 0-6.2-2.2-6.2-5.4 0-3.3 2.6-5.4 6.2-5.4Zm15.7 12.6c.8.9 2.5 1.7 4.6 1.7 4.3 0 6.8-3 6.8-6.6C67 12 64.4 9 60.1 9c-2.1 0-3.8.8-4.6 1.7v-6h-3.9V22h3.9v-1.4Zm-.1-5c0-2 1.7-3.4 3.9-3.4 2 0 3.9 1.2 3.9 3.5 0 2.2-1.8 3.5-4 3.5-2.1 0-3.8-1.4-3.8-3.4v-.2ZM67.3 20a11 11 0 0 0 7.2 2.3c4 0 7-1.5 7-4.4 0-3-2.9-3.5-6.1-3.8-2.8-.4-3.6-.4-3.6-1.1 0-.7.9-1 2.5-1 2 0 3.7.5 4.8 1.6l2-2.3A9.7 9.7 0 0 0 74.5 9c-4 0-6.5 1.7-6.5 4.3 0 2.7 2.5 3.3 5.6 3.7 2.8.3 4 .3 4 1.2 0 .8-1 1.1-2.8 1.1-2.2 0-4.1-.7-5.7-2l-1.8 2.5ZM82.8 8h4V4.9h-4V8Zm3.9 1.4h-3.8V22h3.8V9.4Zm13.1 11.2V22h3.9V4.8h-3.9v6C99 9.8 97.4 9 95.2 9c-4.3 0-6.8 3-6.8 6.6 0 3.6 2.5 6.6 6.8 6.6 2.2 0 3.8-.8 4.6-1.7Zm.1-5v.2c0 2-1.7 3.4-3.9 3.4-2 0-3.9-1.3-3.9-3.5 0-2.3 1.8-3.5 4-3.5 2.1 0 3.8 1.4 3.8 3.4ZM106 8h4V4.9h-4V8Zm3.9 1.4H106V22h3.9V9.4Zm7 12.9a8 8 0 0 0 5.2-1.7c.6 1.2 2.2 2 5 1.4v-2.8c-1.4.3-1.7 0-1.7-.7v-4.6c0-3.2-2.3-4.8-6.4-4.8-3.5 0-6.2 1.5-7 3.8l3.4 1c.4-1 1.7-1.8 3.5-1.8 2 0 2.8.8 2.8 1.7v.1l-5 .5c-3 .3-5.2 1.5-5.2 4 0 2.4 2.2 3.9 5.4 3.9Zm4.8-5.1c0 1.4-2.2 2.3-4.1 2.3-1.5 0-2.4-.5-2.4-1.3s.7-1.1 2-1.3l4.5-.4v.7Zm6.7 4.8h3.8v-6c0-2.2 1.2-3.5 3.3-3.5 2 0 3 1.3 3 3.4V22h3.8v-7.2c0-3.5-2.2-5.7-5.5-5.7-2 0-3.6.8-4.6 1.8V9.4h-3.8V22Z"/><path fill-rule="evenodd" stroke="currentColor" stroke-width="0.5px" d="M191.822 20.035A3.288 3.288 0 0 0 191.812 19.951A2.225 2.225 0 0 0 191.728 19.825A3.914 3.914 0 0 0 191.649 19.779A2.868 2.868 0 0 0 191.535 19.755Q191.388 19.755 191.329 19.85A9.99 9.99 0 0 0 191.248 20.005A9.059 9.059 0 0 0 191.234 20.042A20.576 20.576 0 0 1 191.04 20.456A15.291 15.291 0 0 1 190.688 20.854A13.176 13.176 0 0 1 190.086 21.116A18.046 18.046 0 0 1 189.778 21.141A16.538 16.538 0 0 1 189.506 21.117A22.39 22.39 0 0 1 189.246 21.057A12.53 12.53 0 0 1 188.825 20.838A15.259 15.259 0 0 1 188.718 20.746Q188.476 20.518 188.315 20.126A19.046 19.046 0 0 1 188.212 19.778Q188.177 19.602 188.163 19.395A41.406 41.406 0 0 1 188.154 19.118A38.021 38.021 0 0 1 188.176 18.694Q188.2 18.485 188.249 18.307A18.247 18.247 0 0 1 188.319 18.1A22.415 22.415 0 0 1 188.472 17.79Q188.57 17.628 188.687 17.506A13.277 13.277 0 0 1 188.732 17.463A15.164 15.164 0 0 1 189.051 17.229A13.142 13.142 0 0 1 189.274 17.134A20.296 20.296 0 0 1 189.592 17.058A16.216 16.216 0 0 1 189.834 17.039Q190.032 17.039 190.179 17.076A8.428 8.428 0 0 1 190.265 17.102A20.826 20.826 0 0 1 190.385 17.15Q190.443 17.176 190.492 17.203A10.532 10.532 0 0 1 190.548 17.235A13.851 13.851 0 0 1 190.796 17.429A16.001 16.001 0 0 1 190.849 17.484Q190.989 17.634 191.087 17.816A28.524 28.524 0 0 0 191.143 17.923A32.076 32.076 0 0 0 191.164 17.96A8.099 8.099 0 0 0 191.246 18.077A7.413 7.413 0 0 0 191.259 18.093A5.796 5.796 0 0 0 191.329 18.16A4.911 4.911 0 0 0 191.371 18.191A2.41 2.41 0 0 0 191.488 18.228A2.956 2.956 0 0 0 191.507 18.229A3.152 3.152 0 0 0 191.589 18.219A2.121 2.121 0 0 0 191.714 18.131A4.225 4.225 0 0 0 191.758 18.048A3.083 3.083 0 0 0 191.78 17.935A2.636 2.636 0 0 0 191.777 17.896Q191.77 17.853 191.751 17.792A15.123 15.123 0 0 0 191.735 17.743A12.471 12.471 0 0 0 191.685 17.624Q191.648 17.544 191.595 17.456Q191.506 17.308 191.365 17.148A29.801 29.801 0 0 0 191.346 17.127A16.118 16.118 0 0 0 191.103 16.907A19.423 19.423 0 0 0 190.972 16.819A20.302 20.302 0 0 0 190.685 16.673A25.928 25.928 0 0 0 190.461 16.591A19.442 19.442 0 0 0 190.11 16.518A25.565 25.565 0 0 0 189.806 16.5A24.519 24.519 0 0 0 189.175 16.579A21.58 21.58 0 0 0 188.868 16.686Q188.441 16.871 188.13 17.207A22.873 22.873 0 0 0 187.739 17.792A27.604 27.604 0 0 0 187.643 18.023A28.76 28.76 0 0 0 187.489 18.699A36.041 36.041 0 0 0 187.468 19.09Q187.468 19.657 187.65 20.189A25.617 25.617 0 0 0 187.925 20.762A21.934 21.934 0 0 0 188.182 21.085Q188.35 21.26 188.553 21.376Q188.756 21.491 188.973 21.558Q189.19 21.624 189.411 21.652Q189.631 21.68 189.841 21.68Q190.33 21.68 190.687 21.519A14.886 14.886 0 0 0 190.758 21.484A23.571 23.571 0 0 0 191.1 21.27A18.016 18.016 0 0 0 191.371 21.019A21.893 21.893 0 0 0 191.572 20.749A16.519 16.519 0 0 0 191.714 20.473A24.164 24.164 0 0 0 191.766 20.326Q191.812 20.183 191.82 20.08A5.511 5.511 0 0 0 191.822 20.035ZM210.729 20.539A10.256 10.256 0 0 0 210.709 20.331Q210.681 20.195 210.613 20.089A6.408 6.408 0 0 0 210.603 20.074Q210.477 19.888 210.285 19.769Q210.092 19.65 209.865 19.58Q209.637 19.51 209.427 19.468Q209.112 19.398 208.909 19.332Q208.769 19.286 208.67 19.234A8.38 8.38 0 0 1 208.591 19.188Q208.506 19.132 208.459 19.069A3.226 3.226 0 0 1 208.43 19.024A4.079 4.079 0 0 1 208.384 18.844A4.773 4.773 0 0 1 208.384 18.831Q208.384 18.614 208.563 18.485A6.016 6.016 0 0 1 208.611 18.453A9.288 9.288 0 0 1 208.884 18.349Q209.018 18.32 209.175 18.32A15.627 15.627 0 0 1 209.378 18.332Q209.479 18.346 209.562 18.373A6.348 6.348 0 0 1 209.714 18.446A8.886 8.886 0 0 1 209.849 18.555Q209.934 18.64 209.98 18.739A5.694 5.694 0 0 1 209.98 18.74A21.387 21.387 0 0 0 210.014 18.808Q210.051 18.879 210.082 18.923A4.301 4.301 0 0 0 210.103 18.95A1.554 1.554 0 0 0 210.167 18.995Q210.193 19.005 210.226 19.01A4.094 4.094 0 0 0 210.281 19.013Q210.34 19.013 210.381 19A1.678 1.678 0 0 0 210.421 18.982A2.886 2.886 0 0 0 210.467 18.945A2.322 2.322 0 0 0 210.498 18.908A2.481 2.481 0 0 0 210.521 18.867A1.908 1.908 0 0 0 210.533 18.824Q210.539 18.79 210.54 18.77A1.657 1.657 0 0 0 210.54 18.761Q210.54 18.719 210.503 18.605A25.229 25.229 0 0 0 210.491 18.569Q210.451 18.451 210.345 18.329A12.347 12.347 0 0 0 210.295 18.275A9.871 9.871 0 0 0 210.149 18.153Q210.034 18.074 209.879 18.005A12.077 12.077 0 0 0 209.651 17.933Q209.534 17.907 209.395 17.895A28.523 28.523 0 0 0 209.161 17.886Q208.923 17.886 208.736 17.922A15.474 15.474 0 0 0 208.692 17.932A15.47 15.47 0 0 0 208.491 17.991A11.956 11.956 0 0 0 208.335 18.061Q208.083 18.201 207.943 18.439A10.425 10.425 0 0 0 207.835 18.69A8.678 8.678 0 0 0 207.803 18.922A8.458 8.458 0 0 0 207.827 19.126A6.855 6.855 0 0 0 207.898 19.304A10.914 10.914 0 0 0 208.01 19.466A8.765 8.765 0 0 0 208.118 19.573A13.929 13.929 0 0 0 208.273 19.684A12.994 12.994 0 0 0 208.276 19.685A9.406 9.406 0 0 0 208.342 19.722Q208.379 19.741 208.423 19.759A19.716 19.716 0 0 0 208.482 19.783Q208.569 19.817 208.683 19.854A61.793 61.793 0 0 0 208.794 19.888Q208.975 19.943 209.246 20.011A175.761 175.761 0 0 0 209.259 20.014Q209.392 20.049 209.543 20.091A11.079 11.079 0 0 1 209.724 20.159A9.425 9.425 0 0 1 209.812 20.207Q209.931 20.28 210.011 20.389A3.951 3.951 0 0 1 210.079 20.538Q210.092 20.597 210.092 20.665A4.625 4.625 0 0 1 209.993 20.949A7.213 7.213 0 0 1 209.879 21.068A6.795 6.795 0 0 1 209.657 21.188Q209.485 21.246 209.245 21.246Q208.982 21.246 208.8 21.18A6.716 6.716 0 0 1 208.611 21.078Q208.398 20.91 208.293 20.665A7.271 7.271 0 0 0 208.241 20.564A5.814 5.814 0 0 0 208.192 20.497A1.892 1.892 0 0 0 208.095 20.437Q208.064 20.429 208.027 20.427A3.869 3.869 0 0 0 208.013 20.427A2.684 2.684 0 0 0 207.902 20.45A2.607 2.607 0 0 0 207.824 20.504A2.794 2.794 0 0 0 207.773 20.573A2.276 2.276 0 0 0 207.747 20.679Q207.747 20.868 207.849 21.029A18.825 18.825 0 0 0 207.938 21.159Q207.996 21.236 208.055 21.295A13.024 13.024 0 0 0 208.518 21.581A14.764 14.764 0 0 0 208.521 21.582A14.51 14.51 0 0 0 208.761 21.645Q208.883 21.667 209.025 21.675A30.93 30.93 0 0 0 209.203 21.68Q209.548 21.68 209.798 21.62A13.282 13.282 0 0 0 210.019 21.547A17.031 17.031 0 0 0 210.226 21.44Q210.382 21.345 210.481 21.229A11.064 11.064 0 0 0 210.597 21.065A7.971 7.971 0 0 0 210.684 20.851A23.38 23.38 0 0 0 210.707 20.737Q210.728 20.629 210.729 20.55A6.492 6.492 0 0 0 210.729 20.539ZM149.486 20.469A20.565 20.565 0 0 0 149.509 20.43Q149.535 20.385 149.569 20.321A90.19 90.19 0 0 0 149.602 20.259Q149.675 20.119 149.749 19.962A37.1 37.1 0 0 0 149.84 19.75A31.562 31.562 0 0 0 149.874 19.657A12.867 12.867 0 0 0 149.902 19.573Q149.927 19.482 149.927 19.419Q149.927 19.3 149.843 19.22Q149.759 19.139 149.64 19.139A2.273 2.273 0 0 0 149.482 19.204Q149.434 19.248 149.395 19.321A14.995 14.995 0 0 0 149.383 19.346Q149.363 19.388 149.329 19.465Q149.283 19.566 149.231 19.682Q149.178 19.797 149.133 19.899A99.51 99.51 0 0 1 149.111 19.946Q149.082 20.011 149.066 20.042Q148.968 19.938 148.891 19.851A68.292 68.292 0 0 1 148.881 19.839A1775.331 1775.331 0 0 1 148.805 19.754Q148.754 19.696 148.695 19.629A79.458 79.458 0 0 1 148.64 19.566Q148.552 19.465 148.44 19.328A466.983 466.983 0 0 1 148.358 19.23Q148.246 19.093 148.095 18.907A1543.854 1543.854 0 0 1 148.044 18.845Q148.506 18.6 148.8 18.303A10.277 10.277 0 0 0 149.021 17.98A9.508 9.508 0 0 0 149.094 17.606Q149.094 17.473 149.047 17.311A16.194 16.194 0 0 0 149.031 17.26A10.364 10.364 0 0 0 148.872 16.958A12.188 12.188 0 0 0 148.825 16.899A10.761 10.761 0 0 0 148.611 16.71A13.818 13.818 0 0 0 148.45 16.616Q148.241 16.511 147.945 16.501A18.707 18.707 0 0 0 147.883 16.5A15.973 15.973 0 0 0 147.614 16.522A11.629 11.629 0 0 0 147.334 16.605A13.053 13.053 0 0 0 147.095 16.742A10.73 10.73 0 0 0 146.945 16.875A10.831 10.831 0 0 0 146.739 17.186A10.281 10.281 0 0 0 146.718 17.239A11.786 11.786 0 0 0 146.65 17.524A10.583 10.583 0 0 0 146.644 17.634A10.236 10.236 0 0 0 146.703 17.97A13.462 13.462 0 0 0 146.788 18.163A32.918 32.918 0 0 0 146.933 18.407Q147.038 18.57 147.176 18.747Q146.98 18.852 146.773 18.985Q146.567 19.118 146.396 19.29Q146.224 19.461 146.112 19.689A10.729 10.729 0 0 0 146.016 20.001A14.179 14.179 0 0 0 146 20.217A12.88 12.88 0 0 0 146.038 20.523A16.369 16.369 0 0 0 146.098 20.714A13.928 13.928 0 0 0 146.374 21.16A15.957 15.957 0 0 0 146.399 21.187A14.894 14.894 0 0 0 146.71 21.434A18.905 18.905 0 0 0 146.914 21.54A15.13 15.13 0 0 0 147.256 21.645Q147.417 21.675 147.602 21.679A26.164 26.164 0 0 0 147.659 21.68Q147.953 21.68 148.181 21.614A20.209 20.209 0 0 0 148.417 21.529A15.925 15.925 0 0 0 148.583 21.446A16.498 16.498 0 0 0 148.784 21.309A13.958 13.958 0 0 0 148.888 21.218A33.819 33.819 0 0 0 149.023 21.079A26.636 26.636 0 0 0 149.115 20.973L149.266 21.124Q149.338 21.196 149.462 21.307A122.767 122.767 0 0 0 149.542 21.379Q149.655 21.479 149.734 21.54A17.292 17.292 0 0 0 149.752 21.554Q149.821 21.606 149.869 21.634A5.331 5.331 0 0 0 149.889 21.645A4.838 4.838 0 0 0 149.916 21.659Q149.95 21.674 149.973 21.677A5.79 5.79 0 0 0 150.011 21.68A4.806 4.806 0 0 0 150.032 21.68A2.48 2.48 0 0 0 150.12 21.663Q150.153 21.651 150.188 21.629A5.246 5.246 0 0 0 150.225 21.603Q150.326 21.526 150.326 21.372A2.778 2.778 0 0 0 150.319 21.308A2.031 2.031 0 0 0 150.284 21.232A5.843 5.843 0 0 0 150.256 21.198Q150.214 21.15 150.144 21.085A119.856 119.856 0 0 1 150.081 21.031Q150.004 20.966 149.948 20.916A37.409 37.409 0 0 1 149.931 20.9Q149.85 20.826 149.784 20.767Q149.717 20.707 149.654 20.641A52.27 52.27 0 0 0 149.62 20.605Q149.565 20.548 149.486 20.469ZM172.432 21.183L172.432 19.279A51.556 51.556 0 0 0 172.432 19.211Q172.431 19.149 172.429 19.073A18.916 18.916 0 0 0 172.409 18.853A21.017 21.017 0 0 0 172.404 18.821Q172.383 18.691 172.334 18.565Q172.285 18.439 172.194 18.334Q172.005 18.117 171.757 18.002A12.033 12.033 0 0 0 171.449 17.908A16.569 16.569 0 0 0 171.172 17.886A16.106 16.106 0 0 0 170.97 17.898Q170.864 17.912 170.773 17.94A9.472 9.472 0 0 0 170.745 17.949Q170.563 18.012 170.427 18.107A14.499 14.499 0 0 0 170.272 18.229A12 12 0 0 0 170.192 18.31Q170.094 18.418 170.024 18.509A59.749 59.749 0 0 0 170.024 18.43Q170.023 18.399 170.022 18.372A28.64 28.64 0 0 0 170.021 18.32Q170.018 18.267 170.016 18.224A56.933 56.933 0 0 0 170.014 18.187Q170.01 18.131 169.996 18.093Q169.982 18.054 169.961 18.019A1.527 1.527 0 0 0 169.935 17.979Q169.912 17.952 169.874 17.928A2.736 2.736 0 0 0 169.733 17.886A3.297 3.297 0 0 0 169.723 17.886A3.514 3.514 0 0 0 169.666 17.891Q169.625 17.897 169.594 17.914A7.268 7.268 0 0 0 169.552 17.938Q169.533 17.95 169.517 17.962A3.925 3.925 0 0 0 169.506 17.97A2.17 2.17 0 0 0 169.455 18.054Q169.444 18.085 169.44 18.122A3.872 3.872 0 0 0 169.44 18.124A16 16 0 0 0 169.433 18.203Q169.431 18.239 169.43 18.281A34.968 34.968 0 0 0 169.429 18.369L169.429 21.183Q169.429 21.294 169.434 21.378A16.104 16.104 0 0 0 169.44 21.439A2.976 2.976 0 0 0 169.455 21.508A2.094 2.094 0 0 0 169.513 21.596A3.572 3.572 0 0 0 169.615 21.658A3.123 3.123 0 0 0 169.73 21.68Q169.849 21.68 169.947 21.596A2.227 2.227 0 0 0 170.009 21.503A3.192 3.192 0 0 0 170.024 21.439Q170.034 21.366 170.037 21.265A29.244 29.244 0 0 0 170.038 21.183L170.038 20.028A136.267 136.267 0 0 1 170.039 19.891Q170.041 19.696 170.049 19.559Q170.059 19.377 170.08 19.258A13.249 13.249 0 0 1 170.096 19.182Q170.112 19.114 170.133 19.066Q170.164 18.992 170.206 18.922Q170.332 18.691 170.57 18.555Q170.808 18.418 171.074 18.418Q171.263 18.418 171.438 18.506Q171.613 18.593 171.711 18.768A5.723 5.723 0 0 1 171.751 18.856Q171.768 18.902 171.781 18.956A12.31 12.31 0 0 1 171.795 19.027Q171.823 19.188 171.823 19.454L171.823 21.183Q171.823 21.294 171.828 21.378A16.104 16.104 0 0 0 171.834 21.439A2.976 2.976 0 0 0 171.849 21.508A2.094 2.094 0 0 0 171.907 21.596A3.143 3.143 0 0 0 172.114 21.68A4.083 4.083 0 0 0 172.131 21.68Q172.25 21.68 172.348 21.596A2.116 2.116 0 0 0 172.409 21.5A3.049 3.049 0 0 0 172.422 21.439A17.011 17.011 0 0 0 172.428 21.359Q172.432 21.282 172.432 21.183ZM199.648 21.183L199.648 19.279A51.556 51.556 0 0 0 199.648 19.211Q199.647 19.149 199.645 19.073A18.916 18.916 0 0 0 199.625 18.853A21.017 21.017 0 0 0 199.62 18.821Q199.599 18.691 199.55 18.565Q199.501 18.439 199.41 18.334Q199.221 18.117 198.973 18.002A12.033 12.033 0 0 0 198.665 17.908A16.569 16.569 0 0 0 198.388 17.886A16.106 16.106 0 0 0 198.186 17.898Q198.08 17.912 197.989 17.94A9.472 9.472 0 0 0 197.961 17.949Q197.779 18.012 197.643 18.107A14.499 14.499 0 0 0 197.488 18.229A12 12 0 0 0 197.408 18.31Q197.31 18.418 197.24 18.509A59.749 59.749 0 0 0 197.24 18.43Q197.239 18.399 197.238 18.372A28.64 28.64 0 0 0 197.237 18.32Q197.234 18.267 197.232 18.224A56.933 56.933 0 0 0 197.23 18.187Q197.226 18.131 197.212 18.093Q197.198 18.054 197.177 18.019A1.527 1.527 0 0 0 197.151 17.979Q197.128 17.952 197.09 17.928A2.736 2.736 0 0 0 196.949 17.886A3.297 3.297 0 0 0 196.939 17.886A3.514 3.514 0 0 0 196.882 17.891Q196.841 17.897 196.81 17.914A7.268 7.268 0 0 0 196.768 17.938Q196.749 17.95 196.733 17.962A3.925 3.925 0 0 0 196.722 17.97A2.17 2.17 0 0 0 196.671 18.054Q196.66 18.085 196.656 18.122A3.872 3.872 0 0 0 196.656 18.124A16 16 0 0 0 196.649 18.203Q196.647 18.239 196.646 18.281A34.968 34.968 0 0 0 196.645 18.369L196.645 21.183Q196.645 21.294 196.65 21.378A16.104 16.104 0 0 0 196.656 21.439A2.976 2.976 0 0 0 196.671 21.508A2.094 2.094 0 0 0 196.729 21.596A3.572 3.572 0 0 0 196.831 21.658A3.123 3.123 0 0 0 196.946 21.68Q197.065 21.68 197.163 21.596A2.227 2.227 0 0 0 197.225 21.503A3.192 3.192 0 0 0 197.24 21.439Q197.25 21.366 197.253 21.265A29.244 29.244 0 0 0 197.254 21.183L197.254 20.028A136.267 136.267 0 0 1 197.255 19.891Q197.257 19.696 197.265 19.559Q197.275 19.377 197.296 19.258A13.249 13.249 0 0 1 197.312 19.182Q197.328 19.114 197.349 19.066Q197.38 18.992 197.422 18.922Q197.548 18.691 197.786 18.555Q198.024 18.418 198.29 18.418Q198.479 18.418 198.654 18.506Q198.829 18.593 198.927 18.768A5.723 5.723 0 0 1 198.967 18.856Q198.984 18.902 198.997 18.956A12.31 12.31 0 0 1 199.011 19.027Q199.039 19.188 199.039 19.454L199.039 21.183Q199.039 21.294 199.044 21.378A16.104 16.104 0 0 0 199.05 21.439A2.976 2.976 0 0 0 199.065 21.508A2.094 2.094 0 0 0 199.123 21.596A3.143 3.143 0 0 0 199.33 21.68A4.083 4.083 0 0 0 199.347 21.68Q199.466 21.68 199.564 21.596A2.116 2.116 0 0 0 199.625 21.5A3.049 3.049 0 0 0 199.638 21.439A17.011 17.011 0 0 0 199.644 21.359Q199.648 21.282 199.648 21.183ZM176.534 20.532A3.117 3.117 0 0 0 176.522 20.444A2.336 2.336 0 0 0 176.443 20.326A3.647 3.647 0 0 0 176.368 20.278A2.675 2.675 0 0 0 176.254 20.252Q176.195 20.252 176.154 20.273A1.457 1.457 0 0 0 176.132 20.287Q176.086 20.322 176.051 20.364A0.884 0.884 0 0 0 176.043 20.373Q176.031 20.389 176.013 20.424Q175.988 20.469 175.96 20.522A19.281 19.281 0 0 1 175.922 20.59A16.39 16.39 0 0 1 175.904 20.62Q175.877 20.664 175.869 20.685A0.832 0.832 0 0 0 175.869 20.686Q175.729 20.938 175.481 21.071Q175.232 21.204 174.938 21.204A11.312 11.312 0 0 1 174.567 21.146A9.482 9.482 0 0 1 174.123 20.823A12.884 12.884 0 0 1 173.909 20.4Q173.825 20.123 173.825 19.762Q173.825 19.265 174.005 18.929A11.724 11.724 0 0 1 174.133 18.737A9.92 9.92 0 0 1 174.858 18.365A13.208 13.208 0 0 1 174.952 18.362Q175.149 18.362 175.297 18.41A7.63 7.63 0 0 1 175.348 18.429A11.407 11.407 0 0 1 175.489 18.497A8.28 8.28 0 0 1 175.621 18.59Q175.729 18.684 175.796 18.782A95.188 95.188 0 0 1 175.827 18.828Q175.857 18.874 175.879 18.908A25.527 25.527 0 0 1 175.897 18.936Q175.946 19.027 175.988 19.076Q176.018 19.111 176.044 19.133A2.786 2.786 0 0 0 176.065 19.15Q176.093 19.169 176.119 19.175A1.041 1.041 0 0 0 176.132 19.178A5.79 5.79 0 0 0 176.17 19.181A4.806 4.806 0 0 0 176.191 19.181A2.779 2.779 0 0 0 176.373 19.113A3.543 3.543 0 0 0 176.38 19.107A2.405 2.405 0 0 0 176.464 18.932A3.241 3.241 0 0 0 176.464 18.915Q176.464 18.824 176.426 18.737A9.75 9.75 0 0 0 176.371 18.629A8.253 8.253 0 0 0 176.338 18.579A16.685 16.685 0 0 0 176.24 18.444A21.161 21.161 0 0 0 176.149 18.338A11.789 11.789 0 0 0 175.991 18.194A14.908 14.908 0 0 0 175.873 18.114A13.143 13.143 0 0 0 175.68 18.017A17.807 17.807 0 0 0 175.481 17.949A16.11 16.11 0 0 0 175.266 17.906Q175.155 17.891 175.03 17.887A28.494 28.494 0 0 0 174.945 17.886Q174.427 17.886 174.095 18.065A15.968 15.968 0 0 0 173.748 18.312A13.867 13.867 0 0 0 173.566 18.523Q173.37 18.803 173.293 19.139Q173.216 19.475 173.216 19.79A33.884 33.884 0 0 0 173.227 20.07Q173.238 20.204 173.26 20.318A15.789 15.789 0 0 0 173.297 20.466Q173.357 20.666 173.426 20.811A13.31 13.31 0 0 0 173.475 20.903A12.835 12.835 0 0 0 173.544 21.018Q173.583 21.076 173.631 21.136A21.776 21.776 0 0 0 173.647 21.155A11.374 11.374 0 0 0 173.779 21.291A15.635 15.635 0 0 0 173.93 21.407Q174.105 21.526 174.361 21.603A16.697 16.697 0 0 0 174.604 21.656Q174.772 21.68 174.973 21.68Q175.414 21.68 175.712 21.53A20.695 20.695 0 0 0 175.965 21.379A14.971 14.971 0 0 0 176.195 21.183A16.44 16.44 0 0 0 176.327 21.025Q176.39 20.939 176.432 20.854A8.98 8.98 0 0 0 176.457 20.798Q176.53 20.62 176.534 20.541A1.736 1.736 0 0 0 176.534 20.532ZM153.742 20.147L155.975 20.147L156.423 21.253Q156.492 21.426 156.55 21.53A10.295 10.295 0 0 0 156.574 21.572A2.117 2.117 0 0 0 156.693 21.663Q156.745 21.68 156.815 21.68A3.648 3.648 0 0 0 156.926 21.664A2.913 2.913 0 0 0 157.06 21.575Q157.151 21.47 157.151 21.372Q157.151 21.295 157.127 21.218Q157.108 21.159 157.071 21.067A48.599 48.599 0 0 0 157.046 21.008L155.401 17.088Q155.352 16.969 155.293 16.833A12.279 12.279 0 0 0 155.259 16.762Q155.217 16.68 155.177 16.64A3.694 3.694 0 0 0 155.091 16.569A4.791 4.791 0 0 0 155.03 16.539Q154.939 16.5 154.841 16.5A6.137 6.137 0 0 0 154.757 16.506Q154.692 16.515 154.642 16.539A4.007 4.007 0 0 0 154.506 16.645A4.629 4.629 0 0 0 154.502 16.651Q154.448 16.717 154.403 16.814A11.485 11.485 0 0 0 154.393 16.836Q154.344 16.948 154.288 17.095L152.699 21.036A43.035 43.035 0 0 0 152.676 21.093Q152.648 21.163 152.631 21.215A13.482 13.482 0 0 0 152.626 21.232Q152.601 21.309 152.601 21.386Q152.601 21.49 152.69 21.583A4.693 4.693 0 0 0 152.692 21.586A3.044 3.044 0 0 0 152.91 21.68A4.049 4.049 0 0 0 152.923 21.68A4.561 4.561 0 0 0 153.008 21.673Q153.057 21.663 153.093 21.643A1.998 1.998 0 0 0 153.165 21.575A9.744 9.744 0 0 0 153.207 21.5Q153.248 21.42 153.293 21.305A35.447 35.447 0 0 0 153.308 21.267L153.742 20.147ZM167.875 21.085A156.604 156.604 0 0 0 167.919 21.236A174.514 174.514 0 0 0 167.935 21.288A9.866 9.866 0 0 0 167.991 21.434A8.679 8.679 0 0 0 168.015 21.481Q168.064 21.568 168.127 21.624Q168.19 21.68 168.281 21.68Q168.4 21.68 168.488 21.607A2.978 2.978 0 0 0 168.535 21.557Q168.567 21.514 168.573 21.467A1.833 1.833 0 0 0 168.575 21.442A5.283 5.283 0 0 0 168.567 21.354Q168.559 21.307 168.544 21.257A113.074 113.074 0 0 1 168.533 21.221Q168.511 21.15 168.505 21.127A9.687 9.687 0 0 1 168.48 21.059Q168.468 21.022 168.456 20.98A21.964 21.964 0 0 1 168.439 20.91Q168.412 20.799 168.408 20.605A35.786 35.786 0 0 1 168.407 20.525Q168.407 20.467 168.41 20.329A329.739 329.739 0 0 1 168.411 20.305Q168.414 20.147 168.418 19.965Q168.421 19.783 168.425 19.619A290.299 290.299 0 0 0 168.426 19.542Q168.428 19.437 168.428 19.384A50.037 50.037 0 0 0 168.415 19.009A40.849 40.849 0 0 0 168.393 18.796A10.854 10.854 0 0 0 168.312 18.497A9.517 9.517 0 0 0 168.211 18.32Q168.064 18.117 167.767 18.002Q167.472 17.887 166.962 17.886A46.251 46.251 0 0 0 166.951 17.886Q166.608 17.886 166.356 17.946A13.799 13.799 0 0 0 166.15 18.012Q165.917 18.108 165.764 18.227A10.032 10.032 0 0 0 165.677 18.303Q165.509 18.467 165.453 18.632A19.398 19.398 0 0 0 165.429 18.708Q165.407 18.782 165.4 18.833A3.082 3.082 0 0 0 165.397 18.873A2.545 2.545 0 0 0 165.417 18.975A2.432 2.432 0 0 0 165.478 19.059Q165.558 19.132 165.67 19.132Q165.76 19.132 165.815 19.096A1.703 1.703 0 0 0 165.866 19.045Q165.922 18.957 165.971 18.838Q166.027 18.698 166.136 18.6Q166.244 18.502 166.381 18.443A11.745 11.745 0 0 1 166.636 18.365A13.202 13.202 0 0 1 166.675 18.359Q166.832 18.334 166.993 18.334Q167.28 18.334 167.443 18.404A5.36 5.36 0 0 1 167.459 18.411A6.24 6.24 0 0 1 167.586 18.489A4.723 4.723 0 0 1 167.7 18.621A7.268 7.268 0 0 1 167.786 18.86A8.677 8.677 0 0 1 167.795 18.922A52.243 52.243 0 0 1 167.815 19.182A58.488 58.488 0 0 1 167.819 19.272A58.673 58.673 0 0 1 167.762 19.292Q167.682 19.319 167.627 19.335Q167.553 19.356 167.476 19.377Q167.425 19.39 167.299 19.415A131.725 131.725 0 0 1 167.277 19.419Q167.133 19.447 166.972 19.475A202.132 202.132 0 0 0 166.738 19.517A176.919 176.919 0 0 0 166.664 19.531A182.46 182.46 0 0 0 166.596 19.544Q166.511 19.561 166.465 19.571A21.283 21.283 0 0 0 166.454 19.573A87.884 87.884 0 0 0 166.304 19.607Q166.228 19.625 166.144 19.646A150.463 150.463 0 0 0 166.087 19.661Q165.88 19.713 165.698 19.829A9.901 9.901 0 0 0 165.422 20.092A11.635 11.635 0 0 0 165.39 20.14Q165.28 20.312 165.266 20.569A14.069 14.069 0 0 0 165.264 20.644Q165.264 20.833 165.334 21.019Q165.404 21.204 165.551 21.351A10.381 10.381 0 0 0 165.782 21.523A13.004 13.004 0 0 0 165.919 21.589A11.509 11.509 0 0 0 166.167 21.659Q166.282 21.678 166.413 21.68A19.554 19.554 0 0 0 166.44 21.68A22.373 22.373 0 0 0 166.719 21.663A16.841 16.841 0 0 0 166.969 21.614Q167.203 21.547 167.382 21.453A21.631 21.631 0 0 0 167.527 21.369Q167.6 21.322 167.661 21.274A12.71 12.71 0 0 0 167.683 21.257A45.541 45.541 0 0 0 167.754 21.196Q167.825 21.135 167.872 21.088A13.449 13.449 0 0 0 167.875 21.085ZM195.091 21.085A156.604 156.604 0 0 0 195.135 21.236A174.514 174.514 0 0 0 195.151 21.288A9.866 9.866 0 0 0 195.207 21.434A8.679 8.679 0 0 0 195.231 21.481Q195.28 21.568 195.343 21.624Q195.406 21.68 195.497 21.68Q195.616 21.68 195.704 21.607A2.978 2.978 0 0 0 195.751 21.557Q195.783 21.514 195.789 21.467A1.833 1.833 0 0 0 195.791 21.442A5.283 5.283 0 0 0 195.783 21.354Q195.775 21.307 195.76 21.257A113.074 113.074 0 0 1 195.749 21.221Q195.727 21.15 195.721 21.127A9.687 9.687 0 0 1 195.696 21.059Q195.684 21.022 195.672 20.98A21.964 21.964 0 0 1 195.655 20.91Q195.628 20.799 195.624 20.605A35.786 35.786 0 0 1 195.623 20.525Q195.623 20.467 195.626 20.329A329.739 329.739 0 0 1 195.627 20.305Q195.63 20.147 195.634 19.965Q195.637 19.783 195.641 19.619A290.299 290.299 0 0 0 195.642 19.542Q195.644 19.437 195.644 19.384A50.037 50.037 0 0 0 195.631 19.009A40.849 40.849 0 0 0 195.609 18.796A10.854 10.854 0 0 0 195.528 18.497A9.517 9.517 0 0 0 195.427 18.32Q195.28 18.117 194.983 18.002Q194.688 17.887 194.178 17.886A46.251 46.251 0 0 0 194.167 17.886Q193.824 17.886 193.572 17.946A13.799 13.799 0 0 0 193.366 18.012Q193.133 18.108 192.98 18.227A10.032 10.032 0 0 0 192.893 18.303Q192.725 18.467 192.669 18.632A19.398 19.398 0 0 0 192.645 18.708Q192.623 18.782 192.616 18.833A3.082 3.082 0 0 0 192.613 18.873A2.545 2.545 0 0 0 192.633 18.975A2.432 2.432 0 0 0 192.694 19.059Q192.774 19.132 192.886 19.132Q192.976 19.132 193.031 19.096A1.703 1.703 0 0 0 193.082 19.045Q193.138 18.957 193.187 18.838Q193.243 18.698 193.352 18.6Q193.46 18.502 193.597 18.443A11.745 11.745 0 0 1 193.852 18.365A13.202 13.202 0 0 1 193.891 18.359Q194.048 18.334 194.209 18.334Q194.496 18.334 194.659 18.404A5.36 5.36 0 0 1 194.675 18.411A6.24 6.24 0 0 1 194.802 18.489A4.723 4.723 0 0 1 194.916 18.621A7.268 7.268 0 0 1 195.002 18.86A8.677 8.677 0 0 1 195.011 18.922A52.243 52.243 0 0 1 195.031 19.182A58.488 58.488 0 0 1 195.035 19.272A58.673 58.673 0 0 1 194.978 19.292Q194.898 19.319 194.843 19.335Q194.769 19.356 194.692 19.377Q194.641 19.39 194.515 19.415A131.725 131.725 0 0 1 194.493 19.419Q194.349 19.447 194.188 19.475A202.132 202.132 0 0 0 193.954 19.517A176.919 176.919 0 0 0 193.88 19.531A182.46 182.46 0 0 0 193.812 19.544Q193.727 19.561 193.681 19.571A21.283 21.283 0 0 0 193.67 19.573A87.884 87.884 0 0 0 193.52 19.607Q193.444 19.625 193.36 19.646A150.463 150.463 0 0 0 193.303 19.661Q193.096 19.713 192.914 19.829A9.901 9.901 0 0 0 192.638 20.092A11.635 11.635 0 0 0 192.606 20.14Q192.496 20.312 192.482 20.569A14.069 14.069 0 0 0 192.48 20.644Q192.48 20.833 192.55 21.019Q192.62 21.204 192.767 21.351A10.381 10.381 0 0 0 192.998 21.523A13.004 13.004 0 0 0 193.135 21.589A11.509 11.509 0 0 0 193.383 21.659Q193.498 21.678 193.629 21.68A19.554 19.554 0 0 0 193.656 21.68A22.373 22.373 0 0 0 193.935 21.663A16.841 16.841 0 0 0 194.185 21.614Q194.419 21.547 194.598 21.453A21.631 21.631 0 0 0 194.743 21.369Q194.816 21.322 194.877 21.274A12.71 12.71 0 0 0 194.899 21.257A45.541 45.541 0 0 0 194.97 21.196Q195.041 21.135 195.088 21.088A13.449 13.449 0 0 0 195.091 21.085ZM206.424 21.085A156.604 156.604 0 0 0 206.468 21.236A174.514 174.514 0 0 0 206.484 21.288A9.866 9.866 0 0 0 206.54 21.434A8.679 8.679 0 0 0 206.564 21.481Q206.613 21.568 206.676 21.624Q206.739 21.68 206.83 21.68Q206.949 21.68 207.037 21.607A2.978 2.978 0 0 0 207.084 21.557Q207.116 21.514 207.122 21.467A1.833 1.833 0 0 0 207.124 21.442A5.283 5.283 0 0 0 207.116 21.354Q207.108 21.307 207.093 21.257A113.074 113.074 0 0 1 207.082 21.221Q207.06 21.15 207.054 21.127A9.687 9.687 0 0 1 207.029 21.059Q207.017 21.022 207.005 20.98A21.964 21.964 0 0 1 206.988 20.91Q206.961 20.799 206.957 20.605A35.786 35.786 0 0 1 206.956 20.525Q206.956 20.467 206.959 20.329A329.739 329.739 0 0 1 206.96 20.305Q206.963 20.147 206.967 19.965Q206.97 19.783 206.974 19.619A290.299 290.299 0 0 0 206.975 19.542Q206.977 19.437 206.977 19.384A50.037 50.037 0 0 0 206.964 19.009A40.849 40.849 0 0 0 206.942 18.796A10.854 10.854 0 0 0 206.861 18.497A9.517 9.517 0 0 0 206.76 18.32Q206.613 18.117 206.316 18.002Q206.021 17.887 205.511 17.886A46.251 46.251 0 0 0 205.5 17.886Q205.157 17.886 204.905 17.946A13.799 13.799 0 0 0 204.699 18.012Q204.466 18.108 204.313 18.227A10.032 10.032 0 0 0 204.226 18.303Q204.058 18.467 204.002 18.632A19.398 19.398 0 0 0 203.978 18.708Q203.956 18.782 203.949 18.833A3.082 3.082 0 0 0 203.946 18.873A2.545 2.545 0 0 0 203.966 18.975A2.432 2.432 0 0 0 204.027 19.059Q204.107 19.132 204.219 19.132Q204.309 19.132 204.364 19.096A1.703 1.703 0 0 0 204.415 19.045Q204.471 18.957 204.52 18.838Q204.576 18.698 204.685 18.6Q204.793 18.502 204.93 18.443A11.745 11.745 0 0 1 205.185 18.365A13.202 13.202 0 0 1 205.224 18.359Q205.381 18.334 205.542 18.334Q205.829 18.334 205.992 18.404A5.36 5.36 0 0 1 206.008 18.411A6.24 6.24 0 0 1 206.135 18.489A4.723 4.723 0 0 1 206.249 18.621A7.268 7.268 0 0 1 206.335 18.86A8.677 8.677 0 0 1 206.344 18.922A52.243 52.243 0 0 1 206.364 19.182A58.488 58.488 0 0 1 206.368 19.272A58.673 58.673 0 0 1 206.311 19.292Q206.231 19.319 206.176 19.335Q206.102 19.356 206.025 19.377Q205.974 19.39 205.848 19.415A131.725 131.725 0 0 1 205.826 19.419Q205.682 19.447 205.521 19.475A202.132 202.132 0 0 0 205.287 19.517A176.919 176.919 0 0 0 205.213 19.531A182.46 182.46 0 0 0 205.145 19.544Q205.06 19.561 205.014 19.571A21.283 21.283 0 0 0 205.003 19.573A87.884 87.884 0 0 0 204.853 19.607Q204.777 19.625 204.693 19.646A150.463 150.463 0 0 0 204.636 19.661Q204.429 19.713 204.247 19.829A9.901 9.901 0 0 0 203.971 20.092A11.635 11.635 0 0 0 203.939 20.14Q203.829 20.312 203.815 20.569A14.069 14.069 0 0 0 203.813 20.644Q203.813 20.833 203.883 21.019Q203.953 21.204 204.1 21.351A10.381 10.381 0 0 0 204.331 21.523A13.004 13.004 0 0 0 204.468 21.589A11.509 11.509 0 0 0 204.716 21.659Q204.831 21.678 204.962 21.68A19.554 19.554 0 0 0 204.989 21.68A22.373 22.373 0 0 0 205.268 21.663A16.841 16.841 0 0 0 205.518 21.614Q205.752 21.547 205.931 21.453A21.631 21.631 0 0 0 206.076 21.369Q206.149 21.322 206.21 21.274A12.71 12.71 0 0 0 206.232 21.257A45.541 45.541 0 0 0 206.303 21.196Q206.374 21.135 206.421 21.088A13.449 13.449 0 0 0 206.424 21.085ZM177.794 19.902L179.971 19.902Q180.062 19.902 180.157 19.895Q180.251 19.888 180.332 19.853Q180.412 19.818 180.461 19.738Q180.51 19.657 180.51 19.51A8.226 8.226 0 0 0 180.508 19.461Q180.504 19.391 180.489 19.283A16.26 16.26 0 0 0 180.46 19.129Q180.442 19.055 180.416 18.973A26.778 26.778 0 0 0 180.409 18.95A17.318 17.318 0 0 0 180.314 18.72A21.358 21.358 0 0 0 180.237 18.579A13.255 13.255 0 0 0 179.998 18.285A15.344 15.344 0 0 0 179.943 18.236Q179.761 18.082 179.502 17.984A14.303 14.303 0 0 0 179.228 17.912Q179.1 17.891 178.954 17.887A24.995 24.995 0 0 0 178.886 17.886Q178.461 17.886 178.146 18.023A13.781 13.781 0 0 0 178.123 18.033Q177.801 18.18 177.591 18.436A16.765 16.765 0 0 0 177.319 18.911A19.805 19.805 0 0 0 177.276 19.038A24.845 24.845 0 0 0 177.174 19.655A28.502 28.502 0 0 0 177.171 19.776Q177.171 20.175 177.273 20.525Q177.374 20.875 177.588 21.131Q177.801 21.386 178.127 21.533A15.933 15.933 0 0 0 178.507 21.648Q178.679 21.678 178.874 21.68A26.983 26.983 0 0 0 178.9 21.68A24.666 24.666 0 0 0 179.157 21.667Q179.289 21.654 179.401 21.625A13.385 13.385 0 0 0 179.478 21.603A19.788 19.788 0 0 0 179.675 21.529Q179.793 21.477 179.887 21.414Q180.055 21.302 180.157 21.176Q180.234 21.08 180.289 21A17.945 17.945 0 0 0 180.321 20.952A14.683 14.683 0 0 0 180.372 20.859A17.681 17.681 0 0 0 180.402 20.798Q180.44 20.714 180.44 20.63A2.258 2.258 0 0 0 180.378 20.474A2.928 2.928 0 0 0 180.374 20.469A2.17 2.17 0 0 0 180.216 20.399A2.698 2.698 0 0 0 180.209 20.399Q180.097 20.399 180.041 20.466A26.352 26.352 0 0 0 180.002 20.513Q179.987 20.532 179.974 20.549A12.788 12.788 0 0 0 179.95 20.581Q179.873 20.7 179.786 20.819Q179.698 20.938 179.583 21.029A8.961 8.961 0 0 1 179.405 21.137A11.002 11.002 0 0 1 179.31 21.176Q179.152 21.232 178.928 21.232Q178.711 21.232 178.512 21.162A9.41 9.41 0 0 1 178.157 20.937A10.742 10.742 0 0 1 178.155 20.935A10.148 10.148 0 0 1 177.998 20.73A13.99 13.99 0 0 1 177.899 20.522A14.497 14.497 0 0 1 177.829 20.268Q177.806 20.143 177.798 20A26.817 26.817 0 0 1 177.794 19.902ZM160.49 21.05L160.49 21.267A12.437 12.437 0 0 0 160.49 21.29Q160.491 21.321 160.493 21.362A37.885 37.885 0 0 0 160.494 21.376A4.031 4.031 0 0 0 160.51 21.469A4.921 4.921 0 0 0 160.525 21.512Q160.553 21.582 160.613 21.631Q160.66 21.67 160.74 21.678A4.425 4.425 0 0 0 160.784 21.68A3.105 3.105 0 0 0 160.895 21.661A2.79 2.79 0 0 0 160.994 21.596A2.175 2.175 0 0 0 161.062 21.48A2.923 2.923 0 0 0 161.068 21.446A13.958 13.958 0 0 0 161.073 21.381Q161.078 21.305 161.078 21.204A44.546 44.546 0 0 0 161.078 21.197L161.078 17.004A44.226 44.226 0 0 0 161.076 16.874A49.881 49.881 0 0 0 161.075 16.829A5.027 5.027 0 0 0 161.062 16.732A4.139 4.139 0 0 0 161.04 16.665Q161.008 16.591 160.945 16.546Q160.882 16.5 160.77 16.5Q160.694 16.5 160.641 16.521A2.056 2.056 0 0 0 160.595 16.546Q160.532 16.591 160.504 16.665A4.762 4.762 0 0 0 160.478 16.766A5.995 5.995 0 0 0 160.473 16.829Q160.469 16.92 160.469 17.011L160.469 18.516A2.504 2.504 0 0 0 160.457 18.498Q160.428 18.459 160.357 18.38A10.281 10.281 0 0 0 160.279 18.302Q160.234 18.262 160.179 18.22A21.748 21.748 0 0 0 160.105 18.166Q159.944 18.054 159.717 17.97A13.078 13.078 0 0 0 159.455 17.905Q159.329 17.886 159.188 17.886Q158.801 17.886 158.524 18.01A11.161 11.161 0 0 0 158.411 18.068A15.529 15.529 0 0 0 158.032 18.379A14.284 14.284 0 0 0 157.918 18.527Q157.732 18.803 157.659 19.132A31.593 31.593 0 0 0 157.6 19.484A24.8 24.8 0 0 0 157.585 19.748A25.356 25.356 0 0 0 157.6 20.012Q157.616 20.17 157.652 20.347Q157.718 20.679 157.9 20.977Q158.082 21.274 158.394 21.477A11.715 11.715 0 0 0 158.748 21.629Q158.901 21.667 159.08 21.677A22.684 22.684 0 0 0 159.202 21.68A19.893 19.893 0 0 0 159.439 21.667Q159.56 21.652 159.664 21.622A11.619 11.619 0 0 0 159.703 21.61Q159.916 21.54 160.07 21.442Q160.224 21.344 160.326 21.236Q160.425 21.13 160.487 21.054A20.372 20.372 0 0 0 160.49 21.05ZM184.01 21.05L184.01 21.267A12.437 12.437 0 0 0 184.01 21.29Q184.011 21.321 184.013 21.362A37.885 37.885 0 0 0 184.014 21.376A4.031 4.031 0 0 0 184.03 21.469A4.921 4.921 0 0 0 184.045 21.512Q184.073 21.582 184.133 21.631Q184.18 21.67 184.26 21.678A4.425 4.425 0 0 0 184.304 21.68A3.105 3.105 0 0 0 184.415 21.661A2.79 2.79 0 0 0 184.514 21.596A2.175 2.175 0 0 0 184.582 21.48A2.923 2.923 0 0 0 184.588 21.446A13.958 13.958 0 0 0 184.593 21.381Q184.598 21.305 184.598 21.204A44.546 44.546 0 0 0 184.598 21.197L184.598 17.004A44.226 44.226 0 0 0 184.596 16.874A49.881 49.881 0 0 0 184.595 16.829A5.027 5.027 0 0 0 184.582 16.732A4.139 4.139 0 0 0 184.56 16.665Q184.528 16.591 184.465 16.546Q184.402 16.5 184.29 16.5Q184.214 16.5 184.161 16.521A2.056 2.056 0 0 0 184.115 16.546Q184.052 16.591 184.024 16.665A4.762 4.762 0 0 0 183.998 16.766A5.995 5.995 0 0 0 183.993 16.829Q183.989 16.92 183.989 17.011L183.989 18.516A2.504 2.504 0 0 0 183.977 18.498Q183.948 18.459 183.877 18.38A10.281 10.281 0 0 0 183.799 18.302Q183.754 18.262 183.699 18.22A21.748 21.748 0 0 0 183.625 18.166Q183.464 18.054 183.237 17.97A13.078 13.078 0 0 0 182.975 17.905Q182.849 17.886 182.708 17.886Q182.321 17.886 182.044 18.01A11.161 11.161 0 0 0 181.931 18.068A15.529 15.529 0 0 0 181.552 18.379A14.284 14.284 0 0 0 181.438 18.527Q181.252 18.803 181.179 19.132A31.593 31.593 0 0 0 181.12 19.484A24.8 24.8 0 0 0 181.105 19.748A25.356 25.356 0 0 0 181.12 20.012Q181.136 20.17 181.172 20.347Q181.238 20.679 181.42 20.977Q181.602 21.274 181.914 21.477A11.715 11.715 0 0 0 182.268 21.629Q182.421 21.667 182.6 21.677A22.684 22.684 0 0 0 182.722 21.68A19.893 19.893 0 0 0 182.959 21.667Q183.08 21.652 183.184 21.622A11.619 11.619 0 0 0 183.223 21.61Q183.436 21.54 183.59 21.442Q183.744 21.344 183.846 21.236Q183.945 21.13 184.007 21.054A20.372 20.372 0 0 0 184.01 21.05ZM164.312 18.264L163.325 20.903L162.331 18.264Q162.271 18.09 162.211 17.993A6.228 6.228 0 0 0 162.205 17.984A2.038 2.038 0 0 0 162.077 17.895Q162.04 17.886 161.995 17.886Q161.848 17.886 161.771 17.977A4.199 4.199 0 0 0 161.73 18.035Q161.694 18.095 161.694 18.152A4.814 4.814 0 0 0 161.699 18.22A3.684 3.684 0 0 0 161.712 18.278A9.92 9.92 0 0 0 161.723 18.311Q161.738 18.355 161.766 18.427A84.529 84.529 0 0 0 161.785 18.474L162.891 21.232Q162.952 21.378 163.01 21.483A12.632 12.632 0 0 0 163.056 21.558A2.582 2.582 0 0 0 163.21 21.666Q163.255 21.678 163.309 21.68A5.626 5.626 0 0 0 163.325 21.68A4.256 4.256 0 0 0 163.424 21.669A2.598 2.598 0 0 0 163.588 21.558Q163.646 21.469 163.706 21.338A30.263 30.263 0 0 0 163.752 21.232L164.858 18.474A79.208 79.208 0 0 0 164.883 18.411Q164.913 18.334 164.927 18.292A7.545 7.545 0 0 0 164.932 18.278A3.771 3.771 0 0 0 164.946 18.209A4.945 4.945 0 0 0 164.949 18.152Q164.949 18.097 164.909 18.032A4.909 4.909 0 0 0 164.872 17.981A2.49 2.49 0 0 0 164.723 17.893A3.793 3.793 0 0 0 164.648 17.886A3.446 3.446 0 0 0 164.568 17.895Q164.513 17.908 164.475 17.941A2.009 2.009 0 0 0 164.438 17.984A7.867 7.867 0 0 0 164.399 18.054Q164.358 18.133 164.318 18.248A26.244 26.244 0 0 0 164.312 18.264ZM202.861 18.264L201.874 20.903L200.88 18.264Q200.82 18.09 200.76 17.993A6.228 6.228 0 0 0 200.754 17.984A2.038 2.038 0 0 0 200.626 17.895Q200.589 17.886 200.544 17.886Q200.397 17.886 200.32 17.977A4.199 4.199 0 0 0 200.279 18.035Q200.243 18.095 200.243 18.152A4.814 4.814 0 0 0 200.248 18.22A3.684 3.684 0 0 0 200.261 18.278A9.92 9.92 0 0 0 200.272 18.311Q200.287 18.355 200.315 18.427A84.529 84.529 0 0 0 200.334 18.474L201.44 21.232Q201.501 21.378 201.559 21.483A12.632 12.632 0 0 0 201.605 21.558A2.582 2.582 0 0 0 201.759 21.666Q201.804 21.678 201.858 21.68A5.626 5.626 0 0 0 201.874 21.68A4.256 4.256 0 0 0 201.973 21.669A2.598 2.598 0 0 0 202.137 21.558Q202.195 21.469 202.255 21.338A30.263 30.263 0 0 0 202.301 21.232L203.407 18.474A79.208 79.208 0 0 0 203.432 18.411Q203.462 18.334 203.476 18.292A7.545 7.545 0 0 0 203.481 18.278A3.771 3.771 0 0 0 203.495 18.209A4.945 4.945 0 0 0 203.498 18.152Q203.498 18.097 203.458 18.032A4.909 4.909 0 0 0 203.421 17.981A2.49 2.49 0 0 0 203.272 17.893A3.793 3.793 0 0 0 203.197 17.886A3.446 3.446 0 0 0 203.117 17.895Q203.062 17.908 203.024 17.941A2.009 2.009 0 0 0 202.987 17.984A7.867 7.867 0 0 0 202.948 18.054Q202.907 18.133 202.867 18.248A26.244 26.244 0 0 0 202.861 18.264ZM159.076 21.172A9.992 9.992 0 0 0 159.321 21.204Q159.524 21.204 159.731 21.134A9.14 9.14 0 0 0 159.831 21.093A9.773 9.773 0 0 0 160.102 20.9A10.93 10.93 0 0 0 160.26 20.697A14.782 14.782 0 0 0 160.371 20.473Q160.437 20.309 160.461 20.094A24.26 24.26 0 0 0 160.476 19.818Q160.476 19.356 160.343 19.073A18.755 18.755 0 0 0 160.322 19.029Q160.196 18.777 160.025 18.632A12.131 12.131 0 0 0 159.883 18.528A9.354 9.354 0 0 0 159.64 18.418A19.608 19.608 0 0 0 159.535 18.392Q159.402 18.362 159.3 18.362A11.478 11.478 0 0 0 159.207 18.366A9.465 9.465 0 0 0 158.845 18.467Q158.642 18.572 158.499 18.761Q158.355 18.95 158.282 19.206A17.995 17.995 0 0 0 158.242 19.373A20.798 20.798 0 0 0 158.208 19.755A27.923 27.923 0 0 0 158.211 19.894Q158.227 20.21 158.317 20.438Q158.371 20.576 158.438 20.688A11.647 11.647 0 0 0 158.586 20.886Q158.747 21.057 158.943 21.131A12.502 12.502 0 0 0 159.076 21.172ZM182.596 21.172A9.992 9.992 0 0 0 182.841 21.204Q183.044 21.204 183.251 21.134A9.14 9.14 0 0 0 183.351 21.093A9.773 9.773 0 0 0 183.622 20.9A10.93 10.93 0 0 0 183.78 20.697A14.782 14.782 0 0 0 183.891 20.473Q183.957 20.309 183.981 20.094A24.26 24.26 0 0 0 183.996 19.818Q183.996 19.356 183.863 19.073A18.755 18.755 0 0 0 183.842 19.029Q183.716 18.777 183.545 18.632A12.131 12.131 0 0 0 183.403 18.528A9.354 9.354 0 0 0 183.16 18.418A19.608 19.608 0 0 0 183.055 18.392Q182.922 18.362 182.82 18.362A11.478 11.478 0 0 0 182.727 18.366A9.465 9.465 0 0 0 182.365 18.467Q182.162 18.572 182.019 18.761Q181.875 18.95 181.802 19.206A17.995 17.995 0 0 0 181.762 19.373A20.798 20.798 0 0 0 181.728 19.755A27.923 27.923 0 0 0 181.731 19.894Q181.747 20.21 181.837 20.438Q181.891 20.576 181.958 20.688A11.647 11.647 0 0 0 182.106 20.886Q182.267 21.057 182.463 21.131A12.502 12.502 0 0 0 182.596 21.172ZM155.772 19.608L153.931 19.608L154.834 17.263L155.772 19.608ZM147.704 19.422A124.043 124.043 0 0 0 147.736 19.461A187.068 187.068 0 0 0 147.977 19.75A209.521 209.521 0 0 0 148.062 19.85Q148.233 20.049 148.405 20.238A280.942 280.942 0 0 0 148.527 20.372Q148.575 20.424 148.619 20.471A146.266 146.266 0 0 0 148.702 20.56A32.139 32.139 0 0 1 148.675 20.594Q148.644 20.633 148.602 20.683A116.402 116.402 0 0 1 148.562 20.732A12.456 12.456 0 0 1 148.433 20.863A15.356 15.356 0 0 1 148.342 20.938A13.22 13.22 0 0 1 148.163 21.051A16.357 16.357 0 0 1 148.041 21.11Q147.869 21.183 147.652 21.183A9.592 9.592 0 0 1 147.375 21.144A8.638 8.638 0 0 1 147.243 21.092Q147.057 21.001 146.921 20.854Q146.784 20.707 146.711 20.525Q146.637 20.343 146.637 20.154A8.237 8.237 0 0 1 146.655 19.979A6.431 6.431 0 0 1 146.711 19.822A10.984 10.984 0 0 1 146.895 19.564A12.277 12.277 0 0 1 146.903 19.556A14.899 14.899 0 0 1 147.147 19.354A16.679 16.679 0 0 1 147.176 19.335Q147.33 19.237 147.491 19.146Q147.572 19.259 147.704 19.422ZM167.826 19.706Q167.826 20.014 167.802 20.256A11.719 11.719 0 0 1 167.753 20.495A9.411 9.411 0 0 1 167.672 20.679Q167.595 20.819 167.469 20.917Q167.343 21.015 167.193 21.078Q167.042 21.141 166.885 21.173A16.044 16.044 0 0 1 166.654 21.202A14.108 14.108 0 0 1 166.58 21.204A10.041 10.041 0 0 1 166.436 21.194Q166.337 21.18 166.258 21.145A7.637 7.637 0 0 1 166.147 21.084A5.572 5.572 0 0 1 166.045 20.998A5.836 5.836 0 0 1 165.939 20.839A5.49 5.49 0 0 1 165.926 20.805A6.447 6.447 0 0 1 165.894 20.689A5.291 5.291 0 0 1 165.887 20.602Q165.887 20.553 165.905 20.476A4.746 4.746 0 0 1 165.935 20.386A6.234 6.234 0 0 1 165.971 20.319A4.921 4.921 0 0 1 166.039 20.232A6.678 6.678 0 0 1 166.111 20.168A5.299 5.299 0 0 1 166.201 20.113Q166.247 20.091 166.302 20.072A10.661 10.661 0 0 1 166.356 20.056A55.947 55.947 0 0 1 166.613 19.996A71.051 71.051 0 0 1 166.832 19.955A87.518 87.518 0 0 0 167.072 19.909Q167.194 19.884 167.329 19.853A147.944 147.944 0 0 0 167.42 19.832Q167.527 19.805 167.61 19.781A25.521 25.521 0 0 0 167.658 19.766A34.628 34.628 0 0 0 167.728 19.742Q167.762 19.731 167.792 19.719A18.009 18.009 0 0 0 167.826 19.706ZM195.042 19.706Q195.042 20.014 195.018 20.256A11.719 11.719 0 0 1 194.969 20.495A9.411 9.411 0 0 1 194.888 20.679Q194.811 20.819 194.685 20.917Q194.559 21.015 194.409 21.078Q194.258 21.141 194.101 21.173A16.044 16.044 0 0 1 193.87 21.202A14.108 14.108 0 0 1 193.796 21.204A10.041 10.041 0 0 1 193.652 21.194Q193.553 21.18 193.474 21.145A7.637 7.637 0 0 1 193.363 21.084A5.572 5.572 0 0 1 193.261 20.998A5.836 5.836 0 0 1 193.155 20.839A5.49 5.49 0 0 1 193.142 20.805A6.447 6.447 0 0 1 193.11 20.689A5.291 5.291 0 0 1 193.103 20.602Q193.103 20.553 193.121 20.476A4.746 4.746 0 0 1 193.151 20.386A6.234 6.234 0 0 1 193.187 20.319A4.921 4.921 0 0 1 193.255 20.232A6.678 6.678 0 0 1 193.327 20.168A5.299 5.299 0 0 1 193.417 20.113Q193.463 20.091 193.518 20.072A10.661 10.661 0 0 1 193.572 20.056A55.947 55.947 0 0 1 193.829 19.996A71.051 71.051 0 0 1 194.048 19.955A87.518 87.518 0 0 0 194.288 19.909Q194.41 19.884 194.545 19.853A147.944 147.944 0 0 0 194.636 19.832Q194.743 19.805 194.826 19.781A25.521 25.521 0 0 0 194.874 19.766A34.628 34.628 0 0 0 194.944 19.742Q194.978 19.731 195.008 19.719A18.009 18.009 0 0 0 195.042 19.706ZM206.375 19.706Q206.375 20.014 206.351 20.256A11.719 11.719 0 0 1 206.302 20.495A9.411 9.411 0 0 1 206.221 20.679Q206.144 20.819 206.018 20.917Q205.892 21.015 205.742 21.078Q205.591 21.141 205.434 21.173A16.044 16.044 0 0 1 205.203 21.202A14.108 14.108 0 0 1 205.129 21.204A10.041 10.041 0 0 1 204.985 21.194Q204.886 21.18 204.807 21.145A7.637 7.637 0 0 1 204.696 21.084A5.572 5.572 0 0 1 204.594 20.998A5.836 5.836 0 0 1 204.488 20.839A5.49 5.49 0 0 1 204.475 20.805A6.447 6.447 0 0 1 204.443 20.689A5.291 5.291 0 0 1 204.436 20.602Q204.436 20.553 204.454 20.476A4.746 4.746 0 0 1 204.484 20.386A6.234 6.234 0 0 1 204.52 20.319A4.921 4.921 0 0 1 204.588 20.232A6.678 6.678 0 0 1 204.66 20.168A5.299 5.299 0 0 1 204.75 20.113Q204.796 20.091 204.851 20.072A10.661 10.661 0 0 1 204.905 20.056A55.947 55.947 0 0 1 205.162 19.996A71.051 71.051 0 0 1 205.381 19.955A87.518 87.518 0 0 0 205.621 19.909Q205.743 19.884 205.878 19.853A147.944 147.944 0 0 0 205.969 19.832Q206.076 19.805 206.159 19.781A25.521 25.521 0 0 0 206.207 19.766A34.628 34.628 0 0 0 206.277 19.742Q206.311 19.731 206.341 19.719A18.009 18.009 0 0 0 206.375 19.706ZM179.887 19.482L177.801 19.482A28.069 28.069 0 0 1 177.814 19.387Q177.827 19.303 177.847 19.202A10.166 10.166 0 0 1 177.92 18.976A12.334 12.334 0 0 1 177.969 18.88Q178.018 18.789 178.095 18.691A8.296 8.296 0 0 1 178.243 18.546A9.616 9.616 0 0 1 178.284 18.516Q178.396 18.439 178.54 18.387Q178.683 18.334 178.865 18.334Q179.166 18.334 179.376 18.464Q179.586 18.593 179.705 18.796A14.726 14.726 0 0 1 179.78 18.94Q179.813 19.014 179.831 19.082A7.079 7.079 0 0 1 179.849 19.164A57.705 57.705 0 0 1 179.879 19.404A51.717 51.717 0 0 1 179.887 19.482ZM147.722 18.46A5.735 5.735 0 0 0 147.714 18.448Q147.698 18.426 147.666 18.383A159.702 159.702 0 0 1 147.622 18.324A204.664 204.664 0 0 1 147.575 18.261Q147.526 18.194 147.484 18.138A28.341 28.341 0 0 0 147.469 18.119Q147.447 18.089 147.435 18.075A1.535 1.535 0 0 0 147.428 18.068Q147.372 17.991 147.313 17.854A6.976 6.976 0 0 1 147.255 17.63A6.56 6.56 0 0 1 147.253 17.578Q147.253 17.466 147.299 17.357Q147.344 17.249 147.428 17.165A6.428 6.428 0 0 1 147.588 17.049A7.566 7.566 0 0 1 147.631 17.029A6.258 6.258 0 0 1 147.86 16.977A7.29 7.29 0 0 1 147.89 16.976A6.985 6.985 0 0 1 148.099 17.006A5.558 5.558 0 0 1 148.342 17.158Q148.513 17.34 148.513 17.585A5.96 5.96 0 0 1 148.479 17.788A5.572 5.572 0 0 1 148.45 17.854A8.463 8.463 0 0 1 148.321 18.039A9.906 9.906 0 0 1 148.279 18.082A14.839 14.839 0 0 1 148.113 18.22A17.789 17.789 0 0 1 148.027 18.278A67.874 67.874 0 0 1 147.801 18.415A77.011 77.011 0 0 1 147.722 18.46Z"/>';
+    return watermarkEl;
+  }
+};
+
+// src/canvas-extensions/floating-edge-canvas-extension.ts
+var FloatingEdgeCanvasExtension = class extends CanvasExtension {
+  isEnabled() {
+    return "floatingEdgeFeatureEnabled";
+  }
+  init() {
+    this.plugin.registerEvent(this.plugin.app.workspace.on(
+      CanvasEvent.NodeMoved,
+      (canvas, node) => this.onNodeMoved(canvas, node)
+    ));
+    this.plugin.registerEvent(this.plugin.app.workspace.on(
+      CanvasEvent.EdgeConnectionDragging.Before,
+      (canvas, edge, event, newEdge, side) => this.onEdgeStartedDragging(canvas, edge, event, newEdge, side)
+    ));
+    this.plugin.registerEvent(this.plugin.app.workspace.on(
+      CanvasEvent.EdgeConnectionDragging.After,
+      (canvas, edge, event, newEdge, side) => this.onEdgeStoppedDragging(canvas, edge, event, newEdge, side)
+    ));
+  }
+  onNodeMoved(canvas, node) {
+    const affectedEdges = canvas.getEdgesForNode(node);
+    for (const edge of affectedEdges)
+      this.updateEdgeConnectionSide(edge);
+  }
+  updateEdgeConnectionSide(edge) {
+    const edgeData = edge.getData();
+    if (edgeData.fromFloating) {
+      const fixedNodeConnectionPoint = BBoxHelper.getCenterOfBBoxSide(edge.to.node.getBBox(), edge.to.side);
+      const bestSide = this.getBestSideForFloatingEdge(fixedNodeConnectionPoint, edge.from.node);
+      if (bestSide !== edge.from.side) {
+        edge.setData({
+          ...edgeData,
+          fromSide: bestSide
+        });
+      }
+    }
+    if (edgeData.toFloating) {
+      const fixedNodeConnectionPoint = BBoxHelper.getCenterOfBBoxSide(edge.from.node.getBBox(), edge.from.side);
+      const bestSide = this.getBestSideForFloatingEdge(fixedNodeConnectionPoint, edge.to.node);
+      if (bestSide !== edge.to.side) {
+        edge.setData({
+          ...edgeData,
+          toSide: bestSide
+        });
+      }
+    }
+  }
+  getBestSideForFloatingEdge(sourcePos, target) {
+    const targetBBox = target.getBBox();
+    const possibleSides = ["top", "right", "bottom", "left"];
+    const possibleTargetPos = possibleSides.map((side) => [side, BBoxHelper.getCenterOfBBoxSide(targetBBox, side)]);
+    let bestSide = null;
+    let bestDistance = Infinity;
+    for (const [side, pos] of possibleTargetPos) {
+      const distance = Math.sqrt(Math.pow(sourcePos.x - pos.x, 2) + Math.pow(sourcePos.y - pos.y, 2));
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        bestSide = side;
+      }
+    }
+    return bestSide;
+  }
+  onEdgeStartedDragging(canvas, edge, _event, newEdge, _side) {
+    if (newEdge && this.plugin.settings.getSetting("newEdgeFromSideFloating"))
+      edge.setData({
+        ...edge.getData(),
+        fromFloating: true
+        // New edges can only get dragged from the "from" side
+      });
+    let cachedViewportNodes = null;
+    let hasNaNFloatingEdgeDropZones = false;
+    this.onPointerMove = (event) => {
+      if (cachedViewportNodes === null || hasNaNFloatingEdgeDropZones || canvas.viewportChanged) {
+        hasNaNFloatingEdgeDropZones = false;
+        cachedViewportNodes = canvas.getViewportNodes().map((node) => {
+          const nodeFloatingEdgeDropZone = this.getFloatingEdgeDropZoneForNode(node);
+          if (isNaN(nodeFloatingEdgeDropZone.minX) || isNaN(nodeFloatingEdgeDropZone.minY) || isNaN(nodeFloatingEdgeDropZone.maxX) || isNaN(nodeFloatingEdgeDropZone.maxY))
+            hasNaNFloatingEdgeDropZones = true;
+          return [node, nodeFloatingEdgeDropZone];
+        });
+      }
+      for (const [node, nodeFloatingEdgeDropZoneClientRect] of cachedViewportNodes) {
+        const hovering = BBoxHelper.insideBBox({ x: event.clientX, y: event.clientY }, nodeFloatingEdgeDropZoneClientRect, true);
+        node.nodeEl.classList.toggle("hovering-floating-edge-zone", hovering);
+      }
+    };
+    document.addEventListener("pointermove", this.onPointerMove);
+  }
+  onEdgeStoppedDragging(_canvas, edge, event, _newEdge, side) {
+    document.removeEventListener("pointermove", this.onPointerMove);
+    const dropZoneNode = side === "from" ? edge.from.node : edge.to.node;
+    const floatingEdgeDropZone = this.getFloatingEdgeDropZoneForNode(dropZoneNode);
+    const wasDroppedInFloatingEdgeDropZone = BBoxHelper.insideBBox({ x: event.clientX, y: event.clientY }, floatingEdgeDropZone, true);
+    const edgeData = edge.getData();
+    if (side === "from" && wasDroppedInFloatingEdgeDropZone == edgeData.fromFloating)
+      return;
+    if (side === "to" && wasDroppedInFloatingEdgeDropZone == edgeData.toFloating)
+      return;
+    if (side === "from")
+      edgeData.fromFloating = wasDroppedInFloatingEdgeDropZone;
+    else
+      edgeData.toFloating = wasDroppedInFloatingEdgeDropZone;
+    edge.setData(edgeData);
+    this.updateEdgeConnectionSide(edge);
+  }
+  getFloatingEdgeDropZoneForNode(node) {
+    const nodeElClientBoundingRect = node.nodeEl.getBoundingClientRect();
+    const nodeFloatingEdgeDropZoneElStyle = window.getComputedStyle(node.nodeEl, ":after");
+    const nodeFloatingEdgeDropZoneSize = {
+      width: parseFloat(nodeFloatingEdgeDropZoneElStyle.getPropertyValue("width")),
+      height: parseFloat(nodeFloatingEdgeDropZoneElStyle.getPropertyValue("height"))
+    };
+    return {
+      minX: nodeElClientBoundingRect.left + (nodeElClientBoundingRect.width - nodeFloatingEdgeDropZoneSize.width) / 2,
+      minY: nodeElClientBoundingRect.top + (nodeElClientBoundingRect.height - nodeFloatingEdgeDropZoneSize.height) / 2,
+      maxX: nodeElClientBoundingRect.right - (nodeElClientBoundingRect.width - nodeFloatingEdgeDropZoneSize.width) / 2,
+      maxY: nodeElClientBoundingRect.bottom - (nodeElClientBoundingRect.height - nodeFloatingEdgeDropZoneSize.height) / 2
+    };
+  }
+};
+
+// src/managers/css-styles-config-manager.ts
+var import_obsidian13 = require("obsidian");
+var CssStylesConfigManager = class {
+  constructor(plugin, trigger, validate) {
+    this.plugin = plugin;
+    this.validate = validate;
+    this.cachedConfig = null;
+    this.configRegex = new RegExp(`\\/\\*\\s*@${trigger}\\s*\\n([\\s\\S]*?)\\*\\/`, "g");
+    this.plugin.registerEvent(this.plugin.app.workspace.on(
+      "css-change",
+      () => {
+        this.cachedConfig = null;
+      }
+    ));
+  }
+  getStyles() {
+    if (this.cachedConfig)
+      return this.cachedConfig;
+    this.cachedConfig = [];
+    const styleSheets = document.styleSheets;
+    for (let i = 0; i < styleSheets.length; i++) {
+      const sheet = styleSheets.item(i);
+      if (!sheet)
+        continue;
+      const styleSheetConfigs = this.parseStyleConfigsFromCSS(sheet);
+      for (const config of styleSheetConfigs) {
+        const validConfig = this.validate(config);
+        if (!validConfig)
+          continue;
+        this.cachedConfig.push(validConfig);
+      }
+    }
+    return this.cachedConfig;
+  }
+  parseStyleConfigsFromCSS(sheet) {
+    var _a, _b;
+    const textContent = (_b = (_a = sheet == null ? void 0 : sheet.ownerNode) == null ? void 0 : _a.textContent) == null ? void 0 : _b.trim();
+    if (!textContent)
+      return [];
+    const configs = [];
+    const matches = textContent.matchAll(this.configRegex);
+    for (const match of matches) {
+      const yamlString = match[1];
+      const configYaml = (0, import_obsidian13.parseYaml)(yamlString);
+      configs.push(configYaml);
+    }
+    return configs;
+  }
+};
+
 // src/canvas-extensions/advanced-styles/node-styles.ts
 var NodeStylesExtension = class extends CanvasExtension {
   isEnabled() {
     return "nodeStylingFeatureEnabled";
   }
   init() {
-    this.allNodeStyles = [...BUILTIN_NODE_STYLE_ATTRIBUTES, ...this.plugin.settings.getSetting("customNodeStyleAttributes")];
-    this.plugin.registerEvent(this.plugin.app.workspace.on(
-      PluginEvent.SettingsChanged,
-      () => this.allNodeStyles = [...BUILTIN_NODE_STYLE_ATTRIBUTES, ...this.plugin.settings.getSetting("customNodeStyleAttributes")]
-    ));
+    this.cssStylesManager = new CssStylesConfigManager(this.plugin, "advanced-canvas-node-style", styleAttributeValidator);
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       CanvasEvent.PopupMenuCreated,
       (canvas) => this.onPopupMenuCreated(canvas)
@@ -5934,7 +7351,12 @@ var NodeStylesExtension = class extends CanvasExtension {
     if (canvas.readonly || selectionNodeData.length === 0 || selectionNodeData.length !== canvas.selection.size)
       return;
     const selectedNodeTypes = new Set(selectionNodeData.map((node) => node.type));
-    const availableNodeStyles = this.allNodeStyles.filter((style) => !style.nodeTypes || style.nodeTypes.some((type) => selectedNodeTypes.has(type)));
+    const availableNodeStyles = [
+      ...BUILTIN_NODE_STYLE_ATTRIBUTES,
+      /* Legacy */
+      ...this.plugin.settings.getSetting("customNodeStyleAttributes"),
+      ...this.cssStylesManager.getStyles()
+    ].filter((style) => !style.nodeTypes || style.nodeTypes.some((type) => selectedNodeTypes.has(type)));
     CanvasHelper.addStyleAttributesToPopup(
       this.plugin,
       canvas,
@@ -5955,16 +7377,12 @@ var NodeStylesExtension = class extends CanvasExtension {
         ...nodeData,
         styleAttributes: {
           ...nodeData.styleAttributes,
-          [attribute.datasetKey]: value
+          [attribute.key]: value
         }
       });
     }
     canvas.pushHistory(canvas.getData());
   }
-};
-
-// src/canvas-extensions/advanced-styles/edge-pathfinding-methods/edge-pathfinding-method.ts
-var EdgePathfindingMethod = class {
 };
 
 // src/utils/svg-path-helper.ts
@@ -6010,91 +7428,8 @@ var SvgPathHelper = class {
   }
 };
 
-// src/canvas-extensions/advanced-styles/edge-pathfinding-methods/pathfinding-direct.ts
-var EdgePathfindingDirect = class extends EdgePathfindingMethod {
-  getPath(_plugin, _canvas, fromPos, _fromBBoxSidePos, _fromSide, toPos, _toBBoxSidePos, _toSide) {
-    return {
-      svgPath: SvgPathHelper.pathArrayToSvgPath([fromPos, toPos], false),
-      center: {
-        x: (fromPos.x + toPos.x) / 2,
-        y: (fromPos.y + toPos.y) / 2
-      },
-      rotateArrows: true
-    };
-  }
-};
-
-// src/canvas-extensions/advanced-styles/edge-pathfinding-methods/pathfinding-square.ts
-var EdgePathfindingSquare = class extends EdgePathfindingMethod {
-  getPath(_plugin, _canvas, fromPos, fromBBoxSidePos, fromSide, toPos, toBBoxSidePos, toSide) {
-    let pathArray = [];
-    let center = { x: 0, y: 0 };
-    if (fromSide === toSide) {
-      const direction = BBoxHelper.direction(fromSide);
-      if (BBoxHelper.isHorizontal(fromSide)) {
-        pathArray = [
-          fromPos,
-          { x: Math.max(fromBBoxSidePos.x, toBBoxSidePos.x) + direction * CanvasHelper.GRID_SIZE, y: fromBBoxSidePos.y },
-          { x: Math.max(fromBBoxSidePos.x, toBBoxSidePos.x) + direction * CanvasHelper.GRID_SIZE, y: toBBoxSidePos.y },
-          toPos
-        ];
-      } else {
-        pathArray = [
-          fromPos,
-          { x: fromBBoxSidePos.x, y: Math.max(fromBBoxSidePos.y, toBBoxSidePos.y) + direction * CanvasHelper.GRID_SIZE },
-          { x: toBBoxSidePos.x, y: Math.max(fromBBoxSidePos.y, toBBoxSidePos.y) + direction * CanvasHelper.GRID_SIZE },
-          toPos
-        ];
-      }
-      center = {
-        x: (pathArray[1].x + pathArray[2].x) / 2,
-        y: (pathArray[1].y + pathArray[2].y) / 2
-      };
-    } else if (BBoxHelper.isHorizontal(fromSide) === BBoxHelper.isHorizontal(toSide)) {
-      if (BBoxHelper.isHorizontal(fromSide)) {
-        pathArray = [
-          fromPos,
-          { x: fromBBoxSidePos.x + (toBBoxSidePos.x - fromBBoxSidePos.x) / 2, y: fromBBoxSidePos.y },
-          { x: fromBBoxSidePos.x + (toBBoxSidePos.x - fromBBoxSidePos.x) / 2, y: toBBoxSidePos.y },
-          toPos
-        ];
-      } else {
-        pathArray = [
-          fromPos,
-          { x: fromBBoxSidePos.x, y: fromBBoxSidePos.y + (toBBoxSidePos.y - fromBBoxSidePos.y) / 2 },
-          { x: toBBoxSidePos.x, y: fromBBoxSidePos.y + (toBBoxSidePos.y - fromBBoxSidePos.y) / 2 },
-          toPos
-        ];
-      }
-      center = {
-        x: (fromBBoxSidePos.x + toBBoxSidePos.x) / 2,
-        y: (fromBBoxSidePos.y + toBBoxSidePos.y) / 2
-      };
-    } else {
-      if (BBoxHelper.isHorizontal(fromSide)) {
-        pathArray = [
-          fromPos,
-          { x: toBBoxSidePos.x, y: fromBBoxSidePos.y },
-          toPos
-        ];
-      } else {
-        pathArray = [
-          fromPos,
-          { x: fromBBoxSidePos.x, y: toBBoxSidePos.y },
-          toPos
-        ];
-      }
-      center = {
-        x: pathArray[1].x,
-        y: pathArray[1].y
-      };
-    }
-    return {
-      svgPath: SvgPathHelper.pathArrayToSvgPath(pathArray, false),
-      center,
-      rotateArrows: false
-    };
-  }
+// src/canvas-extensions/advanced-styles/edge-pathfinding-methods/edge-pathfinding-method.ts
+var EdgePathfindingMethod = class {
 };
 
 // src/canvas-extensions/advanced-styles/edge-pathfinding-methods/pathfinding-a-star.ts
@@ -6128,9 +7463,12 @@ var EdgePathfindingAStar = class extends EdgePathfindingMethod {
   getPath(plugin, canvas, fromPos, _fromBBoxSidePos, fromSide, toPos, _toBBoxSidePos, toSide) {
     const nodeBBoxes = [...canvas.nodes.values()].filter((node) => {
       const nodeData = node.getData();
-      const isGroup = nodeData.type === "group";
-      const isOpenPortal = nodeData.portalToFile !== void 0;
-      return !isGroup && !isOpenPortal;
+      if (nodeData.portalToFile !== void 0)
+        return false;
+      const nodeBBox = node.getBBox();
+      const nodeContainsFromPos = BBoxHelper.insideBBox(fromPos, nodeBBox, true);
+      const nodeContainsToPos = BBoxHelper.insideBBox(toPos, nodeBBox, true);
+      return !nodeContainsFromPos && !nodeContainsToPos;
     }).map((node) => node.getBBox());
     const fromPosWithMargin = BBoxHelper.moveInDirection(fromPos, fromSide, 10);
     const toPosWithMargin = BBoxHelper.moveInDirection(toPos, toSide, 10);
@@ -6246,22 +7584,106 @@ var EdgePathfindingAStar = class extends EdgePathfindingMethod {
   }
 };
 
+// src/canvas-extensions/advanced-styles/edge-pathfinding-methods/pathfinding-direct.ts
+var EdgePathfindingDirect = class extends EdgePathfindingMethod {
+  getPath(_plugin, _canvas, fromPos, _fromBBoxSidePos, _fromSide, toPos, _toBBoxSidePos, _toSide) {
+    return {
+      svgPath: SvgPathHelper.pathArrayToSvgPath([fromPos, toPos], false),
+      center: {
+        x: (fromPos.x + toPos.x) / 2,
+        y: (fromPos.y + toPos.y) / 2
+      },
+      rotateArrows: true
+    };
+  }
+};
+
+// src/canvas-extensions/advanced-styles/edge-pathfinding-methods/pathfinding-square.ts
+var EdgePathfindingSquare = class extends EdgePathfindingMethod {
+  getPath(_plugin, _canvas, fromPos, fromBBoxSidePos, fromSide, toPos, toBBoxSidePos, toSide) {
+    let pathArray = [];
+    let center = { x: 0, y: 0 };
+    if (fromSide === toSide) {
+      const direction = BBoxHelper.direction(fromSide);
+      if (BBoxHelper.isHorizontal(fromSide)) {
+        pathArray = [
+          fromPos,
+          { x: Math.max(fromBBoxSidePos.x, toBBoxSidePos.x) + direction * CanvasHelper.GRID_SIZE, y: fromBBoxSidePos.y },
+          { x: Math.max(fromBBoxSidePos.x, toBBoxSidePos.x) + direction * CanvasHelper.GRID_SIZE, y: toBBoxSidePos.y },
+          toPos
+        ];
+      } else {
+        pathArray = [
+          fromPos,
+          { x: fromBBoxSidePos.x, y: Math.max(fromBBoxSidePos.y, toBBoxSidePos.y) + direction * CanvasHelper.GRID_SIZE },
+          { x: toBBoxSidePos.x, y: Math.max(fromBBoxSidePos.y, toBBoxSidePos.y) + direction * CanvasHelper.GRID_SIZE },
+          toPos
+        ];
+      }
+      center = {
+        x: (pathArray[1].x + pathArray[2].x) / 2,
+        y: (pathArray[1].y + pathArray[2].y) / 2
+      };
+    } else if (BBoxHelper.isHorizontal(fromSide) === BBoxHelper.isHorizontal(toSide)) {
+      if (BBoxHelper.isHorizontal(fromSide)) {
+        pathArray = [
+          fromPos,
+          { x: fromBBoxSidePos.x + (toBBoxSidePos.x - fromBBoxSidePos.x) / 2, y: fromBBoxSidePos.y },
+          { x: fromBBoxSidePos.x + (toBBoxSidePos.x - fromBBoxSidePos.x) / 2, y: toBBoxSidePos.y },
+          toPos
+        ];
+      } else {
+        pathArray = [
+          fromPos,
+          { x: fromBBoxSidePos.x, y: fromBBoxSidePos.y + (toBBoxSidePos.y - fromBBoxSidePos.y) / 2 },
+          { x: toBBoxSidePos.x, y: fromBBoxSidePos.y + (toBBoxSidePos.y - fromBBoxSidePos.y) / 2 },
+          toPos
+        ];
+      }
+      center = {
+        x: (fromBBoxSidePos.x + toBBoxSidePos.x) / 2,
+        y: (fromBBoxSidePos.y + toBBoxSidePos.y) / 2
+      };
+    } else {
+      if (BBoxHelper.isHorizontal(fromSide)) {
+        pathArray = [
+          fromPos,
+          { x: toBBoxSidePos.x, y: fromBBoxSidePos.y },
+          toPos
+        ];
+      } else {
+        pathArray = [
+          fromPos,
+          { x: fromBBoxSidePos.x, y: toBBoxSidePos.y },
+          toPos
+        ];
+      }
+      center = {
+        x: pathArray[1].x,
+        y: pathArray[1].y
+      };
+    }
+    return {
+      svgPath: SvgPathHelper.pathArrayToSvgPath(pathArray, false),
+      center,
+      rotateArrows: false
+    };
+  }
+};
+
 // src/canvas-extensions/advanced-styles/edge-styles.ts
 var EDGE_PATHFINDING_METHODS = {
   "direct": EdgePathfindingDirect,
   "square": EdgePathfindingSquare,
   "a-star": EdgePathfindingAStar
 };
+var MAX_LIVE_UPDATE_SELECTION_SIZE = 5;
 var EdgeStylesExtension = class extends CanvasExtension {
   isEnabled() {
     return "edgesStylingFeatureEnabled";
   }
   init() {
-    this.allEdgeStyleAttributes = [...BUILTIN_EDGE_STYLE_ATTRIBUTES, ...this.plugin.settings.getSetting("customEdgeStyleAttributes")];
-    this.plugin.registerEvent(this.plugin.app.workspace.on(
-      PluginEvent.SettingsChanged,
-      () => this.allEdgeStyleAttributes = [...BUILTIN_EDGE_STYLE_ATTRIBUTES, ...this.plugin.settings.getSetting("customEdgeStyleAttributes")]
-    ));
+    this.cssStylesManager = new CssStylesConfigManager(this.plugin, "advanced-canvas-edge-style", styleAttributeValidator);
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       CanvasEvent.PopupMenuCreated,
       (canvas) => this.onPopupMenuCreated(canvas)
@@ -6281,7 +7703,7 @@ var EdgeStylesExtension = class extends CanvasExtension {
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       CanvasEvent.NodeMoved,
       // Only update edges this way if a node got moved with the arrow keys
-      (canvas, node) => node.initialized && !canvas.isDragging ? this.updateAllEdgesInArea(canvas, node.getBBox()) : void 0
+      (canvas, node, keyboard) => node.initialized && keyboard ? this.updateAllEdgesInArea(canvas, node.getBBox()) : void 0
     ));
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       CanvasEvent.NodeRemoved,
@@ -6311,7 +7733,12 @@ var EdgeStylesExtension = class extends CanvasExtension {
     CanvasHelper.addStyleAttributesToPopup(
       this.plugin,
       canvas,
-      this.allEdgeStyleAttributes,
+      [
+        ...BUILTIN_EDGE_STYLE_ATTRIBUTES,
+        /* Legacy */
+        ...this.plugin.settings.getSetting("customEdgeStyleAttributes"),
+        ...this.cssStylesManager.getStyles()
+      ],
       (_a = selectedEdges[0].getData().styleAttributes) != null ? _a : {},
       (attribute, value) => this.setStyleAttributeForSelection(canvas, attribute, value)
     );
@@ -6324,7 +7751,7 @@ var EdgeStylesExtension = class extends CanvasExtension {
         ...edgeData,
         styleAttributes: {
           ...edgeData.styleAttributes,
-          [attribute.datasetKey]: value
+          [attribute.key]: value
         }
       });
     }
@@ -6343,8 +7770,17 @@ var EdgeStylesExtension = class extends CanvasExtension {
     var _a, _b, _c, _d, _e, _f, _g;
     if (!canvas.dirty.has(edge) && !canvas.selection.has(edge))
       return;
-    if (!this.shouldUpdateEdge(canvas))
-      return;
+    if (!this.shouldUpdateEdge(canvas)) {
+      const tooManySelected = canvas.selection.size > MAX_LIVE_UPDATE_SELECTION_SIZE;
+      if (tooManySelected)
+        return;
+      const groupNodesSelected = [...canvas.selection].some((item) => {
+        var _a2;
+        return ((_a2 = item.getData()) == null ? void 0 : _a2.type) === "group";
+      });
+      if (groupNodesSelected)
+        return;
+    }
     const edgeData = edge.getData();
     if (!edge.bezier)
       return;
@@ -6387,6 +7823,8 @@ var EdgeStylesExtension = class extends CanvasExtension {
       return `0,0 5,10 0,20 -5,10`;
     else if (arrowStyle === "circle" || arrowStyle === "circle-outline")
       return `0 0, 4.95 1.8, 7.5 6.45, 6.6 11.7, 2.7 15, -2.7 15, -6.6 11.7, -7.5 6.45, -4.95 1.8`;
+    else if (arrowStyle === "blunt")
+      return `-10,8 10,8 10,6 -10,6`;
     else
       return `0,0 6.5,10.4 -6.5,10.4`;
   }
@@ -6527,7 +7965,8 @@ var EdgeExposerExtension = class extends CanvasExtension {
 var EXPOSED_SETTINGS = [
   "disableFontSizeRelativeToZoom",
   "collapsibleGroupsFeatureEnabled",
-  "collapsedGroupPreviewOnDrag"
+  "collapsedGroupPreviewOnDrag",
+  "floatingEdgeFeatureEnabled"
 ];
 var CanvasWrapperExposerExtension = class extends CanvasExtension {
   isEnabled() {
@@ -6581,10 +8020,12 @@ var CANVAS_EXTENSIONS = [
   VariableBreakpointCanvasExtension,
   BetterDefaultSettingsCanvasExtension,
   CommandsCanvasExtension,
+  FloatingEdgeCanvasExtension,
   FlipEdgeCanvasExtension,
   ZOrderingCanvasExtension,
   BetterReadonlyCanvasExtension,
   AutoResizeNodeCanvasExtension,
+  ExportCanvasExtension,
   GroupCanvasExtension,
   // More Advanced Extensions
   CollapsibleGroupsCanvasExtension,
@@ -6594,7 +8035,7 @@ var CANVAS_EXTENSIONS = [
   PresentationCanvasExtension,
   PortalsCanvasExtension
 ];
-var AdvancedCanvasPlugin = class extends import_obsidian12.Plugin {
+var AdvancedCanvasPlugin = class extends import_obsidian14.Plugin {
   async onload() {
     this.migrationHelper = new MigrationHelper(this);
     await this.migrationHelper.migrate();
@@ -6610,7 +8051,7 @@ var AdvancedCanvasPlugin = class extends import_obsidian12.Plugin {
   onunload() {
   }
   getCurrentCanvasView() {
-    const canvasView = this.app.workspace.getActiveViewOfType(import_obsidian12.ItemView);
+    const canvasView = this.app.workspace.getActiveViewOfType(import_obsidian14.ItemView);
     if ((canvasView == null ? void 0 : canvasView.getViewType()) !== "canvas")
       return null;
     return canvasView;
@@ -6633,6 +8074,5 @@ var AdvancedCanvasPlugin = class extends import_obsidian12.Plugin {
     this.debugHelper = new DebugHelper(this);
   }
 };
-
 
 /* nosourcemap */

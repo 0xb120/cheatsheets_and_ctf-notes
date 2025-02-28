@@ -8,7 +8,6 @@ tags:
   - vulnerability-research/todo
 url: https://awstats.sourceforge.io/
 date: 2024-08-20
-product: "[[AWStats]]"
 ---
 # Free Real-Time Logfile Analyzer to Get Advanced Statistics (GNU GPL).
 

@@ -10,7 +10,6 @@ tags:
   - Apache/OFBiz
 url: https://securityaffairs.com/168106/security/apache-ofbiz-rce-cve-2024-45195.html
 date: 2024-09-06
-product: "[[../../Play ground/Targets/Apache/OFBiz/OFBiz|OFBiz]]"
 ---
 # Apache Fixed a New Remote Code Execution Flaw in Apache OFBiz
 
