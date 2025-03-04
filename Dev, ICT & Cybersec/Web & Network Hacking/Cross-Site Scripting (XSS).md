@@ -16,9 +16,9 @@ Different types of XSS:
 
 - **Self XSS**: Self-XSS involves similar application behavior to regular reflected XSS, however it cannot be triggered in normal ways via a crafted URL or a cross-domain request. Instead, the vulnerability is only triggered if the victim themselves submits the XSS payload from their browser.
 
-- [Blind XSS](../../Readwise/Articles/novasecio%20-%20Hunting%20for%20Blind%20XSS%20Vulnerabilities%20A%20Complete%20Guide.md)
+- [Blind XSS](../../Readwise/Articles/novasecio%20-%20Hunting%20for%20Blind%20XSS%20Vulnerabilities%20A%20Complete%20Guide.md): Blind XSS vulnerabilities are quite different as the reflection happens on a component that's not accessible to the attacker (for example, an internal-only administrative panel, or a support dashboard accessible by the helpdesk employees only).
 
-- [mXSS](../../Readwise/Articles/sonarsource.com%20-%20mXSS%20The%20Vulnerability%20Hiding%20in%20Your%20Code.md)
+- [mXSS](../../Readwise/Articles/sonarsource.com%20-%20mXSS%20The%20Vulnerability%20Hiding%20in%20Your%20Code.md): The M in mXSS stands for “[Mutation](app://obsidian.md/Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/HTML.md#Mutation)”. mXSS takes advantage of this behavior in order to bypass sanitization.
 
 Possible attacks and risks:
 
@@ -62,7 +62,7 @@ Example of different context and respective useful payloads:
 	- `${alert(document.domain)}`
 - [Client-side template injection (CSTI)](Client-side%20template%20injection%20(CSTI).md)
 	- [Client-side template injection in AngularJS](Client-side%20template%20injection%20(CSTI).md#Client-side%20template%20injection%20in%20AngularJS)
-- [Cross-Site Scripting using MIME sniffing](MIME%20sniffing.md#Cross-Site%20Scripting%20using%20MIME%20sniffing)
+- [Cross-Site Scripting using MIME sniffing (MIME Confusion)](MIME%20sniffing.md#Cross-Site%20Scripting%20using%20MIME%20sniffing%20(MIME%20Confusion))
 ## Steal of cookies and session tokens
 
 Payload:

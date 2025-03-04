@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3f10436503dc23cf",
+        "id": "1b68dda9f737f1dd",
         "type": "tabs",
         "children": [
           {
-            "id": "8127fdf860e14db4",
+            "id": "d6abd11a6537558a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "sonarsource.com - mXSS The Vulnerability Hiding in Your Code"
+              "title": "New tab"
             }
           }
         ]
@@ -70,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Mailspring",
+                "query": "postMessage",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -199,7 +185,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -222,12 +207,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.3396609293254898,
+                  "scale": 0.33966092932548975,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of sonarsource.com - mXSS The Vulnerability Hiding in Your Code"
+              "title": "Graph view"
             }
           }
         ]
@@ -243,7 +228,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -253,7 +237,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for sonarsource.com - mXSS The Vulnerability Hiding in Your Code"
+              "title": "Backlinks"
             }
           },
           {
@@ -293,40 +277,41 @@
       "obsidian-git:Open Git source control": true
     }
   },
-  "active": "8127fdf860e14db4",
+  "active": "d6abd11a6537558a",
   "lastOpenFiles": [
+    "Readwise/Articles/Spaceraccoon's Blog - Universal Code Execution by Chaining Messages in Browser Extensions.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/DOM-based vulnerabilities.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/JavaScript & NodeJS.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/OAuth 2.0 attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Same-origin policy (SOP).md",
+    "Readwise/Articles/Stefan Schiller - Who Are You The Importance of Verifying Message Origins.md",
+    "Readwise/Articles/Detectify - Account Hijacking Using “Dirty Dancing” in Sign-in OAuth-flows.md",
+    "Readwise/Articles/attachments/sqidex-1.png",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Personal/TODO.md",
+    "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md",
+    "Readwise/Readwise inbox.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/MIME sniffing.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/X-Content-Type-Options.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/HTML.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/File Inclusion (LFI & RFI).md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Java.md",
     "Readwise/Articles/sonarsource.com - Encoding Differentials Why Charset Matters.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md",
-    "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/HTML.md",
     "Readwise/Articles/attachments/xXss_context-dependent.png",
     "Readwise/Articles/attachments/Pasted image 20250228175732.png",
     "Readwise/Articles/attachments/mXss_Desanitization.png",
     "Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-3.png",
     "Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-2.png",
     "Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-1.png",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
     "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
     "Readwise/Articles/Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup.md",
     "Play ground/Targets/Vulnerability Research Targets.md",
     "Readwise/Articles/STAR Labs - (CVE-2023-2315) Path Traversal in OpenCart Versions 4.0.0.0 to 4.0.2.2.md",
     "Communities/YouTube/_YT-dashboard.canvas",
     "Play ground/CTFs/_CTF-dashboard_wrapper.md",
     "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
-    "Readwise/Readwise inbox.md",
-    "Personal/TODO.md",
-    "Communities/YouTube/YYYYNNN_postMessageXSS.md",
-    "Personal/TODO-board.md",
-    "Readwise/Articles/repzret.blogspot.com - Abusing Libxml2 Quirks to Bypass SAML Authentication on GitHub Enterprise.md",
-    "Readwise/Articles/Sonny - The Best Security Is When We All Agree to Keep Everything Secret (Except the Secrets) - NAKIVO Backup & Replication.md",
-    "Readwise/Articles/Doyensec's Blog - Common OAuth Vulnerabilities.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/GraphQL.md",
-    "Readwise/Articles/Sonny - Get FortiRekt, I Am the Super_Admin Now - FortiOS Authentication Bypass CVE-2024-55591.md",
-    "Readwise/Articles/Benjamin Harris - 8 Million Requests Later, We Made the SolarWinds Supply Chain Attack Look Amateur.md",
-    "Dev, ICT & Cybersec/Tools/CodeQL.md",
-    "Readwise/Articles/Assetnote Research - NginxApache Path Confusion to Auth Bypass in PAN-OS.md",
-    "Readwise/Articles/Assetnote Research - How an Obscure PHP Footgun Led to RCE in Craft CMS.md",
     "Play ground/Targets/vtenext",
     "Play ground/Targets/Digital Private Vault/private-vault-report.pdf",
     "Play ground/Targets/Woox/Woox R4040/Woox R4040.canvas",
@@ -343,7 +328,6 @@
     "zzz_res/attachments/ExpressionalRebel a46123399c2e4431911db6e473b6a8e9.png",
     "zzz_res/attachments/EasterBunny e580b8ca86214deb837383b8e4c495a4 10.png",
     "zzz_res/attachments/DOMInv-2.png",
-    "zzz_res/attachments/CORS4.png",
     "zzz_res/attachments/annotated-OWASP_Code_Review_Guide_v2.pdf",
     "Communities/YouTube/attachments/software-architecture.excalidrawlib",
     "Excalidraw",

@@ -40,7 +40,7 @@ First, there are different response types you can use in the OAuth-dance, the th
 - **Fragment**. Using a fragment redirect (`https://example.com/callback#access_token=xxx`). In this mode, the fragment part of the URL doesn’t end up in any server-logs and can only be reached client-side using javascript. This response mode is used for tokens.
 	- `response_mode=fragment` is used by Apple and Microsoft.
 	- `response_type` contains `id_token` or `token` and is used by Google, Facebook, Atlassian, and others.
-- **Web-message**. Using postMessage to a fixed origin of the website: 
+- **Web-message**. Using [PostMessage](../../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/JavaScript%20&%20NodeJS.md#PostMessage%20and%20EventListener) to a fixed origin of the website: 
  `postMessage('{"access_token":"xxx"}','https://example.com')` 
  If supported, it can often be used for all different response types.
 	 - `response_mode=web_message` is used by Apple.

@@ -72,7 +72,7 @@ date: 2024-08-21
 
 
 
-> `postMessage` is a separate messaging mechanism from `sendMessage`, often used for cross-window/tab messaging by web pages, not extensions.
+> `postMessage` is a separate messaging mechanism from `sendMessage`, often used for cross-window/tab messaging by web pages, not extensions. [^1]
 > [View Highlight](https://read.readwise.io/read/01j7ge480e1gk1zpn1ny69zdbz)
 
 
@@ -206,3 +206,4 @@ date: 2024-08-21
 >  ![](https://spaceraccoon.dev/images/31/native-message-chain.png)
 > [View Highlight](https://read.readwise.io/read/01j7gedr2q43v6qj88c6cx239a)
 
+[^1]: [PostMessage and EventListener](../../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/JavaScript%20&%20NodeJS.md#PostMessage%20and%20EventListener)

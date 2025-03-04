@@ -184,6 +184,7 @@ See as examples:
 - [Understanding The PostMessage Vulnerabilities And Its Implications](https://payatu.com/blog/postmessage-vulnerabilities/#JavaScript_postMessage_Vulnerabilities)
 - [postMessage vulnerabilities](https://book.hacktricks.xyz/pentesting-web/postmessage-vulnerabilities)
 - [XSS due to Missing Origin Check (CVE-2023-46252)](https://www.sonarsource.com/blog/who-are-you-the-importance-of-verifying-message-origins/)[^46252]
+- [Universal Code Execution by Chaining Messages in Browser Extensions](../../Readwise/Articles/Spaceraccoon's%20Blog%20-%20Universal%20Code%20Execution%20by%20Chaining%20Messages%20in%20Browser%20Extensions.md) (postMessage vulnerabilities in Browser Extensions)
 
 [^46252]: [Who Are You The Importance of Verifying Message Origins - CVE-2023-46252](../../Readwise/Articles/Stefan%20Schiller%20-%20Who%20Are%20You%20The%20Importance%20of%20Verifying%20Message%20Origins.md#^3bbba8); Stefan Schiller, Sonar
 

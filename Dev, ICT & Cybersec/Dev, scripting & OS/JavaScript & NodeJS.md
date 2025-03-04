@@ -313,22 +313,40 @@ xhr.send(null);
 
 ## PostMessage and EventListener
 
+- [postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) method
+- [addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) method
+
 Listen for incoming messages:
 ```html
-<script>
-    window.addEventListener('message', function(e) {
-        fetch("/" + encodeURIComponent(e.data.data))
-    }, false)
+ <script>
+	function recvMessage(event){
+	 msg = "Message from " + event.origin; // Build a message containing
+	 msg += "\nContaining : " + event.data; // data from the event object
+	 console.log(msg); 
+	}
+	window.addEventListener("message", recvMessage) // Register the handler
 </script>
 ```
 
 Send messages to the top parent windows from an `iframe`:
 ```html
-<script>
-parent.postMessage({type: 'onload', data: window.location.href}, '*')
-...
-</script>
+<html>  
+<head>  
+	<script>
+		function pocLog(win) {  
+			let msg = '{"action": "log", "url":"/"}';  
+			win.postMessage(msg, '*');  
+		}
+	</script>
+</head>
+<body>
+	<iframe src="https://target.com/" width="100%" height="900" id="frame"></iframe>
+	<a href="#" onclick="pocLog(document.getElementById('frame').contentWindow);">Print Log</a>
+</body>
+</html>
 ```
+
+
 
 ## JSON2HTTP using JS
 

@@ -225,6 +225,8 @@ http://example.com/index.php?page=/proc/$PID/fd/$FD
 
 with `$PID` = PID of the process (can be brute forced) and `$FD` the file descriptor (can be brute forced too)
 
+You can use `/proc/sys/kernel/ns_last_pid` to find the last PID opened.
+
 #### Via `/proc/self/environ`
 
 Like a log file, send the payload in the User-Agent, it will be reflected inside the `/proc/self/environ` file.

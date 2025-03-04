@@ -40,6 +40,7 @@ Preconditions on client side (both necessary for successful exploitation): 
 - The attacker should be able to introduce an executable context via HTML injection
 
 Preconditions on the server side (only one necessary for successful exploitation): 
+- **Content-Type** header is not set; or
 - If the server misrepresents a resource, the attack will be successful. Eg. developer sets **text/javascript** as the value of **Content-Type** header in a response containing text file.  
 - The server represents a resource correctly. However, the browser’s MIME sniffing mechanism makes the resource “executable”. Eg. developer sets **text/plain** as the value of **Content-Type** header in a response containing text file. Although **text/plain** is the correct **Content-Type** for a text response, browser performs MIME sniffing and makes it possible for an attacker to execute malicious JavaScript from the text file.
 
