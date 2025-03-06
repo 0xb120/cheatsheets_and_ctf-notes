@@ -7,7 +7,7 @@ tags:
 url: https://securitycipher.medium.com/out-of-band-exfiltration-tools-68b79815fc60
 date: 2023-10-22
 ---
-# Out-of-Band Exfiltration Tools
+# Out-of-Band (OAST) Exfiltration Tools
 
 ![rw-book-cover](https://readwise-assets.s3.amazonaws.com/media/uploaded_book_covers/profile_1116209/17P-8CyNsioo49aDhSZexig.png)
 
@@ -27,6 +27,7 @@ date: 2023-10-22
 > beeceptor — [http://beeceptor.com](http://beeceptor.com) 
 > postbin — [https://www.toptal.com/developers/postbin/](https://www.toptal.com/developers/postbin/) 
 > knary — [https://github.com/sudosammy/knary](https://github.com/sudosammy/knary)
+> [mmar](Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-03-03.md#^e5885d)
 > [View Highlight](https://read.readwise.io/read/01hdc1enwdyf8ss7cx4g4pzgqk)
 > #tools 
 

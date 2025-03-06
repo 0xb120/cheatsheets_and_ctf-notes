@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "1b68dda9f737f1dd",
+        "id": "ef34cd872c3a6179",
         "type": "tabs",
         "children": [
           {
-            "id": "d6abd11a6537558a",
+            "id": "98ef2d063977aa17",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Readwise/Readwise inbox.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Readwise inbox"
             }
           }
         ]
@@ -56,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "postMessage",
+                "query": "cache poisoning",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -185,6 +199,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Readwise/Readwise inbox.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -212,7 +227,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Readwise inbox"
             }
           }
         ]
@@ -228,6 +243,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Readwise/Readwise inbox.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -237,7 +253,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Readwise inbox"
             }
           },
           {
@@ -246,19 +262,18 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Dev, ICT & Cybersec"
+              "title": "Outgoing links"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 435.5
+    "width": 427.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -277,41 +292,42 @@
       "obsidian-git:Open Git source control": true
     }
   },
-  "active": "d6abd11a6537558a",
+  "active": "98ef2d063977aa17",
   "lastOpenFiles": [
-    "Readwise/Articles/Spaceraccoon's Blog - Universal Code Execution by Chaining Messages in Browser Extensions.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/DOM-based vulnerabilities.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/JavaScript & NodeJS.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/OAuth 2.0 attacks.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Same-origin policy (SOP).md",
-    "Readwise/Articles/Stefan Schiller - Who Are You The Importance of Verifying Message Origins.md",
-    "Readwise/Articles/Detectify - Account Hijacking Using “Dirty Dancing” in Sign-in OAuth-flows.md",
-    "Readwise/Articles/attachments/sqidex-1.png",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Personal/TODO.md",
-    "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md",
+    "Readwise/Articles/Luke Jahnke - Cross-Site POST Requests Without a Content-Type Header.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-origin resource sharing (CORS).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Request Forgery (CSRF).md",
     "Readwise/Readwise inbox.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/MIME sniffing.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/X-Content-Type-Options.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-02-10.md",
+    "Dev, ICT & Cybersec/Tools/nuclei.md",
+    "Readwise/Articles/zhero_web_security - Next.js, Cache, and Chains The Stale Elixir.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Poisoning.md",
+    "Readwise/Articles/Vulnerability Researcher - Next.js and Cache Poisoning A Quest for the Black Hole.md",
+    "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md",
+    "Readwise/Articles/Daniel Stenberg - CVSS Is Dead to Us.md",
+    "Readwise/Articles/PortSwigger Research - Introducing SignSaboteur Forge Signed Web Tokens With Ease.md",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-12-16.md",
+    "Readwise/Articles/httpsgithub.commrmtwoj - MrmtwojApache-Vulnerability-Testing Apache HTTP Server Vulnerability Testing Tool  PoC for CVE-2024-38472 , CVE-2024-39573 , CVE-2024-38477 , CVE-2024-38476 , CVE-2024-38475 , CVE-2024-38474 , CVE-2024-38473 , CVE-2023-38709.md",
+    "Readwise/Articles/Assetnote Research - NginxApache Path Confusion to Auth Bypass in PAN-OS.md",
+    "Readwise/Articles/intigriti - Hunting Down the Top 5 Most Common Price Manipulation Vulnerabilities in E-Commerce Websites.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Confusion Attacks.md",
     "Dev, ICT & Cybersec/Dev, scripting & OS/HTML.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/File Inclusion (LFI & RFI).md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Java.md",
-    "Readwise/Articles/sonarsource.com - Encoding Differentials Why Charset Matters.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md",
+    "Readwise/Articles/Doyensec's Blog - Common OAuth Vulnerabilities.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/CICD security.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Play ground/Targets/vtenext/20250203_VTENext.md",
+    "Personal/TODO.md",
+    "Readwise/Articles/Antoine Gicquel - Web Architect - An Introduction.md",
+    "Readwise/Articles/Antoine Gicquel - WordPress for Security Audit.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Development fundamentals.md",
+    "Readwise/Articles/attachments/sqidex-1.png",
     "Readwise/Articles/attachments/xXss_context-dependent.png",
     "Readwise/Articles/attachments/Pasted image 20250228175732.png",
     "Readwise/Articles/attachments/mXss_Desanitization.png",
     "Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-3.png",
     "Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-2.png",
     "Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-1.png",
-    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
-    "Readwise/Articles/Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup.md",
-    "Play ground/Targets/Vulnerability Research Targets.md",
-    "Readwise/Articles/STAR Labs - (CVE-2023-2315) Path Traversal in OpenCart Versions 4.0.0.0 to 4.0.2.2.md",
     "Communities/YouTube/_YT-dashboard.canvas",
-    "Play ground/CTFs/_CTF-dashboard_wrapper.md",
-    "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
     "Play ground/Targets/vtenext",
     "Play ground/Targets/Digital Private Vault/private-vault-report.pdf",
     "Play ground/Targets/Woox/Woox R4040/Woox R4040.canvas",

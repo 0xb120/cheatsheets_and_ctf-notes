@@ -1,12 +1,12 @@
 # OpenID Connect basics
 
 >[!question] What is OpenID connect?
-OpenID Connect extends the OAuth protocol to provide a dedicated identity and authentication layer that sits on top of the basic [OAuth 2.0](OAuth%202.0.md) implementation. 
+OpenID Connect extends the OAuth protocol to provide a dedicated identity and authentication layer that sits on top of the basic [OAuth 2.0](../Dev,%20scripting%20&%20OS/OAuth%202.0.md) implementation. 
 
 OpenID Connect solves a lot of the authentication problems in OAuth by adding standardized, identity-related features to make authentication via OAuth work in a more reliable and uniform way.
 
-Compared to [OAuth 2.0 components](OAuth%202.0.md#OAuth%202.0%20components), the key difference are:
-- an additional, standardized set of [scopes](OAuth%202.0.md#OAuth%202.0%20scopes) that are the same for all providers (`openid`)
+Compared to [OAuth 2.0 components](../Dev,%20scripting%20&%20OS/OAuth%202.0.md#OAuth%202.0%20components), the key difference are:
+- an additional, standardized set of [scopes](../Dev,%20scripting%20&%20OS/OAuth%202.0.md#OAuth%202.0%20scopes) that are the same for all providers (`openid`)
 - an extra response type: `id_token`.
 
 As with basic OAuth, it's also a good idea to take a look at the OAuth provider's documentation to see if there's any useful information about their OpenID Connect support. You may also be able to access the configuration file from the standard endpoint:

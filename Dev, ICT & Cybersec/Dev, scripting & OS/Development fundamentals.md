@@ -27,23 +27,6 @@ A metadata-driven design pattern [^mddp] creates a layer of abstraction in which
 
 - [Web Services & APIs](../Web%20&%20Network%20Hacking/Web%20Services%20&%20APIs.md)
 
-# HTML attributes vs DOM properties
+# CI/CD and tests
 
-Attributes and properties are _fundamentally_ different things. You can have an attribute and property of the same name set to different values. 
-
-```html
-<div foo="bar">…</div>
-<script>
-  const div = document.querySelector('div[foo=bar]');
-
-  console.log(div.getAttribute('foo')); // 'bar'
-  console.log(div.foo); // undefined
-
-  div.foo = 'hello world';
-
-  console.log(div.getAttribute('foo')); // 'bar'
-  console.log(div.foo); // 'hello world'
-</script>
-```
-
-But there are many other variations and interesting stuff. Read [HTML attributes vs DOM properties](https://jakearchibald.com/2024/attributes-vs-properties/) for more details and examples.
+- [Regression Testing](../../Readwise/Articles/Yannick%20Merckx%20-%20Regression%20Testing%20The%20Key%20to%20Ensuring%20Software%20Quality%20and%20Reliability.md)

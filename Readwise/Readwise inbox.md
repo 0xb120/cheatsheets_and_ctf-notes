@@ -1,5 +1,5 @@
 ```dataview
-TABLE
+TABLE date
 FROM #RW_inbox 
 SORT date
 ```

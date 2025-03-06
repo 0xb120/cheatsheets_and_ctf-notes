@@ -168,3 +168,7 @@ Interactsh server runs multiple services and captures all the incoming requests 
 # Video
 
 <iframe width="660" height="415" src="https://www.youtube.com/embed/T83IR4Ba0io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Tools and integrations
+
+- [orbit](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-02-10.md#^adfb39)

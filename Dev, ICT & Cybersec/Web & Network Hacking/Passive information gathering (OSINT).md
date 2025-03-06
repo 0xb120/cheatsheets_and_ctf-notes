@@ -11,6 +11,7 @@
 - [waymore](https://github.com/xnl-h4ck3r/waymore) [^waymore-tweet]
 - [Recon for Bug Bounty: 8 Essential Tools for Performing Effective Reconnaissance](../../Readwise/Articles/novasecio%20-%20Recon%20for%20Bug%20Bounty%208%20Essential%20Tools%20for%20Performing%20Effective%20Reconnaissance.md)
 - [urlfinder](https://github.com/projectdiscovery/urlfinder) [^urlfinder] - passively gathering URLs without active scanning
+- [webcap](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-03-03.md#^e13b68)
 
 [^porch-pirate]: [Plundering Postman With Porch Pirate](../../Readwise/Articles/Mand%20Consulting%20Group%20-%20Plundering%20Postman%20With%20Porch%20Pirate.md), mandconsulting.ca
 [^waymore-tweet]: [@xnl_h4ck3r on Twitter - Tweets From  XNL -Н4cĸ3r](../../Readwise/Tweets/@xnl_h4ck3r%20on%20Twitter%20-%20Tweets%20From%20%20XNL%20-Н4cĸ3r.md#^3d52ca)

@@ -5,6 +5,9 @@ URL: https://github.com/returntocorp/semgrep
 
 # Basic usage
 
+>[!abstract] Documentation
+>- [Semgrep tutorial](https://appsec.guide/docs/static-analysis/semgrep/) by Trail of Bits; appsec.guide
+
 ## Automatic scan
 
 ```bash

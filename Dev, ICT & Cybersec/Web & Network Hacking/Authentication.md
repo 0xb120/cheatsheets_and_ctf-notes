@@ -54,7 +54,7 @@ Two-factor authentication is demonstrably more secure than single-factor authent
 
 In addition to the basic login functionality, most websites provide supplementary functionality to allow users to manage their account. For example, users can typically change their password or reset their password when they forget it. These mechanisms can also introduce vulnerabilities that can be exploited by an attacker.
 
-Furthermore, many websites now uses third-party authentication mechanism, like [OAuth 2.0](OAuth%202.0.md), STS, etc. Also this implementations can be equally vulnerable to classic one and may be exploited by attackers.
+Furthermore, many websites now uses third-party authentication mechanism, like [OAuth 2.0](../Dev,%20scripting%20&%20OS/OAuth%202.0.md), STS, etc. Also this implementations can be equally vulnerable to classic one and may be exploited by attackers.
 
 ---
 

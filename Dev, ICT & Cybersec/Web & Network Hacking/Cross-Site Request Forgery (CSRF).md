@@ -158,3 +158,5 @@ Some applications make use of the HTTP Referer header to attempt to defend again
 >```
 - **Using [Open Redirection](Open%20Redirection.md)**:
   If you can find a DOM-based Open Redirection vulnerability, you can use it to instantiate your CSRF attack and chain it with method switching.
+## Other bypass and tricks
+- [Cross-Site POST Requests Without a Content-Type Header](../../Readwise/Articles/Luke%20Jahnke%20-%20Cross-Site%20POST%20Requests%20Without%20a%20Content-Type%20Header.md) 

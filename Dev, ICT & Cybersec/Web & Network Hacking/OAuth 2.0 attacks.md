@@ -13,7 +13,7 @@ Vulnerabilities can arise in the client application's implementation of OAuth as
 
 ## Improper implementation of the implicit grant type
 
-When application uses [Implicit grant type](OAuth%202.0.md#Implicit%20grant%20type) as authentication mechanism, the access token is sent from the OAuth service to the client application via the user's browser as a URL fragment. The client application then accesses the token using JavaScript. 
+When application uses [Implicit grant type](../Dev,%20scripting%20&%20OS/OAuth%202.0.md#Implicit%20grant%20type) as authentication mechanism, the access token is sent from the OAuth service to the client application via the user's browser as a URL fragment. The client application then accesses the token using JavaScript. 
 
 The trouble is, if the application wants to maintain the session after the user closes the page, it needs to store the current user data (normally a user ID and the access token) somewhere.
 
@@ -172,8 +172,8 @@ When auditing an OAuth flow, you should try experimenting with the `redirect_ur
 Against more robust targets, you might find that no matter what you try, you are unable to successfully submit an external domain as the `redirect_uri`. The key now is to use this knowledge to try and access a wider attack surface within the client application itself. Try to work out whether you can change the `redirect_uri` parameter to point to any other pages on a whitelisted domain.
 
 Once you identify which other pages you are able to set as the redirect URI, you should audit them for additional vulnerabilities that you can potentially use to leak the code or token:
-- [Authorization code grant type](OAuth%202.0.md#Authorization%20code%20grant%20type): find a vulnerability that gives you access to the query parameters
-- [Implicit grant type](OAuth%202.0.md#Implicit%20grant%20type): extract the URL fragment
+- [Authorization code grant type](../Dev,%20scripting%20&%20OS/OAuth%202.0.md#Authorization%20code%20grant%20type): find a vulnerability that gives you access to the query parameters
+- [Implicit grant type](../Dev,%20scripting%20&%20OS/OAuth%202.0.md#Implicit%20grant%20type): extract the URL fragment
 
 One of the most useful vulnerabilities for this purpose is an [Open Redirection](Open%20Redirection.md). You can use this as a proxy to forward victims, along with their code or token, to an attacker-controlled domain where you can host any malicious script you like. Other good candidates are [Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md), HTML injection and Dangerous JavaScript that handles query parameters and URL fragments.
 

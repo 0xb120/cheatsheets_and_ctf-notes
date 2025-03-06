@@ -4,9 +4,10 @@ URL: https://github.com/github/codeql
 url: https://frycos.github.io/vulns4free/2022/12/02/rce-in-20-minutes.html
 ---
 
->[!abstract] Official documentation
+>[!abstract] Documentation
 >- General CodeQL: https://codeql.github.com/docs/
 >- CodeQL CLI: https://docs.github.com/en/code-security/codeql-cli/using-the-codeql-cli
+>- [CodeQL tutorial](https://appsec.guide/docs/static-analysis/codeql/) by Trail of Bits; appsec.guide
 
 ## Start a project using CodeQL CLI
 

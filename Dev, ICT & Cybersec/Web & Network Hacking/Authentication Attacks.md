@@ -85,7 +85,7 @@ Connection: close
 	- Leaking password reset token
 - Exploit application features (eg. password reset) to brute-force other user's password
 - [Access control vulnerabilities](Access%20control%20vulnerabilities.md) in password reset logic
-- [OAuth 2.0](OAuth%202.0.md) and [OAuth 2.0 attacks](OAuth%202.0%20attacks.md)
+- [OAuth 2.0](../Dev,%20scripting%20&%20OS/OAuth%202.0.md) and [OAuth 2.0 attacks](OAuth%202.0%20attacks.md)
 
 >[!tip] Use Race Condition techniques to discover time-sensitive attacks
 >Using [Race Condition](Race%20Condition.md) technique may allow you to perform [Time-sensitive attacks](Race%20Condition.md#Time-sensitive%20attacks) and eventually bypass authentication, as in the case of timestamp usage when generating tokens, etc.

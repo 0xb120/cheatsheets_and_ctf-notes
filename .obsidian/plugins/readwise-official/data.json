@@ -5,7 +5,7 @@
   "triggerOnLoad": true,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 19012756,
+  "lastSavedStatusID": 19050700,
   "currentSyncStatusID": 0,
   "refreshBooks": true,
   "booksToRefresh": [
@@ -7016,7 +7016,8 @@
     "44500516",
     "44837811",
     "44837833",
-    "45462277"
+    "45462277",
+    "42677809"
   ],
   "failedBooks": [],
   "booksIDsMap": {
@@ -7074,7 +7075,6 @@
     "Readwise/Articles/Rory McNamara - Breaking Caches and Bypassing Istio RBAC With HTTP Response Header Injection.md": "41704321",
     "Readwise/Tweets/@LiveOverflow on Twitter - Nice Writeup for Anybody....md": "41754562",
     "Readwise/Articles/d8rh8r - Using SMS for Location.md": "42116946",
-    "Readwise/Tweets/@orange_8361 on Twitter - Tweets From Orange Tsai  🍊.md": "42677809",
     "Readwise/Articles/Seytonic - How They Tracked the Trump Shooter's Phone.md": "42811775",
     "Readwise/Articles/Connor Ford - Version Tracking in Ghidra.md": "43376639",
     "Readwise/Articles/hulkvision.github.io - RCE in Adobe Acrobat Reader for Android.md": "41610470",
@@ -7189,7 +7189,12 @@
     "Readwise/Articles/Doyensec's Blog - Common OAuth Vulnerabilities.md": "49219859",
     "Readwise/Articles/Sonny - The Best Security Is When We All Agree to Keep Everything Secret (Except the Secrets) - NAKIVO Backup & Replication.md": "49220305",
     "Readwise/Articles/repzret.blogspot.com - Abusing Libxml2 Quirks to Bypass SAML Authentication on GitHub Enterprise.md": "49221240",
-    "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md": "49223249"
+    "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md": "49223249",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-03-03.md": "49363256",
+    "Readwise/Articles/Vulnerability Researcher - Next.js and Cache Poisoning A Quest for the Black Hole.md": "49363334",
+    "Readwise/Articles/zhero_web_security - Next.js, Cache, and Chains The Stale Elixir.md": "49363658",
+    "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md": "49367816",
+    "Readwise/Articles/Daniel Stenberg - CVSS Is Dead to Us.md": "49394884"
   },
   "reimportShowConfirmation": true
 }

@@ -59,3 +59,24 @@ Eg. `<svg><style><a alt="</style><img src=x onerror=alert(1)>">`
 ![](attachments/HTML-3.png)
 
 In this case, we do see an `a` element being created. The `style` element doesn’t follow the “raw text” parsing rules, because it is inside a different namespace. When residing within an SVG or MathML namespace, the parsing rules change and no longer follow the HTML language. [](https://read.readwise.io/read/01jn6dya819r3jzwxm5xk10cwg)
+
+## HTML attributes vs DOM properties
+
+Attributes and properties are _fundamentally_ different things. You can have an attribute and property of the same name set to different values. 
+
+```html
+<div foo="bar">…</div>
+<script>
+  const div = document.querySelector('div[foo=bar]');
+
+  console.log(div.getAttribute('foo')); // 'bar'
+  console.log(div.foo); // undefined
+
+  div.foo = 'hello world';
+
+  console.log(div.getAttribute('foo')); // 'bar'
+  console.log(div.foo); // 'hello world'
+</script>
+```
+
+But there are many other variations and interesting stuff. Read [HTML attributes vs DOM properties](https://jakearchibald.com/2024/attributes-vs-properties/) for more details and examples.

@@ -7,7 +7,7 @@ Status: 3. Complete
 tags:
   - Group
   - Policy
-  - (GPP/GPO)
+  - GPP-GPO
   - MSSQL
   - UNC
   - Windows

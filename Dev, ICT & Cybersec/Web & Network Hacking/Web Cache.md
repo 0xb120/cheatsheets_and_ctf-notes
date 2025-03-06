@@ -24,7 +24,7 @@ These transformations may introduce a few [**unexpected quirks**](Web%20Cache%20
 
 ## Vary header
 
-The Vary header specifies a list of additional headers that should be treated as part of the cache key even if they are normally unkeyed. It is commonly used to specify that the User-Agent header is keyed, for example, so that if the mobile version of a website is cached, this won't be served to non-mobile users by mistake.
+The `Vary` header specifies a list of additional headers that should be treated as part of the cache key even if they are normally unkeyed. It is commonly used to specify that the User-Agent header is keyed, for example, so that if the mobile version of a website is cached, this won't be served to non-mobile users by mistake.
 
 In those cases it's still possible to perform poisoning attacks, but attackers are required to get in some way the value of specific user agents (or other keyed fields) using [Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md) of other vulnerabilities.
 
@@ -32,6 +32,7 @@ In those cases it's still possible to perform poisoning attacks, but attackers a
 
 - `Pragma: x-get-cache-key`
 - `Pragma: akamai-x-get-cache-key`
+- `X-Accel-Expires` - [Override Cache behavior on NGINX using X-Accel-Expires](../../Readwise/Articles/Rory%20McNamara%20-%20Breaking%20Caches%20and%20Bypassing%20Istio%20RBAC%20With%20HTTP%20Response%20Header%20Injection.md)
 
 # Web Cache Attacks
 

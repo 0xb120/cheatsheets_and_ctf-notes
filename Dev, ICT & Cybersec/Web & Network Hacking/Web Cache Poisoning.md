@@ -600,7 +600,9 @@ X-Cache-Key: /login?lang=en$$
 ```
 ![](../../zzz_res/attachments/Pasted%20image%2020230702145610.png)
 
-# External Resources
+# External resources and references
 
 - [Practical Web Cache Poisoning](https://portswigger.net/research/practical-web-cache-poisoning)
 - [Web Cache Entanglement: Novel Pathways to Poisoning](https://portswigger.net/research/web-cache-entanglement)
+- [Next.js, Cache, and Chains The Stale Elixir](../../Readwise/Articles/zhero_web_security%20-%20Next.js,%20Cache,%20and%20Chains%20The%20Stale%20Elixir.md)
+- [Next.js and Cache Poisoning: A Quest for the Black Hole](../../Readwise/Articles/Vulnerability%20Researcher%20-%20Next.js%20and%20Cache%20Poisoning%20A%20Quest%20for%20the%20Black%20Hole.md)

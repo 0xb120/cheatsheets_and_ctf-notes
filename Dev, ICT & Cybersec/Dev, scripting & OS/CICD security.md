@@ -48,7 +48,7 @@ The existence of hundreds (or sometimes thousands) of identities - both human an
 in the context of using dependencies, there is an equally important set of controls required to secure the dependency ecosystem - involving securing the process defining how dependencies are pulled. Inadequate configurations may cause an unsuspecting engineer, or worse - the build system, to download a malicious package instead of the package that was intended to be pulled. In many cases, the package is not only downloaded, but also immediately executed after download, due to pre-install scripts and similar processes which are designed to run a package’s code immediately after the package is pulled.
 
 The main attack vectors in this context are:
-- **Dependency confusion**
+- **Dependency confusion** ^cdb482
 - **Dependency hijacking**
 - **Typosquatting**
 - **Brandjacking**
@@ -156,3 +156,7 @@ Improper artifact integrity validation can be abused by an adversary with a foot
 Given the amount of potential attack vectors leveraging engineering environments and processes it is imperative that security teams build the appropriate capabilities to detect these attacks as soon as they happen. As many of these vectors involve leveraging programmatic access against the different systems, a key aspect of facing this challenge is to create strong levels of visibility around both human and programmatic access. [^cicd10]
 
 [^cicd10]: [CICD-SEC-10: Insufficient Logging and Visibility](https://owasp.org/www-project-top-10-ci-cd-security-risks/CICD-SEC-10-Insufficient-Logging-And-Visibility), owasp.org
+
+# Tools
+
+- [dastardly](https://portswigger.net/burp/dastardly): A free DAST web application scanner for your CI/CD pipeline

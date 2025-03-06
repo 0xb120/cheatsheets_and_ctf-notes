@@ -547,6 +547,39 @@ As each parameter is removed, the extension repeats the request to ensure the re
     - Hex encoded string (useful when working with non string payloads)
     - Regex
 
+### EsPReSSO 🔝
+
+This extension processes and recognizes single sign-on protocols.
+
+**Detecting**
+
+Supported Protocols:
+
+- SAML
+- OpenID
+- OAuth
+- BrowserId
+- OpenID Connect
+- Facebook Connect
+- Microsoft Account
+
+**Attacking**
+
+- WS-Attacker integration while intercepting SAML messages
+- DTD-Attacker integration while intercepting SAML messages
+- XML-Encryption-Attacker integration while intercepting SAML messages
+
+**Beautifier**
+
+- Syntax Highlight
+- Highlight SSO messages in proxy window and display the protocol type
+- Show all recognized SSO messages in a history tab
+- Context menu for 'Analyze SSO Protocol'
+
+**Editors/Viewers**
+
+- View and edit SAML
+- View JSON and JSON Web Token (JWT)
 
 ### Magic Byte Selector
 

@@ -181,7 +181,7 @@ Evading restrictions:
 - [JWT Vulnerabilities](../Web%20&%20Network%20Hacking/JWT%20Vulnerabilities.md)
 - [Server-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Server-side%20prototype%20pollution%20vuln)
 - [Class Pollution](../Web%20&%20Network%20Hacking/Class%20Pollution.md)
-- [OAuth 2.0](../Web%20&%20Network%20Hacking/OAuth%202.0.md)
+- [OAuth 2.0](../Dev,%20scripting%20&%20OS/OAuth%202.0.md)
 - [OpenID Connect](../Web%20&%20Network%20Hacking/OpenID%20Connect.md)
 - [HTTP Request Smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md)
 - [Server-side pause-based desync](../Web%20&%20Network%20Hacking/Client-side%20desync%20attacks.md#Server-side%20pause-based%20desync)
@@ -190,6 +190,7 @@ Evading restrictions:
 - [GraphQL vulnerabilities](../Web%20&%20Network%20Hacking/GraphQL%20vulnerabilities.md)
 - [Race Condition](../Web%20&%20Network%20Hacking/Race%20Condition.md)
 - [ReDoS](../Web%20&%20Network%20Hacking/ReDoS.md)
+- [Confusion Attacks](../Web%20&%20Network%20Hacking/Confusion%20Attacks.md)
 ## Client side vulnerabilities
 
 - [HTML and CSS Injection](../Web%20&%20Network%20Hacking/HTML%20and%20CSS%20Injection.md)

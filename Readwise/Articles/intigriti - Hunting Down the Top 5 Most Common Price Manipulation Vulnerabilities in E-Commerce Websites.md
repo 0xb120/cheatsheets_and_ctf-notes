@@ -42,6 +42,8 @@ date: 2024-08-20
 > 5) Currency Confusion
 > [View Highlight](https://read.readwise.io/read/01hprhedm9w18caxsm7y1vy939)
 
+^677a5f
+
 
 
 > These were the top 5 most common price manipulation vulnerabilities present in e-commerce websites! We hope you’ve learned something new from this post!
