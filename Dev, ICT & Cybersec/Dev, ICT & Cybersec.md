@@ -50,6 +50,7 @@
 >- [Crontab guru](https://crontab.guru/#09,39_*_*_*_*)
 
 - [Dynamic Servers](Dev,%20scripting%20&%20OS/Dynamic%20Servers.md)
+- [Character Encodings 101](Dev,%20scripting%20&%20OS/Character%20Encodings%20101.md)
 - [Development fundamentals](Dev,%20scripting%20&%20OS/Development%20fundamentals.md)
 	- [Jenkins](Dev,%20scripting%20&%20OS/Jenkins.md)
 - [CICD security](Dev,%20scripting%20&%20OS/CICD%20security.md)

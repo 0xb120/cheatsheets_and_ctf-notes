@@ -85,7 +85,7 @@ Connection: close
 - Partial URLs in requests (eg. only a hostname or part of a URL path into request parameters)
 - URLs within data formats
 	- XML leading to SSRF using [XML External Entity Injection (XXE Injection)](XML%20External%20Entity%20Injection%20(XXE%20Injection).md), 
-	- File converters or parsers and HTML files containing images (eg. wkhtmltopdf [^html2pdf] ) 
+	- File converters or parsers and HTML files containing images (Eg. wkhtmltopdf [^html2pdf])
 - Referer header or other headers ([Host header SSRF attacks (aka Routing-based SSRF)](Host%20Header%20attacks.md#Host%20header%20SSRF%20attacks%20(aka%20Routing-based%20SSRF)))
 - [SSRF registering an arbitrary OpenID Connect client application](OpenID%20Connect%20attacks.md#SSRF%20registering%20an%20arbitrary%20client%20application)
 
@@ -114,6 +114,9 @@ PoC for leaking arbitrary files when converting HTML to PDF:
 </html>
 ```
 
+Other PoCs:
+- [Exploiting PDF Generators: A Complete Guide to Finding SSRF Vulnerabilities in PDF Generators](../../Readwise/Articles/blackbird-eu%20-%20Exploiting%20PDF%20Generators%20A%20Complete%20Guide%20to%20Finding%20SSRF%20Vulnerabilities%20in%20PDF%20Generators.md)
+
 ## SSRF evasion and bypasses
 
 - [Evading Restrictions](Evading%20Restrictions.md)
@@ -127,6 +130,7 @@ PoC for leaking arbitrary files when converting HTML to PDF:
 - [HackTrick (SSRF)](https://book.hacktricks.xyz/pentesting-web/ssrf-server-side-request-forgery)
 - [Targeting auxiliary systems](https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface#aux)
 - [SSRFPwned](https://github.com/blackhatethicalhacking/SSRFPwned) - Checks for SSRF using built-in custom Payloads after fetching URLs from Multiple Passive Sources & applying complex patterns aimed at SSRF
+- [Exploiting PDF Generators: A Complete Guide to Finding SSRF Vulnerabilities in PDF Generators](../../Readwise/Articles/blackbird-eu%20-%20Exploiting%20PDF%20Generators%20A%20Complete%20Guide%20to%20Finding%20SSRF%20Vulnerabilities%20in%20PDF%20Generators.md)
 - [SSRF: A complete guide to exploiting advanced SSRF vulnerabilities](https://blog.intigriti.com/hacking-tools/ssrf-a-complete-guide-to-exploiting-advanced-ssrf-vulnerabilities)
 - [Introducing the URL Validation Bypass Cheat Sheet](../../Readwise/Articles/PortSwigger%20Research%20-%20Introducing%20the%20URL%20Validation%20Bypass%20Cheat%20Sheet.md) #tools 
 - [NTLM Credential Theft in Python Windows Applications](https://www.horizon3.ai/attack-research/disclosures/ntlm-credential-theft-in-python-windows-applications/), horizon3.ai

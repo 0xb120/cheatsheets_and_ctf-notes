@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ef34cd872c3a6179",
+        "id": "677dbc4a9a43e2b8",
         "type": "tabs",
         "children": [
           {
-            "id": "98ef2d063977aa17",
+            "id": "5a5e817c933ae6a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,7 +31,8 @@
               "title": "Readwise inbox"
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -70,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cache poisoning",
+                "query": "SSRF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,7 +106,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -165,10 +166,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md"
+                "file": "Readwise/Readwise inbox.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for dotNET"
+              "title": "File properties for Readwise inbox"
             }
           },
           {
@@ -177,13 +178,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Readwise/Articles/sonarsource.com - mXSS The Vulnerability Hiding in Your Code.md",
+                "file": "Readwise/Readwise inbox.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of sonarsource.com - mXSS The Vulnerability Hiding in Your Code"
+              "title": "Outline of Readwise inbox"
             }
           }
         ]
@@ -292,41 +293,46 @@
       "obsidian-git:Open Git source control": true
     }
   },
-  "active": "98ef2d063977aa17",
+  "active": "5a5e817c933ae6a7",
   "lastOpenFiles": [
-    "Readwise/Articles/Luke Jahnke - Cross-Site POST Requests Without a Content-Type Header.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-origin resource sharing (CORS).md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Request Forgery (CSRF).md",
-    "Readwise/Readwise inbox.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-02-10.md",
-    "Dev, ICT & Cybersec/Tools/nuclei.md",
-    "Readwise/Articles/zhero_web_security - Next.js, Cache, and Chains The Stale Elixir.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Web Cache Poisoning.md",
-    "Readwise/Articles/Vulnerability Researcher - Next.js and Cache Poisoning A Quest for the Black Hole.md",
-    "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md",
-    "Readwise/Articles/Daniel Stenberg - CVSS Is Dead to Us.md",
-    "Readwise/Articles/PortSwigger Research - Introducing SignSaboteur Forge Signed Web Tokens With Ease.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-12-16.md",
-    "Readwise/Articles/httpsgithub.commrmtwoj - MrmtwojApache-Vulnerability-Testing Apache HTTP Server Vulnerability Testing Tool  PoC for CVE-2024-38472 , CVE-2024-39573 , CVE-2024-38477 , CVE-2024-38476 , CVE-2024-38475 , CVE-2024-38474 , CVE-2024-38473 , CVE-2023-38709.md",
-    "Readwise/Articles/Assetnote Research - NginxApache Path Confusion to Auth Bypass in PAN-OS.md",
-    "Readwise/Articles/intigriti - Hunting Down the Top 5 Most Common Price Manipulation Vulnerabilities in E-Commerce Websites.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Confusion Attacks.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/HTML.md",
-    "Readwise/Articles/Doyensec's Blog - Common OAuth Vulnerabilities.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/CICD security.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Play ground/Targets/vtenext/20250203_VTENext.md",
     "Personal/TODO.md",
-    "Readwise/Articles/Antoine Gicquel - Web Architect - An Introduction.md",
-    "Readwise/Articles/Antoine Gicquel - WordPress for Security Audit.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Development fundamentals.md",
-    "Readwise/Articles/attachments/sqidex-1.png",
-    "Readwise/Articles/attachments/xXss_context-dependent.png",
-    "Readwise/Articles/attachments/Pasted image 20250228175732.png",
-    "Readwise/Articles/attachments/mXss_Desanitization.png",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-3.png",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-2.png",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-1.png",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Server Side Request Forgery (SSRF).md",
+    "Readwise/Articles/blackbird-eu - Exploiting PDF Generators A Complete Guide to Finding SSRF Vulnerabilities in PDF Generators.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/wp-vulnerability-playground/ssrf.md",
+    "Readwise/Readwise inbox.md",
+    "Readwise/Articles/httpsgithub.comredteamronin - RedteamroninEmbedInHTML.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/File transfer.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Clickjacking.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Readwise/Articles/Daniel Stenberg - CVSS Is Dead to Us.md",
+    "Dev, ICT & Cybersec/High level/CVE & CNA.md",
+    "Play ground/Targets/SicuraNext/SicuraNext-Challenge-Report_v1.0.md",
+    "Dev, ICT & Cybersec/High level/Bug Bounty.md",
+    "Readwise/Tweets/@GoogleVRP on Twitter - Tweets From Google VRP.md",
+    "Play ground/Targets/mistermagorium.com/mistermagorium.com.canvas",
+    "Play ground/Targets/opencart/opencart - CVE-2023-47444.md",
+    "Play ground/Targets/SociableKit/www.sociablekit.com.canvas",
+    "Play ground/Targets/SociableKit/www.sociablekit.com (summary).md",
+    "Readwise/Articles/jakearchibald.com - How to Win at CORS.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
+    "Readwise/Articles/dojo-yeswehack.com - WAF-Bypass - Encoding.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Script Inclusion (XSSI).md",
+    "Readwise/Articles/PortSwigger Research - Shadow Repeater AI-Enhanced Manual Testing.md",
+    "Dev, ICT & Cybersec/Tools/Burpsuite.md",
+    "Readwise/Tweets/@0xTib3rius on Twitter - Tweets From Tib3rius.md",
+    "Readwise/Tweets/attachments/os-path-join-bug.png",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Python.md",
+    "Play ground/CTFs/OpenSource.md",
+    "Readwise/Articles/0xdf - Analysis of CVE-2023-37474 in CopyParty.md",
+    "Readwise/Articles/attachments/encoding-diff-12.png",
+    "Readwise/Articles/attachments/encoding-diff-11.png",
+    "Readwise/Articles/attachments/encoding-diff-9.png",
+    "Readwise/Articles/attachments/encoding-diff-10.png",
+    "Readwise/Articles/attachments/encoding-diff-8.png",
+    "Readwise/Articles/attachments/encoding-diff-7.png",
+    "Readwise/Articles/attachments/encoding-diff-6.png",
+    "Readwise/Articles/attachments/encoding-diff-5.png",
+    "Readwise/Articles/attachments/encoding-diff-4.png",
     "Communities/YouTube/_YT-dashboard.canvas",
     "Play ground/Targets/vtenext",
     "Play ground/Targets/Digital Private Vault/private-vault-report.pdf",
@@ -337,13 +343,8 @@
     "Play ground/Targets/Adobe Acrobat/Acrobat Reader (Android)/Acrobat Reader (Android).canvas",
     "zzz_res/templates/canvas-template.canvas",
     "zzz_res/templates/cheatsheet-canvas.canvas",
-    "Play ground/Personal Blog workflow.canvas",
     "backup.zip",
     "zi1nWZHh",
-    "Play ground/Targets/mistermagorium.com/mistermagorium.com.canvas",
-    "zzz_res/attachments/ExpressionalRebel a46123399c2e4431911db6e473b6a8e9.png",
-    "zzz_res/attachments/EasterBunny e580b8ca86214deb837383b8e4c495a4 10.png",
-    "zzz_res/attachments/DOMInv-2.png",
     "zzz_res/attachments/annotated-OWASP_Code_Review_Guide_v2.pdf",
     "Communities/YouTube/attachments/software-architecture.excalidrawlib",
     "Excalidraw",

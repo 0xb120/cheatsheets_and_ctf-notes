@@ -422,6 +422,10 @@ A full featured framework for enumerating and testing GraphQL.
 
 ## Quality of life improvements and feature enhancements
 
+### Shadow Repeater 🔝
+
+[Shadow Repeater: AI-Enhanced Manual Testing](../../Readwise/Articles/PortSwigger%20Research%20-%20Shadow%20Repeater%20AI-Enhanced%20Manual%20Testing.md): a plugin which enhances your manual testing _with AI-powered, fully automatic variation testing_. Simply use Burp Repeater as you normally would, and behind the scenes Shadow Repeater will monitor your attacks, try permutations, and report any discoveries via Organizer.
+
 ### Turbo Intruder 🔝
 
 Extension for sending large numbers of HTTP requests and analyzing the results. It's intended to complement Burp Intruder by handling attacks that require extreme speed or complexity.

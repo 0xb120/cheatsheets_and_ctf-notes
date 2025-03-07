@@ -243,8 +243,10 @@ In the cookie specification and implementation, specifically dedicated cookies i
 - Bypass [WAFs](../Dev,%20scripting%20&%20OS/WAF.md) exploiting their length-limitations [^nowafplease]
 - [When WAFs Go Awry: Common Detection & Evasion Techniques for Web Application Firewalls](../../Readwise/Articles/Admin%20-%20When%20WAFs%20Go%20Awry%20Common%20Detection%20&%20Evasion%20Techniques%20for%20Web%20Application%20Firewalls.md)
 - [mXSS](../../Readwise/Articles/sonarsource.com%20-%20mXSS%20The%20Vulnerability%20Hiding%20in%20Your%20Code.md)
+	- [Flatt Security XSS Challenge - Writeup](../../Readwise/Articles/blig.one%20-%20Flatt%20Security%20XSS%20Challenge%20-%20Writeup.md)
 - [Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup](../../Readwise/Articles/Bug%20Bounty%20Reports%20Explained%20-%20$25k%20GitHub%20Account%20Takeover%20&%20justCTF%202023%20CSRF+XSS%20Writeup.md) (parsing vs tokenization ft. html namespaces)
 - [Bypassing WAFs With the Phantom $Version Cookie](../../Readwise/Articles/PortSwigger%20Research%20-%20Bypassing%20WAFs%20With%20the%20Phantom%20$Version%20Cookie.md)
+- [Encoding Differentials: Why Charset Matters](../../Readwise/Articles/sonarsource.com%20-%20Encoding%20Differentials%20Why%20Charset%20Matters.md)
 
 
 [^nowafplease]: [Bad Sector Labs Blog - Jun 17 2024 Last Week in Security (LWiS) - 2024-06-17](../../Readwise/Articles/Bad%20Sector%20Labs%20Blog%20-%20Jun%2017%202024%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-06-17.md#^88de29)

@@ -158,3 +158,7 @@ body:username.value+':'+this.value
 ```
 
 Related article: [Stealing passwords from infosec Mastodon - without bypassing CSP](https://portswigger.net/research/stealing-passwords-from-infosec-mastodon-without-bypassing-csp)
+
+## XSS using Encoding Differentials injecting meta tag 
+
+Related article: [Encoding Differentials: Why Charset Matters](../../Readwise/Articles/sonarsource.com%20-%20Encoding%20Differentials%20Why%20Charset%20Matters.md)

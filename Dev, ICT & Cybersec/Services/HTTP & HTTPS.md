@@ -246,3 +246,4 @@ Evading restrictions:
 - [HTTP/2](../Web%20&%20Network%20Hacking/HTTP-2.md)
 - [WAF](../Dev,%20scripting%20&%20OS/WAF.md)
 - [Captcha](../Dev,%20scripting%20&%20OS/Captcha.md)
+- [Character Encodings 101](../Dev,%20scripting%20&%20OS/Character%20Encodings%20101.md)

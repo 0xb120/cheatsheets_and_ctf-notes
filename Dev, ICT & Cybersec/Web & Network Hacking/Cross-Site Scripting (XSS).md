@@ -18,7 +18,7 @@ Different types of XSS:
 
 - [Blind XSS](../../Readwise/Articles/novasecio%20-%20Hunting%20for%20Blind%20XSS%20Vulnerabilities%20A%20Complete%20Guide.md): Blind XSS vulnerabilities are quite different as the reflection happens on a component that's not accessible to the attacker (for example, an internal-only administrative panel, or a support dashboard accessible by the helpdesk employees only).
 
-- [mXSS](../../Readwise/Articles/sonarsource.com%20-%20mXSS%20The%20Vulnerability%20Hiding%20in%20Your%20Code.md): The M in mXSS stands for “[Mutation](app://obsidian.md/Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/HTML.md#Mutation)”. mXSS takes advantage of this behavior in order to bypass sanitization.
+- [mXSS](../../Readwise/Articles/sonarsource.com%20-%20mXSS%20The%20Vulnerability%20Hiding%20in%20Your%20Code.md): The M in mXSS stands for [Mutation](../Dev,%20scripting%20&%20OS/HTML.md#Mutation). mXSS takes advantage of this behavior in order to bypass sanitization.
 
 Possible attacks and risks:
 
@@ -154,6 +154,7 @@ Other references:
 - [Hacking Swagger-Ui - From XSS to Account Takeovers](../../Readwise/Articles/Dawid%20Moczadło%20-%20Hacking%20Swagger-Ui%20-%20From%20XSS%20to%20Account%20Takeovers.md)
 - Bypass the [HttpOnly Cookie Attribute](HttpOnly%20Cookie%20Attribute.md) protection with [XSS + phpinfo](HttpOnly%20Cookie%20Attribute.md#XSS%20+%20phpinfo)
 - XSS on a subdomain for attacking parent domains with [Cookie Tossing](Cookie%20Tossing.md) and [Cookie Eviction](Cookie%20Eviction.md)
+- XSS exploiting [Encoding Differentials](../../Readwise/Articles/sonarsource.com%20-%20Encoding%20Differentials%20Why%20Charset%20Matters.md)
 
 ---
 
@@ -193,12 +194,16 @@ postId=5&'},x=x=>{throw/**/onerror=alert,1337},toString=x,window+'',{x:'
 <!-- I've been using this payload for over a year to discover XSS via open redirect vulnerabilities that bypass WAF https://twitter.com/0xM5awy/status/1704433016427229581 -->
 javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.cookie
 
+<!-- polyglot XSS without script tags and spaces -->
+<img/&gt;/src/onerror=prompt(1337)// 
 ```
 
 Extensive cheat sheets can be found at:
 
 - [Multi-purpose snippets - JS AWAE Prep](https://mlcsec.com/posts/js-awae-prep/)
 - [[Evading Restrictions.md]]
+	- [mXSS](../../Readwise/Articles/sonarsource.com%20-%20mXSS%20The%20Vulnerability%20Hiding%20in%20Your%20Code.md)
+	- [Flatt Security XSS Challenge - Writeup](../../Readwise/Articles/blig.one%20-%20Flatt%20Security%20XSS%20Challenge%20-%20Writeup.md#Flatt%20Security%20XSS%20Challenge%20-%20Writeup)
 - [javascript-bypass-blacklists-techniques](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting#javascript-bypass-blacklists-techniques)
 - [Obfuscating attacks using encodings](https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings)
 - [XSS without parentheses and semi-colons](https://portswigger.net/research/xss-without-parentheses-and-semi-colons)
@@ -210,6 +215,7 @@ Extensive cheat sheets can be found at:
 - [XSS + phpinfo](HttpOnly%20Cookie%20Attribute.md#XSS%20+%20phpinfo)
 - [Rhino Security Labs - Silverpeas App Multiple CVEs Leading to File Read on Server](../../Readwise/Articles/Rhino%20Security%20Labs%20-%20Silverpeas%20App%20Multiple%20CVEs%20Leading%20to%20File%20Read%20on%20Server.md)
 - [Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup](../../Readwise/Articles/Bug%20Bounty%20Reports%20Explained%20-%20$25k%20GitHub%20Account%20Takeover%20&%20justCTF%202023%20CSRF+XSS%20Writeup.md) (parsing vs tokenization ft. html namespaces)
+- [WAF-Bypass - Encoding](../../Readwise/Articles/dojo-yeswehack.com%20-%20WAF-Bypass%20-%20Encoding.md)
 
 [^CSP-JSONP]: [Riding the Waves of API Versioning Unmasking a Stored XSS Vulnerability, CSP Bypass Using YouTube OEmbed](../../Readwise/Articles/SMHTahsin33%20-%20Riding%20the%20Waves%20of%20API%20Versioning%20Unmasking%20a%20Stored%20XSS%20Vulnerability,%20CSP%20Bypass%20Using%20YouTube%20OEmbed.md), SMHTahsin33
 

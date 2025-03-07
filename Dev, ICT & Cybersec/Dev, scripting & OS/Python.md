@@ -459,7 +459,7 @@ p.interactive()
 
 # Python quirks and tricks
 
-- [`os.path.join`](../../Readwise/Tweets/@0xTib3rius%20on%20Twitter%20-%20Tweets%20From%20Tib3rius.md)
+- [`os.path.join`](../../Readwise/Tweets/@0xTib3rius%20on%20Twitter%20-%20Tweets%20From%20Tib3rius.md) [^6][^7]
 
 # Python 2 vs 3 for binary exploitation
 
@@ -606,3 +606,7 @@ def map_archive():
 if __name__ == '__main__':
     app.run(debug=True, port=1234)
 ```
+
+[^6]: [Path Traversal in OpenSource HTB box](../../Play%20ground/CTFs/OpenSource.md#Path%20Traversal)
+
+[^7]: [Analysis of CVE-2023-37474 in CopyParty](../../Readwise/Articles/0xdf%20-%20Analysis%20of%20CVE-2023-37474%20in%20CopyParty.md)
