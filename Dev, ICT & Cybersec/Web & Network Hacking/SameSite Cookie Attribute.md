@@ -22,7 +22,7 @@ In the context of SameSite cookie restrictions, a **site** is defined as a combi
 - `http://app.example.com` and `https://app.example.com` are considered two distinct sites.
 - `http://app.example.com` and `http://app2.example.com` are considered the **same site** (because 3rd level domain and below are not considered)
 
-A **site** is also different by an **origin** (ref. [Same-origin policy (SOP)](Same-origin%20policy%20(SOP).md) for further information):
+A **site** is also different by an **origin** (ref. [Same-origin policy (SOP)](Same-origin%20policy%20(SOP).md) and [Origins vs Sites](../../Readwise/Articles/jakearchibald.com%20-%20How%20to%20Win%20at%20CORS.md#Origins%20vs%20Sites) for further information):
 
 | Request from            | Request to                   | Same-site?            | Same-origin?               |
 | ----------------------- | ---------------------------- | --------------------- | -------------------------- |

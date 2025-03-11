@@ -28,6 +28,7 @@ date: 2023-10-22
 > postbin — [https://www.toptal.com/developers/postbin/](https://www.toptal.com/developers/postbin/) 
 > knary — [https://github.com/sudosammy/knary](https://github.com/sudosammy/knary)
 > [mmar](Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-03-03.md#^e5885d)
+> https://requestbin.whapi.cloud/
 > [View Highlight](https://read.readwise.io/read/01hdc1enwdyf8ss7cx4g4pzgqk)
 > #tools 
 

@@ -29,6 +29,12 @@ Privilege escalation [^privesc] :
 [^enum]: [David Kutz-Marks - Attacking AWS Cognito With Pacu](../../Readwise/Articles/David%20Kutz-Marks%20-%20Attacking%20AWS%20Cognito%20With%20Pacu.md#^2fe305), id608778543
 [^privesc]: [David Kutz-Marks - Attacking AWS Cognito With Pacu](../../Readwise/Articles/David%20Kutz-Marks%20-%20Attacking%20AWS%20Cognito%20With%20Pacu.md#^fae561), id608778569
 [^report]: [Flickr Account Takeover using AWS Cognito API](https://hackerone.com/reports/1342088), hackerone.com
+
+
+## S3
+
+![Amazon S3](../../Readwise/Articles/Benjamin%20Harris%20-%208%20Million%20Requests%20Later,%20We%20Made%20the%20SolarWinds%20Supply%20Chain%20Attack%20Look%20Amateur.md#Amazon%20S3)
+
 # External tool & References
 
 - [AWS penetration testing: a step-by-step guide](https://www.hackthebox.com/blog/aws-pentesting-guide)

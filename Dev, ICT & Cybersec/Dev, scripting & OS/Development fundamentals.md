@@ -14,6 +14,10 @@ MVC is a software design pattern which divides the source code in three componen
  
 This cycle continues as long as the user is interacting with the web application.
 
+# Routing and code paths
+
+![code path and routing](../../Readwise/Articles/Antoine%20Gicquel%20-%20Web%20Architect%20-%20An%20Introduction.md)
+
 # Metadata-driven Design Patterns
 
 A metadata-driven design pattern [^mddp] creates a layer of abstraction in which applications generate the necessary components to manage the data based on the metadata, including those necessary to perform Create, Read, Update, and Delete (CRUD) operations on the data.

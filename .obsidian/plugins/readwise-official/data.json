@@ -5,7 +5,7 @@
   "triggerOnLoad": true,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 19067090,
+  "lastSavedStatusID": 19116879,
   "currentSyncStatusID": 0,
   "refreshBooks": true,
   "booksToRefresh": [
@@ -7017,8 +7017,7 @@
     "44837811",
     "44837833",
     "45462277",
-    "42677809",
-    "49417870"
+    "42677809"
   ],
   "failedBooks": [],
   "booksIDsMap": {
@@ -7196,7 +7195,8 @@
     "Readwise/Articles/zhero_web_security - Next.js, Cache, and Chains The Stale Elixir.md": "49363658",
     "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md": "49367816",
     "Readwise/Articles/Daniel Stenberg - CVSS Is Dead to Us.md": "49394884",
-    "Readwise/Articles/jakearchibald.com - How to Win at CORS.md": "49433929"
+    "Readwise/Articles/jakearchibald.com - How to Win at CORS.md": "49433929",
+    "Readwise/Tweets/@GoogleVRP on Twitter - Tweets From Google VRP.md": "49417870"
   },
   "reimportShowConfirmation": true
 }

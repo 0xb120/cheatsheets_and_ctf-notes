@@ -49,13 +49,22 @@
                 "weight": 1
               },
               "Scripting": {
-                "weight": 2
+                "weight": 2,
+                "records": [
+                  "Communities/YouTube/2025XXX_Defeating-custom-password-reset-tokens.md"
+                ]
               },
               "Filming": {
-                "weight": 3
+                "weight": 3,
+                "records": [
+                  "Communities/YouTube/2025XXX_UncoveringVulnerabilitiesPentestingOutdatedWebApp.md"
+                ]
               },
               "Editing": {
-                "weight": 4
+                "weight": 4,
+                "records": [
+                  "Communities/YouTube/2025XXX_EffectiveNotesForOSCPAndPTs.md"
+                ]
               },
               "Waiting": {
                 "weight": 5

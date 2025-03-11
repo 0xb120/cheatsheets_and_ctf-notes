@@ -38,27 +38,31 @@ The default behavior of cross-origin resource requests is for requests to be pas
 
 >[!example]
 >Pre-flight request using the `PUT` method and a non-standard header:
->```http
->OPTIONS /data HTTP/1.1
->Host: <some website>
->...
->Origin: https://normal-website.com
->Access-Control-Request-Method: PUT
->Access-Control-Request-Headers: Special-Request-Header
->```
->The server might return a response like the following:
->```http
->HTTP/1.1 204 No Content
+```http
+OPTIONS /data HTTP/1.1
+Host: <some website>
+...
+Origin: https://normal-website.com
+Access-Control-Request-Method: PUT
+Access-Control-Request-Headers: Special-Request-Header
+```
+The server might return a response like the following:
+```http
+HTTP/1.1 204 No Content
 ...
 Access-Control-Allow-Origin: https://normal-website.com
 Access-Control-Allow-Methods: PUT, POST, OPTIONS
 Access-Control-Allow-Headers: Special-Request-Header
 Access-Control-Allow-Credentials: true
 Access-Control-Max-Age: 240
->```
+```
 
 This response sets out the allowed methods (`PUT`, `POST` and `OPTIONS`) and permitted request headers (`Special-Request-Header`). In this particular case the cross-domain server also allows the sending of credentials, and the `Access-Control-Max-Age` header defines a maximum timeframe for caching the pre-flight response for reuse. If the request methods and headers are permitted (as they are in this example) then the browser processes the cross-origin request in the usual way. Pre-flight checks add an extra HTTP request round-trip to the cross-domain request, so they increase the browsing overhead.
 
 ### Bypass
 
 - [Cross-Site POST Requests Without a Content-Type Header](../../Readwise/Articles/Luke%20Jahnke%20-%20Cross-Site%20POST%20Requests%20Without%20a%20Content-Type%20Header.md)
+
+## External tools for testing CORS
+
+- [jakearchibald.com - How to Win at CORS](../../Readwise/Articles/jakearchibald.com%20-%20How%20to%20Win%20at%20CORS.md#^3625b2)
