@@ -5,7 +5,7 @@
   "triggerOnLoad": true,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 19116879,
+  "lastSavedStatusID": 19306464,
   "currentSyncStatusID": 0,
   "refreshBooks": true,
   "booksToRefresh": [
@@ -7017,7 +7017,9 @@
     "44837811",
     "44837833",
     "45462277",
-    "42677809"
+    "42677809",
+    "49417870",
+    "46415390"
   ],
   "failedBooks": [],
   "booksIDsMap": {
@@ -7130,7 +7132,6 @@
     "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-11-18.md": "46065752",
     "Readwise/Articles/novasecio - Complete Guide to Finding More Vulnerabilities With Shodan and Censys.md": "46125913",
     "Readwise/Articles/admin - Android Jetpack Navigation Go Even Deeper.md": "46131147",
-    "Readwise/Tweets/@smaury92 on Twitter - If You Are Interested In....md": "46415390",
     "Readwise/Articles/Tib3rius - What Are Bambdas and Why Should I Care.md": "46554452",
     "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-12-02.md": "46558341",
     "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-11-25.md": "46558374",
@@ -7196,7 +7197,13 @@
     "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md": "49367816",
     "Readwise/Articles/Daniel Stenberg - CVSS Is Dead to Us.md": "49394884",
     "Readwise/Articles/jakearchibald.com - How to Win at CORS.md": "49433929",
-    "Readwise/Tweets/@GoogleVRP on Twitter - Tweets From Google VRP.md": "49417870"
+    "Readwise/Articles/Tib3rius - How Would You Scope WordPress.md": "49580367",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-03-17.md": "49763027",
+    "Readwise/Articles/Piotr Bazydlo (@chudyPB) - By Executive Order, We Are Banning Blacklists - Domain-Level RCE in Veeam Backup & Replication.md": "49829987",
+    "Readwise/Articles/Detectify - DNS Is the Center of the Modern Attack Surface – Are You Protecting All Levels.md": "49831941",
+    "Readwise/Articles/Blog – Snyk - Reconstructing the TJ Actions Changed Files GitHub Actions Compromise.md": "49832101",
+    "Readwise/Articles/HTTP Toolkit - HTTP3 Is Everywhere but Nowhere.md": "49832790",
+    "Readwise/Articles/William Moody - CVE-2025-25599 A Cautionary Tale of Insecure Temporary Files.md": "49834988"
   },
   "reimportShowConfirmation": true
 }

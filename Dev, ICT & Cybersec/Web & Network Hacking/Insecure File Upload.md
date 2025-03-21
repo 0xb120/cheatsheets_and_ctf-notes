@@ -144,6 +144,7 @@ That said, developers sometimes implement their own processing of file uploads i
 
 >[!example]
 >Some websites upload the file directly to the main filesystem and then remove it again if it doesn't pass validation. This kind of behavior is typical in websites that rely on anti-virus software and the like to check for malware. This may only take a few milliseconds, but for the short time that the file exists on the server, the attacker can potentially still execute it.
+>- [CVE-2025-25599: A Cautionary Tale of Insecure Temporary Files](../../Readwise/Articles/William%20Moody%20-%20CVE-2025-25599%20A%20Cautionary%20Tale%20of%20Insecure%20Temporary%20Files.md)
 
 These vulnerabilities are often extremely subtle, making them difficult to detect during black-box testing unless you can find a way to leak the relevant source code.
 

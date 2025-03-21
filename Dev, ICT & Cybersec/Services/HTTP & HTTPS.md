@@ -38,7 +38,6 @@ Main checks:
 	- https://github.com/nice-registry/all-the-package-names (npm public package names)
 
 ### Proxy
-
 - [Burpsuite](../Tools/Burpsuite.md)
 - zap
 - Caido
@@ -53,22 +52,24 @@ Main checks:
 - User-Agent Switcher (plugin)
 - User-Agent Switcher and Manager (plugin)
 
-### CMS Enumeration & Scanner
+### CMS Enumeration
 
 - whatweb (tool)
 - WhatCMS (online)
 - CMSMap (tool)
-- [nikto](../Tools/nikto.md) (scanner)
-- wpscanner
+- wpscanner & [WPProbe](../../Readwise/Articles/httpsgithub.comChocapikk%20-%20GitHub%20-%20ChocapikkWpprobe%20A%20Fast%20WordPress%20Plugin%20Enumeration%20Tool.md)
 - [unSharepoint](https://blog.cys4.com/tool/2020/12/21/unSharePoint) (scanner)
+
+### Vulnerability and misconfiguration scanners
+- [nikto](../Tools/nikto.md) (scanner)
 - [misconfig mapper](../../Readwise/Articles/novasecio%20-%20Intigriti%20Bug%20Bytes%20219%20-%20December%202024.md#^4a91a1) - automate security misconfiguration detection on your list of targets
 - [MrmtwojApache-Vulnerability-Testing Apache HTTP Server Vulnerability Testing Tool](../../Readwise/Articles/httpsgithub.commrmtwoj%20-%20MrmtwojApache-Vulnerability-Testing%20Apache%20HTTP%20Server%20Vulnerability%20Testing%20Tool%20%20PoC%20for%20CVE-2024-38472%20,%20CVE-2024-39573%20,%20CVE-2024-38477%20,%20CVE-2024-38476%20,%20CVE-2024-38475%20,%20CVE-2024-38474%20,%20CVE-2024-38473%20,%20CVE-2023-38709.md)
+- [nuclei](../Tools/nuclei.md)
+- [Wapiti-Scanner/Wapiti: Web Vulnerability Scanner Written in Python3](../../Readwise/Articles/httpsgithub.comwapiti-scanner%20-%20Wapiti-ScannerWapiti%20Web%20Vulnerability%20Scanner%20Written%20in%20Python3.md)
 
 ### Other useful tools
 
 - Collaborator / [cowitness](https://github.com/stolenusername/cowitness) (HTTP server and DNS server mimic)
-- [ngrok](https://ngrok.com/)
-- [nuclei](../Tools/nuclei.md)
 - [Out-of-Band Exfiltration Tools](../../Readwise/Articles/Piyush%20Kumawat%20(securitycipher)%20-%20Out-of-Band%20Exfiltration%20Tools.md#^3bac3c)
 - https://trickest.com/ (service that allows to script e run multiple command sequences, sharing i/o etc.)
 

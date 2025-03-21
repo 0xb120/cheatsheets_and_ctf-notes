@@ -25,6 +25,7 @@
 	- https://patchstack.com/academy/wordpress/vulnerabilities/
 	- [patchstack/vulnerability-playground](https://github.com/patchstack/vulnerability-playground): This plugin designed to contain vulnerable function or process to be used to exercise on hacking WordPress ecosystem. Code reference from Patchstack Academy site.
 - [Wordpress Code Resources](../Wordpress.md#External%20Resources)
+- [GitHub - Chocapikk/Wpprobe: A Fast WordPress Plugin Enumeration Tool](../../Readwise/Articles/httpsgithub.comChocapikk%20-%20GitHub%20-%20ChocapikkWpprobe%20A%20Fast%20WordPress%20Plugin%20Enumeration%20Tool.md)
 
 ## Wordpress Plugins in notes
 

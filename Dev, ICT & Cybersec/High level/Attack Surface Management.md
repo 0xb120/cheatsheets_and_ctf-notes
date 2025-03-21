@@ -15,7 +15,7 @@ We can split attack surface categories in two main groups:
 
 Attack vectors can be defined as paths or methods used by cyber attackers to gain unauthorized access to a system or network, like:
 - **Phishing**
-- **Malware
+- **Malware**
 - **Compromised Passwords**
 - **Encryption Issues**
 - **Unpatched Software**

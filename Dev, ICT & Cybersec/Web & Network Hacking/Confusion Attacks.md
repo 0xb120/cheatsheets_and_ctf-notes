@@ -9,6 +9,9 @@ Confusion attacks can exist in any context, from the parsing of variables in a p
 
 Examples:
 - [Confusion Attacks: Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!](../../Readwise/Articles/🍊%20Orange%20Tsai%20-%20Confusion%20Attacks%20Exploiting%20Hidden%20Semantic%20Ambiguity%20in%20Apache%20HTTP%20Server!.md); Orange Tsai
+	- [🔥 1. Filename Confusion](../../Readwise/Articles/🍊%20Orange%20Tsai%20-%20Confusion%20Attacks%20Exploiting%20Hidden%20Semantic%20Ambiguity%20in%20Apache%20HTTP%20Server!.md#🔥%201.%20Filename%20Confusion)
+	- [🔥 2. DocumentRoot Confusion](../../Readwise/Articles/🍊%20Orange%20Tsai%20-%20Confusion%20Attacks%20Exploiting%20Hidden%20Semantic%20Ambiguity%20in%20Apache%20HTTP%20Server!.md#🔥%202.%20DocumentRoot%20Confusion)
+	- [🔥 3. Handler Confusion](../../Readwise/Articles/🍊%20Orange%20Tsai%20-%20Confusion%20Attacks%20Exploiting%20Hidden%20Semantic%20Ambiguity%20in%20Apache%20HTTP%20Server!.md#🔥%203.%20Handler%20Confusion)
 - [Nginx/Apache Path Confusion to Auth Bypass in PAN-OS](../../Readwise/Articles/Assetnote%20Research%20-%20NginxApache%20Path%20Confusion%20to%20Auth%20Bypass%20in%20PAN-OS.md); Assetnote
 - [Type Juggling (aka type confusion)](Type%20Juggling%20(aka%20type%20confusion).md)
 - [Dependency confusion in CICD](../Dev,%20scripting%20&%20OS/CICD%20security.md#^cdb482)

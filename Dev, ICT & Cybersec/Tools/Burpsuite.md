@@ -66,6 +66,7 @@ Features:
 - Import regexes from CSV/JSON files
 - Export results to CSV/JSON files
 
+![](attachments/sensitive-discoverer.png)
 ### *Retire.js 🔝
 
 Integrates Burp with the Retire.js repository to find vulnerable JavaScript libraries. It passively looks at JavaScript files loaded and identifies those which are vulnerable.
@@ -130,13 +131,6 @@ This extension compares JavaScript files with each other to detect dynamically g
 To trigger the extension, simply launch a passive scan of your JavaScript files that you have requested as authenticated user. Despite being a passive scan, the extension will generate one or sometimes two request per script without cookies to get the non-authenticated version of the script.
 
 If the same script is found to contain differing content, the extension will report an issue in the Target tab.
-### *CSRF Scanner
-
-Used to passively scan for [Cross-Site Request Forgery (CSRF)](../Web%20&%20Network%20Hacking/Cross-Site%20Request%20Forgery%20(CSRF).md). A dedicated tab allows to customize token's names, etc. The scanner send requests passively in background.
-
-![|800](../../zzz_res/attachments/CSRF-scanner.png)
-![|500](../../zzz_res/attachments/CSRF-scanner2.png)
-
 ### *Error Message Checks 🔝
 
 This extension passively reports detailed server error messages. You can configure arbitrary match results from the apposite tab.
@@ -165,6 +159,40 @@ This extension checks for usage of HTML5 features that have potential security r
 
 ![|500](../../zzz_res/attachments/html5-auditor.png)
 
+
+### EsPReSSO 🔝
+
+This extension processes and recognizes single sign-on protocols.
+
+**Detecting**
+
+Supported Protocols:
+
+- SAML
+- OpenID
+- OAuth
+- BrowserId
+- OpenID Connect
+- Facebook Connect
+- Microsoft Account
+
+**Attacking**
+
+- WS-Attacker integration while intercepting SAML messages
+- DTD-Attacker integration while intercepting SAML messages
+- XML-Encryption-Attacker integration while intercepting SAML messages
+
+**Beautifier**
+
+- Syntax Highlight
+- Highlight SSO messages in proxy window and display the protocol type
+- Show all recognized SSO messages in a history tab
+- Context menu for 'Analyze SSO Protocol'
+
+**Editors/Viewers**
+
+- View and edit SAML
+- View JSON and JSON Web Token (JWT)
 
 ## Active scanner enhancement
 
@@ -328,6 +356,13 @@ For more details, source code, bug reporting, etc., please refer to the author g
 This extension can be used to test websites for CORS misconfigurations. It can spot trivial misconfigurations like arbitrary origin reflection, but also more sublte ones where a regex is not properly configured. "CORS* Additional CORS Checks" can be run in either **automatic** or **manual mode**.
 
 ![|900](../../zzz_res/attachments/additional-cors-checks.png)
+
+### *CSRF Scanner
+
+Used to passively scan for [Cross-Site Request Forgery (CSRF)](../Web%20&%20Network%20Hacking/Cross-Site%20Request%20Forgery%20(CSRF).md). A dedicated tab allows to customize token's names, etc. The scanner send requests passively in background.
+
+![|800](../../zzz_res/attachments/CSRF-scanner.png)
+![|500](../../zzz_res/attachments/CSRF-scanner2.png)
 
 ### Additional CSRF Checks 🔝
 
@@ -550,40 +585,6 @@ As each parameter is removed, the extension repeats the request to ensure the re
     - Basic string
     - Hex encoded string (useful when working with non string payloads)
     - Regex
-
-### EsPReSSO 🔝
-
-This extension processes and recognizes single sign-on protocols.
-
-**Detecting**
-
-Supported Protocols:
-
-- SAML
-- OpenID
-- OAuth
-- BrowserId
-- OpenID Connect
-- Facebook Connect
-- Microsoft Account
-
-**Attacking**
-
-- WS-Attacker integration while intercepting SAML messages
-- DTD-Attacker integration while intercepting SAML messages
-- XML-Encryption-Attacker integration while intercepting SAML messages
-
-**Beautifier**
-
-- Syntax Highlight
-- Highlight SSO messages in proxy window and display the protocol type
-- Show all recognized SSO messages in a history tab
-- Context menu for 'Analyze SSO Protocol'
-
-**Editors/Viewers**
-
-- View and edit SAML
-- View JSON and JSON Web Token (JWT)
 
 ### Magic Byte Selector
 

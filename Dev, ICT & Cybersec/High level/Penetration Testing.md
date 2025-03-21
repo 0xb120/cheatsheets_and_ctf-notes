@@ -4,7 +4,7 @@ aliases:
 ---
 # What is penetration testing
 
-A penetration test, colloquially known as a pentest, is an authorized simulated cyberattack on a computer system, performed to evaluate the security of the system;[1] this is not to be confused with a vulnerability assessment.[2] The test is performed to identify weaknesses (or vulnerabilities), including the potential for unauthorized parties to gain access to the system's features and data,[3][4] as well as strengths,[5] enabling a full risk assessment to be completed.
+A penetration test, colloquially known as a pentest, is an authorized simulated cyberattack on a computer system, performed to evaluate the security of the system; this is not to be confused with a vulnerability assessment. The test is performed to identify weaknesses (or vulnerabilities), including the potential for unauthorized parties to gain access to the system's features and data, as well as strengths, enabling a full risk assessment to be completed.
 
 ## Gray Vs Black Vs White Box Pentesting
 
@@ -31,11 +31,13 @@ Gray Box Penetration Testing combines elements of both Black Box and White Box t
 
 # How much does cost a Penetration Test activity
 
-Generally, most application penetration tests average around 5 days, although they can vary from two days to six weeks for a single application. Hourly rates vary, $200 to $300 per hour is generally what most penetration testing firms charge.  
+Generally, most application penetration tests average around 5 days, although they can vary from two days to six weeks for a single application [^1]. Hourly rates vary, $200 to $300 per hour is generally what most penetration testing firms charge.  
 
 Given an average project of 40 hours that is $250 per hour, that multiplies out to roughly a $10,000 price tag. I would estimate that 90% of application assessments are performed for between $4,000 and $30,000 [^pt-cost] . 
 
 [^pt-cost]: [Preparing for an Application Penetration Test](../../Readwise/Articles/Alex%20Lauerman%20-%20Preparing%20for%20an%20Application%20Penetration%20Test.md); Alex Lauerman
+
+
 
 # External Resources
 
@@ -43,3 +45,4 @@ Given an average project of 40 hours that is $250 per hour, that multiplies out 
 - [Gray Box Penetration Testing: The Essential Guide](https://blog.securelayer7.net/gray-box-penetration-testing/)
 - [All You Need to Know about White Box Penetration Testing](https://blog.securelayer7.net/white-box-penetration-testing/)
 
+[^1]: [How Would You Scope WordPress?](../../Readwise/Articles/Tib3rius%20-%20How%20Would%20You%20Scope%20WordPress.md); Tib3rius

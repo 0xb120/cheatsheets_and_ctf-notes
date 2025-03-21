@@ -43,7 +43,13 @@
             "groupByField": "video-status",
             "columns": {
               "Idea": {
-                "weight": 0
+                "weight": 0,
+                "records": [
+                  "Communities/YouTube/XXXXXXX_CodeQL-semgrep.md",
+                  "Communities/YouTube/XXXXXXXX_SearchForBehavioursNotExploits.md",
+                  "Communities/YouTube/2025XXX_WordpressPluginsVulnResearch.md",
+                  "Communities/YouTube/2025XXX_charset-confusion.md"
+                ]
               },
               "Research": {
                 "weight": 1
@@ -62,15 +68,27 @@
               },
               "Editing": {
                 "weight": 4,
-                "records": [
-                  "Communities/YouTube/2025XXX_EffectiveNotesForOSCPAndPTs.md"
-                ]
+                "records": []
               },
               "Waiting": {
                 "weight": 5
               },
               "Published": {
-                "weight": 6
+                "weight": 6,
+                "records": [
+                  "Communities/YouTube/2025001_EffectiveNotesForOSCPAndPTs.md",
+                  "Communities/YouTube/2023004_OSINT-UMDCTF-2023.md",
+                  "Communities/YouTube/2023003_CreateAnAndroidEnv.md",
+                  "Communities/YouTube/2023002_Waffle-yOrder.md",
+                  "Communities/YouTube/2023001_valentine.md",
+                  "Communities/YouTube/2022007_ElfResources.md",
+                  "Communities/YouTube/2022006_EffectiveNotesForOSCP.md",
+                  "Communities/YouTube/2022005_InterceptHTTPSonNon-RootedAndroid.md",
+                  "Communities/YouTube/2022004_ZipSlip.md",
+                  "Communities/YouTube/2022003_AndroidAppPinningBypass.md",
+                  "Communities/YouTube/2022002_ReverseAndPatchAnAPK.md",
+                  "Communities/YouTube/2022001_BestPlatformsForEthicalHacking.md"
+                ]
               }
             },
             "includeFields": [
