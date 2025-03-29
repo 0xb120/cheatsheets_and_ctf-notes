@@ -5,7 +5,7 @@ Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
 tags:
-  - CRFL-injection
+  - CRLF-injection
   - GitLab
   - SSRF
   - credentials-reuse

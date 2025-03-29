@@ -6,7 +6,8 @@ Official GitHub: https://github.com/NationalSecurityAgency/ghidra
 
 
 # Tip and Tricks
-- [Version Tracking in Ghidra](../../Readwise/Articles/Connor%20Ford%20-%20Version%20Tracking%20in%20Ghidra.md)
 
+- [Version Tracking in Ghidra](../../Readwise/Articles/Connor%20Ford%20-%20Version%20Tracking%20in%20Ghidra.md)
+- [Decompilation Debugging](../../Readwise/Articles/clearbluejar%20-%20Decompilation%20Debugging.md)
 
 

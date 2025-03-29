@@ -5,7 +5,7 @@
   "triggerOnLoad": true,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 19306464,
+  "lastSavedStatusID": 19436209,
   "currentSyncStatusID": 0,
   "refreshBooks": true,
   "booksToRefresh": [
@@ -7019,7 +7019,8 @@
     "45462277",
     "42677809",
     "49417870",
-    "46415390"
+    "46415390",
+    "49832790"
   ],
   "failedBooks": [],
   "booksIDsMap": {
@@ -7202,8 +7203,9 @@
     "Readwise/Articles/Piotr Bazydlo (@chudyPB) - By Executive Order, We Are Banning Blacklists - Domain-Level RCE in Veeam Backup & Replication.md": "49829987",
     "Readwise/Articles/Detectify - DNS Is the Center of the Modern Attack Surface – Are You Protecting All Levels.md": "49831941",
     "Readwise/Articles/Blog – Snyk - Reconstructing the TJ Actions Changed Files GitHub Actions Compromise.md": "49832101",
-    "Readwise/Articles/HTTP Toolkit - HTTP3 Is Everywhere but Nowhere.md": "49832790",
-    "Readwise/Articles/William Moody - CVE-2025-25599 A Cautionary Tale of Insecure Temporary Files.md": "49834988"
+    "Readwise/Articles/William Moody - CVE-2025-25599 A Cautionary Tale of Insecure Temporary Files.md": "49834988",
+    "Readwise/Articles/zhero_web_security - Next.js and the Corrupt Middleware The Authorizing Artifact.md": "49915116",
+    "Readwise/Articles/projectdiscovery.io - CVE-2025-29927 Next.js Middleware Authorization Bypass - Technical Analysis.md": "49915502"
   },
   "reimportShowConfirmation": true
 }

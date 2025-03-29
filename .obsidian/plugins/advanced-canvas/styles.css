@@ -19,12 +19,19 @@
 .ac-settings-heading .setting-item-description {
   margin-inline-end: 20px;
 }
+.ac-settings-heading:has(.checkbox-container:not(.is-enabled)) + .settings-header-children {
+  opacity: 0.5;
+  pointer-events: none;
+}
 details.setting-item[open] > summary {
   margin-bottom: 0.75em;
 }
 details.setting-item > *:not(summary) {
   padding-left: 1em;
   border-left: 1px solid var(--color-accent);
+}
+body.is-mobile .kofi-button.sticky {
+  display: none;
 }
 .kofi-button {
   height: 30px;
@@ -49,7 +56,17 @@ details.setting-item > *:not(summary) {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
+}
+.kofi-overlay::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-base-00);
+  opacity: 0.95;
 }
 .kofi-overlay h1 {
   margin-bottom: 0;
@@ -368,12 +385,15 @@ details.setting-item > *:not(summary) {
   pointer-events: none !important;
   transition: none !important;
 }
-.canvas.is-exporting > .canvas-node {
-  --variable-breakpoint: -999999999;
+.canvas.is-exporting #group-collapse-button {
+  display: none;
 }
 .canvas.is-exporting #watermark-ac {
   z-index: 9999999;
   position: absolute;
+}
+.canvas-wrapper[data-collapsible-groups-feature-enabled=true] .canvas.is-exporting .canvas-node .canvas-group-label {
+  left: 0;
 }
 .progress-bar-modal-ac {
   margin-top: 0.75em;
@@ -383,6 +403,9 @@ details.setting-item > *:not(summary) {
 }
 .canvas-wrapper[data-disable-font-size-relative-to-zoom=true] {
   --zoom-multiplier: 1 !important;
+}
+.canvas-wrapper.mod-readonly[data-hide-background-grid-when-in-readonly=true] .canvas-background {
+  visibility: hidden;
 }
 #group-collapse-button {
   position: absolute;
@@ -456,9 +479,6 @@ details.setting-item > *:not(summary) {
   visibility: hidden;
 }
 .canvas-wrapper.presentation-mode .canvas-card-menu {
-  visibility: hidden;
-}
-.canvas-wrapper.presentation-mode .canvas-background {
   visibility: hidden;
 }
 .canvas-wrapper:not(.presentation-mode) .canvas-node[data-is-start-node=true]::before {

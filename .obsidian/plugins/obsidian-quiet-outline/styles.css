@@ -27,10 +27,11 @@
   white-space: nowrap;
 }
 .quiet-outline .n-tree.ellipsis .n-tree-node-content__text {
-  width: 100%;
+  overflow: hidden;
 }
 .quiet-outline .n-tree.ellipsis .n-tree-node-content {
-  width: 90%;
+  overflow: hidden;
+  flex: 1;
 }
 .quiet-outline .n-tree.n-tree--block-line .n-tree-node:not(.n-tree-node--disabled):hover {
   color: var(--nav-item-color-active);
@@ -133,6 +134,9 @@
 }
 
 /* main.css */
+.quiet-outline .n-tree {
+  padding-top: 5px;
+}
 .quiet-outline .n-tree .n-tree-node-indent {
   content: "";
   height: unset;
