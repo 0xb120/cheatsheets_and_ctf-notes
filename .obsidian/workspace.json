@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e3f797cfeadbe6b0",
+        "id": "c48b0d056a5fece7",
         "type": "tabs",
         "children": [
           {
-            "id": "187bfa2ecff329d9",
+            "id": "7d59743ff0a125b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Readwise inbox"
+              "title": "ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty"
             }
           }
         ]
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "hurl",
+                "query": "orange",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -109,7 +109,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 308.5,
+    "collapsed": true
   },
   "right": {
     "id": "659b37494d493ae5",
@@ -165,25 +166,24 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Readwise/Articles/Assetnote Research - NginxApache Path Confusion to Auth Bypass in PAN-OS.md"
+                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Assetnote Research - NginxApache Path Confusion to Auth Bypass in PAN-OS"
+              "title": "File properties for dotNET"
             }
           },
           {
-            "id": "846ea67b677f2757",
+            "id": "8461e389670820c8",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Readwise inbox"
+              "title": "Outline"
             }
           }
         ]
@@ -199,7 +199,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -222,12 +222,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.33966092932548975,
+                  "scale": 0.3396609293254898,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Readwise inbox"
+              "title": "Graph of ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty"
             }
           }
         ]
@@ -243,7 +243,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -253,7 +253,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Readwise inbox"
+              "title": "Backlinks for ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty"
             }
           },
           {
@@ -262,83 +262,87 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Dev, ICT & Cybersec"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 401.5
+    "width": 435.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "command-palette:Open command palette": false,
       "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
+      "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:Create new board": false,
+      "graph:Open graph view": false,
       "templates:Insert template": true,
       "workspaces:Manage workspace layouts": true,
-      "obsidian-kanban:Create new board": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-advanced-slides:Show Slide Preview": true,
       "obsidian-book-search-plugin:Create new book note": true,
-      "obsidian-git:Open Git source control": true,
       "file-tree-alternative:File Tree Alternative Plugin": true,
-      "obsidian-projects:Open projects": false
+      "obsidian-projects:Open projects": false,
+      "obsidian-git:Open Git source control": true
     }
   },
-  "active": "a1601c5574d5b14f",
+  "active": "7d59743ff0a125b2",
   "lastOpenFiles": [
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Wordpress.md",
-    "Readwise/Articles/Alex Thomas - How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes.md",
-    "Readwise/Articles/Eddie Zhang, Aug 27 - CVE Hunting Made Easy.md",
-    "Readwise/Articles/Alex Thomas - WordPress Security Research Series WordPress Request Architecture and Hooks.md",
-    "Readwise/Articles/Antoine Gicquel - WordPress for Security Audit.md",
-    "Readwise/Articles/httpsgithub.comChocapikk - GitHub - ChocapikkWpprobe A Fast WordPress Plugin Enumeration Tool.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Wordpress Plugins.md",
     "Readwise/Readwise inbox.md",
-    "Readwise/Articles/Ram Gall - PSA Critical POP Chain Allowing Remote Code Execution Patched in WordPress 6.4.2.md",
-    "Readwise/Articles/HTTP Toolkit - HTTP3 Is Everywhere but Nowhere.md",
+    "Readwise/Articles/PfiatDe - Having Fun With Github.md",
+    "Readwise/Articles/Sina Kheirkhah (@SinSinology) - SonicBoom, From Stolen Tokens to Remote Shells - SonicWall SMA100.md",
+    "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Confusion Attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/File Inclusion (LFI & RFI).md",
+    "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Path Traversal.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure File Upload.md",
+    "Play ground/Targets/opencart/scans/opencart-regexes.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
+    "Readwise/Articles/Charles Fol - Introducing Lightyear, a New Way to Dump PHP Files.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/PHP.md",
+    "Dev, ICT & Cybersec/High level/Lockpicking.md",
+    "Dev, ICT & Cybersec/High level/Attack Surface Management.md",
+    "Readwise/Articles/Assetnote Research - How an Obscure PHP Footgun Led to RCE in Craft CMS.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Python.md",
+    "Readwise/Articles/novasecio - Recon for Bug Bounty 8 Essential Tools for Performing Effective Reconnaissance.md",
+    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+    "Readwise/Articles/neodyme.io - HTML to PDF Renderer A Tale of Local File Access and Shellcode Execution.md",
+    "Readwise/Articles/blackbird-eu - Exploiting PDF Generators A Complete Guide to Finding SSRF Vulnerabilities in PDF Generators.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Server Side Request Forgery (SSRF).md",
     "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
     "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
-    "Dev, ICT & Cybersec/High level/Bug Bounty.md",
-    "Play ground/CTFs/Cyber Attack.md",
-    "Play ground/CTFs/Ready.md",
-    "Readwise/Articles/projectdiscovery.io - CVE-2025-29927 Next.js Middleware Authorization Bypass - Technical Analysis.md",
-    "Readwise/Articles/zhero_web_security - Next.js and the Corrupt Middleware The Authorizing Artifact.md",
-    "Readwise/Articles/attachments/wordpress-request-routing.png",
-    "Readwise/Articles/attachments/wordpress-request-flow.png",
-    "Readwise/Articles/attachments/wordpress-request-cycle.png",
-    "Readwise/Articles/attachments/wordpress-routing.png",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/wp-vulnerability-playground/rce.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/wp-vulnerability-playground/phpoi.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/wp-vulnerability-playground/lfi.md",
+    "Communities/YouTube/_YT-dashboard.canvas",
     "Play ground/Targets/Vulnerability Research Targets.md",
-    "Readwise/Articles/Rafael da Costa Santos - Exploiting HTTP Parsers Inconsistencies.md",
-    "Readwise/Articles/clearbluejar - Decompilation Debugging.md",
-    "Dev, ICT & Cybersec/Tools/ghidra.md",
-    "Readwise/Articles/Sonny - Where There’s Smoke, There’s Fire - Mitel MiCollab CVE-2024-35286, CVE-2024-41713 and an 0day.md",
-    "Communities/YouTube/2025XXX_Defeating-custom-password-reset-tokens.md",
-    "Readwise/Articles/attachments/PAN-OS-AuthBypass.png",
-    "Readwise/Articles/attachments/ap-filter-error.png",
-    "Readwise/Articles/attachments/LFI-exploiting-confusion.png",
-    "Readwise/Articles/attachments/xss-exploiting-confusion-and-libreoffice.png",
-    "Readwise/Articles/attachments/phpinfo-exploiting-confusion.png",
-    "Dev, ICT & Cybersec/Tools/attachments/sensitive-discoverer.png",
-    "Play ground/Targets/www.seven39.com/loot",
-    "Play ground/Targets/www.seven39.com/scans",
-    "Play ground/Targets/www.seven39.com/requests",
-    "Play ground/Targets/www.seven39.com/report",
-    "Play ground/Targets/www.seven39.com/PoC",
-    "Play ground/Targets/www.seven39.com/documentation",
-    "Play ground/Targets/www.seven39.com/burp",
-    "Play ground/Targets/www.seven39.com/attachments",
-    "Play ground/Targets/www.seven39.com",
+    "Readwise/Articles/Assetnote Research - Leveraging an Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x.md",
+    "Readwise2/Tweets",
+    "Readwise2/Articles",
+    "Readwise2",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_141914",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_140414",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_132433",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_130933",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_125433",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_123933",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_122433",
+    "Readwise/Articles/attachments/heatmap-4-pins-2.png",
+    "Readwise/Articles/attachments/heatmap-4-pins.png",
+    "Readwise/Articles/attachments/unminified-react.png",
+    "Readwise/Articles/attachments/GH-unpinnable-action.png",
+    "Readwise/Articles/attachments/GH-action-pinning.png",
+    "Readwise/Articles/attachments/dtd-finder-exploit.png",
+    "Readwise/Articles/attachments/dtd-finder-in-burp.png",
+    "Readwise/Articles/attachments/CSPT2CSRF.png",
+    "Readwise/Articles/attachments/orphaned-git-commit.png",
+    "Play ground/Targets/spoki.it/20250402_spoki.it/attachments/Pasted Image 20250406135612_334.png",
     "Play ground/Targets/opencart/OpenCart 4.0.2.3.canvas",
     "Play ground/Targets/SicuraNext/challenge-1/challenge-1.canvas",
     "Play ground/Targets/SicuraNext/challenge-2/challenge-2.canvas",
@@ -346,9 +350,7 @@
     "Play ground/Targets/uisp.it/areariservata2.uisp.it/areariservata2.uisp.it.canvas",
     "Play ground/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it.canvas",
     "Play ground/Targets/opencart/OpenCart-4.canvas",
-    "Communities/YouTube/_YT-dashboard.canvas",
     "Play ground/Personal Blog workflow.canvas",
-    "Play ground/CTFs/_CTF-dashboard.canvas",
-    "Play ground/Targets/vtenext"
+    "Play ground/CTFs/_CTF-dashboard.canvas"
   ]
 }
