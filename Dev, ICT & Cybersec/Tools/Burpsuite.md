@@ -725,6 +725,12 @@ You can use bambdas also to extract values from responses (eg. graphql operation
 Example:
 - [Tib3rius - What Are Bambdas and Why Should I Care](../../Readwise/Articles/Tib3rius%20-%20What%20Are%20Bambdas%20and%20Why%20Should%20I%20Care.md)
 
+# Burp AI
+
+- [Welcome to the Next Generation of Burp Suite: Elevate Your Testing With Burp AI](../../Readwise/Articles/PortSwigger%20Blog%20-%20Welcome%20to%20the%20Next%20Generation%20of%20Burp%20Suite%20Elevate%20Your%20Testing%20With%20Burp%20AI.md)
+- [PortSwigger Blog - The Future of Security Testing Harness AI-Powered Extensibility in Burp 🚀](../../Readwise/Articles/PortSwigger%20Blog%20-%20The%20Future%20of%20Security%20Testing%20Harness%20AI-Powered%20Extensibility%20in%20Burp%20🚀.md)
+- [PortSwigger Blog - Why It's Time for AppSec to Embrace AI How PortSwigger Is Leading the Charge](../../Readwise/Articles/PortSwigger%20Blog%20-%20Why%20It's%20Time%20for%20AppSec%20to%20Embrace%20AI%20How%20PortSwigger%20Is%20Leading%20the%20Charge.md)
+
 # Tools integrating with burpsuite
 
 ## Burp collector 

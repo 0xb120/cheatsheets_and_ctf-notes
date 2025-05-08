@@ -80,6 +80,8 @@ While the file was being loaded, the web editor would conveniently display statu
 
 ## Forcing authenticated requests (CSRF)
 
+See also [Maxence Schmitt - Exploiting Client-Side Path Traversal to Perform Cross-Site Request Forgery - Introducing CSPT2CSRF](../../Readwise/Articles/Maxence%20Schmitt%20-%20Exploiting%20Client-Side%20Path%20Traversal%20to%20Perform%20Cross-Site%20Request%20Forgery%20-%20Introducing%20CSPT2CSRF.md)
+
 Applications that use a custom header (like `Authorization` or `X-CSRF-Token`) or require `Content-Type: application/json` are normally immune to [Cross-Site Request Forgery (CSRF)](Cross-Site%20Request%20Forgery%20(CSRF).md) (barring CORS misconfiguration). But since we’re diverting a legitimate call issued by the application itself, we’re gaining the ability to make calls with our victim’s headers.
 
 Keep in mind though that only the path and query parameters can be controlled. We will have to do with whatever method and body the diverted request happens to have.

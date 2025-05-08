@@ -204,3 +204,4 @@ Final exploit:
 
 
 [^1]: [Different content parsing types](../../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/HTML.md#Different%20content%20parsing%20types)
+

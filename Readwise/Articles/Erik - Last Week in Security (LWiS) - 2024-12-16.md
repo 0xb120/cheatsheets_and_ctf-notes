@@ -35,6 +35,5 @@ date: 2024-12-19
 
 [cinelog](https://github.com/cmprmsd/cinelog) - Comprehensive logging of all terminal input and output for each session based on Asciinema and wild zsh + Python scripting.
 > [View Highlight](https://read.readwise.io/read/01jfdax8jdxttth806ff2wj01n)
-> #tools 
-
+> #tools
 

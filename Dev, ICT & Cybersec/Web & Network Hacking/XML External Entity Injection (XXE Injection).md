@@ -1,6 +1,8 @@
 >[!danger]
 >An XXE Injection vulnerability occurs due to **unsafe parsing of XML input**, leading to [File Inclusion (LFI & RFI)](File%20Inclusion%20(LFI%20&%20RFI).md) as well as [Remote Code Execution (RCE)](Remote%20Code%20Execution%20(RCE).md).
 
+>[!tip] Easy detection of XML parsers
+>[Tweets from Intigriti](../../Readwise/Tweets/@intigriti%20on%20Twitter%20-%20Tweets%20from%20Intigriti.md#^d36f55)
 # Basic concepts
 
 ## XML Entities
@@ -206,9 +208,12 @@ Example: [WAFfle-y Order](../../Play%20ground/CTFs/WAFfle-y%20Order.md)
 ## Blind XXE by repurposing a local DTD
 
 >[!abstract] Bibliography
->From the research [Exploiting XXE with local DTD files](https://portswigger.net/research/top-10-web-hacking-techniques-of-2018#7)
+>From the research [Exploiting XXE with local DTD files](https://portswigger.net/research/top-10-web-hacking-techniques-of-2018#7).
+>Real-word example: [Sonny - XXE, You Can Depend on Me](../../Readwise/Articles/Sonny%20-%20XXE,%20You%20Can%20Depend%20on%20Me.md)
 
 ### Locating an existing DTD file to repurpose
+
+Tools: [dtd-finder](https://github.com/GoSecure/dtd-finder)
 
 Since this XXE attack involves repurposing an existing DTD on the server filesystem, a key requirement is to locate a suitable file. This is actually quite straightforward. Because the application returns any error messages thrown by the XML parser, you can easily enumerate local DTD files just by attempting to load them from within the internal DTD.
 

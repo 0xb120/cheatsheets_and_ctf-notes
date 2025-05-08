@@ -52,3 +52,10 @@ In summary, there are three common ways that a browser uses to **determine the c
 Similar to faulty [HTML](../../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/HTML.md) syntax, browsers try to recover from missing character set information when parsing the content served from a web server and **make the best of it**. This non-strict behavior contributes to a good user experience, but it may also **open doors for exploitation techniques** like [mXSS](sonarsource.com%20-%20mXSS%20The%20Vulnerability%20Hiding%20in%20Your%20Code.md). [](https://read.readwise.io/read/01j5xbfcmvxfej8sj9j4zm67f4)
 
 For missing character information, browsers try to make an educated guess based on the content, which is called [auto-detection](https://html.spec.whatwg.org/#encoding-sniffing-algorithm:~:text=The%20user%20agent%20may%20attempt%20to%20autodetect%20the%20character%20encoding%20from%20applying%20frequency%20analysis%20or%20other%20algorithms%20to%20the%20data%20stream.). This is similar to [MIME sniffing](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/MIME%20sniffing.md) but operates on a character encoding level. [](https://read.readwise.io/read/01j5xbg0we825xjqfyneas93hj)
+
+# Encodings Exploitation
+
+- [PortSwigger Research - Bypassing Character Blocklists With Unicode Overflows](../../Readwise/Articles/PortSwigger%20Research%20-%20Bypassing%20Character%20Blocklists%20With%20Unicode%20Overflows.md)
+- [sonarsource.com - Encoding Differentials Why Charset Matters](../../Readwise/Articles/sonarsource.com%20-%20Encoding%20Differentials%20Why%20Charset%20Matters.md)
+- [Unicode escaping](../Web%20&%20Network%20Hacking/Evading%20Restrictions.md#Unicode%20escaping)
+- [Unicode normalization](../Web%20&%20Network%20Hacking/Evading%20Restrictions.md#Unicode%20normalization)

@@ -6,6 +6,10 @@
 error_log("message", 0);
 ```
 
+## PHP wrappers and filters
+
+![PHP wrappers and filters](../Web%20&%20Network%20Hacking/File%20Inclusion%20(LFI%20&%20RFI).md#PHP%20wrappers%20and%20filters)
+
 ## Enable remote debug in PHP with Xdebug
 
 Guide from *How to setup PHP remote debugging* [^remote-debug-php] and Debugging PHP on Docker with VS Code [^remote-debug-php-docker].
@@ -91,3 +95,9 @@ When you make a request to [http://localhost:8080?XDEBUG_SESSION_START=1](http:
 You can also set a cookie names `xDEBUG_SESSION` with any value to automatically debug EVERY request.
 
 [^xdebug-step-debug]: [Step debugging](https://xdebug.org/docs/step_debug), xdebug.org
+
+## PHP quirks and tricks
+
+- `register_argc_argv` + `$_SERVER['argv']` [^1] 
+
+[^1]: [Assetnote Research - How an Obscure PHP Footgun Led to RCE in Craft CMS](../../Readwise/Articles/Assetnote%20Research%20-%20How%20an%20Obscure%20PHP%20Footgun%20Led%20to%20RCE%20in%20Craft%20CMS.md)

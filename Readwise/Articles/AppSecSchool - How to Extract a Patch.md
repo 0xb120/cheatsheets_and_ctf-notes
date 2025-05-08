@@ -22,3 +22,4 @@ Easy way to do patch diffing using git and grep
 > Let's run git diff with our version numbers to extract all the changes between these two versions. ([View Highlight](https://read.readwise.io/read/01hb3kyep39pvka38bj8fpfpym))
 
 > I like to then extract the files that changed using grep +++. ([View Highlight](https://read.readwise.io/read/01hb3kzjk66esweyv9qvq0nqzb))
+

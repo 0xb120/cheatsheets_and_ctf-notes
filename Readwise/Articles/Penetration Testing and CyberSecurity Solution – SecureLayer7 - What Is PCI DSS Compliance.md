@@ -108595,5 +108595,3 @@ Level 4: Merchants that process fewer than 20,000 transactions on a yearly basis
 Level 4 merchants are required to complete an annual SAQ and, depending on the payment card brand may need to perform quarterly network vulnerability scans.
 > [View Highlight](https://read.readwise.io/read/01hcy9nh8hghkk1qx2vt32j88a)
 
-
-

@@ -68,3 +68,4 @@ After the full re-write process, the path results in `/unauth/../php/ztp_gate.ph
 `mod_php` sees that this looks like a request for a path `SCRIPT_FILENAME=/php/ztp_gate.php` with some path info afterwards (`PATH_INFO=/PAN_help/x.css.gz`), so it will execute `/php/ztp_gate.php`. And since the `X-pan-AuthCheck` header was set to off by Nginx, no authentication is required!
 
 ![](attachments/PAN-OS-AuthBypass.png)
+

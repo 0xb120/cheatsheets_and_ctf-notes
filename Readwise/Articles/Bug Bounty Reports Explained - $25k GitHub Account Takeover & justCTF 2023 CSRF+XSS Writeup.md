@@ -36,3 +36,4 @@ And this is when we finally get to the difference between the tokenizer and the 
 > [View Highlight](https://read.readwise.io/read/01jcr6r59qsy22ej4qd95jx43n)
 
 ![](attachments/Bug%20Bounty%20Reports%20Explained%20-%20$25k%20GitHub%20Account%20Takeover%20&%20justCTF%202023%20CSRF+XSS%20Writeup-poc.png)
+

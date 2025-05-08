@@ -17,5 +17,3 @@ date: 2024-12-19
 TIP! Don't know if you're dealing with an exclusion list or an allow list? Try uploading a file with a random extension, if it got accepted, you're likely dealing with a blacklist, otherwise, it's likely a strictly defined allow list.
 > [View Highlight](https://read.readwise.io/read/01jfdcjj8fpmh6g86q9754v8jg)
 
-
-

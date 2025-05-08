@@ -34,7 +34,8 @@ http://vulnerable-website.com/?greeting=data.username}}<tag>
 ```
 
 >[!tip] Polyglot payload to fuzz'em all
->`${{<%[%'"}}%\.` [^cobalt]
+>- `${{<%[%'"}}%\.` [^cobalt]
+>- [All-in-one Polyglot](../../Readwise/Tweets/0x0SojalSec%20on%20Twitter%20-%20Tweets%20from%20Md%20Ismail%20Šojal%20🕷️.md#All-in-one%20Polyglot)
 
 [^cobalt]: [A Pentester's Guide to Server Side Template Injection (SSTI)](https://www.cobalt.io/blog/a-pentesters-guide-to-server-side-template-injection-ssti), cobalt.io
 

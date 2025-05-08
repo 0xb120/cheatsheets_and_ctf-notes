@@ -64,3 +64,4 @@ Upon executing our malicious code, the flow will return back to the modified fun
     - Online backdoors
     - Self-programmed backdoors
 - [Enigma Protector](http://www.enigmaprotector.com/en/home.html)
+- [PrimeEncyptor](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-04-28.md#^1581ef)

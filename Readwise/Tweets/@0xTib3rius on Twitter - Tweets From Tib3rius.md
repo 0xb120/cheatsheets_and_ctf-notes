@@ -39,3 +39,4 @@ Ok, so after 2 "looks insecure but isn't" code examples I threw a curveball and 
 [View Tweet](https://twitter.com/0xTib3rius/status/1729534880336207918)
 
 ![](attachments/os-path-join-bug.png)
+

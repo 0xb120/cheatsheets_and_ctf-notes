@@ -373,3 +373,4 @@ As such, these tools will find trivial source-to-sink paths (like an `add_action
 [^3]: [Wordpress Nonces](https://developer.wordpress.org/apis/security/nonces/); developer.wordpress.org
 
 [^4]: [Plugin Loading](Alex%20Thomas%20-%20WordPress%20Security%20Research%20Series%20WordPress%20Request%20Architecture%20and%20Hooks.md#Plugin%20Loading)
+

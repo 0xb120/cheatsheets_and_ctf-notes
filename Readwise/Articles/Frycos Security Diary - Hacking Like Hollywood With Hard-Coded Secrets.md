@@ -27,3 +27,4 @@ docker run \
   -v ./unblob/input:/data/input \
 ghcr.io/onekey-sec/unblob:latest /data/input/$1
 ```
+

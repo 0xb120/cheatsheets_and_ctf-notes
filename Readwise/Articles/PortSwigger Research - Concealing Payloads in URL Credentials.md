@@ -9,10 +9,6 @@ date: 2024-10-30
 ---
 # Concealing Payloads in URL Credentials
 
-![rw-book-cover](https://portswigger.net/cms/images/a1/af/aea1-twittercard-twitter.png)
-
-## Highlights
-
 
 [Johan Carlsson](https://x.com/joaxcar) discovered you could [conceal payloads inside the credentials part of the URL](https://x.com/joaxcar/status/1712858781405577370)
 > [View Highlight](https://read.readwise.io/read/01jbeytcppp4rptab4gsga468j)

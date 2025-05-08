@@ -1,9 +1,9 @@
 ---
-author: "Piotr Bazydlo (@chudyPB)"
+author: "Piotr Bazydlo"
 aliases: "By Executive Order, We Are Banning Blacklists - Domain-Level RCE in Veeam Backup & Replication"
 tags: RW_inbox, readwise/articles, dotnet
-url: ?__readwiseLocation=
-date: 2025-03-21
+url: https://labs.watchtowr.com/by-executive-order-we-are-banning-blacklists-domain-level-rce-in-veeam-backup-replication-cve-2025-23120/?__readwiseLocation=
+date: 2025-04-28
 summary: A new vulnerability in Veeam Backup & Replication allows remote code execution due to flaws in its blacklist-based security mechanism for deserialization. Researchers found that the blacklist was incomplete, missing known deserialization gadgets that could be exploited. The post argues that using blacklists for security is ineffective, suggesting that whitelists are a better approach.
 ---
 # By Executive Order, We Are Banning Blacklists - Domain-Level RCE in Veeam Backup & Replication

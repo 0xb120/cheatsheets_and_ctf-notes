@@ -172,3 +172,4 @@ Interactsh server runs multiple services and captures all the incoming requests 
 # Tools and integrations
 
 - [orbit](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-02-10.md#^adfb39)
+- [nuclei-templates-lab](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-03-24.md#^1294f6)

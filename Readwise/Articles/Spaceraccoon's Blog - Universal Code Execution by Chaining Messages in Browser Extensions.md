@@ -207,3 +207,4 @@ date: 2024-08-21
 > [View Highlight](https://read.readwise.io/read/01j7gedr2q43v6qj88c6cx239a)
 
 [^1]: [PostMessage and EventListener](../../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/JavaScript%20&%20NodeJS.md#PostMessage%20and%20EventListener)
+

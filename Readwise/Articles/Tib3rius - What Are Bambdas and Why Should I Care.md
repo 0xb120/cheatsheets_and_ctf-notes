@@ -26,5 +26,3 @@ return requestResponse.request().parameterValue("operationName", HttpParameterTy
 
 > [View Highlight](https://read.readwise.io/read/01jedmjanj4wtqk1t00xh7bt21)
 
-
-

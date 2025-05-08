@@ -20,5 +20,3 @@ Effective memory dump analysis from a security perspective, particularly the `w3
 In this post, I will walk through my process while solving this awesome lab from [Xintra](https://www.xintra.org/labs) which features user-mode dumps related to two CVEs (Ivanti EPM SQLi RCE and a SharePoint Pre-Auth RCE chain)
 > [View Highlight](https://read.readwise.io/read/01jhn4jkpabfz4d88jk9s44dt4)
 
-
-

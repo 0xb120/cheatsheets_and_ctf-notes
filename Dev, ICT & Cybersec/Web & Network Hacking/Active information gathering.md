@@ -1,23 +1,6 @@
 >[!abstract]
 >Every information gathered **directly from** the target.
 
-# Website recon
-
-Gathering information simply **browsing the site**. Important sections are:
-
-- Corporate **Emails** and **Members**
-- "**Contact us**" pages
-- "**Social Media**" or "Follow us" pages and sections
-
----
-
-# Manual IP Extraction
-- **IP extraction by email**If the web app uses some **web server's functions to send emails**, it will **expose the IP address** of the real server.Once we get the email from the web server (registration, newsletter, etc.) we will have to extract and examine the various **headers** and finally find the IP.
-
-- **IP Extraction by Upload**If the web app allows to **upload images and retrieve the URL from external resources**, it is possible use some [IP-logger](https://iplogger.org/) to get the real IP. Once the script has been uploaded in the form of an image, an HTTP request will be sent to our resource, which will immediately grab the information from the headers, including the IP.
-
----
-
 # Network Sweeping & Port Scanning [^1]
 
 [^1]: [Type of scans (TCP & UDP)](Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Type%20of%20scans%20(TCP%20&%20UDP).md)
@@ -32,6 +15,7 @@ Gathering information simply **browsing the site**. Important sections are:
 - [scapy](https://scapy.net/) (tool)
 - [AutoRecon](../Tools/AutoRecon.md) (script)
 - [nmapAutomator sh](../Tools/nmapAutomator%20sh.md) (script)
+- [NomadScanner](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-05-05.md#^cfc5fa) - hardened, memory-only Windows port scanner
 
 ---
 
@@ -41,6 +25,8 @@ Gathering information simply **browsing the site**. Important sections are:
 - Client Fingerprinting
     - [fingerprintjs2](https://github.com/Valve/fingerprintjs2)
 - [Online UserAgent databses](http://developers.whatismybrowser.com/)
+- [Whatismybrowser.com](http://developers.whatismybrowser.com/) (online)
+
 
 ```html
 <!doctype html>
@@ -90,3 +76,7 @@ file_put_contents('/var/www/html/fp/fingerprint.txt', print_r($data, true),
 FILE_APPEND | LOCK_EX);
 ?>
 ```
+
+# HTTP specific
+
+[HTTP Recon and Enumeration](HTTP%20Recon%20and%20Enumeration.md)

@@ -607,6 +607,8 @@ if __name__ == '__main__':
     app.run(debug=True, port=1234)
 ```
 
+Flask snippet for exploiting SSRF and redirection tricks: [From Blind SSRF to Full Read](../../Readwise/Articles/assetnote.io%20-%20Digging%20for%20SSRF%20in%20NextJS%20Apps.md#From%20Blind%20SSRF%20to%20Full%20Read)
+
 [^6]: [Path Traversal in OpenSource HTB box](../../Play%20ground/CTFs/OpenSource.md#Path%20Traversal)
 
 [^7]: [Analysis of CVE-2023-37474 in CopyParty](../../Readwise/Articles/0xdf%20-%20Analysis%20of%20CVE-2023-37474%20in%20CopyParty.md)

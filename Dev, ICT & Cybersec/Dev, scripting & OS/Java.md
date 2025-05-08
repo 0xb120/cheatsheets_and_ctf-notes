@@ -51,7 +51,7 @@ jshell> /exit
 - **Enterprise Java Bean** (EJB): relatively heavyweight software component that encapsulates the logic of a specific business function within the application. EJBs are intended to take care of various technical challenges that application developers must address, such as transactional integrity.
 - **Plain Old Java Object** (POJO): an ordinary Java object normally used to denote objects that are user-defined
 - **Java Servlet** [^servlets]: object that resides on an application server and receives HTTP requests from clients and returns HTTP responses
-- **Java web container**: platform or engine that provides a runtime environment for Java-based web applications (eg. Tomcat, JBoss, etc.)
+- **Java web container**: platform or engine that provides a runtime environment for Java-based web applications (eg. #Tomcat, #JBoss, etc.)
 
 [^servlets]: https://en.wikipedia.org/wiki/Jakarta_Servlet
 
@@ -83,7 +83,7 @@ We can use [Process Explorer](../Tools/Sysinternals%20Suite.md#Process%20Explore
 
 When analyzing Java application it's also always good searching:
 - the `WEB-INF` folder → which is the Java’s default configuration folder path
-- `web.xml` → a deployment descriptor file which determine how URLs map to servlets, which URLs require authentication, and other information
+- `web.xml` → a deployment descriptor file which determine how URLs map to servlets, which URLs require authentication, and other information [^1][^2]
 ```xml
 ...
 <servlet-mapping>
@@ -130,3 +130,7 @@ If you find a [Path Traversal](../Web%20&%20Network%20Hacking/Path%20Traversal.m
 - FortiNAC - Just a few more RCEs [^FortiNAC-RCEs]
 
 [^FortiNAC-RCEs]: [FortiNAC - Just a few more RCEs](https://frycos.github.io/vulns4free/2023/06/18/fortinac.html), frycos
+
+[^1]: See as an example [The Best Security Is When We All Agree to Keep Everything Secret (Except the Secrets) - NAKIVO Backup & Replication](../../Readwise/Articles/Sonny%20-%20The%20Best%20Security%20Is%20When%20We%20All%20Agree%20to%20Keep%20Everything%20Secret%20(Except%20the%20Secrets)%20-%20NAKIVO%20Backup%20&%20Replication.md)
+
+[^2]: [Sonny - XXE, You Can Depend on Me](../../Readwise/Articles/Sonny%20-%20XXE,%20You%20Can%20Depend%20on%20Me.md)

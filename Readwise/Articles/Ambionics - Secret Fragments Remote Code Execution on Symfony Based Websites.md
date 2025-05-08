@@ -174,7 +174,6 @@ date: 2024-08-20
 > The exploit will therefore run through every possible variable combination, and then try out the two exploitation methods. The code is available on [our GitHub](https://github.com/ambionics/symfony-exploits).
 > [View Highlight](https://read.readwise.io/read/01hmefq1evd6vq14ahzjaef9sb)
 
-## New highlights added September 6, 2024 at 10:56 AM
 
 
 > **getting code execution is trivial**. We can, for instance, call `system()`:

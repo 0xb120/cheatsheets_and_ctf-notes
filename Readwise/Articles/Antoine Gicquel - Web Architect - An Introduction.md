@@ -21,5 +21,3 @@ When a request is received by a CMS, the code execution typically goes in the fo
 
 Sessions and authentication data is usually handled during the bootstrapping phase, setting the right variables in the CMS environment. It is then to the responsibility of the controller to check whether the user is authenticated (through the previously set CMS variables) and to enforce ACL rules. [](https://read.readwise.io/read/01jhj52a6s61qkaxp2h64ryvbg)
 
-
-

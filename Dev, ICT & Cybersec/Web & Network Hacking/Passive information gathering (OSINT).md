@@ -1,23 +1,10 @@
 > [!abstract]
-> Every information gathered without **directly interact** with the target
+> Every information gathered without **interact in a malicious way** with the target
+
+If you need specific HTTP and HTTPS recon methods, look [HTTP Recon and Enumeration](HTTP%20Recon%20and%20Enumeration.md)
 
 ---
 
-# Misc command line tools
-
-- [waybackurls](https://github.com/tomnomnom/waybackurls) - Fetch all the URLs that the Wayback Machine knows about for a domain
-- [gau](https://github.com/lc/gau) - Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
-- [Porch Pirate](https://github.com/mandconsultinggroup/porch-pirate) [^porch-pirate] - Porch Pirate is the most comprehensive Postman recon / OSINT client and framework that facilitates the automated discovery and exploitation of API endpoints and secrets committed to workspaces, collections, requests, users and teams.
-- [waymore](https://github.com/xnl-h4ck3r/waymore) [^waymore-tweet]
-- [Recon for Bug Bounty: 8 Essential Tools for Performing Effective Reconnaissance](../../Readwise/Articles/novasecio%20-%20Recon%20for%20Bug%20Bounty%208%20Essential%20Tools%20for%20Performing%20Effective%20Reconnaissance.md)
-- [urlfinder](https://github.com/projectdiscovery/urlfinder) [^urlfinder] - passively gathering URLs without active scanning
-- [webcap](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-03-03.md#^e13b68)
-
-[^porch-pirate]: [Plundering Postman With Porch Pirate](../../Readwise/Articles/Mand%20Consulting%20Group%20-%20Plundering%20Postman%20With%20Porch%20Pirate.md), mandconsulting.ca
-[^waymore-tweet]: [@xnl_h4ck3r on Twitter - Tweets From  XNL -Н4cĸ3r](../../Readwise/Tweets/@xnl_h4ck3r%20on%20Twitter%20-%20Tweets%20From%20%20XNL%20-Н4cĸ3r.md#^3d52ca)
-[^urlfinder]: [Last Week in Security (LWiS) - 2024-12-02](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-12-02.md#^e83851)
-
----
 # Google Hacking
 
 - [Google Hacking](Passive%20information%20gathering%20(OSINT).md#Google%20Hacking)
@@ -43,24 +30,17 @@ External references:
 > [!tip]
 > *DNS History allows to search historical DNS records to see if misconfigurations were present before being patched*
 
-- [https://toolbar.netcraft.com/site_report](https://toolbar.netcraft.com/site_report)
-- [https://searchdns.netcraft.com](https://searchdns.netcraft.com/)
-- [https://dnstrails.com](https://dnstrails.com/)
-- [https://dnshistory.org/](https://dnshistory.org/)
-- [http://viewdns.info/iphistory/](http://viewdns.info/iphistory/)
-- [https://completedns.com/dns-history](https://completedns.com/dns-history)
+DNS query:
+- https://toolbox.googleapps.com/apps/dig/
 
----
-
-# Reconnaissance Framework
-- [recon-ng](../Tools/recon-ng.md) (tool)
-- [Maltego](https://www.maltego.com/) (tool)
-- [theHarvester](../Tools/theHarvester.md) (tool)
-- SearchDiggity (Windows)
-- [OSINT Framework](https://osintframework.com/) (misc)
-- [IntelTechniques](https://inteltechniques.com/tools/index.html) (misc)
-- [Sector035](https://sector035.nl/links) (misc)
-- [PIM Eyes](https://pimeyes.com/en) (face recognition)
+DNS history and broader recon:
+- https://dnsdumpster.com/ - dns recon & research, find & lookup dns records
+- https://sitereport.netcraft.com/ - Find out the infrastructure and technologies used by any site
+- https://searchdns.netcraft.com/ - Explore websites visited by users of the Netcraft extensions
+- https://dnshistory.org/ - Domain Name System (DNS) Historical Record Archive
+- https://completedns.com/dns-history/ - Largest archive of DNS records - Domain History
+- http://viewdns.info/iphistory/ - Shows a historical list of IP addresses a given domain name has been hosted on
+- https://dnpedia.com/domains/search.php - Find already registered global top level domains (gTLDs) by keywords and nameserver
 
 ---
 
@@ -70,6 +50,8 @@ External references:
 - Job Opportunity (online)
 - [twofi.rb](https://digi.ninja/projects/twofi.php) (tool)
 - [linkedin2username](https://github.com/initstring/linkedin2username) (tool)
+- [Telemetr.io](https://telemetr.io/en/channels?channel=leaks) (online) - comprehensive analytics and insights for Telegram channels and groups
+
 
 ---
 
@@ -80,10 +62,10 @@ External references:
 4. leaked doc.
 
 **Tools**:
-- ExifTool
-- FOCA
-- Metadata Extraction Tool
-- Strings
+- [ExifTool](https://exiftool.org/)
+- [FOCA](https://github.com/ElevenPaths/FOCA)
+- [Metadata Extraction Tool](https://meta-extractor.sourceforge.net/)
+- `strings`
 - ...
 
 ---
@@ -93,15 +75,9 @@ External references:
 	- [Complete Guide to Finding More Vulnerabilities With Shodan and Censys](../../Readwise/Articles/novasecio%20-%20Complete%20Guide%20to%20Finding%20More%20Vulnerabilities%20With%20Shodan%20and%20Censys.md)
 - [netcraft](https://www.netcraft.com/) (online)
 - [crunchbase](https://www.crunchbase.com/) (online)
-- [Security Headers](https://securityheaders.com/) (online)
-- [SSLLabs](https://www.ssllabs.com/ssltest/) (online)
-- client side data collectors (User Agent grabber, etc)
 - [Wayback Machine](http://web.archive.org/) (online)
 - [Web page archive](https://archive.fo/) (online)
 - [Google Web Cache](http://webcache.googleusercontent.com/search?q=cache:about:blank) (online)
-- [Screenshots.com](http://www.screenshots.com/) (online)
-- [Archive.today](https://archive.fo/) (online)
-- [Whatismybrowser.com](http://developers.whatismybrowser.com/) (online)
 - [CommonCrawl](https://commoncrawl.org/) (online)
 
 
@@ -116,15 +92,43 @@ External references:
 - [Snubase](https://snusbase.com/) (online)
 - [Cracked.io](https://cracked.io/) (online)
 - [LeakIX](https://leakix.net/) (online)
-- [Telemetr.io](https://telemetr.io/en/channels?channel=leaks) (online)
 
 ---
 
 # Open-Source Code and Codes FAQ
+
+- [OpenSSF - Understanding and Applying the OpenSSF Criticality Score in Open Source Projects](../../Readwise/Articles/OpenSSF%20-%20Understanding%20and%20Applying%20the%20OpenSSF%20Criticality%20Score%20in%20Open%20Source%20Projects.md)
+- [Open Source Security Index](https://opensourcesecurityindex.io/) (online) - a ranking system, listing the most popular and rapidly growing open source security projects based on various metrics ^890ecf
+- [awesomeopensource.com](https://awesomeopensource.com/) (online): Leverage our expert categorization, alternatives and package manager metrics to find the open source project you need 
+- [StackOverflow](https://stackoverflow.com/) (online)
 - [GitHub](https://github.com/) (online)
     - [GitHub search engine](https://docs.github.com/en/github/searching-for-information-on-github/searching-code)
+    - https://grep.app/
 - [SourceForce](https://sourceforge.net/) (online)
 - [GitLab](https://about.gitlab.com/) (online)
-- [Gitrob](https://github.com/michenriksen/gitrob) (tool)
-- [Gitleaks](https://github.com/zricethezav/gitleaks) (tool)
-- [StackOverflow](https://stackoverflow.com/) (online)
+
+Framework for github:
+- [Gitrob](https://github.com/michenriksen/gitrob) (tool) ^5a3ff0
+- [Gitleaks](https://github.com/zricethezav/gitleaks) (tool) ^88d33b
+
+---
+
+# Wirless and WiFi info
+
+- https://wigle.net/ - WiGLE (Wireless Geographic Logging Engine) is a website for collecting information about the different wireless hotspots around the world
+
+---
+
+# Reconnaissance Framework
+
+- [OSINT Framework](https://osintframework.com/) (misc)
+- [IntelTechniques](https://inteltechniques.com/tools/index.html) (misc)
+- [recon-ng](../Tools/recon-ng.md) (tool)
+- [theHarvester](../Tools/theHarvester.md) (tool)
+- [Maltego](https://www.maltego.com/) (tool)
+- [Sector035](https://sector035.nl/links) (blog)
+- [PIM Eyes](https://pimeyes.com/en) (face recognition)
+- [Scopify](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-04-28.md#^95044c) - a Python command-line tool designed to quickly gather and analyze infrastructure information for a target company
+
+
+

@@ -80,6 +80,10 @@ We can also extract Flutter Metadata from the application using a modified versi
 
 ### ReactNative
 
+React Native is a popular framework for building mobile apps that allows developers to use JavaScript and native features. [Expanding the Attack Surface: React Native Android Applications](../../Readwise/Articles/assetnote.io%20-%20Expanding%20the%20Attack%20Surface%20React%20Native%20Android%20Applications.md) explains how to extract and analyze JavaScript from React Native Android applications to find sensitive information, such as API keys and endpoints. By extracting the APK and reviewing the index.android.bundle file, users can identify potential security vulnerabilities in the app.
+
+You can also use [webpack-exploder](https://spaceraccoon.github.io/webpack-exploder/) to unpack the source code of React and other Webpacked Javascript apps-
+
 ### Apache Cordova
 
 ## Manifest and source code analysis

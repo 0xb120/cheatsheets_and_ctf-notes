@@ -17,7 +17,8 @@ Use-cases:
 
 Use-cases:
 - Send negatives values in order to increase money or get arbitrary discounts: ![|440](../../zzz_res/attachments/BusinessLogic-ArbitraryDiscount.png)
-- Exploit integers overflows to get arbitrary discounts: ![|440](../../zzz_res/attachments/BusinessLogic-ArbitraryDiscount2.png) ![](../../zzz_res/attachments/BusinessLogic-ArbitraryDiscount3.png)
+- Exploit integers overflows to get arbitrary discounts:
+   ![|440](../../zzz_res/attachments/BusinessLogic-ArbitraryDiscount2.png) ![](../../zzz_res/attachments/BusinessLogic-ArbitraryDiscount3.png)
 - [SQL Truncation](SQL%20Truncation.md)
 - [HTTP Parameter Pollution (HPP)](HTTP%20Parameter%20Pollution%20(HPP).md)
 
@@ -136,6 +137,8 @@ This issue can be compounded if there is another user-controllable input on the 
 > Now we can use the crafted payload to alter the `stay-logged-in` cookie and become administrator
 
 
+### Order of operation bugs
 
+- [Assetnote Research - Leveraging an Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x](../../Readwise/Articles/Assetnote%20Research%20-%20Leveraging%20an%20Order%20of%20Operations%20Bug%20to%20Achieve%20RCE%20in%20Sitecore%208.x%20-%2010.x.md)
 
 

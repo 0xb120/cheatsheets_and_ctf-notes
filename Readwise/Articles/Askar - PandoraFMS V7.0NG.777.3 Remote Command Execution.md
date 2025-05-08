@@ -24,4 +24,3 @@ while the second part will demonstrate how the same vulnerability can be detecte
 This analysis, like others I’ve conducted, reflects my personal approach to analyzing vulnerable code and tracing the connections between sources and sinks. It is by no means a comprehensive methodology, and there are certainly more refined approaches you can use to achieve the same goals. ^429bea
 > [View Highlight](https://read.readwise.io/read/01jh0r03qbv9fjnscemvfy0vcz)
 
-

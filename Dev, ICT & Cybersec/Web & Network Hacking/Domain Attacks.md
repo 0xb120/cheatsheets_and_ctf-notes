@@ -1,6 +1,7 @@
 >[!info]
 >Domain attacks are all those attacks aimed at stealing an existing domain, spoofing real domains or registering expired sub-domains contained in their main sites.
 
+Domain attacks allows for many different kind of attacks, including [Supply Chain vulnerabilities](../Dev,%20scripting%20&%20OS/Supply%20Chain.md#Supply%20Chain%20vulnerabilities)
 ## Domain Hijacking
 
 The practice of taking possession of a domain by registering it with other data and then exterminating the legitimate owner.
@@ -39,7 +40,11 @@ In order to find common typosquatting domains it is possible to use [dnstwist.py
 
 ---
 
-## Sub-domain takeover
+## Subdomain takeover
 
 Enumeration of expired sub-domains in order to register them and obtain authority to attack the main domain.
 A useful tool in order to find expired sub-domains is [takeover.py](https://github.com/m4ll0k/takeover)
+
+One of the technique used to achieve subdomain takeover is [Dangling DNS](../../Readwise/Articles/Chris%20Hosking%20-%20Re-Assessing%20Risk%20Subdomain%20Takeovers%20as%20Supply%20Chain%20Attacks.md#Dangling%20DNS). 
+
+![Dangling DNS](../../Readwise/Articles/Chris%20Hosking%20-%20Re-Assessing%20Risk%20Subdomain%20Takeovers%20as%20Supply%20Chain%20Attacks.md#Dangling%20DNS)

@@ -20,5 +20,3 @@ What this tool does is taking a file (*any type of file*), encrypt it, and embed
 Then, when the user browses the HTML file, the embedded file is decrypted on the fly, saved in a temporary folder, and the file is then presented to the user as if it was being downloaded from the remote site. Depending on the user's browser and the file type presented, the file can be automatically opened by the browser.
 > [View Highlight](https://read.readwise.io/read/01jhj5dgf7tpxt6mh4ssh7y13f)
 
-
-

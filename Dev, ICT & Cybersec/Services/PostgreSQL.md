@@ -19,6 +19,8 @@ Description: PostgreSQL, also known as Postgres, is a free and open-source relat
 
 # Exploitation
 
+- [World of SELECT-only PostgreSQL Injections: (Ab)using the filesystem](../../Readwise/Articles/phrack.org%20-%20.%20Phrack%20Magazine%20.%200x10-0x47-0x08.md)
+
 ## [SQL Injection](../Web%20&%20Network%20Hacking/SQL%20Injection.md)
 
 ## Build a custom PostgreSQL extension

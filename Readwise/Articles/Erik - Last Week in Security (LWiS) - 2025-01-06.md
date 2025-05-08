@@ -21,6 +21,5 @@ date: 2025-01-07
 
 [DOMspy](https://github.com/GangGreenTemperTatum/DOMspy) - A web security research tool for DOM testing. A chrome extension now. ^5d4fbd
 > [View Highlight](https://read.readwise.io/read/01jh04mcgg6d5e2wzn5jqw4yw1)
-> #tools 
-
+> #tools
 

@@ -15,7 +15,7 @@ This occurs when you can break the NoSQL query syntax, enabling you to inject yo
 
 ### Detect
 
-To do this, systematically test each input by submitting fuzz strings and special characters that trigger a database error or some other detectable behavior if they're not adequately sanitized or filtered by the application.
+To do this, systematically test each input by submitting fuzz strings and special characters that trigger a database error or some other detectable behavior if they're not adequately sanitized or filtered by the application. [^1]
 
 Example string for MongoDB:
 ```
@@ -100,7 +100,7 @@ admin' && this.foo!='
 If the `password` field exists, you'd expect the response to be identical to the response for the existing field (`username`), but different to the response for the field that doesn't exist (`foo`).
 ## Operator Injection
 
-This occurs when you can use NoSQL query operators to manipulate queries. 
+This occurs when you can use NoSQL query operators [^2] to manipulate queries. 
 
 Examples of MongoDB query operators include:
 - `$where` - Matches documents that satisfy a JavaScript expression.
@@ -140,7 +140,7 @@ If this doesn't work, you can try the following:
 
 Even if the original query doesn't use any operators that enable you to run arbitrary JavaScript, you may be able to inject one of these operators yourself. You can then use boolean conditions to determine whether the application executes any JavaScript that you inject via this operator.
 
-To test whether you can inject operators, you could try adding the $where operator as an additional parameter:
+To test whether you can inject operators, you could try adding the `$where` operator as an additional parameter:
 ```
 
 {"username":"wiener","password":"peter"}
@@ -149,7 +149,7 @@ To test whether you can inject operators, you could try adding the $where operat
 {"username":"wiener","password":"peter", "$where":"1"}
 ```
 
-If you have injected an operator that enables you to run JavaScript, you may be able to use the keys() method to extract the name of data fields:
+If you have injected an operator that enables you to run JavaScript, you may be able to use the `keys()` method to extract the name of data fields:
 ```js
 "$where":"Object.keys(this)[0].match('^.{0}a.*')" // This inspects the first data field in the user object and returns the first character of the field name. This enables you to extract the field name character by character.
 ```
@@ -163,3 +163,12 @@ You may be able to extract data using operators that don't enable you to run Jav
 {"username":"admin","password":{"$regex":"^.*"}} // If the response to this request is different to the one you receive when you submit an incorrect password, this indicates that the application may be vulnerable
 {"username":"admin","password":{"$regex":"^a*"}}
 ```
+
+See for example:
+- [Authentication bypass via operator injection](../../Readwise/Articles/blackbird-eu%20-%20NoSQLi%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20NoSQL%20Injection%20Vulnerabilities.md#Authentication%20bypass%20via%20operator%20injection)
+- [Extracting data with time delays](../../Readwise/Articles/blackbird-eu%20-%20NoSQLi%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20NoSQL%20Injection%20Vulnerabilities.md#Extracting%20data%20with%20time%20delays)
+- [Executing server-side JavaScript code with NoSQL syntax injection](../../Readwise/Articles/blackbird-eu%20-%20NoSQLi%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20NoSQL%20Injection%20Vulnerabilities.md#Executing%20server-side%20JavaScript%20code%20with%20NoSQL%20syntax%20injection)
+
+[^1]: [Identifying NoSQL injection vulnerabilities](../../Readwise/Articles/blackbird-eu%20-%20NoSQLi%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20NoSQL%20Injection%20Vulnerabilities.md#Identifying%20NoSQL%20injection%20vulnerabilities)
+
+[^2]: [MongoDB Operators](../../Readwise/Articles/blackbird-eu%20-%20NoSQLi%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20NoSQL%20Injection%20Vulnerabilities.md#MongoDB%20Operators)

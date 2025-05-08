@@ -33,7 +33,7 @@ date: 2024-08-20
 
 
 
-> Patch Diffing with BinDiff
+> #patch-diffing with BinDiff
 >  Once we got hold of the firmware, we proceeded by extracting them using [Unblob](https://github.com/onekey-sec/unblob).
 >  By doing a quick `find`/`ripgrep` search we figured out that the affected modules are not CGI files as one would expect, but they are compiled functions handled inside the `/usr/sbin/httpd` binary.
 >  #tools 

@@ -95,9 +95,8 @@ Eg:
 - https://github.com/kunte0/phar-jpg-polyglot/tree/master
 
 See also:
-- CVE-2023-33466 - Exploiting Healthcare Servers with Polyglot Files [^33466]
-
-[^33466]: [Exploiting Healthcare Servers with Polyglot Files](https://www.shielder.com/blog/2023/10/cve-2023-33466-exploiting-healthcare-servers-with-polyglot-files/), shielder.com
+- [Blog on Shielder - CVE-2023-33466 - Exploiting Healthcare Servers With Polyglot Files](../../Readwise/Articles/Blog%20on%20Shielder%20-%20CVE-2023-33466%20-%20Exploiting%20Healthcare%20Servers%20With%20Polyglot%20Files.md)
+- [ELFDICOM: PoC Malware Polyglot Exploiting Linux-Based Medical Devices](../../Readwise/Articles/Harry%20Hayward%20-%20ELFDICOM%20PoC%20Malware%20Polyglot%20Exploiting%20Linux-Based%20Medical%20Devices.md)
 
 ## Bypass file execution prevention in user-accessible directories
 

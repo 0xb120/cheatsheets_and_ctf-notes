@@ -39,10 +39,14 @@ Folding:
 
 # Useful extension
 
-[Compare Folders](https://marketplace.visualstudio.com/items?itemName=moshfeu.compare-folders): useful for patch diffing and investigating newer/older/modified files 
+[Compare Folders](https://marketplace.visualstudio.com/items?itemName=moshfeu.compare-folders): useful for #patch-diffing  and investigating newer/older/modified files 
   ![](attachments/vscode-compare-folders.png)
   ^397c19
 
 [CodeQL VSCode extention](../../Readwise/Articles/Frycos%20Security%20Diary%20-%20Pre-Auth%20RCE%20With%20CodeQL%20in%20Under%2020%20Minutes.md#CodeQL%20VSCode%20extention): integration to the [CodeQL](CodeQL.md) engine
 ![codeql-ext-vscode](../../Readwise/Articles/attachments/codeql-ext-vscode.png)
 ![codeql-run-query](../../Readwise/Articles/attachments/codeql-run-query.png)
+
+[SARIF Explorer](https://marketplace.visualstudio.com/items?itemName=trailofbits.sarif-explorer): SARIF Explorer [^1] is a VSCode extension that enables you to review static analysis results effectively and enjoyably. Use it with [semgrep](semgrep.md) for fantastic results. ^b54027
+
+[^1]: [Marco Ivaldi - Aiding Reverse Engineering With Rust and a Local LLM](../../Readwise/Articles/Marco%20Ivaldi%20-%20Aiding%20Reverse%20Engineering%20With%20Rust%20and%20a%20Local%20LLM.md)

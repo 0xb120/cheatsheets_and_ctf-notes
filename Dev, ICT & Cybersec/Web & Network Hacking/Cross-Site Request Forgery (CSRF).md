@@ -39,6 +39,7 @@ Three different key conditions must be satisfied:
 </html>
 ```
 
+See also [Basic CSRF PoC](../../Readwise/Articles/novasecio%20-%20CSRF%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20CSRF%20Vulnerabilities.md#Basic%20CSRF%20PoC)
 ## Defenses against CSRF attacks
 
 ### CSRF tokens
@@ -114,7 +115,7 @@ Some applications make use of the HTTP Referer header to attempt to defend again
 
 #### Common bypasses and flaws
 
-- **Validation of Referer depends on header being present**:
+- **Validation of Referer depends on header being present** (or having a null value [^1]):
   Some applications validate the `Referer` header when it is present in requests but skip the validation if the header is omitted. There are various ways to achieve this, but the easiest is using a META tag within the HTML page that hosts the CSRF attack: `<meta name="referrer" content="never">`
 >[!example]
 >```html
@@ -160,3 +161,6 @@ Some applications make use of the HTTP Referer header to attempt to defend again
   If you can find a DOM-based Open Redirection vulnerability, you can use it to instantiate your CSRF attack and chain it with method switching.
 ## Other bypass and tricks
 - [Cross-Site POST Requests Without a Content-Type Header](../../Readwise/Articles/Luke%20Jahnke%20-%20Cross-Site%20POST%20Requests%20Without%20a%20Content-Type%20Header.md) 
+- [CSRF: A Complete Guide to Exploiting Advanced CSRF Vulnerabilities](../../Readwise/Articles/novasecio%20-%20CSRF%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20CSRF%20Vulnerabilities.md)
+
+[^1]: [Bypass CSRF protection sending Requests without Referer](../../Readwise/Articles/novasecio%20-%20CSRF%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20CSRF%20Vulnerabilities.md#Bypass%20CSRF%20protection%20sending%20Requests%20without%20Referer)

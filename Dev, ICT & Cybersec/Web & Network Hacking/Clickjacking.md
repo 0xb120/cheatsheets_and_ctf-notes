@@ -112,6 +112,11 @@ Attacker manipulation of inputs to a target website may necessitate multiple act
 <iframe src="https://0ad700100460cdbcc04ba431007400b0.web-security-academy.net/my-account"></iframe>
 ```
 
+## Double clickjacking
+
+[DoubleClickjacking](../../Readwise/Articles/Blog%20-%20DoubleClickjacking%20A%20New%20Era%20of%20UI%20Redressing.md) is a new type of attack that tricks users into unintentionally authorizing malicious actions by exploiting the timing of double-clicks [^1]. Unlike traditional clickjacking, this method can bypass existing protections and affect many major websites. It can lead to serious issues like account takeovers and unauthorized changes to user settings.
+
+
 ---
 
 # Protections against clickjacking
@@ -125,3 +130,5 @@ Attacker manipulation of inputs to a target website may necessitate multiple act
 # Useful tools
 
 - [Burp Clickbandit](https://portswigger.net/burp/documentation/desktop/tools/clickbandit)
+
+[^1]: [Pierluigi Paganini - DoubleClickjacking Allows Clickjacking on Major Websites](../../Readwise/Articles/Pierluigi%20Paganini%20-%20DoubleClickjacking%20Allows%20Clickjacking%20on%20Major%20Websites.md)

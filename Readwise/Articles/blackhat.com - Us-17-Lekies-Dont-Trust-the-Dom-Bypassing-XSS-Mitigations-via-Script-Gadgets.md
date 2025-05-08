@@ -64,5 +64,3 @@ jQuery contains gadget that takes existing <script> tags, and reinserts them. We
 • We looked for Script Gadgets in 16 popular modern JS libraries. AngularJS 1.x, Aurelia, Bootstrap, Closure, Dojo Toolkit, Emberjs, Knockout, Polymer 1.x, Ractive, React, RequireJS, Underscore / Backbone, Vue.js, jQuery, jQuery Mobile, jQuery UI • It turned out they are prevalent in the above • Only one library did not have a a useful gadget • Gadgets we found were quite effective in bypassing XSS mitigations.
 > [View Highlight](https://read.readwise.io/read/01jh388e0xe8kf28j3wayz3f1n)
 
-
-

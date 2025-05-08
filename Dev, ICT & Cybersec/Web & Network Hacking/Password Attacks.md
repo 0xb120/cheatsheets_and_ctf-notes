@@ -1,3 +1,7 @@
+---
+aliases:
+  - Dictionary Attack
+---
 # Introduction
 
 ## Hash
@@ -31,7 +35,7 @@ This practice therefore avoids the risk of passwords being cracked via Rainbow T
 # Password Guessing Attacks
 
 >[!tip]
->Users HATE to remember, and especially to write down, passwords. This rule also applies to everything that requires a password: phone PIN, WiFi access panel, email password, etc. Laziness thus becomes the main exploit.
+>Users HATE to remember, and especially to write down, passwords. This rule also applies to everything that requires a password: phone PIN [^2], WiFi access panel, email password, etc. Laziness thus becomes the main exploit.
 
 Therefore, following the golden rule, before attempting anything with any tool, a manual test of the most common or 'lazy' passwords should be carried out first.
 
@@ -58,6 +62,7 @@ The most common include tax codes, dates, first and last names or family details
 | Parents names | \<parent names\> (children or partners) |
 | Personal codes | \<tax code\>, \<telephone number\> |
 
+See also [httpsgithub.comSlon104 - GitHub - Slon104Common-PIN-Analysis-from-haveibeenpwned.com](../../Readwise/Articles/httpsgithub.comSlon104%20-%20GitHub%20-%20Slon104Common-PIN-Analysis-from-haveibeenpwned.com.md)
 ## Old Passwords from Dumps
 
 - [https://haveibeenpwned.com/](https://haveibeenpwned.com/)
@@ -73,19 +78,32 @@ The most common include tax codes, dates, first and last names or family details
 ## Dictionary generation
 
 >[!info]
->Precision is generally more important than coverage when considering a dictionary attack, meaning it is more important to create a lean wordlist of relevant passwords than it is to create an enormous, generic wordlist.
+>**Precision is generally more important than coverage** when considering a dictionary attack, meaning it is more important to create a lean wordlist of relevant passwords than it is to create an enormous, generic wordlist.
 
 Because of this, many wordlists are based on a common theme, such as popular culture references, specific industries, or geographic regions and refined to contain commonly-used passwords.
+
 Kali Linux includes a number of these dictionary files in the `/usr/share/wordlists/` directory and many more are [hosted online](https://github.com/danielmiessler/SecLists).
 
-## Wordlist generation tools:
+- [SecLists](https://github.com/danielmiessler/SecLists) ^a28b1d
+- [Assetnote Wordlist](https://wordlists.assetnote.io/) ^b03d62
+- https://github.com/nice-registry/all-the-package-names (npm public package names)
+- https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056
 
-- https://github.com/shmuelamar/cracken
+Better option is [Creating Custom Wordlists](../../Readwise/Articles/blackbird-eu%20-%20Creating%20Custom%20Wordlists%20for%20Bug%20Bounty%20Targets%20A%20Complete%20Guide.md) based on the specific target.
+
+### Wordlist generation tools
+
+Web Specific:
+- [cewl](../Tools/cewl.md) [^1]
+- Tok [^3]
+- getjswords.py [^4]
+
+Password specific:
 - [crunch](../Tools/crunch.md)
+- https://github.com/shmuelamar/cracken
 - https://github.com/Mebus/cupp
 - https://github.com/sc0tfree/mentalist
 - https://github.com/r3nt0n/bopscrk
-- [cewl](../Tools/cewl.md)
 - [john (dictionary generation)](../Tools/john.md#Dictionary%20generation)
 
 ---
@@ -216,7 +234,7 @@ The Pass-the-Hash (PtH) technique allows an attacker to authenticate to a remote
 When performing PtH, behind the scenes, the format of the NTLM hash we provided was changed into a **NetNTLM** version 1 or 2 [^1] format during the authentication process.
 We can capture these hashes using man-in-the-middle or poisoning attacks and either [crack them](https://markitzeroday.com/pass-the-hash/crack-map-exec/2018/03/04/da-from-outside-the-domain.html) or [relay them](https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html).
 
-[^1]: https://en.wikipedia.org/wiki/NT_LAN_Manager#NTLMv1
+[^1]: [Extracting in-page keywords](../../Readwise/Articles/blackbird-eu%20-%20Creating%20Custom%20Wordlists%20for%20Bug%20Bounty%20Targets%20A%20Complete%20Guide.md#Extracting%20in-page%20keywords)
 
 For example, some applications like Internet Explorer and Windows Defender use the Web Proxy Auto-Discovery Protocol ([WPAD](https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol)) to detect proxy settings.  If we are on the local network, we could poison these requests and force NetNTLM authentication with a tool like [Responder.py](https://github.com/SpiderLabs/Responder) which creates a rogue WPAD server designed to exploit this security issue.
 
@@ -264,3 +282,11 @@ PASSWORD FOUND!!!!: pw == xoxoxo
     ```
     
 - [pdfcrack](https://github.com/robins/pdfcrack)
+
+[^2]: [httpsgithub.comSlon104 - GitHub - Slon104Common-PIN-Analysis-from-haveibeenpwned.com](../../Readwise/Articles/httpsgithub.comSlon104%20-%20GitHub%20-%20Slon104Common-PIN-Analysis-from-haveibeenpwned.com.md)
+
+[^3]: [Extracting URL keywords](../../Readwise/Articles/blackbird-eu%20-%20Creating%20Custom%20Wordlists%20for%20Bug%20Bounty%20Targets%20A%20Complete%20Guide.md#Extracting%20URL%20keywords)
+
+[^4]: [Extracting keywords from JavaScript files](../../Readwise/Articles/blackbird-eu%20-%20Creating%20Custom%20Wordlists%20for%20Bug%20Bounty%20Targets%20A%20Complete%20Guide.md#Extracting%20keywords%20from%20JavaScript%20files)
+
+[^1]: 

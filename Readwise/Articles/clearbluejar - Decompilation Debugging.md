@@ -89,5 +89,3 @@ Pretend Like Your Binary Comes with Source[](https://clearbluejar.github.io/post
 There are many more features in the Ghidra Debugger that I didn’t cover in this post, such as tracing (akin to [Time Travel Debugging](https://learn.microsoft.com/en-us/windows-hardware/drivers/debuggercmds/time-travel-debugging-overview) ) and [emulation](https://github.com/NationalSecurityAgency/ghidra/blob/master/GhidraDocs/GhidraClass/Debugger/B2-Emulation.md#emulation).
 [](https://read.readwise.io/read/01jh3e9cn44ngpcqs00hvsg6gy)
 
-
-

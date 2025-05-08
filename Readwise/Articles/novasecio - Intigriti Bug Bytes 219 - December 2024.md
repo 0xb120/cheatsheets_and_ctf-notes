@@ -1,6 +1,6 @@
 ---
 author: novasecio
-aliases: 
+aliases: []
 tags:
   - readwise/articles
 url: https://blog.intigriti.com/bug-bytes/bug-bytes-219-december-2024

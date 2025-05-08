@@ -9,30 +9,7 @@ date: 2025-01-08
 
 ![rw-book-cover](https://readwise-assets.s3.amazonaws.com/media/reader/parsed_document_assets/251497476/dIJKUpvPoZAhkmlE5hOQ5YuIKSEWUAzI3QCJIir9HXc-cove_ENvTHkT.png)
 
-## Highlights
 
-
-Normalize To make standard; determine the value by comparison to an item of known standard value
-> [View Highlight](https://read.readwise.io/read/01jh38ps94beqg0g4n31j2k0r4)
-
-
-
-Why normalization? To protect something
-> [View Highlight](https://read.readwise.io/read/01jh38ryek0wjfc4t2qkyt1gyw)
-
-
-
-Inconsistency if (check(data)) { use(data) }
-> [View Highlight](https://read.readwise.io/read/01jh38tnt96nx0ry8e991cnk2f)
-
-
-
-Windows treat as UNC new URL("file:///etc/passwd?/../../Windows/win.ini") Linux treat as URL
-> [View Highlight](https://read.readwise.io/read/01jh38tt34x8rdpca378av967s)
-
-
-
-## New highlights added January 8, 2025 at 5:35 PM
 
 
 Normalize To make standard; determine the value by comparison to an item of known standard value
@@ -169,5 +146,4 @@ https://jira.uberinternal.com/status/..;/secure/Dashboard.jspa
 
 Oh shit! /..;/ is the parent directory
 > [View Highlight](https://read.readwise.io/read/01jh3byrpyw89cq1j8e4d9hftc)
-
 

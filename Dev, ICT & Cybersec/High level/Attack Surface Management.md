@@ -9,7 +9,7 @@ An attack surface refers to all the possible ways in which an attacker can gain 
 We can split attack surface categories in two main groups:
 
 1. **Digital Attack Surface:** The digital attack surface includes all the software-based points of entry through which an attacker can attempt to gain unauthorized access to a system. This includes applications, network interfaces, operating systems, and any other digital component that can be exploited. Examples of vulnerabilities within the digital attack surface are unpatched software, weak passwords, unsecured APIs, and misconfigured security settings.
-2. **Physical Attack Surface:** The physical attack surface comprises all the physical components and locations through which an attacker can gain access to a system. This includes servers, workstations, network devices, and any other hardware that can be physically tampered with. Physical attacks can involve stealing devices, tampering with hardware, or gaining unauthorized access to restricted areas.
+2. **Physical Attack Surface:** The physical attack surface comprises all the physical components and locations through which an attacker can gain access to a system. This includes servers, workstations, network devices, and any other hardware that can be physically tampered with. Physical attacks can involve stealing devices, tampering with hardware, or gaining unauthorized access to restricted areas [^1].
 
 ## Attack vectors vs attack surface
 
@@ -32,3 +32,4 @@ Attack surface management (ASM) as a methodical process encompassing continuous
 
 [^attack-surface-management]: [A Handy Guide to Understanding Attack Surface Management](../../Readwise/Articles/SecureLayer7%20Lab%20-%20A%20Handy%20Guide%20to%20Understanding%20Attack%20Surface%20Management.md), securelayer7.net
 
+[^1]: [Lockpicking](Lockpicking.md)

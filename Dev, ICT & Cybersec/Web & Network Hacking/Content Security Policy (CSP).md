@@ -104,3 +104,4 @@ Further examples:
 
 ## Tools
 - https://cspbypass.com/
+- https://csp-evaluator.withgoogle.com/

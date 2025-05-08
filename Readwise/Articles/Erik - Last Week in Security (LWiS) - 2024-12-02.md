@@ -16,6 +16,5 @@ date: 2024-12-13
 
 [urlfinder](https://github.com/projectdiscovery/urlfinder) - A high-speed tool for passively gathering URLs, optimized for efficient and comprehensive web asset discovery without active scanning. ^e83851
 > [View Highlight](https://read.readwise.io/read/01jee2fdbjrra7qcfgvvdmnrhp)
-> #tools 
-
+> #tools
 

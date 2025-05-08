@@ -42,5 +42,3 @@ Nothing worked. I was about to give up when I noticed something crucial—the ov
  ![](https://www.netspi.com/wp-content/uploads/2024/12/12.11.24_EXEC_Chaining-Elevating-Vulnerabilities_6-1024x753.webp)
 > [View Highlight](https://read.readwise.io/read/01jfdbddwd96vpzgrwxas4b811)
 
-
-

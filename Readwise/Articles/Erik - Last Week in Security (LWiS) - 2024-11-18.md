@@ -16,4 +16,5 @@ date: 2024-11-20
 
 [up](https://github.com/jesusprubio/up) - Troubleshoot problems with your Internet connection based on different protocols and well-known public servers.
 > [View Highlight](https://read.readwise.io/read/01jd4w9e41zj1ytn6g3v80v5zb)
-> #tools 
+> #tools
+

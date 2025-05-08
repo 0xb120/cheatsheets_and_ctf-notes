@@ -202,6 +202,7 @@ Tools for identifying `postMessage()` usage:
 	```
 1. **Using** [**Posta**](https://github.com/benso-io/posta)**:** Posta is a tool for researching Cross-document Messaging communication. It allows you to track, explore and exploit `postMessage` vulnerabilities, and includes features such as replaying messages sent between windows within any attached browser.
 2. **Using** [**PMHook**](https://github.com/yehgdotnet/postmessagehook)**:** PMHook is a client-side JavaScript library designed to be used with TamperMonkey in the Chrome web browser. Executed immediately at page load, PMHook wraps the **EventTarget.addEventListener** method and logs any subsequent message event handers as they are added. The event handler functions themselves are also wrapped to log messages received by each handler.
+3. [FrogPost](../../Readwise/Articles/Bad%20Sector%20Labs%20Blog%20-%20Apr%2007%202025%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-04-07.md#^eb9b6f)
 
 [^debug-post-message]: [How to debug postMessages](https://arthurdenner.medium.com/how-to-debug-postmessages-320d50056d0), arthurdenner.medium.com
 [^dev-tool-debug]: [67 Weird Debugging Tricks Your Browser Doesn't Want You to Know](../../Readwise/Articles/norbauer.com%20-%2067%20Weird%20Debugging%20Tricks%20Your%20Browser%20Doesn't%20Want%20You%20to%20Know.md), norbauser.com

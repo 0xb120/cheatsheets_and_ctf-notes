@@ -5,82 +5,21 @@ Description: Is an application layer protocol in the Internet protocol suite mod
 aliases:
   - Web Application Security
 ---
-
-
 # Web Application Enumeration
 
-Main checks:
+## Recon and Enumeration
 
-- **Programming languages** and **frameworks** / **CMS** [^whatCMS]
-- **URLs** and **Extensions**
-- **Page contents** and **comments**
-- **Sitemaps**, **robots.txt** and **unnecessary exposed files**
-- **Web server**
-- **Server Headers**
-- **Administrative Consoles** (/manager/html, /phpmyadmin, etc.)
-- **Database software**
-- **Server OS**
-
-[^whatCMS]: [What CMS Is This Site Using?](https://whatcms.org/)
-
-## Enumeration tools
-
-### Directory fuzzer
-
-- [fuff](../Tools/fuff.md)
-- [gobuster](../Tools/gobuster.md)
-- [feroxbuster](https://github.com/epi052/feroxbuster)
-- dirsearch
-- wfuzz
-- **good wordlists**
-	- [SecLists](https://github.com/danielmiessler/SecLists)
-	- [Assetnote Wordlist](https://wordlists.assetnote.io/)
-	- https://github.com/nice-registry/all-the-package-names (npm public package names)
-
-### Proxy
-- [Burpsuite](../Tools/Burpsuite.md)
-- zap
-- Caido
-
-### Plugins and utilities
-
-- SwitchyOmega (plugin)
-- FoxyProxy (plugin)
-- Cookie-Editor (plugin)
-- CookieManager - Cookie Editor (plugin)
-- Wappalyzer (plugin)
-- User-Agent Switcher (plugin)
-- User-Agent Switcher and Manager (plugin)
-
-### CMS Enumeration
-
-- whatweb (tool)
-- WhatCMS (online)
-- CMSMap (tool)
-- wpscanner & [WPProbe](../../Readwise/Articles/httpsgithub.comChocapikk%20-%20GitHub%20-%20ChocapikkWpprobe%20A%20Fast%20WordPress%20Plugin%20Enumeration%20Tool.md)
-- [unSharepoint](https://blog.cys4.com/tool/2020/12/21/unSharePoint) (scanner)
-
-### Vulnerability and misconfiguration scanners
-- [nikto](../Tools/nikto.md) (scanner)
-- [misconfig mapper](../../Readwise/Articles/novasecio%20-%20Intigriti%20Bug%20Bytes%20219%20-%20December%202024.md#^4a91a1) - automate security misconfiguration detection on your list of targets
-- [MrmtwojApache-Vulnerability-Testing Apache HTTP Server Vulnerability Testing Tool](../../Readwise/Articles/httpsgithub.commrmtwoj%20-%20MrmtwojApache-Vulnerability-Testing%20Apache%20HTTP%20Server%20Vulnerability%20Testing%20Tool%20%20PoC%20for%20CVE-2024-38472%20,%20CVE-2024-39573%20,%20CVE-2024-38477%20,%20CVE-2024-38476%20,%20CVE-2024-38475%20,%20CVE-2024-38474%20,%20CVE-2024-38473%20,%20CVE-2023-38709.md)
-- [nuclei](../Tools/nuclei.md)
-- [Wapiti-Scanner/Wapiti: Web Vulnerability Scanner Written in Python3](../../Readwise/Articles/httpsgithub.comwapiti-scanner%20-%20Wapiti-ScannerWapiti%20Web%20Vulnerability%20Scanner%20Written%20in%20Python3.md)
-
-### Other useful tools
-
-- Collaborator / [cowitness](https://github.com/stolenusername/cowitness) (HTTP server and DNS server mimic)
-- [Out-of-Band Exfiltration Tools](../../Readwise/Articles/Piyush%20Kumawat%20(securitycipher)%20-%20Out-of-Band%20Exfiltration%20Tools.md#^3bac3c)
-- https://trickest.com/ (service that allows to script e run multiple command sequences, sharing i/o etc.)
+>[!warning]
+>Before trying to attack any HTTP / HTTPS application, remember to do appropriate and meaningful [HTTP Recon and Enumeration](../Web%20&%20Network%20Hacking/HTTP%20Recon%20and%20Enumeration.md)
 
 ## Source Code Recovery
 
 There are various path you can try follow to retrieve an application source code:
-- Get it from cloud marketplaces (AWS, Azure, GCP) and reverse it
-- Get the docker image from [Dockerhub](https://hub.docker.com/)
-- Contact sales or search for trial version
-- Leak the source code using vulnerabilities ([File Inclusion (LFI & RFI)](../Web%20&%20Network%20Hacking/File%20Inclusion%20(LFI%20&%20RFI).md), [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md), RCE, etc.)
-- Reverse Engineering
+- Get it from **cloud marketplaces** (AWS, Azure, GCP) and **reverse** it
+- Get the **docker image** from [Dockerhub](https://hub.docker.com/)
+- Contact **sales** or search for **trial version**
+- **Leak the source code** using vulnerabilities ([File Inclusion (LFI & RFI)](../Web%20&%20Network%20Hacking/File%20Inclusion%20(LFI%20&%20RFI).md), [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md), RCE, etc.)
+- Reverse Engineering binaries and firmware
 	- You can use [binwalk](https://github.com/ReFirmLabs/binwalk) or even better [unblob](https://unblob.org/)[^unblob] for extracting firmwares
 
 [^unblob]: [Frycos Security Diary - Hacking Like Hollywood With Hard-Coded Secrets](../../Readwise/Articles/Frycos%20Security%20Diary%20-%20Hacking%20Like%20Hollywood%20With%20Hard-Coded%20Secrets.md)
@@ -95,7 +34,7 @@ Further information inside the language specific notes:
 - Use **debug print statements** in interpreted code
 - Attempt to **live-debug** the target application ([dnSpy](../Tools/dnSpy.md) makes this relatively easy for .NET applications. The same can be achieved in the Eclipse IDE for Java applications although with a bit more effort)
 	- For client-side languages: [67 Weird Debugging Tricks Your Browser Doesn't Want You to Know](../../Readwise/Articles/norbauer.com%20-%2067%20Weird%20Debugging%20Tricks%20Your%20Browser%20Doesn't%20Want%20You%20to%20Know.md)
-- After checking **unauthenticated areas**, focus on **areas** of the application that are likely to receive less attention (i.e., authenticated portions of the application)
+- After checking **unauthenticated areas**, focus on **authenticated areas** of the application that are likely to contain dangerous functions
 - **Investigate how sanitization of user input is performed**. Is it done using a trusted, opensource library, or is a custom solution in place?
 
 ### Source code analyses tools, rules and resources
@@ -103,21 +42,27 @@ Further information inside the language specific notes:
 >[!tip]
 >Search for dangerous patterns or functions using regexes, both manually and with automated tools!
 
-- [[semgrep]]
+Code and diff analyser:
+- [cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+- [Beyond Compare](../../Readwise/Articles/Aliz%20Hammond%20-%20Is%20the%20Sofistication%20in%20the%20Room%20With%20Us%20-%20X-Forwarded-for%20and%20Ivanti%20Connect%20Secure.md#^38342a) - best diffing tool
+
+Greppers and auditing tools:
+- [semgrep](../Tools/semgrep.md)
 - [CodeQL](../Tools/CodeQL.md)
-- [snyk.io](https://app.snyk.io/)
 - [graudit](https://github.com/wireghoul/graudit) - grep rough audit - source code auditing tool
 - [weggli](https://github.com/weggli-rs/weggli) and C/C++ ruleset from Marco Ivaldi [^ivaldi-weggli]
-- [SonarSource](https://rules.sonarsource.com/) - 5000+ Static Analysis Rules across 30+ programming languages
-- [cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
 - [The Web Application Hacker's Handbook](../../Personal/Book%20list/The%20Web%20Application%20Hacker's%20Handbook%20-%20Dafydd%20Stuttard%20Marcus%20Pinto.md) and [OWASP Code Review Guide v2](../../Personal/Book%20list/OWASP%20Code%20Review%20Guide%20v2.md) - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL
+- [snyk.io](https://app.snyk.io/)
+- [SonarSource](https://rules.sonarsource.com/) - 5000+ Static Analysis Rules across 30+ programming languages
+- [JSA](../../Readwise/Tweets/@WllGates%20on%20Twitter%20-%20Tweets%20From%20Will%20Gates.md) (Javascript security analysis (JSA) is a program for javascript analysis during web application security assessment) ^e44cdc
+
 
 [^ivaldi-weggli]: [A Collection of Weggli Patterns for C/C++ Vulnerability Research](../../Readwise/Articles/Marco%20Ivaldi%20-%20A%20Collection%20of%20Weggli%20Patterns%20for%20CC++%20Vulnerability%20Research.md), Marco Ivaldi
 
 For software updates and patches, focus on **diffing** [^patch][^patch-2][^patch-3] **older and newer version**:
 - Read every detail contained inside the advisory in order to understand the kind of vulnerability and what/where to search inside the code
 - Use the GitHub online editor or if you prefer, use [git and do patch diffing this way](../Tools/git.md#patch%20diffing)
-- When analyzing and researching N-days, follows the [CVE North Stars](https://cve-north-stars.github.io/) (a method to kickstart vulnerability research by taking advantage of the CVE information freely available)
+- When analyzing and researching N-days, follows the [CVE North Stars](https://cve-north-stars.github.io/) (a method to kickstart [Vulnerability research](../High%20level/Vulnerability%20research%20101.md) by taking advantage of the [CVE](../High%20level/CVE%20&%20CNA.md) information freely available)
 
 [^patch]: [AppSecSchool - How to Extract a Patch](../../Readwise/Articles/AppSecSchool%20-%20How%20to%20Extract%20a%20Patch.md)
 [^patch-2]: [Blog on Shielder - Hunting for ~~Un~~authenticated N-Days in Asus Routers](../../Readwise/Articles/Blog%20on%20Shielder%20-%20Hunting%20for%20~~Un~~authenticated%20N-Days%20in%20Asus%20Routers.md#id696283770)
@@ -133,7 +78,11 @@ Black box pentesting [^black-box-pt] refers to a security test done by third par
 
 [^black-box-pt]: [What is Black Box Penetration Testing?](https://blog.securelayer7.net/black-box-penetration-testing/), securelayer7.net
 
-Focus on:
+
+>[!tip]
+>Use an approach that focuses primarily on identifying **low-hanging fruit** and the **most critical server-side vulnerabilities**, and then gradually scaling up on the search for other vulnerabilities that are less critical but can be *weaponised* or *included in some chain*.
+
+Pay more attention to:
 - Validation
 - Sanitization
 - Normalization
@@ -214,6 +163,7 @@ Evading restrictions:
 	- [Cookie Tossing](../Web%20&%20Network%20Hacking/Cookie%20Tossing.md)
 	- [Cookie Eviction (Cookie Jar Overflow)](../Web%20&%20Network%20Hacking/Cookie%20Eviction.md)
 - [Clickjacking](../Web%20&%20Network%20Hacking/Clickjacking.md)
+- [DoubleClickjacking](../../Readwise/Articles/Blog%20-%20DoubleClickjacking%20A%20New%20Era%20of%20UI%20Redressing.md)
 - [WebSockets](../Web%20&%20Network%20Hacking/WebSockets.md)
 - [DOM-based vulnerabilities](../Web%20&%20Network%20Hacking/DOM-based%20vulnerabilities.md)
 	- [Universal Code Execution by Chaining Messages in Browser Extensions](../../Readwise/Articles/Spaceraccoon's%20Blog%20-%20Universal%20Code%20Execution%20by%20Chaining%20Messages%20in%20Browser%20Extensions.md)

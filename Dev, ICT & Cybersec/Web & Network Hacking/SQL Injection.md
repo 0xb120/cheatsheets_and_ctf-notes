@@ -213,7 +213,7 @@ QUERY-1-HERE; QUERY-2-HERE
 
 ### OAST techniques for blind SQL injections
 
-Sometimes queries are executed asynchronously, so the application continues processing user requests and queries using different threads. In this case, all the other techniques previously shown are not effective because there is no connection between the query and the server response. In order to detect these vulnerabilities, we can combine stacked queries and OAST techniques, forcing the backend connects to our DNS server and thus exfiltrate data in this way.
+Sometimes queries are executed asynchronously, so the application continues processing user requests and queries using different threads. In this case, all the other techniques previously shown are not effective because there is no connection between the query and the server response. In order to detect these vulnerabilities, we can combine stacked queries and OAST techniques and tools [^1], forcing the backend connects to our DNS server and thus exfiltrate data in this way.
 
 ```sql
 # Oracle
@@ -421,3 +421,6 @@ SELECT remote_test($$calc.exe$$, 3);
 - [From MSSQL to RCE](https://www.tarlogic.com/en/blog/red-team-tales-0x01/)
 - [PayloadsAllTheThings/SQLite Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md)
 - [Advanced SQL Injection Techniques by nav1n0x](https://nav1n0x.gitbook.io/advanced-sql-injection-techniques?__readwiseLocation=)
+- [[SQL Injection](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/SQL%20Injection.md) in OEM (BT-WAF Bypass)](../../Readwise/Articles/Spaceraccoon's%20Blog%20-%20Pwning%20Millions%20of%20Smart%20Weighing%20Machines%20With%20API%20and%20Hardware%20Hacking.md#[SQL%20Injection](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/SQL%20Injection.md)%20in%20OEM%20(BT-WAF%20Bypass))
+
+[^1]: [Out-of-Band Exfiltration Tools](../../Readwise/Articles/Piyush%20Kumawat%20(securitycipher)%20-%20Out-of-Band%20Exfiltration%20Tools.md)

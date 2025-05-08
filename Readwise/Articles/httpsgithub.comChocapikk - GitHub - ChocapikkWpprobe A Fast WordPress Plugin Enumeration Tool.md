@@ -18,5 +18,5 @@ date: 2025-02-26
 Unlike traditional scanners that hammer websites with requests, WPProbe takes a smarter approach by querying the exposed REST API. This technique allows us to **identify plugins stealthily**, reducing detection risks and **speeding up the scan process**.
  📌 **Currently, over 2200 plugins** can be identified using this method!
 [View Highlight](https://read.readwise.io/read/01jn1e5kwrsx6zgmg78044721m)
-> #tools 
+> #tools
 

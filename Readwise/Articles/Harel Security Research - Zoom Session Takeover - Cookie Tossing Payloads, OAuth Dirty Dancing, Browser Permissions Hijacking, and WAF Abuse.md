@@ -162,3 +162,4 @@ window.opener.document.location
 To retrieve the session cookie via this leaked authorization code, all the attacker needs to do is set the cookies which were there in the Set-Cookie header at the time of generating OAuth URL.
 
 ![](attachments/zoom-toa-poc-graph.png)
+

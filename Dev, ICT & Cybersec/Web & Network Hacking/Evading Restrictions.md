@@ -75,6 +75,9 @@ Other **example**: `%F0%9D%95%83%E2%85%87%F0%9D%99%A4%F0%9D%93%83%E2%85%88%F0%9D
 
 <iframe width="660" height="415" src="https://www.youtube.com/embed/SMC1HDFGwvU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+## Unicode Overflow
+
+[PortSwigger Research - Bypassing Character Blocklists With Unicode Overflows](../../Readwise/Articles/PortSwigger%20Research%20-%20Bypassing%20Character%20Blocklists%20With%20Unicode%20Overflows.md)
 ## Hex & octal escaping
 
 Another option when injecting into a string context is to use hex escapes, which represent characters using their hexadecimal code point, prefixed with \x. For example, the lowercase letter a is represented by `\x61`.

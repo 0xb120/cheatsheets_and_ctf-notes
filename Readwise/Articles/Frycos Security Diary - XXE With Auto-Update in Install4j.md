@@ -73,5 +73,3 @@ Since this is a Windows system, we could create XXE payloads with `file://` prot
 There are even more attack vectors by using the `jar://` protocol handler, fetching a remote JAR file with attacker-controlled arbitrary file content (it even doesn’t have to be a JAR file). This is a variant of arbitrary file upload and could be used in further exploitation steps, depending on the specific target. For a beautiful chain read [this blog post](https://www.horizon3.ai/red-team-blog-cve-2022-28219/) for example.
 > [View Highlight](https://read.readwise.io/read/01jh5prrjzh3ccartqsyc27mp3)
 
-
-

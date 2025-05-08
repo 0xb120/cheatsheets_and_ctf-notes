@@ -57,5 +57,3 @@ As we learned earlier, Simple Requests can still be used to communicate with Whi
  This header is a so-called [forbidden header,](https://developer.mozilla.org/en-US/docs/Glossary/Forbidden_header_name) which is set by the browser and cannot be changed by the page. It will only have the value `same-origin` when the requesting page is of the same origin as the destination URL, making it a good solution for this problem.
 > [View Highlight](https://read.readwise.io/read/01jexkpd08yp6zp1ppwxznmsbe)
 
-
-

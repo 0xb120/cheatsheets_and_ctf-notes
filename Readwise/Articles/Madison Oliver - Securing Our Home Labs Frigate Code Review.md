@@ -28,5 +28,3 @@ However, `load_config_with_no_duplicates` uses [`yaml.loader.Loader`](https://gi
 ```
 > [View Highlight](https://read.readwise.io/read/01jffq2zgvrhfsd3bg3n7y89rc)
 
-
-

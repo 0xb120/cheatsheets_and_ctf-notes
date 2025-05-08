@@ -18,5 +18,3 @@ Regression testing is a crucial part of software development that **ensures new 
 Regression testing involves re-running previously executed tests to compare the output with earlier results. It can be done manually, but it's often automated for efficiency, especially in large and complex projects.
 > [View Highlight](https://read.readwise.io/read/01jf02rpy9pjy8qbdfy9rwg5rk)
 
-
-

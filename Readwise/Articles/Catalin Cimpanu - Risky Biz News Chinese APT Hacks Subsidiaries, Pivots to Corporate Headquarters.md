@@ -8,7 +8,6 @@ tags:
   - TeamCity
 url: https://riskybiznews.substack.com/p/chinese-apt-hacks-subsidiaries
 date: 2024-08-20
-product: "[[../../Targets/TeamCity/TeamCity|TeamCity]]"
 ---
 # Risky Biz News: Chinese APT Hacks Subsidiaries, Pivots to Corporate Headquarters
 

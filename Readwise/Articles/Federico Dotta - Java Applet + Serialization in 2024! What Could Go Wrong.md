@@ -55,4 +55,5 @@ date: 2024-08-21
 
 > **Burp Suite tip**: when you analyze an applet or more generally an application that is not a web application executed in the browser (such as a client-server application or a mobile application) remember that Burp Suite by default decompresses HTTP responses it receives from the backend to simplify the pentester’s analysis. While browsers do not complain if the content they receive from Burp Suite is not compressed, applets and other applications may break (and usually do). You can disable automatic decompression and other operations executed on HTTP requests and responses by default in the Proxy -> Miscellaneous configuration tab.
 > [View Highlight](https://read.readwise.io/read/01j5tpvn6r8nd4te8wdfwkdr67)
-> #tools 
+> #tools
+

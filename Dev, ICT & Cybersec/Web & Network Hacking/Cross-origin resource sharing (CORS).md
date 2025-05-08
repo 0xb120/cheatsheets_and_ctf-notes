@@ -62,6 +62,7 @@ This response sets out the allowed methods (`PUT`, `POST` and `OPTIONS`) and 
 ### Bypass
 
 - [Cross-Site POST Requests Without a Content-Type Header](../../Readwise/Articles/Luke%20Jahnke%20-%20Cross-Site%20POST%20Requests%20Without%20a%20Content-Type%20Header.md)
+- [Bypass CORS sending text/plain content-type](../../Readwise/Articles/novasecio%20-%20CSRF%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20CSRF%20Vulnerabilities.md#Bypass%20CORS%20sending%20text/plain%20content-type)
 
 ## External tools for testing CORS
 

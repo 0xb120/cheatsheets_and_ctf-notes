@@ -88,5 +88,3 @@ No target is the same but a key rule to follow is to test for blind XSS vulnerab
 
 > [View Highlight](https://read.readwise.io/read/01jh024mzqfrzrav3m68ht5c2e)
 
-
-

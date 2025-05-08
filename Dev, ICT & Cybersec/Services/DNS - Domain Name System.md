@@ -33,13 +33,13 @@ For internal network, search for IP with port 53 open and add them within `/etc/
 - [host](../Tools/host.md) (tool)
 - nslookup (tool)
 - dig (tool)
-- dig (online)
+- [dig](https://toolbox.googleapps.com/apps/dig/) (online)
 - [dnsrecon](../Tools/dnsrecon.md) (tool)
 - [dnsenum](../Tools/dnsenum.md) (tool)
 - [dnsdumpster](https://dnsdumpster.com/) (online)
-- **sublist3r**
-- **websploit**
+- [sublist3r](https://github.com/aboul3la/Sublist3r) - Fast subdomains enumeration tool for penetration testers
 
+See also [Passive DNS Enumeration](../Web%20&%20Network%20Hacking/Passive%20information%20gathering%20(OSINT).md#Passive%20DNS%20Enumeration)
 ## Zone transfer
 
 ```bash

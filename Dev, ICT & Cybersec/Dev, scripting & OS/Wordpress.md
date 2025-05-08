@@ -12,6 +12,7 @@ WP official documentation:
 
 ## Easy setup
 
+- https://github.com/0xb120/wp-plugin-downlauditor
 - [Debugging WordPress Using Xdebug, Local, and VS Code](https://webdevstudios.com/2022/10/06/debugging-wordpress/)
 - https://github.com/patchstack/wp-xdebug-docker: A fully debuggable WordPress docker instance with XDebug installed
 - [dimasma0305/dockerized-wordpress-debug-setup](https://github.com/dimasma0305/dockerized-wordpress-debug-setup): This project is a Dockerized WordPress development environment with two configurations, one using Nginx and the other using Apache. It includes Xdebug for debugging purposes and provides flexibility for developers to choose their preferred web server.
@@ -24,7 +25,7 @@ WP official documentation:
 
 Pre-made tools:
 - [WPProbe](../../Readwise/Articles/httpsgithub.comChocapikk%20-%20GitHub%20-%20ChocapikkWpprobe%20A%20Fast%20WordPress%20Plugin%20Enumeration%20Tool.md)
-- wpscan
+- [wpscan](https://github.com/wpscanteam/wpscan)
 
 ### Code mirroring and listing
 
@@ -47,25 +48,22 @@ Pre-made tools:
 - PatchStack Academy
 	- https://patchstack.com/academy/wordpress/vulnerabilities/
 	- [patchstack/vulnerability-playground](https://github.com/patchstack/vulnerability-playground): This plugin designed to contain vulnerable function or process to be used to exercise on hacking WordPress ecosystem. Code reference from Patchstack Academy site.
-- [External Resources](Wordpress.md#External%20Resources)
+	- [Patchstack academy with focus on Wordpress](https://patchstack.com/academy/wordpress/getting-started/)
+		- [Functions](https://patchstack.com/academy/wordpress/wordpress-internals/functions/)
+			- [`current_user_can`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#current_user_can)
+			- [`wp_verify_nonce`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#wp_verify_nonce)
+			- [`check_admin_referer`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#check_admin_referer)
+			- [`check_ajax_referer`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#check_ajax_referer)
+			- [`register_rest_route`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#register_rest_route)
+		- [Hooks](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/)
+			- [`init`](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/#init)
+			- [`admin_init`](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/#admin_init)
+			- [`wp_ajax_{$action}`](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/#wp_ajax_action)
+			- [`wp_ajax_nopriv_{$action}`](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/#wp_ajax_nopriv_action)
+		- [shortcodes](https://codex.wordpress.org/Shortcode_API)
 - [GitHub - Chocapikk/Wpprobe: A Fast WordPress Plugin Enumeration Tool](../../Readwise/Articles/httpsgithub.comChocapikk%20-%20GitHub%20-%20ChocapikkWpprobe%20A%20Fast%20WordPress%20Plugin%20Enumeration%20Tool.md)
 
-# External Resources
 
-- [Most Common WordPress Vulnerabilities & How to Fix Them](https://patchstack.com/articles/common-plugin-vulnerabilities-how-to-fix-them/)
-- [Patchstack academy with focus on Wordpress](https://patchstack.com/academy/wordpress/getting-started/)
-	- [Functions](https://patchstack.com/academy/wordpress/wordpress-internals/functions/)
-		- [`current_user_can`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#current_user_can)
-		- [`wp_verify_nonce`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#wp_verify_nonce)
-		- [`check_admin_referer`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#check_admin_referer)
-		- [`check_ajax_referer`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#check_ajax_referer)
-		- [`register_rest_route`](https://patchstack.com/academy/wordpress/wordpress-internals/functions/#register_rest_route)
-	- [Hooks](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/)
-		- [`init`](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/#init)
-		- [`admin_init`](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/#admin_init)
-		- [`wp_ajax_{$action}`](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/#wp_ajax_action)
-		- [`wp_ajax_nopriv_{$action}`](https://patchstack.com/academy/wordpress/wordpress-internals/hooks/#wp_ajax_nopriv_action)
-	- [shortcodes](https://codex.wordpress.org/Shortcode_API)
 
 # Worpress in notes
 
