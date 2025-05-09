@@ -58,6 +58,7 @@ dependencies:
 # Other resources
 - [CodeQL-Community-Packs](https://github.com/GitHubSecurityLab/CodeQL-Community-Packs/) [^1] - Collection of community-driven CodeQL query, library and extension packs
 - [Pre-Auth RCE With CodeQL in Under 20 Minutes](../../Readwise/Articles/Frycos%20Security%20Diary%20-%20Pre-Auth%20RCE%20With%20CodeQL%20in%20Under%2020%20Minutes.md), frycos.github.io
+- [Jorge Rosillo - Security Research Without Ever Leaving GitHub From Code Scanning to CVE via Codespaces and Private Vulnerability Reporting](../../Readwise/Articles/Jorge%20Rosillo%20-%20Security%20Research%20Without%20Ever%20Leaving%20GitHub%20From%20Code%20Scanning%20to%20CVE%20via%20Codespaces%20and%20Private%20Vulnerability%20Reporting.md)
 
 
 [^1]: [Erik - Last Week in Security (LWiS) - 2025-01-06](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-01-06.md#^994fd4)

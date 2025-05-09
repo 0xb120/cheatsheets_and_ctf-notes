@@ -4,31 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c48b0d056a5fece7",
+        "id": "b1e75bcf40ad5525",
         "type": "tabs",
         "children": [
           {
-            "id": "7d59743ff0a125b2",
+            "id": "f1e872329b91b6ac",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Readwise/Readwise inbox.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Readwise inbox"
+              "title": "New tab"
             }
           }
         ]
@@ -70,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"tok\"",
+                "query": "codeql",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,7 +91,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -198,7 +184,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -226,7 +211,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Readwise inbox"
+              "title": "Graph view"
             }
           }
         ]
@@ -242,7 +227,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -252,7 +236,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Readwise inbox"
+              "title": "Backlinks"
             }
           },
           {
@@ -292,15 +276,21 @@
       "obsidian-git:Open Git source control": true
     }
   },
-  "active": "7d59743ff0a125b2",
+  "active": "f1e872329b91b6ac",
   "lastOpenFiles": [
+    "Readwise/Articles/Jorge Rosillo - Security Research Without Ever Leaving GitHub From Code Scanning to CVE via Codespaces and Private Vulnerability Reporting.md",
+    "Dev, ICT & Cybersec/Tools/CodeQL.md",
+    "Readwise/Articles/OpenSSF - Understanding and Applying the OpenSSF Criticality Score in Open Source Projects.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Readwise/Readwise inbox.md",
+    "Readwise/Articles/Sonny - Where There’s Smoke, There’s Fire - Mitel MiCollab CVE-2024-35286, CVE-2024-41713 and an 0day.md",
+    "Readwise/Articles/PortSwigger Research - Stealing HttpOnly Cookies With the Cookie Sandwich Technique.md",
+    "Readwise/Articles/Jack Maginnes - Uncovering a 0-Click RCE in the SuperNote Nomad E-Ink Tablet.md",
     "Play ground/Targets/Vulnerability Research Targets.md",
     "Play ground/Targets/WP-plugins/advanced-access-manager/aam_20250422.excalidraw.md",
     "Communities/YouTube/_YT-dashboard.canvas",
-    "Readwise/Readwise inbox.md",
     "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
     "Dev, ICT & Cybersec/Dev, scripting & OS/Linux command cheatsheet.md",
     "Readwise/Tweets/@WllGates on Twitter - Tweets From Will Gates.md",
     "Dev, ICT & Cybersec/Services/DNS - Domain Name System.md",
@@ -315,12 +305,6 @@
     "Readwise/Articles/Sina Kheirkhah (@SinSinology) - SonicBoom, From Stolen Tokens to Remote Shells - SonicWall SMA100.md",
     "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Confusion Attacks.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/File Inclusion (LFI & RFI).md",
-    "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Path Traversal.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure File Upload.md",
-    "Play ground/Targets/opencart/scans/opencart-regexes.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
     "Readwise2/Tweets",
     "Readwise2/Articles",
     "Readwise2",
