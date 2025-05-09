@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
+                "file": "Readwise/Readwise inbox.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty"
+              "title": "Readwise inbox"
             }
           }
         ]
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "orange",
+                "query": "\"tok\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -105,12 +105,11 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 308.5,
-    "collapsed": true
+    "width": 308.5
   },
   "right": {
     "id": "659b37494d493ae5",
@@ -199,7 +198,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
+                "file": "Readwise/Readwise inbox.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -227,7 +226,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty"
+              "title": "Graph of Readwise inbox"
             }
           }
         ]
@@ -243,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
+                "file": "Readwise/Readwise inbox.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -253,7 +252,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty"
+              "title": "Backlinks for Readwise inbox"
             }
           },
           {
@@ -262,20 +261,19 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+                "file": "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Dev, ICT & Cybersec"
+              "title": "Outgoing links from ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 435.5,
-    "collapsed": true
+    "width": 435.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -296,7 +294,23 @@
   },
   "active": "7d59743ff0a125b2",
   "lastOpenFiles": [
+    "Play ground/Targets/Vulnerability Research Targets.md",
+    "Play ground/Targets/WP-plugins/advanced-access-manager/aam_20250422.excalidraw.md",
+    "Communities/YouTube/_YT-dashboard.canvas",
     "Readwise/Readwise inbox.md",
+    "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Linux command cheatsheet.md",
+    "Readwise/Tweets/@WllGates on Twitter - Tweets From Will Gates.md",
+    "Dev, ICT & Cybersec/Services/DNS - Domain Name System.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Password Attacks.md",
+    "Readwise/Articles/blackbird-eu - 7 Overlooked Recon Techniques to Find More Vulnerabilities.md",
+    "Dev, ICT & Cybersec/Tools/nmap.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Passive information gathering (OSINT).md",
+    "Readwise/Articles/blackbird-eu - Creating Custom Wordlists for Bug Bounty Targets A Complete Guide.md",
+    "Personal/TODO.md",
+    "Readwise/Articles/novasecio - Recon for Bug Bounty 8 Essential Tools for Performing Effective Reconnaissance.md",
     "Readwise/Articles/PfiatDe - Having Fun With Github.md",
     "Readwise/Articles/Sina Kheirkhah (@SinSinology) - SonicBoom, From Stolen Tokens to Remote Shells - SonicWall SMA100.md",
     "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md",
@@ -307,22 +321,6 @@
     "Dev, ICT & Cybersec/Web & Network Hacking/Insecure File Upload.md",
     "Play ground/Targets/opencart/scans/opencart-regexes.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
-    "Readwise/Articles/Charles Fol - Introducing Lightyear, a New Way to Dump PHP Files.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/PHP.md",
-    "Dev, ICT & Cybersec/High level/Lockpicking.md",
-    "Dev, ICT & Cybersec/High level/Attack Surface Management.md",
-    "Readwise/Articles/Assetnote Research - How an Obscure PHP Footgun Led to RCE in Craft CMS.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Python.md",
-    "Readwise/Articles/novasecio - Recon for Bug Bounty 8 Essential Tools for Performing Effective Reconnaissance.md",
-    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
-    "Readwise/Articles/neodyme.io - HTML to PDF Renderer A Tale of Local File Access and Shellcode Execution.md",
-    "Readwise/Articles/blackbird-eu - Exploiting PDF Generators A Complete Guide to Finding SSRF Vulnerabilities in PDF Generators.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Server Side Request Forgery (SSRF).md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
-    "Communities/YouTube/_YT-dashboard.canvas",
-    "Play ground/Targets/Vulnerability Research Targets.md",
-    "Readwise/Articles/Assetnote Research - Leveraging an Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x.md",
     "Readwise2/Tweets",
     "Readwise2/Articles",
     "Readwise2",

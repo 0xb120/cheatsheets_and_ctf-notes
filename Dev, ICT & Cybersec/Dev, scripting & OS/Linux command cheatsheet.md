@@ -227,6 +227,9 @@ grep -rnw "eval(" . --include *.php --color
 
 # search a string and only show filenames
 grep -rl "test" .
+
+# Grep recursively showing file names and finding line number
+grep -Hrni 'set-cookie' --color=always | batcat
 ```
 
 Useful regexes:
@@ -237,11 +240,14 @@ cat file.json | grep -Eo '(json-field-name)":"((\\"|[^"])*)'
 
 # Find misconfigured regexes in PHP:
 preg_(match|replace)\s*\(\s*(\[.*?\]|'[^']*'|"[^"]*"|[^\s,]+)  
-preg_(match|replace)\(['"][^\/~@;%`#]
+preg_(match|replace)\(['"][^\/~@;%`#] 
 ```
+
+### grep wrappers
 
 grep has some other counterparts "on-steroids" that can be used to search also inside other non-textual files:
 - [rga](../../Readwise/Articles/httpsgithub.comphiresky%20-%20GitHub%20-%20phireskyripgrep-all%20rga%20ripgrep,%20but%20also%20search%20in%20PDFs,%20E-Books,%20Office%20documents,%20zip,%20tar.gz,%20etc..md) - ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
+- [gf](https://github.com/tomnomnom/gf) - A wrapper around grep, to help you grep for things and avoid typing common patterns. [^7]
 ## sed
 
 sed **performs text editing on a stream of text**, either a set of specific files or standard output.
@@ -793,3 +799,5 @@ $ ldd /bin/bash
 [^4]: https://linux.die.net/man/1/ltrace](https://linux.die.net/man/1/ltrace
 [^5]: https://linux.die.net/man/1/xxd](https://linux.die.net/man/1/xxd
 [^6]: https://linux.die.net/man/1/hexdump](https://linux.die.net/man/1/hexdump
+
+[^7]: [gf](../../Readwise/Articles/ProjectDiscovery%20-%20Building%20a%20Fast%20One-Shot%20Recon%20Script%20for%20Bug%20Bounty.md#gf)
