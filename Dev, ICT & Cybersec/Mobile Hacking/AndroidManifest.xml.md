@@ -33,4 +33,4 @@ Applications can also make some of their components available to other applicati
 
 The Network Security Configuration feature lets you customize your app's network security settings in a safe, declarative [configuration file](https://developer.android.com/training/articles/security-config#FileFormat) without modifying app code.
 
-Reference [Network Interception and Certificate Pinning Bypass](Dynamic%20application%20security%20testing%20(DAST).md#Network%20Interception%20and%20Certificate%20Pinning%20Bypass)
+Reference [Network Interception and Certificate Pinning Bypass](Android%20Dynamic%20application%20security%20testing%20(DAST).md#Network%20Interception%20and%20Certificate%20Pinning%20Bypass)

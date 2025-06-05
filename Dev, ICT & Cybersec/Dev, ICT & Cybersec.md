@@ -67,6 +67,7 @@
 - [Reversing and software memory 101](Reversing%20&%20Binary%20Exploitation/Reversing%20and%20software%20memory%20101.md)
 - [GraphQL](Web%20&%20Network%20Hacking/GraphQL.md)
 - [Solidity](Dev,%20scripting%20&%20OS/Solidity.md)
+- [GWT](Dev,%20scripting%20&%20OS/GWT.md)
 
 ---
 
@@ -94,8 +95,8 @@
 
 - [Android 101](Mobile%20Hacking/Android%20101.md)
 - [Android Application Security](Mobile%20Hacking/Android%20Application%20Security.md)
-	- [Static application security testing (SAST)](Mobile%20Hacking/Static%20application%20security%20testing%20(SAST).md)
-	- [Dynamic application security testing (DAST)](Mobile%20Hacking/Dynamic%20application%20security%20testing%20(DAST).md)
+	- [Android Static application security testing (SAST)](Mobile%20Hacking/Android%20Static%20application%20security%20testing%20(SAST).md)
+	- [Android Dynamic application security testing (DAST)](Mobile%20Hacking/Android%20Dynamic%20application%20security%20testing%20(DAST).md)
 
 ---
 

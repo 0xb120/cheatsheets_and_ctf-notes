@@ -105,7 +105,7 @@ As a precaution, servers generally only run scripts whose MIME type they have be
 
 This kind of configuration often differs between directories. A directory to which user-supplied files are uploaded will likely have much stricter controls than other locations on the filesystem that are assumed to be out of reach for end users. If you can find a way to upload a script to a different directory ([Path Traversal](Path%20Traversal.md) vulnerabilities) that's not supposed to contain user-supplied files, the server may execute your script after all.
 
-The webshell uploaded inside the avaters folder is rendered as plain-text instead of being executed:
+The webshell uploaded inside the avatars folder is rendered as plain-text instead of being executed:
 ![](../../zzz_res/attachments/file-upload1.png)
 
 Exploited a [Path Traversal](Path%20Traversal.md) vulnerability to upload the webshell outside of the intended path:

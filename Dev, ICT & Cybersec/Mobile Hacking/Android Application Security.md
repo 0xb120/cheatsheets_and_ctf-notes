@@ -33,10 +33,9 @@ Eventually, you can use [appetize](https://appetize.io/) to run and preview mobi
 
 ## Types of analyses
 
-### [Static application security testing (SAST)](Static%20application%20security%20testing%20(SAST).md)
+### [Android Static application security testing (SAST)](Android%20Static%20application%20security%20testing%20(SAST).md)
 
-
-### [Dynamic application security testing (DAST)](Dynamic%20application%20security%20testing%20(DAST).md)
+### [Android Dynamic application security testing (DAST)](Android%20Dynamic%20application%20security%20testing%20(DAST).md)
 
 ---
 

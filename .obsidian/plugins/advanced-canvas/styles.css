@@ -16,12 +16,22 @@
 .ac-settings-heading:not(:first-child) {
   margin-top: var(--size-4-10) !important;
 }
+.ac-settings-heading:has(.checkbox-container:not(.is-enabled)) {
+  border-bottom-color: var(--background-modifier-border-hover);
+}
 .ac-settings-heading .setting-item-description {
   margin-inline-end: 20px;
+}
+.settings-header-children {
+  transform-origin: top center;
+  transform: scaleY(1);
+  transition: transform 0.2s ease-in-out;
 }
 .ac-settings-heading:has(.checkbox-container:not(.is-enabled)) + .settings-header-children {
   opacity: 0.5;
   pointer-events: none;
+  height: 0;
+  transform: scaleY(0);
 }
 details.setting-item[open] > summary {
   margin-bottom: 0.75em;
@@ -99,15 +109,9 @@ body.is-mobile .kofi-button.sticky {
 .kofi-overlay .no-button {
   cursor: pointer;
 }
-.quicksettings-suggestion {
-  display: flex;
-  flex-direction: column;
-}
-.quicksettings-suggestion .quicksettings-suggestion-label {
-  font-weight: 500;
-}
-.quicksettings-suggestion .quicksettings-suggestion-description {
-  color: var(--text-muted);
+.canvas-wrapper > .document-search-container {
+  transform: translateZ(0);
+  margin: 0;
 }
 .canvas-wrapper:not(.mod-readonly) .show-while-readonly {
   display: none;
@@ -386,7 +390,7 @@ body.is-mobile .kofi-button.sticky {
   pointer-events: none !important;
   transition: none !important;
 }
-.canvas.is-exporting #group-collapse-button {
+.canvas.is-exporting .collapse-button {
   display: none;
 }
 .canvas.is-exporting #watermark-ac {
@@ -408,7 +412,7 @@ body.is-mobile .kofi-button.sticky {
 .canvas-wrapper.mod-readonly[data-hide-background-grid-when-in-readonly=true] .canvas-background {
   visibility: hidden;
 }
-#group-collapse-button {
+.collapse-button {
   position: absolute;
   left: 0;
   top: calc(-1 * var(--size-4-1) * var(--zoom-multiplier));
@@ -427,29 +431,29 @@ body.is-mobile .kofi-button.sticky {
 .canvas-wrapper[data-collapsible-groups-feature-enabled=true] .canvas-node .canvas-group-label {
   left: calc(40px * var(--zoom-multiplier));
 }
-.canvas-node[data-is-collapsed] .canvas-node-container {
+.canvas-node[data-collapsed] .canvas-node-container {
   display: none;
 }
-.canvas-node[data-is-collapsed] .canvas-group-label {
+.canvas-node[data-collapsed] .canvas-group-label {
   max-width: initial;
 }
-.canvas-wrapper[data-collapsed-group-preview-on-drag=true][data-is-dragging] .canvas-node[data-is-collapsed] .canvas-node-container {
+.canvas-wrapper[data-collapsed-group-preview-on-drag=true][data-is-dragging] .canvas-node[data-collapsed] .canvas-node-container {
   display: block;
   opacity: 0.5;
   border-style: dashed;
 }
-.canvas-wrapper[data-collapsed-group-preview-on-drag=true][data-is-dragging] .canvas-node[data-is-collapsed] .canvas-node-container .canvas-node-content {
+.canvas-wrapper[data-collapsed-group-preview-on-drag=true][data-is-dragging] .canvas-node[data-collapsed] .canvas-node-container .canvas-node-content {
   background-color: transparent;
 }
-.canvas-node-interaction-layer[data-target-is-collapsed] .canvas-node-resizer {
+.canvas-node-interaction-layer[data-target-collapsed] .canvas-node-resizer {
   pointer-events: none;
   cursor: inherit;
 }
-.canvas-node-interaction-layer[data-target-is-collapsed] .canvas-node-resizer .canvas-node-connection-point {
+.canvas-node-interaction-layer[data-target-collapsed] .canvas-node-resizer .canvas-node-connection-point {
   display: none;
   pointer-events: none;
 }
-.canvas-wrapper[data-floating-edge-feature-enabled=true] .canvas.is-connecting .canvas-node:not(.canvas-node-group)::after {
+.canvas-wrapper[data-allow-floating-edge-creation=true] .canvas.is-connecting .canvas-node:not(.canvas-node-group)::after {
   all: unset;
   content: "";
   z-index: 100;
@@ -462,7 +466,7 @@ body.is-mobile .kofi-button.sticky {
   border-radius: var(--radius-m);
   outline: calc(4px * var(--zoom-multiplier)) dashed hsla(var(--color-accent-hsl), 0.5);
 }
-.canvas-wrapper[data-floating-edge-feature-enabled=true] .canvas.is-connecting .canvas-node:not(.canvas-node-group).hovering-floating-edge-zone::after {
+.canvas-wrapper[data-allow-floating-edge-creation=true] .canvas.is-connecting .canvas-node:not(.canvas-node-group).hovering-floating-edge-zone::after {
   outline-color: var(--color-accent);
   outline-style: solid;
   background-color: hsla(var(--color-accent-hsl), 0.1);
@@ -496,26 +500,26 @@ body.is-mobile .kofi-button.sticky {
   color: var(--color-green);
   background-color: rgba(var(--color-green-rgb), 0.1);
 }
-.canvas-node[data-portal-to-file] {
+.canvas-node[data-is-portal-loaded=true] {
   pointer-events: all;
 }
-.canvas-node[data-portal-to-file]:not(.is-focused) {
+.canvas-node[data-is-portal-loaded=true]:not(.is-focused) {
   pointer-events: none;
 }
-.canvas-node[data-portal-to-file]:not(.is-focused) .canvas-node-label {
+.canvas-node[data-is-portal-loaded=true]:not(.is-focused) .canvas-node-label {
   pointer-events: all;
 }
-.canvas-node[data-portal-to-file] .canvas-node-container {
+.canvas-node[data-is-portal-loaded=true] .canvas-node-container {
   background-color: transparent;
   border-style: dashed;
 }
-.canvas-node[data-portal-to-file] .canvas-node-container .canvas-node-content {
+.canvas-node[data-is-portal-loaded=true] .canvas-node-container .canvas-node-content {
   display: none;
 }
-.canvas-node-interaction-layer[data-target-portal-id] .canvas-node-resizer {
+.canvas-node-interaction-layer[data-is-from-portal=true] .canvas-node-resizer {
   pointer-events: none;
   cursor: inherit;
 }
-.canvas-node-interaction-layer[data-target-portal-id] .canvas-node-resizer .canvas-node-connection-point {
+.canvas-node-interaction-layer[data-is-from-portal=true] .canvas-node-resizer .canvas-node-connection-point {
   pointer-events: all;
 }

@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "b1e75bcf40ad5525",
+        "id": "d1d549f363781cbd",
         "type": "tabs",
         "children": [
           {
-            "id": "f1e872329b91b6ac",
+            "id": "02d0431c420ec89d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Play ground/Targets/Vulnerability Research Targets.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Vulnerability Research Targets"
             }
           }
         ]
@@ -36,8 +50,8 @@
             "state": {
               "type": "file-tree-view",
               "state": {},
-              "icon": "sheets-in-box",
-              "title": "File Tree"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -56,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "codeql",
+                "query": "snmp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -81,17 +95,17 @@
             }
           },
           {
-            "id": "f6c7831e85d653f1",
+            "id": "1bcbee0e5a558299",
             "type": "leaf",
             "state": {
-              "type": "git-view",
+              "type": "file-tree-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "sheets-in-box",
+              "title": "File Tree"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -163,12 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Readwise/Articles/Harel Security Research - ChatGPT Account Takeover - Wildcard Web Cache Deception.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Harel Security Research - ChatGPT Account Takeover - Wildcard Web Cache Deception"
             }
           }
         ]
@@ -184,6 +199,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Play ground/Targets/Vulnerability Research Targets.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -211,7 +227,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of Vulnerability Research Targets"
             }
           }
         ]
@@ -227,6 +243,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Play ground/Targets/Vulnerability Research Targets.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,7 +253,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Vulnerability Research Targets"
             }
           },
           {
@@ -245,12 +262,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
+                "file": "Readwise/Articles/Ben Desjardins - Understanding the EU’s Cyber Resilience Act.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty"
+              "title": "Outgoing links from Ben Desjardins - Understanding the EU’s Cyber Resilience Act"
             }
           }
         ]
@@ -264,57 +281,59 @@
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-kanban:Create new board": false,
       "graph:Open graph view": false,
       "templates:Insert template": true,
       "workspaces:Manage workspace layouts": true,
-      "obsidian-advanced-slides:Show Slide Preview": true,
-      "obsidian-book-search-plugin:Create new book note": true,
-      "file-tree-alternative:File Tree Alternative Plugin": true,
-      "obsidian-projects:Open projects": false,
-      "obsidian-git:Open Git source control": true
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-book-search-plugin:Create new book note": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-projects:Open projects": false
     }
   },
-  "active": "f1e872329b91b6ac",
+  "active": "02d0431c420ec89d",
   "lastOpenFiles": [
-    "Readwise/Articles/Jorge Rosillo - Security Research Without Ever Leaving GitHub From Code Scanning to CVE via Codespaces and Private Vulnerability Reporting.md",
-    "Dev, ICT & Cybersec/Tools/CodeQL.md",
-    "Readwise/Articles/OpenSSF - Understanding and Applying the OpenSSF Criticality Score in Open Source Projects.md",
+    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
     "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Readwise/Readwise inbox.md",
-    "Readwise/Articles/Sonny - Where There’s Smoke, There’s Fire - Mitel MiCollab CVE-2024-35286, CVE-2024-41713 and an 0day.md",
-    "Readwise/Articles/PortSwigger Research - Stealing HttpOnly Cookies With the Cookie Sandwich Technique.md",
-    "Readwise/Articles/Jack Maginnes - Uncovering a 0-Click RCE in the SuperNote Nomad E-Ink Tablet.md",
-    "Play ground/Targets/Vulnerability Research Targets.md",
-    "Play ground/Targets/WP-plugins/advanced-access-manager/aam_20250422.excalidraw.md",
-    "Communities/YouTube/_YT-dashboard.canvas",
-    "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Linux command cheatsheet.md",
-    "Readwise/Tweets/@WllGates on Twitter - Tweets From Will Gates.md",
-    "Dev, ICT & Cybersec/Services/DNS - Domain Name System.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Password Attacks.md",
-    "Readwise/Articles/blackbird-eu - 7 Overlooked Recon Techniques to Find More Vulnerabilities.md",
-    "Dev, ICT & Cybersec/Tools/nmap.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Passive information gathering (OSINT).md",
-    "Readwise/Articles/blackbird-eu - Creating Custom Wordlists for Bug Bounty Targets A Complete Guide.md",
+    "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
     "Personal/TODO.md",
-    "Readwise/Articles/novasecio - Recon for Bug Bounty 8 Essential Tools for Performing Effective Reconnaissance.md",
-    "Readwise/Articles/PfiatDe - Having Fun With Github.md",
-    "Readwise/Articles/Sina Kheirkhah (@SinSinology) - SonicBoom, From Stolen Tokens to Remote Shells - SonicWall SMA100.md",
-    "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Confusion Attacks.md",
-    "Readwise2/Tweets",
-    "Readwise2/Articles",
-    "Readwise2",
-    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_141914",
-    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_140414",
-    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_132433",
-    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_130933",
-    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_125433",
-    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_123933",
-    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250507_122433",
+    "Dev, ICT & Cybersec/Tools/snmpwalk.md",
+    "Dev, ICT & Cybersec/Services/SNMP - Simple Network Management Protocol.md",
+    "Dev, ICT & Cybersec/Tools/snmp-check.md",
+    "Dev, ICT & Cybersec/Tools/onesixtyone.md",
+    "Dev, ICT & Cybersec/Tools/nmap.md",
+    "Dev, ICT & Cybersec/Tools/nmapAutomator sh.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Information Gathering.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Active information gathering.md",
+    "Dev, ICT & Cybersec/Services/Services list.md",
+    "Dev, ICT & Cybersec/Services/FTP - File Transfer Protocol.md",
+    "Dev, ICT & Cybersec/Tools/AutoRecon.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Bash 101.md",
+    "Play ground/CTFs/SecNotes.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Pivoting.md",
+    "Dev, ICT & Cybersec/Tools/sshuttle.md",
+    "Play ground/Targets/vtenext/20250424_VTENext-25.02.excalidraw.md",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_175610",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_174110",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_172610",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_171110",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_165610",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_164110",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_162610",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_161110",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_155610",
+    "Play ground/Targets/vtenext/burp/20250424_VTENEXT-25.02.burp.backup.temp_20250527_154110",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure File Upload.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/XML External Entity Injection (XXE Injection).md",
+    "Readwise/Articles/William Moody - CVE-2025-25599 A Cautionary Tale of Insecure Temporary Files.md",
+    "Play ground/Targets/Vulnerability Research Targets.md",
+    "Communities/YouTube/_YT-dashboard.canvas",
+    "Readwise/Readwise inbox.md",
+    "Readwise/Articles/Intigriti - Intigriti Bug Bytes #224 - May 2025 🚀.md",
+    "Readwise/Articles/attachments/chatgpt-cache-deception.png",
+    "Readwise/Articles/attachments/Pasted image 20250515173816.png",
     "Readwise/Articles/attachments/heatmap-4-pins-2.png",
     "Readwise/Articles/attachments/heatmap-4-pins.png",
     "Readwise/Articles/attachments/unminified-react.png",
@@ -323,8 +342,6 @@
     "Readwise/Articles/attachments/dtd-finder-exploit.png",
     "Readwise/Articles/attachments/dtd-finder-in-burp.png",
     "Readwise/Articles/attachments/CSPT2CSRF.png",
-    "Readwise/Articles/attachments/orphaned-git-commit.png",
-    "Play ground/Targets/spoki.it/20250402_spoki.it/attachments/Pasted Image 20250406135612_334.png",
     "Play ground/Targets/opencart/OpenCart 4.0.2.3.canvas",
     "Play ground/Targets/SicuraNext/challenge-1/challenge-1.canvas",
     "Play ground/Targets/SicuraNext/challenge-2/challenge-2.canvas",

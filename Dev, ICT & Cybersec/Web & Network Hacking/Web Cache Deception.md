@@ -16,3 +16,6 @@ https://example.com/private_info/;.png?cachebuster=1
 ```
 
 Once the attack vector has been found, simply send the link containing its cache-buster to the victim. When he clicks on the link, his personal information — _the nature of which will depend on the web app_ — will be **accessible** to the attacker **via this same link**.
+
+## Web Cache Deception vulnerabilities
+- [ChatGPT Account Takeover - Wildcard Web Cache Deception](../../Readwise/Articles/Harel%20Security%20Research%20-%20ChatGPT%20Account%20Takeover%20-%20Wildcard%20Web%20Cache%20Deception.md)

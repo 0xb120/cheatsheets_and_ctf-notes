@@ -11,3 +11,6 @@ If run on a router, **sshuttle** can forward traffic for your entire subnet to t
 ```bash
 kali@kali:~$ sshuttle -r user@192.168.1.123 10.11.1.0/24
 ```
+
+>[!note]
+>Some mileage may vary. I’ve never had success running nmap through sshuttle, and there are a lot of people out there posting similar complaints. But it is a very nice way to interact with a host over a tunnel.

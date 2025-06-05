@@ -24,3 +24,4 @@ Examples:
 - [Encoding Differentials: Why Charset Matters](../../Readwise/Articles/sonarsource.com%20-%20Encoding%20Differentials%20Why%20Charset%20Matters.md)
 	- [XSS with Charset Shenanigans by kinugawamasato - w/ strellic](../../Readwise/Articles/blig.one%20-%20Flatt%20Security%20XSS%20Challenge%20-%20Writeup.md#XSS%20with%20Charset%20Shenanigans%20by%20kinugawamasato%20-%20w/%20strellic)
 	- [PortSwigger Research - Bypassing Character Blocklists With Unicode Overflows](../../Readwise/Articles/PortSwigger%20Research%20-%20Bypassing%20Character%20Blocklists%20With%20Unicode%20Overflows.md)
+- [ChatGPT Account Takeover - Wildcard Web Cache Deception](../../Readwise/Articles/Harel%20Security%20Research%20-%20ChatGPT%20Account%20Takeover%20-%20Wildcard%20Web%20Cache%20Deception.md)

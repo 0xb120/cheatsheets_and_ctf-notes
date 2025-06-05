@@ -60,6 +60,10 @@ Once done, *Compile* and save the edited assembly (`File > Save Module`).
 - [From Blackbox .NET Remoting to Unauthenticated Remote Code Execution](https://code-white.com/blog/2023-07-from-blackbox-dotnet-remoting-to-rce/), code-white.com
 - [Teaching the Old .NET Remoting New Exploitation Tricks](https://code-white.com/blog/teaching-the-old-net-remoting-new-exploitation-tricks/), code-white.com
 - [Leaking ObjRefs to Exploit HTTP .NET Remoting](https://code-white.com/blog/leaking-objrefs-to-exploit-http-dotnet-remoting/), code-white.com
+- [Piotr Bazydlo - By Executive Order, We Are Banning Blacklists - Domain-Level RCE in Veeam Backup & Replication](../../Readwise/Articles/Piotr%20Bazydlo%20-%20By%20Executive%20Order,%20We%20Are%20Banning%20Blacklists%20-%20Domain-Level%20RCE%20in%20Veeam%20Backup%20&%20Replication.md), labs.watchtowr.com
 
 ## ViewState
 - [Attackers Used a Public ASP.NET Machine to Conduct ViewState Code Injection Attacks](../../Readwise/Articles/Pierluigi%20Paganini%20-%20Attackers%20Used%20a%20Public%20ASP.NET%20Machine%20to%20Conduct%20ViewState%20Code%20Injection%20Attacks.md)
+
+## Cookieless Sessions
+- [admin - Source Code Disclosure in ASP.NET Apps](../../Readwise/Articles/admin%20-%20Source%20Code%20Disclosure%20in%20ASP.NET%20Apps.md)

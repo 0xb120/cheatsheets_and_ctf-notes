@@ -785,6 +785,7 @@ Further references:
 ### Other .NET Deserialization
 
 - [RCE in Progress WS_FTP Ad Hoc via IIS HTTP Modules](../../Readwise/Articles/Assetnote%20-%20RCE%20in%20Progress%20WS_FTP%20Ad%20Hoc%20via%20IIS%20HTTP%20Modules.md)
+- [.NET Remoting](../Dev,%20scripting%20&%20OS/dotNET.md#.NET%20Remoting)
 
 ## YAML
 

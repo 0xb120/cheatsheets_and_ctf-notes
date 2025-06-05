@@ -445,6 +445,10 @@ p.recvline()
 p.interactive()
 ```
 
+## decorators
+
+[Diving into Python Decorators](../../Readwise/Articles/Naveen%20Sunkavally%20-%20Unsafe%20at%20Any%20Speed%20Abusing%20Python%20Exec%20for%20Unauth%20RCE%20in%20Langflow%20AI.md#Diving%20into%20Python%20Decorators)
+
 ## builtins
 <iframe width="1060" height="415" src="https://sadh.life/post/builtins/" title="Python buildins" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -456,11 +460,14 @@ p.interactive()
 >
 >There are also other special attributes in every object in Python, such as `__class__`, `__doc__`, etc.
 
+---
 
 # Python quirks and tricks
 
 - [`os.path.join`](../../Readwise/Tweets/@0xTib3rius%20on%20Twitter%20-%20Tweets%20From%20Tib3rius.md) [^6][^7]
-
+- `ast` [^8]
+- [Abusing Decorators for Remote Code Execution](../../Readwise/Articles/Naveen%20Sunkavally%20-%20Unsafe%20at%20Any%20Speed%20Abusing%20Python%20Exec%20for%20Unauth%20RCE%20in%20Langflow%20AI.md#Abusing%20Decorators%20for%20Remote%20Code%20Execution)
+- [Another Path to RCE: Python Default Arguments](../../Readwise/Articles/Naveen%20Sunkavally%20-%20Unsafe%20at%20Any%20Speed%20Abusing%20Python%20Exec%20for%20Unauth%20RCE%20in%20Langflow%20AI.md#Another%20Path%20to%20RCE%20Python%20Default%20Arguments)
 # Python 2 vs 3 for binary exploitation
 
 <iframe width="660" height="415" src="https://www.youtube.com/embed/FxNS-zSS7MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -612,3 +619,5 @@ Flask snippet for exploiting SSRF and redirection tricks: [From Blind SSRF to Fu
 [^6]: [Path Traversal in OpenSource HTB box](../../Play%20ground/CTFs/OpenSource.md#Path%20Traversal)
 
 [^7]: [Analysis of CVE-2023-37474 in CopyParty](../../Readwise/Articles/0xdf%20-%20Analysis%20of%20CVE-2023-37474%20in%20CopyParty.md)
+
+[^8]: [Naveen Sunkavally - Unsafe at Any Speed Abusing Python Exec for Unauth RCE in Langflow AI](../../Readwise/Articles/Naveen%20Sunkavally%20-%20Unsafe%20at%20Any%20Speed%20Abusing%20Python%20Exec%20for%20Unauth%20RCE%20in%20Langflow%20AI.md)

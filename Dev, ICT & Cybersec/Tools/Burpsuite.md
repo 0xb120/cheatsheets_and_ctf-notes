@@ -38,7 +38,7 @@ Match [\{FILE\}] replace with [/etc/hosts]
 
 ---
 
-## Develop your custom extensions 
+## Develop your custom extensions
 Reference: https://security.humanativaspa.it/tag/montoya-api/
 1. [Setting up the environment + Hello World](https://security.humanativaspa.it/extending-burp-suite-for-fun-and-profit-the-montoya-way-part-1/)
 2. [Inspecting and tampering HTTP requests and responses](https://security.humanativaspa.it/extending-burp-suite-for-fun-and-profit-the-montoya-way-part-2)
@@ -53,6 +53,14 @@ Reference: https://security.humanativaspa.it/tag/montoya-api/
 >The ones marked with a \* are only available for the Pro Version
 
 ## Traffic Auditor
+
+### Paramalyzer 🔝
+
+This extension can improve efficiency of manual parameter analysis for web penetration tests of either complex or numerous applications. This can assist in tasks such as identifying sensitive data, identifying hash algorithms, decoding parameters, and determining which parameters are reflected in the response.
+
+This extension performs an in-depth and intelligent parameter analysis of all in-scope Burp traffic. Results are displayed in an interactive table and can be sent directly to other Burp tools such as Repeater.
+
+See the doc: https://jgillam.github.io/burp-paramalyzer/
 
 ### Sensitive Discoverer
 
@@ -92,15 +100,15 @@ Find interesting stuff inside static files, like secrets, credentials, subdomain
 
 ![|500](../../zzz_res/attachments/JS-miner.png)
 
-### *JS Link Finder
+### *JS Link Finder 🔝
 
 Burp Extension for a passively scanning JavaScript files for endpoint links. - Export results the text file - Exclude specific 'js' files e.g. jquery, google-analytics
 
-### *Additional Scanner Check 🔝
+### *Additional Scanner Check
 
 This extension provides some additional passive Scanner checks:
 
-- DOM-based XSS (regular expressions are based on those from https://code.google.com/p/domxsswiki/wiki/FindingDOMXSS)
+- ~~DOM-based XSS~~ (regular expressions are based on those from https://code.google.com/p/domxsswiki/wiki/FindingDOMXSS)
 - Missing HTTP headers:
     - Strict-Transport-Security
     - X-Content-Type-Options: nosniff
@@ -115,14 +123,6 @@ All checks can be enabled separately in an extension tab and a default config ca
 Monitors traffic and looks for request parameter values (longer than 3 characters) that are reflected in the response. **Launch active scans against those parameters** from the apposite tab.
 
 ![|700](../../zzz_res/attachments/reflected-parameters.png)
-
-### Paramalyzer 🔝
-
-This extension can improve efficiency of manual parameter analysis for web penetration tests of either complex or numerous applications. This can assist in tasks such as identifying sensitive data, identifying hash algorithms, decoding parameters, and determining which parameters are reflected in the response.
-
-This extension performs an in-depth and intelligent parameter analysis of all in-scope Burp traffic. Results are displayed in an interactive table and can be sent directly to other Burp tools such as Repeater.
-
-See the doc: https://jgillam.github.io/burp-paramalyzer/
 
 ### *Detect Dynamic JS
 
@@ -211,11 +211,10 @@ This extension **complements Burp's active scanner** by using a novel approach c
 ![|750](../../zzz_res/attachments/backslash-powered-scanner.png)
 ![](../../zzz_res/attachments/backslash-powered-scanner2.png)
 
-### *URL Fuzzer
+### *URL Fuzzer 🔝
 
 Fuzz URLs with all available ASCII characters to identify parser inconsistencies. Based on the work of Rafael da Costa Santos (https://rafa.hashnode.dev/exploiting-http-parsers-inconsistencies) and Orange Tsai (https://youtu.be/28xWcRegncw?si=t6BcScfQsz-2wFap).
-Usage
-Run an active scan against a target, and view results as issues.
+Usage: Run an active scan against a target, and view results as issues.
 ### Java Deserialization Scanner
 
 Gives Burp Suite the ability to find Java deserialization vulnerabilities. It **adds checks to both the active and passive scanner** and can also be used in an **"Intruder like" manual mode**, with a dedicated tab.
@@ -329,10 +328,6 @@ Multiple techniques are used to detect prototype pollution and are described in 
 ### *Collaborator Everywhere
 
 Augments your in-scope proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator.
-
-### *Log4Shell Everywhere
-
-Fork of James Kettle's excellent Collaborator Everywhere, with the injection parameters changed to payloads for the critical log4j CVE-2021-44228 vulnerability.
 
 ### *Upload Scanner 🔝
 
@@ -510,7 +505,7 @@ tag-based conversion tool that supports various escapes and encodings.
 
 ![](../../zzz_res/attachments/hackvector.png)
 
-### SignSaboteur 
+### SignSaboteur
 
 SignSaboteur [^SignSaboteur] is a Burp Suite extension for editing, signing, verifying, and attacking signed tokens. It supports different types of tokens, including Django, Flask, and Express.
 
@@ -535,12 +530,6 @@ Captures response times for requests made by all Burp tools. It could be useful 
 
 ![|900](../../zzz_res/attachments/request-timer.png)
 
-### Request Highlighter 🔝
-
-Provides an automatic way to highlight HTTP requests based on headers content.
-
-![](../../zzz_res/attachments/request-highlighter.png)
-
 ### Response Grepper 🔝
 
 This extension will auto-extract and display values from HTTP Response bodies based on a Regular Expression, similarly to the "Grep - Extract" feature in Burp Intruder but will work on any Responses. This can be helpful when trying to perform manual reconnaissance or building an injection in Burp Repeater, without having to scroll through multiple matches in the Response search results.
@@ -557,11 +546,6 @@ Match and replace under steroids. Set specific responses for specific HTTP reque
 
 Install it from GitHub: https://github.com/ambionics/scalpel
 
-### Request Minimizer
-
-This extension performs HTTP request minimization. It deletes parameters that are not relevant such as: random ad cookies, cachebusting nonces, etc.
-Two actions are added to the context menu in Repeater: Minimize in current tab and Minimize in new tab.
-As each parameter is removed, the extension repeats the request to ensure the response matches. Only parameters that do not affect the response are removed.
 ### Copier 🔝
 
 [Copier](../../Readwise/Articles/Tib3rius%20-%20My%20NEW%20Burp%20Extension%20Will%20Help%20You%20Write%20Reports!.md) is a Burp Suite extension (compatible with both Community and Professional editions) which allows users to easily copy requests and responses while making automated modifications using custom rules. [^copier]
@@ -596,6 +580,17 @@ Available magic bytes:
 - JPEG
 - GIF89a
 - GIF87a
+
+### Extensibility Helper 🔝
+
+Extensibility Helper streamlines the process of discovering and importing [BChecks](Burpsuite.md#BChecks) and [Bambdas](Burpsuite.md#Bambdas) snippets by loading them from a remote GitHub or local Git repository. Scripts can be filtered by keyword or tag and either copied to the clipboard or saved to disk for use within Burp Suite.
+
+The extension adds a tab titled "Extensibility Helper", with three sub-tabs:
+
+- "BCheck Store" - displays available BChecks
+- "Bambda Store" - displays available Bambdas
+- "Settings" - provides configuration options
+
 ### Logger++ 🔝
 
 Multithreaded logging extension for Burp Suite. In addition to logging requests and responses from all Burp Suite tools, the extension allows advanced filters to be defined to highlight interesting entries or filter logs to only those which match the filter.
@@ -733,7 +728,7 @@ Example:
 
 # Tools integrating with burpsuite
 
-## Burp collector 
+## Burp collector
 
 >[!info] Download
 >GitHub: https://github.com/sAjibuu/Burp_Collector

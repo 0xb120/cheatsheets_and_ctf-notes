@@ -5,7 +5,7 @@
   "triggerOnLoad": false,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 20105038,
+  "lastSavedStatusID": 20547003,
   "currentSyncStatusID": 0,
   "refreshBooks": false,
   "booksToRefresh": [
@@ -67,7 +67,6 @@
     "35140305",
     "43376073",
     "43376639",
-    "43376915",
     "41610470",
     "43403911",
     "43404150",
@@ -505,7 +504,10 @@
     "Readwise/Articles/Antoine Gicquel - Magento for Security Audit.md": "51008801",
     "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md": "51141149",
     "Readwise/Articles/Charles Fol - Introducing Lightyear, a New Way to Dump PHP Files.md": "51230480",
-    "Readwise/Articles/neodyme.io - HTML to PDF Renderer A Tale of Local File Access and Shellcode Execution.md": "51230542"
+    "Readwise/Articles/neodyme.io - HTML to PDF Renderer A Tale of Local File Access and Shellcode Execution.md": "51230542",
+    "Readwise/Articles/Arseniy Sharoglazov - Exploiting Arbitrary Object Instantiations in PHP Without Custom Classes.md": "51347288",
+    "Readwise/Articles/Piotr Bazydlo (@chudyPB) - XSS to RCE by Abusing Custom File Handlers - Kentico Xperience CMS.md": "51347666",
+    "Readwise/Articles/Intigriti - Intigriti Bug Bytes #224 - May 2025 🚀.md": "51861393"
   },
   "reimportShowConfirmation": true
 }

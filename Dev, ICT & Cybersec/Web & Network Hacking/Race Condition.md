@@ -261,3 +261,4 @@ Another angle for further research is exploring the root cause of race condition
 - [Cracking reCAPTCHA, Turbo Intruder style](https://portswigger.net/research/cracking-recaptcha-turbo-intruder-style), James Kettle
 - [Smashing the state machine: the true potential of web race conditions](https://portswigger.net/research/smashing-the-state-machine), James Kettle
 - [The State of State Machines](https://googleprojectzero.blogspot.com/2021/01/the-state-of-state-machines.html), Natalie Silvanovich, Project Zero
+- [Sonny - Get FortiRekt, I Am the Super_Admin Now - FortiOS Authentication Bypass CVE-2024-55591](../../Readwise/Articles/Sonny%20-%20Get%20FortiRekt,%20I%20Am%20the%20Super_Admin%20Now%20-%20FortiOS%20Authentication%20Bypass%20CVE-2024-55591.md)
