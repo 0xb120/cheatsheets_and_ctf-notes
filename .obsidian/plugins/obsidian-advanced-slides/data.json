@@ -13,9 +13,9 @@
   "transitionSpeed": "default",
   "controls": true,
   "progress": true,
-  "slideNumber": false,
+  "slideNumber": true,
   "showGrid": false,
   "autoComplete": "inPreview",
   "paneMode": "split",
-  "motm": "2024-10-04T15:52:34.902Z"
+  "motm": "2025-06-16T09:46:19.427Z"
 }

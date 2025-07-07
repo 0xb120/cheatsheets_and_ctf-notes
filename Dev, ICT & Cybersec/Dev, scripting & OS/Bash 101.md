@@ -81,7 +81,7 @@ An alias is a string we can define that replaces a command name
 
 In order to persist customization, settings must added within the `.bashrc` file of the specific user
 
-Sample `.zshrc` file template from Kali Linux:
+Sample `.zshrc` file:
 ```bash
 # ~/.zshrc file for zsh interactive shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
@@ -179,12 +179,12 @@ fi
 configure_prompt() {
     prompt_symbol=㉿
     # Skull emoji for root terminal
-    #[ "$EUID" -eq 0 ] && prompt_symbol=💀
+    [ "$EUID" -eq 0 ] && prompt_symbol=💀
     case "$PROMPT_ALTERNATIVE" in
         twoline)
             PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} '
             # Right-side prompt with exit codes and background processes
-            #RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
+            RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
             ;;
         oneline)
             PROMPT=$'${debian_chroot:+($debian_chroot)}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))}%B%F{%(#.red.blue)}%n@%m%b%F{reset}:%B%F{%(#.blue.green)}%~%b%F{reset}%(#.#.$) '
@@ -201,7 +201,7 @@ configure_prompt() {
 # The following block is surrounded by two delimiters.
 # These delimiters must not be modified. Thanks.
 # START KALI CONFIG VARIABLES
-PROMPT_ALTERNATIVE=twoline
+PROMPT_ALTERNATIVE=oneline
 NEWLINE_BEFORE_PROMPT=yes
 # STOP KALI CONFIG VARIABLES
 
@@ -209,7 +209,10 @@ if [ "$color_prompt" = yes ]; then
     # override default virtualenv indicator in prompt
     VIRTUAL_ENV_DISABLE_PROMPT=1
 
-    configure_prompt
+    #configure_prompt
+    autoload -Uz promptinit
+    promptinit
+    prompt adam1
 
     # enable syntax-highlighting
     if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
@@ -325,12 +328,17 @@ if [ -x /usr/bin/dircolors ]; then
     zstyle ':completion:::kill::processes' list-colors '=(#b) #([0-9]#)=0=01;31'
 fi
 
-# some more ls aliases
+# Aliases
 alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 alias bat='batcat'
-alias burp-pro='java -jar /opt/burp-pro/burpsuite_pro_latest.jar'
+alias wpscan='docker run -it --rm wpscanteam/wpscan'
+alias ffuf='ffuf -c'
+alias less='less -R'
+alias semgrep-auto='semgrep --dataflow-traces --force-color --matching-explanations --json-output=scans/$(date "+%Y%m%d").json --text-output=scans/$(date "+%Y%m%d").txt --sarif-output=scans/$(date "+%Y%m%d").sarif --no-git-ignore'
+alias semgrep-sarif='semgrep --dataflow-traces --force-color --text-output=$(date "+%Y%m%d").txt --sarif-output=$(date "+%Y%m%d").sarif --no-git-ignore'
+alias sqlmap='python3 /opt/sqlmap-dev/sqlmap.py'
 
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
@@ -343,6 +351,33 @@ fi
 if [ -f /etc/zsh_command_not_found ]; then
     . /etc/zsh_command_not_found
 fi
+
+# Go bin path
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/.local/bin
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# Bundler
+export PATH=/var/lib/gems/1.8/bin/:${PATH}
+
+export PATH=$PATH:/sbin/
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/mattia_m/.dart-cli-completion/zsh-config.zsh ]] && . /home/mattia_m/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+. "$HOME/.asdf/asdf.sh"
+source $GOPATH/pkg/mod/github.com/tomnomnom/gf@v0.0.0-20200618134122-dcd4c361f9f5/gf-completion.zsh
+
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 ```
 
 ---

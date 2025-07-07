@@ -6,11 +6,11 @@
         "type": "split",
         "children": [
           {
-            "id": "7b3098e0ae46f99e",
+            "id": "deb072eeecec60d9",
             "type": "tabs",
             "children": [
               {
-                "id": "1f35466f5882b3de",
+                "id": "4803460250cca17a",
                 "type": "leaf",
                 "state": {
                   "type": "empty",
@@ -91,6 +91,16 @@
                   "icon": "git-pull-request",
                   "title": "Source Control"
                 }
+              },
+              {
+                "id": "6b3c5ca8d93754dd",
+                "type": "leaf",
+                "state": {
+                  "type": "todo",
+                  "state": {},
+                  "icon": "checkmark",
+                  "title": "Todo List"
+                }
               }
             ]
           }
@@ -164,13 +174,12 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
                     "followCursor": false,
                     "showSearch": false,
                     "searchQuery": ""
                   },
                   "icon": "lucide-list",
-                  "title": "Outline of dotNET"
+                  "title": "Outline"
                 }
               }
             ],
@@ -266,10 +275,11 @@
         "hiddenItems": {
           "switcher:Open quick switcher": false,
           "command-palette:Open command palette": false,
+          "omnisearch:Omnisearch": false,
           "canvas:Create new canvas": false,
           "obsidian-excalidraw-plugin:New drawing": false,
-          "obsidian-kanban:Create new board": false,
           "graph:Open graph view": false,
+          "obsidian-kanban:Create new board": false,
           "templates:Insert template": true,
           "workspaces:Manage workspace layouts": true,
           "obsidian-advanced-slides:Show Slide Preview": true,
@@ -279,8 +289,8 @@
           "obsidian-git:Open Git source control": true
         }
       },
-      "active": "1f35466f5882b3de",
-      "mtime": "2025-02-28T14:02:48+01:00"
+      "active": "4803460250cca17a",
+      "mtime": "2025-07-07T15:25:50+02:00"
     }
   },
   "active": "Home+Project"

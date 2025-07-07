@@ -43,71 +43,52 @@ details.setting-item > *:not(summary) {
 body.is-mobile .kofi-button.sticky {
   display: none;
 }
-.kofi-button {
-  height: 30px;
-  max-height: 30px;
-}
-.kofi-button.sticky {
-  z-index: 10;
-  position: absolute;
-  bottom: var(--size-4-5);
-  right: var(--size-4-5);
-}
-.kofi-button img {
-  height: 100%;
-}
-.kofi-overlay {
-  z-index: 100;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.kofi-banner {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  padding: var(--size-4-3);
+  background-color: var(--background-secondary);
+  border: 1px solid var(--divider-color);
+  border-radius: var(--radius-s);
 }
-.kofi-overlay::before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--color-base-00);
-  opacity: 0.95;
+.kofi-banner h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: var(--font-ui-large);
+  font-weight: 600;
 }
-.kofi-overlay h1 {
-  margin-bottom: 0;
+.kofi-banner .progress-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
 }
-.kofi-overlay p {
-  max-width: 50%;
-  color: var(--text-muted);
-  text-align: center;
-}
-.kofi-overlay p b {
-  color: var(--text-primary);
-}
-.kofi-overlay progress {
-  margin-top: var(--size-4-8);
+.kofi-banner .progress-container progress {
   background: transparent;
 }
-.kofi-overlay progress::-webkit-progress-bar {
+.kofi-banner .progress-container progress::-webkit-progress-bar {
   background-color: var(--background-modifier-border);
   border-radius: var(--input-radius);
 }
-.kofi-overlay progress::-webkit-progress-value {
+.kofi-banner .progress-container progress::-webkit-progress-value {
   background-color: var(--color-accent);
   border-radius: var(--input-radius);
 }
-.kofi-overlay .kofi-button {
-  margin-top: var(--size-4-10);
-  margin-bottom: var(--size-4-5);
+.kofi-banner .progress-container .hourly-rate {
+  margin-left: 10px;
+  font-weight: 600;
 }
-.kofi-overlay .no-button {
-  cursor: pointer;
+.kofi-banner .ac-kofi-button {
+  align-self: flex-end;
+  width: min-content;
+  height: min-content;
+  line-height: 0;
+}
+.kofi-banner .ac-kofi-button img {
+  min-width: 100px;
+  width: 25%;
+  max-width: 200px;
 }
 .canvas-wrapper > .document-search-container {
   transform: translateZ(0);
@@ -179,6 +160,9 @@ body.is-mobile .kofi-button.sticky {
 }
 .canvas-node[data-text-align=right] {
   text-align: right;
+}
+.canvas-node[data-shape] .canvas-node-container .markdown-preview-view.markdown-rendered {
+  transform: unset;
 }
 .canvas-node[data-shape=pill] .canvas-node-container {
   border-radius: 5000px;

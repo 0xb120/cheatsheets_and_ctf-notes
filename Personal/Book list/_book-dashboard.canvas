@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{
+			"id":"6490da21fd0a885b",
+			"type":"file",
+			"file":"Personal/Book list/_book-dashboard_wrapper.md",
+			"subpath":"#Reading",
+			"styleAttributes":{},
+			"x":-500,
+			"y":-520,
+			"width":1260,
+			"height":4120,
+			"color":"3"
+		},
+		{
+			"id":"4f268300b306d271",
+			"type":"file",
+			"file":"Personal/Book list/_book-dashboard_wrapper.md",
+			"subpath":"#To-Read",
+			"styleAttributes":{},
+			"x":-1740,
+			"y":-520,
+			"width":1240,
+			"height":4120,
+			"color":"1"
+		},
+		{
+			"id":"454431df4519e763",
+			"type":"file",
+			"file":"Personal/Book list/_book-dashboard_wrapper.md",
+			"subpath":"#Finished",
+			"styleAttributes":{},
+			"x":760,
+			"y":-520,
+			"width":1235,
+			"height":4120,
+			"color":"4"
+		}
+	],
+	"edges":[],
+	"metadata":{"version":"1.0-1.0"}
+}
