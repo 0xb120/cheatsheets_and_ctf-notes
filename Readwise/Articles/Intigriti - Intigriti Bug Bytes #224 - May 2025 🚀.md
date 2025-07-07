@@ -22,4 +22,5 @@ Fuzzing with weird characters can introduce interesting responses. [Recollapse]
 
 
 Want to transform your payload into obscure characters? [Unicode Text Converter](https://qaz.wtf/u/convert.cgi?text=INTIGRITI) is a simple tool that lets you easily convert your payloads into weird characters to bypass weak filters! [](https://read.readwise.io/read/01jw60jkgnck1fnhw3vjdcb1ms)
-> #tools 
+> #tools
+
