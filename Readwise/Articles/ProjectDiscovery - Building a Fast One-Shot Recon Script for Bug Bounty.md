@@ -111,7 +111,7 @@ gospider -S http.txt —json | grep “{” | jq -r ‘.output’
 ## HTTP Response capture
 
 Inspired by Tomnomnom, capturing the HTTP responses from HTTP index pages can serve as a good starting point for hunting. [](https://read.readwise.io/read/01jtft8dtygeh906hbatqgv9ap)
-HTTPx [^8] incorporates this feature and we can modify our script to store responses as it performs its enumeration. [](https://read.readwise.io/read/01jtft8sprwqbpn3dd1c25d2yd)
+[httpx](../../Dev,%20ICT%20&%20Cybersec/Tools/httpx.md) [^8] incorporates this feature and we can modify our script to store responses as it performs its enumeration. [](https://read.readwise.io/read/01jtft8sprwqbpn3dd1c25d2yd)
 
 ![](https://projectdiscovery.io/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2FhygJNH6RkNZsAqA8PA2rNiNyXJlRuTCIewrHdyTjhx201BQnMioW5ZQifGXSSVr0jIiSj_jvUjV2Ka-lBWPwkiDI-O-oqc32rn_YRjbybuxma7fcOdLT5neLhCnhoKElgWuUy3MGl1_FGbP2ZVvdmuICBO_5ybdC2CrA9IwNbhsM4andUjOOoZYYzA&w=3840&q=75)
 
@@ -155,14 +155,14 @@ grep -Hrni 'set-cookie' --color=always | batcat
 
 ### gf
 
-[Gf](https://github.com/tomnomnom/gf) allows you to define your grep patterns in JSON files and refer to them with an alias. 
+[gf](../../Dev,%20ICT%20&%20Cybersec/Tools/gf.md) allows you to define your grep patterns in JSON files and refer to them with an alias. 
 A list of example rules can be found here: https://github.com/tomnomnom/gf/tree/master/examples [](https://read.readwise.io/read/01jtfth8vmznj6qfz45kqkx8dv)
 
 `gf aws-keys` 
 
 ### tok
 
-Tok [^10] is a hugely powerful tokenizer tool, this means that it extracts words from given files and removes special characters and spaces. [](https://read.readwise.io/read/01jtfthys5bfm1c4ph1rz607g0)
+[tok](../../Dev,%20ICT%20&%20Cybersec/Tools/tok.md) [^10] is a hugely powerful tokenizer tool, this means that it extracts words from given files and removes special characters and spaces. [](https://read.readwise.io/read/01jtfthys5bfm1c4ph1rz607g0)
 
 ```sh
 find -type f | tok | sort | uniq -c | sort -rn | head -n 40
@@ -179,7 +179,7 @@ find -type f | tok | sort -u -V | vim -
 
 ### qsreplace + ffuf 
 
-Using [qsreplace](https://github.com/tomnomnom/qsreplace) and [ffuf](../../Dev,%20ICT%20&%20Cybersec/Tools/ffuf.md), we can look for vulnerabilities such as [Path Traversal](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Path%20Traversal.md) or [SQL Injection](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/SQL%20Injection.md) vulnerabilities. [](https://read.readwise.io/read/01jtftm0ae40cf299rfa4fkzx0)
+Using [qsreplace](../../Dev,%20ICT%20&%20Cybersec/Tools/qsreplace.md) and [ffuf](../../Dev,%20ICT%20&%20Cybersec/Tools/ffuf.md), we can look for vulnerabilities such as [Path Traversal](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Path%20Traversal.md) or [SQL Injection](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/SQL%20Injection.md) vulnerabilities. [](https://read.readwise.io/read/01jtftm0ae40cf299rfa4fkzx0)
 
 Simply set qsreplace to your payload of choice and then set the regex match (-mr ‘REGEX’) to a relevent regex. [](https://read.readwise.io/read/01jtftmhf2s9z8x7cy62jk9qjm)
 

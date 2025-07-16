@@ -75,36 +75,6 @@ See also [httpsgithub.comSlon104 - GitHub - Slon104Common-PIN-Analysis-from-have
 - [https://cracked.io/](https://cracked.io/)
 - [https://breached.to/](https://breached.to/)
 
-## Dictionary generation
-
->[!info]
->**Precision is generally more important than coverage** when considering a dictionary attack, meaning it is more important to create a lean wordlist of relevant passwords than it is to create an enormous, generic wordlist.
-
-Because of this, many wordlists are based on a common theme, such as popular culture references, specific industries, or geographic regions and refined to contain commonly-used passwords.
-
-Kali Linux includes a number of these dictionary files in the `/usr/share/wordlists/` directory and many more are [hosted online](https://github.com/danielmiessler/SecLists).
-
-- [SecLists](https://github.com/danielmiessler/SecLists) ^a28b1d
-- [Assetnote Wordlist](https://wordlists.assetnote.io/) ^b03d62
-- https://github.com/nice-registry/all-the-package-names (npm public package names)
-- https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056
-
-Better option is [Creating Custom Wordlists](../../Readwise/Articles/blackbird-eu%20-%20Creating%20Custom%20Wordlists%20for%20Bug%20Bounty%20Targets%20A%20Complete%20Guide.md) based on the specific target.
-
-### Wordlist generation tools
-
-Web Specific:
-- [cewl](../Tools/cewl.md) [^1]
-- Tok [^3]
-- getjswords.py [^4]
-
-Password specific:
-- [crunch](../Tools/crunch.md)
-- https://github.com/shmuelamar/cracken
-- https://github.com/Mebus/cupp
-- https://github.com/sc0tfree/mentalist
-- https://github.com/r3nt0n/bopscrk
-- [john (dictionary generation)](../Tools/john.md#Dictionary%20generation)
 
 ---
 
@@ -285,8 +255,3 @@ PASSWORD FOUND!!!!: pw == xoxoxo
 
 [^2]: [httpsgithub.comSlon104 - GitHub - Slon104Common-PIN-Analysis-from-haveibeenpwned.com](../../Readwise/Articles/httpsgithub.comSlon104%20-%20GitHub%20-%20Slon104Common-PIN-Analysis-from-haveibeenpwned.com.md)
 
-[^3]: [Extracting URL keywords](../../Readwise/Articles/blackbird-eu%20-%20Creating%20Custom%20Wordlists%20for%20Bug%20Bounty%20Targets%20A%20Complete%20Guide.md#Extracting%20URL%20keywords)
-
-[^4]: [Extracting keywords from JavaScript files](../../Readwise/Articles/blackbird-eu%20-%20Creating%20Custom%20Wordlists%20for%20Bug%20Bounty%20Targets%20A%20Complete%20Guide.md#Extracting%20keywords%20from%20JavaScript%20files)
-
-[^1]: 

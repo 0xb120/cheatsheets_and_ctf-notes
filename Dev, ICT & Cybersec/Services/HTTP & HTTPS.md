@@ -52,6 +52,7 @@ Greppers and auditing tools:
 - [CodeQL](../Tools/CodeQL.md)
 - [graudit](https://github.com/wireghoul/graudit) - grep rough audit - source code auditing tool
 - [grep wrappers](../Dev,%20scripting%20&%20OS/Linux%20command%20cheatsheet.md#grep%20wrappers)
+- [html-tool](../Tools/html-tool.md)
 - [Secrets enumeration](../Web%20&%20Network%20Hacking/HTTP%20Recon%20and%20Enumeration.md#Secrets%20enumeration)
 - [JSA](../../Readwise/Tweets/@WllGates%20on%20Twitter%20-%20Tweets%20From%20Will%20Gates.md) (Javascript security analysis (JSA) is a program for javascript analysis during web application security assessment) ^e44cdc
 - [weggli](https://github.com/weggli-rs/weggli) and C/C++ ruleset from Marco Ivaldi [^ivaldi-weggli]

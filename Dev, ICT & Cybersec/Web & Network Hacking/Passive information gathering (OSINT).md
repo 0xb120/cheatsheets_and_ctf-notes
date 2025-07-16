@@ -71,6 +71,7 @@ DNS history and broader recon:
 ---
 
 # Monitoring sites & Crawler
+
 - [shodan](https://www.shodan.io/) (online)
 	- [Complete Guide to Finding More Vulnerabilities With Shodan and Censys](../../Readwise/Articles/novasecio%20-%20Complete%20Guide%20to%20Finding%20More%20Vulnerabilities%20With%20Shodan%20and%20Censys.md)
 - [Censys](https://search.censys.io/)

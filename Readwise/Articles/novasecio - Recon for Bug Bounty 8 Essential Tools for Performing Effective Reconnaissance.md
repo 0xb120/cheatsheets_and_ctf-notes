@@ -26,7 +26,7 @@ After you've enumerated your list of targets, hosts and subdomains, it's time to
 
 
 ## HTTPX
-[HTTPX](https://github.com/projectdiscovery/httpx) (which relies on the Wappalyzer package) for fingerprinting your list of targets.
+[httpx](../../Dev,%20ICT%20&%20Cybersec/Tools/httpx.md) which relies on the Wappalyzer package) for fingerprinting your list of targets.
 
 > [View Highlight](https://read.readwise.io/read/01jasmb8fphxqr5836g5976tt8)
 

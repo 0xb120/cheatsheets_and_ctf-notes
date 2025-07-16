@@ -720,6 +720,14 @@ You can use bambdas also to extract values from responses (eg. graphql operation
 Example:
 - [Tib3rius - What Are Bambdas and Why Should I Care](../../Readwise/Articles/Tib3rius%20-%20What%20Are%20Bambdas%20and%20Why%20Should%20I%20Care.md)
 
+# Burp Pro Rest API
+
+If enabled in the settings, burpsuite exposes on port 1337 some REST API that can be used to run and manage scans.
+
+![](attachments/Burpsuite-REST.png)
+
+Burp can also be run in headless mode from the CLI: https://portswigger.net/burp/documentation/desktop/troubleshooting/launch-from-command-line
+
 # Burp AI
 
 - [Welcome to the Next Generation of Burp Suite: Elevate Your Testing With Burp AI](../../Readwise/Articles/PortSwigger%20Blog%20-%20Welcome%20to%20the%20Next%20Generation%20of%20Burp%20Suite%20Elevate%20Your%20Testing%20With%20Burp%20AI.md)

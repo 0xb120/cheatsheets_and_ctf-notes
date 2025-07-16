@@ -194,6 +194,19 @@ now I can close it
 EOF
 ```
 
+## xargs
+
+Build and execute command lines from standard input.
+xargs _reads items from the standard input_, delimited by blanks (which can be protected with double or single quotes or a backslash) or new‐ lines.
+
+```bash
+# Run commands for every line in input (n = number of line; P = number of commands in parallel; {} placeholder to decide where to place arguments)
+cat domains.txt | xargs -n1 -P5 host
+
+# -I {} tells xargs to use {} as a placeholder for each input item
+find . -type f -name '*.txt' | xargs -n1 -I {} cp {} ../backup/
+```
+
 # Text Searching and Manipulation
 
 ## grep
@@ -247,7 +260,8 @@ preg_(match|replace)\(['"][^\/~@;%`#]
 
 grep has some other counterparts "on-steroids" that can be used to search also inside other non-textual files:
 - [rga](../../Readwise/Articles/httpsgithub.comphiresky%20-%20GitHub%20-%20phireskyripgrep-all%20rga%20ripgrep,%20but%20also%20search%20in%20PDFs,%20E-Books,%20Office%20documents,%20zip,%20tar.gz,%20etc..md) - ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
-- [gf](https://github.com/tomnomnom/gf) - A wrapper around grep, to help you grep for things and avoid typing common patterns. [^7]
+- [gf](../Tools/gf.md) - A wrapper around grep, to help you grep for things and avoid typing common patterns. [^7]
+- [gron](../Tools/gron.md) - An utility to make grep more efficient on JSON data
 ## sed
 
 sed **performs text editing on a stream of text**, either a set of specific files or standard output.
@@ -290,6 +304,14 @@ cat /etc/ssh/sshd_config | grep -v '#' | awk 'NF'
 ```
 
 ## sort
+
+```bash
+# sort and make unique
+sort -u 
+
+# sort, make unique and count every occurence, and then sort again
+sort | uniq -c | sort -nr
+```
 
 ## uniq
 

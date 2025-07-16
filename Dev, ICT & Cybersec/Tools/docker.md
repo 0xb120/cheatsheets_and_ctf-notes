@@ -78,3 +78,8 @@ docker run -v $PWD:/pwd
 docker exec -it <cont_id> /bin/bash
 ```
 
+### docker clenup
+
+```bash
+docker system prune -a --volumes
+```

@@ -35,7 +35,7 @@ cewl https://example.com --header "Cookie: PHPSESSID=7a9b4c2d8e3f1g5h6i7j8k9l0m1
 
 Another way to build a list of target-specific keywords is by **tokenizing** URLs. Using this method, we can transform our list of URLs gathered from our proxy intercepting tool into keywords that we can use for content discovery. [](https://read.readwise.io/read/01jk8r7fz2yp0ww86xgg9wnc8q)
 
-Here's a quick usage example of [Tok](https://github.com/tomnomnom/hacks/tree/master/tok): [](https://read.readwise.io/read/01jk8r81wha9x5n3wrhffcv06e)
+Here's a quick usage example of [tok](../../Dev,%20ICT%20&%20Cybersec/Tools/tok.md): 
 ```sh
 cat /path/to/urls.txt | tok
 ```
@@ -45,13 +45,13 @@ cat /path/to/urls.txt | tok
 We can now even go a step further and use a tool like [getjswords](https://github.com/m4ll0k/BBTz/blob/master/getjswords.py) to generate even more custom keywords derived from JavaScript files. [](https://read.readwise.io/read/01jk8r8efd8fc2xfh534k4yc1w)
 
 Here's a quick usage guide on using [getjswords](https://github.com/m4ll0k/BBTz/blob/master/getjswords.py): [](https://read.readwise.io/read/01jk8r8mpsh3s28aq1agj83652)
-```
+```sh
 cat /path/to/js-urls.txt | python3 getjswords.py
 ```
 
 ## Step 2: Crafting a technology-specific wordlist
 
-Technology-specific wordlists are helpful to add coverage for the underlying technology stack that your target consists of. For this reason, we must **fingerprint all technologies** used by our target and **use public [dictionaries](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Password%20Attacks.md#Dictionary%20generation)** or curate our own.  [](https://read.readwise.io/read/01jk8r9fsgzq1x8pp0zh22n0zb)
+Technology-specific wordlists are helpful to add coverage for the underlying technology stack that your target consists of. For this reason, we must **fingerprint all technologies** used by our target and **use public [Dictionaries](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Dictionary%20Generation.md)** or curate our own.  [](https://read.readwise.io/read/01jk8r9fsgzq1x8pp0zh22n0zb)
 
 Once you've fingerprinted all used technologies, [browse through SecList's wordlist files](https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content) and select the wordlists that match your fingerprinted technologies and services. [](https://read.readwise.io/read/01jk8ra1m2vgaass2n5me0feg8)
 
@@ -75,7 +75,7 @@ Examples: [](https://read.readwise.io/read/01jk8rb90tgyysdngndqedjxa5)
 The latest step consists of combining all the lists that you've generated so far together and using them for content discovery. [](https://read.readwise.io/read/01jk8rbpgx1eztjjcmj7xkrhc0)
 
 >[!tip]
->**Use a tool like** [wl](https://github.com/s0md3v/wl) **to convert your wordlist to match the naming convention of your target!** [](https://read.readwise.io/read/01jk8rc883tyykbp54da1e0dbc)
+>**Use tools like** [comb](../../Dev,%20ICT%20&%20Cybersec/Tools/comb.md) and [wl](../../Dev,%20ICT%20&%20Cybersec/Tools/wl.md) **to convert your wordlist to match the naming convention of your target!** [](https://read.readwise.io/read/01jk8rc883tyykbp54da1e0dbc)
 
 [^1]: [HTTP Recon and Enumeration](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/HTTP%20Recon%20and%20Enumeration.md#^a28b1d)
 
