@@ -2,7 +2,6 @@
   "advanced-canvas",
   "obsidian-advanced-slides",
   "auto-card-link",
-  "better-export-pdf",
   "obsidian-book-search-plugin",
   "code-styler",
   "dataview",
@@ -12,7 +11,6 @@
   "file-tree-alternative",
   "highlightr-plugin",
   "obsidian-kanban",
-  "obsidian-list-callouts",
   "url-into-selection",
   "obsidian-projects",
   "obsidian-reading-time",
@@ -23,5 +21,7 @@
   "excalibrain",
   "obsidian-checklist-plugin",
   "obsidian-paste-image-rename",
-  "tag-wrangler"
+  "tag-wrangler",
+  "oz-image-plugin",
+  "text-extractor"
 ]

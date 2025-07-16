@@ -1,5 +1,5 @@
 {
-  "useCache": true,
+  "useCache": false,
   "hideExcluded": false,
   "recencyBoost": "0",
   "downrankedFoldersFilters": [],
@@ -7,7 +7,7 @@
   "ignoreArabicDiacritics": false,
   "indexedFileTypes": [],
   "displayTitle": "",
-  "PDFIndexing": false,
+  "PDFIndexing": true,
   "officeIndexing": false,
   "imagesIndexing": false,
   "aiImageIndexing": false,

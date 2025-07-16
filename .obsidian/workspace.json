@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "546dfef30c5768df",
+        "id": "073b98d132f5855d",
         "type": "tabs",
         "children": [
           {
-            "id": "5fd824cab61c88c1",
+            "id": "134573a1eee59532",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Readwise inbox"
+              "title": "HTTP Recon and Enumeration"
             }
           }
         ]
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"excalidraw-plugin\"]",
+                "query": "\"trufflehog\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -114,7 +114,8 @@
               "title": "Todo List"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -162,10 +163,22 @@
               "state": {
                 "sortOrder": "frequency",
                 "showSearch": true,
-                "searchQuery": "exca"
+                "searchQuery": ""
               },
               "icon": "lucide-archive",
               "title": "All properties"
+            }
+          },
+          {
+            "id": "aa1966157214a77f",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Dev, ICT & Cybersec/Tools/docker.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for docker"
             }
           },
           {
@@ -174,13 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Personal/Book list/_book-dashboard.canvas",
+                "file": "Dev, ICT & Cybersec/Tools/jq.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of _book-dashboard"
+              "title": "Outline of jq"
             }
           }
         ]
@@ -196,7 +209,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -224,7 +237,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Readwise inbox"
+              "title": "Graph of HTTP Recon and Enumeration"
             }
           }
         ]
@@ -240,7 +253,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -250,7 +263,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Readwise inbox"
+              "title": "Backlinks for HTTP Recon and Enumeration"
             }
           },
           {
@@ -271,7 +284,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 435.5
+    "width": 413.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -291,63 +304,63 @@
       "obsidian-git:Open Git source control": true
     }
   },
-  "active": "5fd824cab61c88c1",
+  "active": "134573a1eee59532",
   "lastOpenFiles": [
-    "Communities/MeetHack/Android Application Security Slides.md",
-    "Communities/i3P/4. Capire il mercato.md",
-    "Communities/i3P/3. Minimum viable product.md",
-    "Communities/i3P/1. Come partire.md",
-    "Communities/i3P/2. Business model canvas.md",
-    "Communities/YT Settings and tools.md",
-    "CTFs/_CTF-dashboard_wrapper.md",
-    "CTFs/_CTF-dashboard.canvas",
-    "CTFs/Anchored.md",
-    "Play ground/Disclosure Policy.md",
-    "Play ground/Personal Blog workflow.canvas",
-    "CTFs/reg.md",
-    "CTFs/Full Stack Conf.md",
-    "CTFs/baby BoneChewerCon.md",
-    "CTFs/Art.md",
-    "CTFs/archived.md",
-    "CTFs/APKrypt.md",
-    "CTFs/0ld is g0ld.md",
-    "Note.md",
-    "Play ground/Targets/SicuraNext/challenge-2/attachments/sql-injection-haproxy-1.png",
-    "Play ground/Targets/SicuraNext/challenge-2/attachments/semgrep-2.png",
-    "Play ground/Targets/SicuraNext/challenge-2/loots/sample.php",
-    "Play ground/Targets/SicuraNext/challenge-2/PoC/exploit-chall-2.py",
-    "Play ground/Targets/SicuraNext/challenge-1/loots/snippet.php",
-    "Play ground/Targets/SicuraNext/challenge-1/loots/hash.txt",
-    "Play ground/Targets/SicuraNext/challenge-1/PoC/exploit-chall-1.py",
-    "Play ground/Targets/SicuraNext/challenge-1/burp/20241115_challenge-1.burp",
-    "Play ground/Targets/SicuraNext/challenge-1/scans/login.req",
-    "Play ground/Targets/SicuraNext/challenge-1/attachments/sql-injection-auth-bypass.png",
-    "Play ground/Targets/SicuraNext/challenge-1/attachments/semgrep-1.png",
-    "Play ground/Targets/SicuraNext/challenge-1/attachments/md5.png",
-    "Play ground/Targets/SicuraNext/challenge-1/attachments/hash-identifier.png",
-    "Play ground/Targets/SicuraNext/challenge-1/attachments/hash-id.png",
-    "Play ground/Targets/SicuraNext/challenge-1/attachments/cracked-passwords.png",
-    "Play ground/Targets/SicuraNext/challenge-1/attachments/boolean-based-sql-injection-2.png",
-    "Play ground/Targets/SicuraNext/challenge-1/attachments/boolean-based-sql-injection-1.png",
-    "Play ground/Targets/SicuraNext/poc/exploit-chall-2.py",
-    "Play ground/Targets/SicuraNext/poc/exploit-chall-1.py",
-    "Play ground/Targets/SicuraNext/challenge-2/scans",
-    "Play ground/Targets/SicuraNext/challenge-2/challenge-2.canvas",
-    "Play ground/Targets/SicuraNext/challenge-1/challenge-1.canvas",
-    "Play ground/Targets/SicuraNext/SicuraNext-Challenge-Report_v1.0.md",
-    "Play ground/Targets/mistermagorium.com/scans/url-list.md",
-    "Play ground/Targets/mistermagorium.com/mistermagorium.com.canvas",
-    "Play ground/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it.canvas",
-    "Play ground/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it (summary).md",
-    "Play ground/Targets/uisp.it/areariservata2.uisp.it/areariservata2.uisp.it.canvas",
-    "Play ground/Targets/SociableKit/www.sociablekit.com.canvas",
-    "Play ground/Targets/SociableKit/www.sociablekit.com (summary).md",
-    "Play ground/Targets/opencart/scans/semgrep-php.md",
-    "Play ground/Targets/opencart/scans/semgrep-auto.md",
-    "Play ground/Targets/opencart/scans/opencart-regexes.md",
-    "Play ground/Targets/opencart/opencart - CVE-2023-47444.md",
-    "Play ground/Targets/opencart/OpenCart-4.canvas",
-    "Play ground/Targets/opencart/OpenCart 4.0.2.3.canvas",
-    "Play ground/Targets/Woox/Woox R4040/Woox R4040 (summary).md"
+    "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
+    "Readwise/Articles/blackbird-eu - 7 Overlooked Recon Techniques to Find More Vulnerabilities.md",
+    "Dev, ICT & Cybersec/Tools/katana.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Readwise/Articles/novasecio - Recon for Bug Bounty 8 Essential Tools for Performing Effective Reconnaissance.md",
+    "Dev, ICT & Cybersec/Tools/urlfinder.md",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-12-02.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Dictionary Generation.md",
+    "Readwise/Articles/blackbird-eu - Creating Custom Wordlists for Bug Bounty Targets A Complete Guide.md",
+    "Dev, ICT & Cybersec/Tools/qsreplace.md",
+    "Dev, ICT & Cybersec/Tools/gron.md",
+    "Dev, ICT & Cybersec/Tools/unfurl.md",
+    "Dev, ICT & Cybersec/Tools/anew.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Linux command cheatsheet.md",
+    "Dev, ICT & Cybersec/Tools/gf.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Bash 101.md",
+    "Dev, ICT & Cybersec/Tools/jq.md",
+    "Dev, ICT & Cybersec/Tools/assetfinder.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Passive information gathering (OSINT).md",
+    "Readwise/Articles/httpsgithub.comphiresky - GitHub - phireskyripgrep-all rga ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc..md",
+    "Dev, ICT & Cybersec/Tools/wl.md",
+    "Dev, ICT & Cybersec/Tools/tok.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Password Attacks.md",
+    "CTFs/Support.md",
+    "Dev, ICT & Cybersec/Tools/htmlq.md",
+    "Dev, ICT & Cybersec/Tools/attachments/Burpsuite-REST.png",
+    "test-link/test.txt",
+    "test-link",
+    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9/000185e9.jadxmd",
+    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9/000185e9.java",
+    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9",
+    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9",
+    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources",
+    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/names-map",
+    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata",
+    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/code-version",
+    "VR/Targets/SicuraNext/challenge-1/attachments/sql-injection-auth-bypass.png",
+    "VR/Targets/SicuraNext/challenge-1/attachments/semgrep-1.png",
+    "VR/Targets/SicuraNext/challenge-1/attachments/md5.png",
+    "VR/Targets/SicuraNext/challenge-1/attachments/hash-identifier.png",
+    "VR/Targets/SicuraNext/challenge-1/attachments/hash-id.png",
+    "VR/Targets/SicuraNext/challenge-1/attachments/cracked-passwords.png",
+    "VR/Targets/SicuraNext/challenge-1/attachments/boolean-based-sql-injection-2.png",
+    "VR/Targets/SicuraNext/challenge-1/attachments/boolean-based-sql-injection-1.png",
+    "VR/Targets/SicuraNext/challenge-2/attachments/sql-injection-haproxy-1.png",
+    "VR/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it.canvas",
+    "VR/Targets/uisp.it/areariservata2.uisp.it/areariservata2.uisp.it.canvas",
+    "VR/Targets/Woox/Woox R4040/Woox R4040.canvas",
+    "VR/Targets/SicuraNext/challenge-1/challenge-1.canvas",
+    "VR/Targets/SicuraNext/challenge-2/challenge-2.canvas",
+    "VR/Targets/opencart/OpenCart-4.canvas",
+    "VR/Targets/opencart/OpenCart 4.0.2.3.canvas",
+    "VR/Targets/mistermagorium.com/mistermagorium.com.canvas",
+    "VR/Targets/SociableKit/www.sociablekit.com.canvas",
+    "CTFs/_CTF-dashboard.canvas"
   ]
 }
