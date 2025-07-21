@@ -5,7 +5,7 @@
   "triggerOnLoad": false,
   "isSyncing": false,
   "lastSyncFailed": false,
-  "lastSavedStatusID": 21175210,
+  "lastSavedStatusID": 21273453,
   "currentSyncStatusID": 0,
   "refreshBooks": false,
   "booksToRefresh": [
@@ -544,7 +544,8 @@
     "Readwise/Articles/sonarsource.com - Double Dash, Double Trouble A Subtle SQL Injection Flaw.md": "52369290",
     "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-06-09.md": "52369624",
     "Readwise/Articles/Horizon3.ai - Vulnerable vs. Exploitable Why Understanding the Difference Matters to Your Security Posture.md": "53034561",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-06-30.md": "53172556"
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-06-30.md": "53172556",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-07-07.md": "53522792"
   },
   "reimportShowConfirmation": true
 }
