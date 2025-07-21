@@ -1,0 +1,1 @@
+{"path":"Dev, ICT & Cybersec/Web & Network Hacking/attachments/ESI-injection.png","text":"@ Get /xphp?x=<estinclude src=\"http:/ fevil com”/> @ Get /xphpx=<esi... (® Return x.php and evil.com | (3 Return x.php with o ESltag in DOM = (® Return evil.com (@) ESItags processed Get http://evil.com","libVersion":"0.5.0","langs":"eng"}

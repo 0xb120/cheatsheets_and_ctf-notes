@@ -1,0 +1,1 @@
+{"path":"zzz_res/attachments/aligned-stack.png","text":"(gdb) x/8wx $esp indexof execve() Fake RET address ~ Address of /bin/sh 2nd argument 0 oxbffffcsc: 0x08048c0C 0x41414141 oxb7b63bf ) oxbffffceéc: 0X00000000 (XYL ELL) oxb7ff1040 0X00000004 (gdb) si 3rd argument 0","libVersion":"0.5.0","langs":"eng"}

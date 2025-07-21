@@ -1,0 +1,1 @@
+{"path":"zzz_res/attachments/PLT2.png","text":"Function Trampoline mov edi, @x400624 (PLT — P.rocedure [EN U CO[CHET] ()] call j_puts ——— > jmp [ds:puts@GOT] Fill this table when we launch the Program: Function Name Address in libC puts() 0x7fba918f728 exit() 0x7fba919c30a","libVersion":"0.5.0","langs":"eng"}

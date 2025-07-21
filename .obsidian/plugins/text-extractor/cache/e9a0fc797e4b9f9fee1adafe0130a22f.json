@@ -1,0 +1,1 @@
+{"path":"Readwise/Articles/attachments/tokenizer-vs-parser.png","text":"©$: go run parser.go '<h2><textarea>asdf’ ' $: go run tokenizer.go '<h2><textarea>asdf’ Tag: html Tag: h2 Tag: head Tag: textarea Tag: body With text: asdf Tag: h2 £ | Tag: textarea With text: asdf s: 0","libVersion":"0.5.0","langs":"eng"}

@@ -1,0 +1,1 @@
+{"path":"Readwise/Articles/attachments/livedomng-2.png","text":"Enter HTML markup below and compare how it is parsed by various parsers and sanitizers. <svg> <textarea> <script>alert(1)</script> </textarea> </svg> DOMParser #document <html html> <html head /> <html body> <svg svg> <svg textarea> <svg script> #text: \"alert(1)\"","libVersion":"0.5.0","langs":"eng"}

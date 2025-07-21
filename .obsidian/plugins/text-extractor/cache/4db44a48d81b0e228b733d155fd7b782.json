@@ -1,0 +1,1 @@
+{"path":"zzz_res/attachments/Pasted_image_20210521191607.png","text":"1 HTTP/1.1 201 Created 2 Connection: close 3 Date: Fri, 21 May 2021 17:22:00 GMT. 4 server: Microsoft-II5/6.0 S MicrosoftofficehebServer: 5.0_Pub & X-Powered-By: ASP.NET 7 Location: http://10.10.10.15/aoutis.aspx & Content-Type: text/xnl 5 Content-Length: 0O 10 1","libVersion":"0.5.0","langs":"eng"}

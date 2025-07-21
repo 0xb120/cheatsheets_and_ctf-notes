@@ -1,0 +1,1 @@
+{"path":"Readwise/Articles/attachments/wordpress-request-flow.png","text":"Front-End Request (Rewrite API) index.php — wp-blog-header.php — wp-load.php —» REST API Request T Default__y. WP-admin/index.php B e ‘Admin Request AJAX T ‘wp-admin/admin-ajax.php","libVersion":"0.5.0","langs":"eng"}

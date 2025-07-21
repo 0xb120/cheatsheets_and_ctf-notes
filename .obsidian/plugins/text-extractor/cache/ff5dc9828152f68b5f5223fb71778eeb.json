@@ -1,0 +1,1 @@
+{"path":"zzz_res/attachments/CORS1.png","text":"robust-website.com GET /data HTTP/1.1 Host: robust-website.com Origin : https://normal-website.com HTTP/1.1 200 OK Access-Control-Allow-Origin: https://normal-website.com robust-website.com","libVersion":"0.5.0","langs":"eng"}

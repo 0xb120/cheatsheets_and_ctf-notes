@@ -1,0 +1,1 @@
+{"path":"Readwise/Tweets/attachments/os-path-join-bug.png","text":"= + mport os STDIN path = \"test\" t for the prog t print(os.path. join(os.getcud(), \"public’, “uploads’, path)) path = \" /etc/hosts\" print(os. path. join(os.getcud(), \"public’, “uploads”, path)) Output: /public/uploads/test /etc/hosts","libVersion":"0.5.0","langs":"eng"}

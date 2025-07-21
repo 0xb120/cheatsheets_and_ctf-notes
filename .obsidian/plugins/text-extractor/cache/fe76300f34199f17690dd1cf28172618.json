@@ -1,0 +1,1 @@
+{"path":"Dev, ICT & Cybersec/Dev, scripting & OS/attachments/HTML-1.png","text":"Enter HTML markup below and compare how it is parsed by various parsers and sanitizers. <div><a alt=\"</div><img src=x onerror=alert(1)>\"> DOMParser #document <html html> <html head /> <html body> <html div> <html a alt=\"</div><img src=x onerror=alert(1)>\" />","libVersion":"0.5.0","langs":"eng"}
