@@ -5,14 +5,14 @@ URL: https://github.com/tmux/tmux/wiki
 
 ### Tmux parameters
 
-| Command | Description |
-| --- | --- |
-| tmux ls | List all running sessions |
-| tmux attach -t <number> | Attach the <number> session |
-| tmux a #<name> | Attach the <name> session |
-| tmux kill-session #<name> | Kill the <name> session |
-| tmux new -s <name> | Give a name to the new created session |
-| tmux rename-session -t <number> <new_name> | Rename the session <number> to <new_name> |
+| Command                                      | Description                               |
+| -------------------------------------------- | ----------------------------------------- |
+| `tmux ls`                                    | List all running sessions                 |
+| `tmux attach -t <number>`                    | Attach the <number> session               |
+| `tmux a #<name>`                             | Attach the <name> session                 |
+| `tmux kill-session #<name>`                  | Kill the <name> session                   |
+| `tmux new -s <name>`                         | Give a name to the new created session    |
+| `tmux rename-session -t <number> <new_name>` | Rename the session <number> to <new_name> |
 
 ### Traditional Mode:
 

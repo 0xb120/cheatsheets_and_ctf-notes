@@ -49,22 +49,13 @@ Reference: https://security.humanativaspa.it/tag/montoya-api/
 
 # Useful extensions
 
-## Traffic Auditor
-
-### Paramalyzer 🔝
-
-This extension can improve efficiency of manual parameter analysis for web penetration tests of either complex or numerous applications. This can assist in tasks such as identifying sensitive data, identifying hash algorithms, decoding parameters, and determining which parameters are reflected in the response.
-
-This extension performs an in-depth and intelligent parameter analysis of all in-scope Burp traffic. Results are displayed in an interactive table and can be sent directly to other Burp tools such as Repeater.
-
-See the doc: https://jgillam.github.io/burp-paramalyzer/
-
-![](attachments/Burpsuite-paramalyzer.png)
+## Automatic Traffic Auditor
 
 ### Highlighter and extractor 🔝
 
 >[!warning]
 >This is a very heavy plugin! Run it with few regex or when HTTP responses are not huge!
+>If this plugin does not work, you can fallback on [Sensitive Discoverer](Burpsuite.md#Sensitive%20Discoverer) and trigger regex research on command. 
 
 By utilizing **multi-engine** customized regular expressions, HaE can accurately match and process HTTP requests and response messages (including WebSocket), effectively tagging and extracting information from successfully matched content. This enhances the **efficiency of vulnerability and data analysis** in the field of cybersecurity (data security).
 
@@ -87,19 +78,6 @@ See more details here: https://www.yeswehack.com/learn-bug-bounty/pimpmyburp-7-h
 
 ![](attachments/Burpsuite-hae1.png)
 ![](attachments/Burpsuite-hae2.png)
-
-### Hunt Scanner 🔝
-
-Despite the name, Hunt Scanner doesn't really "scan" anything. Instead it monitors requests as you explore the application, tracking interesting parameter names, linking them to *potential* vulns. You can't test everything, but you can prioritize what you do test!
-
->[!tip]
->Hunt Scanner remember the history and parameters scanned previously, thus it can result quite heavy when opening burp! Remember to clean it!
-
-### Reflected Parameters 🔝
-
-Monitors traffic and looks for request parameter values (longer than 3 characters) that are reflected in the response. **Launch active scans against those parameters** from the apposite tab.
-
-![|700](../../zzz_res/attachments/reflected-parameters.png)
 
 ### EsPReSSO 🔝
 
@@ -135,19 +113,13 @@ Supported Protocols:
 - View and edit SAML
 - View JSON and JSON Web Token (JWT)
 
-### Sensitive Discoverer
 
-SensitiveDiscoverer is a Burp Suite extension to scan for particular pattern or file extensions inside HTTP messages. With this extension you can automatically search for sensitive strings in HTTP messages. It uses a list of Regular Expressions and File Extensions to match for in each message. The plugin is available with a pre-defined set of Regular Expression and File Extensions, but you can also add your custom lists.
+### Reflected Parameters 🔝
 
-Features:
-- Multithreaded scan of messages
-- Pre-defined set of regex
-- Many filters to skip irrelevant messages
-- Customizable regexes lists
-- Import regexes from CSV/JSON files
-- Export results to CSV/JSON files
+Monitors traffic and looks for request parameter values (longer than 3 characters) that are reflected in the response. **Launch active scans against those parameters** from the apposite tab.
 
-![](attachments/sensitive-discoverer.png)
+![|700](../../zzz_res/attachments/reflected-parameters.png)
+
 ### Retire.js 🔝
 
 Integrates Burp with the Retire.js repository to find vulnerable JavaScript libraries. It passively looks at JavaScript files loaded and identifies those which are vulnerable.
@@ -208,6 +180,40 @@ This extension checks for usage of HTML5 features that have potential security r
 
 ![|500](../../zzz_res/attachments/html5-auditor.png)
 
+## Manual traffic auditor
+
+### Paramalyzer 🔝
+
+This extension can improve efficiency of manual parameter analysis for web penetration tests of either complex or numerous applications. This can assist in tasks such as identifying sensitive data, identifying hash algorithms, decoding parameters, and determining which parameters are reflected in the response.
+
+This extension performs an in-depth and intelligent parameter analysis of all in-scope Burp traffic. Results are displayed in an interactive table and can be sent directly to other Burp tools such as Repeater.
+
+See the doc: https://jgillam.github.io/burp-paramalyzer/
+
+![](attachments/Burpsuite-paramalyzer.png)
+
+### Sensitive Discoverer
+
+SensitiveDiscoverer is a Burp Suite extension to scan for particular pattern or file extensions inside HTTP messages. With this extension you can automatically search for sensitive strings in HTTP messages. It uses a list of Regular Expressions and File Extensions to match for in each message. The plugin is available with a pre-defined set of Regular Expression and File Extensions, but you can also add your custom lists.
+
+Features:
+- Multithreaded scan of messages
+- Pre-defined set of regex
+- Many filters to skip irrelevant messages
+- Customizable regexes lists
+- Import regexes from CSV/JSON files
+- Export results to CSV/JSON files
+
+![](attachments/sensitive-discoverer.png)
+
+### Hunt Scanner 🔝
+
+Despite the name, Hunt Scanner doesn't really "scan" anything. Instead it monitors requests as you explore the application, tracking interesting parameter names, linking them to *potential* vulns. You can't test everything, but you can prioritize what you do test!
+
+>[!tip]
+>Hunt Scanner automatically imports proxy history on startup, thus it can result quite heavy when opening burp! Remember to disable the option!
+
+![](attachments/Burpsuite-HUNT.png)
 
 ## Active scanner enhancement
 
@@ -709,7 +715,7 @@ A comprehensive OS command injection payload generator. This extension is a cust
 
 ### Agartha 🔝
 
-**Agartha**, specializes in advance payload generation and access control assessment. It adeptly identifies vulnerabilities related to injection attacks, and authentication/authorization issues. The dynamic payload generator crafts extensive wordlists for various injection vectors, including SQL Injection, Local File Inclusion (LFI), and Remote Code Execution(RCE). Furthermore, the extension constructs a comprehensive user access matrix, revealing potential access violations and privilege escalation paths. It also assists in performing HTTP 403 bypass checks, shedding light on auth misconfigurations. Additionally, it can convert HTTP requests to JavaScript code to help digging up XSS issues more.
+**Agartha**, specializes in advance payload generation and access control assessment. Features:
 
 - **'Payload Generator'**: It dynamically constructs comprehensive wordlists for injection attacks, incorporating various encoding and escaping characters to enhance the effectiveness of security testing. These wordlists cover critical vulnerabilities such as SQL Injection, Local File Inclusion (LFI), and Remote Code Execution, making them indispensable for robust security testing.
     - **Local File Inclusion, Path Traversal** helps identifying vulnerabilities that allow attackers to access files on the server's filesystem.
