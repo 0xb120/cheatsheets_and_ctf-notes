@@ -127,7 +127,6 @@ Evading restrictions:
 - [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md)
 - [Extensible Stylesheet Language Transformations Injection (XSLT Injection)](../Web%20&%20Network%20Hacking/Extensible%20Stylesheet%20Language%20Transformations%20Injection%20(XSLT%20Injection).md)
 - [Insecure Deserialization & Object Injection](../Web%20&%20Network%20Hacking/Insecure%20Deserialization%20&%20Object%20Injection.md)
-- 
 - [Server Side Template Injection (SSTI)](../Web%20&%20Network%20Hacking/Server%20Side%20Template%20Injection%20(SSTI).md)
 - [Server-Side Includes Injection (SSI)](../Web%20&%20Network%20Hacking/Server-Side%20Includes%20Injection%20(SSI).md)
 - [Edge-Side Includes Injection (ESI)](../Web%20&%20Network%20Hacking/Edge-Side%20Includes%20Injection%20(ESI).md)
@@ -138,7 +137,7 @@ Evading restrictions:
 - [OAuth 2.0](../Dev,%20scripting%20&%20OS/OAuth%202.0.md)
 - [OpenID Connect](../Web%20&%20Network%20Hacking/OpenID%20Connect.md)
 - [HTTP Request Smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md)
-- [Server-side pause-based desync](../Web%20&%20Network%20Hacking/Client-side%20desync%20attacks.md#Server-side%20pause-based%20desync)
+	- [Server-side pause-based desync](../Web%20&%20Network%20Hacking/Client-side%20desync%20attacks.md#Server-side%20pause-based%20desync)
 - [Type Juggling (aka type confusion)](../Web%20&%20Network%20Hacking/Type%20Juggling%20(aka%20type%20confusion).md)
 - [Mass Assignment](../Web%20&%20Network%20Hacking/Mass%20Assignment.md)
 - [GraphQL vulnerabilities](../Web%20&%20Network%20Hacking/GraphQL%20vulnerabilities.md)
@@ -176,6 +175,8 @@ Evading restrictions:
 - [Browser-powered request smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md#Browser-powered%20request%20smuggling)
 - [Fetch Diversion](../Web%20&%20Network%20Hacking/Fetch%20Diversion.md)
 - [ReDoS](../Web%20&%20Network%20Hacking/ReDoS.md)
+- [Client-side desync](../Web%20&%20Network%20Hacking/Client-side%20desync%20attacks.md)
+- [Client-side pause-based desync](../Web%20&%20Network%20Hacking/Pause-based%20desync%20attacks.md#Client-side%20pause-based%20desync)
 
 ## API-specific attacks
 

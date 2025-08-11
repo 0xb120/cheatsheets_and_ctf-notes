@@ -329,6 +329,9 @@ Signing key:
 # Tools
 
 - [https://github.com/ticarpi/jwt_tool](https://github.com/ticarpi/jwt_tool)
-- [JWT Editor](https://portswigger.net/bappstore/26aaa5ded2f74beea19e2ed8345a93dd)
-- [JSON Web Tokens](https://portswigger.net/bappstore/f923cbf91698420890354c1d8958fee6)
+- [JWT Editor ⭐](../Tools/Burpsuite.md#JWT%20Editor%20⭐)
+- [JSON Web Tokens](../Tools/Burpsuite.md#JSON%20Web%20Tokens)
 - [JSON Web Token Attacker](https://portswigger.net/bappstore/82d6c60490b540369d6d5d01822bdf61)
+- [JWTAuditor](https://jwtauditor.com/) (online)
+- [JWTLens](https://jwtlens.netlify.app/) (online)
+- [xjwt.io](https://xjwt.io/) (online)

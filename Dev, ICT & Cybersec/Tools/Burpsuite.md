@@ -49,13 +49,16 @@ Reference: https://security.humanativaspa.it/tag/montoya-api/
 
 # Useful extensions
 
+✅ = Enabled by default in my setup
+⭐ = Tools I really like and use depending on the situation  
+
 ## Automatic Traffic Auditor
 
-### Highlighter and extractor 🔝
+### Highlighter and extractor ✅ 
 
 >[!warning]
 >This is a very heavy plugin! Run it with few regex or when HTTP responses are not huge!
->If this plugin does not work, you can fallback on [Sensitive Discoverer](Burpsuite.md#Sensitive%20Discoverer) and trigger regex research on command. 
+>If this plugin does not work, you can fallback on [Sensitive Discoverer ✅](Burpsuite.md#Sensitive%20Discoverer%20✅) and trigger regex research on command. 
 
 By utilizing **multi-engine** customized regular expressions, HaE can accurately match and process HTTP requests and response messages (including WebSocket), effectively tagging and extracting information from successfully matched content. This enhances the **efficiency of vulnerability and data analysis** in the field of cybersecurity (data security).
 
@@ -79,7 +82,7 @@ See more details here: https://www.yeswehack.com/learn-bug-bounty/pimpmyburp-7-h
 ![](attachments/Burpsuite-hae1.png)
 ![](attachments/Burpsuite-hae2.png)
 
-### EsPReSSO 🔝
+### EsPReSSO ⭐
 
 This extension processes and recognizes single sign-on protocols.
 
@@ -114,32 +117,49 @@ Supported Protocols:
 - View JSON and JSON Web Token (JWT)
 
 
-### Reflected Parameters 🔝
+### Reflected Parameters ✅
 
 Monitors traffic and looks for request parameter values (longer than 3 characters) that are reflected in the response. **Launch active scans against those parameters** from the apposite tab.
 
 ![|700](../../zzz_res/attachments/reflected-parameters.png)
 
-### Retire.js 🔝
+### Retire.js ✅
 
 Integrates Burp with the Retire.js repository to find vulnerable JavaScript libraries. It passively looks at JavaScript files loaded and identifies those which are vulnerable.
 
 ![|500](../../zzz_res/attachments/retire-js.png)
 
-### Software Vulnerability Scanner
+### Software Vulnerability Scanner ✅
 
-Scans for vulnerabilities in detected software versions using the Vulners.com API. It adds a new page where you can analyze all the findings and add your custom regex to inspect for, and it also adds issues to the target page.
+Scans for vulnerabilities in detected software versions using the Vulners.com API. It adds a new page where you can analyze all the findings and add your **custom regex** to inspect for, and it also adds issues to the target page.
+
+If for some reason it does not work, you can fallback on [Software Version Reporter ✅](Burpsuite.md#Software%20Version%20Reporter%20✅) or [Sensitive Discoverer ✅](Burpsuite.md#Sensitive%20Discoverer%20✅) importing the same regexes.
 
 ![|500](../../zzz_res/attachments/software-vuln-scanner.png)
 
-### Software Version Reporter 🔝
+### Software Version Reporter ✅
 
 Passively detects server software version numbers during scanning, spidering etc. It summarizes all the findings within a dedicated tab but it also generates issues within the Target tab.
+
+Rules can be customized using custom regexes.
+If for some reason it does not work, you can fallback on [Sensitive Discoverer ✅](Burpsuite.md#Sensitive%20Discoverer%20✅) importing the same regexes.
 
 ![|500](../../zzz_res/attachments/software-version-reporter.png)
 ![|500](../../zzz_res/attachments/software-version-reporter2.png)
 
-### JS Miner 🔝
+### Error Message Checks ✅
+
+This extension passively reports detailed server error messages. You can configure arbitrary match results from the apposite tab.
+
+Rules can be customized using custom regexes.
+If for some reason it does not work, you can fallback on [Sensitive Discoverer ✅](Burpsuite.md#Sensitive%20Discoverer%20✅) importing the same regexes.
+
+![](../../zzz_res/attachments/error-message-checks.png)
+
+### JS Miner
+
+>[!info]
+>Proned to false positives
 
 Find interesting stuff inside static files, like secrets, credentials, subdomains, API endpoint, etc. It **can be used both passively (default) or actively** (through the "Extensions" menu).
 
@@ -152,13 +172,7 @@ This extension compares JavaScript files with each other to detect dynamically g
 To trigger the extension, simply launch a passive scan of your JavaScript files that you have requested as authenticated user. Despite being a passive scan, the extension will generate one or sometimes two request per script without cookies to get the non-authenticated version of the script.
 
 If the same script is found to contain differing content, the extension will report an issue in the Target tab.
-### Error Message Checks
-
-This extension passively reports detailed server error messages. You can configure arbitrary match results from the apposite tab.
-
-![](../../zzz_res/attachments/error-message-checks.png)
-
-### WAFDetect 🔝
+### WAFDetect
 
 This extension passively detects the presence of a web application firewall (WAF) from HTTP responses.
 
@@ -182,7 +196,7 @@ This extension checks for usage of HTML5 features that have potential security r
 
 ## Manual traffic auditor
 
-### Paramalyzer 🔝
+### Paramalyzer ✅
 
 This extension can improve efficiency of manual parameter analysis for web penetration tests of either complex or numerous applications. This can assist in tasks such as identifying sensitive data, identifying hash algorithms, decoding parameters, and determining which parameters are reflected in the response.
 
@@ -192,7 +206,16 @@ See the doc: https://jgillam.github.io/burp-paramalyzer/
 
 ![](attachments/Burpsuite-paramalyzer.png)
 
-### Sensitive Discoverer
+### Hunt Scanner ✅
+
+Despite the name, Hunt Scanner doesn't really "scan" anything. Instead it monitors requests as you explore the application, tracking interesting parameter names, linking them to *potential* vulns. You can't test everything, but you can prioritize what you do test!
+
+>[!tip]
+>Hunt Scanner automatically imports proxy history on startup, thus it can result quite heavy when opening burp! Remember to disable the option!
+
+![](attachments/Burpsuite-HUNT.png)
+
+### Sensitive Discoverer ✅
 
 SensitiveDiscoverer is a Burp Suite extension to scan for particular pattern or file extensions inside HTTP messages. With this extension you can automatically search for sensitive strings in HTTP messages. It uses a list of Regular Expressions and File Extensions to match for in each message. The plugin is available with a pre-defined set of Regular Expression and File Extensions, but you can also add your custom lists.
 
@@ -206,18 +229,9 @@ Features:
 
 ![](attachments/sensitive-discoverer.png)
 
-### Hunt Scanner 🔝
-
-Despite the name, Hunt Scanner doesn't really "scan" anything. Instead it monitors requests as you explore the application, tracking interesting parameter names, linking them to *potential* vulns. You can't test everything, but you can prioritize what you do test!
-
->[!tip]
->Hunt Scanner automatically imports proxy history on startup, thus it can result quite heavy when opening burp! Remember to disable the option!
-
-![](attachments/Burpsuite-HUNT.png)
-
 ## Active scanner enhancement
 
-### Active Scan++ 🔝
+### Active Scan++ ✅
 
 ActiveScan++ extends Burp Suite's **active and passive scanning capabilities** with host header attacks, edge side includes, XML attacks, input transofmrations, blind code injection and CVEs. To invoke these checks, **just run a normal active scan**.
 
@@ -225,14 +239,14 @@ ActiveScan++ extends Burp Suite's **active and passive scanning capabilities** w
 
 Adds more than 80+ unique security test cases and new strategies to discover different kind of J2EE vulnerabilities.
 
-### Backslash Powered Scanning 🔝
+### Backslash Powered Scanning ✅
 
 This extension **complements Burp's active scanner** by using a novel approach capable of finding and confirming both known and unknown classes of server-side injection vulnerabilities. Evolved from classic manual techniques, this approach reaps many of the benefits of manual testing including casual WAF evasion, a tiny network footprint, and flexibility in the face of input filtering. Run the scan from the `Extension > Backslash Powered Scanner > diff-scan`
 
 ![|750](../../zzz_res/attachments/backslash-powered-scanner.png)
 ![](../../zzz_res/attachments/backslash-powered-scanner2.png)
 
-### URL Fuzzer - 401/403 Bypass 🔝
+### URL Fuzzer - 401/403 Bypass ✅
 
 Fuzz URLs with all available ASCII characters to identify parser inconsistencies. Based on the work of Rafael da Costa Santos (https://rafa.hashnode.dev/exploiting-http-parsers-inconsistencies) and Orange Tsai (https://youtu.be/28xWcRegncw?si=t6BcScfQsz-2wFap).
 Usage: Run an active scan against a target, and view results as issues.
@@ -259,7 +273,7 @@ The extension allows the user to _discover and exploit_ Java Deserialization V
 
 ![|600](../../zzz_res/attachments/java-deserializarion-scanner.png)
 
-### Freddy, Deserialization Bug Finder (Java and .NET) 🔝
+### Freddy, Deserialization Bug Finder (Java and .NET) ⭐
 
 Helps with detecting and exploiting serialization libraries/APIs **with passive and active scans**.
 
@@ -282,7 +296,7 @@ Supported target: **Java** and **.NET**
 
 This extension provides a way to discover NoSQL injection vulnerabilities. It **adds Passive and Active Scanner checks**.
 
-### NGINX Alias Traversal
+### NGINX Alias Traversal ⭐
 
 Detects NGINX alias traversal due to misconfiguration. The extension implements an **active scanner check**. Simply run a new scan, preferably with an "Audit checks extensions only" configuration, on static resources identified via Burp's crawler.
 
@@ -296,14 +310,14 @@ Read [Hunting for Nginx Alias Traversals in the wild](https://labs.hakaioffsec.c
 
 ![|900](../../zzz_res/attachments/IIS-tilde-scanner.png)
 
-### Web Cache Deception Scanner
+### Web Cache Deception Scanner ✅
 
 This extension tests applications for the Web Cache Deception vulnerability.
 It adds a new Active Scanner check. Additionally, a context menu item is available to perform a targeted test.
 
 ## Fuzzing & Tiny scan
 
-### 403 Bypasser 🔝
+### 403 Bypasser ✅
 
 Tries different bypass techniques, including method switching, `..;` permutations, different headers, etc. 
 The scan can be started from the `Extensions > 403 Bypasser` menu.
@@ -311,13 +325,13 @@ The scan can be started from the `Extensions > 403 Bypasser` menu.
 ![](../../zzz_res/attachments/403-bypasser1.png)
 ![](../../zzz_res/attachments/403-bypasser2.png)
 
-### Param Miner 🔝
+### Param Miner ✅
 
 Identifies hidden, unlinked parameters. It's particularly useful for finding web cache poisoning vulnerabilities.
 
 ![|900](../../zzz_res/attachments/param-miner.png)
 
-### Backup Finder
+### Backup Finder ⭐
 
 This extension will find all backup, old and temp files in this scenario:
 
@@ -334,13 +348,13 @@ Quick Start
 2. In "backupFinder -> Finder -> options" tab, apply your configurations.
 3. Go to "backupFinder -> Finder -> Finder" tab and click on "start" button.
 
-### HTTP Request Smuggler 🔝
+### HTTP Request Smuggler ✅
 
 Supports scanning for Request Smuggling vulnerabilities, and also aids exploitation by handling cumbersome offset-tweaking for you.
 
 ![|900](../../zzz_res/attachments/request-smuggler.png)
 
-### Server-Side Prototype Pollution Scanner
+### Server-Side Prototype Pollution Scanner ⭐
 
 To use this extension simply right-click on a request, go to the extensions menu then server side prototype pollution and choose one of the scan options:
 - Body scan - Scans JSON bodies with the techniques
@@ -365,7 +379,7 @@ Multiple techniques are used to detect prototype pollution and are described in 
 - Reflection
 - Non reflected property
 
-### Collaborator Everywhere 🔝
+### Collaborator Everywhere ⭐
 
 Augments your in-scope proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator.
 
@@ -381,7 +395,7 @@ Features
 
 This burp extension helps to find host header injection vulnerabilities by actively testing a set of injection types. A scan issue is created if an injection was successful.
 
-### Upload Scanner 🔝
+### Upload Scanner ⭐
 
 Implements most attacks that seem feasible for file uploads. The extension is testing various attacks and is divided into modules. Each module handles several attacks of the same category.
 
@@ -412,7 +426,7 @@ Used to passively scan for [Cross-Site Request Forgery (CSRF)](../Web%20&%20Netw
 ![|800](../../zzz_res/attachments/CSRF-scanner.png)
 ![|500](../../zzz_res/attachments/CSRF-scanner2.png)
 
-### Additional CSRF Checks 🔝
+### Additional CSRF Checks ⭐
 
 This extension helps find weak CSRF-protection that can be bypassed. For example, content type based protection for API (Rest API, GraphQL API, etc) or CSRF-protection based on obscure data formats (binary format, etc) are known to be weak. Some tricks to bypass CSRF-protection were presented at [ZeroNights 2017 conference](https://2017.zeronights.org/report/tricks-bypassing-csrf-protection/).
 
@@ -457,14 +471,14 @@ Give to the extension the cookies of a low privileged user and navigate the webs
 
 ![|900](../../zzz_res/attachments/autorize.png)
 
-### Auth Analyzer 🔝
+### Auth Analyzer ⭐
 
 Helps you to find authorization bugs. Just navigate through the web application with a high privileged user and let the Auth Analyzer repeat your requests for any defined non-privileged user. With the possibility to define Parameters the Auth Analyzer is able to extract and replace parameter values automatically.
 
 ![|900](../../zzz_res/attachments/auth-analyzer.png)
 
 
-### [Agartha 🔝](Burpsuite.md#Agartha%20🔝)
+### [Agartha ✅](Burpsuite.md#Agartha%20✅)
 
 See agartha
 
@@ -477,7 +491,7 @@ JWT4B lets you decode and manipulate JSON web tokens on the fly, check their val
 ![|800](../../zzz_res/attachments/json-web-tokens1.png)
 ![|800](../../zzz_res/attachments/json-web-tokens2.png)
 
-### JWT Editor 🔝
+### JWT Editor ⭐
 
 Extension and standalone application for editing, signing, verifying, encrypting and decrypting JSON Web Tokens. Automatic detection and in-line editing of JWTs within HTTP requests/responses, signing and encrypting of tokens and automation of several well-known attacks against JWT implementations.
 
@@ -485,7 +499,7 @@ Extension and standalone application for editing, signing, verifying, encrypting
 ![JKWS_injection_2|800](../../zzz_res/attachments/JKWS_injection_2.png)
 ![JKWS_injection_3|800](../../zzz_res/attachments/JKWS_injection_3.png)
 
-### JQ 🔝
+### JQ ✅
 
 Burpsuite integration of [jq](jq.md)
 ### GraphQL Raider
@@ -495,7 +509,7 @@ The gql query and variables are extracted from the unreadable json body and disp
 ![](../../zzz_res/attachments/graphql-rider1.png)
 ![](../../zzz_res/attachments/graphql-rider2.png)
 
-### InQL Introspection GraphQL Scanner 🔝
+### InQL Introspection GraphQL Scanner ⭐
 
 A full featured framework for enumerating and testing GraphQL.
 
@@ -505,7 +519,7 @@ A full featured framework for enumerating and testing GraphQL.
 
 ## Quality of life improvements and feature enhancements
 
-### Shadow Repeater 🔝
+### Shadow Repeater ✅
 
 [Shadow Repeater: AI-Enhanced Manual Testing](../../Readwise/Articles/PortSwigger%20Research%20-%20Shadow%20Repeater%20AI-Enhanced%20Manual%20Testing.md): a plugin which enhances your manual testing _with AI-powered, fully automatic variation testing_. Simply use Burp Repeater as you normally would, and behind the scenes Shadow Repeater will monitor your attacks, try permutations, and report any discoveries via Organizer.
 
@@ -529,7 +543,7 @@ AutoRepeater provides the following features:
 - Toggled activation
 - "Send to AutoRepeater" from other Burp Suite tools
 
-### Turbo Intruder 🔝
+### Turbo Intruder ✅
 
 Extension for sending large numbers of HTTP requests and analyzing the results. It's intended to complement Burp Intruder by handling attacks that require extreme speed or complexity.
 
@@ -557,7 +571,7 @@ def queueRequests(target, wordlists):
     engine.openGate('1')
 ```
 
-### Content Type Converter 🔝
+### Content Type Converter ✅
 
 Converts data within JSON2XML, XML2JSON, HTTP2JSON. HTTP2XML
 
@@ -573,13 +587,13 @@ https://github.com/gh0stkey/JSONandHTTPP
 
 Beautifies .NET requests to make the body parameters more human readable. Built-in parameters like \_\_VIEWSTATE have their values masked. Form field names have the auto-generated part of their name removed.
 
-### Hackvector 🔝
+### Hackvector ✅
 
 tag-based conversion tool that supports various escapes and encodings.
 
 ![](../../zzz_res/attachments/hackvector.png)
 
-### SignSaboteur
+### SignSaboteur ⭐
 
 SignSaboteur [^SignSaboteur] is a Burp Suite extension for editing, signing, verifying, and attacking signed tokens. It supports different types of tokens, including Django, Flask, and Express.
 
@@ -587,11 +601,11 @@ The extension provides automatic detection and in-line editing of tokens within 
 
 [^SignSaboteur]: [Introducing SignSaboteur: Forge Signed Web Tokens With Ease](../../Readwise/Articles/PortSwigger%20Research%20-%20Introducing%20SignSaboteur%20Forge%20Signed%20Web%20Tokens%20With%20Ease.md), PortSwigger Research
 
-### Copy As Python-Requests 🔝
+### Copy As Python-Requests ✅
 
 This extension copies selected request(s) as Python-Requests invocations.
 
-### Copy As a FFUF command 🔝
+### Copy As a FFUF command
 
 This extension is for FFUF command generation.
 Usage
@@ -605,13 +619,13 @@ Captures response times for requests made by all Burp tools. It could be useful 
 
 ![|900](../../zzz_res/attachments/request-timer.png)
 
-### Response Grepper 🔝
+### Response Grepper ✅
 
 This extension will auto-extract and display values from HTTP Response bodies based on a Regular Expression, similarly to the "Grep - Extract" feature in Burp Intruder but will work on any Responses. This can be helpful when trying to perform manual reconnaissance or building an injection in Burp Repeater, without having to scroll through multiple matches in the Response search results.
 
 ![](attachments/response-grepper.png)
 
-### HTTP Mock
+### HTTP Mock ⭐
 
 This Burp extension provides mock responses that can be customized, based on the real ones.
 Using this extension it is possible to test how web frontend and mobile clients react to different responses, without making any changes to the backend.
@@ -620,7 +634,9 @@ It differs from intercepting responses mainly in two ways:
 - The original request is not sent to the server anymore
 - It provides a more convenient and comprehensive solution to modifying responses
 
-### Scalpel 🔝
+More details here: https://polansky.co/projects/burphttpmock/
+
+### Scalpel ⭐
 
 [Scalpel](../../Readwise/Articles/Noël%20Maccary%20-%20Scalpel%20A%20Burp%20Suite%20Extension%20to%20Edit%20HTTP%20Traffic,%20in%20Python%203.md) is a **Burp extension** for intercepting and rewriting HTTP traffic, either on the fly or in the Repeater, using Python 3 scripts. Basically is a Match-and-Replace feature under steroids.
 
@@ -632,7 +648,7 @@ Install it from GitHub: https://github.com/ambionics/scalpel
 Documentation: https://ambionics.github.io/scalpel/public/
 Examples: https://github.com/ambionics/scalpel/tree/main/scalpel/src/main/resources/python3-10/samples
 
-### Piper 🔝
+### Piper ✅
 
 Piper makes integrating external tools into Burp easier.
 In true Unix fashion, small things that do one thing and do it well can be connected together like building blocks to aid quick experimentation.
@@ -641,13 +657,13 @@ Extending message editors for new formats or integrating a better comparator/dif
 
 Useful configs can be shared using the the textual YAML format, the defaults already contain some simple examples.
 
-### Copier 🔝
+### Copier ✅
 
 [Copier](../../Readwise/Articles/Tib3rius%20-%20My%20NEW%20Burp%20Extension%20Will%20Help%20You%20Write%20Reports!.md) is a Burp Suite extension (compatible with both Community and Professional editions) which allows users to easily copy requests and responses while making automated modifications using custom rules. [^copier]
 
 [^copier]: https://github.com/Tib3rius/Copier
 
-### Socket Sleuth
+### Socket Sleuth ⭐
 
 - WebSocket history
 - Websocket intruder
@@ -665,7 +681,7 @@ Useful configs can be shared using the the textual YAML format, the defaults alr
     - Hex encoded string (useful when working with non string payloads)
     - Regex
 
-### Magic Byte Selector
+### Magic Byte Selector ⭐
 
 Burp Suite Extension for inserting a magic byte into a request.
 
@@ -678,7 +694,7 @@ Available magic bytes:
 
 ## Databases and wordlist creation
 
-### GAP 🔝
+### GAP ✅
 
 GAP helps uncover hidden endpoints and parameters by analyzing responses and generating custom wordlists. That plus the huge number of settings make this an awesome [cewl](cewl.md)-like tool for recon!
 
@@ -697,7 +713,7 @@ CO2 includes the following modules:
 - **Masher** - Given a seed list of words and a password specification this tool will generate a fuzzy list of possible passwords. Masher will start with combining words from the provided list, then append and replace characters to build new passwords.
 - **BasicAuther** - Given a list of usernames and a list of passwords it will output proper BasicAuth strings that can then be dropped into Intruder.
 
-### Extensibility Helper 🔝
+### Extensibility Helper ✅
 
 Extensibility Helper streamlines the process of discovering and importing [BChecks](Burpsuite.md#BChecks) and [Bambdas](Burpsuite.md#Bambdas) snippets by loading them from a remote GitHub or local Git repository. Scripts can be filtered by keyword or tag and either copied to the clipboard or saved to disk for use within Burp Suite.
 
@@ -707,13 +723,13 @@ The extension adds a tab titled "Extensibility Helper", with three sub-tabs:
 - "Bambda Store" - displays available Bambdas
 - "Settings" - provides configuration options
 
-### Command Injection Attacker 🔝
+### Command Injection Attacker ✅
 
 A comprehensive OS command injection payload generator. This extension is a customizable payload generator, suitable for detecting OS command injection flaws during dynamic testing.
 
 ![|900](../../zzz_res/attachments/shelling.png)
 
-### Agartha 🔝
+### Agartha ✅
 
 **Agartha**, specializes in advance payload generation and access control assessment. Features:
 
@@ -725,7 +741,7 @@ A comprehensive OS command injection payload generator. This extension is a cust
 - **'403 Bypass'**: It aims to tackle common access restrictions, such as HTTP 403 Forbidden responses. It utilizes techniques like URL manipulation and request header modification to bypass implemented limitations.
 - **'Copy as JavaScript'**: It converts Http requests to JavaScript code for further XSS exploitation and more.
 
-### XSS Cheatsheet 🔝
+### XSS Cheatsheet ✅
 
 An extension to incorporate PortSwigger's [Cross-site scripting cheat sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet) in to Burp.
 

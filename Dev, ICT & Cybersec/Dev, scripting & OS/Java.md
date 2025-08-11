@@ -1,6 +1,18 @@
 >[!tip]
 >Java compiler is **javac** from Java JDK
 
+Manage multiple java versions and SDK using [sdkman](https://sdkman.io/):
+```bash
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+sdk install java 11.0.21-tem
+sdk use java 11.0.21-tem
+
+sdk install java 8.0.392-tem  # Install Java 8
+sdk use java 8.0.392-tem
+```
+
 # Java 101
 
 - `*.java` = java source code

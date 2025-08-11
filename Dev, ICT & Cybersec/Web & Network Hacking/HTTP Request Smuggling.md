@@ -21,6 +21,9 @@ q=smuggling
 
 Since the HTTP specification provides two different methods for specifying the length of HTTP messages, it is possible for a single message to use both methods at once, such that they conflict with each other.
 
+>[!warning]
+>You need to include the trailing sequence `\r\n\r\n` following the final `0`.
+
 ## Detecting HTTP request smuggling vulnerabilities
 
 Request smuggling attacks involve placing both the `Content-Length` header and the `Transfer-Encoding` header into a single HTTP request and manipulating these so that the front-end and back-end servers process the request differently. The exact way in which this is done depends on the behavior of the two servers:
@@ -28,6 +31,7 @@ Request smuggling attacks involve placing both the `Content-Length` header and
 -   **[CL.TE](CL.TE%20smuggling%20vulnerabilities.md)**: the front-end server uses the `Content-Length` header and the back-end server uses the `Transfer-Encoding` header.
 -   **[TE.CL](TE.CL%20smuggling%20vulnerabilities.md)**: the front-end server uses the `Transfer-Encoding` header and the back-end server uses the `Content-Length` header.
 -   **[TE.TE](TE.TE%20smuggling%20vulnerabilities.md)**: the front-end and back-end servers both support the `Transfer-Encoding` header, but one of the servers can be induced not to process it by obfuscating the header in some way.
+-   **[CL.0](CL.0%20smuggling%20vulnerabilities.md)**: Back-end servers can be persuaded to ignore the `Content-Length` header and ignore the body of incoming requests.
 
 ## Detecting HTTP/2 request smuggling vulnerabilities
 
@@ -38,25 +42,14 @@ Request smuggling attacks involve placing both the `Content-Length` header and
 
 In theory, this mechanism means there is no opportunity for an attacker to introduce the ambiguity required for request smuggling, as long as the website uses HTTP/2 end to end. In the wild, however, this is often not the case due to the widespread but dangerous practice of **[HTTP/2 downgrading](HTTP-2%20downgrading.md)**.
 
+>[!warning] Accounting for front-end rewriting
+>To split a request in the headers, you need to understand how the request is rewritten by the front-end server and account for this when adding any HTTP/1 headers manually. Otherwise, one of the requests may be missing mandatory headers.
+
 -   **[H2.CL](H2.CL%20smuggling%20vulnerabilities.md)**: the front-end servers will simply reuse `Content-Length` header's value in the resulting HTTP/1 request instead of suing it's own value
 -   **[H2.TE](H2.TE%20smuggling%20vulnerabilities.md)**: the back-end server do not strip the `Transfer-Encoding` header when downgrading requests to HTTP/1
-
----
-
-# Browser-powered request smuggling
-
-> [!tldr] Research:
-> [Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling](https://portswigger.net/research/browser-powered-desync-attacks)
-
-Browser-powered request smuggling attacks turn victim's web browser into a desync delivery platform, shifting the request smuggling frontier by **exposing single-server websites** and internal networks.
-
--   **[CL.0](CL.0%20smuggling%20vulnerabilities.md)**: Back-end servers can be persuaded to ignore the `Content-Length` header and ignore the body of incoming requests.
 -   **[H2.0](H2.0%20smuggling%20vulnerabilities.md)**: same as CL.0 when the server performs [HTTP/2 downgrading](HTTP-2%20downgrading.md)
--   **[Client-side desync attacks](Client-side%20desync%20attacks.md)**: is an attack that makes the victim's web browser desynchronize its own connection to the vulnerable website.
 
----
-
-# Exploiting HTTP & HTTP/2 Request Smuggling
+## Exploiting HTTP request smuggling
 
 - [Bypass front-end security controls](Exploiting%20HTTP%20Request%20Smuggling.md#Bypass%20front-end%20security%20controls)
 - [Revealing front-end request rewriting](Exploiting%20HTTP%20Request%20Smuggling.md#Revealing%20front-end%20request%20rewriting)
@@ -66,10 +59,34 @@ Browser-powered request smuggling attacks turn victim's web browser into a desyn
 - [Using request smuggling to turn an on-site redirect into an open redirect](Exploiting%20HTTP%20Request%20Smuggling.md#Using%20request%20smuggling%20to%20turn%20an%20on-site%20redirect%20into%20an%20open%20redirect)
 - [Using request smuggling to perform web cache poisoning](Exploiting%20HTTP%20Request%20Smuggling.md#Using%20request%20smuggling%20to%20perform%20web%20cache%20poisoning)
 - [Using request smuggling to perform web cache deception](Exploiting%20HTTP%20Request%20Smuggling.md#Using%20request%20smuggling%20to%20perform%20web%20cache%20deception)
-- [Request smuggling via CRLF injection](Exploiting%20HTTP-2%20Request%20Smuggling.md#Request%20smuggling%20via%20CRLF%20injection)
-- [Response queue poisoning](Exploiting%20HTTP%20Request%20Smuggling.md#Response%20queue%20poisoning)
-- [HTTP request tunneling](Exploiting%20HTTP-2%20Request%20Smuggling.md#HTTP%20request%20tunneling)
-- [Exploiting CL.0 & H2.0 vulnerabilities](Exploiting%20Browser-powered%20Request%20Smuggling.md#Exploiting%20CL.0%20&%20H2.0%20vulnerabilities)
+- [HTTP/2 request splitting](Exploiting%20Advanced%20Request%20Smuggling.md#HTTP/2%20request%20splitting) and [Request smuggling via CRLF injection](Exploiting%20Advanced%20Request%20Smuggling.md#Request%20smuggling%20via%20CRLF%20injection)
+	- Injecting via header names
+	- Injecting via pseudo-headers
+	- Supplying an ambiguous host
+	- Supplying an ambiguous path
+	- Injecting a full request line
+	- Injecting a URL prefix
+- [Response queue poisoning](Exploiting%20Advanced%20Request%20Smuggling.md#Response%20queue%20poisoning)
+- [HTTP request tunneling](Exploiting%20Advanced%20Request%20Smuggling.md#HTTP%20request%20tunneling): provides a way to craft high-severity exploits even when there is no connection reuse at all.
+- [Server-side pause-based desync](Pause-based%20desync%20attacks.md#Server-side%20pause-based%20desync)
+- 0.CL: attacks occur when the front-end server ignores a `Content-Length` header that the back-end server processes.
+
+---
+
+# Browser-powered request smuggling
+
+> [!tldr] Research:
+> [Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling](https://portswigger.net/research/browser-powered-desync-attacks)
+
+Browser-powered request smuggling attacks turn **victim's web browser into a desync delivery platform**, shifting the request smuggling frontier by **exposing single-server websites** and internal networks.
+
+-   **[Client-side desync attacks](Client-side%20desync%20attacks.md)** (**only HTTP/1.1**): Is an attack that makes the victim's web browser desynchronize its own connection to the vulnerable website.
+	- [Capturing other user' requests](Client-side%20desync%20attacks.md#Capturing%20other%20user'%20requests)
+	- [Client-side cache poisoning](Client-side%20desync%20attacks.md#Client-side%20cache%20poisoning)
+	- [Pause-based desync attacks](Client-side%20desync%20attacks.md#Pause-based%20desync%20attacks)
+- **[Client-side pause-based desync](Pause-based%20desync%20attacks.md#Client-side%20pause-based%20desync)**
+
+---
 
 # External researches
 
