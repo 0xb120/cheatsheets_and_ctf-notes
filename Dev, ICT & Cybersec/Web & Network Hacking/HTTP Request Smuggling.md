@@ -28,10 +28,12 @@ Since the HTTP specification provides two different methods for specifying the l
 
 Request smuggling attacks involve placing both the `Content-Length` header and the `Transfer-Encoding` header into a single HTTP request and manipulating these so that the front-end and back-end servers process the request differently. The exact way in which this is done depends on the behavior of the two servers:
 
--   **[CL.TE](CL.TE%20smuggling%20vulnerabilities.md)**: the front-end server uses the `Content-Length` header and the back-end server uses the `Transfer-Encoding` header.
--   **[TE.CL](TE.CL%20smuggling%20vulnerabilities.md)**: the front-end server uses the `Transfer-Encoding` header and the back-end server uses the `Content-Length` header.
--   **[TE.TE](TE.TE%20smuggling%20vulnerabilities.md)**: the front-end and back-end servers both support the `Transfer-Encoding` header, but one of the servers can be induced not to process it by obfuscating the header in some way.
--   **[CL.0](CL.0%20smuggling%20vulnerabilities.md)**: Back-end servers can be persuaded to ignore the `Content-Length` header and ignore the body of incoming requests.
+- **[CL.TE](CL.TE%20smuggling%20vulnerabilities.md)**: the front-end server uses the `Content-Length` header and the back-end server uses the `Transfer-Encoding` header.
+- **[TE.CL](TE.CL%20smuggling%20vulnerabilities.md)**: the front-end server uses the `Transfer-Encoding` header and the back-end server uses the `Content-Length` header.
+- **[TE.TE](TE.TE%20smuggling%20vulnerabilities.md)**: the front-end and back-end servers both support the `Transfer-Encoding` header, but one of the servers can be induced not to process it by obfuscating the header in some way.
+- **[CL.0](CL.0%20smuggling%20vulnerabilities.md)**: Back-end servers can be persuaded to ignore the `Content-Length` header and ignore the body of incoming requests.
+- **[TE.0](https://www.bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites/)**:  Back-end servers can be persuaded to ignore the `Transfer-Encoding` header and ignore the body of incoming requests.
+- **[0.CL desync attacks](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#0.CL%20desync%20attacks)**: the front-end server ignores a `Content-Length` header that the back-end server processes.
 
 ## Detecting HTTP/2 request smuggling vulnerabilities
 
@@ -47,7 +49,7 @@ In theory, this mechanism means there is no opportunity for an attacker to intro
 
 -   **[H2.CL](H2.CL%20smuggling%20vulnerabilities.md)**: the front-end servers will simply reuse `Content-Length` header's value in the resulting HTTP/1 request instead of suing it's own value
 -   **[H2.TE](H2.TE%20smuggling%20vulnerabilities.md)**: the back-end server do not strip the `Transfer-Encoding` header when downgrading requests to HTTP/1
--   **[H2.0](H2.0%20smuggling%20vulnerabilities.md)**: same as CL.0 when the server performs [HTTP/2 downgrading](HTTP-2%20downgrading.md)
+-   **[H2.0](H2.0%20smuggling%20vulnerabilities.md)**: same as [CL.0](CL.0%20smuggling%20vulnerabilities.md) when the server performs [HTTP/2 downgrading](HTTP-2%20downgrading.md)
 
 ## Exploiting HTTP request smuggling
 
@@ -69,7 +71,10 @@ In theory, this mechanism means there is no opportunity for an attacker to intro
 - [Response queue poisoning](Exploiting%20Advanced%20Request%20Smuggling.md#Response%20queue%20poisoning)
 - [HTTP request tunneling](Exploiting%20Advanced%20Request%20Smuggling.md#HTTP%20request%20tunneling): provides a way to craft high-severity exploits even when there is no connection reuse at all.
 - [Server-side pause-based desync](Pause-based%20desync%20attacks.md#Server-side%20pause-based%20desync)
-- 0.CL: attacks occur when the front-end server ignores a `Content-Length` header that the back-end server processes.
+- [0.CL desync attacks](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#0.CL%20desync%20attacks)
+	- [Converting 0.CL into CL.0 with a double-desync](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#Converting%200.CL%20into%20CL.0%20with%20a%20double-desync)
+	- [0.CL desync via vanilla Expect - T-Mobile](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#0.CL%20desync%20via%20vanilla%20Expect%20-%20T-Mobile)
+	- [0.CL desync via obfuscated Expect - Gitlab](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#0.CL%20desync%20via%20obfuscated%20Expect%20-%20Gitlab)
 
 ---
 

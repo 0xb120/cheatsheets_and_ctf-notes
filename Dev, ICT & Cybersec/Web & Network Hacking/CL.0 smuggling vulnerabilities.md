@@ -1,6 +1,6 @@
 ## CL.0 vulnerabilities
 
-Back-end servers can sometimes be persuaded to ignore the Content-Length header, which effectively means they ignore the body of incoming requests. This paves the way for request smuggling attacks that don't rely on chunked transfer encoding or [HTTP/2 downgrading](HTTP-2%20downgrading.md).
+Back-end servers can sometimes be persuaded to ignore the Content-Length header, which effectively means they ignore the body of incoming requests. This paves the way for request smuggling attacks that **don't rely on chunked transfer encoding or [HTTP/2 downgrading](HTTP-2%20downgrading.md)**.
 
 To probe for CL.0 vulnerabilities, first send a request containing another partial request in its body, then send a normal follow-up request. You can then check to see whether the response to the follow-up request was affected by the smuggled prefix.
 
@@ -88,6 +88,10 @@ GET /admin/delete?username=carlos HTTP/1.1
 Foo: xGET / HTTP/2
 Host: 0aee00c704e3b3f881c98a740074008c.web-security-academy.net     # HTTP/2 200 OK with /admin information
 ```
+
+You can also use `expect` to desync the target:
+- [CL.0 desync via vanilla Expect - Netlify CDN](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#CL.0%20desync%20via%20vanilla%20Expect%20-%20Netlify%20CDN)
+- [CL.0 desync via obfuscated Expect - Akamai CDN](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#CL.0%20desync%20via%20obfuscated%20Expect%20-%20Akamai%20CDN)
 
 # Examples
 
