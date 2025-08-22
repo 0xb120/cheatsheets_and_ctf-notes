@@ -69,7 +69,7 @@ jshell> /exit
 
 # Working with Java
 
->[!tip] Information gathering and enumeration methodology fomr other researchers
+>[!tip] Information gathering and enumeration methodology from other researchers
 >- [Security Code Audit - For Fun and Fails](https://frycos.github.io/vulns4free/2022/05/24/security-code-audit-fails.html), Frycos
 
 - Easy copy for interesting files into a custom directory:

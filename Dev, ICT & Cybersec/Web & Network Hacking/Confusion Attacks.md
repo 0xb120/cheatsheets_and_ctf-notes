@@ -13,6 +13,7 @@ Examples:
 	- [🔥 2. DocumentRoot Confusion](../../Readwise/Articles/🍊%20Orange%20Tsai%20-%20Confusion%20Attacks%20Exploiting%20Hidden%20Semantic%20Ambiguity%20in%20Apache%20HTTP%20Server!.md#🔥%202.%20DocumentRoot%20Confusion)
 	- [🔥 3. Handler Confusion](../../Readwise/Articles/🍊%20Orange%20Tsai%20-%20Confusion%20Attacks%20Exploiting%20Hidden%20Semantic%20Ambiguity%20in%20Apache%20HTTP%20Server!.md#🔥%203.%20Handler%20Confusion)
 - [Nginx/Apache Path Confusion to Auth Bypass in PAN-OS](../../Readwise/Articles/Assetnote%20Research%20-%20NginxApache%20Path%20Confusion%20to%20Auth%20Bypass%20in%20PAN-OS.md); Assetnote
+- [Alain Mowat - SonicDoor – Cracking SonicWall’s SMA 500 – SCRT Team Blog](../../Clippings/Alain%20Mowat%20-%20SonicDoor%20–%20Cracking%20SonicWall’s%20SMA%20500%20–%20SCRT%20Team%20Blog.md)
 - [Sina Kheirkhah (@SinSinology) - SonicBoom, From Stolen Tokens to Remote Shells - SonicWall SMA100](../../Readwise/Articles/Sina%20Kheirkhah%20(@SinSinology)%20-%20SonicBoom,%20From%20Stolen%20Tokens%20to%20Remote%20Shells%20-%20SonicWall%20SMA100.md)
 - [Type Juggling (aka type confusion)](Type%20Juggling%20(aka%20type%20confusion).md)
 - [Dependency confusion in CICD](../Dev,%20scripting%20&%20OS/CICD%20security.md#^cdb482)

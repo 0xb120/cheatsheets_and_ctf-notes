@@ -25,11 +25,12 @@ To build an _effective_ custom wordlist, you should gather data from as many div
 
 Web Specific:
 - [cewl](../Tools/cewl.md) [^1]
-- [tok](../Tools/tok.md) and [unfurl](../Tools/unfurl.md) (to read and parse elements from URL lists) [^3]
-- [html-tool](../Tools/html-tool.md), [htmlq](../Tools/htmlq.md) and getjswords.py [^4] (to read and parse elements from local files)
+- [tok](../Tools/tok.md) and [unfurl](../Tools/unfurl.md) (read and parse elements from lists or URL) [^3]
+- [html-tool](../Tools/html-tool.md) and [jsluice](../Tools/jsluice.md) (read and parse elements from lists or files)
+- [tok](../Tools/tok.md), [htmlq](../Tools/htmlq.md), [jsluice](../Tools/jsluice.md), and getjswords.py [^4] (to read and parse elements from local files)
 - [comb](../Tools/comb.md), [anew](../Tools/anew.md) and [wl](../Tools/wl.md) (to combine wordlists)
 - [qsreplace](../Tools/qsreplace.md) (to replace field values with placeholders)
-- undust.py (to generate lists of possible backup files)
+- [undust.py](https://github.com/t3l3machus/undust.py) (to generate lists of possible backup files)
 
 Password specific:
 - [crunch](../Tools/crunch.md)

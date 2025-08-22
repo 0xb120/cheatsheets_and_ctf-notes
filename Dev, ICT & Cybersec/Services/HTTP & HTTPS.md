@@ -16,6 +16,7 @@ aliases:
 
 There are various path you can try follow to retrieve an application source code:
 - Get it from **cloud marketplaces** (AWS, Azure, GCP) and **reverse** it
+	- You can alter the memory of a snapshot VM and [Get a shell](../../Clippings/Alain%20Mowat%20-%20SonicDoor%20–%20Cracking%20SonicWall’s%20SMA%20500%20–%20SCRT%20Team%20Blog.md#Getting%20a%20shell)
 - Get the **docker image** from [Dockerhub](https://hub.docker.com/)
 - Contact **sales** or search for **trial version**
 - **Leak the source code** using vulnerabilities ([File Inclusion (LFI & RFI)](../Web%20&%20Network%20Hacking/File%20Inclusion%20(LFI%20&%20RFI).md), [XML External Entity Injection (XXE Injection)](../Web%20&%20Network%20Hacking/XML%20External%20Entity%20Injection%20(XXE%20Injection).md), RCE, etc.)
@@ -45,7 +46,7 @@ Further information inside the language specific notes:
 Code and diff analyser:
 - [cloc](https://github.com/AlDanial/cloc) - cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
 - [Beyond Compare](../../Readwise/Articles/Aliz%20Hammond%20-%20Is%20the%20Sofistication%20in%20the%20Room%20With%20Us%20-%20X-Forwarded-for%20and%20Ivanti%20Connect%20Secure.md#^38342a) - best diffing tool
-- [Compare Folders](../Tools/vscode.md#^397c19)
+- [Compare Folders](../Tools/vscode.md#^397c19) - VSCode extension for diff-comparing
 
 Greppers and auditing tools:
 - [semgrep](../Tools/semgrep.md)
@@ -53,6 +54,7 @@ Greppers and auditing tools:
 - [graudit](https://github.com/wireghoul/graudit) - grep rough audit - source code auditing tool
 - [grep wrappers](../Dev,%20scripting%20&%20OS/Linux%20command%20cheatsheet.md#grep%20wrappers)
 - [html-tool](../Tools/html-tool.md)
+- [jsluice](../Tools/jsluice.md)
 - [Secrets enumeration](../Web%20&%20Network%20Hacking/HTTP%20Recon%20and%20Enumeration.md#Secrets%20enumeration)
 - [JSA](../../Readwise/Tweets/@WllGates%20on%20Twitter%20-%20Tweets%20From%20Will%20Gates.md) (Javascript security analysis (JSA) is a program for javascript analysis during web application security assessment) ^e44cdc
 - [weggli](https://github.com/weggli-rs/weggli) and C/C++ ruleset from Marco Ivaldi [^ivaldi-weggli]
@@ -193,6 +195,7 @@ Evading restrictions:
 - [Authentication](../Web%20&%20Network%20Hacking/Authentication.md)
 - [Cross-origin resource sharing (CORS)](../Web%20&%20Network%20Hacking/Cross-origin%20resource%20sharing%20(CORS).md)
 - [Same-origin policy (SOP)](../Web%20&%20Network%20Hacking/Same-origin%20policy%20(SOP).md)
+- [Cross-Origin Read Blocking (CORB)](../Web%20&%20Network%20Hacking/Cross-Origin%20Read%20Blocking%20(CORB).md)
 - [Content Security Policy (CSP)](../Web%20&%20Network%20Hacking/Content%20Security%20Policy%20(CSP).md)
 - [X-Frame-Options](../Web%20&%20Network%20Hacking/X-Frame-Options.md)
 - [X-Content-Type-Options](../Web%20&%20Network%20Hacking/X-Content-Type-Options.md)

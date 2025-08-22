@@ -126,14 +126,14 @@ Scraping libraries:
 
 ## Vulnerability and Misconfiguration scanners
 
-- [nikto](../Tools/nikto.md)
 - [nuclei](../Tools/nuclei.md)
 	- using [katana](../Tools/katana.md) input
-- [Wapiti-Scanner/Wapiti: Web Vulnerability Scanner Written in Python3](../../Readwise/Articles/httpsgithub.comwapiti-scanner%20-%20Wapiti-ScannerWapiti%20Web%20Vulnerability%20Scanner%20Written%20in%20Python3.md)
-- [MrmtwojApache-Vulnerability-Testing Apache HTTP Server Vulnerability Testing Tool](../../Readwise/Articles/httpsgithub.commrmtwoj%20-%20MrmtwojApache-Vulnerability-Testing%20Apache%20HTTP%20Server%20Vulnerability%20Testing%20Tool%20PoC%20for%20CVE-2024-38472%20,%20CVE-2024-39573%20,%20CVE-2024-38477%20,%20CVE-2024-38476%20,%20CVE-2024-38475%20,%20CVE-2024-38474%20,%20CVE-2024-38473%20,%20CVE-2023-38709.md) ( #apache specific )
-- [misconfig mapper](../../Readwise/Articles/novasecio%20-%20Intigriti%20Bug%20Bytes%20219%20-%20December%202024.md#^4a91a1) - automate security misconfiguration detection on your list of targets
-- [HExHTTP](../../Readwise/Tweets/@7h3h4ckv157%20on%20Twitter%20-%20Tweets%20From%207h3h4ckv157.md#^d53888)
 - [qsreplace](../Tools/qsreplace.md) + [ffuf](../Tools/ffuf.md), [sqlmap](../Tools/sqlmap.md) or [nuclei](../Tools/nuclei.md)
+- [Wapiti-Scanner/Wapiti: Web Vulnerability Scanner Written in Python3](../../Readwise/Articles/httpsgithub.comwapiti-scanner%20-%20Wapiti-ScannerWapiti%20Web%20Vulnerability%20Scanner%20Written%20in%20Python3.md)
+- [HExHTTP](../../Readwise/Tweets/@7h3h4ckv157%20on%20Twitter%20-%20Tweets%20From%207h3h4ckv157.md#^d53888)
+- [MrmtwojApache-Vulnerability-Testing Apache HTTP Server Vulnerability Testing Tool](../../Readwise/Articles/httpsgithub.commrmtwoj%20-%20MrmtwojApache-Vulnerability-Testing%20Apache%20HTTP%20Server%20Vulnerability%20Testing%20Tool%20PoC%20for%20CVE-2024-38472%20,%20CVE-2024-39573%20,%20CVE-2024-38477%20,%20CVE-2024-38476%20,%20CVE-2024-38475%20,%20CVE-2024-38474%20,%20CVE-2024-38473%20,%20CVE-2023-38709.md) ( #apache specific )
+- [misconfig mapper](../../Readwise/Articles/novasecio%20-%20Intigriti%20Bug%20Bytes%20219%20-%20December%202024.md#^4a91a1) - automate security misconfiguration detection on your list of domains
+- [nikto](../Tools/nikto.md)
 
 ## Secrets enumeration
 
@@ -142,6 +142,7 @@ Scraping libraries:
 - [gitrob](Passive%20information%20gathering%20(OSINT).md#^5a3ff0) and [gitleaks](Passive%20information%20gathering%20(OSINT).md#^88d33b) for GitHub secrets, sensitive files, etc.
 - [trufflehog](https://github.com/trufflesecurity/trufflehog) - Find, verify, and analyze leaked credentials ^70b043
 - [secrets-ninja](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-07-07.md#^4586f4) - a tool for validating API keys and credentials discovered during pentesting & bug bounty hunting.
+- [jsluice](../Tools/jsluice.md)
 
 
 [^porch-pirate]: [Plundering Postman With Porch Pirate](../../Readwise/Articles/Mand%20Consulting%20Group%20-%20Plundering%20Postman%20With%20Porch%20Pirate.md), mandconsulting.ca

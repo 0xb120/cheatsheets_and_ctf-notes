@@ -30,8 +30,21 @@
               "icon": "lucide-file",
               "title": "- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios"
             }
+          },
+          {
+            "id": "a3ca248a8ff1ec50",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -290,6 +303,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "omnisearch:Omnisearch": false,
@@ -305,7 +319,7 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "ae4935a1bb2ad79b",
+  "active": "a3ca248a8ff1ec50",
   "lastOpenFiles": [
     "Clippings/onel, KernelDeimos - HeyPuterputer 🌐 The Internet OS! Free, Open-Source, and Self-Hostable..md",
     "Clippings/- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios.md",

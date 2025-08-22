@@ -494,6 +494,7 @@ if __name__ == '__main__':
 Java (and some other languages) uses binary serialization formats. Serialized Java objects always begin with the same bytes:
 - `ac ed` in hexadecimal 
 - `rO0` in Base64
+- `H4S` prefix in an object path, signifying a gzipped and Base64-encoded Java object. [^34041]
 
 >[!warning] Sinks:
 >- `java.io.Serializable`
@@ -897,3 +898,5 @@ Standard steps for research:
 - [Insecure deserialization | Web Security Academy](https://portswigger.net/web-security/deserialization)
 - [Deserialization](https://book.hacktricks.xyz/pentesting-web/deserialization)
 - [Deserialization - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)
+
+[^34041]: https://www.youtube.com/watch?v=tEfjSs4fq8M&ab_channel=BugBountyReportsExplained; RCE via deserialization with a class allowlist bypass and DNS exfiltration with Arthur Aires

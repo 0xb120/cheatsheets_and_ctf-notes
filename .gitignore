@@ -3,8 +3,7 @@ Personal/Dance
 Personal/Games
 .trash
 
-
-
-
 # Ignore Smart Environment folder
 .smart-env
+.obsidian/copilot-index-*.json
+.obsidian/plugins/copilot/data.json

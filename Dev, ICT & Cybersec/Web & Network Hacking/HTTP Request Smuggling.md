@@ -32,7 +32,7 @@ Request smuggling attacks involve placing both the `Content-Length` header and
 - **[TE.CL](TE.CL%20smuggling%20vulnerabilities.md)**: the front-end server uses the `Transfer-Encoding` header and the back-end server uses the `Content-Length` header.
 - **[TE.TE](TE.TE%20smuggling%20vulnerabilities.md)**: the front-end and back-end servers both support the `Transfer-Encoding` header, but one of the servers can be induced not to process it by obfuscating the header in some way.
 - **[CL.0](CL.0%20smuggling%20vulnerabilities.md)**: Back-end servers can be persuaded to ignore the `Content-Length` header and ignore the body of incoming requests.
-- **[TE.0](https://www.bugcrowd.com/blog/unveiling-te-0-http-request-smuggling-discovering-a-critical-vulnerability-in-thousands-of-google-cloud-websites/)**:  Back-end servers can be persuaded to ignore the `Transfer-Encoding` header and ignore the body of incoming requests.
+- **[TE.0](../../Clippings/Guest%20Post%20-%20Unveiling%20TE.0%20HTTP%20Request%20Smuggling%20Discovering%20a%20Critical%20Vulnerability%20in%20Thousands%20of%20Google%20Cloud%20Websites%20%20@Bugcrowd.md)**: Back-end servers can be persuaded to ignore the `Transfer-Encoding` header and ignore the body of incoming requests.
 - **[0.CL desync attacks](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#0.CL%20desync%20attacks)**: the front-end server ignores a `Content-Length` header that the back-end server processes.
 
 ## Detecting HTTP/2 request smuggling vulnerabilities

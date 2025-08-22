@@ -1,5 +1,8 @@
+# Article Inbox
+
 ```dataview
 TABLE date
-FROM #RW_inbox
+FROM #RW_inbox | #_inbox
 SORT date
 ```
+
