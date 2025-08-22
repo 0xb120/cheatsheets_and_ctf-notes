@@ -1,0 +1,1 @@
+{"path":"Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15.png","text":"g 0.CL desync with obfuscated Expect - Gitlab GET / HTTP/1.1 Expect: y 100-continue +648 offset GET / HTTP/1.1 Content-Length: 86 S Host: hl.sec.gitlab.net GET / HTTP/1.1 Host: hl.sec.gitlab.net GET /??? HTTP/1.1 GET / HTTP/1.1 1","libVersion":"0.5.0","langs":"eng"}

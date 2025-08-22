@@ -1,0 +1,1 @@
+{"path":"Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-6.png","text":"The 0.CL deadlock GET /Logon HTTP/1.1 GET /Logon HTTP/1.1 Host: <redacted> Host: <redacted> Content-Length: Content-Length: 22 23 Front-end GET /404 HTTP/1.1- NG E R BT @ X: Y a second request w HTTP/1.1 504 Gateway Timeout","libVersion":"0.5.0","langs":"eng"}

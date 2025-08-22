@@ -7,12 +7,10 @@
   "obsidian-emoji-toolbar",
   "obsidian-excalidraw-plugin",
   "obsidian-git",
-  "file-tree-alternative",
   "highlightr-plugin",
   "url-into-selection",
   "obsidian-projects",
   "obsidian-reading-time",
-  "obsidian-quiet-outline",
   "settings-search",
   "readwise-official",
   "omnisearch",
@@ -21,5 +19,8 @@
   "obsidian-paste-image-rename",
   "tag-wrangler",
   "oz-image-plugin",
-  "text-extractor"
+  "text-extractor",
+  "obsidian-quiet-outline",
+  "file-tree-alternative",
+  "copilot"
 ]

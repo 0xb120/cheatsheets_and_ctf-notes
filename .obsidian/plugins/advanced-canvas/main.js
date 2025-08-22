@@ -1363,11 +1363,11 @@ var _MigrationHelper = class _MigrationHelper {
 };
 _MigrationHelper.MIGRATIONS = {
   undefined: (canvas) => {
-    var _a;
+    var _a, _b, _c;
     const TARGET_SPEC_VERSION = "1.0-1.0";
     let startNode;
     const globalInterdimensionalEdges = {};
-    for (const node of canvas.nodes) {
+    for (const node of (_a = canvas.nodes) != null ? _a : []) {
       node.dynamicHeight = node.autoResizeHeight;
       delete node.autoResizeHeight;
       node.ratio = node.sideRatio;
@@ -1395,11 +1395,11 @@ _MigrationHelper.MIGRATIONS = {
         delete node.edgesToNodeFromPortal;
       }
     }
-    for (const node of canvas.nodes) {
+    for (const node of (_b = canvas.nodes) != null ? _b : []) {
       if (!(node.id in globalInterdimensionalEdges)) continue;
       node.interdimensionalEdges = globalInterdimensionalEdges[node.id];
     }
-    (_a = canvas.metadata) != null ? _a : canvas.metadata = {
+    (_c = canvas.metadata) != null ? _c : canvas.metadata = {
       version: TARGET_SPEC_VERSION,
       frontmatter: {},
       startNode
@@ -1471,6 +1471,10 @@ var CanvasPatcher = class extends Patcher {
         }
         that.plugin.app.workspace.trigger("advanced-canvas:canvas-changed", this.canvas);
         return result;
+      }),
+      getViewData: Patcher.OverrideExisting((next) => function(...args) {
+        this.canvas.data = this.canvas.getData();
+        return next.call(this, ...args);
       }),
       close: Patcher.OverrideExisting((next) => function(...args) {
         that.plugin.app.workspace.trigger("advanced-canvas:canvas-view-unloaded:before", this);
@@ -4537,7 +4541,7 @@ var CollapsibleGroupsCanvasExtension = class extends CanvasExtension {
     ));
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       "advanced-canvas:data-requested",
-      (_canvas, data) => this.expandAllCollapsedNodes(data)
+      (_canvas, data) => this.expandNodes(data)
     ));
     this.plugin.registerEvent(this.plugin.app.workspace.on(
       "advanced-canvas:data-loaded:before",
@@ -4593,7 +4597,7 @@ var CollapsibleGroupsCanvasExtension = class extends CanvasExtension {
     bbox.maxX = maxPos.x;
     bbox.maxY = maxPos.y;
   }
-  expandAllCollapsedNodes(data) {
+  expandNodes(data) {
     data.nodes = data.nodes.flatMap((groupNodeData) => {
       const collapsedData = groupNodeData.collapsedData;
       if (collapsedData === void 0) return [groupNodeData];

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "25330fd8cfe94de0",
+        "id": "a2a25804095845ad",
         "type": "tabs",
         "children": [
           {
-            "id": "784cb18bdab67490",
+            "id": "0f78015a087e1d2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
+                "file": "Clippings/- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet"
+              "title": "- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios"
             }
           }
         ]
@@ -70,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "TODO",
+                "query": "qsreplace",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -117,7 +117,7 @@
       {
         "id": "497a4e903f6476bf",
         "type": "tabs",
-        "dimension": 52.38095238095238,
+        "dimension": 52.072968490878935,
         "children": [
           {
             "id": "cecdd88dce19730c",
@@ -127,6 +127,18 @@
               "state": {},
               "icon": "lines-of-text",
               "title": "Quiet Outline"
+            }
+          },
+          {
+            "id": "aa1966157214a77f",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "CTFs/APKey.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for APKey"
             }
           },
           {
@@ -159,30 +171,18 @@
             }
           },
           {
-            "id": "aa1966157214a77f",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "Dev, ICT & Cybersec/Tools/docker.md"
-              },
-              "icon": "lucide-info",
-              "title": "File properties for docker"
-            }
-          },
-          {
             "id": "8461e389670820c8",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev, ICT & Cybersec/Tools/jq.md",
+                "file": "CTFs/APKey.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of jq"
+              "title": "Outline of APKey"
             }
           },
           {
@@ -194,13 +194,24 @@
               "icon": "checkmark",
               "title": "Todo List"
             }
+          },
+          {
+            "id": "ae4935a1bb2ad79b",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       },
       {
         "id": "0ca134c80578c5f2",
         "type": "tabs",
-        "dimension": 47.61904761904762,
+        "dimension": 47.927031509121065,
         "children": [
           {
             "id": "92a8f5dacbdec5e4",
@@ -208,7 +219,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
+                "file": "Clippings/- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -218,7 +229,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet"
+              "title": "Backlinks for - Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios"
             }
           },
           {
@@ -227,19 +238,55 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
+                "file": "Dev, ICT & Cybersec/Cloud/Salesforce.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Vulnerability research 101"
+              "title": "Outgoing links from Salesforce"
+            }
+          },
+          {
+            "id": "1b02ab1c108718d1",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": false,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": true,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": -0.6,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.3396609293254898,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 433.5
+    "width": 435.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,58 +301,59 @@
       "obsidian-book-search-plugin:Create new book note": true,
       "file-tree-alternative:File Tree Alternative Plugin": true,
       "obsidian-projects:Open projects": false,
-      "obsidian-git:Open Git source control": true
+      "obsidian-git:Open Git source control": true,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "ac48de087a5fdfe3",
+  "active": "ae4935a1bb2ad79b",
   "lastOpenFiles": [
-    "Dev, ICT & Cybersec/Dev, scripting & OS/wp-vulnerability-playground/privesc-todo.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/wp-vulnerability-playground/afu-todo.md",
-    "Dev, ICT & Cybersec/Tools/Burpsuite.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-07-07.md",
-    "Dev, ICT & Cybersec/Tools/attachments/Burpsuite-hae2.png",
-    "Dev, ICT & Cybersec/Tools/attachments/Burpsuite-hae1.png",
-    "Dev, ICT & Cybersec/Tools/attachments/Burpsuite-paramalyzer.png",
-    "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
-    "Personal/TODO.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
-    "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Clippings/onel, KernelDeimos - HeyPuterputer 🌐 The Internet OS! Free, Open-Source, and Self-Hostable..md",
+    "Clippings/- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios.md",
+    "Clippings/Puter Technologies Inc. - Free, Unlimited OpenAI API.md",
+    "Clippings/Alex Thomas - How To Find SQL Injection Vulnerabilities in WordPress Plugins and Themes.md",
+    "Clippings/TheR1D - TheR1Dshell_gpt A command-line productivity tool powered by AI large language models like GPT-4, will help you accomplish your tasks faster and more efficiently..md",
+    "Clippings/Google Project Zero - Policy and Disclosure 2025 Edition.md",
+    "Clippings/kevin-mizu - kevin-mizudomloggerpp A browser extension that allows you to monitor, intercept, and debug JavaScript sinks based on customizable configurations..md",
+    "Clippings/musana - musanafuzzuli fuzzuli is a url fuzzing tool that aims to find critical backup files by creating a dynamic wordlist based on the domain..md",
+    "Clippings/lacraig2 - rehostingpenguin PENGUIN (Personalized EmulatioN Generated Using Instrumented Analysis) takes a target centric approach to rehosting using a precise and tailored specification of the rehosting process.md",
+    "CTFs/Bat Computer.md",
+    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Heap-Based Buffer Overflow.md",
+    "Dev, ICT & Cybersec/Cloud/Salesforce.md",
+    "Dev, ICT & Cybersec/Cloud/AWS.md",
     "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+    "Clippings/Synacktiv - Relaying Kerberos over SMB using krbrelayx.md",
+    "Clippings/Sylwia Budzynska - CodeQL zero to hero part 1 The fundamentals of static analysis for vulnerability research.md",
+    "Clippings/Guest Post - Unveiling TE.0 HTTP Request Smuggling Discovering a Critical Vulnerability in Thousands of Google Cloud Websites  @Bugcrowd.md",
+    "Clippings/jorianwoltjer.com - The Ultimate Double-Clickjacking PoC  Jorian Woltjer.md",
+    "Clippings/James Kettle - HTTP1.1 must die the desync endgame.md",
+    "Clippings/Omid Rezaei - OAuth Non-Happy Path to ATO.md",
+    "Clippings/Synacktiv - NTLM reflection is dead, long live NTLM reflection! – An in-depth analysis of CVE-2025-33073.md",
+    "Clippings/Brandon Stewart - How GitHub uses CodeQL to secure GitHub.md",
+    "Clippings/CharlieKolb - n8n-ion8n Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations..md",
+    "Clippings/Alain Mowat - SonicDoor – Cracking SonicWall’s SMA 500 – SCRT Team Blog.md",
+    "Dev, ICT & Cybersec/Tools/CrackMapExec.md",
+    "Dev, ICT & Cybersec/Tools/Bytecode Viewer.md",
+    "copilot-custom-prompts",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-17.png",
+    "Clippings/attachments/US-25-Kettle-HTTP1-Must-Die-The-Desync-Endgame-wp.pdf",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-16.png",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15.png",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15-1.png",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-14.png",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-13.png",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-12.png",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-11.png",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-10.png",
+    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-9.png",
+    "Clippings/attachments",
+    "Clippings",
     "Communities/YouTube/_YT-dashboard.canvas",
-    "Readwise/Readwise inbox.md",
-    "Readwise/Articles/blackbird-eu - 7 Overlooked Recon Techniques to Find More Vulnerabilities.md",
-    "Dev, ICT & Cybersec/Tools/katana.md",
-    "Readwise/Articles/novasecio - Recon for Bug Bounty 8 Essential Tools for Performing Effective Reconnaissance.md",
-    "Dev, ICT & Cybersec/Tools/urlfinder.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-12-02.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Dictionary Generation.md",
-    "Readwise/Articles/blackbird-eu - Creating Custom Wordlists for Bug Bounty Targets A Complete Guide.md",
-    "Dev, ICT & Cybersec/Tools/qsreplace.md",
-    "Dev, ICT & Cybersec/Tools/gron.md",
-    "Dev, ICT & Cybersec/Tools/unfurl.md",
-    "Dev, ICT & Cybersec/Tools/anew.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Linux command cheatsheet.md",
-    "Dev, ICT & Cybersec/Tools/gf.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Bash 101.md",
-    "Dev, ICT & Cybersec/Tools/attachments/Burpsuite-REST.png",
     "test-link/test.txt",
     "test-link",
     "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9/000185e9.jadxmd",
     "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9/000185e9.java",
     "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9",
     "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9",
-    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources",
-    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/names-map",
-    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata",
-    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/code-version",
-    "VR/Targets/SicuraNext/challenge-1/attachments/sql-injection-auth-bypass.png",
-    "VR/Targets/SicuraNext/challenge-1/attachments/semgrep-1.png",
-    "VR/Targets/SicuraNext/challenge-1/attachments/md5.png",
-    "VR/Targets/SicuraNext/challenge-1/attachments/hash-identifier.png",
-    "VR/Targets/SicuraNext/challenge-1/attachments/hash-id.png",
-    "VR/Targets/SicuraNext/challenge-1/attachments/cracked-passwords.png",
     "VR/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it.canvas",
     "VR/Targets/uisp.it/areariservata2.uisp.it/areariservata2.uisp.it.canvas",
     "VR/Targets/Woox/Woox R4040/Woox R4040.canvas",
