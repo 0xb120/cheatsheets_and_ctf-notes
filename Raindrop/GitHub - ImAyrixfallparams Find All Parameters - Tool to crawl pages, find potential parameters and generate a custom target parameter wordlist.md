@@ -1,0 +1,73 @@
+---
+raindrop_id: 1355170712
+raindrop_highlights:
+  68d298f852f45e8876c079c9: b952100e538bb9799595a33748fae2f8
+  68d298fd0e39366081da346f: 66c850796b80993114e8d698173f4e27
+  68d2990808ae98bc80ddd033: 927451c2b3f241dade783c3d5be9c7ef
+  68d299116ce16004f427219c: b11745fbd451b827a23acd6538a70fef
+  68d2991c0d9bc9bcb7b6e297: dc13c567af5637dee0cfdd7b7c4fb4a7
+title: "GitHub - ImAyrix/fallparams: Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist"
+
+description: |-
+  Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist  - GitHub - ImAyrix/fallparams: Find All Parameters - Tool to crawl pages, find ...
+
+source: https://github.com/ImAyrix/fallparams
+
+created: Tue Sep 23 2025 09:59:04 GMT+0200
+type: link
+tags:
+  - "_index"
+
+ 
+  - "Tools"
+
+---
+# GitHub - ImAyrix/fallparams: Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist
+
+![](https://opengraph.githubassets.com/988d19296724e739f243310e41f23d33a370d680b227cfc7c6b7aca367ac2f32/ImAyrix/fallparams)
+
+> [!summary]
+>Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist  - GitHub - ImAyrix/fallparams: Find All Parameters - Tool to crawl pages, find ...
+
+
+
+
+
+Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist
+
+Installation
+&gt;go install github.com/ImAyrix/fallparams@latest
+
+Start
+&gt;
+&gt;To create a parameter wordlist suitable for the page you are working on, simply provide the page link to fallparams.
+&gt;
+&gt;fallparams -u &quot;https://target.tld/page&quot;
+&gt;
+&gt;If you have many URLs for which you want to create a parameter wordlist, save all your URLs in a file and then provide the file name to fallparams.
+&gt;
+&gt;fallparams -u &quot;/path/to/file.txt&quot;
+&gt;
+&gt;You can also save the entire HTTP packet to a file and use it as an input for the tool, ensuring that it sends the exact same headers, cookies, and other details in the requests.
+&gt;
+&gt;fallparams -r &quot;request.txt&quot;
+
+More Parameters
+&gt;
+&gt;One of the great features of fallparams is its ability to use Katana to crawl the links provided as input, resulting in more links and eventually creating a comprehensive parameter wordlist.
+&gt;
+&gt;fallparams -u &quot;https://target.tld/page&quot; -crawl
+
+Output
+&gt;
+&gt;To enhance the quality of your parameter wordlist, it&#39;s crucial to filter out noisy or irrelevant words that may enter during creation. One effective way to achieve this is by setting a specific character limit for each parameter.
+&gt;
+&gt;fallparams -u &quot;https://target.tld/page&quot; -max-length 30
+&gt;
+&gt;You can also specify the minimum number of characters for each parameter.
+&gt;
+&gt;fallparams -u &quot;https://target.tld/page&quot; -min-length 3
+&gt;
+&gt;By default, the generated parameter wordlist is saved in the parameters.txt file. However, you can customize the name and path of the output file as needed.
+&gt;
+&gt;fallparams -u &quot;https://target.tld/page&quot; -output &quot;custom_name.txt&quot;
