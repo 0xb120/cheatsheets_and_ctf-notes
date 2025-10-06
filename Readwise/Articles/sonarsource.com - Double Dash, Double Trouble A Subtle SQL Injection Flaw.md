@@ -1,7 +1,9 @@
 ---
-author: "sonarsource.com"
+author: sonarsource.com
 aliases: "Double Dash, Double Trouble: A Subtle SQL Injection Flaw"
-tags: RW_inbox, readwise/articles
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://www.sonarsource.com/blog/double-dash-double-trouble-a-subtle-sql-injection-flaw/?__readwiseLocation=?__readwiseLocation=
 date: 2025-07-07
 summary: A recent analysis revealed vulnerabilities in several popular SQL client libraries that allow for SQL injection through line comment creation. Attackers can manipulate the syntax of queries if prepared statements are not handled correctly. Developers are urged to update their dependencies and include third-party code in their security testing to prevent such issues.

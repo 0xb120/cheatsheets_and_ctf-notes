@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a2a25804095845ad",
+        "id": "901df75661108dd1",
         "type": "tabs",
         "children": [
           {
-            "id": "0f78015a087e1d2a",
+            "id": "aadc833d36890c1b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios.md",
-                "mode": "preview",
+                "file": "Dev, ICT & Cybersec/Tools/Burpsuite.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,23 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios"
-            }
-          },
-          {
-            "id": "a3ca248a8ff1ec50",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.10"
+              "title": "Burpsuite"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -83,7 +70,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "qsreplace",
+                "query": "dictionary",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -117,7 +104,8 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -189,13 +177,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTFs/APKey.md",
+                "file": "Readwise/Readwise inbox.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of APKey"
+              "title": "Outline of Readwise inbox"
             }
           },
           {
@@ -207,19 +195,8 @@
               "icon": "checkmark",
               "title": "Todo List"
             }
-          },
-          {
-            "id": "ae4935a1bb2ad79b",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
-            }
           }
-        ],
-        "currentTab": 6
+        ]
       },
       {
         "id": "0ca134c80578c5f2",
@@ -232,7 +209,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clippings/- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios.md",
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Dictionary Generation.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -242,7 +219,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for - Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios"
+              "title": "Backlinks for Dictionary Generation"
             }
           },
           {
@@ -316,37 +293,38 @@
       "file-tree-alternative:File Tree Alternative Plugin": true,
       "obsidian-projects:Open projects": false,
       "obsidian-git:Open Git source control": true,
-      "copilot:Open Copilot Chat": false
+      "obsidian-raindrop-highlights:Sync your Raindrop bookmarks": false
     }
   },
-  "active": "a3ca248a8ff1ec50",
+  "active": "f6c7831e85d653f1",
   "lastOpenFiles": [
-    "Clippings/onel, KernelDeimos - HeyPuterputer 🌐 The Internet OS! Free, Open-Source, and Self-Hostable..md",
     "Clippings/- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios.md",
-    "Clippings/Puter Technologies Inc. - Free, Unlimited OpenAI API.md",
+    "Clippings/Alain Mowat - SonicDoor – Cracking SonicWall’s SMA 500 – SCRT Team Blog.md",
     "Clippings/Alex Thomas - How To Find SQL Injection Vulnerabilities in WordPress Plugins and Themes.md",
-    "Clippings/TheR1D - TheR1Dshell_gpt A command-line productivity tool powered by AI large language models like GPT-4, will help you accomplish your tasks faster and more efficiently..md",
-    "Clippings/Google Project Zero - Policy and Disclosure 2025 Edition.md",
-    "Clippings/kevin-mizu - kevin-mizudomloggerpp A browser extension that allows you to monitor, intercept, and debug JavaScript sinks based on customizable configurations..md",
-    "Clippings/musana - musanafuzzuli fuzzuli is a url fuzzing tool that aims to find critical backup files by creating a dynamic wordlist based on the domain..md",
-    "Clippings/lacraig2 - rehostingpenguin PENGUIN (Personalized EmulatioN Generated Using Instrumented Analysis) takes a target centric approach to rehosting using a precise and tailored specification of the rehosting process.md",
-    "CTFs/Bat Computer.md",
-    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Heap-Based Buffer Overflow.md",
-    "Dev, ICT & Cybersec/Cloud/Salesforce.md",
-    "Dev, ICT & Cybersec/Cloud/AWS.md",
-    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
-    "Clippings/Synacktiv - Relaying Kerberos over SMB using krbrelayx.md",
-    "Clippings/Sylwia Budzynska - CodeQL zero to hero part 1 The fundamentals of static analysis for vulnerability research.md",
-    "Clippings/Guest Post - Unveiling TE.0 HTTP Request Smuggling Discovering a Critical Vulnerability in Thousands of Google Cloud Websites  @Bugcrowd.md",
-    "Clippings/jorianwoltjer.com - The Ultimate Double-Clickjacking PoC  Jorian Woltjer.md",
-    "Clippings/James Kettle - HTTP1.1 must die the desync endgame.md",
-    "Clippings/Omid Rezaei - OAuth Non-Happy Path to ATO.md",
-    "Clippings/Synacktiv - NTLM reflection is dead, long live NTLM reflection! – An in-depth analysis of CVE-2025-33073.md",
+    "Clippings/blackbird-eu - Hacking misconfigured Firebase targets A complete guide.md",
     "Clippings/Brandon Stewart - How GitHub uses CodeQL to secure GitHub.md",
     "Clippings/CharlieKolb - n8n-ion8n Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations..md",
-    "Clippings/Alain Mowat - SonicDoor – Cracking SonicWall’s SMA 500 – SCRT Team Blog.md",
-    "Dev, ICT & Cybersec/Tools/CrackMapExec.md",
-    "Dev, ICT & Cybersec/Tools/Bytecode Viewer.md",
+    "Clippings/dtomvan - 9001copyparty Portable file server with accelerated resumable uploads, dedup, WebDAV, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file, no deps.md",
+    "Clippings/Google Project Zero - Policy and Disclosure 2025 Edition.md",
+    "Clippings/Guest Post - Unveiling TE.0 HTTP Request Smuggling Discovering a Critical Vulnerability in Thousands of Google Cloud Websites  @Bugcrowd.md",
+    "Clippings/jorianwoltjer.com - The Ultimate Double-Clickjacking PoC  Jorian Woltjer.md",
+    "Clippings/kevin-mizu - kevin-mizudomloggerpp A browser extension that allows you to monitor, intercept, and debug JavaScript sinks based on customizable configurations..md",
+    "Clippings/lacraig2 - rehostingpenguin PENGUIN (Personalized EmulatioN Generated Using Instrumented Analysis) takes a target centric approach to rehosting using a precise and tailored specification of the rehosting process.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Dictionary Generation.md",
+    "Dev, ICT & Cybersec/Tools/Burpsuite.md",
+    "Clippings/musana - musanafuzzuli fuzzuli is a url fuzzing tool that aims to find critical backup files by creating a dynamic wordlist based on the domain..md",
+    "Clippings/Omid Rezaei - OAuth Non-Happy Path to ATO.md",
+    "Clippings/onel, KernelDeimos - HeyPuterputer 🌐 The Internet OS! Free, Open-Source, and Self-Hostable..md",
+    "Raindrop/GitHub - ImAyrixfallparams Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist.md",
+    "Raindrop/Taming 2,500 compiler warnings with CodeQL, an OpenVPN2 case study -The Trail of Bits Blog.md",
+    "Raindrop/GitHub - 0xMarciocve Latest CVEs with their Proof of Concept exploits.md",
+    "Dev, ICT & Cybersec/Tools/htmlq.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Readwise/Articles/Ilay Goldman - 50 Shades of Vulnerabilities Uncovering Flaws in Open-Source Vulnerability Disclosures.md",
+    "Readwise/Articles/Frycos Security Diary - Hacking Like Hollywood With Hard-Coded Secrets.md",
+    "Readwise/Readwise inbox.md",
+    "Raindrop/Academics Build AI-Powered Android Vulnerability Discovery and Validation Tool - SecurityWeek.md",
+    "Raindrop",
     "copilot-custom-prompts",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-17.png",
     "Clippings/attachments/US-25-Kettle-HTTP1-Must-Die-The-Desync-Endgame-wp.pdf",
@@ -367,7 +345,6 @@
     "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9/000185e9.jadxmd",
     "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9/000185e9.java",
     "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/sources/e9",
-    "VR/Targets/Woox/Woox R4040/Woox home_1.1.9_apkcombo.com.apk.cache/metadata/e9",
     "VR/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it.canvas",
     "VR/Targets/uisp.it/areariservata2.uisp.it/areariservata2.uisp.it.canvas",
     "VR/Targets/Woox/Woox R4040/Woox R4040.canvas",

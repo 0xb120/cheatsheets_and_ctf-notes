@@ -2215,6 +2215,7 @@ var OutgoingLinksPatcher = class extends Patcher {
 var PropertiesPatcher = class extends Patcher {
   async patch() {
     if (!this.plugin.settings.getSetting("canvasMetadataCompatibilityEnabled")) return;
+    if (!this.plugin.app.viewRegistry.viewByType["file-properties"]) return;
     const that = this;
     await Patcher.waitForViewRequest(this.plugin, "file-properties", (view) => {
       Patcher.patchPrototype(this.plugin, view, {
@@ -4143,7 +4144,7 @@ var PortalsCanvasExtension = class _PortalsCanvasExtension extends CanvasExtensi
     );
     data.edges = data.edges.filter((edgeData) => {
       var _a;
-      if (_PortalsCanvasExtension.getNestedIds(edgeData.fromNode).length > 1) return false;
+      if (_PortalsCanvasExtension.getNestedIds(edgeData.id).length > 1) return false;
       const isFromNodeFromPortal = _PortalsCanvasExtension.getNestedIds(edgeData.fromNode).length > 1;
       const isToNodeFromPortal = _PortalsCanvasExtension.getNestedIds(edgeData.toNode).length > 1;
       if (!isFromNodeFromPortal && !isToNodeFromPortal) return true;
@@ -4285,7 +4286,7 @@ var FrontmatterControlButtonCanvasExtension = class extends CanvasExtension {
           var _a2;
           const propertiesPlugin = this.plugin.app.internalPlugins.plugins["properties"];
           if (!(propertiesPlugin == null ? void 0 : propertiesPlugin._loaded)) {
-            new import_obsidian15.Notice(`Core plugin "Properties" was not found or isn't enabled.`);
+            new import_obsidian15.Notice(`Core plugin "Properties view" was not found or isn't enabled. Enable it and restart Obsidian.`);
             return;
           }
           let propertiesLeaf = (_a2 = this.plugin.app.workspace.getLeavesOfType("file-properties").first()) != null ? _a2 : null;
@@ -4794,13 +4795,14 @@ var FlipEdgeCanvasExtension = class extends CanvasExtension {
     const selectedEdges = [...canvas.selection].filter((item) => item.path !== void 0);
     if (selectedEdges.length === 0) return;
     for (const edge of selectedEdges) {
-      const edgeData = edge.getData();
-      edge.setData({
-        ...edgeData,
-        fromNode: edgeData.toNode,
-        fromSide: edgeData.toSide,
-        toNode: edgeData.fromNode,
-        toSide: edgeData.fromSide
+      edge.update({
+        ...edge.from,
+        node: edge.to.node,
+        side: edge.to.side
+      }, {
+        ...edge.to,
+        node: edge.from.node,
+        side: edge.from.side
       });
     }
     canvas.pushHistory(canvas.getData());

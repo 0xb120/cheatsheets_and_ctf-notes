@@ -24,13 +24,13 @@ To build an _effective_ custom wordlist, you should gather data from as many div
 ### Wordlist generation tools
 
 Web Specific:
-- [cewl](../Tools/cewl.md) [^1]
-- [tok](../Tools/tok.md) and [unfurl](../Tools/unfurl.md) (read and parse elements from lists or URL) [^3]
-- [html-tool](../Tools/html-tool.md) and [jsluice](../Tools/jsluice.md) (read and parse elements from lists or files)
-- [tok](../Tools/tok.md), [htmlq](../Tools/htmlq.md), [jsluice](../Tools/jsluice.md), and getjswords.py [^4] (to read and parse elements from local files)
+- [cewl](../Tools/cewl.md) [^1], [GAP](../Tools/Burpsuite.md#GAP%20✅), [CO2](../Tools/Burpsuite.md#CO2%20⭐)
+- [tok](../Tools/tok.md) and [unfurl](../Tools/unfurl.md) (read and parse the input itself - works better with lists of URLs) [^3]
+- [html-tool](../Tools/html-tool.md) and [jsluice](../Tools/jsluice.md) (fetches lists of files or URL, then read and parse the contents)
+- [htmlq](../Tools/htmlq.md), [jsluice](../Tools/jsluice.md), and getjswords.py [^4] (read and parse the input itself - works better with HTML and JS files)
 - [comb](../Tools/comb.md), [anew](../Tools/anew.md) and [wl](../Tools/wl.md) (to combine wordlists)
 - [qsreplace](../Tools/qsreplace.md) (to replace field values with placeholders)
-- [undust.py](https://github.com/t3l3machus/undust.py) (to generate lists of possible backup files)
+- [undust.py](https://github.com/t3l3machus/undust.py), [fuzzuli](../../Clippings/musana%20-%20musanafuzzuli%20fuzzuli%20is%20a%20url%20fuzzing%20tool%20that%20aims%20to%20find%20critical%20backup%20files%20by%20creating%20a%20dynamic%20wordlist%20based%20on%20the%20domain..md) (to generate lists of possible backup files) 
 
 Password specific:
 - [crunch](../Tools/crunch.md)

@@ -18,8 +18,8 @@ Gathering information simply **browsing the site**. Look for:
 
 ## Proxy
 - [Burpsuite](../Tools/Burpsuite.md)
-- zap
 - Caido
+- [Reaper](https://github.com/ghostsecurity/reaper) — open-source application security testing framework, engineered by humans and primed for AI, bringing together reconnaissance, request proxying, request tampering/replay, active testing, vulnerability validation, live collaboration, and reporting into a _killer_ workflow.
 
 ## Browser Plugins
 

@@ -54,7 +54,7 @@ Reference: https://security.humanativaspa.it/tag/montoya-api/
 
 ## Automatic Traffic Auditor
 
-### Highlighter and extractor ✅ 
+### Highlighter and extractor ✅
 
 >[!warning]
 >This is a very heavy plugin! Run it with few regex or when HTTP responses are not huge!
@@ -147,7 +147,7 @@ If for some reason it does not work, you can fallback on [Sensitive Discoverer �
 ![|500](../../zzz_res/attachments/software-version-reporter.png)
 ![|500](../../zzz_res/attachments/software-version-reporter2.png)
 
-### Error Message Checks ✅
+### Error Message Checks
 
 This extension passively reports detailed server error messages. You can configure arbitrary match results from the apposite tab.
 
@@ -215,7 +215,7 @@ Despite the name, Hunt Scanner doesn't really "scan" anything. Instead it monito
 
 ![](attachments/Burpsuite-HUNT.png)
 
-### Sensitive Discoverer ✅
+### Sensitive Discoverer ⭐
 
 SensitiveDiscoverer is a Burp Suite extension to scan for particular pattern or file extensions inside HTTP messages. With this extension you can automatically search for sensitive strings in HTTP messages. It uses a list of Regular Expressions and File Extensions to match for in each message. The plugin is available with a pre-defined set of Regular Expression and File Extensions, but you can also add your custom lists.
 
@@ -482,6 +482,26 @@ Helps you to find authorization bugs. Just navigate through the web application 
 
 See agartha
 
+### AutoRepeater
+
+This extension automatically repeats requests, with replacement rules and response diffing. It provides a general-purpose solution for streamlining authorization testing within web applications.
+
+AutoRepeater provides the following features:
+
+- Automatically duplicate, modify, and resend any request
+- Conditional replacements
+- Quick header, cookie, and parameter value replacements
+- Split request/response viewer
+- Original vs. modified request/response diff viewer
+- Highlight logs
+- Filter logs
+- Base replacements for values that break requests like CSRF tokens and session cookies
+- Renamable tabs
+- Logging
+- Exporting
+- Toggled activation
+- "Send to AutoRepeater" from other Burp Suite tools
+
 ## JSON and JWT analysis
 
 ### JSON Web Tokens
@@ -522,26 +542,6 @@ A full featured framework for enumerating and testing GraphQL.
 ### Shadow Repeater ✅
 
 [Shadow Repeater: AI-Enhanced Manual Testing](../../Readwise/Articles/PortSwigger%20Research%20-%20Shadow%20Repeater%20AI-Enhanced%20Manual%20Testing.md): a plugin which enhances your manual testing _with AI-powered, fully automatic variation testing_. Simply use Burp Repeater as you normally would, and behind the scenes Shadow Repeater will monitor your attacks, try permutations, and report any discoveries via Organizer.
-
-### AutoRepeater
-
-This extension automatically repeats requests, with replacement rules and response diffing. It provides a general-purpose solution for streamlining authorization testing within web applications.
-
-AutoRepeater provides the following features:
-
-- Automatically duplicate, modify, and resend any request
-- Conditional replacements
-- Quick header, cookie, and parameter value replacements
-- Split request/response viewer
-- Original vs. modified request/response diff viewer
-- Highilight logs
-- Filter logs
-- Base replacements for values that break requests like CSRF tokens and session cookies
-- Renamable tabs
-- Logging
-- Exporting
-- Toggled activation
-- "Send to AutoRepeater" from other Burp Suite tools
 
 ### Turbo Intruder ✅
 
@@ -628,6 +628,7 @@ This extension will auto-extract and display values from HTTP Response bodies ba
 ### HTTP Mock ⭐
 
 This Burp extension provides mock responses that can be customized, based on the real ones.
+Create a mock by selecting entry from HTTP History or craft it manually. Requests are matched by customizable regex rules and forwarded to the local mock server. Mocks can have various behavior, including directly entering the input, reading replies from a file, redirecting to a different URL, or calling another process and returning the output.
 Using this extension it is possible to test how web frontend and mobile clients react to different responses, without making any changes to the backend.
 
 It differs from intercepting responses mainly in two ways:
@@ -646,7 +647,9 @@ It provides an interactive way to edit encoded/encrypted data as plaintext and o
 
 Install it from GitHub: https://github.com/ambionics/scalpel
 Documentation: https://ambionics.github.io/scalpel/public/
-Examples: https://github.com/ambionics/scalpel/tree/main/scalpel/src/main/resources/python3-10/samples
+Examples: 
+- https://github.com/ambionics/scalpel/tree/main/scalpel/src/main/resources/python3-10/samples
+- https://ambionics.github.io/scalpel/public/addons-examples/
 
 ### Piper ✅
 
@@ -655,7 +658,11 @@ In true Unix fashion, small things that do one thing and do it well can be conne
 
 Extending message editors for new formats or integrating a better comparator/diff tool is as simple as filling a short form with the command line and some details with sensible defaults.
 
-Useful configs can be shared using the the textual YAML format, the defaults already contain some simple examples.
+You can also use piper with **custom bash scripts** and integrate burpsuite with:
+- LLM cli tools
+- SAST tools
+- utilities
+- etc.
 
 ### Copier ✅
 
@@ -698,7 +705,7 @@ Available magic bytes:
 
 GAP helps uncover hidden endpoints and parameters by analyzing responses and generating custom wordlists. That plus the huge number of settings make this an awesome [cewl](cewl.md)-like tool for recon!
 
-### CO2
+### CO2 ⭐
 
 This extension contains various modules for enhancing Burp's capabiities.
 
@@ -709,7 +716,7 @@ CO2 includes the following modules:
 - **SQLMapper**, a sqlmap helper. Simply right-click on any request in Burp and you will see a new menu option to send the request to SQLMapper. The SQLMapper screen will appear pre-populated with the URL, POST data (if applicable) and Cookies (if applicable) from the request. You can then set any other options you need and then copy/paste the SQLMap Command to [sqlmap](sqlmap.md) on your command line.
 - **User Generator** - For this one I collected publicly available census data from http://www.census.gov/genealogy/www/data/2000surnames/ (for surnames) and popular baby names from the social security website (http://www.ssa.gov/OACT/babynames/) to make a username generator based on this statistical data. The interface allows you to tinker with the data sets a little bit, specify if you want full names, initials, a delimiter between first and last names, etc. The tool will approximate which name combinations are the most common and sort the list accordingly. The result set is currently limited to the top 200,000 names to avoid performance issues.
 - **Name Mangler** - Given some names and domains it will mangle them to generate a list of potential usernames that can be dropped into Intruder to test for valid logins.
-- **CeWLer** - Based on Digininja's command-line [cewl](cewl.md) script for extracting a wordlist from HTML files, this version works with a list of responses directly inside of Burp.
+- **CeWLer** ⭐ - Based on Digininja's command-line [cewl](cewl.md) script for extracting a wordlist from HTML files, this version works with a list of responses directly inside of Burp.
 - **Masher** - Given a seed list of words and a password specification this tool will generate a fuzzy list of possible passwords. Masher will start with combining words from the provided list, then append and replace characters to build new passwords.
 - **BasicAuther** - Given a list of usernames and a list of passwords it will output proper BasicAuth strings that can then be dropped into Intruder.
 
