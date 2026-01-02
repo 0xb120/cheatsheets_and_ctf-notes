@@ -4,7 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
+tags: []
 ---
 >[!quote]
 > *We believe that there is an SSH Password inside password protected 'ZIP' folder. Can you crack the 'ZIP' folder and get the SSH password?*****

@@ -1,7 +1,5 @@
 ---
-aliases:
-  - CVE
-  - CNA
+aliases: [CVE, CNA]
 ---
 # CVE
 

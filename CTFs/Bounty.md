@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - MS10-059
-  - RCE
-  - insecure-file-upload
-  - web.config
-  - Windows
+tags: [MS10-059, RCE, insecure-file-upload, web.config, Windows]
 ---
 # Resolution summary
 

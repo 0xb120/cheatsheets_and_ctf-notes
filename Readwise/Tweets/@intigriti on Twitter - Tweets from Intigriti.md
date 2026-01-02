@@ -6,7 +6,6 @@ tags:
   - readwise/tweets
 url: ?__readwiseLocation=
 date: 2025-03-29
-summary: None
 ---
 # Tweets from Intigriti
 

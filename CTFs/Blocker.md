@@ -4,8 +4,7 @@ Category:
 Difficulty: Easy
 Platform: X-MAS
 Status: 1. In progress
-tags:
-  - Blockchain
+tags: [Blockchain]
 ---
 
 >[!quote]

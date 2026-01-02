@@ -14,8 +14,7 @@ source: https://blog.fraim.dev/ai_eval_vs_rules/
 
 created: 1759684221644
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Tools" 

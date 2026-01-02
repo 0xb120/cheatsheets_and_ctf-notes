@@ -4,11 +4,7 @@ Difficulty: Easy
 Category:
   - Misc
 Status: 3. Complete
-tags:
-  - cracking-kdbx-files
-  - steganography
-  - blowfish
-  - image-manipulation
+tags: [cracking-kdbx-files, steganography, blowfish, image-manipulation]
 ---
 
 >[!quote]

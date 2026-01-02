@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://www.horizon3.ai/attack-research/disclosures/unsafe-at-any-speed-abusing-python-exec-for-unauth-rce-in-langflow-ai/?__readwiseLocation=
 date: 2025-04-24
-summary: A serious security flaw, CVE-2025-3248, was found in Langflow, a tool for creating AI workflows. This vulnerability allows remote attackers to take complete control of Langflow servers without authentication. Users are advised to upgrade to version 1.3.0, which fixes the issue.
 ---
 # Unsafe at Any Speed: Abusing Python Exec for Unauth RCE in Langflow AI
 

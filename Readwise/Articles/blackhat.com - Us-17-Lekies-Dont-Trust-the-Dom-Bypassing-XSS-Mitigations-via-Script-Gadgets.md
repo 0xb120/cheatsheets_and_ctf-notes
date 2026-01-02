@@ -1,7 +1,7 @@
 ---
 author: "blackhat.com"
-aliases: "Us-17-Lekies-Dont-Trust-the-Dom-Bypassing-XSS-Mitigations-via-Script-Gadgets"
-tags: RW_inbox, readwise/articles
+aliases: ["Us-17-Lekies-Dont-Trust-the-Dom-Bypassing-XSS-Mitigations-via-Script-Gadgets"]
+tags: [RW_inbox, readwise/articles]
 url: https://www.blackhat.com/docs/us-17/thursday/us-17-Lekies-Dont-Trust-The-DOM-Bypassing-XSS-Mitigations-Via-Script-Gadgets.pdf
 date: 2025-01-08
 ---

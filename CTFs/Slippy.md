@@ -4,16 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - RCE
-  - code-review
-  - flask-debug_mode
-  - path-traversal
-  - python-code-injection
-  - python-tarfile
-  - zip-slip
-  - flask
-  - __init__
+tags: [RCE, code-review, flask-debug_mode, path-traversal, python-code-injection, python-tarfile, zip-slip, flask, __init__]
 ---
 >[!quote]
 > *You've found a portal for a firmware upgrade service, responsible for the deployment and maintenance of rogue androids hunting humans outside the tractor city. The question is... what are you going to do about it?*

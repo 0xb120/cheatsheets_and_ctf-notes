@@ -1,7 +1,7 @@
 ---
 author: Charles Fol
-alias: Introducing Wrapwrap: Using PHP Filters to Wrap a File With a Prefix and Suffix
-tags: RW_inbox, readwise/articles
+alias: ["Introducing Wrapwrap: Using PHP Filters to Wrap a File With a Prefix and Suffix"]
+tags: [RW_inbox, readwise/articles]
 url: https://www.ambionics.io/blog/wrapwrap-php-filters-suffix.html
 date: 2024-01-18
 ---

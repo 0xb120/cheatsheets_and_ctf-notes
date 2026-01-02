@@ -1,13 +1,7 @@
 ---
 author: hulkvision.github.io
-aliases:
-  - RCE in Adobe Acrobat Reader for Android
-tags:
-  - readwise/articles
-  - Android
-  - Adobe-Acrobat
-  - Adobe-Acrobat/Reader-Android
-  - vulnerability-research/todo
+aliases: [RCE in Adobe Acrobat Reader for Android]
+tags: [readwise/articles, Android, Adobe-Acrobat, Adobe-Acrobat/Reader-Android, vulnerability-research/todo]
 url: https://hulkvision.github.io/blog/post1/
 date: 2024-08-20
 ---

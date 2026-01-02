@@ -6,11 +6,8 @@ author:
 published: 2025-08-06
 created: 2025-08-11
 description: Abstract Upstream HTTP/1.1 is inherently insecure and regularly exposes millions of websites to hostile takeover. Six years of attempted mitigations have hidden the issue, but failed to fix it. This p
-tags:
-  - clippings/articles
-aliases:
-  - 0.CL desync attacks
-  - expect-based desync attacks
+tags: [clippings/articles]
+aliases: [0.CL desync attacks, expect-based desync attacks]
 ---
 # HTTP/1.1 must die: the desync endgame
 

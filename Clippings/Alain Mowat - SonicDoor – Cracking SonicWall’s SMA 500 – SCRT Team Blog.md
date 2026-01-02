@@ -7,8 +7,7 @@ author:
 published: 2025-06-04
 created: 2025-08-12
 description: 
-tags:
-  - clippings/articles
+tags: [clippings/articles]
 ---
 # SonicDoor – Cracking SonicWall’s SMA 500 – SCRT Team Blog
 

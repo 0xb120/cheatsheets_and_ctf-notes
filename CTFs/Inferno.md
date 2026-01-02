@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - esoteric-lang
-  - malbolge
+tags: [esoteric-lang, malbolge]
 ---
 >[!quote]
 > *Download the provided file*

@@ -4,23 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - CKEditor
-  - MySQL
-  - MySQL-privesc
-  - RCE
-  - privesc/UDF
-  - authentication-bypass
-  - code-review
-  - command-injection
-  - flask
-  - flask-session-cookie-bruteforce
-  - hardcoded-credentials
-  - insecure-credentials
-  - md-to-pdf
-  - python-coding
-  - user-enumeration
-  - Linux
+tags: [CKEditor, MySQL, MySQL-privesc, RCE, privesc/UDF, authentication-bypass, code-review, command-injection, flask, flask-session-cookie-bruteforce, hardcoded-credentials, insecure-credentials, md-to-pdf, python-coding, user-enumeration, Linux]
 ---
 ![Noter.png](../../zzz_res/attachments/Noter.png)
 

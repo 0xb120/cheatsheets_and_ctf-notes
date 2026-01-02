@@ -1,10 +1,12 @@
 ---
-author: "Alex Thomas"
-aliases: "WordPress Security Research Series: WordPress Security Architecture"
-tags: RW_inbox, readwise/articles
+author: Alex Thomas
+aliases:
+  - "WordPress Security Research Series: WordPress Security Architecture"
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://www.wordfence.com/blog/2025/03/wordpress-security-research-series-wordpress-security-architecture/?__readwiseLocation=
 date: 2025-04-01
-summary: This guide explains the importance of understanding WordPress security architecture to identify and report vulnerabilities effectively. It highlights key security features, such as data validation and sanitization, that developers should use to protect their applications. By recognizing patterns of improper security function use, researchers can help strengthen the overall security of the WordPress ecosystem.
 ---
 # WordPress Security Research Series: WordPress Security Architecture
 

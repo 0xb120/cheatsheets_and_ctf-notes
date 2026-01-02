@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - RCE
-  - code-review
-  - php-code-injection
-  - webshell
+tags: [RCE, code-review, php-code-injection, webshell]
 ---
 >[!quote]
 > *A high-profile political individual was a victim of a spear-phishing attack. The email came from a legitimate government entity in a nation we don't have jurisdiction. However, we have traced the originating mail to a government webserver. Further enumeration revealed an open directory index containing a PHP mailer script we think was used to send the email. We need access to the server to read the logs and find out the actual perpetrator. Can you help?*

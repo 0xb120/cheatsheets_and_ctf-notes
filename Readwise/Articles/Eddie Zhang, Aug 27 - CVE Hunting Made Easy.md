@@ -1,12 +1,7 @@
 ---
 author: Eddie Zhang, Aug 27
-aliases:
-  - CVE Hunting Made Easy
-tags:
-  - readwise/articles
-  - wordpress
-  - code-review
-  - wordpress/plugins
+aliases: [CVE Hunting Made Easy]
+tags: [readwise/articles, wordpress, code-review, wordpress/plugins]
 url: https://projectblack.io/blog/cve-hunting-at-scale/
 date: 2024-09-10
 ---

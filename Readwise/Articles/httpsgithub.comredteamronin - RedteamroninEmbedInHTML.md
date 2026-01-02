@@ -1,10 +1,7 @@
 ---
 author: https://github.com/redteamronin/
-aliases:
-  - Redteamronin/EmbedInHTML
-tags:
-  - readwise/articles
-  - Tools
+aliases: [Redteamronin/EmbedInHTML]
+tags: [readwise/articles, Tools]
 url: https://github.com/redteamronin/EmbedInHTML
 date: 2025-01-14
 ---

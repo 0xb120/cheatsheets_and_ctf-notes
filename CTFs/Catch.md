@@ -4,17 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Android
-  - RCE
-  - SSTI
-  - code-review
-  - command-injection
-  - hardcoded-key
-  - insecure-credentials
-  - parameter-injection
-  - reversing
-  - Linux
+tags: [Android, RCE, SSTI, code-review, command-injection, hardcoded-key, insecure-credentials, parameter-injection, reversing, Linux]
 ---
 # Resolution summary
 

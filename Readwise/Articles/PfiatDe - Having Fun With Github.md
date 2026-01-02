@@ -1,10 +1,12 @@
 ---
-author: "PfiatDe"
-aliases: "Having Fun With Github"
-tags: RW_inbox, readwise/articles
+author: PfiatDe
+aliases:
+  - Having Fun With Github
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://badoption.eu/blog/2025/04/25/github.html?__readwiseLocation=
 date: 2025-04-30
-summary: Github has security weaknesses that allow users to spoof commit authors and contributors. This can be used for malicious activities like phishing and tampering. Despite improvements, some vulnerabilities still exist, making it easy to create misleading content on the platform.
 ---
 # Having Fun With Github
 

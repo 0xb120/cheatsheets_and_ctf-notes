@@ -1,6 +1,5 @@
 ---
-aliases:
-  - Dictionary Attack
+aliases: [Dictionary Attack]
 ---
 # Introduction
 

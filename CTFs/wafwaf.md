@@ -4,10 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - code-review
-  - evasion
-  - SQL-Injection
+tags: [code-review, evasion, SQL-Injection]
 ---
 >[!quote]
 >*My classmate Jason made this small and super secure note taking application, check it out!*

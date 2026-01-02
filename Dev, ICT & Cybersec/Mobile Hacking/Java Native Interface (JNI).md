@@ -1,6 +1,5 @@
 ---
-aliases:
-  - JNI
+aliases: [JNI]
 ---
 The Java Native Interface [^jni] is used to call into native code and is commonly used to embed C or C++ code or libraries into an application.
 Some applications will use functions implemented in native shared objects. You can identify calls into such functions by the keyword `native`.

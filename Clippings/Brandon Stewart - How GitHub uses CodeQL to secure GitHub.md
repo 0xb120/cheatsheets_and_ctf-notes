@@ -6,9 +6,7 @@ author:
 published: 2025-02-12
 created: 2025-08-13
 description: "How GitHub’s Product Security Engineering team manages our CodeQL implementation at scale and how you can, too."
-tags:
-  - "clippings/articles"
-  - "_inbox"
+tags: ["clippings/articles", "_inbox"]
 ---
 # How GitHub uses CodeQL to secure GitHub
 

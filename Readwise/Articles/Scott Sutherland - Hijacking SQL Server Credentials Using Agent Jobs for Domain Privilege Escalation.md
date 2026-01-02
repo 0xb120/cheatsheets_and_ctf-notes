@@ -1,9 +1,7 @@
 ---
 author: Scott Sutherland
-aliases:
-  - Hijacking SQL Server Credentials Using Agent Jobs for Domain Privilege Escalation
-tags:
-  - readwise/articles
+aliases: [Hijacking SQL Server Credentials Using Agent Jobs for Domain Privilege Escalation]
+tags: [readwise/articles]
 url: https://www.netspi.com/blog/technical-blog/network-pentesting/hijacking-sql-server-credentials-with-agent-jobs-for-domain-privilege-escalation/
 date: 2024-10-09
 ---

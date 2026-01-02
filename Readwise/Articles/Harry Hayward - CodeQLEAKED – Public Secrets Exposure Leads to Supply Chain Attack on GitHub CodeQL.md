@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: ?__readwiseLocation=
 date: 2025-04-22
-summary: A researcher discovered a vulnerability in GitHub CodeQL that allows attackers to exploit publicly exposed secrets, specifically the GITHUB_TOKEN, to execute malicious code in workflows. This could lead to the theft of source code and sensitive information from private repositories. To mitigate risks, it's recommended to limit artifact uploads, restrict token permissions, and scan for secrets before uploading.
 ---
 # CodeQLEAKED – Public Secrets Exposure Leads to Supply Chain Attack on GitHub CodeQL
 

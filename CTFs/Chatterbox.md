@@ -4,14 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Achat
-  - RCE
-  - buffer-overflow
-  - credentials-in-registry
-  - credentials-reuse
-  - port-forwarding
-  - Windows
+tags: [Achat, RCE, buffer-overflow, credentials-in-registry, credentials-reuse, port-forwarding, Windows]
 ---
 # Resolution summary
 

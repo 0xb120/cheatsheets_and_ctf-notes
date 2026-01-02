@@ -3,6 +3,6 @@
 ```dataview
 TABLE date
 FROM #RW_inbox | #_inbox
-SORT date
+SORT File
 ```
 

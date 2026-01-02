@@ -1,9 +1,7 @@
 ---
 author: Bad Sector Labs Blog
-aliases:
-  - Jun 17 2024 Last Week in Security (LWiS) - 2024-06-17
-tags:
-  - readwise/articles
+aliases: [Jun 17 2024 Last Week in Security (LWiS) - 2024-06-17]
+tags: [readwise/articles]
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2024-06-17.html
 date: 2024-06-18
 ---

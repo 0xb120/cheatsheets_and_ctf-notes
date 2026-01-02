@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://www.sentinelone.com/blog/re-assessing-risk-subdomain-takeovers-as-supply-chain-attacks/?__readwiseLocation=
 date: 2025-04-24
-summary: Subdomain takeovers occur when attackers exploit improperly configured or unused subdomains, which can lead to serious supply chain risks. These vulnerabilities can arise from outdated DNS records or deleted cloud resources, allowing attackers to seize control and potentially harm an organization’s reputation. To mitigate these risks, security teams should proactively monitor and manage their DNS configurations and cloud resources.
 ---
 # Re-Assessing Risk | Subdomain Takeovers as Supply Chain Attacks
 

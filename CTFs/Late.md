@@ -4,16 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - RCE
-  - SSTI
-  - exploit-dev
-  - flask
-  - python-PIL
-  - python-coding
-  - python-pytesseract
-  - privesc/relative-paths-hijacking
-  - Linux
+tags: [RCE, SSTI, exploit-dev, flask, python-PIL, python-coding, python-pytesseract, privesc/relative-paths-hijacking, Linux]
 ---
 ![Late.png](../../zzz_res/attachments/Late.png)
 

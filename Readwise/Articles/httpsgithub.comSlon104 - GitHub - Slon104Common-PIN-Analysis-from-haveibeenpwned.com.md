@@ -1,11 +1,10 @@
 ---
 author: https://github.com/Slon104/
-aliases: 
+aliases: []
 tags:
   - readwise/articles
 url: https://github.com/Slon104/Common-PIN-Analysis-from-haveibeenpwned.com?__readwiseLocation=
 date: 2025-04-24
-summary: The project analyzes data from haveibeenpwned.com to compile a list of common PIN codes and their popularity. It includes downloadable wordlists for 3-digit, 4-digit, and 6-digit PINs, along with visualizations to show usage patterns. Contributions and discussions are welcome to improve the analysis and visualizations.
 ---
 # GitHub - Slon104/Common-PIN-Analysis-from-haveibeenpwned.com: 
 

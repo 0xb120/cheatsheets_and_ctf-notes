@@ -1,7 +1,7 @@
 ---
 author: "Orange Tsai"
-aliases: "Breaking Parser Logic - Take Your Path Normalization Off and Pop 0days Out"
-tags: RW_inbox, readwise/articles
+aliases: ["Breaking Parser Logic - Take Your Path Normalization Off and Pop 0days Out"]
+tags: [RW_inbox, readwise/articles]
 url: https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf?ref=labs.watchtowr.com
 date: 2025-01-08
 ---

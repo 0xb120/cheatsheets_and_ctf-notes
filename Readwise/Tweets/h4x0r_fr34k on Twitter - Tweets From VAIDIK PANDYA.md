@@ -1,9 +1,7 @@
 ---
 author: h4x0r_fr34k on Twitter
-aliases:
-  - Tweets From VAIDIK PANDYA
-tags:
-  - readwise/tweets
+aliases: [Tweets From VAIDIK PANDYA]
+tags: [readwise/tweets]
 url: https://twitter.com/h4x0r_fr34k
 date: 2023-12-06
 ---

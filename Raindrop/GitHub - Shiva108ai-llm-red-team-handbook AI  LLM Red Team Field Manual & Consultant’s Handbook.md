@@ -17,8 +17,7 @@ source: https://github.com/shiva108/ai-llm-red-team-handbook
 
 created: 1764871588377
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "labs" 

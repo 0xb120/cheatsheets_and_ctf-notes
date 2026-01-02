@@ -37,8 +37,7 @@ source: https://github.com/aliasrobotics/cai
 
 created: 1757679357343
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

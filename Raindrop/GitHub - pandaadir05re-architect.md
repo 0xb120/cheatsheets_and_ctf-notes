@@ -16,8 +16,7 @@ source: https://github.com/pandaadir05/re-architect
 
 created: 1758646182733
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "LLM" 

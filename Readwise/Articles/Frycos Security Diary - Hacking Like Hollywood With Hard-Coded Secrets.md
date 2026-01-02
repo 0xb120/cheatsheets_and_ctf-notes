@@ -1,9 +1,7 @@
 ---
 author: Frycos Security Diary
-aliases:
-  - Hacking Like Hollywood With Hard-Coded Secrets
-tags:
-  - readwise/articles
+aliases: [Hacking Like Hollywood With Hard-Coded Secrets]
+tags: [readwise/articles]
 url: https://frycos.github.io/vulns4free/2023/11/07/hacking-like-hollywood.html
 date: 2023-11-16
 ---

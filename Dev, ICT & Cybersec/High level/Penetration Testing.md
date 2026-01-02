@@ -1,6 +1,5 @@
 ---
-aliases:
-  - Pentesting
+aliases: [Pentesting]
 ---
 # What is penetration testing
 

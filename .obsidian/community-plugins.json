@@ -1,7 +1,5 @@
 [
-  "advanced-canvas",
   "auto-card-link",
-  "obsidian-book-search-plugin",
   "code-styler",
   "dataview",
   "obsidian-emoji-toolbar",
@@ -11,7 +9,6 @@
   "url-into-selection",
   "obsidian-reading-time",
   "settings-search",
-  "readwise-official",
   "omnisearch",
   "excalibrain",
   "obsidian-checklist-plugin",
@@ -21,5 +18,7 @@
   "text-extractor",
   "obsidian-quiet-outline",
   "file-tree-alternative",
-  "obsidian-raindrop-highlights"
+  "obsidian-raindrop-highlights",
+  "obsidian-mind-map",
+  "readwise-official"
 ]

@@ -4,8 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - crockford
+tags: [crockford]
 ---
 >[!quote]
 > *Some bits are missing*

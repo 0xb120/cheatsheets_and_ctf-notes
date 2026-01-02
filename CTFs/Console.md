@@ -4,11 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - brute-force
-  - code-review
-  - python-coding
-  - reversing
+tags: [brute-force, code-review, python-coding, reversing]
 ---
 >[!summary]
 >*Could you please check the console of your Chrome?*

@@ -4,15 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - DDNS
-  - privesc/cp
-  - insecure-credentials
-  - insecure-file-permissions
-  - nsupdate
-  - parameter-injection
-  - php-code-injection
-  - Linux
+tags: [DDNS, privesc/cp, insecure-credentials, insecure-file-permissions, nsupdate, parameter-injection, php-code-injection, Linux]
 ---
 # Resolution summary
 

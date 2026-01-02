@@ -3,9 +3,7 @@ Category:
   - CI/CD
 Difficulty: Easy
 Platform: CICD Goat
-tags:
-  - poisoned-pipeline-execution
-  - i-ppe
+tags: [poisoned-pipeline-execution, i-ppe]
 status: 3. Complete
 ---
 >[!quote]

@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - LFI
-  - WAR
-  - cracking-zip-files
-  - privesc/lxd
-  - tomcat
-  - Linux
+tags: [LFI, WAR, cracking-zip-files, privesc/lxd, tomcat, Linux]
 ---
 ### Improved skills
 

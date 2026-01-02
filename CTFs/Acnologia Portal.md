@@ -4,13 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - XSS
-  - exploit-chain
-  - flask
-  - pickle-deserialization
-  - zip-slip
-  - CSRF
+tags: [XSS, exploit-chain, flask, pickle-deserialization, zip-slip, CSRF]
 ---
 >[!quote]
 > *Bonnie has confirmed the location of the Acnologia spacecraft operated by the Golden Fang mercenary. Before taking over the spaceship, we need to disable its security measures. Ulysses discovered an accessible firmware management portal for the spacecraft. Can you help him get in?*****

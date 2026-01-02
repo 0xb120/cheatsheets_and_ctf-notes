@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://security.humanativaspa.it/aiding-reverse-engineering-with-rust-and-a-local-llm/?__readwiseLocation=
 date: 2025-04-24
-summary: A large fraction of the flawsThe post Aiding reverse engineering with Rust and a local LLM appeared first on hn security.
 ---
 # Aiding Reverse Engineering With Rust and a Local LLM
 

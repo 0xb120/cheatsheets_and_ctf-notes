@@ -6,9 +6,7 @@ author:
 published: 2025-08-06
 created: 2025-08-19
 description: "Learn how to find SQL Injection vulnerabilities in WordPress plugins and themes for the Wordfence Bug Bounty program."
-tags:
-  - "clippings/articles"
-  - "_inbox"
+tags: ["clippings/articles", "_inbox"]
 ---
 # How To Find SQL Injection Vulnerabilities in WordPress Plugins and Themes
 

@@ -4,15 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - CRLF-injection
-  - GitLab
-  - SSRF
-  - credentials-reuse
-  - docker-breakout
-  - hardcoded-credentials
-  - redis
-  - Linux
+tags: [CRLF-injection, GitLab, SSRF, credentials-reuse, docker-breakout, hardcoded-credentials, redis, Linux]
 ---
 # Introduction
 

@@ -11,8 +11,7 @@ source: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-11-03.htm
 
 created: 1762328179214
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Inoreader" 

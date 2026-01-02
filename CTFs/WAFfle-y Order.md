@@ -4,13 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - OAST
-  - XXE-Injection
-  - evasion
-  - parsers-differential
-  - php-deserialization
-  - exploit-chain
+tags: [OAST, XXE-Injection, evasion, parsers-differential, php-deserialization, exploit-chain]
 ---
 
 # Introduction and setup

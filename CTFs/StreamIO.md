@@ -4,13 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 2. User
-tags:
-  - LFI
-  - MSSQL
-  - RCE
-  - SQL-Injection
-  - port-forwarding
-  - Windows
+tags: [LFI, MSSQL, RCE, SQL-Injection, port-forwarding, Windows]
 ---
 ![StreamIO.png](../../zzz_res/attachments/StreamIO.png)
 

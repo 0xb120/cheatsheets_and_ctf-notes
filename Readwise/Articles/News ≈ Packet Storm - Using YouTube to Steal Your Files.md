@@ -1,9 +1,7 @@
 ---
 author: News ≈ Packet Storm
-aliases:
-  - Using YouTube to Steal Your Files
-tags:
-  - readwise/articles
+aliases: [Using YouTube to Steal Your Files]
+tags: [readwise/articles]
 url: https://packetstormsecurity.com/news/view/36373/Using-YouTube-To-Steal-Your-Files.html
 date: 2024-09-25
 ---

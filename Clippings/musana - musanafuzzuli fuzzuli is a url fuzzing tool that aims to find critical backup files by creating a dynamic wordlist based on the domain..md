@@ -6,10 +6,8 @@ author:
 published:
 created: 2025-08-19
 description: fuzzuli is a url fuzzing tool that aims to find critical backup files by creating a dynamic wordlist based on the domain. - musana/fuzzuli
-tags:
-  - clippings/articles
-aliases:
-  - fuzzuli
+tags: [clippings/articles]
+aliases: [fuzzuli]
 ---
 # musana/fuzzuli: fuzzuli is a url fuzzing tool that aims to find critical backup files by creating a dynamic wordlist based on the domain.
 

@@ -7,7 +7,6 @@ tags:
   - readwise/articles
 url: https://www.paloaltonetworks.com/blog/cloud-security/unpinnable-actions-github-security/?__readwiseLocation=
 date: 2025-04-24
-summary: Action pinning in GitHub Actions is meant to protect against supply chain attacks, but it has a flaw called "unpinnable actions" that can still allow attackers to run malicious code. Many third-party actions, even when pinned, can pull in mutable dependencies like Docker images, making them vulnerable to compromise. Research shows that a significant percentage of popular GitHub actions are unpinnable, putting many projects at risk despite using pinning as a security measure.
 ---
 # Unpinnable Actions: How Malicious Code Can Sneak Into Your GitHub Actions Workflows
 

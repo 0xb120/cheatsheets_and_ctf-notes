@@ -11,8 +11,7 @@ source: https://mdisec.com/inside-posthog-how-ssrf-a-clickhouse-sql-escaping-0da
 
 created: 1766042692631
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Inoreader" 

@@ -1,10 +1,13 @@
 ---
-author: "ostorlab.co"
-aliases: "Flutter Reverse Engineering and Security Analysis"
-tags: RW_inbox, readwise/articles, Flutter
+author: ostorlab.co
+aliases:
+  - Flutter Reverse Engineering and Security Analysis
+tags:
+  - RW_inbox
+  - readwise/articles
+  - Flutter
 url: https://blog.ostorlab.co/flutter-reverse-engineering-security-analysis.html?__readwiseLocation=
 date: 2025-04-24
-summary: Flutter is a popular framework by Google for building cross-platform mobile, web, and desktop applications, and it can be analyzed for security vulnerabilities. Tools for this analysis include static and dynamic analysis methods, though some tools may not support the latest versions of Flutter. The article discusses how to patch the Flutter runtime and extract information to improve security in Flutter applications.
 ---
 # Flutter Reverse Engineering and Security Analysis
 

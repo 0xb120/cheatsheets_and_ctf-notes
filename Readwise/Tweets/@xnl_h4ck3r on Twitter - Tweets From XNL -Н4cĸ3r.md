@@ -1,9 +1,7 @@
 ---
 author: "@xnl_h4ck3r on Twitter"
-aliases:
-  - Tweets From / XNL -Н4cĸ3r
-tags:
-  - readwise/tweets
+aliases: [Tweets From / XNL -Н4cĸ3r]
+tags: [readwise/tweets]
 url: https://twitter.com/xnl_h4ck3r
 date: 2024-08-20
 ---

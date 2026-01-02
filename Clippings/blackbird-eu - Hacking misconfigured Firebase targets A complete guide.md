@@ -6,9 +6,7 @@ author:
 published: 2025-08-12
 created: 2025-08-12
 description: "Google Firebase is a popular back-end application development platform that provides several built-in components and services, allowing developers to seamlessly build interactive web and mobile applic..."
-tags:
-  - "clippings/articles"
-  - "_inbox"
+tags: ["clippings/articles", "_inbox"]
 ---
 # Hacking misconfigured Firebase targets: A complete guide
 

@@ -7,10 +7,7 @@ author:
 published:
 created: 2025-08-19
 description: "🌐 The Internet OS! Free, Open-Source, and Self-Hostable. - HeyPuter/puter"
-tags:
-  - "clippings/articles"
-  - "_inbox"
-  - "tools"
+tags: ["clippings/articles", "_inbox", "tools"]
 ---
 # HeyPuter/puter: 🌐 The Internet OS! Free, Open-Source, and Self-Hostable.
 

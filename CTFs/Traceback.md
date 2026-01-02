@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - OSINT
-  - insecure-file-permissions
-  - lua
-  - luvit
-  - webshell
-  - Linux
+tags: [OSINT, insecure-file-permissions, lua, luvit, webshell, Linux]
 ---
 ### Improved skills
 

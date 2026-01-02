@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - EternalBlue
-  - MS17-010
-  - Windows
-  - anonymous-smb
+tags: [EternalBlue, MS17-010, Windows, anonymous-smb]
 ---
 # Resolution summary
 

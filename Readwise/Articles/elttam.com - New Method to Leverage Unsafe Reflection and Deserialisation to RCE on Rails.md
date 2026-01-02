@@ -1,10 +1,12 @@
 ---
-author: "elttam.com"
-aliases: "New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails"
-tags: RW_inbox, readwise/articles
+author: elttam.com
+aliases:
+  - New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
+tags:
+  - RW_inbox
+  - readwise/articles
 url: ?__readwiseLocation=
 date: 2025-04-24
-summary: Researchers discovered a new method to exploit unsafe reflection and deserialization in Ruby on Rails, specifically using the sqlite3 gem. This vulnerability can lead to arbitrary code execution if user inputs are not properly controlled. The findings highlight the risks of using certain Ruby methods and the potential for new security issues in Rails applications.
 ---
 # New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
 

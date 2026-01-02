@@ -1,9 +1,7 @@
 ---
 author: PortSwigger Research
-aliases:
-  - "Introducing SignSaboteur: Forge Signed Web Tokens With Ease"
-tags:
-  - readwise/articles
+aliases: ["Introducing SignSaboteur: Forge Signed Web Tokens With Ease"]
+tags: [readwise/articles]
 url: https://portswigger.net/research/introducing-signsaboteur-forge-signed-web-tokens-with-ease
 date: 2024-08-22
 ---

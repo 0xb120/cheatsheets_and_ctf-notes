@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-03-03.html
 date: 2025-03-05
-summary:
 ---
 # Last Week in Security (LWiS) - 2025-03-03
 

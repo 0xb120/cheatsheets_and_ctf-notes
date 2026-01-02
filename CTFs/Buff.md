@@ -4,14 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - CloudMe
-  - Gym-Management-System
-  - RCE
-  - buffer-overflow
-  - exploit-dev
-  - port-forwarding
-  - Windows
+tags: [CloudMe, Gym-Management-System, RCE, buffer-overflow, exploit-dev, port-forwarding, Windows]
 ---
 # Resolution summary
 

@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://blog.detectify.com/best-practices/dns-is-the-center-of-the-modern-attack-surface-are-you-protecting-all-levels/?__readwiseLocation=
 date: 2025-03-21
-summary: Many organizations rely on the Domain Name System (DNS) to manage their internet exposure, often having thousands of DNS records that can be changed with little oversight. However, DNS is vulnerable at multiple levels, from root servers to individual records, which can lead to serious security risks if not properly managed. Automation and careful monitoring are essential to protect against potential vulnerabilities in DNS configurations.
 ---
 # DNS Is the Center of the Modern Attack Surface – Are You Protecting All Levels?
 

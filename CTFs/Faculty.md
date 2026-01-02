@@ -4,20 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - LFI
-  - RCE
-  - SQL-Injection
-  - authentication-bypass
-  - cap_sys_ptrace
-  - control
-  - tags
-  - credentials-reuse
-  - privesc/gdb
-  - mPDF
-  - meta-git
-  - process-injection-privesc
-  - Linux
+tags: [LFI, RCE, SQL-Injection, authentication-bypass, cap_sys_ptrace, control, tags, credentials-reuse, privesc/gdb, mPDF, meta-git, process-injection-privesc, Linux]
 ---
 ![Faculty.png](../../zzz_res/attachments/Faculty.png)
 

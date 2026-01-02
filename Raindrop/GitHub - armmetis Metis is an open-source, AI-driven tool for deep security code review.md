@@ -27,8 +27,7 @@ source: https://github.com/arm/metis
 
 created: 1764102474086
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

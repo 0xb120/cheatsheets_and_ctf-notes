@@ -4,15 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - JWT
-  - RCE
-  - SSRF
-  - authorization-bypass
-  - docker-exec-privesc
-  - insecure-file-permissions
-  - privesc/runc
-  - Linux
+tags: [JWT, RCE, SSRF, authorization-bypass, docker-exec-privesc, insecure-file-permissions, privesc/runc, Linux]
 ---
 ## Introduction
 

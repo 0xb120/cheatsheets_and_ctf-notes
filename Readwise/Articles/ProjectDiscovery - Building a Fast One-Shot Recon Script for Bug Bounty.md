@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://projectdiscovery.io/blog/building-one-shot-recon?__readwiseLocation=
 date: 2025-05-05
-summary: This article explains how to create a fast one-shot reconnaissance script for bug bounty testing. It covers essential steps like asset discovery, subdomain enumeration, and HTTP server scanning. The script helps organize and analyze data collected during the reconnaissance process.
 ---
 # Building a Fast One-Shot Recon Script for Bug Bounty
 

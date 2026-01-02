@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-03-17.html?__readwiseLocation=
 date: 2025-03-19
-summary: Last Week in Security highlights significant cybersecurity news and tools from March 10 to March 17, 2025. Notable updates include the release of Evilginx Pro for phishing, new features in Cobalt Strike 4.11, and concerns about rampant password reuse. The post also discusses emerging threats like AI-assisted fake GitHub repositories and various security vulnerabilities.
 ---
 # Last Week in Security (LWiS) - 2025-03-17
 

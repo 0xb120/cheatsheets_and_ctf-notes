@@ -28,8 +28,7 @@ source: https://theori.io/blog/exploring-traces-63950
 
 created: 1754681146000
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

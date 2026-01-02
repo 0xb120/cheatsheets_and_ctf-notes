@@ -4,16 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - FreeBSD
-  - GTFObins
-  - Moodle
-  - credentials-reuse
-  - hardcoded-credentials
-  - moodle-custom-plugin
-  - moodle-log-in-as
-  - privesc/pkg
-  - XSS
+tags: [FreeBSD, GTFObins, Moodle, credentials-reuse, hardcoded-credentials, moodle-custom-plugin, moodle-log-in-as, privesc/pkg, XSS]
 ---
 # Resolution summary
 

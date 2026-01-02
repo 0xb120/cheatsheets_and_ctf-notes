@@ -1,7 +1,9 @@
 ---
 author: "Thomas Tan"
 aliases: "Unconstrained Delegation in Active Directory"
-tags: RW_inbox, readwise/articles
+tags: 
+- RW_inbox
+- readwise/articles
 url: https://www.praetorian.com/blog/unconstrained-delegation-active-directory/?__readwiseLocation=
 date: 2025-04-24
 summary: Overview Unconstrained delegation is a feature in Active Directory that allows a computer, service, or user to impersonate any other user and access resources on their behalf across the entire network, completely unrestricted. A typical example of a use case for unconstrained delegation is when certain services require access to another server or back-end database. […]

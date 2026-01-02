@@ -1,10 +1,13 @@
 ---
-author: "0xdf hacks stuff"
-aliases: "Python Tools and Scripts W/ UV CheatSheet"
-tags: RW_inbox, readwise/articles, tools
+author: 0xdf hacks stuff
+aliases:
+  - Python Tools and Scripts W/ UV CheatSheet
+tags:
+  - RW_inbox
+  - readwise/articles
+  - tools
 url: https://0xdf.gitlab.io/cheatsheets/uv?__readwiseLocation=
 date: 2025-05-08
-summary: UV is a new Python tool that simplifies packaging, project management, and running scripts. It is faster and more efficient than existing tools like pip and pipx. This post provides commands and tricks for using UV to install and manage Python applications easily.
 ---
 # Python Tools and Scripts W/ UV CheatSheet
 

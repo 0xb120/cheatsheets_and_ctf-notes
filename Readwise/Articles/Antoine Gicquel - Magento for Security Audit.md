@@ -1,10 +1,12 @@
 ---
-author: "Antoine Gicquel"
-aliases: "Magento for Security Audit"
-tags: RW_inbox, readwise/articles
+author: Antoine Gicquel
+aliases:
+  - Magento for Security Audit
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://www.synacktiv.com/publications/magento-for-security-audit.html?__readwiseLocation=
 date: 2025-04-30
-summary: The article discusses the security aspects of auditing Magento applications, highlighting the structure of the platform and its various components. It explains the importance of understanding specific folders like /app/code for custom code and /app/etc for configuration files. Additionally, it covers the Authorization and ACL systems, as well as the plugin mechanism that adds complexity to the code execution flow.
 ---
 # Magento for Security Audit
 

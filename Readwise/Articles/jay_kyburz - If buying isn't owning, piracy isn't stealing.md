@@ -1,10 +1,7 @@
 ---
 author: jay_kyburz
-aliases:
-  - If buying isn't owning
-  - piracy isn't stealing
-tags:
-  - readwise/articles
+aliases: [If buying isn't owning, piracy isn't stealing]
+tags: [readwise/articles]
 url: https://pluralistic.net/2023/12/08/playstationed/#tyler-james-hill
 date: 2024-08-20
 ---

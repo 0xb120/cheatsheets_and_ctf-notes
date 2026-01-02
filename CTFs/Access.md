@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 status: 3. Complete
-tags:
-  - Windows
-  - anonymous-ftp
-  - credentials-in-wcm
-  - insecure-credentials
-  - privesc/runas
+tags: [Windows, anonymous-ftp, credentials-in-wcm, insecure-credentials, privesc/runas]
 ---
 # Resolution summary
 

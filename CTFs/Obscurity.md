@@ -4,13 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - code-review
-  - cracking-shadow-file
-  - exploit-dev
-  - python-coding
-  - reversing
-  - Linux
+tags: [code-review, cracking-shadow-file, exploit-dev, python-coding, reversing, Linux]
 ---
 ## Improved skills
 

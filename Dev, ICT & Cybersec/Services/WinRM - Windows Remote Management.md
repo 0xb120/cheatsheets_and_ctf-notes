@@ -1,6 +1,6 @@
 ---
 Ports: 5985, 5986
-Description: Is a Microsoft protocol that allows remote management of Windows machines over HTTP(S) using SOAP. On the backend it's utilising WMI, so you can think of it as an HTTP based API for WMI.
+Description: "Is a Microsoft protocol that allows remote management of Windows machines over HTTP(S) using SOAP. On the backend it's utilising WMI, so you can think of it as an HTTP based API for WMI."
 ---
 
 >[!info]

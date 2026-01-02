@@ -15,8 +15,7 @@ source: https://www.intigriti.com/researchers/blog/hacking-tools/exploiting-dom-
 
 created: 1763054371140
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Inoreader"

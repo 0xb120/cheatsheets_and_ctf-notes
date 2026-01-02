@@ -1,10 +1,12 @@
 ---
-author: "Erik"
-aliases: "Last Week in Security (LWiS) - 2025-05-12"
-tags: RW_inbox, readwise/articles
+author: Erik
+aliases:
+  - Last Week in Security (LWiS) - 2025-05-12
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-05-12.html?__readwiseLocation=
 date: 2025-07-07
-summary: Last Week in Security summarizes key cybersecurity news and developments from May 5 to May 12, 2025. Highlights include Google's AI integration in Chrome to detect phishing sites and the failure of a Florida bill for encryption backdoors. The post also covers various tools, techniques, and recent exploits relevant to cybersecurity professionals.
 ---
 # Last Week in Security (LWiS) - 2025-05-12
 

@@ -19,8 +19,7 @@ source: https://cyberar.io/blog/blazor-penetration-testing
 
 created: 1758183830154
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "tech-blog" 

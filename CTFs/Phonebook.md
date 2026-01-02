@@ -4,10 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - broken-auth
-  - brute-force
-  - SQL-Injection
+tags: [broken-auth, brute-force, SQL-Injection]
 ---
 >[!quote]
 > *Who is lucky enough to be included in the phonebook?*

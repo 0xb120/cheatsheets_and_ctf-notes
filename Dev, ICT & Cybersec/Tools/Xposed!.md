@@ -1,5 +1,5 @@
 ---
-Description: Xposed is a framework for modules that can change the behavior of the system and apps without touching any APKs. That's great because it means that modules can work for different versions and even ROMs without any changes (as long as the original code was not changed too much).
+Description: "Xposed is a framework for modules that can change the behavior of the system and apps without touching any APKs. That's great because it means that modules can work for different versions and even ROMs without any changes (as long as the original code was not changed too much)."
 URL: https://repo.xposed.info/module/de.robv.android.xposed.installer
 ---
 

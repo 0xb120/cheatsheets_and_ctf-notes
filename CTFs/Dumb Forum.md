@@ -4,10 +4,7 @@ Category:
 Difficulty: Medium
 Platform: m0leCon
 Status: 3. Complete
-tags:
-  - SSTI
-  - jinja
-  - flask
+tags: [SSTI, jinja, flask]
 ---
 >[!quote]
 > *You're telling me you can't break such a simple forum?*

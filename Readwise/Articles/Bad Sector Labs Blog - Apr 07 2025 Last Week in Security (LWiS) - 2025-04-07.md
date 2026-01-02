@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-04-07.html?__readwiseLocation=?__readwiseLocation=
 date: 2025-04-24
-summary: The "Last Week in Security" summary highlights important cybersecurity news, tools, and techniques from March 24 to April 7, 2025. Key topics include new training courses for Azure Red Teaming, vulnerabilities in software like Ingress NGINX, and emerging tools for security analysis. Readers are encouraged to stay informed and take proactive measures against potential security threats.
 ---
 # Apr 07 2025 Last Week in Security (LWiS) - 2025-04-07
 

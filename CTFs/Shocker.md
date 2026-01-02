@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - GTFObins
-  - Shellshock
-  - privesc/perl
-  - Linux
+tags: [GTFObins, Shellshock, privesc/perl, Linux]
 ---
 # Resolution summary
 

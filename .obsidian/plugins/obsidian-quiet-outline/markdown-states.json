@@ -460,5 +460,2508 @@
       }
     },
     "expandedKeys": []
+  },
+  "Readwise/Articles/Arch Cloud Labs - 5 Years of InfoSec Focused Homelabbing.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/High level/Vulnerability research 101.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Readwise/Articles/Jorge Rosillo - Security Research Without Ever Leaving GitHub From Code Scanning to CVE via Codespaces and Private Vulnerability Reporting.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3",
+      "item-2-7",
+      "item-2-9"
+    ]
+  },
+  "CTFs/_CTF-dashboard_wrapper.md": {
+    "scroll": 7.934746938146479,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 0
+      },
+      "to": {
+        "line": 9,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Tweets/@xnl_h4ck3r on Twitter - Tweets From XNL -Н4cĸ3r.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "CTFs/archived.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-2",
+      "item-1-5"
+    ]
+  },
+  "zzz_res/templates/HTB-challenge.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-1-4",
+      "item-1-9"
+    ]
+  },
+  "zzz_res/templates/HTB-machine.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-5",
+      "item-1-7",
+      "item-1-9",
+      "item-1-12"
+    ]
+  },
+  "Readwise/Readwise inbox.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 8,
+        "ch": 0
+      },
+      "to": {
+        "line": 8,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Tweets/@SecurityTrybe on Twitter - Tweets From SecurityTrybe.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/- Resecurity  Methods to Bypass OTP in Mobile Apps Successful VAPT Scenarios.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-3-4"
+    ]
+  },
+  "Clippings/Alex Thomas - How To Find SQL Injection Vulnerabilities in WordPress Plugins and Themes.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1",
+      "item-3-2"
+    ]
+  },
+  "Clippings/dtomvan - 9001copyparty Portable file server with accelerated resumable uploads, dedup, WebDAV, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file, no deps.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/lyra's epic blog - SVG Filters - Clickjacking 2.0.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1",
+      "item-2-6"
+    ]
+  },
+  "Clippings/Omid Rezaei - OAuth Non-Happy Path to ATO.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/0x999.net - Exploring Javascript Events & Bypassing WAFs via Character Normalization.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 10
+      },
+      "to": {
+        "line": 4,
+        "ch": 10
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 2
+      },
+      "to": {
+        "line": 6,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2",
+      "item-3-3",
+      "item-3-8",
+      "item-3-21"
+    ]
+  },
+  "Readwise/Articles/0xdf - Analysis of CVE-2023-37474 in CopyParty.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/0xdf hacks stuff - Default 404 Pages.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Adam Crosser - SonicWall WXA – Authentication Bypass and Remote Code Execution Vulnerability.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Adan - GitHub Actions and the Pinning Problem What 100 Security Projects Reveal.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/admin - Source Code Disclosure in ASP.NET Apps.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Readwise/Articles/Admin - When WAFs Go Awry Common Detection & Evasion Techniques for Web Application Firewalls.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-4"
+    ]
+  },
+  "Readwise/Articles/Alex Thomas - How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Alex Thomas - WordPress Security Research Series WordPress Request Architecture and Hooks.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Readwise/Articles/Blog – Snyk - Reconstructing the TJ Actions Changed Files GitHub Actions Compromise.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Readwise/Articles/Connor Ford - Version Tracking in Ghidra.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-01-06.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Intigriti - The Major Bug Bounty Debate Which Department Should Pay for Rewards.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Penetration Testing and CyberSecurity Solution – SecureLayer7 - What Is PCI DSS Compliance.md": {
+    "scroll": 134.2962962962963,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 108597,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-2",
+      "item-1-4",
+      "item-1-6",
+      "item-1-8",
+      "item-1-10",
+      "item-1-12",
+      "item-1-14",
+      "item-1-16",
+      "item-1-18",
+      "item-1-20",
+      "item-1-22",
+      "item-1-24",
+      "item-1-26",
+      "item-1-28",
+      "item-1-30",
+      "item-1-32",
+      "item-1-34",
+      "item-1-36",
+      "item-1-38",
+      "item-1-40",
+      "item-1-42",
+      "item-1-44",
+      "item-1-46",
+      "item-1-48",
+      "item-1-50",
+      "item-1-52",
+      "item-1-54",
+      "item-1-56",
+      "item-1-58",
+      "item-1-60",
+      "item-1-62",
+      "item-1-64",
+      "item-1-66",
+      "item-1-68",
+      "item-1-70",
+      "item-1-72",
+      "item-1-74",
+      "item-1-76",
+      "item-1-78",
+      "item-1-80",
+      "item-1-82",
+      "item-1-84",
+      "item-1-86",
+      "item-1-88",
+      "item-1-90",
+      "item-1-92",
+      "item-1-94",
+      "item-1-96",
+      "item-1-98",
+      "item-1-100",
+      "item-1-102",
+      "item-1-104",
+      "item-1-106",
+      "item-1-108",
+      "item-1-110",
+      "item-1-112",
+      "item-1-114",
+      "item-1-116",
+      "item-1-118",
+      "item-1-120",
+      "item-1-122",
+      "item-1-124",
+      "item-1-126",
+      "item-1-128",
+      "item-1-130",
+      "item-1-132",
+      "item-1-134",
+      "item-1-136",
+      "item-1-138",
+      "item-1-140",
+      "item-1-142",
+      "item-1-144",
+      "item-1-146",
+      "item-1-148",
+      "item-1-150",
+      "item-1-152",
+      "item-1-154",
+      "item-1-156",
+      "item-1-158",
+      "item-1-160",
+      "item-1-162",
+      "item-1-164",
+      "item-1-166",
+      "item-1-168",
+      "item-1-170",
+      "item-1-172",
+      "item-1-174",
+      "item-1-176",
+      "item-1-178",
+      "item-1-180",
+      "item-1-182",
+      "item-1-184",
+      "item-1-186",
+      "item-1-188",
+      "item-1-190",
+      "item-1-192",
+      "item-1-194",
+      "item-1-196",
+      "item-1-198",
+      "item-1-200",
+      "item-1-202",
+      "item-1-204",
+      "item-1-206",
+      "item-1-208",
+      "item-1-210",
+      "item-1-212",
+      "item-1-214",
+      "item-1-216",
+      "item-1-218",
+      "item-1-220",
+      "item-1-222",
+      "item-1-224",
+      "item-1-226",
+      "item-1-228",
+      "item-1-230",
+      "item-1-232",
+      "item-1-234",
+      "item-1-236",
+      "item-1-238",
+      "item-1-240",
+      "item-1-242",
+      "item-1-244",
+      "item-1-246",
+      "item-1-248",
+      "item-1-250",
+      "item-1-252",
+      "item-1-254",
+      "item-1-256",
+      "item-1-258",
+      "item-1-260",
+      "item-1-262",
+      "item-1-264",
+      "item-1-266",
+      "item-1-268",
+      "item-1-270",
+      "item-1-272",
+      "item-1-274",
+      "item-1-276",
+      "item-1-278",
+      "item-1-280",
+      "item-1-282",
+      "item-1-284",
+      "item-1-286",
+      "item-1-288",
+      "item-1-290",
+      "item-1-292",
+      "item-1-294",
+      "item-1-296",
+      "item-1-298",
+      "item-1-300",
+      "item-1-302",
+      "item-1-304",
+      "item-1-306",
+      "item-1-308",
+      "item-1-310",
+      "item-1-312",
+      "item-1-314",
+      "item-1-316",
+      "item-1-318",
+      "item-1-320",
+      "item-1-322",
+      "item-1-324",
+      "item-1-326",
+      "item-1-328",
+      "item-1-330",
+      "item-1-332",
+      "item-1-334",
+      "item-1-336",
+      "item-1-338",
+      "item-1-340",
+      "item-1-342",
+      "item-1-344",
+      "item-1-346",
+      "item-1-348",
+      "item-1-350",
+      "item-1-352",
+      "item-1-354",
+      "item-1-356",
+      "item-1-358",
+      "item-1-360",
+      "item-1-362",
+      "item-1-364",
+      "item-1-366",
+      "item-1-368",
+      "item-1-370",
+      "item-1-372",
+      "item-1-374",
+      "item-1-376",
+      "item-1-378",
+      "item-1-380",
+      "item-1-382",
+      "item-1-384",
+      "item-1-386",
+      "item-1-388",
+      "item-1-390",
+      "item-1-392",
+      "item-1-394",
+      "item-1-396",
+      "item-1-398",
+      "item-1-400",
+      "item-1-402",
+      "item-1-404",
+      "item-1-406",
+      "item-1-408",
+      "item-1-410",
+      "item-1-412",
+      "item-1-414",
+      "item-1-416",
+      "item-1-418",
+      "item-1-420",
+      "item-1-422",
+      "item-1-424",
+      "item-1-426",
+      "item-1-428",
+      "item-1-430",
+      "item-1-432",
+      "item-1-434",
+      "item-1-436",
+      "item-1-438",
+      "item-1-440",
+      "item-1-442",
+      "item-1-444",
+      "item-1-446",
+      "item-1-448",
+      "item-1-450",
+      "item-1-452",
+      "item-1-454",
+      "item-1-456",
+      "item-1-458",
+      "item-1-460",
+      "item-1-462",
+      "item-1-464",
+      "item-1-466",
+      "item-1-468",
+      "item-1-470",
+      "item-1-472",
+      "item-1-474",
+      "item-1-476",
+      "item-1-478",
+      "item-1-480",
+      "item-1-482",
+      "item-1-484",
+      "item-1-486",
+      "item-1-488",
+      "item-1-490",
+      "item-1-492",
+      "item-1-494",
+      "item-1-496",
+      "item-1-498",
+      "item-1-500",
+      "item-1-502",
+      "item-1-504",
+      "item-1-506",
+      "item-1-508",
+      "item-1-510",
+      "item-1-512",
+      "item-1-514",
+      "item-1-516",
+      "item-1-518",
+      "item-1-520",
+      "item-1-522",
+      "item-1-524",
+      "item-1-526",
+      "item-1-528",
+      "item-1-530",
+      "item-1-532",
+      "item-1-534",
+      "item-1-536",
+      "item-1-538",
+      "item-1-540",
+      "item-1-542",
+      "item-1-544",
+      "item-1-546",
+      "item-1-548",
+      "item-1-550",
+      "item-1-552",
+      "item-1-554",
+      "item-1-556",
+      "item-1-558",
+      "item-1-560",
+      "item-1-562",
+      "item-1-564",
+      "item-1-566",
+      "item-1-568",
+      "item-1-570",
+      "item-1-572",
+      "item-1-574",
+      "item-1-576",
+      "item-1-578",
+      "item-1-580",
+      "item-1-582",
+      "item-1-584",
+      "item-1-586",
+      "item-1-588",
+      "item-1-590",
+      "item-1-592",
+      "item-1-594",
+      "item-1-596",
+      "item-1-598",
+      "item-1-600",
+      "item-1-602",
+      "item-1-604",
+      "item-1-606",
+      "item-1-608",
+      "item-1-610",
+      "item-1-612",
+      "item-1-614",
+      "item-1-616",
+      "item-1-618",
+      "item-1-620",
+      "item-1-622",
+      "item-1-624",
+      "item-1-626",
+      "item-1-628",
+      "item-1-630",
+      "item-1-632",
+      "item-1-634",
+      "item-1-636",
+      "item-1-638",
+      "item-1-640",
+      "item-1-642",
+      "item-1-644",
+      "item-1-646",
+      "item-1-648",
+      "item-1-650",
+      "item-1-652",
+      "item-1-654",
+      "item-1-656",
+      "item-1-658",
+      "item-1-660",
+      "item-1-662",
+      "item-1-664",
+      "item-1-666",
+      "item-1-668",
+      "item-1-670",
+      "item-1-672",
+      "item-1-674",
+      "item-1-676",
+      "item-1-678",
+      "item-1-680",
+      "item-1-682",
+      "item-1-684",
+      "item-1-686",
+      "item-1-688",
+      "item-1-690",
+      "item-1-692",
+      "item-1-694",
+      "item-1-696",
+      "item-1-698",
+      "item-1-700",
+      "item-1-702",
+      "item-1-704",
+      "item-1-706",
+      "item-1-708",
+      "item-1-710",
+      "item-1-712",
+      "item-1-714",
+      "item-1-716",
+      "item-1-718",
+      "item-1-720",
+      "item-1-722",
+      "item-1-724",
+      "item-1-726",
+      "item-1-728",
+      "item-1-730",
+      "item-1-732",
+      "item-1-734",
+      "item-1-736",
+      "item-1-738",
+      "item-1-740",
+      "item-1-742",
+      "item-1-744",
+      "item-1-746",
+      "item-1-748",
+      "item-1-750",
+      "item-1-752",
+      "item-1-754",
+      "item-1-756",
+      "item-1-758",
+      "item-1-760",
+      "item-1-762",
+      "item-1-764",
+      "item-1-766",
+      "item-1-768",
+      "item-1-770",
+      "item-1-772",
+      "item-1-774",
+      "item-1-776",
+      "item-1-778",
+      "item-1-780",
+      "item-1-782",
+      "item-1-784",
+      "item-1-786",
+      "item-1-788",
+      "item-1-790",
+      "item-1-792",
+      "item-1-794",
+      "item-1-796",
+      "item-1-798",
+      "item-1-800",
+      "item-1-802",
+      "item-1-804",
+      "item-1-806",
+      "item-1-808",
+      "item-1-810",
+      "item-1-812",
+      "item-1-814",
+      "item-1-816",
+      "item-1-818",
+      "item-1-820",
+      "item-1-822",
+      "item-1-824",
+      "item-1-826",
+      "item-1-828",
+      "item-1-830",
+      "item-1-832",
+      "item-1-834",
+      "item-1-836",
+      "item-1-838",
+      "item-1-840",
+      "item-1-842",
+      "item-1-844",
+      "item-1-846",
+      "item-1-848",
+      "item-1-850",
+      "item-1-852",
+      "item-1-854",
+      "item-1-856",
+      "item-1-858",
+      "item-1-860",
+      "item-1-862",
+      "item-1-864",
+      "item-1-866",
+      "item-1-868",
+      "item-1-870",
+      "item-1-872",
+      "item-1-874",
+      "item-1-876",
+      "item-1-878",
+      "item-1-880",
+      "item-1-882",
+      "item-1-884",
+      "item-1-886",
+      "item-1-888",
+      "item-1-890",
+      "item-1-892",
+      "item-1-894",
+      "item-1-896",
+      "item-1-898",
+      "item-1-900",
+      "item-1-902",
+      "item-1-904",
+      "item-1-906",
+      "item-1-908",
+      "item-1-910",
+      "item-1-912",
+      "item-1-914",
+      "item-1-916",
+      "item-1-918",
+      "item-1-920",
+      "item-1-922",
+      "item-1-924",
+      "item-1-926",
+      "item-1-928",
+      "item-1-930",
+      "item-1-932",
+      "item-1-934",
+      "item-1-936",
+      "item-1-938",
+      "item-1-940",
+      "item-1-942",
+      "item-1-944",
+      "item-1-946",
+      "item-1-948",
+      "item-1-950",
+      "item-1-952",
+      "item-1-954",
+      "item-1-956",
+      "item-1-958",
+      "item-1-960",
+      "item-1-962",
+      "item-1-964",
+      "item-1-966",
+      "item-1-968",
+      "item-1-970",
+      "item-1-972",
+      "item-1-974",
+      "item-1-976",
+      "item-1-978",
+      "item-1-980",
+      "item-1-982",
+      "item-1-984",
+      "item-1-986",
+      "item-1-988",
+      "item-1-990",
+      "item-1-992",
+      "item-1-994",
+      "item-1-996",
+      "item-1-998",
+      "item-1-1000",
+      "item-1-1002",
+      "item-1-1004",
+      "item-1-1006",
+      "item-1-1008",
+      "item-1-1010",
+      "item-1-1012",
+      "item-1-1014",
+      "item-1-1016",
+      "item-1-1018",
+      "item-1-1020",
+      "item-1-1022",
+      "item-1-1024",
+      "item-1-1026",
+      "item-1-1028",
+      "item-1-1030",
+      "item-1-1032",
+      "item-1-1034",
+      "item-1-1036",
+      "item-1-1038",
+      "item-1-1040",
+      "item-1-1042",
+      "item-1-1044",
+      "item-1-1046",
+      "item-1-1048",
+      "item-1-1050",
+      "item-1-1052",
+      "item-1-1054",
+      "item-1-1056",
+      "item-1-1058",
+      "item-1-1060",
+      "item-1-1062",
+      "item-1-1064",
+      "item-1-1066",
+      "item-1-1068",
+      "item-1-1070",
+      "item-1-1072",
+      "item-1-1074",
+      "item-1-1076",
+      "item-1-1078",
+      "item-1-1080",
+      "item-1-1082",
+      "item-1-1084",
+      "item-1-1086",
+      "item-1-1088",
+      "item-1-1090",
+      "item-1-1092",
+      "item-1-1094",
+      "item-1-1096",
+      "item-1-1098",
+      "item-1-1100",
+      "item-1-1102",
+      "item-1-1104",
+      "item-1-1106",
+      "item-1-1108",
+      "item-1-1110",
+      "item-1-1112",
+      "item-1-1114",
+      "item-1-1116",
+      "item-1-1118",
+      "item-1-1120",
+      "item-1-1122",
+      "item-1-1124",
+      "item-1-1126",
+      "item-1-1128",
+      "item-1-1130",
+      "item-1-1132",
+      "item-1-1134",
+      "item-1-1136",
+      "item-1-1138",
+      "item-1-1140",
+      "item-1-1142",
+      "item-1-1144",
+      "item-1-1146",
+      "item-1-1148",
+      "item-1-1150",
+      "item-1-1152",
+      "item-1-1154",
+      "item-1-1156",
+      "item-1-1158",
+      "item-1-1160",
+      "item-1-1162",
+      "item-1-1164",
+      "item-1-1166",
+      "item-1-1168",
+      "item-1-1170",
+      "item-1-1172",
+      "item-1-1174",
+      "item-1-1176",
+      "item-1-1178",
+      "item-1-1180",
+      "item-1-1182",
+      "item-1-1184",
+      "item-1-1186",
+      "item-1-1188",
+      "item-1-1190",
+      "item-1-1192",
+      "item-1-1194",
+      "item-1-1196",
+      "item-1-1198",
+      "item-1-1200",
+      "item-1-1202",
+      "item-1-1204",
+      "item-1-1206",
+      "item-1-1208",
+      "item-1-1210",
+      "item-1-1212",
+      "item-1-1214",
+      "item-1-1216",
+      "item-1-1218",
+      "item-1-1220",
+      "item-1-1222",
+      "item-1-1224",
+      "item-1-1226",
+      "item-1-1228",
+      "item-1-1230",
+      "item-1-1232",
+      "item-1-1234",
+      "item-1-1236",
+      "item-1-1238",
+      "item-1-1240",
+      "item-1-1242",
+      "item-1-1244",
+      "item-1-1246",
+      "item-1-1248",
+      "item-1-1250",
+      "item-1-1252",
+      "item-1-1254",
+      "item-1-1256",
+      "item-1-1258",
+      "item-1-1260",
+      "item-1-1262",
+      "item-1-1264",
+      "item-1-1266",
+      "item-1-1268",
+      "item-1-1270",
+      "item-1-1272",
+      "item-1-1274",
+      "item-1-1276",
+      "item-1-1278",
+      "item-1-1280",
+      "item-1-1282",
+      "item-1-1284",
+      "item-1-1286",
+      "item-1-1288",
+      "item-1-1290",
+      "item-1-1292",
+      "item-1-1294",
+      "item-1-1296",
+      "item-1-1298",
+      "item-1-1300",
+      "item-1-1302",
+      "item-1-1304",
+      "item-1-1306",
+      "item-1-1308",
+      "item-1-1310",
+      "item-1-1312",
+      "item-1-1314",
+      "item-1-1316",
+      "item-1-1318",
+      "item-1-1320",
+      "item-1-1322",
+      "item-1-1324",
+      "item-1-1326",
+      "item-1-1328",
+      "item-1-1330",
+      "item-1-1332",
+      "item-1-1334",
+      "item-1-1336",
+      "item-1-1338",
+      "item-1-1340",
+      "item-1-1342",
+      "item-1-1344",
+      "item-1-1346",
+      "item-1-1348",
+      "item-1-1350",
+      "item-1-1352",
+      "item-1-1354",
+      "item-1-1356",
+      "item-1-1358",
+      "item-1-1360",
+      "item-1-1362",
+      "item-1-1364",
+      "item-1-1366",
+      "item-1-1368",
+      "item-1-1370",
+      "item-1-1372",
+      "item-1-1374",
+      "item-1-1376",
+      "item-1-1378",
+      "item-1-1380",
+      "item-1-1382",
+      "item-1-1384",
+      "item-1-1386",
+      "item-1-1388",
+      "item-1-1390",
+      "item-1-1392",
+      "item-1-1394",
+      "item-1-1396",
+      "item-1-1398",
+      "item-1-1400",
+      "item-1-1402",
+      "item-1-1404",
+      "item-1-1406",
+      "item-1-1408",
+      "item-1-1410",
+      "item-1-1412",
+      "item-1-1414",
+      "item-1-1416",
+      "item-1-1418",
+      "item-1-1420",
+      "item-1-1422",
+      "item-1-1424",
+      "item-1-1426",
+      "item-1-1428",
+      "item-1-1430",
+      "item-1-1432",
+      "item-1-1434",
+      "item-1-1436",
+      "item-1-1438",
+      "item-1-1440",
+      "item-1-1442",
+      "item-1-1444",
+      "item-1-1446",
+      "item-1-1448",
+      "item-1-1450",
+      "item-1-1452",
+      "item-1-1454",
+      "item-1-1456",
+      "item-1-1458",
+      "item-1-1460",
+      "item-1-1462",
+      "item-1-1464",
+      "item-1-1466",
+      "item-1-1468",
+      "item-1-1470",
+      "item-1-1472"
+    ]
+  },
+  "Readwise/Articles/STAR Labs - (CVE-2023-2315) Path Traversal in OpenCart Versions 4.0.0.0 to 4.0.2.2.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/TreyCraf7 - Penetration Testing Reports A Powerful Template and Guide.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Antoine Gicquel - Magento for Security Audit.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/PortSwigger Research - Stealing HttpOnly Cookies With the Cookie Sandwich Technique.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Veritasium - Exposing The Flaw In Our Phone System.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Alex Thomas - WordPress Security Research Series WordPress Security Architecture.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/admin - Android Jetpack Navigation Go Even Deeper.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 2
+      },
+      "to": {
+        "line": 6,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/admin - Bypassing Browser Tracking Protection for CORS Misconfiguration Abuse.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Thomas Tan - Unconstrained Delegation in Active Directory.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 10
+      },
+      "to": {
+        "line": 4,
+        "ch": 10
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/stulle123 - 1-Click Exploit in South Korea's Biggest Mobile Chat App.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 19
+      },
+      "to": {
+        "line": 5,
+        "ch": 19
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/STAR Labs - (CVE-2024-7009) Calibre SQLite Injection.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 7,
+        "ch": 16
+      },
+      "to": {
+        "line": 7,
+        "ch": 16
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/STAR Labs - (CVE-2024-7008) Calibre Reflected Cross-Site Scripting.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 7,
+        "ch": 16
+      },
+      "to": {
+        "line": 7,
+        "ch": 16
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/admin - Fork Bomb for Flutter.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/b4dsheep - Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide..md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/blackbird-eu - Discovering Hidden Parameters An Advanced Guide.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/blackhat.com - Us-17-Lekies-Dont-Trust-the-Dom-Bypassing-XSS-Mitigations-via-Script-Gadgets.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Blog – Snyk - Agent Hijacking The True Impact of Prompt Injection Attacks.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Brandon McGrath - McP An Introduction to Agentic Op Support.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Charles Fol - Introducing Wrapwrap Using PHP Filters to Wrap a File With a Prefix and Suffix.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Readwise/Articles/cryptax - Reversing an Android Sample Which Uses Flutter.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Doyensec's Blog - Common OAuth Vulnerabilities.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Doyensec's Blog - CSPT Resources.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 8,
+        "ch": 0
+      },
+      "to": {
+        "line": 8,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/elttam.com - New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-05-12.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-05-19.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-06-09.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Federico Dotta - Java Applet + Serialization in 2024! What Could Go Wrong.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Frycos Security Diary - XXE With Auto-Update in Install4j.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/gniting - Everyone knows all the apps on your phone.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Guardsquare - Dart Decompilation and the Impact on Flutter™ App Security.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 2
+      },
+      "to": {
+        "line": 6,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Guardsquare - How Classical Attacks Apply to Frida Flutter™.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 2
+      },
+      "to": {
+        "line": 6,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Horizon3.ai - Vulnerable vs. Exploitable Why Understanding the Difference Matters to Your Security Posture.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Ilay Goldman - 50 Shades of Vulnerabilities Uncovering Flaws in Open-Source Vulnerability Disclosures.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Intigriti - Intigriti Bug Bytes #224 - May 2025 🚀.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Jack Maginnes - Uncovering a 0-Click RCE in the SuperNote Nomad E-Ink Tablet.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Michael Weber - Refresh Compromising F5 BIG-IP With Request Smuggling CVE-2023-46747.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Mohamed Sultan - Xintra - .NET Crash Dump Analysis.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/noreply@blogger.com (Christian Cotignola (@b4dsheep)) - Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide..md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Orange Tsai - Breaking Parser Logic - Take Your Path Normalization Off and Pop 0days Out.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/ostorlab.co - Flutter Reverse Engineering and Security Analysis.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 2
+      },
+      "to": {
+        "line": 6,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/PfiatDe - Having Fun With Github.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Piotr Bazydlo (@chudyPB) - XSS to RCE by Abusing Custom File Handlers - Kentico Xperience CMS.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Rafael da Costa Santos - Exploiting HTTP Parsers Inconsistencies.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/repzret.blogspot.com - Abusing Libxml2 Quirks to Bypass SAML Authentication on GitHub Enterprise.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/sandybonks - Open Source and Self HostablePrivate File Converter.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 2
+      },
+      "to": {
+        "line": 6,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/SentinelOne - Avoiding MCP Mania How to Secure the Next Frontier of AI.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/simonw - Watching o3 guess a photo's location is surreal, dystopian and entertaining.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Sonny - Where There’s Smoke, There’s Fire - Mitel MiCollab CVE-2024-35286, CVE-2024-41713 and an 0day.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/STAR Labs - (CVE-2024-6782) Calibre Remote Code Execution.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 5,
+        "ch": 2
+      },
+      "to": {
+        "line": 5,
+        "ch": 2
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Tweets/@7h3h4ckv157 on Twitter - Tweets From 7h3h4ckv157.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Tweets/@intigriti on Twitter - Tweets from Intigriti.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/jakearchibald.com - How to Win at CORS.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/sonarsource.com - Double Dash, Double Trouble A Subtle SQL Injection Flaw.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Spaceraccoon's Blog - Pwning Millions of Smart Weighing Machines With API and Hardware Hacking.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/zhero_web_security - Next.js, Cache, and Chains The Stale Elixir.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/zhero_web_security - Next.js and the Corrupt Middleware The Authorizing Artifact.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/William Moody - CVE-2025-25599 A Cautionary Tale of Insecure Temporary Files.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Vulnerability Researcher - Next.js and Cache Poisoning A Quest for the Black Hole.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Tib3rius - Intro to Lockpicking!.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Tib3rius - How Would You Scope WordPress.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/STAR Labs - (CVE-2024-6781) Calibre Arbitrary File Read.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Sonny - Fire in the Hole, We’re Breaching the Vault - Commvault Remote Code Execution.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Sina Kheirkhah (@SinSinology) - SonicBoom, From Stolen Tokens to Remote Shells - SonicWall SMA100.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/PortSwigger Blog - Welcome to the Next Generation of Burp Suite Elevate Your Testing With Burp AI.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Piotr Bazydlo - By Executive Order, We Are Banning Blacklists - Domain-Level RCE in Veeam Backup & Replication.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Pierluigi Paganini - Attackers Used a Public ASP.NET Machine to Conduct ViewState Code Injection Attacks.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/novasecio - CSRF A Complete Guide to Exploiting Advanced CSRF Vulnerabilities.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/neodyme.io - HTML to PDF Renderer A Tale of Local File Access and Shellcode Execution.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Naveen Sunkavally - Unsafe at Any Speed Abusing Python Exec for Unauth RCE in Langflow AI.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Nancy Gariché - A Maintainer’s Guide to Vulnerability Disclosure GitHub Tools to Make It Simple.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/httpsgithub.comSlon104 - GitHub - Slon104Common-PIN-Analysis-from-haveibeenpwned.com.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/hurl.dev - What’s Hurl.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/httpsgithub.comrverton - GitHub - RvertonWebanalyze Port of Wappalyzer (Uncovers Technologies Used on Websites) to Automate Mass Scanning..md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Tweets/0x0SojalSec on Twitter - Tweets from Md Ismail Šojal 🕷️.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Tweets/@WllGates on Twitter - Tweets From Will Gates.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Tweets/@h4x0r_fr34k on Twitter - Tweets From VAIDIK PANDYA.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Tweets/@LiveOverflow on Twitter - I'm Looking for Differen....md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Tweets/h4x0r_fr34k on Twitter - Tweets From VAIDIK PANDYA.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Readwise/Tweets/@Zealsham on Twitter - Tweets From Shammah Agwor.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Marco Ivaldi - A Collection of Weggli Patterns for CC++ Vulnerability Research.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/jorianwoltjer.com - The Ultimate Double-Clickjacking PoC  Jorian Woltjer.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 0
+      },
+      "to": {
+        "line": 9,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Guardsquare - The Current State & Future of Reverse Engineering Flutter™ Apps.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 0
+      },
+      "to": {
+        "line": 12,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
   }
 }

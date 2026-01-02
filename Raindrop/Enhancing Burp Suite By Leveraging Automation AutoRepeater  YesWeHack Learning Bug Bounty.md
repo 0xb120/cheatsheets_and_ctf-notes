@@ -19,8 +19,7 @@ source: https://www.yeswehack.com/learn-bug-bounty/pimpmyburp-autorepeater-add-a
 
 created: 1759243613090
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "tech-blog" 

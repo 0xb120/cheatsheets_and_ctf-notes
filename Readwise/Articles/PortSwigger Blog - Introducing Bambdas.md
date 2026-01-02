@@ -1,9 +1,7 @@
 ---
 author: PortSwigger Blog
-aliases:
-  - Introducing Bambdas
-tags:
-  - readwise/articles
+aliases: [Introducing Bambdas]
+tags: [readwise/articles]
 url: https://portswigger.net/blog/introducing-bambdas
 date: 2024-08-20
 ---

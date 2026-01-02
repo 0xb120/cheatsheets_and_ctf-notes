@@ -1,9 +1,7 @@
 ---
 author: Admin
-aliases:
-  - "When WAFs Go Awry: Common Detection & Evasion Techniques for Web Application Firewalls"
-tags:
-  - readwise/articles
+aliases: ["When WAFs Go Awry: Common Detection & Evasion Techniques for Web Application Firewalls"]
+tags: [readwise/articles]
 url: https://www.mdsec.co.uk/2024/10/when-wafs-go-awry-common-detection-evasion-techniques-for-web-application-firewalls/
 date: 2024-10-30
 ---

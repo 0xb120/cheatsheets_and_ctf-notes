@@ -15,8 +15,7 @@ source: https://github.com/ImAyrix/fallparams
 
 created: 1758614344422
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Tools"

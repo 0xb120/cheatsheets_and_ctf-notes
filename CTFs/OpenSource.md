@@ -4,19 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - code-review
-  - credentials-reuse
-  - flask
-  - flask-debug_mode
-  - git
-  - privesc/git-hook
-  - hardcoded-credentials
-  - insecure-file-upload
-  - path-traversal
-  - port-forwarding
-  - python-code-injection
-  - Linux
+tags: [code-review, credentials-reuse, flask, flask-debug_mode, git, privesc/git-hook, hardcoded-credentials, insecure-file-upload, path-traversal, port-forwarding, python-code-injection, Linux]
 ---
 ![OpenSource.png](../../zzz_res/attachments/OpenSource.png)
 

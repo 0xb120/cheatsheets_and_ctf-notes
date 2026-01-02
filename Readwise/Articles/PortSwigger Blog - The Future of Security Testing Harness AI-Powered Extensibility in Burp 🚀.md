@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://portswigger.net/blog/the-future-of-security-testing-harness-ai-powered-extensibility-in-burp-nbsp?__readwiseLocation=
 date: 2025-04-24
-summary: PortSwigger has introduced AI-powered extensions in Burp Suite Professional to enhance security testing and streamline workflows. Users can integrate AI easily using the Montoya API, which ensures data security and simplifies the process. With 10,000 free AI credits available, security testers can now experiment and innovate without incurring costs.
 ---
 # The Future of Security Testing: Harness AI-Powered Extensibility in Burp 🚀
 

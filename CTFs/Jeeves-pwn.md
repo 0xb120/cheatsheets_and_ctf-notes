@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - code-review
-  - reversing
+tags: [code-review, reversing]
 ---
 >[!quote]
 > *How are you doing, sir?*

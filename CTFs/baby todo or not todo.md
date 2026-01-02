@@ -4,10 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - IDOR
-  - authorization-bypass
-  - broken-auth
+tags: [IDOR, authorization-bypass, broken-auth]
 ---
 >[!quote]
 > I'm so done with these bloody HR solutions coming from those bloody HR specialists, I don't need anyone monitoring my thoughts, or do I... ?****

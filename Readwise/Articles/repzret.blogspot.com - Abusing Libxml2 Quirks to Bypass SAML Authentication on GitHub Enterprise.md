@@ -1,7 +1,7 @@
 ---
 author: "repzret.blogspot.com"
-aliases: "Abusing Libxml2 Quirks to Bypass SAML Authentication on GitHub Enterprise"
-tags: RW_inbox, readwise/articles
+aliases: ["Abusing Libxml2 Quirks to Bypass SAML Authentication on GitHub Enterprise"]
+tags: [RW_inbox, readwise/articles]
 url: https://repzret.blogspot.com/2025/02/abusing-libxml2-quirks-to-bypass-saml.html?m=1
 date: 2025-02-28
 ---

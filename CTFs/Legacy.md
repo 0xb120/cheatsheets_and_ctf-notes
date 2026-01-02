@@ -4,10 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - MS08-067
-  - RCE
-  - Windows
+tags: [MS08-067, RCE, Windows]
 ---
 # Information Gathering
 

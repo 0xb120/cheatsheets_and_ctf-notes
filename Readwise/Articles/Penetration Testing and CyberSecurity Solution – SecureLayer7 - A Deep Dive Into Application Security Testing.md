@@ -1,9 +1,7 @@
 ---
 author: Penetration Testing and CyberSecurity Solution – SecureLayer7
-aliases:
-  - A Deep Dive Into Application Security Testing
-tags:
-  - readwise/articles
+aliases: [A Deep Dive Into Application Security Testing]
+tags: [readwise/articles]
 url: https://blog.securelayer7.net/application-security-testing/
 date: 2024-08-21
 ---

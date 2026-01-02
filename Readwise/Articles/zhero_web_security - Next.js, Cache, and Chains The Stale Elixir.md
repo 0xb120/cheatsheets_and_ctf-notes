@@ -1,13 +1,14 @@
 ---
 author: zhero_web_security
 aliases:
-  - Next.js, Cache, and Chains The Stale Elixir
+  - Next.js
+  - Cache
+  - and Chains The Stale Elixir
 tags:
   - readwise/articles
   - nextjs
 url: https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir?__readwiseLocation=
 date: 2025-03-05
-summary:
 ---
 # Next.js, Cache, and Chains: The Stale Elixir
 

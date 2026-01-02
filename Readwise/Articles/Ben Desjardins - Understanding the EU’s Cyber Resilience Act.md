@@ -1,10 +1,7 @@
 ---
 author: Ben Desjardins
-aliases:
-  - Understanding the EU’s Cyber Resilience Act
-  - Cyber Resilience Act
-tags:
-  - readwise/articles
+aliases: [Understanding the EU’s Cyber Resilience Act, Cyber Resilience Act]
+tags: [readwise/articles]
 url: https://snyk.io/blog/understanding-the-eus-cyber-resilience-act-cra/?__readwiseLocation=
 date: 2025-01-22
 ---

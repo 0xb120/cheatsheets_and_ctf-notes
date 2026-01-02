@@ -1,7 +1,5 @@
 ---
-aliases:
-  - CSWSH
-  - Cross-Site WebSocket Hijacking
+aliases: [CSWSH, Cross-Site WebSocket Hijacking]
 ---
 
 >[!question] What are WebSockets?

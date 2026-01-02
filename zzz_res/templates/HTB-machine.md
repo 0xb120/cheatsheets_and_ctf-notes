@@ -1,9 +1,9 @@
 ---
-Category: 
-Difficulty: 
-Platform: 
-status: 
-tags:
+Category:
+Difficulty:
+Platform:
+status:
+tags: []
 ---
 
 {{imagine}}

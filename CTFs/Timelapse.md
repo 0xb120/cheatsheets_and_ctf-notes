@@ -4,16 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - .pfx-files
-  - LAPS
-  - Windows
-  - cracking-pfx-files
-  - cracking-zip-files
-  - credentials-in-LAPS
-  - credentials-in-history
-  - weak-credentials
-  - anonymous-smb
+tags: [.pfx-files, LAPS, Windows, cracking-pfx-files, cracking-zip-files, credentials-in-LAPS, credentials-in-history, weak-credentials, anonymous-smb]
 ---
 ![Timelapse.png](../../zzz_res/attachments/Timelapse.png)
 

@@ -1,5 +1,5 @@
 ---
-Description: Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing.
+Description: 'Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing.'
 ---
 
 >[!important]

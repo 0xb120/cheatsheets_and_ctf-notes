@@ -4,8 +4,7 @@ Category:
 Difficulty: Easy
 Platform: TryHackMe
 Status: 3. Complete
-tags:
-  - buffer-overflow
+tags: [buffer-overflow]
 ---
 # Set up
 

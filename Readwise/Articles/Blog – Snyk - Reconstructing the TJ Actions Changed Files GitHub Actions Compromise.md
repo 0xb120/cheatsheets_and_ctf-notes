@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://snyk.io/blog/reconstructing-tj-actions-changed-files-github-actions-compromise/?__readwiseLocation=
 date: 2025-03-21
-summary: A security exploit was discovered in a popular GitHub Action called changed files, affecting around 23,000 repositories. An attacker with write access to the Action repo made a malicious commit that exposed encrypted secrets in plaintext. Users are advised to review their logs for potential leaks since the exploit was identified on March 14, 2025.
 ---
 # Reconstructing the TJ Actions Changed Files GitHub Actions Compromise
 

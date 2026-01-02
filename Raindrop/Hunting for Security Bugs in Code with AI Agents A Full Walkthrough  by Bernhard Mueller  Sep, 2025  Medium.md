@@ -37,8 +37,7 @@ source: https://muellerberndt.medium.com/hunting-for-security-bugs-in-code-with-
 
 created: 1757314721914
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

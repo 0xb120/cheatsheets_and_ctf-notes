@@ -4,7 +4,7 @@ Category:
 Difficulty: Easy
 Platform: TryHackMe
 Status: 3. Complete
-tags:
+tags: []
 ---
 # Set up
 

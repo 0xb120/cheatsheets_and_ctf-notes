@@ -4,16 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Elastix
-  - FreePBX
-  - GTFObins
-  - LFI
-  - RCE
-  - credentials-reuse
-  - privesc/nmap
-  - voip
-  - Linux
+tags: [Elastix, FreePBX, GTFObins, LFI, RCE, credentials-reuse, privesc/nmap, voip, Linux]
 ---
 # Resolution summary
 

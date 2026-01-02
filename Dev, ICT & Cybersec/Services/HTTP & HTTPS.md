@@ -2,8 +2,7 @@
 Ports:
   - 80, 443, 8080
 Description: Is an application layer protocol in the Internet protocol suite model for distributed, collaborative, hypermedia information systems.
-aliases:
-  - Web Application Security
+aliases: [Web Application Security]
 ---
 # Web Application Enumeration
 

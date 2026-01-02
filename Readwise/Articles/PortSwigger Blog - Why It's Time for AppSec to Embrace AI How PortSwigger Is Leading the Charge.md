@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://portswigger.net/blog/why-its-time-for-appsec-to-embrace-ai-how-portswigger-is-leading-the-charge?__readwiseLocation=
 date: 2025-04-24
-summary: PortSwigger believes that AI can enhance penetration testing by making it faster and more accurate without replacing human testers. They have introduced AI features in Burp Suite to help pentesters automate repetitive tasks while maintaining control over sensitive information. The goal is to integrate AI seamlessly into existing workflows, empowering security professionals to work smarter and more efficiently.
 ---
 # Why It's Time for AppSec to Embrace AI: How PortSwigger Is Leading the Charge
 

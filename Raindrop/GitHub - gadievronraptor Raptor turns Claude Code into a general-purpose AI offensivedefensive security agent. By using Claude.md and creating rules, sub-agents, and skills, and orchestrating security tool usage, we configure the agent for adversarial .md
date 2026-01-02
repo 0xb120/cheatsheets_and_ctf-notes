@@ -16,8 +16,7 @@ source: https://github.com/gadievron/raptor/
 
 created: 1764871570258
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

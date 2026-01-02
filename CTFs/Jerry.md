@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - WAR
-  - default-credentials
-  - tomcat
-  - weak-credentials
-  - Windows
+tags: [WAR, default-credentials, tomcat, weak-credentials, Windows]
 ---
 # Resolution summary
 

@@ -1,10 +1,12 @@
 ---
-author: "admin"
-aliases: "Bypassing Browser Tracking Protection for CORS Misconfiguration Abuse"
-tags: RW_inbox, readwise/articles
+author: admin
+aliases:
+  - Bypassing Browser Tracking Protection for CORS Misconfiguration Abuse
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://swarm.ptsecurity.com/bypassing-browser-tracking-protection-for-cors-misconfiguration-abuse/?__readwiseLocation=
 date: 2025-04-24
-summary: Web browsers have a security feature called Same-Origin Policy that restricts cross-origin requests, but misconfigurations in CORS can lead to vulnerabilities. Different browsers implement varying levels of cookie security, with features like Enhanced Tracking Protection (ETP) and Intelligent Tracking Prevention (ITP) affecting how cookies are handled in cross-origin requests. This article explores these behaviors and demonstrates how to bypass tracking protections using specific techniques.
 ---
 # Bypassing Browser Tracking Protection for CORS Misconfiguration Abuse
 

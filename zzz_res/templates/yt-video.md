@@ -2,7 +2,7 @@
 video-id: YYYYNNN
 video-status: Idea
 title: 
-tags: 
+tags: []
 publish-date: 
 thumbnail: 
 video-url:

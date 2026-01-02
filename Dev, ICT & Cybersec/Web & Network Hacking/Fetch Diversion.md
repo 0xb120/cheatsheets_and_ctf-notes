@@ -1,5 +1,5 @@
 ---
-alias: Client Side Path Traversal (CSPT)
+alias: [Client Side Path Traversal (CSPT)]
 ---
 
 Original article: [Fetch Diversion, acut3](https://acut3.github.io/bug-bounty/2023/01/03/fetch-diversion.html#diverting-fetch-requests)

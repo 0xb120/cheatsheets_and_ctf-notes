@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Windows
-  - arbitrary-file-upload
-  - kernel-exploit
-  - kitrap0d
-  - ms10_015
-  - anonymous-ftp
+tags: [Windows, arbitrary-file-upload, kernel-exploit, kitrap0d, ms10_015, anonymous-ftp]
 ---
 # Resolution summary
 

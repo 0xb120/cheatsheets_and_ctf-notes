@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - ColdFusion
-  - SeImpersonatePrivilege
-  - arbitrary-file-upload
-  - path-traversal
-  - Windows
+tags: [ColdFusion, SeImpersonatePrivilege, arbitrary-file-upload, path-traversal, Windows]
 ---
 # Resolution summary
 

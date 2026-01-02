@@ -1,11 +1,7 @@
 ---
 author: Antoine Gicquel
-aliases:
-  - Web Architect - An Introduction
-  - code path and routing
-  - routing
-tags:
-  - readwise/articles
+aliases: [Web Architect - An Introduction, code path and routing, routing]
+tags: [readwise/articles]
 url: https://www.synacktiv.com/publications/web-architect-an-introduction.html
 date: 2025-01-14
 ---

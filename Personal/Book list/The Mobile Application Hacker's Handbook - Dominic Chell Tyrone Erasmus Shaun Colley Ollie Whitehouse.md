@@ -1,5 +1,5 @@
 ---
-title: The Mobile Application Hacker's Handbook
+title: "The Mobile Application Hacker's Handbook"
 author: Dominic Chell, Tyrone Erasmus, Shaun Colley, Ollie Whitehouse
 genre:
   - Computers

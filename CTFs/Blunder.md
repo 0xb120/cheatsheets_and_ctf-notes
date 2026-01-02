@@ -4,15 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Bludit
-  - RCE
-  - brute-force
-  - custom-wordlist
-  - hardcoded-credentials
-  - password-guessing
-  - privesc/sudo
-  - Linux
+tags: [Bludit, RCE, brute-force, custom-wordlist, hardcoded-credentials, password-guessing, privesc/sudo, Linux]
 ---
 # Resolution summary
 

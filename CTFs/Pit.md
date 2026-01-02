@@ -4,20 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - ACL
-  - RCE
-  - SNMP
-  - privesc/SNMP
-  - SeedDMS
-  - arbitrary-file-upload
-  - cockpit
-  - credentials-reuse
-  - hardcoded-credentials
-  - insecure-directory-permissions
-  - password-guessing
-  - weak-credentials
-  - Linux
+tags: [ACL, RCE, SNMP, privesc/SNMP, SeedDMS, arbitrary-file-upload, cockpit, credentials-reuse, hardcoded-credentials, insecure-directory-permissions, password-guessing, weak-credentials, Linux]
 ---
 # Resolution summary
 

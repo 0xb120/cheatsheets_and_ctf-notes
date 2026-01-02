@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://securityaffairs.com/172572/hacking/doubleclickjacking-clickjacking-on-major-websites.html?__readwiseLocation=
 date: 2025-04-24
-summary: DoubleClickjacking is a new exploit that allows attackers to bypass security measures on major websites using a double-click sequence. This technique can lead to account takeovers and unauthorized changes by tricking users into clicking on malicious prompts. To counter this threat, website administrators should implement stricter controls and be aware of all clickjacking forms.
 ---
 # DoubleClickjacking Allows Clickjacking on Major Websites
 

@@ -1,9 +1,7 @@
 ---
 author: David Kutz-Marks
-aliases:
-  - Attacking AWS Cognito With Pacu
-tags:
-  - readwise/articles
+aliases: [Attacking AWS Cognito With Pacu]
+tags: [readwise/articles]
 url: https://rhinosecuritylabs.com/aws/attacking-aws-cognito-with-pacu-p1/
 date: 2023-10-11
 ---

@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - debugger-enabled
-  - verbose-log
+tags: [debugger-enabled, verbose-log]
 ---
 >[!quote]
 > Due to heavy workload for the upcoming baby BoneChewerCon event, the website is under maintenance and it errors out, but the debugger is still enabled in production!! I think the devil is enticing us to go and check out the secret key.****

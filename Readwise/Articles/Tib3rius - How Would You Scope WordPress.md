@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://www.youtube.com/watch?v=p-LLPDQte8w&ab_channel=Tib3rius?__readwiseLocation=
 date: 2025-03-12
-summary: WordPress powers over 40% of websites and often undergoes pentesting to find vulnerabilities. The author discusses the confusion around scoping pentests for WordPress, emphasizing that thorough testing may require more than the typical five days due to its complexity. He suggests that the industry should reconsider standard testing durations to reflect modern security needs.
 ---
 # How Would You Scope WordPress?
 

@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-04-28.html?__readwiseLocation=
 date: 2025-05-08
-summary: Last Week in Security summarizes important cybersecurity news and techniques from April 21 to April 28, 2025. Key highlights include a new signing key for Kali Linux users, Android phones set to reboot after three days of inactivity, and various phishing techniques targeting authentication systems. Additionally, new tools and exploits were introduced, including advanced phishing methods and vulnerabilities affecting DJI devices.
 ---
 # Last Week in Security (LWiS) - 2025-04-28
 

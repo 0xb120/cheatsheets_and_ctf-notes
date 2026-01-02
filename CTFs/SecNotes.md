@@ -4,15 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - WSL
-  - Windows
-  - arbitrary-file-upload
-  - credentials-in-history
-  - evasion
-  - insecure-credentials
-  - insecure-password-change
-  - CSRF
+tags: [WSL, Windows, arbitrary-file-upload, credentials-in-history, evasion, insecure-credentials, insecure-password-change, CSRF]
 ---
 # Resolution summary
 

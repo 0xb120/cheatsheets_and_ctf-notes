@@ -1,10 +1,7 @@
 ---
 author: Yannick Merckx
-aliases:
-  - "Regression Testing: The Key to Ensuring Software Quality and Reliability"
-  - Regression Testing
-tags:
-  - readwise/articles
+aliases: ["Regression Testing: The Key to Ensuring Software Quality and Reliability", Regression Testing]
+tags: [readwise/articles]
 url: https://blog.intigriti.com/business-insights/regression-testing-the-key-to-ensuring-software-quality-and-reliability
 date: 2024-12-13
 ---

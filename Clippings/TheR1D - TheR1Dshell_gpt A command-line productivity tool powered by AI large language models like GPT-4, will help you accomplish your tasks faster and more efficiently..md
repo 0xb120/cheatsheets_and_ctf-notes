@@ -6,11 +6,7 @@ author:
 published:
 created: 2025-08-19
 description: A command-line productivity tool powered by AI large language models like GPT-4, will help you accomplish your tasks faster and more efficiently. - TheR1D/shell_gpt
-tags:
-  - clippings/articles
-  - tools
-  - AI
-  - LLM
+tags: [clippings/articles, tools, AI, LLM]
 ---
 # TheR1D/shell_gpt: A command-line productivity tool powered by AI large language models like GPT-4, will help you accomplish your tasks faster and more efficiently.
 

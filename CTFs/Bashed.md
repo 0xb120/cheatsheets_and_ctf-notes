@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - cron
-  - privesc/cron
-  - insecure-file-permissions
-  - phpbash
-  - webshell
-  - Linux
+tags: [cron, privesc/cron, insecure-file-permissions, phpbash, webshell, Linux]
 ---
 # Resolution summary
 

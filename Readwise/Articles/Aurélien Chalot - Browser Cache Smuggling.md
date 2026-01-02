@@ -1,9 +1,7 @@
 ---
 author: Aurélien Chalot
-aliases:
-  - Browser Cache Smuggling
-tags:
-  - readwise/articles
+aliases: [Browser Cache Smuggling]
+tags: [readwise/articles]
 url: https://blog.whiteflag.io/blog/browser-cache-smuggling/
 date: 2024-08-20
 ---

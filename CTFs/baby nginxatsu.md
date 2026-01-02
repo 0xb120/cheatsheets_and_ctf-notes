@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - sqlite
-  - insecure-credentials
+tags: [sqlite, insecure-credentials]
 ---
 >[!quote]
 > Can you find a way to login as the administrator of the website and free nginxatsu?****

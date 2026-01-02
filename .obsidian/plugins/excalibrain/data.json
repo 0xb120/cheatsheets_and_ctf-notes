@@ -226,7 +226,12 @@
     "n": {},
     "Next": {}
   },
-  "navigationHistory": [],
+  "navigationHistory": [
+    "Dev, ICT & Cybersec/Dev, scripting & OS/AngularJS.md",
+    "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
+    "Readwise/Articles/Jorge Rosillo - Security Research Without Ever Leaving GitHub From Code Scanning to CVE via Codespaces and Private Vulnerability Reporting.md",
+    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md"
+  ],
   "allowOntologySuggester": true,
   "ontologySuggesterParentTrigger": "::p",
   "ontologySuggesterChildTrigger": "::c",

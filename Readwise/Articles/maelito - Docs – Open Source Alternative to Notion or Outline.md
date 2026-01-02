@@ -7,7 +7,6 @@ tags:
   - vulnerability-research/todo
 url: https://github.com/suitenumerique/docs?__readwiseLocation=
 date: 2025-04-01
-summary: Docs is an open-source collaborative document editor built with Django and React, designed for easy note-taking and knowledge sharing. It offers features like real-time collaboration, offline editing, and professional document exports. Docs serves as a scalable alternative to platforms like Notion and is community-driven, welcoming contributions and feedback.
 ---
 # Docs – Open Source Alternative to Notion or Outline
 

@@ -1,6 +1,5 @@
 ---
-aliases:
-  - XSS
+aliases: [XSS]
 ---
 >[!abstract]
 >It is a vulnerability caused by the **insertion of the user's input inside the web page without that it hash been sanitized**.

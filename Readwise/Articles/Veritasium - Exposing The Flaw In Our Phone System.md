@@ -1,10 +1,12 @@
 ---
-author: "Veritasium"
-aliases: "Exposing The Flaw In Our Phone System"
-tags: RW_inbox, readwise/articles
+author: Veritasium
+aliases:
+  - Exposing The Flaw In Our Phone System
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://www.youtube.com/watch?v=wVyu7NB7W6Y?__readwiseLocation=
 date: 2025-04-24
-summary: Linus Tech Tips demonstrated how easy it is to hack phone networks using SS7, allowing them to intercept calls and messages. This vulnerability has been exploited by criminals to steal sensitive information, like two-factor authentication codes. Despite advancements in technology, SS7 remains widely used, making it difficult to fully secure phone communications.
 ---
 # Exposing The Flaw In Our Phone System
 

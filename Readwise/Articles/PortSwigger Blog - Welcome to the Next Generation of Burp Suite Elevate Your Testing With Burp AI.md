@@ -7,7 +7,6 @@ tags:
   - tools
 url: https://portswigger.net/blog/welcome-to-the-next-generation-of-burp-suite-elevate-your-testing-with-burp-ai?__readwiseLocation=
 date: 2025-04-01
-summary: At PortSwigger, we believe AI has the power to transform penetration testing - not by replacing human testers, but by augmenting them. With the release of Burp Suite Professional 2025.2, we’re introdu
 ---
 # Welcome to the Next Generation of Burp Suite: Elevate Your Testing With Burp AI
 

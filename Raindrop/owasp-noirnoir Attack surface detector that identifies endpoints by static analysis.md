@@ -15,8 +15,7 @@ source: https://github.com/owasp-noir/noir
 
 created: 1758387362329
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Tools" 

@@ -30,8 +30,7 @@ source: https://valmarelox.substack.com/p/can-ai-weaponize-new-cves-in-under
 
 created: 1756708780758
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

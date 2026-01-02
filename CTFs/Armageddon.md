@@ -4,16 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Drupal
-  - Drupalgeddon2
-  - MySQL
-  - credentials-reuse
-  - dirty_sock
-  - hardcoded-credentials
-  - privesc/snap
-  - weak-credentials
-  - Linux
+tags: [Drupal, Drupalgeddon2, MySQL, credentials-reuse, dirty_sock, hardcoded-credentials, privesc/snap, weak-credentials, Linux]
 ---
 # Resolution summary
 

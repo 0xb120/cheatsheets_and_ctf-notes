@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - command-injection
-  - insecure-file-permissions
-  - privesc/msfconsole
-  - Linux
+tags: [command-injection, insecure-file-permissions, privesc/msfconsole, Linux]
 ---
 ## Introduction
 

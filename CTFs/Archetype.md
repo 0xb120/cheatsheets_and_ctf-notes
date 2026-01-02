@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - MSSQL
-  - Windows
-  - credentials-in-history
-  - insecure-credentials
-  - xp_cmdshell
-  - anonymous-smb
+tags: [MSSQL, Windows, credentials-in-history, insecure-credentials, xp_cmdshell, anonymous-smb]
 ---
 # Resolution summary
 

@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - HTTP-PUT
-  - MS14_058
-  - arbitrary-file-upload
-  - webdav
-  - Windows
+tags: [HTTP-PUT, MS14_058, arbitrary-file-upload, webdav, Windows]
 ---
 # Resolution summary
 

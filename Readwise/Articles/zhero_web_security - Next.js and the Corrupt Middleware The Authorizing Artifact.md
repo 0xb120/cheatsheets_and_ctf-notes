@@ -7,7 +7,6 @@ tags:
   - nextjs
 url: https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware?__readwiseLocation=
 date: 2025-03-24
-summary: Next.js middleware can be exploited due to a vulnerability in older versions, allowing attackers to bypass authentication and authorization by manipulating the `x-middleware-subrequest` header. This issue affects Next.js versions starting from 11.1.4 and was only fixed in later updates. Developers are advised to either update to a secure version or block requests containing the vulnerable header to mitigate risks.
 ---
 # Next.js and the Corrupt Middleware: The Authorizing Artifact
 

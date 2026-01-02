@@ -44,8 +44,7 @@ source: https://noperator.dev/posts/slice
 
 created: 1755648000000
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

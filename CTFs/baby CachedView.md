@@ -4,10 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - SSRF
-  - dns-rebinding
-  - evasion
+tags: [SSRF, dns-rebinding, evasion]
 ---
 >[!quote]
 > I made a service for people to cache their favourite websites, come and check it out! But don't try anything funny, after a recent incident we implemented military grade IP based restrictions to keep the hackers at bay... 

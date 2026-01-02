@@ -4,10 +4,7 @@ Category:
 Difficulty: Medium
 Platform: X-MAS
 Status: 3. Complete
-tags:
-  - sqlite
-  - SQL-Injection
-  - pickle
+tags: [sqlite, SQL-Injection, pickle]
 ---
 >[!quote]
 >*The Elf Resources department needs to keep an eye on what the elves are doing. This site was done in a hurry and they would appreciate if you would take a look.*

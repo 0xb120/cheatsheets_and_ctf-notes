@@ -1,9 +1,7 @@
 ---
 author: d8rh8r
-aliases:
-  - FIsher Price “My First SS7 Attack”
-tags:
-  - readwise/articles
+aliases: [FIsher Price “My First SS7 Attack”]
+tags: [readwise/articles]
 url: https://0x00sec.org/t/fisher-price-my-first-ss7-attack/38731
 date: 2024-08-20
 ---

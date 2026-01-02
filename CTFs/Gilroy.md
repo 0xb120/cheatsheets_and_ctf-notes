@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: DefConQuals2024
 Status: 3. Complete
-tags:
-  - type-confusion
-  - type-juggling
-  - elixir
-  - path-traversal
-  - parameter-injection
-  - mass-assignment
+tags: [type-confusion, type-juggling, elixir, path-traversal, parameter-injection, mass-assignment]
 ---
 
 # Setup

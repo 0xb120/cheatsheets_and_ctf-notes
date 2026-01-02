@@ -29,8 +29,7 @@ source: https://muellerberndt.medium.com/unleashing-the-hound-how-ai-agents-find
 
 created: 1757580644227
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

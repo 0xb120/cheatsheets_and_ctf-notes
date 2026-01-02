@@ -6,7 +6,6 @@ tags:
   - readwise/tweets
 url: https://twitter.com/0x0SojalSec?__readwiseLocation=
 date: 2025-04-26
-summary: None
 ---
 # Tweets from Md Ismail Šojal 🕷️
 

@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - AST-Injection
-  - __proto__
-  - pollution
-  - __proto__.
-  - nodejs
-  - pug
+tags: [AST-Injection, __proto__, pollution, __proto__., nodejs, pug]
 ---
 >[!quote]
 > *A city of lights, with retrofuturistic 80s peoples, and coffee, and drinks from another world... all the wooing in the world to make you feel more lonely... this ride ends here, with a tribute page of the British synthwave band called Gunship. 🎶*

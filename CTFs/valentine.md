@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: hxp
 Status: 3. Complete
-tags:
-  - Express
-  - ejs
-  - OAST
-  - SSTI
-  - RCE
+tags: [Express, ejs, OAST, SSTI, RCE]
 ---
 
 # Introduction and setup

@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - code-review
-  - command-injection
-  - jail-escape
-  - python-exec
-  - flask
+tags: [code-review, command-injection, jail-escape, python-exec, flask]
 ---
 >[!quote]
 > aw man, aw geez, my grandpa rick is passed out from all the drinking again, where is a calculator when you need one, aw geez****

@@ -3,7 +3,7 @@ Category:
   - CI/CD
 Difficulty: Easy
 Platform: CICD Goat
-tags: 
+tags: []
 Status: 1. In progress
 ---
 >[!quote]

@@ -7,7 +7,6 @@ tags:
   - nextjs
 url: https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927?__readwiseLocation=
 date: 2025-04-01
-summary: A critical vulnerability (CVE-2025-29927) in Next.js allows attackers to bypass authentication through middleware, causing concern in the developer community. Public checks for this vulnerability are often inaccurate and miss many exploitable cases, especially those that use redirects instead of rewrites. Assetnote recommends upgrading to the latest Next.js versions to protect against this issue and has developed a more effective scanning methodology to identify vulnerabilities.
 ---
 # Doing the Due Diligence: Analyzing the Next.js Middleware Bypass
 

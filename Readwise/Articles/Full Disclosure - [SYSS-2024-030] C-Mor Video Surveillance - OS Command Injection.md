@@ -1,13 +1,7 @@
 ---
 author: Full Disclosure
-aliases:
-  - "[SYSS-2024-030]: C-Mor Video Surveillance - OS Command Injection"
-tags:
-  - readwise/articles
-  - advisory
-  - vulnerability-research/todo
-  - C-MOR
-  - C-MOR/Web
+aliases: ["[SYSS-2024-030]: C-Mor Video Surveillance - OS Command Injection"]
+tags: [readwise/articles, advisory, vulnerability-research/todo, C-MOR, C-MOR/Web]
 url: https://seclists.org/fulldisclosure/2024/Sep/23
 date: 2024-09-06
 ---

@@ -1,10 +1,12 @@
 ---
-author: "Piotr Bazydlo (@chudyPB)"
-aliases: "XSS to RCE by Abusing Custom File Handlers - Kentico Xperience CMS"
-tags: RW_inbox, readwise/articles
+author: Piotr Bazydlo (@chudyPB)
+aliases:
+  - XSS to RCE by Abusing Custom File Handlers - Kentico Xperience CMS
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://labs.watchtowr.com/xss-to-rce-by-abusing-custom-file-handlers-kentico-xperience-cms-cve-2025-2748/?__readwiseLocation=
 date: 2025-05-12
-summary: The authors discovered a way to exploit a Cross-Site Scripting (XSS) vulnerability in Kentico Xperience CMS to achieve Remote Code Execution (RCE). They found that unauthenticated users could access a resource handler that allowed file fetching, which could be abused to trigger XSS. By combining this with an authenticated file upload feature, they demonstrated a method to upload malicious files, leading to RCE.
 ---
 # XSS to RCE by Abusing Custom File Handlers - Kentico Xperience CMS
 

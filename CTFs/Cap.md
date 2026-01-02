@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - IDOR
-  - privesc/cap_setuid
-  - credentials-reuse
-  - Linux
+tags: [IDOR, privesc/cap_setuid, credentials-reuse, Linux]
 ---
 # Resolution summary
 

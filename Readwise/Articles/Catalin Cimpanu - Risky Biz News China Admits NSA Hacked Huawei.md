@@ -1,12 +1,7 @@
 ---
 author: Catalin Cimpanu
-aliases:
-  - "Risky Biz News: China Admits NSA Hacked Huawei"
-tags:
-  - readwise/articles
-  - vulnerability-research/todo
-  - Nagios
-  - Nagios/XI
+aliases: ["Risky Biz News: China Admits NSA Hacked Huawei"]
+tags: [readwise/articles, vulnerability-research/todo, Nagios, Nagios/XI]
 url: https://riskybiznews.substack.com/p/china-says-nsa-hacked-huawei
 date: 2024-08-20
 ---

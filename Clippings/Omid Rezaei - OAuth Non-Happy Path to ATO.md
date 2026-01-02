@@ -6,9 +6,7 @@ author:
 published: 2024-11-22
 created: 2025-08-13
 description: "Learn how small errors in OAuth implementation can lead to significant security vulnerabilities like one-click account takeover in web applications"
-tags:
-  - "clippings/articles"
-  - "_inbox"
+tags: ["clippings/articles", "_inbox"]
 ---
 # OAuth Non-Happy Path to ATO
 

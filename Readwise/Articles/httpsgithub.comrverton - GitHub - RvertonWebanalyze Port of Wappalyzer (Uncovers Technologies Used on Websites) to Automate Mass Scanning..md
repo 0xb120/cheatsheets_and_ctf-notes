@@ -8,7 +8,6 @@ tags:
   - Tools
 url: https://github.com/rverton/webanalyze?__readwiseLocation=
 date: 2025-04-01
-summary: Webanalyze is a tool that helps identify the technologies used on websites by automating mass scanning. It is a port of Wappalyzer in Go and can handle large lists of hosts efficiently. Users can install it easily and customize its settings for different output formats and crawling options.
 ---
 # GitHub - Rverton/Webanalyze: Port of Wappalyzer (Uncovers Technologies Used on Websites) to Automate Mass Scanning.
 

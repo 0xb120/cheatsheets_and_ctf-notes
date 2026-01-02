@@ -1,6 +1,6 @@
 ---
 Ports: 135 (TCP), 135 (UDP) 139, 539, 1026 (TCP), 1028 (UDP)
-Description: Microsoft Remote Procedure Call, also known as a function call or a subroutine call, is a protocol that uses the client-server model in order to allow one program to request service from a program on another computer without having to understand the details of that computer's network.
+Description: "Microsoft Remote Procedure Call, also known as a function call or a subroutine call, is a protocol that uses the client-server model in order to allow one program to request service from a program on another computer without having to understand the details of that computer's network."
 ---
 
 >[!info]

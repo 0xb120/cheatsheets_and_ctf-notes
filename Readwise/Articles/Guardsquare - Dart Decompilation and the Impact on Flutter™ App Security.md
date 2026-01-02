@@ -1,10 +1,13 @@
 ---
-author: "Guardsquare"
-aliases: "Dart Decompilation and the Impact on Flutter™ App Security"
-tags: RW_inbox, readwise/articles, Flutter
+author: Guardsquare
+aliases:
+  - Dart Decompilation and the Impact on Flutter™ App Security
+tags:
+  - RW_inbox
+  - readwise/articles
+  - Flutter
 url: https://www.guardsquare.com/blog/obstacles-in-dart-decompilation-and-the-impact-on-flutter-app-security?__readwiseLocation=
 date: 2025-04-24
-summary: This article examines the challenges of decompiling Dart code and its implications for Flutter app security. It highlights issues like the custom Dart VM stack and non-standard function calling conventions that complicate reverse engineering. The authors demonstrate how to improve decompiled code by reintroducing cross-references and making the code easier to understand.
 ---
 # Dart Decompilation and the Impact on Flutter™ App Security
 

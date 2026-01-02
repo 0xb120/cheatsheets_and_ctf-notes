@@ -1,10 +1,12 @@
 ---
-author: "Intigriti"
-aliases: "Intigriti Bug Bytes #224 - May 2025 🚀"
-tags: RW_inbox, readwise/articles
+author: Intigriti
+aliases:
+  - "Intigriti Bug Bytes #224 - May 2025 🚀"
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://www.intigriti.com/researchers/blog/bug-bytes/intigriti-bug-bytes-224-may-2025?__readwiseLocation=
 date: 2025-05-26
-summary: Intigriti's May 2025 Bug Bytes highlights the results of the Hackdonalds Challenge and introduces a new XSS challenge. The platform has launched new features for better program discovery and a Bug Bounty Talks tool for connecting with ethical hackers. Intigriti also celebrated its CREST accreditation, affirming its commitment to high-quality security services.
 ---
 # Intigriti Bug Bytes #224 - May 2025 🚀
 

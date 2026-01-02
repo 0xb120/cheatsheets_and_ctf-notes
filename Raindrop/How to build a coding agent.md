@@ -28,8 +28,7 @@ source: https://ghuntley.com/agent
 
 created: 1756005674000
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

@@ -6,10 +6,7 @@ author:
 published:
 created: 2025-07-29
 description: "PENGUIN (Personalized EmulatioN Generated Using Instrumented Analysis) takes a target centric approach to rehosting using a precise and tailored specification of the rehosting process - rehosting/penguin"
-tags:
-  - "clippings/articles"
-  - "_inbox"
-  - "tools"
+tags: ["clippings/articles", "_inbox", "tools"]
 ---
 # rehosting/penguin: PENGUIN (Personalized EmulatioN Generated Using Instrumented Analysis) takes a target centric approach to rehosting using a precise and tailored specification of the rehosting process
 

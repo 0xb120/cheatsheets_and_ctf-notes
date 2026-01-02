@@ -1,7 +1,7 @@
 ---
 author: "PortSwigger Research"
-aliases: "Stealing HttpOnly Cookies With the Cookie Sandwich Technique"
-tags: RW_inbox, readwise/articles
+aliases: ["Stealing HttpOnly Cookies With the Cookie Sandwich Technique"]
+tags: [RW_inbox, readwise/articles]
 url: https://portswigger.net/research/stealing-httponly-cookies-with-the-cookie-sandwich-technique
 date: 2025-01-22
 ---

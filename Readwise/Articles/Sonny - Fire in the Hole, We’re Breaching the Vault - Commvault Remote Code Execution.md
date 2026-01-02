@@ -7,7 +7,6 @@ tags:
   - readwise/articles
 url: https://labs.watchtowr.com/fire-in-the-hole-were-breaching-the-vault-commvault-remote-code-execution-cve-2025-34028/?__readwiseLocation=
 date: 2025-04-26
-summary: As we pack our bags and prepare for the adult-er version of BlackHat (that apparently doesn’t require us to print out stolen mailspoolz to hand to people at their talks), we want to tell you about a recent adventure - a heist, if you will.No heist story
 ---
 # Fire in the Hole, We’re Breaching the Vault - Commvault Remote Code Execution
 

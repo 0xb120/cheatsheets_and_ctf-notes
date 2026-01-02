@@ -6,11 +6,7 @@ author:
 published: 2025-08-18
 created: 2025-08-19
 description: "Learn how to use Puter.js to access GPT-5, GPT-4o, o1, o3, o4, and DALL-E capabilities for free, without needing an OpenAI API key."
-tags:
-  - "clippings/articles"
-  - "_inbox"
-  - "AI"
-  - "tools"
+tags: ["clippings/articles", "_inbox", "AI", "tools"]
 ---
 # Free, Unlimited OpenAI API
 

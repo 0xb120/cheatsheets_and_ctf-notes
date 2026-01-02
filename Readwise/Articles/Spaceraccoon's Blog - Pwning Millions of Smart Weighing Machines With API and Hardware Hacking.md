@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://spaceraccoon.dev/pwning-millions-smart-weighing-machines-api-hardware-hacking/?__readwiseLocation=
 date: 2025-04-01
-summary: Why hack one device, when you can hack all of them? By reverse-engineering and finding vulnerabilities in user-machine association flows for smart weighing machines, I was able to take over millions of internet-connected health devices. Hardware and web security are two halves of modern smart device security, and learning to hack both can yield impressive and scary results.
 ---
 # Pwning Millions of Smart Weighing Machines With API and Hardware Hacking
 

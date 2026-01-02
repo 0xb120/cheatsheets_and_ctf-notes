@@ -4,14 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Android
-  - Baron
-  - Samedit
-  - RCE
-  - command-injection
-  - privesc/sudo
-  - Linux
+tags: [Android, Baron, Samedit, RCE, command-injection, privesc/sudo, Linux]
 ---
 ![RouterSpace.png](../../zzz_res/attachments/RouterSpace.png)
 

@@ -1,10 +1,7 @@
 ---
 author: Nathan Touati
-aliases:
-  - "Sandwich Attacks: From Reset Password to Account Takeover"
-  - Sandwich Attack
-tags:
-  - readwise/articles
+aliases: ["Sandwich Attacks: From Reset Password to Account Takeover", Sandwich Attack]
+tags: [readwise/articles]
 url: https://appsec-labs.com/sandwich-attacks/
 date: 2025-01-23
 ---

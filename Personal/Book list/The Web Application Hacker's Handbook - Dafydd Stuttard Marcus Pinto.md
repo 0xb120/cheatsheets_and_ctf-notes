@@ -1,5 +1,5 @@
 ---
-title: The Web Application Hacker's Handbook
+title: "The Web Application Hacker's Handbook"
 author: Dafydd Stuttard, Marcus Pinto
 genre:
   - Computers

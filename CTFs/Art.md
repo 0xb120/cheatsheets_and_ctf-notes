@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - esoteric-lang
-  - piet
+tags: [esoteric-lang, piet]
 ---
 >[!quote]
 > Can you find the flag?

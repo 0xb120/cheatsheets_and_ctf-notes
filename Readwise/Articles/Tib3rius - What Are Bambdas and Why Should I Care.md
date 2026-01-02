@@ -1,9 +1,7 @@
 ---
 author: Tib3rius
-aliases:
-  - What Are Bambdas and Why Should I Care?
-tags:
-  - readwise/articles
+aliases: [What Are Bambdas and Why Should I Care?]
+tags: [readwise/articles]
 url: https://www.youtube.com/watch?v=cWI3pH67HOQ&ab_channel=Tib3rius
 date: 2024-12-13
 ---

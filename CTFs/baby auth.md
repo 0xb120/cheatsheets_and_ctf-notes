@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - authentication-bypass
-  - broken-auth
+tags: [authentication-bypass, broken-auth]
 ---
 >[!quote]
 > Who needs session integrity these days?

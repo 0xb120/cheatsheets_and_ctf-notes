@@ -4,12 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - SeImpersonatePrivilege
-  - alternate-data-stream
-  - build-RCE
-  - jenkins
-  - Windows
+tags: [SeImpersonatePrivilege, alternate-data-stream, build-RCE, jenkins, Windows]
 ---
 # Resolution summary
 

@@ -4,14 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - code-review
-  - credentials-reuse
-  - hardcoded-credentials
-  - php-deserialization
-  - race-condition
-  - temp-file-poisoning
-  - Linux
+tags: [code-review, credentials-reuse, hardcoded-credentials, php-deserialization, race-condition, temp-file-poisoning, Linux]
 ---
 ## Introduction
 

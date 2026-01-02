@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - ERB
-  - SSTI
-  - evasion
-  - regex
-  - ruby
+tags: [ERB, SSTI, evasion, regex, ruby]
 ---
 >[!quote]
 > *It's time for a shiny new reveal for the first-ever text neonifier. Come test out our brand new website and make any text glow like a lo-fi neon tube!*

@@ -4,9 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 status: 3. Complete
-tags:
-  - Apache
-  - CRLF-Injection
+tags: [Apache, CRLF-Injection]
 ---
 
 # Information Gathering

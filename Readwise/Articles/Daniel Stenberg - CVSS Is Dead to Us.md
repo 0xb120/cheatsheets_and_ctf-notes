@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: ?__readwiseLocation=
 date: 2025-03-06
-summary:
 ---
 # CVSS Is Dead to Us
 

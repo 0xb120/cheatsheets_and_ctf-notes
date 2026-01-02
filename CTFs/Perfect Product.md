@@ -4,13 +4,7 @@ Category:
 Difficulty: Medium
 Platform: justCTF 2023
 Status: 3. Complete
-tags:
-  - ejs
-  - server-side_prototype-pollution
-  - Express
-  - nodejs
-  - RCE
-  - SSTI
+tags: [ejs, server-side_prototype-pollution, Express, nodejs, RCE, SSTI]
 ---
 
 >[!quote]

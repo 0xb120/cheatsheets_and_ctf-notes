@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - HFS
-  - MS16-032
-  - RCE
-  - Windows
+tags: [HFS, MS16-032, RCE, Windows]
 ---
 # Resolution summary
 

@@ -7,7 +7,6 @@ tags:
   - vulnerability-research/todo
 url: https://www.reddit.com/r/Huawei/comments/1awnosg/can_i_decrypt_my_safe_files_from_my_pc/?rdt=55695?__readwiseLocation=
 date: 2025-04-28
-summary: The user has been experiencing issues with the Huawei P30, particularly with the Safe app, which no longer works. They have tried various solutions but are left considering a factory reset that might result in losing their safe files. They seek advice on accessing or decrypting their safe files stored on their computer since the app on their phone is not functioning.
 ---
 # Can I decrypt my Safe files from my PC
 

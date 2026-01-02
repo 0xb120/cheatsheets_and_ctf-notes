@@ -1,10 +1,7 @@
 ---
 author: Rachid.A
-aliases:
-  - A web cache deception chained to a CSRF
-  - the recipe
-tags:
-  - readwise/articles
+aliases: [A web cache deception chained to a CSRF, the recipe]
+tags: [readwise/articles]
 url: https://infosecwriteups.com/a-web-cache-deception-chained-to-a-csrf-the-recipe-9e9a5b5f53aa
 date: 2024-08-20
 ---

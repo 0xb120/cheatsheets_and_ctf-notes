@@ -4,14 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - LFI
-  - dns-enumeration
-  - dns-zone-transfer
-  - evasion
-  - fail2ban
-  - privesc/fail2ban
-  - Linux
+tags: [LFI, dns-enumeration, dns-zone-transfer, evasion, fail2ban, privesc/fail2ban, Linux]
 ---
 ![Trick.png](../../zzz_res/attachments/Trick.png)
 

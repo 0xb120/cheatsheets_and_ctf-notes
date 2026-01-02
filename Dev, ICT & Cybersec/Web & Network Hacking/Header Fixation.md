@@ -1,6 +1,5 @@
 ---
-aliases:
-  - Cookie Fixation
+aliases: [Cookie Fixation]
 ---
 # Header Fixation
 

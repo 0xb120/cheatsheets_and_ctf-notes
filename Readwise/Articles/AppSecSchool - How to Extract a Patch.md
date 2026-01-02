@@ -1,7 +1,6 @@
 ---
 author: AppSecSchool
-tags:
-  - readwise/articles
+tags: [readwise/articles]
 url: https://www.youtube.com/watch?v=wEVcv88BoJ4&ab_channel=AppSecSchool
 ---
 # How to Extract a Patch?

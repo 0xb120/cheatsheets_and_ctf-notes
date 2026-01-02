@@ -1,5 +1,5 @@
 ---
-aliases: HTTP/2 downgrading
+aliases: [HTTP/2 downgrading]
 ---
 >[!question] What is HTTP/2 downgrading?
 >[HTTP/2](HTTP-2.md) downgrading is the process of rewriting HTTP/2 requests using HTTP/1 syntax to generate an equivalent HTTP/1 request.

@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Android
-  - certificate-pinning-bypass
-  - network_security_config.xml
-  - patching-APK
-  - reversing
+tags: [Android, certificate-pinning-bypass, network_security_config.xml, patching-APK, reversing]
 ---
 >[!quote]
 > A client asked me to check if I can intercept the https request and get the value of the secret parameter that is passed along with the user's email. The application is intended to run in a non-rooted device. Can you help me find a way to intercept this value in plain text.

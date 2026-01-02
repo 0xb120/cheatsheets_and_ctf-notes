@@ -1,5 +1,5 @@
 ---
-aliases: Visual Studio Code
+aliases: [Visual Studio Code]
 ---
 # Useful shortcuts
 

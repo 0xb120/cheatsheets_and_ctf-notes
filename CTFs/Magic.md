@@ -4,17 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - RCE
-  - SQL-Injection
-  - authentication-bypass
-  - credentials-reuse
-  - filtering-bypass
-  - insecure-file-upload
-  - port-forwarding
-  - privesc/relative-paths-hijacking
-  - suid
-  - Linux
+tags: [RCE, SQL-Injection, authentication-bypass, credentials-reuse, filtering-bypass, insecure-file-upload, port-forwarding, privesc/relative-paths-hijacking, suid, Linux]
 ---
 # Resolution summary
 

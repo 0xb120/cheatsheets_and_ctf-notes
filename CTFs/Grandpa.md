@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - MS14-070
-  - ScStoragePathFromUrl
-  - kernel-exploit
-  - webdav
-  - Windows
+tags: [MS14-070, ScStoragePathFromUrl, kernel-exploit, webdav, Windows]
 ---
 # Resolution summary
 

@@ -1,5 +1,5 @@
 ---
-title: The Car Hacker's Handbook
+title: "The Car Hacker's Handbook"
 author: Craig Smith
 genre:
   - Technology & Engineering

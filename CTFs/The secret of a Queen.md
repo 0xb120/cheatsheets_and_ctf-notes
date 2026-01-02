@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - crypto
-  - old-ciphers
+tags: [crypto, old-ciphers]
 ---
 >[!quote]
 >*Decrypt the code and find the Queen's secret!*

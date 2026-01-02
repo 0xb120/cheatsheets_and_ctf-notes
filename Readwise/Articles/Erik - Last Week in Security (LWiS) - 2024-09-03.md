@@ -1,9 +1,7 @@
 ---
 author: Erik
-aliases:
-  - Last Week in Security (LWiS) - 2024-09-03
-tags:
-  - readwise/articles
+aliases: [Last Week in Security (LWiS) - 2024-09-03]
+tags: [readwise/articles]
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2024-09-03.html
 date: 2024-09-04
 ---

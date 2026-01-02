@@ -4,10 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - SSTI
-  - jinja
-  - flask
+tags: [SSTI, jinja, flask]
 ---
 >[!quote]
 >*Can you exploit this simple mistake?*

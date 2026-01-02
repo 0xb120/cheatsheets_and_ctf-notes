@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - authorization-bypass
-  - credentials-reuse
-  - privesc/polkit
-  - wordpress
-  - Linux
-  - rocket-chat
+tags: [authorization-bypass, credentials-reuse, privesc/polkit, wordpress, Linux, rocket-chat]
 ---
 ![Paper.png](../../zzz_res/attachments/Paper.png)
 

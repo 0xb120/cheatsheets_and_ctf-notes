@@ -4,16 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - ChromeOS
-  - autologin
-  - credentials-reuse
-  - hardcoded-credentials
-  - privesc/initctl
-  - insecure-file-permissions
-  - wordpress
-  - wordpress-custom-plugin
-  - Linux
+tags: [ChromeOS, autologin, credentials-reuse, hardcoded-credentials, privesc/initctl, insecure-file-permissions, wordpress, wordpress-custom-plugin, Linux]
 ---
 ## Introduction
 

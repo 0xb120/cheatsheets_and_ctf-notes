@@ -11,8 +11,7 @@ source: https://github.com/anthropics/claude-code-security-review
 
 created: 1760343749884
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Tools" 

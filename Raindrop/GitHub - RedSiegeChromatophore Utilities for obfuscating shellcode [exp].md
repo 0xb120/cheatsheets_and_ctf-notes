@@ -11,8 +11,7 @@ source: https://github.com/RedSiege/Chromatophore
 
 created: 1756319673000
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Tools"

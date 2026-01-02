@@ -6,10 +6,7 @@ author:
 published:
 created: 2025-08-06
 description: "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. - n8n-io/n8n"
-tags:
-  - "clippings/articles"
-  - "_inbox"
-  - "tools"
+tags: ["clippings/articles", "_inbox", "tools"]
 ---
 # n8n-io/n8n: Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.
 

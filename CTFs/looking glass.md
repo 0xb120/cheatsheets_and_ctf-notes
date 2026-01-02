@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - RCE
-  - command-injection
+tags: [RCE, command-injection]
 ---
 >[!quote]
 > *We've built the most secure networking tool in the market, come and check it out!*

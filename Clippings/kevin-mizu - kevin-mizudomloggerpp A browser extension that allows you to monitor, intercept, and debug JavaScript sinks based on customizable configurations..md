@@ -6,10 +6,7 @@ author:
 published:
 created: 2025-08-19
 description:
-tags:
-  - "clippings/articles"
-  - "_inbox"
-  - "tools"
+tags: ["clippings/articles", "_inbox", "tools"]
 ---
 # kevin-mizu/domloggerpp: A browser extension that allows you to monitor, intercept, and debug JavaScript sinks based on customizable configurations.
 

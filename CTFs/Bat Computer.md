@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - PIE
-  - code-review
-  - leaking-stack
-  - reversing
+tags: [PIE, code-review, leaking-stack, reversing]
 ---
 >[!quote]
 > It's your time to save the world!

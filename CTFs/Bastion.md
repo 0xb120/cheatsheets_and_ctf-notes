@@ -4,14 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - SAM-dump
-  - VHD
-  - Windows
-  - credentials-reuse
-  - insecure-credentials
-  - mRemoteNG
-  - anonymous-smb
+tags: [SAM-dump, VHD, Windows, credentials-reuse, insecure-credentials, mRemoteNG, anonymous-smb]
 ---
 # Resolution summary
 

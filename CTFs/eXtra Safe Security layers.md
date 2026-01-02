@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: justCTF 2023
 Status: 3. Complete
-tags:
-  - XSS
-  - evasion
-  - ejs
-  - CSP-bypass
-  - jsfuck
-  - obfuscation
+tags: [XSS, evasion, ejs, CSP-bypass, jsfuck, obfuscation]
 ---
 
 >[!quote]

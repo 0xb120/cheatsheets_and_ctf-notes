@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - JSON2XML
-  - XXE-Injection
+tags: [JSON2XML, XXE-Injection]
 ---
 >[!quote]
 > Our WAFfles and ice scream are out of this world, come to our online WAFfles house and check out our super secure ordering system API!****

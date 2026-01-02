@@ -1,10 +1,12 @@
 ---
-author: "noreply@blogger.com (Christian Cotignola (@b4dsheep))"
-aliases: "Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide."
-tags: RW_inbox, readwise/articles
+author: noreply@blogger.com (Christian Cotignola (@b4dsheep))
+aliases:
+  - Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide.
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://blog.mindedsecurity.com/2024/05/bypassing-certificate-pinning-on.html?__readwiseLocation=
 date: 2025-04-24
-summary: One of the preliminary activities when analyzing mobile application, more usually than not, is to be able to sniff HTTP/S traffic via a MitM proxy. This is quite straightforward in the case of naive applications, but can be quite challenging when applications use certificate pinning techniques. In this post I'll try to explain the methodology I used to make this possible for a Flutter-based Android sample application in a reliable way.IntroductionIt was indeed the need to bypass a certificate validation on a Flutter framework during a mobile application penetration testing activity for a customer of ours, that led to this research. As a first approach, as usual, we tried some of the specific exploits/bypasses we found on the web. Alas, in this case, they failed.Some of the main concepts that are going to be explained, actually, overlap in what those articles contain; what it differs is the technique used for identifying and hooking at runtime the routine used for certificate verification.While minimizing effort ...
 ---
 # Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide.
 

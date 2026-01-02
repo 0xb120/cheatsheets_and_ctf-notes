@@ -1,9 +1,7 @@
 ---
 author: Rhino Security Labs
-aliases:
-  - "Silverpeas App: Multiple CVEs Leading to File Read on Server"
-tags:
-  - readwise/articles
+aliases: ["Silverpeas App: Multiple CVEs Leading to File Read on Server"]
+tags: [readwise/articles]
 url: https://rhinosecuritylabs.com/research/silverpeas-file-read-cves/
 date: 2024-08-20
 ---

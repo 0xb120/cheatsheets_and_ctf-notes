@@ -7,7 +7,6 @@ tags:
   - dotnet
 url: https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x?__readwiseLocation=
 date: 2025-04-24
-summary: A security vulnerability in Sitecore (CVE-2024-46938) allows attackers to read sensitive files from the system due to an order of operations issue in the code. This flaw can affect many versions of Sitecore, despite a patch released in August 2024. Attackers can exploit this by knowing the absolute path of the Sitecore installation and using specific HTTP requests.
 ---
 # Leveraging an Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x
 

@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://medium.com/@adan.alvarez/github-actions-and-the-pinning-problem-what-100-security-projects-reveal-54a3a9dcc902?__readwiseLocation=
 date: 2025-04-24
-summary: A recent analysis of 100 popular GitHub security projects found that only 7 had all their actions pinned to specific commits, which is crucial for maintaining security. Many projects use unpinned actions, making them vulnerable to changes in the code. Even when actions are pinned, they can still expose risks if they depend on other unpinned actions.
 ---
 # GitHub Actions and the Pinning Problem: What 100 Security Projects Reveal
 

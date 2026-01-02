@@ -1,10 +1,7 @@
 ---
 author: Tib3rius
-aliases:
-  - My NEW Burp Extension Will Help You Write Reports!
-  - Copier
-tags:
-  - readwise/articles
+aliases: [My NEW Burp Extension Will Help You Write Reports!, Copier]
+tags: [readwise/articles]
 url: https://www.youtube.com/watch?v=m4y6IeZVAjg&t=474s
 date: 2024-09-10
 ---

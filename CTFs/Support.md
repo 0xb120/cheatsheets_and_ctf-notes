@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 2. User
-tags:
-  - LDAP-enum
-  - Windows
-  - hardcoded-credentials
-  - password-spraying
-  - reversing
-  - anonymous-smb
+tags: [LDAP-enum, Windows, hardcoded-credentials, password-spraying, reversing, anonymous-smb]
 ---
 ![Support.png](../../zzz_res/attachments/Support.png)
 

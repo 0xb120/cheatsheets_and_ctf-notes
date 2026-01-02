@@ -1,10 +1,7 @@
 ---
 author: httptoolkit.com
-aliases:
-  - New Ways to Inject System CA Certificates in Android 14
-tags:
-  - readwise/articles
-  - android
+aliases: [New Ways to Inject System CA Certificates in Android 14]
+tags: [readwise/articles, android]
 url: https://httptoolkit.com/blog/android-14-install-system-ca-certificate/
 date: 2024-08-20
 ---

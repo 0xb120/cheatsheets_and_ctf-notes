@@ -4,13 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - MySQL
-  - addslashes
-  - format-string
-  - real_escape_string
-  - vsprintf
-  - SQL-Injection
+tags: [MySQL, addslashes, format-string, real_escape_string, vsprintf, SQL-Injection]
 ---
 >[!quote]
 > I heard that `*real_escape_string()` / `addslashes()` functions protect you from malicious user input inside SQL statements, I hope you can't prove me wrong...

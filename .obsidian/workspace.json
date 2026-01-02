@@ -4,31 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "074af58e156f1887",
+        "id": "018b24d62c70d59c",
         "type": "tabs",
         "children": [
           {
-            "id": "a43d6e4d418bfe41",
+            "id": "06b6aff2c250ecb6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "Raindrop/Blind trust what is hidden behind the process of creating your PDF file.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "Bases/Articles inbox.base",
+                "viewName": "Articles to elaborate"
               },
-              "icon": "lucide-file",
-              "title": "Blind trust what is hidden behind the process of creating your PDF file"
+              "icon": "lucide-table",
+              "title": "Articles inbox"
             }
           }
         ]
@@ -44,6 +33,19 @@
         "id": "9c971390dc508109",
         "type": "tabs",
         "children": [
+          {
+            "id": "8ab711eaa4222edf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
           {
             "id": "ac48de087a5fdfe3",
             "type": "leaf",
@@ -70,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[\"summary\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -79,19 +81,6 @@
               },
               "icon": "lucide-search",
               "title": "Search"
-            }
-          },
-          {
-            "id": "8ab711eaa4222edf",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
             }
           },
           {
@@ -104,8 +93,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -136,10 +124,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "CTFs/APKey.md"
+                "file": "Bases/Articles inbox.base"
               },
               "icon": "lucide-info",
-              "title": "File properties for APKey"
+              "title": "File properties for Articles inbox"
             }
           },
           {
@@ -165,7 +153,7 @@
               "state": {
                 "sortOrder": "frequency",
                 "showSearch": true,
-                "searchQuery": ""
+                "searchQuery": "summary"
               },
               "icon": "lucide-archive",
               "title": "All properties"
@@ -177,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Readwise/Readwise inbox.md",
+                "file": "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Readwise inbox"
+              "title": "Outline of 0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet"
             }
           },
           {
@@ -196,7 +184,8 @@
               "title": "Todo List"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "0ca134c80578c5f2",
@@ -209,7 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+                "file": "Bases/Articles inbox.base",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,7 +208,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for HTTP & HTTPS"
+              "title": "Backlinks for Articles inbox"
             }
           },
           {
@@ -228,12 +217,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Raindrop/Blind trust what is hidden behind the process of creating your PDF file.md",
+                "file": "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Blind trust what is hidden behind the process of creating your PDF file"
+              "title": "Outgoing links from 0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet"
             }
           },
           {
@@ -242,6 +231,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -269,71 +259,75 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Graph of 0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 435.5
+    "width": 412.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "omnisearch:Omnisearch": false,
+      "bases:Create new base": false,
       "canvas:Create new canvas": false,
       "obsidian-excalidraw-plugin:New drawing": false,
       "graph:Open graph view": false,
       "templates:Insert template": true,
       "workspaces:Manage workspace layouts": true,
-      "obsidian-book-search-plugin:Create new book note": true,
       "file-tree-alternative:File Tree Alternative Plugin": true,
       "obsidian-git:Open Git source control": true,
       "obsidian-raindrop-highlights:Sync Raindrop bookmarks from last sync time": false
     }
   },
-  "active": "f6c7831e85d653f1",
+  "active": "06b6aff2c250ecb6",
   "lastOpenFiles": [
-    "Raindrop/Black-box Penetration Testing for Blazor WebAssemblyServer Apps.md",
-    "Raindrop/Blind trust what is hidden behind the process of creating your PDF file.md",
-    "Clippings/Aleksey Solovev, Nikita Sveshnikov, Vladimir Razov - Blind trust what is hidden behind the process of creating your PDF file.md",
-    "Raindrop/danieldev23trafexia Trafexia - Mobile Traffic Interceptor.md",
-    "Raindrop/New Burp Suite Extension BlazorTrafficProcessor.md",
-    "Raindrop/LLM Code Review vs Deterministic SAST Security Tools.md",
-    "Raindrop/Last Week in Security (LWiS) - 2025-11-03.md",
-    "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
-    "Clippings/Synacktiv - NTLM reflection is dead, long live NTLM reflection! – An in-depth analysis of CVE-2025-33073.md",
-    "Clippings/Synacktiv - Laravel APP_KEY leakage analysis.md",
-    "Clippings/onel, KernelDeimos - HeyPuterputer 🌐 The Internet OS! Free, Open-Source, and Self-Hostable..md",
-    "Clippings/Mattia (0xbro) Brollo - Vtenext 25.02 A three-way path to RCE.md",
-    "Clippings/James Kettle - HTTP1.1 must die the desync endgame.md",
-    "Raindrop/Writing Sync, Popping Cron DEVCORE’s Synology BeeStation RCE & A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631).md",
-    "Raindrop/westonbrownCyber-AutoAgent AI agent for autonomous cyber operations.md",
-    "Raindrop/usestrixstrix ✨ Open-source AI hackers for your apps 👨🏻‍💻.md",
-    "Raindrop/Writing Sync, Popping Cron DEVCORE’s Synology BeeStation RCE & A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631).md",
-    "Raindrop/XBOW - Agentic Pentesting with ZERO False Positives  Aidan John.md",
-    "Raindrop/Inside PostHog How SSRF, a ClickHouse SQL Escaping 0day, and Default PostgreSQL Credentials Formed an RCE Chain (ZDI-25-099, ZDI-25-097, ZDI-25-096) [app] [exp].md",
-    "Raindrop/Code auditing 101 -.md",
-    "Raindrop/Slice SAST + LLM Interprocedural Context Extractor.md",
+    "Readwise/Readwise inbox.md",
+    "Bases/Articles inbox.base",
+    "Readwise/Articles/Guardsquare - The Current State & Future of Reverse Engineering Flutter™ Apps.md",
+    "Readwise/Articles/repzret.blogspot.com - Abusing Libxml2 Quirks to Bypass SAML Authentication on GitHub Enterprise.md",
+    "Readwise/Articles/Veritasium - Exposing The Flaw In Our Phone System.md",
+    "Bases/Tools.base",
+    "Clippings/jorianwoltjer.com - The Ultimate Double-Clickjacking PoC  Jorian Woltjer.md",
+    "Readwise/Articles/httpsgithub.comrverton - GitHub - RvertonWebanalyze Port of Wappalyzer (Uncovers Technologies Used on Websites) to Automate Mass Scanning..md",
+    "Readwise/Articles/Marco Ivaldi - A Collection of Weggli Patterns for CC++ Vulnerability Research.md",
+    "Bases/CTFs.base",
+    "Readwise/Articles/zhero_web_security - Next.js and the Corrupt Middleware The Authorizing Artifact.md",
+    "Readwise/Articles/zhero_web_security - Next.js, Cache, and Chains The Stale Elixir.md",
+    "Readwise/Tweets/0x0SojalSec on Twitter - Tweets from Md Ismail Šojal 🕷️.md",
+    "Readwise/Tweets/@Zealsham on Twitter - Tweets From Shammah Agwor.md",
+    "Readwise/Tweets/h4x0r_fr34k on Twitter - Tweets From VAIDIK PANDYA.md",
+    "Readwise/Tweets/@LiveOverflow on Twitter - I'm Looking for Differen....md",
+    "Readwise/Tweets/@h4x0r_fr34k on Twitter - Tweets From VAIDIK PANDYA.md",
+    "Readwise/Tweets/@WllGates on Twitter - Tweets From Will Gates.md",
+    "Readwise/Tweets/@intigriti on Twitter - Tweets from Intigriti.md",
+    "Readwise/Tweets/@7h3h4ckv157 on Twitter - Tweets From 7h3h4ckv157.md",
+    "Readwise/Articles/Adan - GitHub Actions and the Pinning Problem What 100 Security Projects Reveal.md",
+    "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
+    "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md",
+    "Readwise/Articles/Horizon3.ai - Vulnerable vs. Exploitable Why Understanding the Difference Matters to Your Security Posture.md",
+    "Readwise/Articles/hurl.dev - What’s Hurl.md",
+    "Readwise/Articles/httpsgithub.comSlon104 - GitHub - Slon104Common-PIN-Analysis-from-haveibeenpwned.com.md",
+    "Readwise/Articles/Michael Weber - Refresh Compromising F5 BIG-IP With Request Smuggling CVE-2023-46747.md",
+    "Readwise/Articles/Nancy Gariché - A Maintainer’s Guide to Vulnerability Disclosure GitHub Tools to Make It Simple.md",
+    "CTFs/_CTF-dashboard.canvas",
+    "Bases",
+    "Excalibrain",
+    "Untitled.canvas",
+    "Untitled 1.base",
+    "Untitled.base",
     "TestSync",
-    "Raindrop/Unleashing the Hound How AI Agents Find Deep Logic Bugs in Any Codebase.md",
-    "Raindrop/GitHub - 0x4m4hexstrike-ai HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and securi.md",
-    "Raindrop/UTF-8 is a Brilliant Design — Vishnus Pages.md",
-    "Raindrop/GitHub - loertingdalvikus Android reverse-engineering tool  smali editor [rev] [sys].md",
-    "Raindrop/GitHub - jonaslejonmalicious-pdf 💀 Generate a bunch of malicious pdf files with phone-home functionality. Can be used with Burp Collaborator or Interact.sh.md",
     "Personal/Book list/_book-dashboard.canvas",
     "Communities/MeetHack/Nday/Black Project.canvas",
     "Communities/YouTube/_YT-dashboard.canvas",
-    "Tools.base",
     "DB",
     "Raindrop",
-    "copilot-custom-prompts",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-17.png",
-    "Clippings/attachments/US-25-Kettle-HTTP1-Must-Die-The-Desync-Endgame-wp.pdf",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-16.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15-1.png",
@@ -343,16 +337,10 @@
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-11.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-10.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-9.png",
-    "Clippings/attachments",
-    "Clippings",
-    "test-link/test.txt",
-    "test-link",
     "VR/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it.canvas",
     "VR/Targets/uisp.it/areariservata2.uisp.it/areariservata2.uisp.it.canvas",
     "VR/Targets/Woox/Woox R4040/Woox R4040.canvas",
     "VR/Targets/SicuraNext/challenge-1/challenge-1.canvas",
-    "VR/Targets/SicuraNext/challenge-2/challenge-2.canvas",
-    "VR/Targets/opencart/OpenCart-4.canvas",
-    "VR/Targets/opencart/OpenCart 4.0.2.3.canvas"
+    "VR/Targets/SicuraNext/challenge-2/challenge-2.canvas"
   ]
 }

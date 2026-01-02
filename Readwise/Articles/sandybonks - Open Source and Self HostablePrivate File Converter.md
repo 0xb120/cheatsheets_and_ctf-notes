@@ -1,13 +1,15 @@
 ---
-author: "sandybonks"
-aliases: "Open Source and Self Hostable/Private File Converter"
-tags: RW_inbox, readwise/articles, tools
+author: sandybonks
+aliases:
+  - Open Source and Self Hostable/Private File Converter
+tags:
+  - RW_inbox
+  - readwise/articles
+  - tools
 url: https://vert.sh?__readwiseLocation=
 date: 2025-04-24
-summary: Article URL: https://vert.sh
 Comments URL: https://news.ycombinator.com/item?id=43663865
 Points: 450
-# Comments: 86
 ---
 # Open Source and Self Hostable/Private File Converter
 

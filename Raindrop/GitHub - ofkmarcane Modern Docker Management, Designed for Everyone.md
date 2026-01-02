@@ -13,8 +13,7 @@ source: https://github.com/ofkm/arcane
 
 created: 1758654039917
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Tools"

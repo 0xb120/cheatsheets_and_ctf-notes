@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 status: 3. Complete
-tags:
-  - CMS-Made-Simple
-  - SQL-Injection
-  - privesc/relative-paths-hijacking
-  - Linux
+tags: [CMS-Made-Simple, SQL-Injection, privesc/relative-paths-hijacking, Linux]
 ---
 ### Improved ability
 

@@ -4,8 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - cracking-pdf-files
+tags: [cracking-pdf-files]
 ---
 >[!quote]
 > Old algorithms are not a waste, but are really precious...

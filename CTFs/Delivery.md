@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - business-logic-bypass
-  - credentials-reuse
-  - hashcat-custom-rules
-  - insecure-credentials
-  - john-custom-rules
-  - Linux
+tags: [business-logic-bypass, credentials-reuse, hashcat-custom-rules, insecure-credentials, john-custom-rules, Linux]
 ---
 # Resolution summary
 

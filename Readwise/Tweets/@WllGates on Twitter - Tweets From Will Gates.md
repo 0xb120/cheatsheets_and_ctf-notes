@@ -7,7 +7,6 @@ tags:
   - tools
 url: ?__readwiseLocation=
 date: 2025-03-29
-summary: None
 ---
 # Tweets From Will Gates
 

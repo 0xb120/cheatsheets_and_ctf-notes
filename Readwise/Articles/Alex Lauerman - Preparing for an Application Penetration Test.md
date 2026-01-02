@@ -1,9 +1,7 @@
 ---
 author: Alex Lauerman
-aliases:
-  - Preparing for an Application Penetration Test
-tags:
-  - readwise/articles
+aliases: [Preparing for an Application Penetration Test]
+tags: [readwise/articles]
 url: https://trustfoundry.net/2020/08/05/preparing-for-an-application-penetration-test/
 date: 2024-08-20
 ---

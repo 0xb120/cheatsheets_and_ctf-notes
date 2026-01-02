@@ -1,9 +1,7 @@
 ---
 author: "@0xTib3rius on Twitter"
-aliases:
-  - Tweets From Tib3rius
-tags:
-  - readwise/tweets
+aliases: [Tweets From Tib3rius]
+tags: [readwise/tweets]
 url: https://twitter.com/0xTib3rius
 date: 2024-08-20
 ---

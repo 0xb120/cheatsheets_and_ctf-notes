@@ -1,11 +1,7 @@
 ---
 author: Full Disclosure
-aliases:
-  - Stored XSS to Account Takeover - Htmlyv2.9.9
-tags:
-  - readwise/articles
-  - vulnerability-research/todo
-  - htmly
+aliases: [Stored XSS to Account Takeover - Htmlyv2.9.9]
+tags: [readwise/articles, vulnerability-research/todo, htmly]
 url: https://seclists.org/fulldisclosure/2024/Sep/42
 date: 2024-09-25
 ---

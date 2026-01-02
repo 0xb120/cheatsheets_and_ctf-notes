@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://jakearchibald.com/2021/cors/?__readwiseLocation=
 date: 2025-03-07
-summary: CORS, or Cross-Origin Resource Sharing, allows web pages to request resources from different origins while maintaining security. It requires specific HTTP headers to enable access and can include credentials under certain conditions. Properly managing CORS is essential to prevent exposing sensitive data and ensure safe resource sharing.
 ---
 # How to Win at CORS
 

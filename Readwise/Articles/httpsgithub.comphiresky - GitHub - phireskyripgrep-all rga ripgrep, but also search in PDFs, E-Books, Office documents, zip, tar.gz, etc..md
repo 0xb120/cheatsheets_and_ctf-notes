@@ -1,10 +1,7 @@
 ---
 author: https://github.com/phiresky/
-aliases:
-  - rga
-tags:
-  - readwise/articles
-  - tools
+aliases: [rga]
+tags: [readwise/articles, tools]
 url: https://github.com/phiresky/ripgrep-all
 date: 2024-09-25
 ---

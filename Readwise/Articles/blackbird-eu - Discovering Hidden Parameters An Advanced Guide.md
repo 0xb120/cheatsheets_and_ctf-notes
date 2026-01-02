@@ -1,10 +1,12 @@
 ---
-author: "blackbird-eu"
-aliases: "Discovering Hidden Parameters: An Advanced Guide"
-tags: RW_inbox, readwise/articles
+author: blackbird-eu
+aliases:
+  - "Discovering Hidden Parameters: An Advanced Guide"
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://www.intigriti.com/researchers/blog/hacking-tools/finding-hidden-input-parameters?__readwiseLocation=
 date: 2025-07-07
-summary: This article explains how to discover hidden parameters in web applications, which can be vulnerable to attacks. It outlines five methods for detection, including using HTML input fields, JavaScript files, and automated tools. Understanding these techniques can enhance bug bounty hunting skills and help find more security vulnerabilities.
 ---
 # Discovering Hidden Parameters: An Advanced Guide
 

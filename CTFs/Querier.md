@@ -4,17 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Group
-  - Policy
-  - GPP-GPO
-  - MSSQL
-  - UNC
-  - Windows
-  - hardcoded-credentials
-  - insecure-credentials
-  - xp_cmdshell
-  - anonymous-smb
+tags: [Group, Policy, GPP-GPO, MSSQL, UNC, Windows, hardcoded-credentials, insecure-credentials, xp_cmdshell, anonymous-smb]
 ---
 # Resolution summary
 

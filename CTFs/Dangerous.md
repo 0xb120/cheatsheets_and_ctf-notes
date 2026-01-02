@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: justCTF 2023
 Status: 3. Complete
-tags:
-  - ruby
-  - forging-cookies
-  - rack.session
-  - sinatra
+tags: [ruby, forging-cookies, rack.session, sinatra]
 ---
 
 >[!quote]

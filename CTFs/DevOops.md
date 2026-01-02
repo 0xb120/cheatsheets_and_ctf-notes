@@ -4,14 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - XXE-Injection
-  - bash-history
-  - credentials-reuse
-  - git
-  - privesc/git
-  - pickle-deserialization
-  - Linux
+tags: [XXE-Injection, bash-history, credentials-reuse, git, privesc/git, pickle-deserialization, Linux]
 ---
 # Resolution summary
 

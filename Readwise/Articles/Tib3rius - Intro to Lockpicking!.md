@@ -7,7 +7,6 @@ tags:
   - lockpicking
 url: https://www.youtube.com/watch?v=oyzt0r79kns&list=WL&index=6?__readwiseLocation=
 date: 2025-04-24
-summary: Lockpicking can be a fun hobby, but it requires skill and practice. There are different types of locks, like pin tumbler and wafer locks, each with their own picking techniques. It’s important to be careful, as picking can damage locks if not done properly.
 ---
 # Intro to Lockpicking!
 

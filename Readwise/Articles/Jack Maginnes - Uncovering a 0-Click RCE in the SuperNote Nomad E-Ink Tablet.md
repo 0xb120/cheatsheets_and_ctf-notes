@@ -1,10 +1,12 @@
 ---
-author: "Jack Maginnes"
-aliases: "Uncovering a 0-Click RCE in the SuperNote Nomad E-Ink Tablet"
-tags: RW_inbox, readwise/articles
+author: Jack Maginnes
+aliases:
+  - Uncovering a 0-Click RCE in the SuperNote Nomad E-Ink Tablet
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://www.prizmlabs.io/post/remote-rootkits-uncovering-a-0-click-rce-in-the-supernote-nomad-e-ink-tablet?ref=blog.exploits.club?__readwiseLocation=
 date: 2025-04-28
-summary: Researchers discovered a serious security flaw in the SuperNote Nomad E-ink Tablet that allows for a remote installation of a rootkit without any user interaction. They found that a misconfiguration in the device's file-sharing system could be exploited to overwrite important files with malicious updates. After notifying the manufacturer, they agreed to fix the vulnerability in a future update.
 ---
 # Uncovering a 0-Click RCE in the SuperNote Nomad E-Ink Tablet
 

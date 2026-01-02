@@ -1,9 +1,7 @@
 ---
 author: Assetnote
-aliases:
-  - RCE in Progress WS_FTP Ad Hoc via IIS HTTP Modules
-tags:
-  - readwise/articles
+aliases: [RCE in Progress WS_FTP Ad Hoc via IIS HTTP Modules]
+tags: [readwise/articles]
 url: https://blog.assetnote.io/2023/10/04/rce-progress-ws-ftp/
 date: 2024-08-20
 ---

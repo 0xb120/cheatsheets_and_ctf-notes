@@ -1,9 +1,7 @@
 ---
 author: SecureLayer7 Lab
-aliases:
-  - A Handy Guide to Understanding Attack Surface Management
-tags:
-  - readwise/articles
+aliases: [A Handy Guide to Understanding Attack Surface Management]
+tags: [readwise/articles]
 url: https://blog.securelayer7.net/attack-surface-management-3/
 date: 2024-08-20
 ---

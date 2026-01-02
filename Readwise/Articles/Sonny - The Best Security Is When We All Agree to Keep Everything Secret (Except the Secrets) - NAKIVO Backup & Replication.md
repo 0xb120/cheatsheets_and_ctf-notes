@@ -1,10 +1,7 @@
 ---
 author: Sonny
-aliases:
-  - The Best Security Is When We All Agree to Keep Everything Secret (Except the Secrets) - NAKIVO Backup & Replication
-tags:
-  - readwise/articles
-  - java
+aliases: [The Best Security Is When We All Agree to Keep Everything Secret (Except the Secrets) - NAKIVO Backup & Replication]
+tags: [readwise/articles, java]
 url: https://labs.watchtowr.com/the-best-security-is-when-we-all-agree-to-keep-everything-secret-except-the-secrets-nakivo-backup-replication-cve-2024-48248/
 date: 2025-02-28
 ---

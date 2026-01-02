@@ -19,8 +19,7 @@ source: https://voidsec.com/home-made-llm-recipe/
 
 created: 1764870341159
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

@@ -15,8 +15,7 @@ source: https://github.com/loerting/dalvikus
 
 created: 1754144075000
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Tools" 

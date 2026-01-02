@@ -1,9 +1,7 @@
 ---
 author: Intigriti
-aliases:
-  - "The Major Bug Bounty Debate: Which Department Should Pay for Rewards?"
-tags:
-  - readwise/articles
+aliases: ["The Major Bug Bounty Debate: Which Department Should Pay for Rewards?"]
+tags: [readwise/articles]
 url: https://blog.intigriti.com/2024/01/18/which-department-should-pay-for-bug-bounty-rewards/
 date: 2024-08-20
 ---

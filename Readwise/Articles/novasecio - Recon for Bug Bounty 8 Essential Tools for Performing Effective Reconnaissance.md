@@ -1,10 +1,7 @@
 ---
 author: novasecio
-aliases:
-  - "Recon for Bug Bounty: 8 Essential Tools for Performing Effective Reconnaissance"
-tags:
-  - readwise/articles
-  - Tools
+aliases: ["Recon for Bug Bounty: 8 Essential Tools for Performing Effective Reconnaissance"]
+tags: [readwise/articles, Tools]
 url: https://blog.intigriti.com/hacking-tools/recon-for-bug-bounty-8-essential-tools-for-performing-effective-reconnaissance
 date: 2024-10-22
 ---

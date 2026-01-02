@@ -4,11 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Drupal
-  - MS15-051
-  - RCE
-  - Windows
+tags: [Drupal, MS15-051, RCE, Windows]
 ---
 # Resolution summary
 

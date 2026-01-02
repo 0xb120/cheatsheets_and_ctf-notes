@@ -1,6 +1,5 @@
 ---
-aliases:
-  - Google Web Toolkit
+aliases: [Google Web Toolkit]
 ---
 ## GWT 101
 

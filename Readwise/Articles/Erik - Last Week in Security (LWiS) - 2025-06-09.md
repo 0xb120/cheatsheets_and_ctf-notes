@@ -1,10 +1,12 @@
 ---
-author: "Erik"
-aliases: "Last Week in Security (LWiS) - 2025-06-09"
-tags: RW_inbox, readwise/articles
+author: Erik
+aliases:
+  - Last Week in Security (LWiS) - 2025-06-09
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-06-09.html?__readwiseLocation=
 date: 2025-07-07
-summary: Last Week in Security summarizes key cybersecurity news and techniques from June 2 to June 9, 2025. It includes Cellebrite's acquisition of Corellium for 200 million USD and various new tools and exploits in the cybersecurity field. The next edition will be published on June 30, 2025, after a two-week break.
 ---
 # Last Week in Security (LWiS) - 2025-06-09
 

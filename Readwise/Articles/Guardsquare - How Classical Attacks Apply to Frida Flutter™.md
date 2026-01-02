@@ -1,10 +1,13 @@
 ---
-author: "Guardsquare"
-aliases: "How Classical Attacks Apply to Frida Flutter™"
-tags: RW_inbox, readwise/articles, Flutter
+author: Guardsquare
+aliases:
+  - How Classical Attacks Apply to Frida Flutter™
+tags:
+  - RW_inbox
+  - readwise/articles
+  - Flutter
 url: https://www.guardsquare.com/blog/how-classical-attacks-apply-to-flutter-apps?__readwiseLocation=
 date: 2025-04-24
-summary: This blog post explores how common attack techniques used on mobile apps apply to Flutter applications. It discusses static and dynamic tampering methods, showing that Flutter's native code can be modified similarly to traditional apps. The post also highlights the use of hooking to alter application behavior and emphasizes the need for strong protection measures.
 ---
 # How Classical Attacks Apply to Frida Flutter™
 

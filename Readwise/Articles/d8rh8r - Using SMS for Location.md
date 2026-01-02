@@ -1,9 +1,7 @@
 ---
 author: d8rh8r
-aliases:
-  - Using SMS for Location
-tags:
-  - readwise/articles
+aliases: [Using SMS for Location]
+tags: [readwise/articles]
 url: https://0x00sec.org/t/using-sms-for-location/41153
 date: 2024-08-20
 ---

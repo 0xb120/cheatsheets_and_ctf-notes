@@ -1,9 +1,7 @@
 ---
 author: Malicious Group
-aliases:
-  - From Akamai to F5 to NTLM... With Love.
-tags:
-  - readwise/articles
+aliases: [From Akamai to F5 to NTLM... With Love.]
+tags: [readwise/articles]
 url: https://blog.malicious.group/from-akamai-to-f5-to-ntlm/
 date: 2024-08-20
 ---

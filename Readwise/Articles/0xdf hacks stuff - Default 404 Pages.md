@@ -1,9 +1,7 @@
 ---
 author: 0xdf hacks stuff
-aliases:
-  - Default 404 Pages
-tags:
-  - readwise/articles
+aliases: [Default 404 Pages]
+tags: [readwise/articles]
 url: https://0xdf.gitlab.io/cheatsheets/404
 date: 2024-09-25
 ---

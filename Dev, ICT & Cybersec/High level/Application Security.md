@@ -1,7 +1,5 @@
 ---
-aliases:
-  - Application Security Testing
-  - AppSec
+aliases: [Application Security Testing, AppSec]
 ---
 # Application Security
 

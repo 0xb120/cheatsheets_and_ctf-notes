@@ -1,44 +1,10 @@
 ---
 author: "Doyensec's Blog"
-aliases: "CSPT Resources"
-tags: RW_inbox, readwise/articles
+aliases: ["CSPT Resources"]
+tags: [RW_inbox, readwise/articles]
 url: https://blog.doyensec.com/2025/03/27/cspt-resources.html?__readwiseLocation=
 date: 2025-04-01
-summary: As a follow up to Maxence Schmitt’s research on Client-Side Path Traversal (CSPT), we wanted to encourage researchers, bug hunters, and security professionals to explore CSPT further, as it remains an underrated yet impactful attack vector.
-To support the community, we have compiled a list of blog posts, vulnerabilities, tools, CTF challenges, and videos related to CSPT. If anything is missing, let us know and we will update the post. Please note that the list is not ranked and does not reflect the quality or importance of the resources.
-Publications (blog posts, advisories, …)
 
-Maxence Schmitt: Exploiting Client-Side Path Traversal to Perform Cross-Site Request Forgery - Introducing CSPT2CSRF
-Maxence Schmitt: CSPT & File Upload Bypasses
-Dafydd Stuttard: PortSwigger - On-Site Request Forgery
-Renwa: Client-Side Path Traversal (CSPT) Bug Bounty Reports and Techniques
-Kapytein: From an Innocent Client-Side Path Traversal to Account Takeover
-Mr. Medi: Practical Client-Side Path Traversal Attacks
-Alvaro Balada: The Power of Client-Side Path Traversal: How I Found and Escalated 2 Bugs
-Michelin CERT: Grafana CVE-2023-5123 Write-Up
-Netragard: Saving CSRF: Client-Side Path Traversal to the Rescue
-Sam Curry: CSPT2CSRF and CSPT->Open Redirect->XSS
-Hussein Daher: CSPT->JSONP->XSS
-Ron Masas: CSPT->XSS
-Isira Adithya: CSPT->JSONP->XSS
-Johan Carlsson: 1 Click CSPT->Stored id from a rogue Sentry server->PUT CSRF
-Erasec: Client-Side Path Manipulation
-Acut3: Fetch Diversion
-Matan Berson: CSPT Levels
-Facebook: Facebook Notes on CSPT
-
-Videos
-
-Maxence Schmitt: OWASP Lisbon 2024 - Exploiting Client-Side Path Traversal: CSRF Is Dead, Long Live CSRF
-Maxence Schmitt: Volcamp 2024 - FR: Exploiting Client-Side Path Traversal: CSRF Is Dead, Long Live CSRF
-Soheil Khodayari: OWASP Lisbon 2024 - Deep dive into CSPT techniques
-Justin Gardner: Critical Thinking Podcast Channel
-Grzegorz Niedziela: Bug Bounty Reports Explained Channel
-
-Tools
-
-Maxence Schmitt: CSPT Burp Extension
-Dennis Goodlett:...
 ---
 # CSPT Resources
 

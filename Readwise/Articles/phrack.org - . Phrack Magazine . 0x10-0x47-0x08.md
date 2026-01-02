@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://phrack.org/issues/71/8#article?__readwiseLocation=
 date: 2025-04-24
-summary: Phrack Magazine is an online publication focused on hacking and technology. It features articles, tutorials, and discussions on various topics related to computer security. The magazine is known for its contributions to the hacker community.
 ---
 # .:: Phrack Magazine ::.
 

@@ -4,18 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Java
-  - Maven
-  - SSTI
-  - Spring
-  - XXE-Injection
-  - evasion
-  - exploit-chain
-  - jdom2
-  - log-poisoning
-  - path-traversal
-  - Linux
+tags: [Java, Maven, SSTI, Spring, XXE-Injection, evasion, exploit-chain, jdom2, log-poisoning, path-traversal, Linux]
 ---
 ![RedPanda.png](../../zzz_res/attachments/RedPanda.png)
 

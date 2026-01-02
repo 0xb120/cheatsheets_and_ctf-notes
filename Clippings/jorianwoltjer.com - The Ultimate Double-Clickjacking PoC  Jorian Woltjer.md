@@ -4,10 +4,8 @@ source: https://jorianwoltjer.com/blog/p/research/ultimate-doubleclickjacking-po
 author: jorianwoltjer.com
 published: 
 created: 2025-07-29
-description: Combing a lot of browser tricks to create a realistic Proof of Concept for the Double-Clickjacking attack. Moving a real popunder with your mouse cursor and triggering it right as you're trying to beat your Flappy Bird high score.
-tags:
-  - clippings/articles
-  - _inbox
+description: "Combing a lot of browser tricks to create a realistic Proof of Concept for the Double-Clickjacking attack. Moving a real popunder with your mouse cursor and triggering it right as you're trying to beat your Flappy Bird high score."
+tags: [clippings/articles, _inbox]
 ---
 # The Ultimate Double-Clickjacking PoC | Jorian Woltjer
 

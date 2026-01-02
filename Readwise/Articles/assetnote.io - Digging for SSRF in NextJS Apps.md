@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://www.assetnote.io/resources/research/digging-for-ssrf-in-nextjs-apps?__readwiseLocation=
 date: 2025-04-24
-summary: NextJS websites can have misconfigurations, like a vulnerability in the _next/image endpoint, allowing for SSRF attacks. By manipulating the remotePatterns in the next.config.js file, attackers can exploit blind SSRF vulnerabilities. Server Actions in NextJS also pose risks, as a forged Host header can lead to SSRF attacks when fetching responses.
 ---
 # Digging for SSRF in NextJS Apps
 

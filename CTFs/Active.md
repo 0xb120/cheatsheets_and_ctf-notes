@@ -4,14 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - ActiveDirectory
-  - Group
-  - Policy
-  - (GPP/GPO)
-  - Kerberoasting
-  - Windows
-  - anonymous-smb
+tags: [ActiveDirectory, Group, Policy, (GPP/GPO), Kerberoasting, Windows, anonymous-smb]
 ---
 # Resolution summary
 

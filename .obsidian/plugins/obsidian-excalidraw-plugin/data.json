@@ -111,7 +111,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.15.1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.18.3",
     "libraryItems": []
   },
   "imageElementNotice": true,

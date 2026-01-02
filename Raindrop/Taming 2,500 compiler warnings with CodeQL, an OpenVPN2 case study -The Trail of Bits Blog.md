@@ -17,8 +17,7 @@ source: https://blog.trailofbits.com/2025/09/25/taming-2500-compiler-warnings-wi
 
 created: 1758835729021
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "tech-blog" 

@@ -6,10 +6,7 @@ author:
 published: 
 created: 2025-07-29
 description: Portable file server with accelerated resumable uploads, dedup, WebDAV, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file, no deps - 9001/copyparty
-tags:
-  - clippings/articles
-  - _inbox
-  - tools
+tags: [clippings/articles, _inbox, tools]
 ---
 # 9001/copyparty: Portable file server with accelerated resumable uploads, dedup, WebDAV, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file, no deps
 

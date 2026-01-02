@@ -1,9 +1,7 @@
 ---
 author: Paul Gerste
-aliases:
-  - Remote Code Execution in Tutanota Desktop Due to Code Flaw
-tags:
-  - readwise/articles
+aliases: [Remote Code Execution in Tutanota Desktop Due to Code Flaw]
+tags: [readwise/articles]
 url: https://www.sonarsource.com/blog/remote-code-execution-in-tutanota-desktop-due-to-code-flaw
 date: 2024-08-20
 ---

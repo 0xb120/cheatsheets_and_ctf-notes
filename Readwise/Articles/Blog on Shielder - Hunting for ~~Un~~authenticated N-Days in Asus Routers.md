@@ -1,9 +1,7 @@
 ---
 author: Blog on Shielder
-aliases:
-  - Hunting for ~~Un~~authenticated N-Days in Asus Routers
-tags:
-  - readwise/articles
+aliases: [Hunting for ~~Un~~authenticated N-Days in Asus Routers]
+tags: [readwise/articles]
 url: https://www.shielder.com/blog/2024/01/hunting-for-~~un~~authenticated-n-days-in-asus-routers/
 date: 2024-08-20
 ---

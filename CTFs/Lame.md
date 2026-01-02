@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - RCE
-  - Samba
-  - exploit-dev
-  - Linux
+tags: [RCE, Samba, exploit-dev, Linux]
 ---
 # Resolution summary
 

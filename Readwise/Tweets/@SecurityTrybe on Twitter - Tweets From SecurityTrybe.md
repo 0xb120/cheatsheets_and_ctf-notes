@@ -1,9 +1,7 @@
 ---
 author: "@SecurityTrybe on Twitter"
-aliases:
-  - Tweets From SecurityTrybe
-tags:
-  - readwise/tweets
+aliases: [Tweets From SecurityTrybe]
+tags: [readwise/tweets]
 url: https://twitter.com/SecurityTrybe
 date: 2024-08-20
 ---

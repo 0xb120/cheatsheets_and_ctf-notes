@@ -4,14 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - credentials-reuse
-  - hardcoded-credentials
-  - privesc/relative-paths-hijacking
-  - reversing
-  - snakeyaml
-  - yaml-deserialization
-  - Linux
+tags: [credentials-reuse, hardcoded-credentials, privesc/relative-paths-hijacking, reversing, snakeyaml, yaml-deserialization, Linux]
 ---
 # Resolution summary
 

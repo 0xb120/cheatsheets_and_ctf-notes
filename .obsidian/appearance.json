@@ -5,6 +5,7 @@
   "translucency": false,
   "cssTheme": "",
   "theme": "obsidian",
-  "baseFontSize": 17,
-  "enabledCssSnippets": []
+  "baseFontSize": 18,
+  "enabledCssSnippets": [],
+  "baseFontSizeAction": true
 }

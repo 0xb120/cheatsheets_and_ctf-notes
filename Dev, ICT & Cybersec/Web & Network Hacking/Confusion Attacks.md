@@ -1,7 +1,5 @@
 ---
-aliases:
-  - Parser differentials
-  - Parser discrepancies
+aliases: [Parser differentials, Parser discrepancies]
 ---
 Confusion attacks are a set of vulnerabilities based on **parsing discrepancies** (aka parser differentials) between two or more elements involved, resulting in a security problem.
 

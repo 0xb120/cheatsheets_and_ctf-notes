@@ -1,9 +1,7 @@
 ---
 author: fpilee
-aliases:
-  - Is there any native function to convert json to url parameters?
-tags:
-  - readwise/articles
+aliases: [Is there any native function to convert json to url parameters?]
+tags: [readwise/articles]
 url: https://stackoverflow.com/questions/14525178/is-there-any-native-function-to-convert-json-to-url-parameters
 date: 2024-06-13
 ---

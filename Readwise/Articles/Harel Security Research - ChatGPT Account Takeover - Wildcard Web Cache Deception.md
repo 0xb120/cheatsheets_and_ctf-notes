@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://nokline.github.io/bugbounty/2024/02/04/ChatGPT-ATO.html?__readwiseLocation=
 date: 2025-04-24
-summary: A security researcher discovered a vulnerability in ChatGPT that allowed them to take over user accounts by exploiting a web cache deception issue. By manipulating URLs, the attacker could cache sensitive API endpoints containing user authentication tokens. This flaw was due to inconsistent URL parsing between the CDN and the web server, leading to potential account takeovers.
 ---
 # ChatGPT Account Takeover - Wildcard Web Cache Deception
 

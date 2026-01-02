@@ -4,12 +4,7 @@ Category:
 Difficulty: Medium
 Platform: hxp
 Status: 3. Complete
-tags:
-  - XSS
-  - CSRF
-  - exploit-dev
-  - exploit-chain
-  - evasion
+tags: [XSS, CSRF, exploit-dev, exploit-chain, evasion]
 ---
 
 >[!quote]

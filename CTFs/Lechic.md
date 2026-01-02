@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: PWNX
 Status: 3. Complete
-tags:
-  - Ghostcat
-  - JSP
-  - JSP-console
-  - RCE-JSP
-  - tomcat
+tags: [Ghostcat, JSP, JSP-console, RCE-JSP, tomcat]
 ---
 # Set up
 

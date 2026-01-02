@@ -3,7 +3,7 @@ Category:
 Difficulty: 
 Platform: 
 status: 
-tags:
+tags: []
 ---
 
 >[!quote]

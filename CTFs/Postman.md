@@ -4,13 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - RCE
-  - miniserv
-  - redis
-  - ssh-keys-cracking
-  - webmin
-  - Linux
+tags: [RCE, miniserv, redis, ssh-keys-cracking, webmin, Linux]
 ---
 ## Improved ability
 

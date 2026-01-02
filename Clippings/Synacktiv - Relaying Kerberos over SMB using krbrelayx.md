@@ -6,9 +6,7 @@ author:
 published:
 created: 2025-08-13
 description:
-tags:
-  - "clippings/articles"
-  - "_inbox"
+tags: ["clippings/articles", "_inbox"]
 ---
 # Relaying Kerberos over SMB using krbrelayx
 

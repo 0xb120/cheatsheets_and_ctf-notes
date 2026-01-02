@@ -4,12 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - GhostButt
-  - Ghostscript
-  - RCE
-  - insecure-file-upload
-  - python-PIL
+tags: [GhostButt, Ghostscript, RCE, insecure-file-upload, python-PIL]
 ---
 >[!quote]
 >*Bees are comfy 🍯

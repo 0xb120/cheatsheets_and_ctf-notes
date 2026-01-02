@@ -1,9 +1,7 @@
 ---
 author: Bug Bounty Reports Explained
-aliases:
-  - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup
-tags:
-  - readwise/articles
+aliases: [$25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup]
+tags: [readwise/articles]
 url: https://www.youtube.com/watch?v=GLXMGinQyFk&ab_channel=BugBountyReportsExplained
 date: 2024-11-15
 ---

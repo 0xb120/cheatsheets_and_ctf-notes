@@ -1,7 +1,7 @@
 ---
 author: "Mohamed Sultan"
-aliases: "Xintra - .NET Crash Dump Analysis"
-tags: RW_inbox, readwise/articles
+aliases: ["Xintra - .NET Crash Dump Analysis"]
+tags: [RW_inbox, readwise/articles]
 url: https://0xsultan.github.io/dfir/Xintra-Crash-Dump-Analysis/
 date: 2025-01-15
 ---

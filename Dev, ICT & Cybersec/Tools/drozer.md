@@ -1,5 +1,5 @@
 ---
-Description: drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.
+Description: "drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS."
 URL: https://github.com/FSecureLABS/drozer
 ---
 

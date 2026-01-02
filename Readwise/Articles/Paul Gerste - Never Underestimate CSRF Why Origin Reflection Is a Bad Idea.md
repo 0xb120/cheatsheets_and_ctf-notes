@@ -1,9 +1,7 @@
 ---
 author: Paul Gerste
-aliases:
-  - "Never Underestimate CSRF: Why Origin Reflection Is a Bad Idea"
-tags:
-  - readwise/articles
+aliases: ["Never Underestimate CSRF: Why Origin Reflection Is a Bad Idea"]
+tags: [readwise/articles]
 url: https://www.sonarsource.com/blog/never-underestimate-csrf-why-origin-reflection-is-a-bad-idea/
 date: 2024-12-13
 ---

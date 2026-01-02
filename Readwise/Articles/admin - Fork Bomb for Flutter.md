@@ -1,10 +1,13 @@
 ---
-author: "admin"
-aliases: "Fork Bomb for Flutter"
-tags: RW_inbox, readwise/articles, flutter
+author: admin
+aliases:
+  - Fork Bomb for Flutter
+tags:
+  - RW_inbox
+  - readwise/articles
+  - flutter
 url: https://swarm.ptsecurity.com/fork-bomb-for-flutter/?__readwiseLocation=
 date: 2025-04-24
-summary: The article discusses how to reverse engineer Flutter applications, which are built on Google's open-source SDK for cross-platform development. It covers the compilation process, how to create patches, and the tools used, such as Docker and BurpSuite. The author hopes to enhance the reverse engineering of Flutter apps through the utility they created for compiling the Flutter Engine.
 ---
 # Fork Bomb for Flutter
 

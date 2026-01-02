@@ -1,7 +1,7 @@
 ---
 author: "Federico Dotta"
-alias: "Java Applet + Serialization in 2024! What Could Go Wrong?"
-tags: RW_inbox, readwise/articles
+alias: ["Java Applet + Serialization in 2024! What Could Go Wrong?"]
+tags: [RW_inbox, readwise/articles]
 url: https://security.humanativaspa.it/java-applet-serialization-in-2024-what-could-go-wrong/
 date: 2024-08-21
 ---

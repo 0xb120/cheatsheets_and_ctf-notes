@@ -7,7 +7,6 @@ tags:
   - readwise/articles
 url: https://www.paulosyibelo.com/2024/12/doubleclickjacking-what.html?__readwiseLocation=
 date: 2025-04-01
-summary: DoubleClickjacking is a new type of attack that tricks users into unintentionally authorizing malicious actions by exploiting the timing of double-clicks. Unlike traditional clickjacking, this method can bypass existing protections and affect many major websites. It can lead to serious issues like account takeovers and unauthorized changes to user settings.
 ---
 # DoubleClickjacking: A New Era of UI Redressing
 

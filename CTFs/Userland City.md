@@ -4,12 +4,7 @@ Category:
 Difficulty: Medium
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - RCE
-  - laravel
-  - laravel-debug_mode
-  - php-deserialization
-  - Linux
+tags: [RCE, laravel, laravel-debug_mode, php-deserialization, Linux]
 ---
 >[!quote]
 > *You are part of a multinational law enforcement operation called "Takeover" that targets underground darknet markets, the new target is a referral only market called Userland City. After a string of ops intercepting traffic in TOR exit nodes, we managed to obtain a verified vendor's account that goes by the name of **lxkid**. We're ready for stage "Downfall", Europol has provided us with key software components to capture cleartext credentials from all marketplace users, spyware to deliver through key accounts operating with downloadable deliveries, and help us remove the existing image database including the metadata removal tool. Old IRC logs from one of those devs suggest that the marketplace is built on top of the latest Laravel version and debug mode is enabled. The credentials of the vendor's account are `lxkid02:8rsNN9ohfLp69cVRFEgk4Qzs`*

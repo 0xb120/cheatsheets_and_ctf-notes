@@ -13,8 +13,7 @@ source: https://github.com/jonaslejon/malicious-pdf
 
 created: 1758299954412
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Tools"

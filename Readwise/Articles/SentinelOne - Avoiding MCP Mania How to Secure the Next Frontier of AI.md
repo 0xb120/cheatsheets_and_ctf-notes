@@ -1,10 +1,12 @@
 ---
-author: "SentinelOne"
-aliases: "Avoiding MCP Mania | How to Secure the Next Frontier of AI"
-tags: RW_inbox, readwise/articles
+author: SentinelOne
+aliases:
+  - Avoiding MCP Mania | How to Secure the Next Frontier of AI
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://www.sentinelone.com/blog/avoiding-mcp-mania-how-to-secure-the-next-frontier-of-ai/?__readwiseLocation=
 date: 2025-04-24
-summary: MCP is a framework that connects AI models to external systems, allowing real-time interactions but also exposing them to security risks. As businesses increasingly rely on MCP-enabled AI, protecting it from attacks is crucial to safeguard sensitive operations. Organizations should implement strong security monitoring and incident response plans to mitigate these threats effectively.
 ---
 # Avoiding MCP Mania | How to Secure the Next Frontier of AI
 

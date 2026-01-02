@@ -1,9 +1,7 @@
 ---
 author: Assetnote Research
-aliases:
-  - Nginx/Apache Path Confusion to Auth Bypass in PAN-OS
-tags:
-  - readwise/articles
+aliases: [Nginx/Apache Path Confusion to Auth Bypass in PAN-OS]
+tags: [readwise/articles]
 url: https://www.assetnote.io/resources/research/nginx-apache-path-confusion-to-auth-bypass-in-pan-os?__readwiseLocation
 date: 2025-02-26
 ---

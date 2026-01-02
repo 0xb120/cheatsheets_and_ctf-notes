@@ -5,9 +5,7 @@ author:
 published: 2025-07-25
 created: 2025-08-19
 description:
-tags:
-  - "clippings/articles"
-  - "_inbox"
+tags: ["clippings/articles", "_inbox"]
 ---
 # Resecurity | Methods to Bypass OTP in Mobile Apps: Successful VAPT Scenarios
 

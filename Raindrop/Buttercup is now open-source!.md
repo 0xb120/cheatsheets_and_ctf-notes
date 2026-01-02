@@ -29,8 +29,7 @@ source: https://blog.trailofbits.com/2025/08/08/buttercup-is-now-open-source
 
 created: 1754625600000
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

@@ -1,10 +1,12 @@
 ---
-author: "gniting"
-aliases: "Everyone knows all the apps on your phone"
-tags: RW_inbox, readwise/articles
+author: gniting
+aliases:
+  - Everyone knows all the apps on your phone
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://peabee.substack.com/p/everyone-knows-what-apps-you-use?__readwiseLocation=
 date: 2025-04-01
-summary: Many apps on Android can see other installed apps on your phone, which raises privacy concerns. Despite new rules limiting this access, some popular Indian apps still collect extensive data about other apps without clear user consent. Users should be aware that installing apps may lead to their personal information being shared widely.
 ---
 # Everyone knows all the apps on your phone
 

@@ -4,11 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Android
-  - hardcoded-credentials
-  - patching-APK
-  - reversing
+tags: [Android, hardcoded-credentials, patching-APK, reversing]
 ---
 >[!quote]
 > This app contains some unique keys. Can you get one?

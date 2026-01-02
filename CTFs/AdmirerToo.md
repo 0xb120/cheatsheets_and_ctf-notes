@@ -4,23 +4,7 @@ Category:
 Difficulty: Hard
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Adminer
-  - Linux
-  - OpenCats
-  - RCE
-  - SSRF
-  - authentication-bypass
-  - credentials-reuse
-  - exploit-chain
-  - fail2ban
-  - hardcoded-credentials
-  - insecure-DB-grants
-  - insecure-credentials
-  - php-deserialization
-  - port-forwarding
-  - whois-spoofing
-  - OpenTSDB
+tags: [Adminer, Linux, OpenCats, RCE, SSRF, authentication-bypass, credentials-reuse, exploit-chain, fail2ban, hardcoded-credentials, insecure-DB-grants, insecure-credentials, php-deserialization, port-forwarding, whois-spoofing, OpenTSDB]
 ---
 ![https://maoutis.github.io/assets/images/Screenshots/AdmirerToo/box-summary.jpg](https://maoutis.github.io/assets/images/Screenshots/AdmirerToo/box-summary.jpg)
 

@@ -8,9 +8,7 @@ author:
 published: 2025-12-29
 created: 2026-01-02
 description: "Every day, thousands of web services generate PDF (Portable Document Format) files—bills, contracts, reports. This step is often treated as a technical routine, “just convert the HTML,” but in practice it’s exactly where a trust boundary is crossed. The renderer parses HTML, downloads external resources, processes fonts, SVGs, and images, and sometimes has access to […]"
-tags:
-  - "clippings/articles"
-  - "_inbox"
+tags: ["clippings/articles", "_inbox"]
 ---
 # Blind trust: what is hidden behind the process of creating your PDF file?
 

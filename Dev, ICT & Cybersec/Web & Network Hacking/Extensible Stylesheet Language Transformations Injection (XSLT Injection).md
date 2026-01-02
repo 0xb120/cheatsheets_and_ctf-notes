@@ -1,6 +1,5 @@
 ---
-aliases:
-  - XSLT
+aliases: [XSLT]
 ---
 >[!faq] What is XSLT?
 >Extensible Stylesheet Language Transformations (`XSLT`) is an XML-based language usually used when transforming XML documents into HTML, another XML document, or PDF.

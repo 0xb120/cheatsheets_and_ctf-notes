@@ -16,8 +16,7 @@ source: https://swarm.ptsecurity.com/blind-trust-what-is-hidden-behind-the-proce
 
 created: 1767366338547
 type: article
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "Inoreader" 

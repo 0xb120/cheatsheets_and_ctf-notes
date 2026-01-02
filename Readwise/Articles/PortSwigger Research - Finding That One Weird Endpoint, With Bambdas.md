@@ -1,10 +1,7 @@
 ---
 author: PortSwigger Research
-aliases:
-  - Finding That One Weird Endpoint
-  - With Bambdas
-tags:
-  - readwise/articles
+aliases: [Finding That One Weird Endpoint, With Bambdas]
+tags: [readwise/articles]
 url: https://portswigger.net/research/finding-that-one-weird-endpoint-with-bambdas
 date: 2024-08-20
 ---

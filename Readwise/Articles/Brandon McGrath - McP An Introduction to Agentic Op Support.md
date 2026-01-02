@@ -1,10 +1,12 @@
 ---
-author: "Brandon McGrath"
-aliases: "McP: An Introduction to Agentic Op Support"
-tags: RW_inbox, readwise/articles
+author: Brandon McGrath
+aliases:
+  - "McP: An Introduction to Agentic Op Support"
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://trustedsec.com/blog/mcp-an-introduction-to-agentic-op-support?__readwiseLocation=
 date: 2025-04-24
-summary: The text introduces the concept of agents, which are AI-driven systems that autonomously interact with their environment to achieve specific goals. It discusses the Model Context Protocol (MCP) framework, which helps create simple agents that utilize various tools to perform tasks like discovering network domain controllers. The post aims to guide readers in building a straightforward agent using MCP and highlights the potential for developing more complex multi-agent systems in the future.
 ---
 # McP: An Introduction to Agentic Op Support
 

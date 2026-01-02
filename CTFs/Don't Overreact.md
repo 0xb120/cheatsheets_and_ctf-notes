@@ -4,10 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Android
-  - React
-  - hardcoded-key
+tags: [Android, React, hardcoded-key]
 ---
 >[!quote]
 >*Some web developers wrote this fancy new app! It's really cool, isn't it?*

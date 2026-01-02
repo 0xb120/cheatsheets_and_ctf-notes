@@ -1,9 +1,7 @@
 ---
 author: clearbluejar
-aliases:
-  - Decompilation Debugging
-tags:
-  - readwise/articles
+aliases: [Decompilation Debugging]
+tags: [readwise/articles]
 url: https://clearbluejar.github.io/posts/decompilation-debugging-pretending-all-binaries-come-with-source-code/
 date: 2025-01-08
 ---

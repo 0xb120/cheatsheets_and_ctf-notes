@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://labs.watchtowr.com/sonicboom-from-stolen-tokens-to-remote-shells-sonicwall-sma100-cve-2023-44221-cve-2024-38475/?__readwiseLocation=
 date: 2025-05-08
-summary: SonicWall systems have vulnerabilities that can be exploited, including arbitrary file reading and command injection. Researchers demonstrated how attackers could gain unauthorized access to sensitive information and escalate their control over affected devices. These vulnerabilities have been added to the list of known exploited vulnerabilities by CISA, highlighting their seriousness.
 ---
 # SonicBoom, From Stolen Tokens to Remote Shells - SonicWall SMA100
 

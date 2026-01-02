@@ -1,11 +1,7 @@
 ---
 author: sourceforge.io
-aliases:
-  - Free Real-Time Logfile Analyzer to Get Advanced Statistics (GNU GPL).
-tags:
-  - readwise/articles
-  - AWStats
-  - vulnerability-research/todo
+aliases: [Free Real-Time Logfile Analyzer to Get Advanced Statistics (GNU GPL).]
+tags: [readwise/articles, AWStats, vulnerability-research/todo]
 url: https://awstats.sourceforge.io/
 date: 2024-08-20
 ---

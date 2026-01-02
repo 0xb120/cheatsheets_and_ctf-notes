@@ -1,9 +1,7 @@
 ---
 author: PortSwigger Research
-aliases:
-  - Bypassing WAFs With the Phantom $Version Cookie
-tags:
-  - readwise/articles
+aliases: [Bypassing WAFs With the Phantom $Version Cookie]
+tags: [readwise/articles]
 url: https://portswigger.net/research/bypassing-wafs-with-the-phantom-version-cookie
 date: 2024-12-13
 ---

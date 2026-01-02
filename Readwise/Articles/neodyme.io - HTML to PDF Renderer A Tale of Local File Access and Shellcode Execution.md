@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://neodyme.io/en/blog/html_renderer_to_rce/#tldr?__readwiseLocation=
 date: 2025-05-08
-summary: A recent exploration of an HTML to PDF renderer revealed it was using an outdated version of Chromium, which allowed for remote code execution. By exploiting vulnerabilities in this version, the researchers demonstrated how server-side XSS could lead to severe security risks, including unauthorized file access. This case highlights the importance of thorough security testing and the need to treat all user inputs with caution.
 ---
 # HTML to PDF Renderer: A Tale of Local File Access and Shellcode Execution
 

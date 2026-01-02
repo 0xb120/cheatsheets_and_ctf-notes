@@ -1,5 +1,5 @@
 ---
-Description: Metasploit can do all sorts of things. The first thing you'll want to do is start msfconsole, but after that, you'll probably be best served by reading Metasploit Unleashed, the great community resources, or the wiki.
+Description: "Metasploit can do all sorts of things. The first thing you'll want to do is start msfconsole, but after that, you'll probably be best served by reading Metasploit Unleashed, the great community resources, or the wiki."
 URL: https://github.com/rapid7/metasploit-framework
 ---
 

@@ -6,9 +6,7 @@ author:
 published:
 created: 2025-08-14
 description: "Introduction  Laravel is an open-source web framework based on PHP, designed to develop web applications in a structured manner."
-tags:
-  - "clippings/articles"
-  - "_inbox"
+tags: ["clippings/articles", "_inbox"]
 ---
 # Laravel: APP_KEY leakage analysis
 

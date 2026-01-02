@@ -1,10 +1,13 @@
 ---
-author: "cryptax"
-aliases: "Reversing an Android Sample Which Uses Flutter"
-tags: RW_inbox, readwise/articles, Flutter
+author: cryptax
+aliases:
+  - Reversing an Android Sample Which Uses Flutter
+tags:
+  - RW_inbox
+  - readwise/articles
+  - Flutter
 url: https://cryptax.medium.com/reversing-an-android-sample-which-uses-flutter-23c3ff04b847?__readwiseLocation=
 date: 2025-04-24
-summary: Flutter allows developers to create multi-platform apps using a single code base, but this makes reverse engineering difficult due to limited Dart decompilers and native app complexities. The author analyzed a suspicious Android app posing as a health system tool and concluded it was a non-malicious front-end to a website that may serve ads. Although not harmful, the app's purpose remains unclear, leading to concerns about its legitimacy.
 ---
 # Reversing an Android Sample Which Uses Flutter
 

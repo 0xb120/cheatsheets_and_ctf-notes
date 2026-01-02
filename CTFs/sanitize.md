@@ -4,8 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - SQL-Injection
+tags: [SQL-Injection]
 ---
 >[!quote]
 > *Can you escape the query context and log in as admin at my super secure login page?*

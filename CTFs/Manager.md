@@ -4,9 +4,7 @@ Category:
 Difficulty: Easy
 Platform: HackTheBox
 Status: 3. Complete
-tags:
-  - Android
-  - insecure-password-change
+tags: [Android, insecure-password-change]
 ---
 >[!quote]
 >*A client asked me to perform security assessment on this password management application. Can you help me?*

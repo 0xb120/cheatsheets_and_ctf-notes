@@ -14,8 +14,7 @@ source: https://github.com/danieldev23/trafexia
 
 created: 1767365380938
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
 ---
 # danieldev23/trafexia: Trafexia - Mobile Traffic Interceptor

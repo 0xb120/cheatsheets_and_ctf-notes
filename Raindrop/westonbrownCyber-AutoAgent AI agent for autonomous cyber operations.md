@@ -16,8 +16,7 @@ source: https://github.com/westonbrown/Cyber-AutoAgent
 
 created: 1760986984251
 type: link
-tags:
-  - "_index"
+tags: ["_index"]
 
  
   - "AI" 

@@ -6,7 +6,6 @@ tags:
   - readwise/articles
 url: https://blog.lexfo.fr/lightyear-file-dump.html?__readwiseLocation=
 date: 2025-05-08
-summary: The article introduces a new technique for efficiently extracting specific digits from base64-encoded PHP files using filters and dechunking. By changing the character set, the method allows for the creation of an alternative base64 digit set, where a newline can replace a digit. This approach enables quick access to digits deep within a file, improving the performance of the extraction process.
 ---
 # Introducing Lightyear, a New Way to Dump PHP Files
 

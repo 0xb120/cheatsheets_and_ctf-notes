@@ -8,7 +8,6 @@ tags:
   - React
 url: https://www.assetnote.io/resources/research/expanding-the-attack-surface-react-native-android-applications?__readwiseLocation=
 date: 2025-04-24
-summary: React Native is a popular framework for building mobile apps that allows developers to use JavaScript and native features. This blog post explains how to extract and analyze JavaScript from React Native Android applications to find sensitive information, such as API keys and endpoints. By extracting the APK and reviewing the index.android.bundle file, users can identify potential security vulnerabilities in the app.
 ---
 # Expanding the Attack Surface: React Native Android Applications
 

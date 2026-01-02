@@ -1,9 +1,7 @@
 ---
 author: PortSwigger Research
-aliases:
-  - Introducing the URL Validation Bypass Cheat Sheet
-tags:
-  - readwise/articles
+aliases: [Introducing the URL Validation Bypass Cheat Sheet]
+tags: [readwise/articles]
 url: https://portswigger.net/research/introducing-the-url-validation-bypass-cheat-sheet
 date: 2024-09-04
 ---

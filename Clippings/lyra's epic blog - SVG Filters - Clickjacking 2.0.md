@@ -6,9 +6,7 @@ author:
 published: 2025-12-05
 created: 2025-12-05
 description: "A novel and powerful twist on an old classic."
-tags:
-  - "clippings/articles"
-  - "_inbox"
+tags: ["clippings/articles", "_inbox"]
 ---
 # SVG Filters - Clickjacking 2.0
 
