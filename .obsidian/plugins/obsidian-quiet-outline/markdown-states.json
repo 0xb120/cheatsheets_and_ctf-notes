@@ -1,0 +1,464 @@
+{
+  "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3",
+      "item-2-5",
+      "item-1-7"
+    ]
+  },
+  "Clippings/Brandon Stewart - How GitHub uses CodeQL to secure GitHub.md": {
+    "scroll": 14.87900355871886,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-5"
+    ]
+  },
+  "Clippings/Guest Post - Unveiling TE.0 HTTP Request Smuggling Discovering a Critical Vulnerability in Thousands of Google Cloud Websites  @Bugcrowd.md": {
+    "scroll": 32.52173913043478,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/musana - musanafuzzuli fuzzuli is a url fuzzing tool that aims to find critical backup files by creating a dynamic wordlist based on the domain..md": {
+    "scroll": 32.52173913043478,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/Mattia (0xbro) Brollo - Vtenext 25.02 A three-way path to RCE.md": {
+    "scroll": 247.81528662420382,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3",
+      "item-2-7",
+      "item-2-9",
+      "item-2-12",
+      "item-3-13"
+    ]
+  },
+  "Clippings/Puter Technologies Inc. - Free, Unlimited OpenAI API.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-2"
+    ]
+  },
+  "Personal/How to read a paper.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Personal/Book list/_book-dashboard_wrapper.md": {
+    "scroll": 16.01721664275466,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/How to Research &amp; Reverse Web Vulnerabilities 101 — ProjectDiscovery Blog.md": {
+    "scroll": 61.895833333333336,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Writing Sync, Popping Cron DEVCORE’s Synology BeeStation RCE &amp; A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631).md": {
+    "scroll": 103.80208333333333,
+    "cursor": {
+      "from": {
+        "line": 37,
+        "ch": 0
+      },
+      "to": {
+        "line": 37,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Unleashing the Hound How AI Agents Find Deep Logic Bugs in Any Codebase.md": {
+    "scroll": 67.30232558139535,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Slice SAST + LLM Interprocedural Context Extractor.md": {
+    "scroll": 83.00551470588235,
+    "cursor": {
+      "from": {
+        "line": 178,
+        "ch": 1
+      },
+      "to": {
+        "line": 178,
+        "ch": 1
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Code auditing 101 -.md": {
+    "scroll": 112.78063725490196,
+    "cursor": {
+      "from": {
+        "line": 45,
+        "ch": 0
+      },
+      "to": {
+        "line": 45,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md": {
+    "scroll": 6.688796680497925,
+    "cursor": {
+      "from": {
+        "line": 26,
+        "ch": 0
+      },
+      "to": {
+        "line": 26,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/XBOW - Agentic Pentesting with ZERO False Positives  Aidan John.md": {
+    "scroll": 19.780593458956034,
+    "cursor": {
+      "from": {
+        "line": 17,
+        "ch": 0
+      },
+      "to": {
+        "line": 17,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Writing Sync, Popping Cron DEVCORE’s Synology BeeStation RCE & A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631) (1).md": {
+    "scroll": 46.193548387096776,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Writing Sync, Popping Cron DEVCORE’s Synology BeeStation RCE & A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631).md": {
+    "scroll": 39.58024691358025,
+    "cursor": {
+      "from": {
+        "line": 58,
+        "ch": 0
+      },
+      "to": {
+        "line": 58,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/westonbrownCyber-AutoAgent AI agent for autonomous cyber operations.md": {
+    "scroll": 31.748161764705884,
+    "cursor": {
+      "from": {
+        "line": 42,
+        "ch": 1
+      },
+      "to": {
+        "line": 42,
+        "ch": 1
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/usestrixstrix ✨ Open-source AI hackers for your apps 👨🏻‍💻.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 25,
+        "ch": 0
+      },
+      "to": {
+        "line": 25,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/James Kettle - HTTP1.1 must die the desync endgame.md": {
+    "scroll": 30.722689075630253,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1",
+      "item-2-4",
+      "item-2-12",
+      "item-2-17"
+    ]
+  },
+  "Clippings/onel, KernelDeimos - HeyPuterputer 🌐 The Internet OS! Free, Open-Source, and Self-Hostable..md": {
+    "scroll": 16.958393113342897,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Clippings/Synacktiv - Laravel APP_KEY leakage analysis.md": {
+    "scroll": 32.81512605042017,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Clippings/Synacktiv - NTLM reflection is dead, long live NTLM reflection! – An in-depth analysis of CVE-2025-33073.md": {
+    "scroll": 26.53191489361702,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3"
+    ]
+  },
+  "Raindrop/Last Week in Security (LWiS) - 2025-11-03.md": {
+    "scroll": 6.688796680497925,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/LLM Code Review vs Deterministic SAST Security Tools.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/New Burp Suite Extension BlazorTrafficProcessor.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 138,
+        "ch": 0
+      },
+      "to": {
+        "line": 138,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/Aleksey Solovev, Nikita Sveshnikov, Vladimir Razov - Blind trust what is hidden behind the process of creating your PDF file.md": {
+    "scroll": 16.9219124780129,
+    "cursor": {
+      "from": {
+        "line": 37,
+        "ch": 0
+      },
+      "to": {
+        "line": 37,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Raindrop/Blind trust what is hidden behind the process of creating your PDF file.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 79,
+        "ch": 0
+      },
+      "to": {
+        "line": 79,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Black-box Penetration Testing for Blazor WebAssemblyServer Apps.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 29,
+        "ch": 0
+      },
+      "to": {
+        "line": 29,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  }
+}

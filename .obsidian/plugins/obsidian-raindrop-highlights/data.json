@@ -1,0 +1,70 @@
+{
+  "version": "0.0.24",
+  "username": "Mattia Brollo",
+  "isConnected": true,
+  "ribbonIcon": true,
+  "appendMode": false,
+  "collectionsFolders": false,
+  "onlyBookmarksWithHl": true,
+  "syncDeleteFiles": false,
+  "syncDeleteUseTrash": true,
+  "highlightsFolder": "Raindrop",
+  "collectionGroups": false,
+  "autoSyncSuccessNotice": true,
+  "autoSyncAllCollections": true,
+  "autoSyncNewNestedCollections": false,
+  "syncCollections": {
+    "0": {
+      "id": 0,
+      "title": "All bookmarks",
+      "sync": true,
+      "lastSyncDate": "2026-01-02T15:32:12.229Z"
+    },
+    "59458648": {
+      "id": 59458648,
+      "title": "Read Later",
+      "sync": true,
+      "lastSyncDate": "2026-01-02T15:32:12.614Z"
+    },
+    "59477087": {
+      "id": 59477087,
+      "title": "Archived",
+      "sync": true,
+      "lastSyncDate": "2026-01-02T15:32:12.737Z"
+    },
+    "59587826": {
+      "id": 59587826,
+      "title": "Reading",
+      "sync": true,
+      "lastSyncDate": "2026-01-02T15:32:12.805Z"
+    },
+    "61752421": {
+      "id": 61752421,
+      "title": "Courses & Labs",
+      "sync": true,
+      "lastSyncDate": "2026-01-02T15:32:12.881Z"
+    },
+    "63971956": {
+      "id": 63971956,
+      "title": "Tools",
+      "sync": true,
+      "lastSyncDate": "2026-01-02T15:32:13.055Z"
+    },
+    "-1": {
+      "id": -1,
+      "title": "Unsorted",
+      "sync": false
+    },
+    "-99": {
+      "id": -99,
+      "title": "Trash",
+      "sync": false
+    }
+  },
+  "template": "# {{title}}\n\n{% if cover %}![]({{cover}}){% endif %}\n{% if excerpt %}\n> [!summary]\n> {{excerpt}}\n{% endif %}\n\n{% if note %}note: {{note}}{% endif %}\n\n{% for highlight in highlights %}\n{% if highlight.color == \"red\" -%}\n    {%- set callout = \"danger\" -%}\n{%- elif highlight.color == \"blue\" -%}\n    {%- set callout = \"info\" -%}\n{%- elif highlight.color == \"green\" -%}\n    {%- set callout = \"check\" -%}\n{%- elif highlight.color == \"orange\" -%}\n    {%- set callout = \"warning\" -%}\n{%- else -%}\n    {%- set callout = \"\" -%}\n{%- endif -%}\n\n{% if callout !== \"\" -%}\n\n> [!{{callout}}]\n> {{highlight.text.split(\"\\n\") | join(\"\\n>\")}}\n{% if highlight.note -%}> > {{highlight.note + \"\\n\"}}{%- endif %}\n{%- else -%}\n{{highlight.text.split(\"\\n\") | join(\"\\n\")}}\n{%- endif -%}\n{%- endfor -%}",
+  "metadataTemplate": "{% if title %}title: \"{{title}}\"{% endif %}\n{% if excerpt %}\ndescription: |-\n  {{ excerpt | indent(2) }}\n{% endif %}\n{% if link %}source: {{link}}{% endif %}\n{% if rindropUrl %}raindrop_url: {{rindropUrl}}{% endif %}\n{% if created %}created: {{created}}{% endif %}\n{% if type %}type: {{type}}{% endif %}\ntags:\n  - \"_index\"\n{% if tags|length %}\n{% for tag in tags %} \n  - \"{{ tag }}\"{% endfor %}\n{% endif %}",
+  "filenameTemplate": "{{title}}",
+  "preventMovingExistingFiles": false,
+  "autoSyncInterval": 0,
+  "autoescape": false
+}
