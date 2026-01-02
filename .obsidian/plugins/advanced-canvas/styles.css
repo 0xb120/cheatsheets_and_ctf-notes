@@ -27,6 +27,10 @@
   transform: scaleY(1);
   transition: transform 0.2s ease-in-out;
 }
+.settings-header-children details {
+  flex-direction: column;
+  align-items: initial;
+}
 .ac-settings-heading:has(.checkbox-container:not(.is-enabled)) + .settings-header-children {
   opacity: 0.5;
   pointer-events: none;
@@ -39,9 +43,6 @@ details.setting-item[open] > summary {
 details.setting-item > *:not(summary) {
   padding-left: 1em;
   border-left: 1px solid var(--color-accent);
-}
-body.is-mobile .kofi-button.sticky {
-  display: none;
 }
 .kofi-banner {
   position: relative;
@@ -147,8 +148,7 @@ body.is-mobile .kofi-button.sticky {
   --box-shadow: var(--shadow-border-themed);
 }
 .canvas-node[data-text-align=center] .markdown-preview-view {
-  padding: 0 !important;
-  overflow-y: initial;
+  scrollbar-gutter: auto;
 }
 .canvas-node[data-text-align=center] .markdown-preview-view .markdown-preview-section {
   display: flex;
@@ -221,7 +221,6 @@ body.is-mobile .kofi-button.sticky {
   border-radius: 50%;
 }
 .canvas-node[data-shape=circle] .canvas-node-container .markdown-preview-view {
-  padding: 0 !important;
   overflow-y: initial;
 }
 .canvas-node[data-shape=predefined-process] .canvas-node-container .canvas-node-content {

@@ -1,6 +1,80 @@
 /* src/stalin.css */
+.quiet-outline {
+  --custom-font-size: var(--nav-item-size);
+  --custom-font-family: inherit;
+  --custom-font-weight: inherit;
+  --custom-line-height: 1.6em;
+  --custom-line-gap: 0px;
+  --h1-color: inherit;
+  --h2-color: inherit;
+  --h3-color: inherit;
+  --h4-color: inherit;
+  --h5-color: inherit;
+  --h6-color: inherit;
+}
+.quiet-outline-confirm-modal {
+  line-height: 1.5;
+}
+.quiet-outline-confirm-modal .modal-title {
+  margin-bottom: 8px;
+}
+.quiet-outline-confirm-modal p {
+  margin: 0;
+}
+.quiet-outline-confirm-modal p + p {
+  margin-top: 10px;
+}
+.quiet-outline-confirm-modal .quiet-outline-confirm-modal__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 14px;
+}
+.quiet-outline-confirm-modal .quiet-outline-confirm-modal__buttons button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+}
+.quiet-outline-confirm-modal .quiet-outline-confirm-modal__btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+}
+.quiet-outline-confirm-modal .quiet-outline-confirm-modal__btn-icon svg {
+  display: block;
+}
+.quiet-outline-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: 16px;
+}
+.quiet-outline-tabs button {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--text-muted);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  font-size: var(--font-ui-medium);
+}
+.quiet-outline-tabs button:hover {
+  color: var(--text-normal);
+  background-color: var(--background-modifier-hover);
+}
+.quiet-outline-tabs button.active {
+  color: var(--text-accent);
+  border-bottom-color: var(--text-accent);
+  font-weight: var(--font-semibold);
+}
+.quiet-outline-tab-content {
+  min-height: 400px;
+}
 .quiet-outline .n-tree {
-  font-size: var(--nav-item-size);
+  font-size: var(--custom-font-size);
+  font-family: var(--custom-font-family);
+  font-weight: var(--custom-font-weight);
 }
 .quiet-outline .n-tree-node-indent {
   flex: 0 0 13px !important;
@@ -12,8 +86,9 @@
   align-items: center;
 }
 .quiet-outline .n-tree-node .n-tree-node-content {
-  line-height: 1.6em;
+  line-height: var(--custom-line-height);
   min-height: 10px;
+  margin-bottom: var(--custom-line-gap);
 }
 .quiet-outline .n-tree-node-content__text p {
   margin: 0;
@@ -68,6 +143,16 @@
   --n-icon-size: 22px;
   font-size: 22px;
 }
+.quiet-outline .n-tree-node-content .n-input {
+  .n-input-wrapper {
+    padding: 0px;
+  }
+  .n-input__input-el {
+    line-height: var(--custom-line-height);
+    font-size: var(--custom-font-size);
+    height: var(--custom-line-height);
+  }
+}
 .quiet-outline code {
   font-weight: bold;
   font-family: var(--font-monospace);
@@ -94,8 +179,29 @@
 .quiet-outline [class*=level-]:not(.level-1) .n-tree-node-content {
   font-size: 1em;
 }
+.quiet-outline .level-1 .n-tree-node-content {
+  color: var(--h1-color);
+}
+.quiet-outline .level-2 .n-tree-node-content {
+  color: var(--h2-color);
+}
+.quiet-outline .level-3 .n-tree-node-content {
+  color: var(--h3-color);
+}
+.quiet-outline .level-4 .n-tree-node-content {
+  color: var(--h4-color);
+}
+.quiet-outline .level-5 .n-tree-node-content {
+  color: var(--h5-color);
+}
+.quiet-outline .level-6 .n-tree-node-content {
+  color: var(--h6-color);
+}
 .n-tree-node.located {
   font-weight: bold !important;
+  :is(a) {
+    font-weight: bold !important;
+  }
 }
 .n-tree-node.located code {
   font-weight: 1000 !important;

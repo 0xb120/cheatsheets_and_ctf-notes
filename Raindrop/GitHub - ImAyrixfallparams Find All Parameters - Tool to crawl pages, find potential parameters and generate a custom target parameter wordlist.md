@@ -13,7 +13,7 @@ description: |-
 
 source: https://github.com/ImAyrix/fallparams
 
-created: Tue Sep 23 2025 09:59:04 GMT+0200
+created: 1758614344422
 type: link
 tags:
   - "_index"
@@ -27,47 +27,43 @@ tags:
 ![](https://opengraph.githubassets.com/988d19296724e739f243310e41f23d33a370d680b227cfc7c6b7aca367ac2f32/ImAyrix/fallparams)
 
 > [!summary]
->Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist  - GitHub - ImAyrix/fallparams: Find All Parameters - Tool to crawl pages, find ...
+> Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist  - GitHub - ImAyrix/fallparams: Find All Parameters - Tool to crawl pages, find ...
 
 
 
 
 
 Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist
-
 Installation
-&gt;go install github.com/ImAyrix/fallparams@latest
-
+go install github.com/ImAyrix/fallparams@latest
 Start
-&gt;
-&gt;To create a parameter wordlist suitable for the page you are working on, simply provide the page link to fallparams.
-&gt;
-&gt;fallparams -u &quot;https://target.tld/page&quot;
-&gt;
-&gt;If you have many URLs for which you want to create a parameter wordlist, save all your URLs in a file and then provide the file name to fallparams.
-&gt;
-&gt;fallparams -u &quot;/path/to/file.txt&quot;
-&gt;
-&gt;You can also save the entire HTTP packet to a file and use it as an input for the tool, ensuring that it sends the exact same headers, cookies, and other details in the requests.
-&gt;
-&gt;fallparams -r &quot;request.txt&quot;
 
+To create a parameter wordlist suitable for the page you are working on, simply provide the page link to fallparams.
+
+fallparams -u "https://target.tld/page"
+
+If you have many URLs for which you want to create a parameter wordlist, save all your URLs in a file and then provide the file name to fallparams.
+
+fallparams -u "/path/to/file.txt"
+
+You can also save the entire HTTP packet to a file and use it as an input for the tool, ensuring that it sends the exact same headers, cookies, and other details in the requests.
+
+fallparams -r "request.txt"
 More Parameters
-&gt;
-&gt;One of the great features of fallparams is its ability to use Katana to crawl the links provided as input, resulting in more links and eventually creating a comprehensive parameter wordlist.
-&gt;
-&gt;fallparams -u &quot;https://target.tld/page&quot; -crawl
 
+One of the great features of fallparams is its ability to use Katana to crawl the links provided as input, resulting in more links and eventually creating a comprehensive parameter wordlist.
+
+fallparams -u "https://target.tld/page" -crawl
 Output
-&gt;
-&gt;To enhance the quality of your parameter wordlist, it&#39;s crucial to filter out noisy or irrelevant words that may enter during creation. One effective way to achieve this is by setting a specific character limit for each parameter.
-&gt;
-&gt;fallparams -u &quot;https://target.tld/page&quot; -max-length 30
-&gt;
-&gt;You can also specify the minimum number of characters for each parameter.
-&gt;
-&gt;fallparams -u &quot;https://target.tld/page&quot; -min-length 3
-&gt;
-&gt;By default, the generated parameter wordlist is saved in the parameters.txt file. However, you can customize the name and path of the output file as needed.
-&gt;
-&gt;fallparams -u &quot;https://target.tld/page&quot; -output &quot;custom_name.txt&quot;
+
+To enhance the quality of your parameter wordlist, it's crucial to filter out noisy or irrelevant words that may enter during creation. One effective way to achieve this is by setting a specific character limit for each parameter.
+
+fallparams -u "https://target.tld/page" -max-length 30
+
+You can also specify the minimum number of characters for each parameter.
+
+fallparams -u "https://target.tld/page" -min-length 3
+
+By default, the generated parameter wordlist is saved in the parameters.txt file. However, you can customize the name and path of the output file as needed.
+
+fallparams -u "https://target.tld/page" -output "custom_name.txt"

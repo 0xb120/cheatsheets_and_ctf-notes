@@ -162,5 +162,6 @@ Some applications make use of the HTTP Referer header to attempt to defend again
 ## Other bypass and tricks
 - [Cross-Site POST Requests Without a Content-Type Header](../../Readwise/Articles/Luke%20Jahnke%20-%20Cross-Site%20POST%20Requests%20Without%20a%20Content-Type%20Header.md) 
 - [CSRF: A Complete Guide to Exploiting Advanced CSRF Vulnerabilities](../../Readwise/Articles/novasecio%20-%20CSRF%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20CSRF%20Vulnerabilities.md)
+- [Cross-site request forgery: The ultimate Bug Bounty guide to exploiting CSRF vulnerabilities](https://www.yeswehack.com/learn-bug-bounty/ultimate-guide-csrf-vulnerabilities)
 
 [^1]: [Bypass CSRF protection sending Requests without Referer](../../Readwise/Articles/novasecio%20-%20CSRF%20A%20Complete%20Guide%20to%20Exploiting%20Advanced%20CSRF%20Vulnerabilities.md#Bypass%20CSRF%20protection%20sending%20Requests%20without%20Referer)

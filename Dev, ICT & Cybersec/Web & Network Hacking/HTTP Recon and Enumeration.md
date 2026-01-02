@@ -93,7 +93,7 @@ Crawler / Spider:
 - [hakrawler](https://github.com/hakluke/hakrawler) - Fast golang web crawler for gathering URLs and JavaScript file locations. ^f96cf7
 - [xnLinkFinder](https://github.com/xnl-h4ck3r/xnLinkFinder) - Standalone solution to discover endpoints, potential parameters, and a target specific wordlist for a given target
 	- [LinkFinder](../../Readwise/Articles/novasecio%20-%20Recon%20for%20Bug%20Bounty%208%20Essential%20Tools%20for%20Performing%20Effective%20Reconnaissance.md#LinkFinder)
-- [JSA](../Services/HTTP%20&%20HTTPS.md#^e44cdc) (`automation.sh`) - crawl endpoints from JS files
+- [JSA](../../Readwise/Tweets/@WllGates%20on%20Twitter%20-%20Tweets%20From%20Will%20Gates.md) (Javascript security analysis (JSA) is a program for javascript analysis during web application security assessment) ^e44cdc
 
 Scraping libraries:
 - [Scrapling](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-06-30.md#^94db2e) - a high-performance, intelligent web scraping library for Python that automatically adapts to website changes while significantly outperforming popular alternatives. For both beginners and experts, Scrapling provides powerful features while maintaining simplicity.
@@ -135,6 +135,12 @@ Scraping libraries:
 - [misconfig mapper](../../Readwise/Articles/novasecio%20-%20Intigriti%20Bug%20Bytes%20219%20-%20December%202024.md#^4a91a1) - automate security misconfiguration detection on your list of domains
 - [nikto](../Tools/nikto.md)
 
+#LLM based scanners:
+- cai
+- [strix](../../Raindrop/usestrixstrix%20✨%20Open-source%20AI%20hackers%20for%20your%20apps%20👨🏻‍💻.md)
+- Cyber-AutoAgent
+- PentAGI
+
 ## Secrets enumeration
 
 - [Source code analyses tools, rules and resources](../Services/HTTP%20&%20HTTPS.md#Source%20code%20analyses%20tools,%20rules%20and%20resources)
@@ -143,6 +149,7 @@ Scraping libraries:
 - [trufflehog](https://github.com/trufflesecurity/trufflehog) - Find, verify, and analyze leaked credentials ^70b043
 - [secrets-ninja](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-07-07.md#^4586f4) - a tool for validating API keys and credentials discovered during pentesting & bug bounty hunting.
 - [jsluice](../Tools/jsluice.md)
+- [html-tool](../Tools/html-tool.md)
 
 
 [^porch-pirate]: [Plundering Postman With Porch Pirate](../../Readwise/Articles/Mand%20Consulting%20Group%20-%20Plundering%20Postman%20With%20Porch%20Pirate.md), mandconsulting.ca
@@ -158,6 +165,8 @@ Pre-made tools:
 - [theHarvester](../Tools/theHarvester.md) - The tool gathers names, emails, IPs, subdomains, and URLs by using multiple public resources
 - [Amass](../../Readwise/Articles/novasecio%20-%20Recon%20for%20Bug%20Bounty%208%20Essential%20Tools%20for%20Performing%20Effective%20Reconnaissance.md#Amass) - in-depth attack surface management open-source tool
 - [Eyewitness](../../Readwise/Articles/novasecio%20-%20Recon%20for%20Bug%20Bounty%208%20Essential%20Tools%20for%20Performing%20Effective%20Reconnaissance.md#Eyewitness) - probing live hosts and screenshotting them but also perform basic technology fingerprinting
+- CAI
+- fraim
 
 Online Services:
 - [shodan](https://www.shodan.io/) (online)

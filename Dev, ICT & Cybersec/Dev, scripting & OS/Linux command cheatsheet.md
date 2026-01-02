@@ -262,6 +262,8 @@ grep has some other counterparts "on-steroids" that can be used to search also i
 - [rga](../../Readwise/Articles/httpsgithub.comphiresky%20-%20GitHub%20-%20phireskyripgrep-all%20rga%20ripgrep,%20but%20also%20search%20in%20PDFs,%20E-Books,%20Office%20documents,%20zip,%20tar.gz,%20etc..md) - ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
 - [gf](../Tools/gf.md) - A wrapper around grep, to help you grep for things and avoid typing common patterns. [^7]
 - [gron](../Tools/gron.md) - An utility to make grep more efficient on JSON data
+- [graudit](https://github.com/wireghoul/graudit) - grep rough audit - source code auditing tool
+
 ## sed
 
 sed **performs text editing on a stream of text**, either a set of specific files or standard output.

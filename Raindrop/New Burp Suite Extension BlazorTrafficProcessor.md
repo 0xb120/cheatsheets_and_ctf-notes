@@ -49,7 +49,7 @@ description: |-
 
 source: https://www.aon.com/en/insights/cyber-labs/new-burp-suite-extension---blazortrafficprocessor
 
-created: Thu Sep 18 2025 09:47:07 GMT+0200
+created: 1758181627873
 type: article
 tags:
   - "_index"
@@ -64,151 +64,79 @@ tags:
 ![](https://res.aon.com/image/fetch/c_fill,f_auto,g_auto/https://assets.aon.com//-/media/images/photos/infrastructure/infrastructure-loop-roundabout-data-822649514.jpg)
 
 > [!summary]
->Pentesting web applications that use Blazor server comes with unique challenges, especially without tooling. In this post, we discuss why such challenges exist and provide a Burp Suite Extension to address them.
+> Pentesting web applications that use Blazor server comes with unique challenges, especially without tooling. In this post, we discuss why such challenges exist and provide a Burp Suite Extension to address them.
 
 
 
 
 
 During a web application assessment, we encountered ASP.NET’s “Blazor” server for the first time.
-
 For starters, all the messages transmitted by the application included seemingly random binary characters. You can make out some strings within these messages, but most of the data is not easily readable
-
 Additionally, any attempts we made to tamper with or replay requests resulted in an error and the connection being renegotiated
-
 Blazor Basics
-
 Blazor is a framework that comes with a variety of hosting options: WebAssembly (WASM), Server-Side ASP.NET, and Native Client. For the purposes of this blog post, we’ll focus on server-side Blazor, which integrates with SignalR to send browser events and receive pre-rendered page updates.
-
 > [!info]
 > By default, Blazor server applications communicate via WebSockets, though other transports such as Long Polling over HTTP are available as well.
 
-> [!info]
-> Forcing a Blazor application to use Long Polling is possible within the negotiation process.
+Forcing a Blazor application to use Long Polling is possible within the negotiation process.
+POST /_blazor/negotiate?negotiateVersion=1 HTTP/1.1
+Content-Length: 0
+[...]
+HTTP/1.1 200 OK
+Content-Length: 316
+Content-Type: application/json
+[...]
 
-> [!info]
-> POST /_blazor/negotiate?negotiateVersion=1 HTTP/1.1
-&gt;Content-Length: 0
-&gt;[...]
+{"negotiateVersion":1,"connectionId":"******","connectionToken"
+:"******","availableTransports":[{"transport":"WebSockets","transferFormats":["Text","Binary"]},{"transport":"ServerSentEvents","transferFormats":["Text"]},{"transport":"LongPolling","transferFormats":["Text","Binary"]}]}
+Using a Burp match and replace rule, you can remove the WebSockets transport from the response, forcing the browser to fall back to use Long Polling over HTTP.
+By forcing the application to use Long Polling, all Blazor traffic will now occur over HTTP which makes Blazor data more accessible to prospective Burp Suite extensions.
+If we turn to the documentation, Microsoft identifies this format as MessagePack and outlines how it can be used in ASP.NET applications.
+MessagePack
+MessagePack is another serialization format used to package structured data, like JSON, XML, etc. The key difference with MessagePack is that it is binary in nature, meaning specific bytes are used to indicate the types and length of serialized data.
 
-> [!info]
-> HTTP/1.1 200 OK
-&gt;Content-Length: 316
-&gt;Content-Type: application/json
-&gt;[...]
-&gt;
-&gt;{&quot;negotiateVersion&quot;:1,&quot;connectionId&quot;:&quot;******&quot;,&quot;connectionToken&quot;
-&gt;:&quot;******&quot;,&quot;availableTransports&quot;:[{&quot;transport&quot;:&quot;WebSockets&quot;,&quot;transferFormats&quot;:[&quot;Text&quot;,&quot;Binary&quot;]},{&quot;transport&quot;:&quot;ServerSentEvents&quot;,&quot;transferFormats&quot;:[&quot;Text&quot;]},{&quot;transport&quot;:&quot;LongPolling&quot;,&quot;transferFormats&quot;:[&quot;Text&quot;,&quot;Binary&quot;]}]}
+While Blazor server uses MessagePack, the traffic is specifically formatted according to Blazor’s own Hub Protocol specification.
+Blazor messages are formatted according to the Hub Protocol specification.
 
-> [!info]
-> Using a Burp match and replace rule, you can remove the WebSockets transport from the response, forcing the browser to fall back to use Long Polling over HTTP.
+([Length] [Body])([Length] [Body])...
 
-> [!info]
-> By forcing the application to use Long Polling, all Blazor traffic will now occur over HTTP which makes Blazor data more accessible to prospective Burp Suite extensions.
+Length is a variable-size integer representing the size of Body, which is the actual message.
+If you modify a string to be a different length than the original message, you’d need to update the Length variable-size integer as well.
+For the Body field, there are different types of messages supported by Blazor (i.e., Invocation, StreamInvocation, Ping, etc.). However, while proxying traffic and testing a sample Blazor application, we rarely saw any other types of messages being used other than Invocation.
+InvocationMessage Analysis
 
-> [!info]
-> If we turn to the documentation, Microsoft identifies this format as MessagePack and outlines how it can be used in ASP.NET applications.
-
-> [!info]
-> MessagePack
-
-> [!info]
-> MessagePack is another serialization format used to package structured data, like JSON, XML, etc. The key difference with MessagePack is that it is binary in nature, meaning specific bytes are used to indicate the types and length of serialized data.
-&gt;
-&gt;While Blazor server uses MessagePack, the traffic is specifically formatted according to Blazor’s own Hub Protocol specification.
-
-> [!info]
-> Blazor messages are formatted according to the Hub Protocol specification.
-&gt;
-&gt;([Length] [Body])([Length] [Body])...
-&gt;
-&gt;Length is a variable-size integer representing the size of Body, which is the actual message.
-
-> [!info]
-> If you modify a string to be a different length than the original message, you’d need to update the Length variable-size integer as well.
-
-> [!info]
-> For the Body field, there are different types of messages supported by Blazor (i.e., Invocation, StreamInvocation, Ping, etc.). However, while proxying traffic and testing a sample Blazor application, we rarely saw any other types of messages being used other than Invocation.
-
-> [!info]
-> InvocationMessage Analysis
-&gt;
-&gt;The predominant message type observed while testing Blazor applications is an InvocationMessage, used to render page updates and submit data.
-
-> [!info]
-> Taking a look at the specification, we see that there is the following structure:
-
-> [!info]
-> [1, Headers, InvocationId, Target, [Arguments], [StreamIds]]
-
-> [!info]
-> 1 – the message type, InvocationMessage types are 1.
-
-> [!info]
-> Headers – a map containing string key-value pairs. During testing of a sample Blazor app, this was observed to only be equal to a null/empty map.
-
-> [!info]
-> InvocationId – this can either be NIL to indicate a lack of an invocation ID or a string that holds the value. Again, this was always NIL during testing.
-
-> [!info]
-> Target – a string representing the backend function to call.
-
-> [!info]
-> Arguments – an array of arguments to pass to that backend function.
-
-> [!info]
-> StreamIds – an array of strings representing unique stream identifiers. Again, this was always NIL or non-existent in the messages observed whilst testing.
-
-> [!info]
-> Tampering
-
-> [!info]
-> Within Blazor server applications, the JSInvokable attribute allows developers to expose DotNet functions to the client-side JavaScript.
-
-> [!info]
-> [JSInvokable(&quot;CallMe&quot;)]
-&gt;public static void hiddenFunc(String var)
-&gt;{
-&gt;    Console.WriteLine(&quot;Hidden function called!&quot;);
-&gt;    Console.WriteLine(var);
-&gt;}
-
-> [!info]
-> This is a simple example that just logs some user input to the console, but there are no web pages that allow the user to call this function.
-
-> [!info]
-> Instead, the DotNet.invokeMethodAsync JavaScript function can be used (as outlined here).
-
-> [!info]
-> Figure 8 – Deserialized Invocation Request
-
-> [!info]
-> The input of foo is contained within a 1-element array, so let’s try tampering and replaying the request. For demo purposes, we’ll change the JSON payload in the BTP tab to include a newline to see if newlines get written to the console output:
-
-> [!info]
-> [{&quot;Target&quot;:&quot;BeginInvokeDotNetFromJS&quot;,&quot;Headers&quot;:0,&quot;Arguments&quot;:[&quot;3&quot;,&quot;BlazorServerTestApp&quot;,&quot;CallMe&quot;,0,[&quot;Line1&#92;r&#92;nLine2&quot;]],&quot;MessageType&quot;:1}]
-
-> [!info]
-> Upon sending the request, the response is a simple 200 OK:
-
-> [!info]
-> HTTP/1.1 200 OK
-&gt;Content-Length: 0
-&gt;Connection: close
-&gt;Content-Type: text/plain
-&gt;Server: Kestrel
-
+The predominant message type observed while testing Blazor applications is an InvocationMessage, used to render page updates and submit data.
+Taking a look at the specification, we see that there is the following structure:
+[1, Headers, InvocationId, Target, [Arguments], [StreamIds]]
+1 – the message type, InvocationMessage types are 1.
+Headers – a map containing string key-value pairs. During testing of a sample Blazor app, this was observed to only be equal to a null/empty map.
+InvocationId – this can either be NIL to indicate a lack of an invocation ID or a string that holds the value. Again, this was always NIL during testing.
+Target – a string representing the backend function to call.
+Arguments – an array of arguments to pass to that backend function.
+StreamIds – an array of strings representing unique stream identifiers. Again, this was always NIL or non-existent in the messages observed whilst testing.
+Tampering
+Within Blazor server applications, the JSInvokable attribute allows developers to expose DotNet functions to the client-side JavaScript.
+[JSInvokable("CallMe")]
+public static void hiddenFunc(String var)
+{
+    Console.WriteLine("Hidden function called!");
+    Console.WriteLine(var);
+}
+This is a simple example that just logs some user input to the console, but there are no web pages that allow the user to call this function.
+Instead, the DotNet.invokeMethodAsync JavaScript function can be used (as outlined here).
+Figure 8 – Deserialized Invocation Request
+The input of foo is contained within a 1-element array, so let’s try tampering and replaying the request. For demo purposes, we’ll change the JSON payload in the BTP tab to include a newline to see if newlines get written to the console output:
+[{"Target":"BeginInvokeDotNetFromJS","Headers":0,"Arguments":["3","BlazorServerTestApp","CallMe",0,["Line1\r\nLine2"]],"MessageType":1}]
+Upon sending the request, the response is a simple 200 OK:
+HTTP/1.1 200 OK
+Content-Length: 0
+Connection: close
+Content-Type: text/plain
+Server: Kestrel
 > [!danger]
 > Important note about Blazor server Long Polling: sending any type of invocation POST request will not return data in the response. Instead, Long Polling keeps an open GET request that receives server updates as they become available. As such, if you send a request with malformed input that causes an error, you won’t see that error unless you look at subsequent GET requests.
 
-> [!danger]
-> What are these “Target” values I keep seeing?
-
-> [!danger]
-> While testing Blazor server applications, you’re likely to run into various Target values such as: BeginInvokeDotNetFromJS, OnRenderCompleted, OnLocationChanged, etc. These functions themselves are not specific to the app that you’re testing. Rather, they are built-in to ASP.NET Core as part of ComponentHub and are used to facilitate communications between the frontend JavaScript and the backend .NET application.
-
-> [!danger]
-> The implementation of these functions can be found in the “aspnetcore” repository on GitHub here.
-
-> [!danger]
-> It is important to distinguish between what’s native and what’s custom in Blazor server applications, since your goal will likely be to find vulnerabilities in the app that you’re testing, not in Blazor itself. As such, focus your testing efforts on fields that contain your input (i.e., arguments to BeginInvokeDotNetFromJS) as opposed to normal Blazor operations (i.e., OnRenderCompleted or EndInvokeJSFromDotNet).
+What are these “Target” values I keep seeing?
+While testing Blazor server applications, you’re likely to run into various Target values such as: BeginInvokeDotNetFromJS, OnRenderCompleted, OnLocationChanged, etc. These functions themselves are not specific to the app that you’re testing. Rather, they are built-in to ASP.NET Core as part of ComponentHub and are used to facilitate communications between the frontend JavaScript and the backend .NET application.
+The implementation of these functions can be found in the “aspnetcore” repository on GitHub here.
+It is important to distinguish between what’s native and what’s custom in Blazor server applications, since your goal will likely be to find vulnerabilities in the app that you’re testing, not in Blazor itself. As such, focus your testing efforts on fields that contain your input (i.e., arguments to BeginInvokeDotNetFromJS) as opposed to normal Blazor operations (i.e., OnRenderCompleted or EndInvokeJSFromDotNet).

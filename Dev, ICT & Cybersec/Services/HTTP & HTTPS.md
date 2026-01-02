@@ -38,7 +38,7 @@ Further information inside the language specific notes:
 - After checking **unauthenticated areas**, focus on **authenticated areas** of the application that are likely to contain dangerous functions
 - **Investigate how sanitization of user input is performed**. Is it done using a trusted, opensource library, or is a custom solution in place?
 
-### Source code analyses tools, rules and resources
+### SAST tools, rules and resources
 
 >[!tip]
 >Search for dangerous patterns or functions using regexes, both manually and with automated tools!
@@ -51,17 +51,26 @@ Code and diff analyser:
 Greppers and auditing tools:
 - [semgrep](../Tools/semgrep.md)
 - [CodeQL](../Tools/CodeQL.md)
-- [graudit](https://github.com/wireghoul/graudit) - grep rough audit - source code auditing tool
+	- Augment its results with Tree-Sitter + LLM using [Slice: SAST + LLM Interprocedural Context Extractor](../../Raindrop/Slice%20SAST%20+%20LLM%20Interprocedural%20Context%20Extractor.md#Slice%20SAST%20+%20LLM%20Interprocedural%20Context%20Extractor) 
 - [grep wrappers](../Dev,%20scripting%20&%20OS/Linux%20command%20cheatsheet.md#grep%20wrappers)
-- [html-tool](../Tools/html-tool.md)
-- [jsluice](../Tools/jsluice.md)
 - [Secrets enumeration](../Web%20&%20Network%20Hacking/HTTP%20Recon%20and%20Enumeration.md#Secrets%20enumeration)
-- [JSA](../../Readwise/Tweets/@WllGates%20on%20Twitter%20-%20Tweets%20From%20Will%20Gates.md) (Javascript security analysis (JSA) is a program for javascript analysis during web application security assessment) ^e44cdc
 - [weggli](https://github.com/weggli-rs/weggli) and C/C++ ruleset from Marco Ivaldi [^ivaldi-weggli]
 - [The Web Application Hacker's Handbook](../../Personal/Book%20list/The%20Web%20Application%20Hacker's%20Handbook%20-%20Dafydd%20Stuttard%20Marcus%20Pinto.md) and [OWASP Code Review Guide v2](../../Personal/Book%20list/OWASP%20Code%20Review%20Guide%20v2.md) - List of dangerous keywords and signatures for PHP, ASP.NET, Perl, JavaScript and MySQL
 - [snyk.io](https://app.snyk.io/)
 - [SonarSource](https://rules.sonarsource.com/) - 5000+ Static Analysis Rules across 30+ programming languages
 
+#LLM based code auditor:
+- Buttercap - Buttercup finds and patches software vulnerabilities autonomously using #LLM
+- claude code #LLM 
+- [metis](../../Raindrop/GitHub%20-%20armmetis%20Metis%20is%20an%20open-source,%20AI-driven%20tool%20for%20deep%20security%20code%20review.md) - an open-source, AI-driven tool for deep security code review #LLM 
+- fraim -  #LLM 
+- [strix](../../Raindrop/usestrixstrix%20✨%20Open-source%20AI%20hackers%20for%20your%20apps%20👨🏻‍💻.md) #LLM 
+- Hound #LLM - Language-agnostic AI auditor that autonomously builds and refines adaptive knowledge graphs for deep, iterative code reasoning.
+- [Slice: SAST + LLM Interprocedural Context Extractor](../../Raindrop/Slice%20SAST%20+%20LLM%20Interprocedural%20Context%20Extractor.md#Slice%20SAST%20+%20LLM%20Interprocedural%20Context%20Extractor) 
+- Raptor
+
+>[!warning]
+>Not all LLM-based SAST tools are suitable for every context. Limitations such as code size or programming languages affect the choice of the right tool. Read ‘asdasd’ for a detailed comparison of the various tools. 
 
 [^ivaldi-weggli]: [A Collection of Weggli Patterns for C/C++ Vulnerability Research](../../Readwise/Articles/Marco%20Ivaldi%20-%20A%20Collection%20of%20Weggli%20Patterns%20for%20CC++%20Vulnerability%20Research.md), Marco Ivaldi
 
@@ -84,6 +93,7 @@ Black box pentesting [^black-box-pt] refers to a security test done by third par
 
 [^black-box-pt]: [What is Black Box Penetration Testing?](https://blog.securelayer7.net/black-box-penetration-testing/), securelayer7.net
 
+### DAST tools, rules and resources
 
 >[!tip]
 >Use an approach that focuses primarily on identifying **low-hanging fruit** and the **most critical server-side vulnerabilities**, and then gradually scaling up on the search for other vulnerabilities that are less critical but can be *weaponised* or *included in some chain*.
@@ -101,6 +111,11 @@ Pay more attention to:
 Evading restrictions:
 - [Evading Restrictions](../Web%20&%20Network%20Hacking/Evading%20Restrictions.md)
 - [Fuzzing](../Reversing%20&%20Binary%20Exploitation/Fuzzing.md)
+
+Useful tools for black-box testing, DAST and fuzzing:
+- [HTTP Recon and Enumeration](../Web%20&%20Network%20Hacking/HTTP%20Recon%20and%20Enumeration.md) tools
+- [Vulnerability and Misconfiguration scanners](../Web%20&%20Network%20Hacking/HTTP%20Recon%20and%20Enumeration.md#Vulnerability%20and%20Misconfiguration%20scanners)
+- [Automation and Frameworks](../Web%20&%20Network%20Hacking/HTTP%20Recon%20and%20Enumeration.md#Automation%20and%20Frameworks)
 
 ---
 

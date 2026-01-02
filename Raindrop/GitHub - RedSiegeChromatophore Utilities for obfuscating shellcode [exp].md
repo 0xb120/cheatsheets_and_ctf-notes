@@ -9,7 +9,7 @@ description: |-
 
 source: https://github.com/RedSiege/Chromatophore
 
-created: Wed Aug 27 2025 20:34:33 GMT+0200
+created: 1756319673000
 type: link
 tags:
   - "_index"
@@ -23,7 +23,7 @@ tags:
 ![](https://opengraph.githubassets.com/dc39c088b9e7d0f1888ae062a98666eb4ed2e50526d133b0305e240ab33252f7/RedSiege/Chromatophore)
 
 > [!summary]
->Utilities for obfuscating shellcode
+> Utilities for obfuscating shellcode
 
 
 

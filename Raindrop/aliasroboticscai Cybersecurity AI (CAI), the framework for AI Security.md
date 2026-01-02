@@ -35,7 +35,7 @@ description: |-
 
 source: https://github.com/aliasrobotics/cai
 
-created: Fri Sep 12 2025 14:15:57 GMT+0200
+created: 1757679357343
 type: link
 tags:
   - "_index"
@@ -51,136 +51,90 @@ tags:
 ![](https://opengraph.githubassets.com/c71f62171c65e7f91d94fdfdba322cf6101253ba6d3fd1f5e698fd674bb0b87e/aliasrobotics/cai)
 
 > [!summary]
->Cybersecurity AI (CAI), the framework for AI Security - aliasrobotics/cai
+> Cybersecurity AI (CAI), the framework for AI Security - aliasrobotics/cai
 
 
 
 
 
 Cybersecurity AI (CAI)
-
 Cybersecurity AI (CAI) is a lightweight, open-source framework that empowers security professionals to build and deploy AI-powered offensive and defensive automation.
-
-Whether you&#39;re a security researcher, ethical hacker, IT professional, or organization looking to enhance your security posture, CAI provides the building blocks to create specialized AI agents that can assist with mitigation, vulnerability discovery, exploitation, and security assessment.
-
+Whether you're a security researcher, ethical hacker, IT professional, or organization looking to enhance your security posture, CAI provides the building blocks to create specialized AI agents that can assist with mitigation, vulnerability discovery, exploitation, and security assessment.
 > [!info]
 > Read the technical report: CAI: An Open, Bug Bounty-Ready Cybersecurity AI
 
 > [!info]
 > More case studies and PoCs are available at https://aliasrobotics.com/case-studies-robot-cybersecurity.php
 
-> [!info]
-> 🔩 Install
-&gt;pip install cai-framework
-&gt;
-&gt;Always create a new virtual environment to ensure proper dependency installation when updating CAI.
+🔩 Install
+pip install cai-framework
 
-> [!info]
-> Ubuntu 24.04
-&gt;sudo apt-get update &amp;&amp; &#92;
-&gt;    sudo apt-get install -y git python3-pip python3.12-venv
-&gt;
-&gt;# Create the virtual environment
-&gt;python3.12 -m venv cai_env
-&gt;
-&gt;# Install the package from the local directory
-&gt;source cai_env/bin/activate &amp;&amp; pip install cai-framework
-&gt;
-&gt;# Generate a .env file and set up with defaults
-&gt;echo -e &#39;OPENAI_API_KEY=&quot;sk-1234&quot;&#92;nANTHROPIC_API_KEY=&quot;&quot;&#92;nOLLAMA=&quot;&quot;&#92;nPROMPT_TOOLKIT_NO_CPR=1&#92;nCAI_STREAM=false&#39; &gt; .env
-&gt;
-&gt;# Launch CAI
-&gt;cai  # first launch it can take up to 30 seconds
+Always create a new virtual environment to ensure proper dependency installation when updating CAI.
+Ubuntu 24.04
+sudo apt-get update && \
+    sudo apt-get install -y git python3-pip python3.12-venv
 
-> [!info]
-> 📐 Architecture:
-&gt;
-&gt;CAI focuses on making cybersecurity agent coordination and execution lightweight, highly controllable, and useful for humans. To do so it builds upon 8 pillars: Agents, Tools, Handoffs, Patterns, Turns, Tracing, Guardrails and HITL.
+# Create the virtual environment
+python3.12 -m venv cai_env
 
-> [!info]
-> If you want to dive deeper into the code, check the following files as a start point for using CAI:
-&gt;
-&gt;init.py
-&gt;cli.py - entrypoint for command line interface
-&gt;util.py - utility functions
-&gt;agents - Agent implementations
-&gt;internal - CAI internal functions (endpoints, metrics, logging, etc.)
-&gt;prompts - Agent Prompt Database
-&gt;repl - CLI aesthetics and commands
-&gt;sdk - CAI command sdk
-&gt;tools - agent tools
+# Install the package from the local directory
+source cai_env/bin/activate && pip install cai-framework
 
-> [!info]
-> 🔹 Agent
+# Generate a .env file and set up with defaults
+echo -e 'OPENAI_API_KEY="sk-1234"\nANTHROPIC_API_KEY=""\nOLLAMA=""\nPROMPT_TOOLKIT_NO_CPR=1\nCAI_STREAM=false' > .env
 
-> [!info]
-> An Agent in an intelligent system that interacts with some environment. More technically, within CAI we embrace a robotics-centric definition wherein an agent is anything that can be viewed as a system perceiving its environment through sensors, reasoning about its goals and and acting accordingly upon that environment through actuators (adapted from Russel &amp; Norvig, AI: A Modern Approach).
+# Launch CAI
+cai  # first launch it can take up to 30 seconds
+📐 Architecture:
 
-> [!info]
-> 🔹 Tools
+CAI focuses on making cybersecurity agent coordination and execution lightweight, highly controllable, and useful for humans. To do so it builds upon 8 pillars: Agents, Tools, Handoffs, Patterns, Turns, Tracing, Guardrails and HITL.
+If you want to dive deeper into the code, check the following files as a start point for using CAI:
 
-> [!info]
-> Tools let cybersecurity agents take actions by providing interfaces to execute system commands, run security scans, analyze vulnerabilities, and interact with target systems and APIs - they are the core capabilities that enable CAI agents to perform security tasks effectively
+init.py
+cli.py - entrypoint for command line interface
+util.py - utility functions
+agents - Agent implementations
+internal - CAI internal functions (endpoints, metrics, logging, etc.)
+prompts - Agent Prompt Database
+repl - CLI aesthetics and commands
+sdk - CAI command sdk
+tools - agent tools
+🔹 Agent
+An Agent in an intelligent system that interacts with some environment. More technically, within CAI we embrace a robotics-centric definition wherein an agent is anything that can be viewed as a system perceiving its environment through sensors, reasoning about its goals and and acting accordingly upon that environment through actuators (adapted from Russel & Norvig, AI: A Modern Approach).
+🔹 Tools
+Tools let cybersecurity agents take actions by providing interfaces to execute system commands, run security scans, analyze vulnerabilities, and interact with target systems and APIs - they are the core capabilities that enable CAI agents to perform security tasks effectively
+🔹 Handoffs
 
-> [!info]
-> 🔹 Handoffs
-&gt;
-&gt;Handoffs allow an Agent to delegate tasks to another agent, which is crucial in cybersecurity operations where specialized expertise is needed for different phases of an engagement.
+Handoffs allow an Agent to delegate tasks to another agent, which is crucial in cybersecurity operations where specialized expertise is needed for different phases of an engagement.
+🔹 Patterns
 
-> [!info]
-> 🔹 Patterns
-&gt;
-&gt;An agentic Pattern is a structured design paradigm in artificial intelligence systems where autonomous or semi-autonomous agents operate within a defined interaction framework (the pattern) to achieve a goal.
+An agentic Pattern is a structured design paradigm in artificial intelligence systems where autonomous or semi-autonomous agents operate within a defined interaction framework (the pattern) to achieve a goal.
+For more information and examples of common agentic patterns, see the examples folder.
+🔹 Turns and Interactions
 
-> [!info]
-> For more information and examples of common agentic patterns, see the examples folder.
+During the agentic flow (conversation), we distinguish between interactions and turns.
 
-> [!info]
-> 🔹 Turns and Interactions
-&gt;
-&gt;During the agentic flow (conversation), we distinguish between interactions and turns.
-&gt;
-&gt;Interactions are sequential exchanges between one or multiple agents.
+Interactions are sequential exchanges between one or multiple agents.
+Turns: A turn represents a cycle of one ore more interactions which finishes when the Agent (or Pattern) executing returns None, judging there're no further actions to undertake.
+🔹 Tracing
 
-> [!info]
-> Turns: A turn represents a cycle of one ore more interactions which finishes when the Agent (or Pattern) executing returns None, judging there&#39;re no further actions to undertake.
+CAI implements AI observability by adopting the OpenTelemetry standard and to do so, it leverages Phoenix which provides comprehensive tracing capabilities through OpenTelemetry-based instrumentation, allowing you to monitor and analyze your security operations in real-time. This integration enables detailed visibility into agent interactions
+🔹 Guardrails
 
-> [!info]
-> 🔹 Tracing
-&gt;
-&gt;CAI implements AI observability by adopting the OpenTelemetry standard and to do so, it leverages Phoenix which provides comprehensive tracing capabilities through OpenTelemetry-based instrumentation, allowing you to monitor and analyze your security operations in real-time. This integration enables detailed visibility into agent interactions
+Guardrails provide a critical security layer for CAI agents, protecting against prompt injection attacks and preventing execution of dangerous commands. These guardrails run in parallel to agents, validating both input and output to ensure safe operation.
+🔹 Human-In-The-Loop (HITL)
+CAI delivers a framework for building Cybersecurity AIs with a strong emphasis on semi-autonomous operation, as the reality is that fully-autonomous cybersecurity systems remain premature and face significant challenges when tackling complex tasks.
+Accordingly, the Human-In-The-Loop (HITL) module is a core design principle of CAI, acknowledging that human intervention and teleoperation are essential components of responsible security testing. Through the cli.py interface, users can seamlessly interact with agents at any point during execution by simply pressing Ctrl+C.
+🚀 Quickstart
 
-> [!info]
-> 🔹 Guardrails
-&gt;
-&gt;Guardrails provide a critical security layer for CAI agents, protecting against prompt injection attacks and preventing execution of dangerous commands. These guardrails run in parallel to agents, validating both input and output to ensure safe operation.
+To start CAI after installing it, just type cai in the CLI
+MCP
 
-> [!info]
-> 🔹 Human-In-The-Loop (HITL)
+CAI supports the Model Context Protocol (MCP) for integrating external tools and services with AI agents.
+SSE (Server-Sent Events) - For web-based servers that push updates over HTTP connections:
+CAI>/mcp load http://localhost:9876/sse burp
+STDIO (Standard Input/Output) - For local inter-process communication:
+CAI>/mcp load stdio myserver python mcp_server.py
+Once connected, you can add the MCP tools to any agent:
 
-> [!info]
-> CAI delivers a framework for building Cybersecurity AIs with a strong emphasis on semi-autonomous operation, as the reality is that fully-autonomous cybersecurity systems remain premature and face significant challenges when tackling complex tasks.
-
-> [!info]
-> Accordingly, the Human-In-The-Loop (HITL) module is a core design principle of CAI, acknowledging that human intervention and teleoperation are essential components of responsible security testing. Through the cli.py interface, users can seamlessly interact with agents at any point during execution by simply pressing Ctrl+C.
-
-> [!info]
-> 🚀 Quickstart
-&gt;
-&gt;To start CAI after installing it, just type cai in the CLI
-
-> [!info]
-> MCP
-&gt;
-&gt;CAI supports the Model Context Protocol (MCP) for integrating external tools and services with AI agents.
-
-> [!info]
-> SSE (Server-Sent Events) - For web-based servers that push updates over HTTP connections:
-&gt;CAI&gt;/mcp load http://localhost:9876/sse burp
-&gt;STDIO (Standard Input/Output) - For local inter-process communication:
-&gt;CAI&gt;/mcp load stdio myserver python mcp_server.py
-
-> [!info]
-> Once connected, you can add the MCP tools to any agent:
-&gt;
-&gt;CAI&gt;/mcp add burp redteam_agent
+CAI>/mcp add burp redteam_agent

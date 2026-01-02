@@ -15,7 +15,3 @@ Currently, an OWASP Top 10 for CI/CD is still under construction, however a raw 
 
 [^owasp-cicd]: [OWASP Top 10 CI/CD Security Risks by Cider Security](https://owasp.org/www-project-top-10-ci-cd-security-risks/)
 
-
-# Tools
-
-- [dastardly](https://portswigger.net/burp/dastardly): A free DAST web application scanner for your CI/CD pipeline

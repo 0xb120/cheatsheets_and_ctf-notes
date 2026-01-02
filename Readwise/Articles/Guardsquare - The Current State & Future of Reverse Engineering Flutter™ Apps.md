@@ -1,7 +1,10 @@
 ---
-author: "Guardsquare"
-aliases: "The Current State & Future of Reverse Engineering Flutter™ Apps"
-tags: RW_inbox, readwise/articles, Flutter
+author: Guardsquare
+aliases: The Current State & Future of Reverse Engineering Flutter™ Apps
+tags:
+  - _inbox
+  - readwise/articles
+  - Flutter
 url: https://www.guardsquare.com/blog/current-state-and-future-of-reversing-flutter-apps?__readwiseLocation=
 date: 2025-04-24
 summary: Reverse engineering Flutter apps is currently challenging due to the constantly changing Dart snapshot format and the way Dart frameworks are linked. While there are tools to extract information from Dart snapshots, they must be updated with each new Flutter release. Despite built-in obfuscation options, some metadata remains accessible, making it possible to identify common framework functions in the code.

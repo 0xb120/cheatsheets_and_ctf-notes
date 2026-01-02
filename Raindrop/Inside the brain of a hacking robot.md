@@ -26,7 +26,7 @@ description: |-
 
 source: https://theori.io/blog/exploring-traces-63950
 
-created: Fri Aug 08 2025 21:25:46 GMT+0200
+created: 1754681146000
 type: article
 tags:
   - "_index"
@@ -35,8 +35,7 @@ tags:
   - "AI" 
   - "LLM" 
   - "SAST" 
-  - "tech-blog" 
-  - "Tools"
+  - "tech-blog"
 
 ---
 # Inside the brain of a hacking robot
@@ -44,64 +43,47 @@ tags:
 ![](https://source.inblog.dev/featured_image/2025-08-08T19:24:24.222Z-ea1e4de2-7f6f-4324-9adb-62c83b2c3714)
 
 > [!summary]
->Agent trajectory walkthroughs from interesting examples | AI for Security, AIxCC
+> Agent trajectory walkthroughs from interesting examples | AI for Security, AIxCC
 
 
 
 
 
 Introduction
-&gt;
-&gt;Building LLM Agents to solve complex security tasks unfortunately is still a complicated task with a lot of human effort involved.
 
+Building LLM Agents to solve complex security tasks unfortunately is still a complicated task with a lot of human effort involved.
 To gain insights to the strengths and limitations of LLMs, we can simply read through the agent log trajectories!
-
 Keep in mind that in all of these cases, the only input our CRS had was the code repository (without commit history), and no human intervention to select, triage, or prioritize bugs.
-
 SQLite
-&gt;
-&gt;The first traces we will examine are from examining SQLite.
 
+The first traces we will examine are from examining SQLite.
 During an AIxCC practice round, we were given a version of SQLite with a harness that allowed running arbitrary SQL queries. There were some injected bugs by the organizers that we identified, but what was more interesting for us were the bugs the organizers did NOT inject.
-
 Out-of-bounds Write
-&gt;
-&gt;This bug is a basic heap buffer-overflow inside of the zipfile extension in SQLite, which is enabled by default.
 
+This bug is a basic heap buffer-overflow inside of the zipfile extension in SQLite, which is enabled by default.
 This is one of the few traces where we include the VulnAnalyzer agent. This agent runs early on in the pipeline to take a low-confidence bug report, verify it, and then enrich it with more detailed information to help downstream processes.
-
 Out-of-bounds Read
-&gt;
-&gt;Another overflow was identified by our system in the same area of code, but a different bug path. This time the bug involves loading and reading a corrupted zip file. Once again, this is the type of bug that would be quite difficult to fuzz! it involves not only a crafted SQL query, but also a properly formatted and specially crafted zip file which is hex encoded.
 
+Another overflow was identified by our system in the same area of code, but a different bug path. This time the bug involves loading and reading a corrupted zip file. Once again, this is the type of bug that would be quite difficult to fuzz! it involves not only a crafted SQL query, but also a properly formatted and specially crafted zip file which is hex encoded.
 FreeRDP
-&gt;
-&gt;Next, let’s look at FreeRDP.
 
+Next, let’s look at FreeRDP.
 Synthetic Backdoor
-&gt;
-&gt;During an AIxCC practice round, we were given a sample of FreeRDP with some bugs inserted. One of them is an obfuscated backdoor.
 
+During an AIxCC practice round, we were given a sample of FreeRDP with some bugs inserted. One of them is an obfuscated backdoor.
 The good news is that even if this is a bit inscrutable, LLM based bug detection on the code base easily flags this as a potential bug to investigate! After reading this code, our LLM system produces a bug report like:
-&gt;
-&gt;name: Backdoor
-&gt;reason: The function contains obfuscated code that allocates an executable memory region, copies data from the network stream into it, and then executes it. This is a backdoor allowing remote code execution on the client by a malicious server.
-&gt;source: if (ber_read_application_tag(s, 0x42, &amp;length))
 
+name: Backdoor
+reason: The function contains obfuscated code that allocates an executable memory region, copies data from the network stream into it, and then executes it. This is a backdoor allowing remote code execution on the client by a malicious server.
+source: if (ber_read_application_tag(s, 0x42, &length))
 Unintended Integer Overflow
-&gt;
-&gt;While it is nice to see that our system can find and trigger intended, synthetic bugs, the goal is to find real software vulnerabilities. Fortunately, this challenge provided us with a great example. In addition to the synthetic vulnerabilities, our system spotted other bugs in the FreeRDP code.
 
+While it is nice to see that our system can find and trigger intended, synthetic bugs, the goal is to find real software vulnerabilities. Fortunately, this challenge provided us with a great example. In addition to the synthetic vulnerabilities, our system spotted other bugs in the FreeRDP code.
 This bug is a signed integer overflow in the RDP T.124 Generic Conference Control handling when reading client monitor information.
-
 Notably we never surfaced this vulnerability in our fuzzing using libfuzzer
-
 . In fact, the only time we observed any code in the Generic Conference Control handling being exercised was when an LLM crafted inputs to it.
-
 Apache Tomcat
-
 Here we once again include all the POV producers. One fun thing here is a backdoor that we injected which is only triggered if a SHA-256 sum of some data has a certain prefix. This would be very difficult with fuzzing, but with our agents it is solvable!
-
 Conclusion
-&gt;
-&gt;This was just a quick summary of a few interesting pieces of some of the agent traces from our system. During development, we found reading through these logs to be incredibly useful for adjusting prompts, tools, and work boundaries between different parts of our system.
+
+This was just a quick summary of a few interesting pieces of some of the agent traces from our system. During development, we found reading through these logs to be incredibly useful for adjusting prompts, tools, and work boundaries between different parts of our system.
