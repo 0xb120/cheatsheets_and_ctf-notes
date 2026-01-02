@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: Articles to elaborate
+    filters:
+      and:
+        - file.tags.containsAny("RW_inbox", "_inbox")
+    order:
+      - file.name
+      - file.basename
+      - file.fullname
+    sort:
+      - property: file.name
+        direction: DESC
+      - property: file.basename
+        direction: DESC
+      - property: file.fullname
+        direction: DESC
+    indentProperties: false

@@ -1,0 +1,8 @@
+views:
+  - type: list
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("#tools")
+    markers: bullet
+    indentProperties: true
