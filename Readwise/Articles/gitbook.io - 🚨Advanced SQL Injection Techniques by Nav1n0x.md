@@ -1,9 +1,11 @@
 ---
 author: gitbook.io
-aliases: [🚨Advanced SQL Injection Techniques by Nav1n0x]
-tags: [readwise/articles]
+aliases:
+  - 🚨Advanced SQL Injection Techniques by Nav1n0x
+tags:
+  - readwise/articles
 url: https://nav1n0x.gitbook.io/advanced-sql-injection-techniques
-date: 2025-01-07
+created: 2025-01-07
 ---
 # 🚨Advanced SQL Injection Techniques by Nav1n0x
 

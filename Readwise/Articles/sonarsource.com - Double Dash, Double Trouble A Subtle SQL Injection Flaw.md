@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://www.sonarsource.com/blog/double-dash-double-trouble-a-subtle-sql-injection-flaw/?__readwiseLocation=?__readwiseLocation=
-date: 2025-07-07
+created: 2025-07-07
 ---
 # Double Dash, Double Trouble: A Subtle SQL Injection Flaw
 

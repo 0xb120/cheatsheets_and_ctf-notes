@@ -21,6 +21,7 @@ WP official documentation:
 ## Vulnerability research on Wordpress and plugins
 
 - [How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes](../../Readwise/Articles/Alex%20Thomas%20-%20How%20to%20Find%20XSS%20(Cross-Site%20Scripting)%20Vulnerabilities%20in%20WordPress%20Plugins%20and%20Themes.md)
+- [How To Find SQL Injection Vulnerabilities in WordPress Plugins and Themes](../../Clippings/Alex%20Thomas%20-%20How%20To%20Find%20SQL%20Injection%20Vulnerabilities%20in%20WordPress%20Plugins%20and%20Themes.md)
 - [CVE Hunting Made Easy](../../Readwise/Articles/Eddie%20Zhang,%20Aug%2027%20-%20CVE%20Hunting%20Made%20Easy.md)
 
 Pre-made tools:

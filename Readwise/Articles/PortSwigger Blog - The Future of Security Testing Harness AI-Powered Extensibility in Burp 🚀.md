@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://portswigger.net/blog/the-future-of-security-testing-harness-ai-powered-extensibility-in-burp-nbsp?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # The Future of Security Testing: Harness AI-Powered Extensibility in Burp 🚀
 

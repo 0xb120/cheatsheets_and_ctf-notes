@@ -1,9 +1,13 @@
 ---
 author: Alex Thomas
-aliases: ["WordPress Security Research Series: WordPress Request Architecture and Hooks", WordPress Request Architecture and Hooks]
-tags: [readwise/articles, wordpress]
+aliases:
+  - "WordPress Security Research Series: WordPress Request Architecture and Hooks"
+  - WordPress Request Architecture and Hooks
+tags:
+  - readwise/articles
+  - wordpress
 url: https://www.wordfence.com/blog/2024/07/wordpress-security-research-series-wordpress-request-architecture-and-hooks/?__readwiseLocation
-date: 2025-01-23
+created: 2025-01-23
 ---
 # WordPress Security Research Series: WordPress Request Architecture and Hooks
 

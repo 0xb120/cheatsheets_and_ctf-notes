@@ -1,7 +1,7 @@
 # Article Inbox
 
 ```dataview
-TABLE date
+TABLE created
 FROM #RW_inbox | #_inbox
 SORT File
 ```

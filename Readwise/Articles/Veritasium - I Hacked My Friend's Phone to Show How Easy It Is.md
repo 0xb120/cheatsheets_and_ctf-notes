@@ -1,9 +1,11 @@
 ---
 author: Veritasium
-aliases: [I Hacked My Friend's Phone to Show How Easy It Is]
-tags: [readwise/articles]
+aliases:
+  - I Hacked My Friend's Phone to Show How Easy It Is
+tags:
+  - readwise/articles
 url: https://www.youtube.com/watch?v=wVyu7NB7W6Y
-date: 2024-09-25
+created: 2024-09-25
 ---
 # I Hacked My Friend's Phone to Show How Easy It Is
 

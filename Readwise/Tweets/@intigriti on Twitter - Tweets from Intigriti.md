@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/tweets
 url: ?__readwiseLocation=
-date: 2025-03-29
+created: 2025-03-29
 ---
 # Tweets from Intigriti
 

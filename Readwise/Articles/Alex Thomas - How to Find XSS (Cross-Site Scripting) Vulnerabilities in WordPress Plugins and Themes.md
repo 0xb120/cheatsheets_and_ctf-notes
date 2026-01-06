@@ -1,9 +1,14 @@
 ---
 author: Alex Thomas
-aliases: [How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes]
-tags: [readwise/articles, code-review, wordpress, wordpress/plugins]
+aliases:
+  - How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes
+tags:
+  - readwise/articles
+  - code-review
+  - wordpress
+  - wordpress/plugins
 url: https://www.wordfence.com/blog/2024/09/how-to-find-xss-cross-site-scripting-vulnerabilities-in-wordpress-plugins-and-themes/?__readwiseLocation=
-date: 2024-09-06
+created: 2024-09-06
 ---
 # How to Find XSS (Cross-Site Scripting) Vulnerabilities in WordPress Plugins and Themes
 

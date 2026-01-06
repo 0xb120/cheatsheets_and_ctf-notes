@@ -1,9 +1,12 @@
 ---
 author: https://github.com/kiber-io/
-aliases: ["GitHub - kiber-io/apkd: APK downloader from few sources", apkd]
-tags: [readwise/articles]
+aliases:
+  - "GitHub - kiber-io/apkd: APK downloader from few sources"
+  - apkd
+tags:
+  - readwise/articles
 url: https://github.com/kiber-io/apkd
-date: 2024-09-10
+created: 2024-09-10
 ---
 # GitHub - kiber-io/apkd: APK downloader from few sources
 

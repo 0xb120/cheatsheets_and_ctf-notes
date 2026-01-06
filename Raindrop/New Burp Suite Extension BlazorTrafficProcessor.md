@@ -51,7 +51,8 @@ source: https://www.aon.com/en/insights/cyber-labs/new-burp-suite-extension---bl
 
 created: 1758181627873
 type: article
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "tech-blog" 

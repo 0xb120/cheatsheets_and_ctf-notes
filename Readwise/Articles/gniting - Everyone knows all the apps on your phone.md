@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://peabee.substack.com/p/everyone-knows-what-apps-you-use?__readwiseLocation=
-date: 2025-04-01
+created: 2025-04-01
 ---
 # Everyone knows all the apps on your phone
 

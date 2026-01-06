@@ -1,9 +1,11 @@
 ---
 author: Tib3rius
-aliases: [Or-Based SQL Injection Without the Dangers! Safe Alternatives to OR 1=1!]
-tags: [readwise/articles]
+aliases:
+  - Or-Based SQL Injection Without the Dangers! Safe Alternatives to OR 1=1!
+tags:
+  - readwise/articles
 url: https://www.youtube.com/watch?v=EpCA4HF-aUM
-date: 2024-11-15
+created: 2024-11-15
 ---
 # Or-Based SQL Injection Without the Dangers! Safe Alternatives to OR 1=1!
 

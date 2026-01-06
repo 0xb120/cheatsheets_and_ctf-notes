@@ -1,9 +1,11 @@
 ---
 author: PortSwigger Research
-aliases: [Concealing Payloads in URL Credentials]
-tags: [readwise/articles]
+aliases:
+  - Concealing Payloads in URL Credentials
+tags:
+  - readwise/articles
 url: https://portswigger.net/research/concealing-payloads-in-url-credentials
-date: 2024-10-30
+created: 2024-10-30
 ---
 # Concealing Payloads in URL Credentials
 

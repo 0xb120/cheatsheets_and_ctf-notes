@@ -1,9 +1,11 @@
 ---
 author: Piyush Kumawat (securitycipher)
-aliases: [Out-of-Band Exfiltration Tools]
-tags: [readwise/articles]
+aliases:
+  - Out-of-Band Exfiltration Tools
+tags:
+  - readwise/articles
 url: https://securitycipher.medium.com/out-of-band-exfiltration-tools-68b79815fc60
-date: 2023-10-22
+created: 2023-10-22
 ---
 # Out-of-Band (OAST) Exfiltration Tools
 

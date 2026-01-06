@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://snyk.io/blog/reconstructing-tj-actions-changed-files-github-actions-compromise/?__readwiseLocation=
-date: 2025-03-21
+created: 2025-03-21
 ---
 # Reconstructing the TJ Actions Changed Files GitHub Actions Compromise
 
@@ -21,7 +21,7 @@ The key enabling factors for this attack beyond just having write permissions we
 
 These factors added a bit of obfuscation to hide the attack. [](https://read.readwise.io/read/01jpwf37qzmjk5y5mgzyhhbv6t) However, the attack relied on making an external network call to pull down the attack code, which ultimately led to it being noticed by services that monitor anomalous network activity. [](https://read.readwise.io/read/01jpwf3nccph9ya04syhx175q9)
 
-### On orphaned Git commits
+### On orphaned [git](../../Dev,%20ICT%20&%20Cybersec/Tools/git.md) commits
 
 Try this as an exercise. Create a new repo on GitHub and clone it locally. Create a branch and push it up to GitHub. Make a note of the commit hash. Then, delete the remote branch. You can still navigate to that commit, even though it is no longer associated with any existing branch. [](https://read.readwise.io/read/01jpwf4wc7fpj3t8aabd3443e5)
 
@@ -51,7 +51,7 @@ git push origin orphan
 
 ![](attachments/orphaned-git-commit.png)
 
-This is an **orphaned Git commits**
+This is an **orphaned [git](../../Dev,%20ICT%20&%20Cybersec/Tools/git.md) commits**
 
 ### On GitHub Release tags
 Unfortunately, developers sometimes assign some magical thinking to release tags on GitHub. If we’re told to use `v35` of a particular release, we reference that tag and assume that’s what we’ll be getting. Under normal circumstances, that is a reasonable assumption but GitHub tags are just convenient strings pointing to a particular commit [](https://read.readwise.io/read/01jpwf6x9j3pvyfdv9zedr6ysx)

@@ -1,9 +1,12 @@
 ---
 author: OpenSSF
-aliases: [Understanding and Applying the OpenSSF Criticality Score in Open Source Projects, OpenSSF]
-tags: [readwise/articles]
+aliases:
+  - Understanding and Applying the OpenSSF Criticality Score in Open Source Projects
+  - OpenSSF
+tags:
+  - readwise/articles
 url: https://openssf.org/blog/2023/07/28/understanding-and-applying-the-openssf-criticality-score-in-open-source-projects/
-date: 2024-12-19
+created: 2024-12-19
 ---
 # Understanding and Applying the OpenSSF Criticality Score in Open Source Projects
 

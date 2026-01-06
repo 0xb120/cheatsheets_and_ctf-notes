@@ -1,9 +1,13 @@
 ---
 author: Antoine Gicquel
-aliases: [WordPress for Security Audit]
-tags: [readwise/articles, wordpress, wordpress/plugins]
+aliases:
+  - WordPress for Security Audit
+tags:
+  - readwise/articles
+  - wordpress
+  - wordpress/plugins
 url: https://www.synacktiv.com/en/publications/wordpress-for-security-audit?__readwiseLocation
-date: 2025-01-23
+created: 2025-01-23
 ---
 # WordPress for Security Audit
 

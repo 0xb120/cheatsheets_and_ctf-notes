@@ -6,7 +6,7 @@ tags:
   - readwise/articles
   - lockpicking
 url: https://www.youtube.com/watch?v=oyzt0r79kns&list=WL&index=6?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Intro to Lockpicking!
 

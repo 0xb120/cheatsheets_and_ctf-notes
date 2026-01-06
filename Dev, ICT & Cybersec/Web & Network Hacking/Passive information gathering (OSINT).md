@@ -131,6 +131,7 @@ Framework for github:
 - [Sector035](https://sector035.nl/links) (blog)
 - [PIM Eyes](https://pimeyes.com/en) (face recognition)
 - [Scopify](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-04-28.md#^95044c) - a Python command-line tool designed to quickly gather and analyze infrastructure information for a target company
+- [API-s-for-OSINT](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-05-12.md)
 
 
 

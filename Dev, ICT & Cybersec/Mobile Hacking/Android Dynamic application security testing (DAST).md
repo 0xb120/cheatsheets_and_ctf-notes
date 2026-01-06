@@ -86,7 +86,7 @@ host: pallergabor.uw.hu
     - [Xposed!](../Tools/Xposed!.md) framework with [TrustMeAlready](../Tools/Xposed!.md#TrustMeAlready) or [SSLUnpinning - Certificate Pinning Bypass](../Tools/Xposed!.md#SSLUnpinning%20-%20Certificate%20Pinning%20Bypass) (root required)
     - [Frida](../Tools/Frida.md)
     - [objection](../Tools/objection.md) (non-root, see the [following video](https://www.youtube.com/watch?v=qaJBWcueCIA&ab_channel=CorSecure))
-    - Flutter-specific: https://blog.mindedsecurity.com/2024/05/bypassing-certificate-pinning-on.html
+    - [b4dsheep - Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide.](../../Readwise/Articles/b4dsheep%20-%20Bypassing%20Certificate%20Pinning%20on%20Flutter-Based%20Android%20Apps.%20A%20New%20Guide..md)
 - **Improper Cert Management**: the server certificate might be stored in unsafe locations, (Documents directory, application files) therefore replaced with our own proxy certificate
 - **VPN** + **DNS Spoofing** using [dnsmasq](https://thekelleys.org.uk/dnsmasq/doc.html) and **Transparent proxy** 
 	```txt title:"dnsmaq configuration"
@@ -167,3 +167,4 @@ Examples:
 - [Magisk](https://github.com/topjohnwu/Magisk) (on [Genymotion](https://support.genymotion.com/hc/en-us/articles/360011385178-How-to-install-Xposed-or-Magisk-Edxposed-with-Genymotion-Device-image-PaaS-))
 - [WebView Remote Debugger](chrome://inspect/#devices)
 - [Koodous](https://koodous.com/)
+- [Medusa](../../Readwise/Articles/Intigriti%20-%20Intigriti%20Bug%20Bytes%20224%20-%20May%202025%20🚀.md#^7fc22e)

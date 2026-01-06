@@ -7,7 +7,7 @@ tags:
   - readwise/articles
   - dotnet
 url: https://labs.watchtowr.com/by-executive-order-we-are-banning-blacklists-domain-level-rce-in-veeam-backup-replication-cve-2025-23120/?__readwiseLocation=
-date: 2025-04-28
+created: 2025-04-28
 ---
 # By Executive Order, We Are Banning Blacklists - Domain-Level RCE in Veeam Backup & Replication
 

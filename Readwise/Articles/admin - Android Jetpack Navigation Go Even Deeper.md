@@ -1,9 +1,13 @@
 ---
-author: "admin"
-aliases: ["Android Jetpack Navigation: Go Even Deeper"]
-tags: [RW_inbox, readwise/articles, Android]
+author: admin
+aliases:
+  - "Android Jetpack Navigation: Go Even Deeper"
+tags:
+  - RW_inbox
+  - readwise/articles
+  - Android
 url: https://swarm.ptsecurity.com/android-jetpack-navigation-go-even-deeper/
-date: 2024-11-22
+created: 2024-11-22
 ---
 # Android Jetpack Navigation: Go Even Deeper
 

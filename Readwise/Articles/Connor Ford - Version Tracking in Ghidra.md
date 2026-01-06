@@ -1,9 +1,12 @@
 ---
 author: Connor Ford
-aliases: [Version Tracking in Ghidra]
-tags: [readwise/articles, Tools]
+aliases:
+  - Version Tracking in Ghidra
+tags:
+  - readwise/articles
+  - Tools
 url: https://labs.nettitude.com/blog/version-tracking-in-ghidra/
-date: 2024-08-21
+created: 2024-08-21
 ---
 # Version Tracking in Ghidra
 

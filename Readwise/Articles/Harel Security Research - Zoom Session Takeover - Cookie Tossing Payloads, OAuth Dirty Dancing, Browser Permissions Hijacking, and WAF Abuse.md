@@ -1,9 +1,14 @@
 ---
 author: Harel Security Research
-aliases: [Zoom Session Takeover - Cookie Tossing Payloads, OAuth Dirty Dancing, Browser Permissions Hijacking, and WAF Abuse]
-tags: [readwise/articles]
+aliases:
+  - Zoom Session Takeover - Cookie Tossing Payloads
+  - OAuth Dirty Dancing
+  - Browser Permissions Hijacking
+  - and WAF Abuse
+tags:
+  - readwise/articles
 url: https://nokline.github.io/bugbounty/2024/06/07/Zoom-ATO.html
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Zoom Session Takeover - Cookie Tossing Payloads, OAuth Dirty Dancing, Browser Permissions Hijacking, and WAF Abuse
 

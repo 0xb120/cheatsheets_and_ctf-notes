@@ -6,7 +6,7 @@ tags:
   - readwise/articles
   - vulnerability-research/todo
 url: https://github.com/suitenumerique/docs?__readwiseLocation=
-date: 2025-04-01
+created: 2025-04-01
 ---
 # Docs – Open Source Alternative to Notion or Outline
 

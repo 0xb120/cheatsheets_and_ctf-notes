@@ -1,9 +1,11 @@
 ---
 author: TreyCraf7
-aliases: ["Penetration Testing Reports: A Powerful Template and Guide"]
-tags: [readwise/articles]
+aliases:
+  - "Penetration Testing Reports: A Powerful Template and Guide"
+tags:
+  - readwise/articles
 url: https://www.hackthebox.com/blog/penetration-testing-reports-template-and-guide
-date: 2024-09-11
+created: 2024-09-11
 ---
 # Penetration Testing Reports: A Powerful Template and Guide
 

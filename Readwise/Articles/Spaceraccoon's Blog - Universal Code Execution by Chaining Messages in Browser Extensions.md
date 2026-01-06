@@ -1,9 +1,11 @@
 ---
-author: "Spaceraccoon's Blog"
-aliases: [Universal Code Execution by Chaining Messages in Browser Extensions]
-tags: [readwise/articles]
+author: Spaceraccoon's Blog
+aliases:
+  - Universal Code Execution by Chaining Messages in Browser Extensions
+tags:
+  - readwise/articles
 url: https://spaceraccoon.dev/universal-code-execution-browser-extensions/
-date: 2024-08-21
+created: 2024-08-21
 ---
 # Universal Code Execution by Chaining Messages in Browser Extensions
 

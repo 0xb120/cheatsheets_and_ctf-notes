@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://medium.com/@adan.alvarez/github-actions-and-the-pinning-problem-what-100-security-projects-reveal-54a3a9dcc902?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # GitHub Actions and the Pinning Problem: What 100 Security Projects Reveal
 

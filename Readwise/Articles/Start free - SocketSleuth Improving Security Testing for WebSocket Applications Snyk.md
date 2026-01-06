@@ -1,9 +1,11 @@
 ---
 author: Start free
-aliases: [SocketSleuth Improving Security Testing for WebSocket Applications Snyk]
-tags: [readwise/articles]
+aliases:
+  - SocketSleuth Improving Security Testing for WebSocket Applications Snyk
+tags:
+  - readwise/articles
 url: https://snyk.io/blog/socketsleuth-improving-security-testing-for-websocket-applications/
-date: 2023-10-10
+created: 2023-10-10
 ---
 # SocketSleuth: Improving Security Testing for WebSocket Applications | Snyk
 

@@ -1,9 +1,12 @@
 ---
 author: Benjamin Harris
-aliases: [8 Million Requests Later, We Made the SolarWinds Supply Chain Attack Look Amateur]
-tags: [readwise/articles]
+aliases:
+  - 8 Million Requests Later
+  - We Made the SolarWinds Supply Chain Attack Look Amateur
+tags:
+  - readwise/articles
 url: https://labs.watchtowr.com/8-million-requests-later-we-made-the-solarwinds-supply-chain-attack-look-amateur/
-date: 2025-02-27
+created: 2025-02-27
 ---
 # 8 Million Requests Later, We Made the SolarWinds Supply Chain Attack Look Amateur
 

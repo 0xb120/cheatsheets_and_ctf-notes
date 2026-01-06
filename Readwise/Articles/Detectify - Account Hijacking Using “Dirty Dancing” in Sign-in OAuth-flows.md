@@ -1,9 +1,11 @@
 ---
 author: Detectify
-aliases: [Account Hijacking Using “Dirty Dancing” in Sign-in OAuth-flows]
-tags: [readwise/articles]
+aliases:
+  - Account Hijacking Using “Dirty Dancing” in Sign-in OAuth-flows
+tags:
+  - readwise/articles
 url: https://labs.detectify.com/writeups/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/
-date: 2024-09-12
+created: 2024-09-12
 ---
 # Account Hijacking Using “Dirty Dancing” in Sign-in OAuth-flows
 

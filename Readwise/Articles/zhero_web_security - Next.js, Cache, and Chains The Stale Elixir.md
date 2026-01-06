@@ -8,7 +8,7 @@ tags:
   - readwise/articles
   - nextjs
 url: https://zhero-web-sec.github.io/research-and-things/nextjs-cache-and-chains-the-stale-elixir?__readwiseLocation=
-date: 2025-03-05
+created: 2025-03-05
 ---
 # Next.js, Cache, and Chains: The Stale Elixir
 

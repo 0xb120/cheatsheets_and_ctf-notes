@@ -6,7 +6,7 @@ tags:
   - readwise/articles
   - vulnerability-research/todo
 url: https://www.reddit.com/r/Huawei/comments/1awnosg/can_i_decrypt_my_safe_files_from_my_pc/?rdt=55695?__readwiseLocation=
-date: 2025-04-28
+created: 2025-04-28
 ---
 # Can I decrypt my Safe files from my PC
 

@@ -7,7 +7,7 @@ tags:
   - readwise/articles
   - Flutter
 url: https://www.guardsquare.com/blog/obstacles-in-dart-decompilation-and-the-impact-on-flutter-app-security?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Dart Decompilation and the Impact on Flutter™ App Security
 

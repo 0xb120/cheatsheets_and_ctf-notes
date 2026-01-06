@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: ?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # New Method to Leverage Unsafe Reflection and Deserialisation to RCE on Rails
 

@@ -10,11 +10,13 @@ views:
     order:
       - file.name
       - Platform
+      - Category
       - Difficulty
       - status
-      - Category
     sort:
       - property: file.name
         direction: ASC
     indentProperties: false
     separator: "| "
+  - type: list
+    name: Web

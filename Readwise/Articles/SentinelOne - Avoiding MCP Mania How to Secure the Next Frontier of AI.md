@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://www.sentinelone.com/blog/avoiding-mcp-mania-how-to-secure-the-next-frontier-of-ai/?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Avoiding MCP Mania | How to Secure the Next Frontier of AI
 

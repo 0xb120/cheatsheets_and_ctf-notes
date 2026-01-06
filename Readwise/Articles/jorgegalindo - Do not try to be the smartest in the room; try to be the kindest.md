@@ -1,9 +1,11 @@
 ---
 author: jorgegalindo
-aliases: [Do not try to be the smartest in the room; try to be the kindest]
-tags: [readwise/articles]
+aliases:
+  - Do not try to be the smartest in the room; try to be the kindest
+tags:
+  - readwise/articles
 url: https://www.jorgegalindo.me/en/blog/posts/do-not-be-the-smartest-in-the-room-try-to-be-the-kindest
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Do not try to be the smartest in the room; try to be the kindest
 

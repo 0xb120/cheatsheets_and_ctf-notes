@@ -1,9 +1,11 @@
 ---
 author: SecureLayer7 Lab
-aliases: [The 2024 Guide to Android WebView Vulnerabilities]
-tags: [readwise/articles]
+aliases:
+  - The 2024 Guide to Android WebView Vulnerabilities
+tags:
+  - readwise/articles
 url: https://blog.securelayer7.net/android-webview-vulnerabilities/
-date: 2024-08-20
+created: 2024-08-20
 ---
 # The 2024 Guide to Android WebView Vulnerabilities
 

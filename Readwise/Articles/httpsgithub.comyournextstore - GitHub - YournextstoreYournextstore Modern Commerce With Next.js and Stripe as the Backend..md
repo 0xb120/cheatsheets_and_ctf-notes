@@ -1,9 +1,12 @@
 ---
 author: https://github.com/yournextstore/
-aliases: ["GitHub - Yournextstore/Yournextstore: Modern Commerce With Next.js and Stripe as the Backend."]
-tags: [readwise/articles, vulnerability-research/todo]
+aliases:
+  - "GitHub - Yournextstore/Yournextstore: Modern Commerce With Next.js and Stripe as the Backend."
+tags:
+  - readwise/articles
+  - vulnerability-research/todo
 url: https://github.com/yournextstore/yournextstore
-date: 2024-10-01
+created: 2024-10-01
 ---
 # GitHub - Yournextstore/Yournextstore: Modern Commerce With Next.js and Stripe as the Backend.
 

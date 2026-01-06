@@ -1,9 +1,12 @@
 ---
-author: "Doyensec's Blog"
-aliases: ["Common OAuth Vulnerabilities"]
-tags: [RW_inbox, readwise/articles]
+author: Doyensec's Blog
+aliases:
+  - Common OAuth Vulnerabilities
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://blog.doyensec.com/2025/01/30/oauth-common-vulnerabilities.html
-date: 2025-02-28
+created: 2025-02-28
 ---
 # Common OAuth Vulnerabilities
 

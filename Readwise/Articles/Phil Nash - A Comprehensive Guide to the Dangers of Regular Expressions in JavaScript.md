@@ -1,9 +1,11 @@
 ---
 author: Phil Nash
-aliases: [A Comprehensive Guide to the Dangers of Regular Expressions in JavaScript]
-tags: [readwise/articles]
+aliases:
+  - A Comprehensive Guide to the Dangers of Regular Expressions in JavaScript
+tags:
+  - readwise/articles
 url: https://www.sonarsource.com/blog/vulnerable-regular-expressions-javascript
-date: 2024-08-20
+created: 2024-08-20
 ---
 # A Comprehensive Guide to the Dangers of Regular Expressions in JavaScript
 

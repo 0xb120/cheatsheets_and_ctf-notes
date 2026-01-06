@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: ?__readwiseLocation=
-date: 2025-04-22
+created: 2025-04-22
 ---
 # CodeQLEAKED – Public Secrets Exposure Leads to Supply Chain Attack on GitHub CodeQL
 

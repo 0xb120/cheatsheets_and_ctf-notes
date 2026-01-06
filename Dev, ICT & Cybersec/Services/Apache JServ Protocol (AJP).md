@@ -2,6 +2,8 @@
 Ports:
   - "8009"
 Description: According to Apache, AJP (or JK) is a wire protocol. It is an optimized version of the HTTP protocol to allow a standalone web server such as Apache to talk to Tomcat. Historically, Apache has been much faster than Tomcat at serving static content. The idea is to let Apache serve the static content when possible but proxy the request to Tomcat for Tomcat-related content.
+aliases:
+  - AJP
 ---
 
 >[!info]

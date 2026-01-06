@@ -7,7 +7,7 @@ tags:
   - readwise/articles
   - Flutter
 url: https://www.guardsquare.com/blog/how-classical-attacks-apply-to-flutter-apps?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # How Classical Attacks Apply to Frida Flutter™
 

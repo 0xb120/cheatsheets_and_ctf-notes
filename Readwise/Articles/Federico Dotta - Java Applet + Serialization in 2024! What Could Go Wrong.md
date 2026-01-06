@@ -1,13 +1,108 @@
 ---
-author: "Federico Dotta"
-alias: ["Java Applet + Serialization in 2024! What Could Go Wrong?"]
-tags: [RW_inbox, readwise/articles]
+author: Federico Dotta
+aliases:
+  - Java Applet + Serialization in 2024! What Could Go Wrong?
+  - Pentesting a Java Applet
+tags:
+  - readwise/articles
 url: https://security.humanativaspa.it/java-applet-serialization-in-2024-what-could-go-wrong/
-date: 2024-08-21
+created: 2024-08-21
 ---
 # Java Applet + Serialization in 2024! What Could Go Wrong?
 
 ![rw-book-cover](https://security.humanativaspa.it/favicon.ico)
+
+Running and intercepting traffic from legacy [Java Applet](../../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/Java.md#Java%20Applet) in a modern environment is challenging due to browser deprecation. Below is a methodology to run applets using **OpenJDK 8** and intercept their traffic via **Burp Suite**.
+
+## 1. The Runtime Environment
+
+Instead of relying on unstable legacy browsers inside a Virtual Machine, use the standalone `appletviewer` binary included with OpenJDK 8. This version minimizes compatibility issues with older Java compilers.
+
+### **Bypassing the Security Manager**
+
+To ensure the applet runs without restriction, create a permissive security policy file (e.g., `java.policy`) to disable the default Security Manager constraints:
+
+```java
+grant {
+    permission java.security.AllPermission;
+};
+```
+
+### **Running the Applet**
+
+Execute the applet by pointing `appletviewer` to the target page URL. Pass the security policy and manager flags as JVM arguments:
+
+```bash
+$ /usr/lib/jvm/java-8-openjdk/bin/appletviewer \
+  -J-Djava.security.manager \
+  -J-Djava.security.policy=java.policy \
+  https://<TARGET>/<PAGE>.htm
+```
+
+> **Debug Tip:** If the connection fails or hangs, add the SSL debug flag to view the handshake process in detail: `-J-Djavax.net.debug=all`
+
+---
+
+## 2. Traffic Interception (Invisible Proxy Setup)
+
+Since applets often ignore system proxy settings, you must configure [Burpsuite](../../Dev,%20ICT%20&%20Cybersec/Tools/Burpsuite.md) as an **Invisible Proxy**.
+
+### **Step A: DNS Spoofing**
+
+Force the operating system to route the target domain's traffic to your localhost. Edit your hosts file (`/etc/hosts` on Linux or `C:\Windows\System32\drivers\etc\hosts` on Windows):
+
+```txt
+127.0.0.1 www.target.com
+```
+
+### **Step B: Burp Proxy Configuration**
+
+1. **Listener:** Set up a Burp Proxy listener on port `443` (requires root/admin privileges).
+    
+2. **Mode:** Enable **Support invisible proxying**.
+    
+3. **SNI Routing (Crucial):**
+    
+    - _If the target uses Server Name Indication (SNI):_ Configure the "Redirect to host" field with the **hostname**, not the IP.
+    - _If SNI is disabled:_ You can simply redirect to the target IP address.
+        
+
+### **Step C: Breaking the DNS Loop**
+
+If you redirect to the _hostname_ (for SNI) while having `127.0.0.1` in your `/etc/hosts` file, Burp will resolve the domain back to itself, creating an infinite loop.
+
+- **Fix:** In Burp Suite (**Network Settings > Hostname Resolution**), manually map `www.target.com` to its **real public IP address**.
+    
+
+---
+
+## 3. Establishing Trust (SSL/TLS)
+
+The applet will reject Burp's self-signed certificate. You must import Burp's CA into the specific Java Runtime environment used by `appletviewer`.
+
+1. **Export:** Save the Burp CA certificate in **DER** format, then convert it to **PEM** using OpenSSL.
+    
+2. **Import:** Use `keytool` to add it to the JVM's trusted store:
+    
+
+```bash
+$ /usr/lib/jvm/java-8-openjdk/bin/keytool \
+  -import -alias burp \
+  -keystore /usr/lib/jvm/java-8-openjdk/jre/lib/security/cacerts \
+  -file <PATH>/certCABurp.pem
+```
+
+> **Note:** Ensure you also enable **all legacy TLS protocols and ciphers** in Burp's TLS settings, as the applet likely relies on outdated encryption standards.
+
+---
+
+## 4. Critical Configuration: HTTP Compression
+
+**⚠️ Important:** Unlike modern browsers, legacy applets (and thick clients) often crash if the HTTP response format differs even slightly from what they expect.
+
+- **The Issue:** Burp Suite automatically decompresses (unzips) HTTP responses by default to make them readable for the tester.
+    
+- **The Fix:** Go to **Proxy > Miscellaneous** and **disable** automatic decompression. The applet likely requires the raw, compressed stream to function correctly.
 
 ## Highlights
 

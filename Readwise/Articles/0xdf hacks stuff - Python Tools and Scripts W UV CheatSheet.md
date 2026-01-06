@@ -7,7 +7,7 @@ tags:
   - readwise/articles
   - tools
 url: https://0xdf.gitlab.io/cheatsheets/uv?__readwiseLocation=
-date: 2025-05-08
+created: 2025-05-08
 ---
 # Python Tools and Scripts W/ UV CheatSheet
 

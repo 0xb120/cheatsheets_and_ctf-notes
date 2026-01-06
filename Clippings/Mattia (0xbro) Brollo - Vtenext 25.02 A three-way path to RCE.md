@@ -1,12 +1,13 @@
 ---
 title: "Vtenext 25.02: A three-way path to RCE"
-source: "https://blog.sicuranext.com/vtenext-25-02-a-three-way-path-to-rce/"
+source: https://blog.sicuranext.com/vtenext-25-02-a-three-way-path-to-rce/
 author:
-  - "Mattia (0xbro) Brollo"
+  - Mattia (0xbro) Brollo
 published: 2025-08-12
 created: 2025-09-04
-description: "Multiple vulnerabilities in vtenext 25.02 and prior versions allow unauthenticated attackers to bypass authentication through three separate vectors, ultimately leading to remote code execution on the underlying server."
-tags: ["clippings/articles", "_inbox"]
+description: Multiple vulnerabilities in vtenext 25.02 and prior versions allow unauthenticated attackers to bypass authentication through three separate vectors, ultimately leading to remote code execution on the underlying server.
+tags:
+  - clippings/articles
 ---
 # Vtenext 25.02: A three-way path to RCE
 

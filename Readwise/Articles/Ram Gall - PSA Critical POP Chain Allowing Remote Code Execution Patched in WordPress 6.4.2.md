@@ -1,9 +1,13 @@
 ---
 author: Ram Gall
-aliases: ["PSA: Critical POP Chain Allowing Remote Code Execution Patched in WordPress 6.4.2", POP Chain in WordPress 6.4.2]
-tags: [readwise/articles, wordpress]
+aliases:
+  - "PSA: Critical POP Chain Allowing Remote Code Execution Patched in WordPress 6.4.2"
+  - POP Chain in WordPress 6.4.2
+tags:
+  - readwise/articles
+  - wordpress
 url: https://www.wordfence.com/blog/2023/12/psa-critical-pop-chain-allowing-remote-code-execution-patched-in-wordpress-6-4-2/
-date: 2024-08-20
+created: 2024-08-20
 ---
 # PSA: Critical POP Chain Allowing Remote Code Execution Patched in WordPress 6.4.2
 

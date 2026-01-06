@@ -11,7 +11,8 @@ source: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-10-20.htm
 
 created: 1761288574585
 type: article
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "tech-newsletters" 

@@ -1,9 +1,11 @@
 ---
 author: blig.one
-aliases: [Flatt Security XSS Challenge - Writeup]
-tags: [readwise/articles]
+aliases:
+  - Flatt Security XSS Challenge - Writeup
+tags:
+  - readwise/articles
 url: https://blig.one/2024/11/29/flatt-xss-writeup.html?__readwiseLocation=
-date: 2025-02-04
+created: 2025-02-04
 ---
 # Flatt Security XSS Challenge - Writeup
 

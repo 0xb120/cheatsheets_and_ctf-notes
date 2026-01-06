@@ -12,9 +12,10 @@ description: |-
 
 source: https://github.com/danieldev23/trafexia
 
-created: 1767365380938
-type: link
-tags: ["_index"]
+created: 2026-01-02
+sync-date: 1767637346604
+tags:
+  - "_index"
 
 ---
 # danieldev23/trafexia: Trafexia - Mobile Traffic Interceptor

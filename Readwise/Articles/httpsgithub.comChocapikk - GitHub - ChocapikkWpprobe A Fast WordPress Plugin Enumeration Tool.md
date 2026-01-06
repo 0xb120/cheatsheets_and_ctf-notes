@@ -1,9 +1,12 @@
 ---
 author: https://github.com/Chocapikk/
-aliases: ["GitHub - Chocapikk/Wpprobe: A Fast WordPress Plugin Enumeration Tool", WPProbe]
-tags: [readwise/articles]
+aliases:
+  - "GitHub - Chocapikk/Wpprobe: A Fast WordPress Plugin Enumeration Tool"
+  - WPProbe
+tags:
+  - readwise/articles
 url: https://github.com/Chocapikk/wpprobe
-date: 2025-02-26
+created: 2025-02-26
 ---
 # GitHub - Chocapikk/Wpprobe: A Fast WordPress Plugin Enumeration Tool
 

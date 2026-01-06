@@ -7,7 +7,7 @@ tags:
   - android
   - React
 url: https://www.assetnote.io/resources/research/expanding-the-attack-surface-react-native-android-applications?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Expanding the Attack Surface: React Native Android Applications
 
@@ -45,7 +45,7 @@ You can also use [webpacl-exploder](https://spaceraccoon.github.io/webpack-explo
 
 ### The search for sensitive credentials and endpoints
 
-A pattern that is popular with React Native applications, is the use of a third party database such as Firebase. [](https://read.readwise.io/read/01jsm188g4wwjrrqkz3nd7b20w)
+A pattern that is popular with React Native applications, is the use of a third party database such as [Firebase](../../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/Firebase.md). [](https://read.readwise.io/read/01jsm188g4wwjrrqkz3nd7b20w)
 
 The following strings can be grepped for in order to extract the Firebase API key from the `index.android.bundle`:  [](https://read.readwise.io/read/01jsm195dy7y22kyyeey4tvct8)
 ```

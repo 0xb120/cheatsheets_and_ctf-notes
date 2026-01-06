@@ -17,7 +17,8 @@ source: https://iamvishnu.com/posts/utf8-is-brilliant-design
 
 created: 1757868270349
 type: link
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "tech-blog" 

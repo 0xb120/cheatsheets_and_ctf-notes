@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://neodyme.io/en/blog/html_renderer_to_rce/#tldr?__readwiseLocation=
-date: 2025-05-08
+created: 2025-05-08
 ---
 # HTML to PDF Renderer: A Tale of Local File Access and Shellcode Execution
 

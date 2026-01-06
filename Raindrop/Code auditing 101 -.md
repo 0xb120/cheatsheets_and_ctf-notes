@@ -35,7 +35,8 @@ source: https://blog.rodolpheg.xyz/posts/code-auditing--101/
 
 created: 1758299696280
 type: article
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "tech-blog" 

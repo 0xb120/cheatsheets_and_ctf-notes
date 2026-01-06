@@ -1,9 +1,11 @@
 ---
 author: Mand Consulting Group
-aliases: [Plundering Postman With Porch Pirate]
-tags: [readwise/articles]
+aliases:
+  - Plundering Postman With Porch Pirate
+tags:
+  - readwise/articles
 url: https://mandconsulting.ca/plundering-postman-with-porch-pirate-osint/
-date: 2023-12-06
+created: 2023-12-06
 ---
 # Plundering Postman With Porch Pirate
 

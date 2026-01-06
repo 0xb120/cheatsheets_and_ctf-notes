@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://www.prizmlabs.io/post/remote-rootkits-uncovering-a-0-click-rce-in-the-supernote-nomad-e-ink-tablet?ref=blog.exploits.club?__readwiseLocation=
-date: 2025-04-28
+created: 2025-04-28
 ---
 # Uncovering a 0-Click RCE in the SuperNote Nomad E-Ink Tablet
 

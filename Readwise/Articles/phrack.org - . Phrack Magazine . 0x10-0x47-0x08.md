@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://phrack.org/issues/71/8#article?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # .:: Phrack Magazine ::.
 

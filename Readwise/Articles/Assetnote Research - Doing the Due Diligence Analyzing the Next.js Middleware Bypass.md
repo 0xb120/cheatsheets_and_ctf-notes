@@ -6,7 +6,7 @@ tags:
   - readwise/articles
   - nextjs
 url: https://www.assetnote.io/resources/research/doing-the-due-diligence-analyzing-the-next-js-middleware-bypass-cve-2025-29927?__readwiseLocation=
-date: 2025-04-01
+created: 2025-04-01
 ---
 # Doing the Due Diligence: Analyzing the Next.js Middleware Bypass
 

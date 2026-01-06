@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://trustedsec.com/blog/mcp-an-introduction-to-agentic-op-support?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # McP: An Introduction to Agentic Op Support
 

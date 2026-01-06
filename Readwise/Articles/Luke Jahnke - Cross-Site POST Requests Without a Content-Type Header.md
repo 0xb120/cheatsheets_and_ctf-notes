@@ -1,9 +1,11 @@
 ---
 author: Luke Jahnke
-aliases: [Cross-Site POST Requests Without a Content-Type Header]
-tags: [readwise/articles]
+aliases:
+  - Cross-Site POST Requests Without a Content-Type Header
+tags:
+  - readwise/articles
 url: https://nastystereo.com/security/cross-site-post-without-content-type.html
-date: 2025-02-06
+created: 2025-02-06
 ---
 # Cross-Site POST Requests Without a Content-Type Header
 

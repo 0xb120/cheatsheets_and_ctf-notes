@@ -14,7 +14,8 @@ source: https://github.com/usestrix/strix
 
 created: 1757693875642
 type: link
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "Tools" 

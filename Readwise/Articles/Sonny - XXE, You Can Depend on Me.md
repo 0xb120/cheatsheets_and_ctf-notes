@@ -1,9 +1,13 @@
 ---
 author: Sonny
-aliases: [XXE, You Can Depend on Me]
-tags: [readwise/articles, OpenCMS]
+aliases:
+  - XXE
+  - You Can Depend on Me
+tags:
+  - readwise/articles
+  - OpenCMS
 url: https://labs.watchtowr.com/xxe-you-can-depend-on-me-opencms/?__readwiseLocation=
-date: 2024-08-20
+created: 2024-08-20
 ---
 # XXE, You Can Depend on Me
 

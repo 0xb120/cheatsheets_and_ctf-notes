@@ -6,7 +6,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://labs.watchtowr.com/fire-in-the-hole-were-breaching-the-vault-commvault-remote-code-execution-cve-2025-34028/?__readwiseLocation=
-date: 2025-04-26
+created: 2025-04-26
 ---
 # Fire in the Hole, We’re Breaching the Vault - Commvault Remote Code Execution
 

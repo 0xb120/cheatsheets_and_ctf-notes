@@ -131,6 +131,11 @@ If you find a [Path Traversal](../Web%20&%20Network%20Hacking/Path%20Traversal.m
 - [jadx](../Tools/jadx.md)
 - [Bytecode Viewer](../Tools/Bytecode%20Viewer.md)
 
+## Java Applet
+- [Federico Dotta - Java Applet + Serialization in 2024! What Could Go Wrong](../../Readwise/Articles/Federico%20Dotta%20-%20Java%20Applet%20+%20Serialization%20in%202024!%20What%20Could%20Go%20Wrong.md)
+
+
+
 # Java tricks
 
 - [Hiding Payloads in Java Source Code Strings](../../Readwise/Articles/PortSwigger%20Research%20-%20Hiding%20Payloads%20in%20Java%20Source%20Code%20Strings.md), PortSwigger Research

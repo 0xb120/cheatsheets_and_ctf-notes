@@ -19,7 +19,8 @@ source: https://github.com/irsdl/ysonet
 
 created: 1753572516000
 type: link
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "Tools"

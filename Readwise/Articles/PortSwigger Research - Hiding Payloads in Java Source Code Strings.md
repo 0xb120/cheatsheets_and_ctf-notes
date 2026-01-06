@@ -1,9 +1,11 @@
 ---
 author: PortSwigger Research
-aliases: [Hiding Payloads in Java Source Code Strings]
-tags: [readwise/articles]
+aliases:
+  - Hiding Payloads in Java Source Code Strings
+tags:
+  - readwise/articles
 url: https://portswigger.net/research/hiding-payloads-in-java-source-code-strings
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Hiding Payloads in Java Source Code Strings
 

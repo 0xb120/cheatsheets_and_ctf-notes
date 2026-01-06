@@ -1,21 +1,19 @@
 {
   "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md": {
-    "scroll": 0,
+    "scroll": 91.35319979330765,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 113,
+        "ch": 53
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 113,
+        "ch": 53
       }
     },
     "expandedKeys": [
       "item-1-0",
-      "item-2-3",
-      "item-2-5",
-      "item-1-7"
+      "item-2-5"
     ]
   },
   "Clippings/Brandon Stewart - How GitHub uses CodeQL to secure GitHub.md": {
@@ -66,7 +64,7 @@
     "expandedKeys": []
   },
   "Clippings/Mattia (0xbro) Brollo - Vtenext 25.02 A three-way path to RCE.md": {
-    "scroll": 247.81528662420382,
+    "scroll": 0,
     "cursor": {
       "from": {
         "line": 0,
@@ -137,7 +135,7 @@
     ]
   },
   "Personal/Book list/_book-dashboard_wrapper.md": {
-    "scroll": 16.01721664275466,
+    "scroll": 0,
     "cursor": {
       "from": {
         "line": 0,
@@ -207,7 +205,7 @@
     "expandedKeys": []
   },
   "Raindrop/Code auditing 101 -.md": {
-    "scroll": 112.78063725490196,
+    "scroll": 0,
     "cursor": {
       "from": {
         "line": 45,
@@ -221,21 +219,21 @@
     "expandedKeys": []
   },
   "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md": {
-    "scroll": 6.688796680497925,
+    "scroll": 0.33162175823828416,
     "cursor": {
       "from": {
-        "line": 26,
-        "ch": 0
+        "line": 18,
+        "ch": 27
       },
       "to": {
-        "line": 26,
-        "ch": 0
+        "line": 18,
+        "ch": 27
       }
     },
     "expandedKeys": []
   },
   "Raindrop/XBOW - Agentic Pentesting with ZERO False Positives  Aidan John.md": {
-    "scroll": 19.780593458956034,
+    "scroll": 0,
     "cursor": {
       "from": {
         "line": 17,
@@ -263,15 +261,15 @@
     "expandedKeys": []
   },
   "Raindrop/Writing Sync, Popping Cron DEVCORE’s Synology BeeStation RCE & A Novel SQLite Injection RCE Technique (CVE-2024-50629~50631).md": {
-    "scroll": 39.58024691358025,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 58,
-        "ch": 0
+        "line": 20,
+        "ch": 9
       },
       "to": {
-        "line": 58,
-        "ch": 0
+        "line": 20,
+        "ch": 19
       }
     },
     "expandedKeys": []
@@ -291,15 +289,15 @@
     "expandedKeys": []
   },
   "Raindrop/usestrixstrix ✨ Open-source AI hackers for your apps 👨🏻‍💻.md": {
-    "scroll": 0,
+    "scroll": 39.99722633637844,
     "cursor": {
       "from": {
-        "line": 25,
-        "ch": 0
+        "line": 54,
+        "ch": 30
       },
       "to": {
-        "line": 25,
-        "ch": 0
+        "line": 54,
+        "ch": 30
       }
     },
     "expandedKeys": []
@@ -376,14 +374,14 @@
     ]
   },
   "Raindrop/Last Week in Security (LWiS) - 2025-11-03.md": {
-    "scroll": 6.688796680497925,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 14,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 14,
         "ch": 0
       }
     },
@@ -418,7 +416,7 @@
     "expandedKeys": []
   },
   "Clippings/Aleksey Solovev, Nikita Sveshnikov, Vladimir Razov - Blind trust what is hidden behind the process of creating your PDF file.md": {
-    "scroll": 16.9219124780129,
+    "scroll": 0,
     "cursor": {
       "from": {
         "line": 37,
@@ -437,11 +435,11 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 79,
+        "line": 18,
         "ch": 0
       },
       "to": {
-        "line": 79,
+        "line": 18,
         "ch": 0
       }
     },
@@ -531,11 +529,11 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 14,
+        "ch": 26
       },
       "to": {
-        "line": 0,
+        "line": 12,
         "ch": 0
       }
     },
@@ -650,16 +648,17 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 71,
+        "ch": 52
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 71,
+        "ch": 52
       }
     },
     "expandedKeys": [
       "item-1-0",
+      "item-2-2",
       "item-2-1",
       "item-3-2"
     ]
@@ -716,12 +715,12 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 4,
-        "ch": 10
+        "line": 10,
+        "ch": 0
       },
       "to": {
-        "line": 4,
-        "ch": 10
+        "line": 10,
+        "ch": 0
       }
     },
     "expandedKeys": [
@@ -844,7 +843,7 @@
     ]
   },
   "Readwise/Articles/Admin - When WAFs Go Awry Common Detection & Evasion Techniques for Web Application Firewalls.md": {
-    "scroll": 0,
+    "scroll": 29.180591816804846,
     "cursor": {
       "from": {
         "line": 0,
@@ -894,15 +893,15 @@
     ]
   },
   "Readwise/Articles/Blog – Snyk - Reconstructing the TJ Actions Changed Files GitHub Actions Compromise.md": {
-    "scroll": 0,
+    "scroll": 20.677248031374006,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 53,
+        "ch": 73
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 53,
+        "ch": 73
       }
     },
     "expandedKeys": [
@@ -1759,19 +1758,23 @@
     ]
   },
   "Readwise/Articles/PortSwigger Research - Stealing HttpOnly Cookies With the Cookie Sandwich Technique.md": {
-    "scroll": 0,
+    "scroll": 68.23556867417027,
     "cursor": {
       "from": {
-        "line": 5,
-        "ch": 2
+        "line": 87,
+        "ch": 30
       },
       "to": {
-        "line": 5,
-        "ch": 2
+        "line": 87,
+        "ch": 30
       }
     },
     "expandedKeys": [
-      "item-1-0"
+      "item-1-1",
+      "item-2-3",
+      "item-1-0",
+      "item-2-5",
+      "item-2-1"
     ]
   },
   "Readwise/Articles/Veritasium - Exposing The Flaw In Our Phone System.md": {
@@ -1887,7 +1890,7 @@
     ]
   },
   "Readwise/Articles/STAR Labs - (CVE-2024-7008) Calibre Reflected Cross-Site Scripting.md": {
-    "scroll": 0,
+    "scroll": 9.045453851873225,
     "cursor": {
       "from": {
         "line": 7,
@@ -1903,50 +1906,53 @@
     ]
   },
   "Readwise/Articles/admin - Fork Bomb for Flutter.md": {
-    "scroll": 0,
+    "scroll": 6.473084757150698,
     "cursor": {
       "from": {
-        "line": 5,
-        "ch": 2
+        "line": 16,
+        "ch": 4
       },
       "to": {
-        "line": 5,
-        "ch": 2
+        "line": 16,
+        "ch": 4
       }
     },
     "expandedKeys": [
-      "item-1-0"
+      "item-1-0",
+      "item-2-1"
     ]
   },
   "Readwise/Articles/b4dsheep - Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide..md": {
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 5,
-        "ch": 2
+        "line": 13,
+        "ch": 236
       },
       "to": {
-        "line": 5,
-        "ch": 2
+        "line": 13,
+        "ch": 236
       }
     },
     "expandedKeys": [
-      "item-1-0"
+      "item-1-1",
+      "item-1-5"
     ]
   },
   "Readwise/Articles/blackbird-eu - Discovering Hidden Parameters An Advanced Guide.md": {
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 5,
-        "ch": 2
+        "line": 18,
+        "ch": 281
       },
       "to": {
-        "line": 5,
-        "ch": 2
+        "line": 18,
+        "ch": 281
       }
     },
     "expandedKeys": [
+      "item-2-1",
       "item-1-0"
     ]
   },
@@ -1999,21 +2005,18 @@
     ]
   },
   "Readwise/Articles/Charles Fol - Introducing Wrapwrap Using PHP Filters to Wrap a File With a Prefix and Suffix.md": {
-    "scroll": 0,
+    "scroll": 4.90883413350807,
     "cursor": {
       "from": {
-        "line": 5,
-        "ch": 2
+        "line": 16,
+        "ch": 92
       },
       "to": {
-        "line": 5,
-        "ch": 2
+        "line": 16,
+        "ch": 92
       }
     },
-    "expandedKeys": [
-      "item-1-0",
-      "item-2-1"
-    ]
+    "expandedKeys": []
   },
   "Readwise/Articles/cryptax - Reversing an Android Sample Which Uses Flutter.md": {
     "scroll": 0,
@@ -2081,12 +2084,12 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 5,
-        "ch": 2
+        "line": 18,
+        "ch": 1
       },
       "to": {
-        "line": 5,
-        "ch": 2
+        "line": 18,
+        "ch": 16
       }
     },
     "expandedKeys": [
@@ -2097,20 +2100,21 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 5,
-        "ch": 2
+        "line": 31,
+        "ch": 156
       },
       "to": {
-        "line": 5,
-        "ch": 2
+        "line": 31,
+        "ch": 156
       }
     },
     "expandedKeys": [
-      "item-1-0"
+      "item-1-0",
+      "item-1-2"
     ]
   },
   "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-06-09.md": {
-    "scroll": 0,
+    "scroll": 9.053264859622503,
     "cursor": {
       "from": {
         "line": 5,
@@ -2129,16 +2133,18 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 5,
-        "ch": 2
+        "line": 14,
+        "ch": 312
       },
       "to": {
-        "line": 5,
-        "ch": 2
+        "line": 14,
+        "ch": 312
       }
     },
     "expandedKeys": [
-      "item-1-0"
+      "item-1-0",
+      "item-2-1",
+      "item-2-4"
     ]
   },
   "Readwise/Articles/Frycos Security Diary - XXE With Auto-Update in Install4j.md": {
@@ -2282,7 +2288,8 @@
       }
     },
     "expandedKeys": [
-      "item-1-0"
+      "item-1-0",
+      "item-2-3"
     ]
   },
   "Readwise/Articles/Mohamed Sultan - Xintra - .NET Crash Dump Analysis.md": {
@@ -2348,7 +2355,7 @@
     ]
   },
   "Readwise/Articles/PfiatDe - Having Fun With Github.md": {
-    "scroll": 0,
+    "scroll": 45.305267333984375,
     "cursor": {
       "from": {
         "line": 5,
@@ -2963,5 +2970,1902 @@
     "expandedKeys": [
       "item-1-0"
     ]
+  },
+  "Readwise/Articles/Charles Fol - Introducing Lightyear, a New Way to Dump PHP Files.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 22,
+        "ch": 114
+      },
+      "to": {
+        "line": 22,
+        "ch": 114
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Fetch Diversion.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "CTFs/Untitled.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Tweets/@therceman on Twitter - Tweets From Anton.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Tib3rius - My NEW Burp Extension Will Help You Write Reports!.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Stefan Schiller - Who Are You The Importance of Verifying Message Origins.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/Joseph Jude - How to Run Open WebUI Locally on Your Mac A Step-by-Step Guide.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 62,
+        "ch": 4
+      },
+      "to": {
+        "line": 62,
+        "ch": 4
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3"
+    ]
+  },
+  "Personal/Games/Minecraft.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-5"
+    ]
+  },
+  "Personal/Dance/Classic Club Dance.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Personal/Dance/Drill dance.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Personal/Dance/Shuffle Dance.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-5"
+    ]
+  },
+  "Communities/YT Settings and tools.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-2-2",
+      "item-2-6"
+    ]
+  },
+  "Communities/YouTube/_yt-wrapper.md": {
+    "scroll": 11.06650040237992,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Communities/YouTube/2025XXX_WordpressPluginsVulnResearch.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3"
+    ]
+  },
+  "Communities/YouTube/2022002_ReverseAndPatchAnAPK.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-3"
+    ]
+  },
+  "Communities/YouTube/2022003_AndroidAppPinningBypass.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-4"
+    ]
+  },
+  "Communities/YouTube/2022005_InterceptHTTPSonNon-RootedAndroid.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-4"
+    ]
+  },
+  "Communities/YouTube/2022006_EffectiveNotesForOSCP.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Communities/YouTube/2023001_valentine.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-0",
+      "item-2-4"
+    ]
+  },
+  "Communities/YouTube/2023004_OSINT-UMDCTF-2023.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Communities/YouTube/2025XXX_UncoveringVulnerabilitiesPentestingOutdatedWebApp.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3"
+    ]
+  },
+  "Communities/YouTube/2025XXX_charset-confusion.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3"
+    ]
+  },
+  "Communities/YouTube/2022001_BestPlatformsForEthicalHacking.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Communities/YouTube/2022004_ZipSlip.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-4"
+    ]
+  },
+  "Communities/YouTube/2025001_EffectiveNotesForOSCPAndPTs.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Communities/YouTube/2023003_CreateAnAndroidEnv.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-0",
+      "item-2-4"
+    ]
+  },
+  "Communities/YouTube/2023002_Waffle-yOrder.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-0",
+      "item-2-4"
+    ]
+  },
+  "Communities/YouTube/2022007_ElfResources.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-0",
+      "item-2-4"
+    ]
+  },
+  "Communities/YouTube/2025XXX_Defeating-custom-password-reset-tokens.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3"
+    ]
+  },
+  "Dev, ICT & Cybersec/Tools/Burpsuite.md": {
+    "scroll": 243.43303217174173,
+    "cursor": {
+      "from": {
+        "line": 705,
+        "ch": 201
+      },
+      "to": {
+        "line": 705,
+        "ch": 201
+      }
+    },
+    "expandedKeys": [
+      "item-2-21",
+      "item-1-6",
+      "item-2-25"
+    ]
+  },
+  "Readwise/Articles/PortSwigger Research - Bypassing Character Blocklists With Unicode Overflows.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Confusion Attacks.md": {
+    "scroll": 2.5552235330854143,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/Character Encodings 101.md": {
+    "scroll": 85.98524268897805,
+    "cursor": {
+      "from": {
+        "line": 90,
+        "ch": 39
+      },
+      "to": {
+        "line": 90,
+        "ch": 39
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-1-5"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md": {
+    "scroll": 22.94232987935564,
+    "cursor": {
+      "from": {
+        "line": 69,
+        "ch": 204
+      },
+      "to": {
+        "line": 69,
+        "ch": 204
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-10"
+    ]
+  },
+  "Readwise/Articles/sonarsource.com - Encoding Differentials Why Charset Matters.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 11,
+        "ch": 0
+      },
+      "to": {
+        "line": 11,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/Windows Security 101.md": {
+    "scroll": 64.80161646792763,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-4"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/HTML.md": {
+    "scroll": 59.67022288929332,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-1",
+      "item-3-2"
+    ]
+  },
+  "Clippings/DEVCORE - WorstFit Unveiling Hidden Transformers in Windows ANSI.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 30,
+        "ch": 93
+      },
+      "to": {
+        "line": 30,
+        "ch": 93
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-2-1",
+      "item-1-0"
+    ]
+  },
+  "Raindrop/danieldev23trafexia Trafexia - Mobile Traffic Interceptor.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 45,
+        "ch": 15
+      },
+      "to": {
+        "line": 45,
+        "ch": 15
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/LABScon Replay  Is CNVD ≥ CVE A Look at Chinese Vulnerability Discovery and Disclosure.md": {
+    "scroll": 23.43689668129501,
+    "cursor": {
+      "from": {
+        "line": 20,
+        "ch": 0
+      },
+      "to": {
+        "line": 20,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/My Read it later and discoverability systems in 2025  Daniel Prindii.md": {
+    "scroll": 29.11033805471952,
+    "cursor": {
+      "from": {
+        "line": 27,
+        "ch": 0
+      },
+      "to": {
+        "line": 27,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Academics Build AI-Powered Android Vulnerability Discovery and Validation Tool - SecurityWeek.md": {
+    "scroll": 5.487141211403352,
+    "cursor": {
+      "from": {
+        "line": 21,
+        "ch": 2
+      },
+      "to": {
+        "line": 21,
+        "ch": 2
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/AI pentest scoping playbook.md": {
+    "scroll": 0.4468574343811723,
+    "cursor": {
+      "from": {
+        "line": 29,
+        "ch": 2
+      },
+      "to": {
+        "line": 29,
+        "ch": 2
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/aliasroboticscai Cybersecurity AI (CAI), the framework for AI Security.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 48,
+        "ch": 0
+      },
+      "to": {
+        "line": 48,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/anthropicsclaude-code-security-review An AI-powered security review GitHub Action using Claude to analyze code changes for security vulnerabilities.md": {
+    "scroll": 25.394202498407324,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Argusee A Multi-Agent Collaborative Architecture for Automated Vulnerability Discovery.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 36,
+        "ch": 16
+      },
+      "to": {
+        "line": 36,
+        "ch": 16
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Automation Is Redefining Pentest Delivery.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/How to build a coding agent.md": {
+    "scroll": 16.601209056620693,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Frycos Security Diary - Pre-Auth RCE With CodeQL in Under 20 Minutes.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/httpsgithub.comwapiti-scanner - Wapiti-ScannerWapiti Web Vulnerability Scanner Written in Python3.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Noël Maccary - Scalpel A Burp Suite Extension to Edit HTTP Traffic, in Python 3.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Readwise/Articles/SecureLayer7 Lab - The 2024 Guide to Android WebView Vulnerabilities.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Yannick Merckx - Regression Testing The Key to Ensuring Software Quality and Reliability.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/anthropicsclaude-code-security-review An AI-powered security review GitHub Action using Claude to analyze code changes for security vulnerabilities (1).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/anthropicsclaude-code-security-review An AI-powered security review GitHub Action using Claude to analyze code changes for security vulnerabilities (2).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/usestrixstrix ✨ Open-source AI hackers for your apps 👨🏻‍💻 (2).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/UTF-8 is a Brilliant Design — Vishnus Pages.md": {
+    "scroll": 30.818893526613834,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Can AI weaponize new CVEs in under 15 minutes.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Can AI weaponize new CVEs in under 15 minutes (2).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Buttercup is now open-source!.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Buttercup is now open-source! (2).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Enhancing Burp Suite By Leveraging Automation AutoRepeater  YesWeHack Learning Bug Bounty.md": {
+    "scroll": 11.178010901626276,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/From CVE Entries to Verifiable Exploits An Automated Multi-Agent Framework for Reproducing CVEs.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/GitHub - 0rShemeshjadx-magic-strings JADX plugin that extracts method names, class references, and source file paths from string constants found in DEX files and decompiled Android code.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/GitHub - 0x4m4hexstrike-ai HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and securi.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/GitHub - 0xMarciocve Latest CVEs with their Proof of Concept exploits (2).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/GitHub - armmetis Metis is an open-source, AI-driven tool for deep security code review.md": {
+    "scroll": 41.25773050856693,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/GitHub - armmetis Metis is an open-source, AI-driven tool for deep security code review (2).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819) (2).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/File Inclusion (LFI & RFI).md": {
+    "scroll": 388.18869351854175,
+    "cursor": {
+      "from": {
+        "line": 406,
+        "ch": 165
+      },
+      "to": {
+        "line": 406,
+        "ch": 165
+      }
+    },
+    "expandedKeys": [
+      "item-2-1",
+      "item-3-4"
+    ]
+  },
+  "Readwise/Articles/Michael Weber - Refresh Compromising F5 BIG-IP With Request Smuggling  CVE-2023-46747.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 27,
+        "ch": 4
+      },
+      "to": {
+        "line": 27,
+        "ch": 4
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Request Smuggling.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 77,
+        "ch": 267
+      },
+      "to": {
+        "line": 77,
+        "ch": 267
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Services/Apache JServ Protocol (AJP).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 7,
+        "ch": 0
+      },
+      "to": {
+        "line": 7,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/CL.TE smuggling vulnerabilities.md": {
+    "scroll": 31.236841521194677,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/TE.CL smuggling vulnerabilities.md": {
+    "scroll": 51.77668024984638,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP Request Smuggling.md": {
+    "scroll": 68.01723296066811,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-7"
+    ]
+  },
+  "CTFs/Lechic.md": {
+    "scroll": 61.06314098011364,
+    "cursor": {
+      "from": {
+        "line": 259,
+        "ch": 0
+      },
+      "to": {
+        "line": 259,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-1-3"
+    ]
+  },
+  "Dev, ICT & Cybersec/Stego & Forensic/OSINT.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Passive information gathering (OSINT).md": {
+    "scroll": 118.07486326711741,
+    "cursor": {
+      "from": {
+        "line": 133,
+        "ch": 112
+      },
+      "to": {
+        "line": 133,
+        "ch": 112
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Tools/unfurl.md": {
+    "scroll": 20.61311224819215,
+    "cursor": {
+      "from": {
+        "line": 36,
+        "ch": 25
+      },
+      "to": {
+        "line": 36,
+        "ch": 25
+      }
+    },
+    "expandedKeys": [
+      "item-3-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Tools/git.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 81,
+        "ch": 238
+      },
+      "to": {
+        "line": 81,
+        "ch": 238
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/Google Project Zero - Policy and Disclosure 2025 Edition.md": {
+    "scroll": 8.171205631953733,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-3-1"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/Java.md": {
+    "scroll": 122.07839953830492,
+    "cursor": {
+      "from": {
+        "line": 135,
+        "ch": 0
+      },
+      "to": {
+        "line": 135,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-2"
+    ]
+  },
+  "Readwise/Articles/PortSwigger Research - Hiding Payloads in Java Source Code Strings.md": {
+    "scroll": 8.546123178760011,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "VR/Targets/Vulnerability Research Targets.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/kevin-mizu - kevin-mizudomloggerpp A browser extension that allows you to monitor, intercept, and debug JavaScript sinks based on customizable configurations..md": {
+    "scroll": 2.1381577316083407,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/DOM-based vulnerabilities.md": {
+    "scroll": 399.8273881263567,
+    "cursor": {
+      "from": {
+        "line": 406,
+        "ch": 105
+      },
+      "to": {
+        "line": 406,
+        "ch": 105
+      }
+    },
+    "expandedKeys": [
+      "item-1-16"
+    ]
+  },
+  "Readwise/Articles/Intigriti - Intigriti Bug Bytes.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/novasecio - Intigriti Bug Bytes.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/novasecio - Intigriti Bug Bytes 219 - December 2024.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/novasecio - Recon for Bug Bounty 8 Essential Tools for Performing Effective Reconnaissance.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Intigriti - Intigriti Bug Bytes 224 - May 2025 🚀.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 27,
+        "ch": 0
+      },
+      "to": {
+        "line": 27,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Android Application Security.md": {
+    "scroll": 28.461141882355278,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-1"
+    ]
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Android Dynamic application security testing (DAST).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 88,
+        "ch": 227
+      },
+      "to": {
+        "line": 88,
+        "ch": 227
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-1-5",
+      "item-1-9"
+    ]
+  },
+  "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Fuzzing.md": {
+    "scroll": 99.42886691441181,
+    "cursor": {
+      "from": {
+        "line": 107,
+        "ch": 232
+      },
+      "to": {
+        "line": 107,
+        "ch": 232
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Tools/medusa.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/HttpOnly Cookie Attribute.md": {
+    "scroll": 14.512921564938093,
+    "cursor": {
+      "from": {
+        "line": 33,
+        "ch": 84
+      },
+      "to": {
+        "line": 33,
+        "ch": 84
+      }
+    },
+    "expandedKeys": [
+      "item-1-1"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md": {
+    "scroll": 141.8701103197784,
+    "cursor": {
+      "from": {
+        "line": 156,
+        "ch": 219
+      },
+      "to": {
+        "line": 156,
+        "ch": 219
+      }
+    },
+    "expandedKeys": [
+      "item-1-1"
+    ]
+  },
+  "CTFs/Tabby.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Cross-origin resource sharing (CORS).md": {
+    "scroll": 55.70483576218695,
+    "cursor": {
+      "from": {
+        "line": 59,
+        "ch": 575
+      },
+      "to": {
+        "line": 59,
+        "ch": 575
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/Wordpress.md": {
+    "scroll": 9.45445048014323,
+    "cursor": {
+      "from": {
+        "line": 23,
+        "ch": 211
+      },
+      "to": {
+        "line": 23,
+        "ch": 211
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Clippings/blackbird-eu - Hacking misconfigured Firebase targets A complete guide.md": {
+    "scroll": 2.131216145675006,
+    "cursor": {
+      "from": {
+        "line": 11,
+        "ch": 0
+      },
+      "to": {
+        "line": 11,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-6",
+      "item-3-8",
+      "item-2-3",
+      "item-2-1"
+    ]
+  },
+  "Readwise/Articles/assetnote.io - Expanding the Attack Surface React Native Android Applications.md": {
+    "scroll": 41.60634299375308,
+    "cursor": {
+      "from": {
+        "line": 47,
+        "ch": 184
+      },
+      "to": {
+        "line": 47,
+        "ch": 184
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Firebase.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/Firebase.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 241
+      },
+      "to": {
+        "line": 4,
+        "ch": 241
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/NoSQL 101.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 0
+      },
+      "to": {
+        "line": 4,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/GitHub - ImAyrixfallparams Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 18,
+        "ch": 19
+      },
+      "to": {
+        "line": 18,
+        "ch": 29
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md": {
+    "scroll": 76.95242241510813,
+    "cursor": {
+      "from": {
+        "line": 91,
+        "ch": 65
+      },
+      "to": {
+        "line": 91,
+        "ch": 65
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-4",
+      "item-2-5",
+      "item-2-10"
+    ]
+  },
+  "Dev, ICT & Cybersec/Tools/jsluice.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Dictionary Generation.md": {
+    "scroll": 0.3719069032536291,
+    "cursor": {
+      "from": {
+        "line": 24,
+        "ch": 0
+      },
+      "to": {
+        "line": 24,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-1"
+    ]
+  },
+  "Readwise/Articles/blackbird-eu - Creating Custom Wordlists for Bug Bounty Targets A Complete Guide.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 0
+      },
+      "to": {
+        "line": 9,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Readwise/Articles/blackbird-eu - 7 Overlooked Recon Techniques to Find More Vulnerabilities.md": {
+    "scroll": 44.99518722784324,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Tools/sqlmap.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 0
+      },
+      "to": {
+        "line": 4,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md": {
+    "scroll": 93.29185666740014,
+    "cursor": {
+      "from": {
+        "line": 103,
+        "ch": 18
+      },
+      "to": {
+        "line": 103,
+        "ch": 18
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3",
+      "item-2-6",
+      "item-2-13"
+    ]
+  },
+  "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-11-25.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 16,
+        "ch": 31
+      },
+      "to": {
+        "line": 16,
+        "ch": 31
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Penetration Testing and CyberSecurity Solution – SecureLayer7 - A Deep Dive Into Application Security Testing.md": {
+    "scroll": 9.73966953871176,
+    "cursor": {
+      "from": {
+        "line": 45,
+        "ch": 7
+      },
+      "to": {
+        "line": 45,
+        "ch": 7
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/Flutter.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 13,
+        "ch": 80
+      },
+      "to": {
+        "line": 13,
+        "ch": 80
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Android Static application security testing (SAST).md": {
+    "scroll": 40.205609237938596,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-3",
+      "item-2-4"
+    ]
+  },
+  "Inoreader.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 3,
+        "ch": 0
+      },
+      "to": {
+        "line": 3,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Hunting for DOM-based XSS vulnerabilities A complete guide.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 16,
+        "ch": 0
+      },
+      "to": {
+        "line": 16,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Inside PostHog How SSRF, a ClickHouse SQL Escaping 0day, and Default PostgreSQL Credentials Formed an RCE Chain (ZDI-25-099, ZDI-25-097, ZDI-25-096) [app] [exp].md": {
+    "scroll": 2.4305188179016115,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 0
+      },
+      "to": {
+        "line": 12,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Last Week in Security (LWiS) - 2025-10-27.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 14,
+        "ch": 0
+      },
+      "to": {
+        "line": 14,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/Last Week in Security (LWiS) - 2025-11-10.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 13,
+        "ch": 0
+      },
+      "to": {
+        "line": 13,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
   }
 }

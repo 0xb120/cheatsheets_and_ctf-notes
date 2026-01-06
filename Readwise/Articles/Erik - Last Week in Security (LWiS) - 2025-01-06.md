@@ -1,9 +1,11 @@
 ---
 author: Erik
-aliases: [Last Week in Security (LWiS) - 2025-01-06]
-tags: [readwise/articles]
+aliases:
+  - Last Week in Security (LWiS) - 2025-01-06
+tags:
+  - readwise/articles
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-01-06.html
-date: 2025-01-07
+created: 2025-01-07
 ---
 # Last Week in Security (LWiS) - 2025-01-06
 

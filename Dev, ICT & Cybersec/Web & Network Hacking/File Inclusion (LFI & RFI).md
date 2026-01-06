@@ -135,9 +135,10 @@ POST DATA: <?php system('id'); ?>
 
 ![](../../zzz_res/attachments/LFI-file_wrapper.png)
 
-Other potential exploitation vectors using filters are mentioned in:
-- [Introducing Lightyear, a New Way to Dump PHP Files](../../Readwise/Articles/Charles%20Fol%20-%20Introducing%20Lightyear,%20a%20New%20Way%20to%20Dump%20PHP%20Files.md#Introducing%20Lightyear,%20a%20New%20Way%20to%20Dump%20PHP%20Files)
-- [Introducing wrapwrap: using PHP filters to wrap a file with a prefix and suffix](https://blog.lexfo.fr/wrapwrap-php-filters-suffix.html)
+>[!important]
+>Other state-of-the-art potential exploitation vectors using filters are mentioned in:
+> - [Introducing Lightyear, a New Way to Dump PHP Files](../../Readwise/Articles/Charles%20Fol%20-%20Introducing%20Lightyear,%20a%20New%20Way%20to%20Dump%20PHP%20Files.md#Introducing%20Lightyear,%20a%20New%20Way%20to%20Dump%20PHP%20Files)
+> - [Introducing Wrapwrap: Using PHP Filters to Wrap a File With a Prefix and Suffix](../../Readwise/Articles/Charles%20Fol%20-%20Introducing%20Wrapwrap%20Using%20PHP%20Filters%20to%20Wrap%20a%20File%20With%20a%20Prefix%20and%20Suffix.md)
 #### LFI2RCE using basic wrappers
 
 ```php
@@ -403,7 +404,7 @@ More Unix files: [wfuzz/dirTraversal-nix.txt at master · xmendez/wfuzz](https:/
 - [liffy.py](https://github.com/hvqzao/liffy)
 - [Weevely](https://github.com/epinna/weevely3)
 - [lightyear](../../Readwise/Articles/Charles%20Fol%20-%20Introducing%20Lightyear,%20a%20New%20Way%20to%20Dump%20PHP%20Files.md)
-- [wrapwrap](https://github.com/ambionics/wrapwrap)
+- [wrapwrap](../../Readwise/Articles/Charles%20Fol%20-%20Introducing%20Wrapwrap%20Using%20PHP%20Filters%20to%20Wrap%20a%20File%20With%20a%20Prefix%20and%20Suffix.md)
 - https://github.com/synacktiv/php_filter_chain_generator
 
 [^2]: [PHP FIlter Chains: File Read From Error-based oracle](https://www.synacktiv.com/en/publications/php-filter-chains-file-read-from-error-based-oracle); www.synacktiv.com

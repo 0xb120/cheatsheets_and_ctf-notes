@@ -1,14 +1,15 @@
 ---
 author: "@xnl_h4ck3r on Twitter"
-aliases: [Tweets From / XNL -Н4cĸ3r]
-tags: [readwise/tweets]
+aliases:
+  - Tweets From / XNL -Н4cĸ3r
+tags:
+  - readwise/tweets
 url: https://twitter.com/xnl_h4ck3r
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Tweets From / XNL -Н4cĸ3r
 
 ![rw-book-cover](https://pbs.twimg.com/profile_images/1298630075445895170/mH0kZY4W.jpg)
-
 ## Highlights
 
 

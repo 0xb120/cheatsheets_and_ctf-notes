@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://www.assetnote.io/resources/research/digging-for-ssrf-in-nextjs-apps?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Digging for SSRF in NextJS Apps
 

@@ -7,19 +7,12 @@ raindrop_highlights:
   6932b58356f0e01387ca57e1: 15e1b6cf5cd07635c12f4ad3809242f5
   6932b5b056f0e01387ca675d: 3c0c7dbc92be98b068cfa6e4642d33a7
 title: "Hunting for DOM-based XSS vulnerabilities: A complete guide"
-
-description: |-
-  null
-
+description: "null"
 source: https://www.intigriti.com/researchers/blog/hacking-tools/exploiting-dom-based-xss-vulnerabilities
-
 created: 1763054371140
 type: article
-tags: ["_index"]
-
- 
-  - "Inoreader"
-
+tags:
+  - _index
 ---
 # Hunting for DOM-based XSS vulnerabilities: A complete guide
 

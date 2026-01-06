@@ -1,9 +1,12 @@
 ---
 author: rev3rse security
-aliases: [CAPTCHA Inutile]
-tags: [readwise/articles, playwright]
+aliases:
+  - CAPTCHA Inutile
+tags:
+  - readwise/articles
+  - playwright
 url: https://www.youtube.com/watch?v=bbNypypN2Gw&ab_channel=rev3rsesecurity
-date: 2024-01-13
+created: 2024-01-13
 ---
 # CAPTCHA: Inutile? Spoiler, Sì. 
 

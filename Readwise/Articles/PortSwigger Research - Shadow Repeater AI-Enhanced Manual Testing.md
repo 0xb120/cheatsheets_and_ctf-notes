@@ -1,9 +1,11 @@
 ---
 author: PortSwigger Research
-aliases: [Shadow Repeater: AI-Enhanced Manual Testing]
-tags: [readwise/articles]
+aliases:
+  - Shadow Repeater: AI-Enhanced Manual Testing
+tags:
+  - readwise/articles
 url: https://portswigger.net/research/shadow-repeater-ai-enhanced-manual-testing?__readwiseLocation=
-date: 2025-02-26
+created: 2025-02-26
 ---
 # Shadow Repeater: AI-Enhanced Manual Testing
 

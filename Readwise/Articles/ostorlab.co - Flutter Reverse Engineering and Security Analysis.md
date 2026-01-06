@@ -7,7 +7,7 @@ tags:
   - readwise/articles
   - Flutter
 url: https://blog.ostorlab.co/flutter-reverse-engineering-security-analysis.html?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Flutter Reverse Engineering and Security Analysis
 

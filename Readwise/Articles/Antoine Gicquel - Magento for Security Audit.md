@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://www.synacktiv.com/publications/magento-for-security-audit.html?__readwiseLocation=
-date: 2025-04-30
+created: 2025-04-30
 ---
 # Magento for Security Audit
 

@@ -1,9 +1,12 @@
 ---
-author: "Frycos Security Diary"
-aliases: ["XXE With Auto-Update in Install4j"]
-tags: [RW_inbox, readwise/articles]
+author: Frycos Security Diary
+aliases:
+  - XXE With Auto-Update in Install4j
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://frycos.github.io/vulns4free/2023/02/12/install4j-xxe.html
-date: 2025-01-09
+created: 2025-01-09
 ---
 # XXE With Auto-Update in Install4j
 

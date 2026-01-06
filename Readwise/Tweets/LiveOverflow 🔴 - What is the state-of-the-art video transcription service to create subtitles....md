@@ -1,9 +1,12 @@
 ---
 author: LiveOverflow 🔴
-aliases: [What is the state-of-the-art video transcription service to create subtitles...]
-tags: [readwise/tweets, Tools]
+aliases:
+  - What is the state-of-the-art video transcription service to create subtitles...
+tags:
+  - readwise/tweets
+  - Tools
 url: https://twitter.com/LiveOverflow/status/1826493440852398227
-date: 2024-09-07
+created: 2024-09-07
 ---
 # What is the state-of-the-art video transcription service to create subtitles...
 

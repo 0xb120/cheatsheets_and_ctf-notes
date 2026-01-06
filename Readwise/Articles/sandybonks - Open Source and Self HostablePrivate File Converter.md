@@ -7,7 +7,7 @@ tags:
   - readwise/articles
   - tools
 url: https://vert.sh?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 Comments URL: https://news.ycombinator.com/item?id=43663865
 Points: 450
 ---

@@ -1,9 +1,11 @@
 ---
 author: Dawid Moczadło
-aliases: [Hacking Swagger-Ui - From XSS to Account Takeovers]
-tags: [readwise/articles]
+aliases:
+  - Hacking Swagger-Ui - From XSS to Account Takeovers
+tags:
+  - readwise/articles
 url: https://blog.vidocsecurity.com/blog/hacking-swagger-ui-from-xss-to-account-takeovers/
-date: 2024-09-08
+created: 2024-09-08
 ---
 # Hacking Swagger-Ui - From XSS to Account Takeovers
 

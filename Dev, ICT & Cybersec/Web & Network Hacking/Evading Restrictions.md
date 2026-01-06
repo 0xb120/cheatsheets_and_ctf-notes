@@ -67,7 +67,7 @@ An example of how Unicode normalise two different bytes representing the same ch
 unicodedata.normalize("NFKD","chloe\u0301") == unicodedata.normalize("NFKD", "chlo\u00e9")
 ```
 
-**A list of Unicode equivalent characters can be found here:** [https://appcheck-ng.com/wp-content/uploads/unicode_normalization.html](https://appcheck-ng.com/wp-content/uploads/unicode_normalization.html) and [https://0xacb.com/normalization_table](https://0xacb.com/normalization_table)
+**A list of Unicode equivalent characters can be found with [Tools for finding encoding variants](../Dev,%20scripting%20&%20OS/Character%20Encodings%20101.md#Tools%20for%20finding%20encoding%20variants)**
 
 If you can find inside a webapp a value that is being echoed back, you could try to send **‘KELVIN SIGN’ (U+0212A)** which **normalises to "K"** (you can send it as `%e2%84%aa`). **If a "K" is echoed back**, then, some kind of **Unicode normalisation** is being performed.
 
@@ -105,7 +105,7 @@ CHAR(83)+CHAR(69)+CHAR(76)+CHAR(69)+CHAR(67)+CHAR(84) id FROM table; -- - Decode
 
 ## Homograph characters
 
-Try to use homograph characters instead of classic ASCII ones and analyze how the server behaves. You may be able to perform [Authentication Attacks](Authentication%20Attacks.md), [Password Reset Poisoning](Password%20Reset%20Poisoning.md), and potentially perform account takeover.
+Try to use homograph characters [^1] instead of classic ASCII ones and analyze how the server behaves. You may be able to perform [Authentication Attacks](Authentication%20Attacks.md), [Password Reset Poisoning](Password%20Reset%20Poisoning.md), and potentially perform account takeover.
 
 >[!example] 
 >Requesting a password reset for vítim@gmail.com (attacker controller email) it may be possible to obtain a password reset link for user victim@gmail.com
@@ -253,3 +253,5 @@ In the cookie specification and implementation, specifically dedicated cookies i
 
 
 [^nowafplease]: [Bad Sector Labs Blog - Jun 17 2024 Last Week in Security (LWiS) - 2024-06-17](../../Readwise/Articles/Bad%20Sector%20Labs%20Blog%20-%20Jun%2017%202024%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-06-17.md#^88de29)
+
+[^1]: [Tools for finding encoding variants](../Dev,%20scripting%20&%20OS/Character%20Encodings%20101.md#Tools%20for%20finding%20encoding%20variants)

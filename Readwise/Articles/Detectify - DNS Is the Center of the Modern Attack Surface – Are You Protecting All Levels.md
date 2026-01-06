@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://blog.detectify.com/best-practices/dns-is-the-center-of-the-modern-attack-surface-are-you-protecting-all-levels/?__readwiseLocation=
-date: 2025-03-21
+created: 2025-03-21
 ---
 # DNS Is the Center of the Modern Attack Surface – Are You Protecting All Levels?
 

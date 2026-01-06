@@ -1,9 +1,11 @@
 ---
 author: Anurag Mondal
-aliases: ["From Informational to Critical: Chaining & Elevating Web Vulnerabilities"]
-tags: [readwise/articles]
+aliases:
+  - "From Informational to Critical: Chaining & Elevating Web Vulnerabilities"
+tags:
+  - readwise/articles
 url: https://www.netspi.com/blog/technical-blog/web-application-pentesting/uncovering-a-critical-vulnerability-through-chained-findings/
-date: 2024-12-19
+created: 2024-12-19
 ---
 # From Informational to Critical: Chaining & Elevating Web Vulnerabilities
 

@@ -75,6 +75,7 @@ In theory, this mechanism means there is no opportunity for an attacker to intro
 	- [Converting 0.CL into CL.0 with a double-desync](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#Converting%200.CL%20into%20CL.0%20with%20a%20double-desync)
 	- [0.CL desync via vanilla Expect - T-Mobile](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#0.CL%20desync%20via%20vanilla%20Expect%20-%20T-Mobile)
 	- [0.CL desync via obfuscated Expect - Gitlab](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#0.CL%20desync%20via%20obfuscated%20Expect%20-%20Gitlab)
+- [Michael Weber - Refresh Compromising F5 BIG-IP With Request Smuggling CVE-2023-46747](../../Readwise/Articles/Michael%20Weber%20-%20Refresh%20Compromising%20F5%20BIG-IP%20With%20Request%20Smuggling%20CVE-2023-46747.md) and smuggling requests on other protocols
 
 ---
 
@@ -99,4 +100,4 @@ Browser-powered request smuggling attacks turn **victim's web browser into a des
 - https://portswigger.net/research/http2
 - [Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling, PortSwigger](https://portswigger.net/research/browser-powered-desync-attacks)
 - [Making desync attacks easy with TRACE](https://portswigger.net/research/trace-desync-attack), portswigger.net
-- [Refresh: Compromising F5 BIG-IP With Request Smuggling | CVE-2023-46747](../../Readwise/Articles/Michael%20Weber%20-%20Refresh%20Compromising%20F5%20BIG-IP%20With%20Request%20Smuggling%20%20CVE-2023-46747.md)
+- [Refresh: Compromising F5 BIG-IP With Request Smuggling | CVE-2023-46747](../../Readwise/Articles/Michael%20Weber%20-%20Refresh%20Compromising%20F5%20BIG-IP%20With%20Request%20Smuggling%20CVE-2023-46747.md)

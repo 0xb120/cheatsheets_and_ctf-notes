@@ -1,9 +1,11 @@
 ---
 author: Seytonic
-aliases: [How They Tracked the Trump Shooter's Phone]
-tags: [readwise/articles]
+aliases:
+  - How They Tracked the Trump Shooter's Phone
+tags:
+  - readwise/articles
 url: https://www.youtube.com/watch?v=qySOODYdboI
-date: 2024-08-20
+created: 2024-08-20
 ---
 # How They Tracked the Trump Shooter's Phone
 

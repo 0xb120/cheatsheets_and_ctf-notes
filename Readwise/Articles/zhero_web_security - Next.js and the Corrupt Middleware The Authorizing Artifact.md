@@ -6,7 +6,7 @@ tags:
   - readwise/articles
   - nextjs
 url: https://zhero-web-sec.github.io/research-and-things/nextjs-and-the-corrupt-middleware?__readwiseLocation=
-date: 2025-03-24
+created: 2025-03-24
 ---
 # Next.js and the Corrupt Middleware: The Authorizing Artifact
 

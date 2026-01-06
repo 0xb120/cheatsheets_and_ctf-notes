@@ -4,20 +4,55 @@
     "type": "split",
     "children": [
       {
-        "id": "018b24d62c70d59c",
+        "id": "f75d8d85c392348d",
         "type": "tabs",
         "children": [
           {
-            "id": "06b6aff2c250ecb6",
+            "id": "882299f7fa04da2a",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "Bases/Articles inbox.base",
-                "viewName": "Articles to elaborate"
+                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
-              "icon": "lucide-table",
-              "title": "Articles inbox"
+              "icon": "lucide-file",
+              "title": "You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
+            }
+          },
+          {
+            "id": "b58cfcbf4a3b8478",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/Flutter.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Flutter"
             }
           }
         ]
@@ -34,6 +69,16 @@
         "type": "tabs",
         "children": [
           {
+            "id": "ac48de087a5fdfe3",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {},
+              "icon": "sheets-in-box",
+              "title": "File Tree"
+            }
+          },
+          {
             "id": "8ab711eaa4222edf",
             "type": "leaf",
             "state": {
@@ -44,16 +89,6 @@
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
-            }
-          },
-          {
-            "id": "ac48de087a5fdfe3",
-            "type": "leaf",
-            "state": {
-              "type": "file-tree-view",
-              "state": {},
-              "icon": "sheets-in-box",
-              "title": "File Tree"
             }
           },
           {
@@ -72,7 +107,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"summary\"]",
+                "query": "raindrop",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -93,7 +128,8 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -124,10 +160,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Bases/Articles inbox.base"
+                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md"
               },
               "icon": "lucide-info",
-              "title": "File properties for Articles inbox"
+              "title": "File properties for You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
             }
           },
           {
@@ -153,7 +189,7 @@
               "state": {
                 "sortOrder": "frequency",
                 "showSearch": true,
-                "searchQuery": "summary"
+                "searchQuery": "type"
               },
               "icon": "lucide-archive",
               "title": "All properties"
@@ -165,27 +201,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
+                "file": "Readwise/Articles/0x999.net - Exploring Javascript Events & Bypassing WAFs via Character Normalization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet"
-            }
-          },
-          {
-            "id": "6b3c5ca8d93754dd",
-            "type": "leaf",
-            "state": {
-              "type": "todo",
-              "state": {},
-              "icon": "checkmark",
-              "title": "Todo List"
+              "title": "Outline of 0x999.net - Exploring Javascript Events & Bypassing WAFs via Character Normalization"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       },
       {
         "id": "0ca134c80578c5f2",
@@ -198,7 +224,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Bases/Articles inbox.base",
+                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,7 +234,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Articles inbox"
+              "title": "Backlinks for You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
             }
           },
           {
@@ -217,12 +243,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
+                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet"
+              "title": "Outgoing links from You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
             }
           },
           {
@@ -231,12 +257,12 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
+                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
                   "localJumps": 2,
-                  "localBacklinks": false,
+                  "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": true,
                   "showTags": true,
@@ -246,7 +272,7 @@
                   "colorGroups": [],
                   "collapse-display": false,
                   "showArrow": true,
-                  "textFadeMultiplier": -0.6,
+                  "textFadeMultiplier": 0.8,
                   "nodeSizeMultiplier": 1,
                   "lineSizeMultiplier": 1,
                   "collapse-forces": true,
@@ -254,20 +280,20 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.3396609293254898,
+                  "scale": 0.33966092932549036,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet"
+              "title": "Graph of You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 412.5,
-    "collapsed": true
+    "width": 412.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -285,48 +311,51 @@
       "obsidian-raindrop-highlights:Sync Raindrop bookmarks from last sync time": false
     }
   },
-  "active": "06b6aff2c250ecb6",
+  "active": "a1601c5574d5b14f",
   "lastOpenFiles": [
-    "Readwise/Readwise inbox.md",
+    "Inoreader.md",
+    "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
+    "Raindrop/Last Week in Security (LWiS) - 2025-11-10.md",
+    "Raindrop/Last Week in Security (LWiS) - 2025-11-03.md",
+    "Raindrop/Last Week in Security (LWiS) - 2025-10-27.md",
+    "Raindrop/Inside PostHog How SSRF, a ClickHouse SQL Escaping 0day, and Default PostgreSQL Credentials Formed an RCE Chain (ZDI-25-099, ZDI-25-097, ZDI-25-096) [app] [exp].md",
+    "Raindrop/Hunting for DOM-based XSS vulnerabilities A complete guide.md",
+    "Raindrop/Blind trust what is hidden behind the process of creating your PDF file.md",
     "Bases/Articles inbox.base",
-    "Readwise/Articles/Guardsquare - The Current State & Future of Reverse Engineering Flutter™ Apps.md",
-    "Readwise/Articles/repzret.blogspot.com - Abusing Libxml2 Quirks to Bypass SAML Authentication on GitHub Enterprise.md",
-    "Readwise/Articles/Veritasium - Exposing The Flaw In Our Phone System.md",
-    "Bases/Tools.base",
-    "Clippings/jorianwoltjer.com - The Ultimate Double-Clickjacking PoC  Jorian Woltjer.md",
-    "Readwise/Articles/httpsgithub.comrverton - GitHub - RvertonWebanalyze Port of Wappalyzer (Uncovers Technologies Used on Websites) to Automate Mass Scanning..md",
-    "Readwise/Articles/Marco Ivaldi - A Collection of Weggli Patterns for CC++ Vulnerability Research.md",
-    "Bases/CTFs.base",
-    "Readwise/Articles/zhero_web_security - Next.js and the Corrupt Middleware The Authorizing Artifact.md",
-    "Readwise/Articles/zhero_web_security - Next.js, Cache, and Chains The Stale Elixir.md",
-    "Readwise/Tweets/0x0SojalSec on Twitter - Tweets from Md Ismail Šojal 🕷️.md",
-    "Readwise/Tweets/@Zealsham on Twitter - Tweets From Shammah Agwor.md",
-    "Readwise/Tweets/h4x0r_fr34k on Twitter - Tweets From VAIDIK PANDYA.md",
-    "Readwise/Tweets/@LiveOverflow on Twitter - I'm Looking for Differen....md",
-    "Readwise/Tweets/@h4x0r_fr34k on Twitter - Tweets From VAIDIK PANDYA.md",
-    "Readwise/Tweets/@WllGates on Twitter - Tweets From Will Gates.md",
-    "Readwise/Tweets/@intigriti on Twitter - Tweets from Intigriti.md",
-    "Readwise/Tweets/@7h3h4ckv157 on Twitter - Tweets From 7h3h4ckv157.md",
-    "Readwise/Articles/Adan - GitHub Actions and the Pinning Problem What 100 Security Projects Reveal.md",
-    "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
-    "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md",
-    "Readwise/Articles/Horizon3.ai - Vulnerable vs. Exploitable Why Understanding the Difference Matters to Your Security Posture.md",
-    "Readwise/Articles/hurl.dev - What’s Hurl.md",
-    "Readwise/Articles/httpsgithub.comSlon104 - GitHub - Slon104Common-PIN-Analysis-from-haveibeenpwned.com.md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Android Dynamic application security testing (DAST).md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Android Static application security testing (SAST).md",
+    "Readwise/Articles/b4dsheep - Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide..md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Flutter.md",
+    "Readwise/Articles/noreply@blogger.com (Christian Cotignola (@b4dsheep)) - Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide..md",
+    "Readwise/Articles/admin - Fork Bomb for Flutter.md",
     "Readwise/Articles/Michael Weber - Refresh Compromising F5 BIG-IP With Request Smuggling CVE-2023-46747.md",
-    "Readwise/Articles/Nancy Gariché - A Maintainer’s Guide to Vulnerability Disclosure GitHub Tools to Make It Simple.md",
+    "Raindrop/GitHub - ImAyrixfallparams Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist.md",
+    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Fuzzing.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Readwise/Articles/Penetration Testing and CyberSecurity Solution – SecureLayer7 - A Deep Dive Into Application Security Testing.md",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-11-25.md",
+    "Readwise/Articles/blackbird-eu - Discovering Hidden Parameters An Advanced Guide.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
+    "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
+    "Dev, ICT & Cybersec/Tools/Burpsuite.md",
+    "Dev, ICT & Cybersec/Tools/sqlmap.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Dictionary Generation.md",
+    "Clippings/attachments/weak-firebase-2.png",
+    "Clippings/attachments/weak-firebase-1.png",
+    "VR/Targets/VR targets.base",
+    "Bases/Tools.base",
+    "Communities/YouTube/_YouTubeDB.base",
+    "Bases/CTFs.base",
+    "zzz_res/attachments/annotated-OWASP_Code_Review_Guide_v2.pdf",
+    "Communities/YouTube/_YT-dashboard.canvas",
     "CTFs/_CTF-dashboard.canvas",
     "Bases",
     "Excalibrain",
     "Untitled.canvas",
     "Untitled 1.base",
     "Untitled.base",
-    "TestSync",
     "Personal/Book list/_book-dashboard.canvas",
     "Communities/MeetHack/Nday/Black Project.canvas",
-    "Communities/YouTube/_YT-dashboard.canvas",
-    "DB",
-    "Raindrop",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-17.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-16.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15.png",
@@ -335,8 +364,6 @@
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-13.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-12.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-11.png",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-10.png",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-9.png",
     "VR/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it.canvas",
     "VR/Targets/uisp.it/areariservata2.uisp.it/areariservata2.uisp.it.canvas",
     "VR/Targets/Woox/Woox R4040/Woox R4040.canvas",

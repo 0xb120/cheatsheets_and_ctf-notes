@@ -1,9 +1,11 @@
 ---
 author: Ambionics
-aliases: ["Secret Fragments: Remote Code Execution on Symfony Based Websites"]
-tags: [readwise/articles]
+aliases:
+  - "Secret Fragments: Remote Code Execution on Symfony Based Websites"
+tags:
+  - readwise/articles
 url: https://www.ambionics.io/blog/symfony-secret-fragment
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Secret Fragments: Remote Code Execution on Symfony Based Websites
 

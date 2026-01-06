@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: ?__readwiseLocation=
-date: 2025-03-06
+created: 2025-03-06
 ---
 # CVSS Is Dead to Us
 

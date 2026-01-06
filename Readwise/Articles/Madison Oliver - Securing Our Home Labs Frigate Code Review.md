@@ -1,9 +1,11 @@
 ---
 author: Madison Oliver
-aliases: ["Securing Our Home Labs: Frigate Code Review"]
-tags: [readwise/articles]
+aliases:
+  - "Securing Our Home Labs: Frigate Code Review"
+tags:
+  - readwise/articles
 url: https://github.blog/security/vulnerability-research/securing-our-home-labs-frigate-code-review/
-date: 2024-12-19
+created: 2024-12-19
 ---
 # Securing Our Home Labs: Frigate Code Review
 

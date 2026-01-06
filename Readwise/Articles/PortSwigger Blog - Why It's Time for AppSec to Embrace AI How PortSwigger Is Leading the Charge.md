@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://portswigger.net/blog/why-its-time-for-appsec-to-embrace-ai-how-portswigger-is-leading-the-charge?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Why It's Time for AppSec to Embrace AI: How PortSwigger Is Leading the Charge
 

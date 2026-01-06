@@ -41,7 +41,8 @@ source: https://deepstrike.io/blog/nextjs-security-testing-bug-bounty-guide
 
 created: 1760511170695
 type: link
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "NextJS" 

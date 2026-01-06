@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://www.sentinelone.com/blog/re-assessing-risk-subdomain-takeovers-as-supply-chain-attacks/?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Re-Assessing Risk | Subdomain Takeovers as Supply Chain Attacks
 

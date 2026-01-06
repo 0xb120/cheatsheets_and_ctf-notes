@@ -6,7 +6,7 @@ tags:
   - readwise/articles
   - tools
 url: https://portswigger.net/blog/welcome-to-the-next-generation-of-burp-suite-elevate-your-testing-with-burp-ai?__readwiseLocation=
-date: 2025-04-01
+created: 2025-04-01
 ---
 # Welcome to the Next Generation of Burp Suite: Elevate Your Testing With Burp AI
 

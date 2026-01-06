@@ -1,9 +1,11 @@
 ---
 author: "@h4x0r_fr34k on Twitter"
-aliases: [Tweets From VAIDIK PANDYA]
-tags: [readwise/tweets]
+aliases:
+  - Tweets From VAIDIK PANDYA
+tags:
+  - readwise/tweets
 url: https://twitter.com/h4x0r_fr34k
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Tweets From VAIDIK PANDYA
 

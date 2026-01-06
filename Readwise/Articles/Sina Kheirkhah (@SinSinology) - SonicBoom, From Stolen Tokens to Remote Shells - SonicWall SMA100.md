@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://labs.watchtowr.com/sonicboom-from-stolen-tokens-to-remote-shells-sonicwall-sma100-cve-2023-44221-cve-2024-38475/?__readwiseLocation=
-date: 2025-05-08
+created: 2025-05-08
 ---
 # SonicBoom, From Stolen Tokens to Remote Shells - SonicWall SMA100
 

@@ -16,7 +16,8 @@ source: https://github.com/six2dez/reconftw
 
 created: 1764926374591
 type: link
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "Tools"

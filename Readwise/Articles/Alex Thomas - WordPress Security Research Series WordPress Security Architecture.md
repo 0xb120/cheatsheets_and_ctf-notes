@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://www.wordfence.com/blog/2025/03/wordpress-security-research-series-wordpress-security-architecture/?__readwiseLocation=
-date: 2025-04-01
+created: 2025-04-01
 ---
 # WordPress Security Research Series: WordPress Security Architecture
 

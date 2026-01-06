@@ -1,3 +1,8 @@
+---
+aliases:
+  - NoSQL
+---
+
 NoSQL databases store and retrieve data in a format other than traditional SQL relational tables. They are designed to handle large volumes of unstructured or semi-structured data. As such they typically have fewer relational constraints and consistency checks than SQL.
 
 Differently from SQL, NoSQL applications **use a wide range of query languages instead of a universal standard**.

@@ -1,9 +1,11 @@
 ---
 author: Assetnote Research
-aliases: [How an Obscure PHP Footgun Led to RCE in Craft CMS]
-tags: [readwise/articles]
+aliases:
+  - How an Obscure PHP Footgun Led to RCE in Craft CMS
+tags:
+  - readwise/articles
 url: https://www.assetnote.io/resources/research/how-an-obscure-php-footgun-led-to-rce-in-craft-cms?__readwiseLocation
-date: 2025-02-26
+created: 2025-02-26
 ---
 # How an Obscure PHP Footgun Led to RCE in Craft CMS
 

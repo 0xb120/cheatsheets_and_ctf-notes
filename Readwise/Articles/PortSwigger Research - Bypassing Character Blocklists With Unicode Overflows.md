@@ -1,9 +1,11 @@
 ---
 author: PortSwigger Research
-aliases: [Bypassing Character Blocklists With Unicode Overflows]
-tags: [readwise/articles]
+aliases:
+  - Bypassing Character Blocklists With Unicode Overflows
+tags:
+  - readwise/articles
 url: https://portswigger.net/research/bypassing-character-blocklists-with-unicode-overflows?__readwiseLocation
-date: 2025-02-03
+created: 2025-02-03
 ---
 # Bypassing Character Blocklists With Unicode Overflows
 

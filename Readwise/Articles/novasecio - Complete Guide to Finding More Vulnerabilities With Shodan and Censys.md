@@ -1,9 +1,11 @@
 ---
 author: novasecio
-aliases: [Complete Guide to Finding More Vulnerabilities With Shodan and Censys]
-tags: [readwise/articles]
+aliases:
+  - Complete Guide to Finding More Vulnerabilities With Shodan and Censys
+tags:
+  - readwise/articles
 url: https://blog.intigriti.com/hacking-tools/complete-guide-to-finding-more-vulnerabilities-with-shodan-and-censys
-date: 2024-11-22
+created: 2024-11-22
 ---
 # Complete Guide to Finding More Vulnerabilities With Shodan and Censys
 

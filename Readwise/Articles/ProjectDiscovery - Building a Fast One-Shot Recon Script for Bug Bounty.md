@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://projectdiscovery.io/blog/building-one-shot-recon?__readwiseLocation=
-date: 2025-05-05
+created: 2025-05-05
 ---
 # Building a Fast One-Shot Recon Script for Bug Bounty
 

@@ -1,9 +1,11 @@
 ---
 author: Frycos Security Diary
-aliases: [Pre-Auth RCE With CodeQL in Under 20 Minutes]
-tags: [readwise/articles]
+aliases:
+  - Pre-Auth RCE With CodeQL in Under 20 Minutes
+tags:
+  - readwise/articles
 url: https://frycos.github.io/vulns4free/2022/12/02/rce-in-20-minutes.html
-date: 2024-10-09
+created: 2024-10-09
 ---
 # Pre-Auth RCE With CodeQL in Under 20 Minutes
 

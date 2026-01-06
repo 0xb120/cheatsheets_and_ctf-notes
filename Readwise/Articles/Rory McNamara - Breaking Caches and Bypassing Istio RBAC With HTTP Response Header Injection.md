@@ -1,9 +1,12 @@
 ---
 author: Rory McNamara
-aliases: [Breaking Caches and Bypassing Istio RBAC With HTTP Response Header Injection, Override Cache behavior on NGINX using X-Accel-Expires]
-tags: [readwise/articles]
+aliases:
+  - Breaking Caches and Bypassing Istio RBAC With HTTP Response Header Injection
+  - Override Cache behavior on NGINX using X-Accel-Expires
+tags:
+  - readwise/articles
 url: https://snyk.io/blog/breaking-caches-bypassing-istio-rbac/?__readwiseLocation=
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Breaking Caches and Bypassing Istio RBAC With HTTP Response Header Injection
 

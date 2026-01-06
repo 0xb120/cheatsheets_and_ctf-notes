@@ -1,9 +1,11 @@
 ---
 author: Stefan Schiller
-aliases: [Who Are You? The Importance of Verifying Message Origins]
-tags: [readwise/articles]
+aliases:
+  - Who Are You? The Importance of Verifying Message Origins
+tags:
+  - readwise/articles
 url: https://www.sonarsource.com/blog/who-are-you-the-importance-of-verifying-message-origins
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Who Are You? The Importance of Verifying Message Origins
 

@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/tweets
 url: https://twitter.com/0x0SojalSec?__readwiseLocation=
-date: 2025-04-26
+created: 2025-04-26
 ---
 # Tweets from Md Ismail Šojal 🕷️
 

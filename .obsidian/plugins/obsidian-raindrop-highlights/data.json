@@ -18,37 +18,37 @@
       "id": 0,
       "title": "All bookmarks",
       "sync": true,
-      "lastSyncDate": "2026-01-02T15:32:12.229Z"
+      "lastSyncDate": "2026-01-05T18:22:23.391Z"
     },
     "59458648": {
       "id": 59458648,
       "title": "Read Later",
       "sync": true,
-      "lastSyncDate": "2026-01-02T15:32:12.614Z"
+      "lastSyncDate": "2026-01-05T18:22:23.621Z"
     },
     "59477087": {
       "id": 59477087,
       "title": "Archived",
       "sync": true,
-      "lastSyncDate": "2026-01-02T15:32:12.737Z"
+      "lastSyncDate": "2026-01-05T18:22:24.454Z"
     },
     "59587826": {
       "id": 59587826,
       "title": "Reading",
       "sync": true,
-      "lastSyncDate": "2026-01-02T15:32:12.805Z"
+      "lastSyncDate": "2026-01-05T18:22:26.330Z"
     },
     "61752421": {
       "id": 61752421,
       "title": "Courses & Labs",
       "sync": true,
-      "lastSyncDate": "2026-01-02T15:32:12.881Z"
+      "lastSyncDate": "2026-01-05T18:22:26.514Z"
     },
     "63971956": {
       "id": 63971956,
       "title": "Tools",
       "sync": true,
-      "lastSyncDate": "2026-01-02T15:32:13.055Z"
+      "lastSyncDate": "2026-01-05T18:22:27.461Z"
     },
     "-1": {
       "id": -1,
@@ -62,7 +62,7 @@
     }
   },
   "template": "# {{title}}\n\n{% if cover %}![]({{cover}}){% endif %}\n{% if excerpt %}\n> [!summary]\n> {{excerpt}}\n{% endif %}\n\n{% if note %}note: {{note}}{% endif %}\n\n{% for highlight in highlights %}\n{% if highlight.color == \"red\" -%}\n    {%- set callout = \"danger\" -%}\n{%- elif highlight.color == \"blue\" -%}\n    {%- set callout = \"info\" -%}\n{%- elif highlight.color == \"green\" -%}\n    {%- set callout = \"check\" -%}\n{%- elif highlight.color == \"orange\" -%}\n    {%- set callout = \"warning\" -%}\n{%- else -%}\n    {%- set callout = \"\" -%}\n{%- endif -%}\n\n{% if callout !== \"\" -%}\n\n> [!{{callout}}]\n> {{highlight.text.split(\"\\n\") | join(\"\\n>\")}}\n{% if highlight.note -%}> > {{highlight.note + \"\\n\"}}{%- endif %}\n{%- else -%}\n{{highlight.text.split(\"\\n\") | join(\"\\n\")}}\n{%- endif -%}\n{%- endfor -%}",
-  "metadataTemplate": "{% if title %}title: \"{{title}}\"{% endif %}\n{% if excerpt %}\ndescription: |-\n  {{ excerpt | indent(2) }}\n{% endif %}\n{% if link %}source: {{link}}{% endif %}\n{% if rindropUrl %}raindrop_url: {{rindropUrl}}{% endif %}\n{% if created %}created: {{created}}{% endif %}\n{% if type %}type: {{type}}{% endif %}\ntags:\n  - \"_index\"\n{% if tags|length %}\n{% for tag in tags %} \n  - \"{{ tag }}\"{% endfor %}\n{% endif %}",
+  "metadataTemplate": "{% if title %}title: \"{{title}}\"{% endif %}\n{% if excerpt %}\ndescription: |-\n  {{ excerpt | indent(2) }}\n{% endif %}\n{% if link %}source: {{link}}{% endif %}\n{% if rindropUrl %}raindrop_url: {{rindropUrl}}{% endif %}\n{% if created %}created: {{ created | date(\"YYYY-MM-DD\") }}{% endif %}\nsync-date: {{now}}\ntags:\n  - \"_index\"\n{% if tags|length %}\n{% for tag in tags %} \n  - \"{{ tag }}\"{% endfor %}\n{% endif %}",
   "filenameTemplate": "{{title}}",
   "preventMovingExistingFiles": false,
   "autoSyncInterval": 0,

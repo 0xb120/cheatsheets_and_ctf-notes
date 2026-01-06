@@ -1,8 +1,9 @@
 ---
 author: Zealsham on Twitter
-tags: [readwise/tweets]
+tags:
+  - readwise/tweets
 url: https://twitter.com/Zealsham
-date: 2023-09-27
+created: 2023-09-27
 ---
 # Tweets From 🦢Shammah Agwor⚡️
 

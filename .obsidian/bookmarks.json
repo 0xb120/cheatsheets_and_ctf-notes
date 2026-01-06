@@ -22,8 +22,9 @@
     },
     {
       "type": "file",
-      "ctime": 1696272067572,
-      "path": "Readwise/Readwise inbox.md"
+      "ctime": 1767712620950,
+      "path": "Bases/Articles inbox.base",
+      "title": "Articles inbox"
     },
     {
       "type": "group",
@@ -48,48 +49,10 @@
       "title": "Cheatsheet"
     },
     {
-      "type": "group",
-      "ctime": 1696344229004,
-      "items": [
-        {
-          "type": "file",
-          "ctime": 1695590405679,
-          "path": "Play ground/Projects/Project list.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1696344216071,
-          "path": "Play ground/Projects/Todo training and research.md",
-          "title": "Todo training and research"
-        },
-        {
-          "type": "file",
-          "ctime": 1695680223851,
-          "path": "Play ground/Projects/Possible targets.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1724327818831,
-          "path": "Play ground/Project list-old.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1730308606591,
-          "path": "Play ground/Targets/Vulnerability Research Targets.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1698151485906,
-          "path": "Communities/YouTube/_YT-dashboard.canvas",
-          "title": "YT video dashboard"
-        },
-        {
-          "type": "file",
-          "ctime": 1737563294434,
-          "path": "Communities/YouTube/_YouTube-dashboard.md"
-        }
-      ],
-      "title": "Projects and works"
+      "type": "file",
+      "ctime": 1767712658862,
+      "path": "Bases/Tools.base",
+      "title": "Tools"
     }
   ]
 }

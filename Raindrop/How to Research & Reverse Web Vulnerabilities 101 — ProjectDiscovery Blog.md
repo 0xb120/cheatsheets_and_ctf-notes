@@ -25,7 +25,8 @@ source: https://projectdiscovery.io/blog/how-to-research-web-vulnerabilities
 
 created: 1765788861660
 type: link
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "tech-blog" 

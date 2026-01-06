@@ -64,6 +64,7 @@ git diff v1.1 v1.0 > patch.diff
 grep +++ patch.diff
 ```
 
+
 ---
 
 # External tools integrating with git
@@ -71,3 +72,11 @@ grep +++ patch.diff
 - [gitleaks](https://github.com/gitleaks/gitleaks)
 - [git-dumper](https://github.com/arthaud/git-dumper)
 - [gitDump](https://github.com/Ebryx/GitDump)
+
+---
+
+
+# Using git as an attack technique
+
+- [Commit Stomping](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-05-19.md)
+- Git (and GitHub) evasion techniques used in [the TJ Actions Changed Files GitHub Actions Compromise](../../Readwise/Articles/Blog%20–%20Snyk%20-%20Reconstructing%20the%20TJ%20Actions%20Changed%20Files%20GitHub%20Actions%20Compromise.md)

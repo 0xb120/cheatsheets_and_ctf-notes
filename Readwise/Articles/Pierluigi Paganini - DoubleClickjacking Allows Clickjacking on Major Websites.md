@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://securityaffairs.com/172572/hacking/doubleclickjacking-clickjacking-on-major-websites.html?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # DoubleClickjacking Allows Clickjacking on Major Websites
 

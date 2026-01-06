@@ -1,9 +1,11 @@
 ---
 author: Catalin Cimpanu
-aliases: ["Risky Biz News: Clop Is Coming After Your SysAid Servers"]
-tags: [readwise/articles]
+aliases:
+  - "Risky Biz News: Clop Is Coming After Your SysAid Servers"
+tags:
+  - readwise/articles
 url: https://riskybiznews.substack.com/p/clop-is-coming-after-your-sysaid-servers
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Risky Biz News: Clop Is Coming After Your SysAid Servers
 

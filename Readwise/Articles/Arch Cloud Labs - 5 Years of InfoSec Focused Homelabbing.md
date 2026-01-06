@@ -1,9 +1,11 @@
 ---
 author: Arch Cloud Labs
-aliases: [5 Years of InfoSec Focused Homelabbing]
-tags: [readwise/articles]
+aliases:
+  - 5 Years of InfoSec Focused Homelabbing
+tags:
+  - readwise/articles
 url: https://www.archcloudlabs.com/projects/5-years-of-homelab/
-date: 2024-09-07
+created: 2024-09-07
 ---
 # 5 Years of InfoSec Focused Homelabbing
 

@@ -1,9 +1,11 @@
 ---
 author: thunderbong
-aliases: [I Like Makefiles]
-tags: [readwise/articles]
+aliases:
+  - I Like Makefiles
+tags:
+  - readwise/articles
 url: https://switowski.com/blog/i-like-makefiles/
-date: 2024-09-25
+created: 2024-09-25
 ---
 # I Like Makefiles
 

@@ -1,9 +1,15 @@
 ---
 author: Pierluigi Paganini
-aliases: [Apache Fixed a New Remote Code Execution Flaw in Apache OFBiz]
-tags: [readwise/articles, advisory, vulnerability-research/todo, Apache, Apache/OFBiz]
+aliases:
+  - Apache Fixed a New Remote Code Execution Flaw in Apache OFBiz
+tags:
+  - readwise/articles
+  - advisory
+  - vulnerability-research/todo
+  - Apache
+  - Apache/OFBiz
 url: https://securityaffairs.com/168106/security/apache-ofbiz-rce-cve-2024-45195.html
-date: 2024-09-06
+created: 2024-09-06
 ---
 # Apache Fixed a New Remote Code Execution Flaw in Apache OFBiz
 

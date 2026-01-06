@@ -1,9 +1,11 @@
 ---
 author: novasecio
-aliases: ["Insecure File Uploads: A Complete Guide to Finding Advanced File Upload Vulnerabilities"]
-tags: [readwise/articles]
+aliases:
+  - "Insecure File Uploads: A Complete Guide to Finding Advanced File Upload Vulnerabilities"
+tags:
+  - readwise/articles
 url: https://blog.intigriti.com/hacking-tools/insecure-file-uploads-a-complete-guide-to-finding-advanced-file-upload-vulnerabilities
-date: 2024-12-19
+created: 2024-12-19
 ---
 # Insecure File Uploads: A Complete Guide to Finding Advanced File Upload Vulnerabilities
 

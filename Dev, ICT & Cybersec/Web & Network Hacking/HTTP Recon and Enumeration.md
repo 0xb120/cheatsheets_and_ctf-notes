@@ -101,6 +101,12 @@ Scraping libraries:
 [^waymore-tweet]: [@xnl_h4ck3r on Twitter - Tweets From XNL -Н4cĸ3r](../../Readwise/Tweets/@xnl_h4ck3r%20on%20Twitter%20-%20Tweets%20From%20XNL%20-Н4cĸ3r.md#^3d52ca)
 [^urlfinder]: [Last Week in Security (LWiS) - 2024-12-02](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-12-02.md#^e83851)
 
+
+### Parameter discovery
+
+Use the information obtained with the [Endpoint Crawling](HTTP%20Recon%20and%20Enumeration.md#Endpoint%20Crawling) step and search for specific parameters:
+- [blackbird-eu - Discovering Hidden Parameters An Advanced Guide](../../Readwise/Articles/blackbird-eu%20-%20Discovering%20Hidden%20Parameters%20An%20Advanced%20Guide.md)
+
 ### Tech. Stack and Component Enumeration
 
 - [HTTPX](../../Readwise/Articles/novasecio%20-%20Recon%20for%20Bug%20Bounty%208%20Essential%20Tools%20for%20Performing%20Effective%20Reconnaissance.md#HTTPX) ^e74b6e

@@ -1,12 +1,14 @@
 ---
 title: "kevin-mizu/domloggerpp: A browser extension that allows you to monitor, intercept, and debug JavaScript sinks based on customizable configurations."
-source: "https://github.com/kevin-mizu/domloggerpp?tab=readme-ov-file"
+source: https://github.com/kevin-mizu/domloggerpp?tab=readme-ov-file
 author:
-  - "kevin-mizu"
+  - kevin-mizu
 published:
 created: 2025-08-19
-description:
-tags: ["clippings/articles", "_inbox", "tools"]
+description: domloggerpp, a browser extension for monitoring, intercepting, and debugging JavaScript sinks based on customizable configurations.
+tags:
+  - clippings/articles
+  - tools
 ---
 # kevin-mizu/domloggerpp: A browser extension that allows you to monitor, intercept, and debug JavaScript sinks based on customizable configurations.
 

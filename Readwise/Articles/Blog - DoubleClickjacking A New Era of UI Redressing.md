@@ -6,7 +6,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://www.paulosyibelo.com/2024/12/doubleclickjacking-what.html?__readwiseLocation=
-date: 2025-04-01
+created: 2025-04-01
 ---
 # DoubleClickjacking: A New Era of UI Redressing
 

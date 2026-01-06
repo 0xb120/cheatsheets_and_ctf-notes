@@ -1,9 +1,12 @@
 ---
-author: "Blog – Snyk"
-aliases: ["Agent Hijacking: The True Impact of Prompt Injection Attacks"]
-tags: [RW_inbox, readwise/articles]
+author: Blog – Snyk
+aliases:
+  - "Agent Hijacking: The True Impact of Prompt Injection Attacks"
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://snyk.io/blog/agent-hijacking/
-date: 2025-02-04
+created: 2025-02-04
 ---
 # Agent Hijacking: The True Impact of Prompt Injection Attacks
 

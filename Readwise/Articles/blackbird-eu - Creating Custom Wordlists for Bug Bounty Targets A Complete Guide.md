@@ -1,9 +1,11 @@
 ---
 author: blackbird-eu
-aliases: ["Creating Custom Wordlists for Bug Bounty Targets: A Complete Guide"]
-tags: [readwise/articles]
+aliases:
+  - "Creating Custom Wordlists for Bug Bounty Targets: A Complete Guide"
+tags:
+  - readwise/articles
 url: https://www.intigriti.com/researchers/blog/hacking-tools/creating-custom-wordlists-for-bug-bounty-targets-a-complete-guide?__readwiseLocation=
-date: 2025-02-04
+created: 2025-02-04
 ---
 # Creating Custom Wordlists for Bug Bounty Targets: A Complete Guide
 

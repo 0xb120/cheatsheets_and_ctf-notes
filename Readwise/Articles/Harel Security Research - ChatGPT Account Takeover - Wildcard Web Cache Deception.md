@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://nokline.github.io/bugbounty/2024/02/04/ChatGPT-ATO.html?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # ChatGPT Account Takeover - Wildcard Web Cache Deception
 

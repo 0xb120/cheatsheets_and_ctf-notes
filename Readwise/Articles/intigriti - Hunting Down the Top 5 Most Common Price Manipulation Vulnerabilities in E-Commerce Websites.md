@@ -1,9 +1,11 @@
 ---
 author: intigriti
-aliases: [Hunting Down the Top 5 Most Common Price Manipulation Vulnerabilities in E-Commerce Websites]
-tags: [readwise/articles]
+aliases:
+  - Hunting Down the Top 5 Most Common Price Manipulation Vulnerabilities in E-Commerce Websites
+tags:
+  - readwise/articles
 url: https://blog.intigriti.com/2024/02/05/top-5-common-price-manipulation-vulnerabilities/
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Hunting Down the Top 5 Most Common Price Manipulation Vulnerabilities in E-Commerce Websites
 

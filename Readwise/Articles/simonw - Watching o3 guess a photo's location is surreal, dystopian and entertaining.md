@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://simonwillison.net/2025/Apr/26/o3-photo-locations/?__readwiseLocation=
-date: 2025-04-28
+created: 2025-04-28
 Comments URL: https://news.ycombinator.com/item?id=43803243
 Points: 469
 ---

@@ -20,9 +20,10 @@ description: |-
 
 source: https://danielprindii.com/blog/my-read-it-later-and-discoverability-systems
 
-created: 1767353089071
-type: article
-tags: ["_index"]
+created: 2026-01-02
+sync-date: 1767637346605
+tags:
+  - "_index"
 
 ---
 # My Read it later and discoverability systems in 2025 | Daniel Prindii

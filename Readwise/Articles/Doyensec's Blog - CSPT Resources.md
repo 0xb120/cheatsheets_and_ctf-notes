@@ -1,10 +1,12 @@
 ---
-author: "Doyensec's Blog"
-aliases: ["CSPT Resources"]
-tags: [RW_inbox, readwise/articles]
+author: Doyensec's Blog
+aliases:
+  - CSPT Resources
+tags:
+  - RW_inbox
+  - readwise/articles
 url: https://blog.doyensec.com/2025/03/27/cspt-resources.html?__readwiseLocation=
-date: 2025-04-01
-
+created: 2025-04-01
 ---
 # CSPT Resources
 

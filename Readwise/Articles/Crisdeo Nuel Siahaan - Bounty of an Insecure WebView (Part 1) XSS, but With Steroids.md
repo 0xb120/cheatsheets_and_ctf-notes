@@ -1,9 +1,12 @@
 ---
 author: Crisdeo Nuel Siahaan
-aliases: [Bounty of an Insecure WebView (Part 1)]
-tags: [readwise/articles, Android]
+aliases:
+  - Bounty of an Insecure WebView (Part 1)
+tags:
+  - readwise/articles
+  - Android
 url: https://infosecwriteups.com/bounty-of-an-insecure-webview-part-1-xss-but-with-steroids-1a41cf654048
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Bounty of an Insecure WebView (Part 1): XSS, but With Steroids
 

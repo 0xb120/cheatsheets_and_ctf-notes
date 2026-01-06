@@ -1,9 +1,11 @@
 ---
 author: dojo-yeswehack.com
-aliases: [WAF-Bypass - Encoding]
-tags: [readwise/articles]
+aliases:
+  - WAF-Bypass - Encoding
+tags:
+  - readwise/articles
 url: https://dojo-yeswehack.com/learn/waf-bypass/encoding
-date: 2025-02-26
+created: 2025-02-26
 ---
 # WAF-Bypass - Encoding
 

@@ -1,8 +1,13 @@
 views:
   - type: list
-    name: Table
+    name: Tool list
     filters:
-      and:
+      or:
         - file.tags.contains("#tools")
+        - file.inFolder("Dev, ICT & Cybersec/Tools")
+    order:
+      - file.name
+      - description
+      - aliases
     markers: bullet
     indentProperties: true

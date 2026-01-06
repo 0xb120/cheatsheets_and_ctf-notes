@@ -1,9 +1,11 @@
 ---
 author: Askar
-aliases: [PandoraFMS V7.0NG.777.3 Remote Command Execution]
-tags: [readwise/articles]
+aliases:
+  - PandoraFMS V7.0NG.777.3 Remote Command Execution
+tags:
+  - readwise/articles
 url: https://shells.systems/pandorafms-v7-0ng-777-3-remote-command-execution-cve-2024-11320/
-date: 2025-01-07
+created: 2025-01-07
 ---
 # PandoraFMS V7.0NG.777.3 Remote Command Execution
 

@@ -1,9 +1,11 @@
 ---
 author: HTTP Toolkit
-aliases: [What Is X-Forwarded-for and When Can You Trust It?]
-tags: [readwise/articles]
+aliases:
+  - What Is X-Forwarded-for and When Can You Trust It?
+tags:
+  - readwise/articles
 url: https://httptoolkit.com/blog/what-is-x-forwarded-for/
-date: 2024-08-20
+created: 2024-08-20
 ---
 # What Is X-Forwarded-for and When Can You Trust It?
 

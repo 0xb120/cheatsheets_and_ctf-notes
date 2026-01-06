@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://www.youtube.com/watch?v=p-LLPDQte8w&ab_channel=Tib3rius?__readwiseLocation=
-date: 2025-03-12
+created: 2025-03-12
 ---
 # How Would You Scope WordPress?
 

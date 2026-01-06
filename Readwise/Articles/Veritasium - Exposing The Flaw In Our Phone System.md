@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://www.youtube.com/watch?v=wVyu7NB7W6Y?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Exposing The Flaw In Our Phone System
 

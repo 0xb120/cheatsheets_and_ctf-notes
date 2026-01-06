@@ -1,9 +1,11 @@
 ---
 author: "@therceman on Twitter"
-aliases: [Tweets From Anton]
-tags: [readwise/tweets]
+aliases:
+  - Tweets From Anton
+tags:
+  - readwise/tweets
 url: https://twitter.com/therceman
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Tweets From Anton
 

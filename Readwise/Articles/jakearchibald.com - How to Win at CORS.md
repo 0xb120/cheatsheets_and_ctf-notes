@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://jakearchibald.com/2021/cors/?__readwiseLocation=
-date: 2025-03-07
+created: 2025-03-07
 ---
 # How to Win at CORS
 

@@ -7,7 +7,7 @@ tags:
   - readwise/articles
   - Tools
 url: https://github.com/rverton/webanalyze?__readwiseLocation=
-date: 2025-04-01
+created: 2025-04-01
 ---
 # GitHub - Rverton/Webanalyze: Port of Wappalyzer (Uncovers Technologies Used on Websites) to Automate Mass Scanning.
 

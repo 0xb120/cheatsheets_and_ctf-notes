@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://labs.watchtowr.com/is-the-sofistication-in-the-room-with-us-x-forwarded-for-and-ivanti-connect-secure-cve-2025-22457/?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Is the Sofistication in the Room With Us? - X-Forwarded-for and Ivanti Connect Secure
 

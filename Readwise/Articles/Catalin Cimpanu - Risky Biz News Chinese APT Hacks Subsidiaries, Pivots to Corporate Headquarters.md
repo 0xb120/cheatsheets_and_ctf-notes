@@ -1,9 +1,13 @@
 ---
 author: Catalin Cimpanu
-aliases: ["Risky Biz News: Chinese APT Hacks Subsidiaries", Pivots to Corporate Headquarters]
-tags: [readwise/articles, TeamCity]
+aliases:
+  - "Risky Biz News: Chinese APT Hacks Subsidiaries"
+  - Pivots to Corporate Headquarters
+tags:
+  - readwise/articles
+  - TeamCity
 url: https://riskybiznews.substack.com/p/chinese-apt-hacks-subsidiaries
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Risky Biz News: Chinese APT Hacks Subsidiaries, Pivots to Corporate Headquarters
 

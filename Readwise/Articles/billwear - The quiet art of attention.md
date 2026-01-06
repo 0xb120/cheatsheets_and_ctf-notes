@@ -1,9 +1,11 @@
 ---
 author: billwear
-aliases: [The quiet art of attention]
-tags: [readwise/articles]
+aliases:
+  - The quiet art of attention
+tags:
+  - readwise/articles
 url: https://billwear.github.io/art-of-attention.html
-date: 2024-10-16
+created: 2024-10-16
 ---
 # The quiet art of attention
 

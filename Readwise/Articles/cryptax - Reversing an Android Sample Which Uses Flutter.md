@@ -7,7 +7,7 @@ tags:
   - readwise/articles
   - Flutter
 url: https://cryptax.medium.com/reversing-an-android-sample-which-uses-flutter-23c3ff04b847?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Reversing an Android Sample Which Uses Flutter
 

@@ -1,9 +1,11 @@
 ---
 author: "@pandyaMayur11 on Twitter"
-aliases: [Tweets From PandyaMayur]
-tags: [readwise/tweets]
+aliases:
+  - Tweets From PandyaMayur
+tags:
+  - readwise/tweets
 url: https://twitter.com/pandyaMayur11
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Tweets From PandyaMayur
 

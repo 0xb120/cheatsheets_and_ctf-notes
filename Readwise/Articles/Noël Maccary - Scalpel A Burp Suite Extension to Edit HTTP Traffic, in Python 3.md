@@ -1,9 +1,12 @@
 ---
 author: Noël Maccary
-aliases: ["Scalpel: A Burp Suite Extension to Edit HTTP Traffic", in Python 3]
-tags: [readwise/articles]
+aliases:
+  - "Scalpel: A Burp Suite Extension to Edit HTTP Traffic"
+  - in Python 3
+tags:
+  - readwise/articles
 url: https://www.ambionics.io/blog/scalpel.html
-date: 2024-06-13
+created: 2024-06-13
 ---
 # Scalpel: A Burp Suite Extension to Edit HTTP Traffic, in Python 3
 

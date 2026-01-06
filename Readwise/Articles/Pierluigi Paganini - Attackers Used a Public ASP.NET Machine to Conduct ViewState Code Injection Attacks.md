@@ -6,7 +6,7 @@ tags:
   - readwise/articles
   - dotnet
 url: https://securityaffairs.com/173956/hacking/abusing-asp-net-machine-to-deploy-malware.html?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Attackers Used a Public ASP.NET Machine to Conduct ViewState Code Injection Attacks
 

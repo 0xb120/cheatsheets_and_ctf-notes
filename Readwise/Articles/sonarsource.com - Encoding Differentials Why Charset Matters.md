@@ -1,9 +1,13 @@
 ---
 author: sonarsource.com
-aliases: ["Encoding Differentials: Why Charset Matters", Encoding Differentials]
-tags: [readwise/articles, ISO-2022-JP]
+aliases:
+  - "Encoding Differentials: Why Charset Matters"
+  - Encoding Differentials
+tags:
+  - readwise/articles
+  - ISO-2022-JP
 url: https://www.sonarsource.com/blog/encoding-differentials-why-charset-matters/?__readwiseLocation=
-date: 2025-02-04
+created: 2025-02-04
 ---
 # Encoding Differentials: Why Charset Matters
 

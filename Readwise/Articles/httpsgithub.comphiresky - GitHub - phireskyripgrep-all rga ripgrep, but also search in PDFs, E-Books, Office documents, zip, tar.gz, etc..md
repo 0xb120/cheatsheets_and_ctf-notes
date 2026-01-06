@@ -1,9 +1,12 @@
 ---
 author: https://github.com/phiresky/
-aliases: [rga]
-tags: [readwise/articles, tools]
+aliases:
+  - rga
+tags:
+  - readwise/articles
+  - tools
 url: https://github.com/phiresky/ripgrep-all
-date: 2024-09-25
+created: 2024-09-25
 ---
 # GitHub - phiresky/ripgrep-all: rga: ripgrep, but also search in PDFs, E-Books, Office documents, zip, tar.gz, etc.
 

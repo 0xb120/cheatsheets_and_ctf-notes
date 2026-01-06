@@ -1,9 +1,11 @@
 ---
 author: Gareth Heyes
-aliases: [Using Form Hijacking to Bypass CSP]
-tags: [readwise/articles]
+aliases:
+  - Using Form Hijacking to Bypass CSP
+tags:
+  - readwise/articles
 url: https://portswigger.net/research/using-form-hijacking-to-bypass-csp
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Using Form Hijacking to Bypass CSP
 

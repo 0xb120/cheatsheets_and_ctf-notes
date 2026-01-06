@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://www.horizon3.ai/attack-research/disclosures/unsafe-at-any-speed-abusing-python-exec-for-unauth-rce-in-langflow-ai/?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Unsafe at Any Speed: Abusing Python Exec for Unauth RCE in Langflow AI
 

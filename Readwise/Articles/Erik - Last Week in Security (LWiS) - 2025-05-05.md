@@ -5,7 +5,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-05-05.html?__readwiseLocation=
-date: 2025-05-08
+created: 2025-05-08
 ---
 # Last Week in Security (LWiS) - 2025-05-05
 

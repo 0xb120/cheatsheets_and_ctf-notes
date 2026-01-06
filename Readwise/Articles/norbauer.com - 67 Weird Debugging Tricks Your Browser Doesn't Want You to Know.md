@@ -1,9 +1,11 @@
 ---
 author: norbauer.com
-aliases: [67 Weird Debugging Tricks Your Browser Doesn't Want You to Know]
-tags: [readwise/articles]
+aliases:
+  - 67 Weird Debugging Tricks Your Browser Doesn't Want You to Know
+tags:
+  - readwise/articles
 url: https://alan.norbauer.com/articles/browser-debugging-tricks
-date: 2024-08-20
+created: 2024-08-20
 ---
 # 67 Weird Debugging Tricks Your Browser Doesn't Want You to Know
 

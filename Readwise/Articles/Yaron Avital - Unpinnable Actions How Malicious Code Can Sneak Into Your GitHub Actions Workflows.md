@@ -6,7 +6,7 @@ aliases:
 tags:
   - readwise/articles
 url: https://www.paloaltonetworks.com/blog/cloud-security/unpinnable-actions-github-security/?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Unpinnable Actions: How Malicious Code Can Sneak Into Your GitHub Actions Workflows
 

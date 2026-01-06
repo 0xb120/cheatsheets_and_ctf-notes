@@ -6,7 +6,7 @@ tags:
   - readwise/articles
   - dotnet
 url: https://www.assetnote.io/resources/research/leveraging-an-order-of-operations-bug-to-achieve-rce-in-sitecore-8-x---10-x?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Leveraging an Order of Operations Bug to Achieve RCE in Sitecore 8.x - 10.x
 

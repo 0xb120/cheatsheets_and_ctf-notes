@@ -154,6 +154,7 @@ Other references:
 
 - [Hacking Swagger-Ui - From XSS to Account Takeovers](../../Readwise/Articles/Dawid%20Moczadło%20-%20Hacking%20Swagger-Ui%20-%20From%20XSS%20to%20Account%20Takeovers.md)
 - Bypass the [HttpOnly Cookie Attribute](HttpOnly%20Cookie%20Attribute.md) protection with [XSS + phpinfo](HttpOnly%20Cookie%20Attribute.md#XSS%20+%20phpinfo)
+- [PortSwigger Research - Stealing HttpOnly Cookies With the Cookie Sandwich Technique](../../Readwise/Articles/PortSwigger%20Research%20-%20Stealing%20HttpOnly%20Cookies%20With%20the%20Cookie%20Sandwich%20Technique.md)
 - XSS on a subdomain for attacking parent domains with [Cookie Tossing](Cookie%20Tossing.md) and [Cookie Eviction](Cookie%20Eviction.md)
 - XSS exploiting [Encoding Differentials](../../Readwise/Articles/sonarsource.com%20-%20Encoding%20Differentials%20Why%20Charset%20Matters.md)
 

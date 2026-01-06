@@ -1,9 +1,11 @@
 ---
 author: novasecio
-aliases: ["Hunting for Blind XSS Vulnerabilities: A Complete Guide"]
-tags: [readwise/articles]
+aliases:
+  - "Hunting for Blind XSS Vulnerabilities: A Complete Guide"
+tags:
+  - readwise/articles
 url: https://www.intigriti.com/researchers/blog/hacking-tools/hunting-for-blind-cross-site-scripting-xss-vulnerabilities-a-complete-guide
-date: 2025-01-07
+created: 2025-01-07
 ---
 # Hunting for Blind XSS Vulnerabilities: A Complete Guide
 

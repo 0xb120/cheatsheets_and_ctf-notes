@@ -1,12 +1,15 @@
 ---
-title: "How To Find SQL Injection Vulnerabilities in WordPress Plugins and Themes"
-source: "https://www.wordfence.com/blog/2025/08/how-to-find-sql-injection-vulnerabilities-in-wordpress-plugins-and-themes/#finding-sqli-vulnerabilities-in-wordpress-plugins-and-themes"
+title: How To Find SQL Injection Vulnerabilities in WordPress Plugins and Themes
+source: https://www.wordfence.com/blog/2025/08/how-to-find-sql-injection-vulnerabilities-in-wordpress-plugins-and-themes/#finding-sqli-vulnerabilities-in-wordpress-plugins-and-themes
 author:
-  - "Alex Thomas"
+  - Alex Thomas
 published: 2025-08-06
 created: 2025-08-19
-description: "Learn how to find SQL Injection vulnerabilities in WordPress plugins and themes for the Wordfence Bug Bounty program."
-tags: ["clippings/articles", "_inbox"]
+description: Learn how to find SQL Injection vulnerabilities in WordPress plugins and themes for the Wordfence Bug Bounty program.
+tags:
+  - clippings/articles
+aliases:
+  - How To Find SQL Injection Vulnerabilities in WordPress Plugins and Themes
 ---
 # How To Find SQL Injection Vulnerabilities in WordPress Plugins and Themes
 
@@ -28,17 +31,17 @@ tags: ["clippings/articles", "_inbox"]
 
 ## Finding SQLi Vulnerabilities in WordPress Plugins and Themes
 
-To find SQL injection vulnerabilities, you’ll need to know what to search for in plugin or theme code. As mentioned in the introduction, WordPress core provides a number of database functions through its API. These functions are made available through the `$wpdb` class.
+To find [SQL Injection](../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/SQL%20Injection.md) vulnerabilities, you’ll need to know what to search for in plugin or theme code. As mentioned in the introduction, [Wordpress](../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/Wordpress.md) core provides a number of database functions through its API. These functions are made available through the `$wpdb` class.
 
-Using your Integrated Development Environment (IDE), you can start by searching plugin or theme code for `$wpdb`.
+- Using your Integrated Development Environment (IDE), you can start by searching plugin or theme code for `$wpdb`.
 
-You can also search for `esc_sql()`, which is a function designed to escape quotes within strings.
+- You can also search for `esc_sql()`, which is a function designed to escape quotes within strings.
 
-Finally, you can search for other keywords that are typically used in SQL queries like `SELECT`, `INSERT`, `ORDER BY`, `UPDATE`, `DELETE`, and so on.
+- Finally, you can search for other keywords that are typically used in SQL queries like `SELECT`, `INSERT`, `ORDER BY`, `UPDATE`, `DELETE`, and so on.
 
-However, note that earlier in this post, we mentioned that the ideal place to start is by identifying sinks.
+However, note that earlier in this post, we mentioned that the **ideal place** to start is by **identifying sinks**.
 
-We can take this information and develop a regular expression designed to get us an ideal starting search for SQLi:
+We can take this information and develop a **regular expression** designed to get us an ideal starting search for SQLi:
 
 `\$wpdb->(?:query|``prepare``|get_var|get_row|get_col|get_results)\s*\(|\besc_sql\s*\(`
 
@@ -46,7 +49,7 @@ We can take this information and develop a regular expression designed to get us
 
 #### 1\. Direct Concatenation of User Input into SQL Queries
 
-The most common and dangerous pattern is directly concatenating user-supplied input into SQL queries without proper escaping or parameterization. This occurs when developers build dynamic queries using string concatenation.
+The most common and dangerous pattern is **directly concatenating user-supplied input** into SQL queries without proper escaping or parameterization. This occurs when developers build dynamic queries using string concatenation.
 
 #### 2\. Incorrect Assumption that XSS Sanitization Functions Protect Against SQL Injection
 
@@ -62,9 +65,9 @@ When dealing with numeric parameters, developers often fail to cast them to inte
 
 ### Understanding WordPress’s wp\_magic\_quotes() Protection
 
-WordPress automatically applies `wp_magic_quotes()` to superglobal data, which escapes quotes. This means queries like the following are **NOT vulnerable** because an injection attempt like `1' OR 1=1--` becomes `1\' OR 1=1--`, resulting in the safe query: `SELECT * FROM wp_posts WHERE ID = '1\' OR 1=1--'`.
+**WordPress automatically applies `wp_magic_quotes()` to superglobal data**, which escapes quotes. This means queries like the following are **NOT vulnerable** because an injection attempt like `1' OR 1=1--` becomes `1\' OR 1=1--`, resulting in the safe query: `SELECT * FROM wp_posts WHERE ID = '1\' OR 1=1--'`.
 
-However, this protection is limited to:
+However, **this protection is limited to**:
 
 - String contexts where values are wrapped in quotes
 

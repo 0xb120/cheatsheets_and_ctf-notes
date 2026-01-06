@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://badoption.eu/blog/2025/04/25/github.html?__readwiseLocation=
-date: 2025-04-30
+created: 2025-04-30
 ---
 # Having Fun With Github
 

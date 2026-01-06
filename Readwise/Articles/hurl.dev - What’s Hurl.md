@@ -6,7 +6,7 @@ tags:
   - readwise/articles
   - tools
 url: https://hurl.dev/?__readwiseLocation=
-date: 2025-04-01
+created: 2025-04-01
 ---
 # What’s Hurl?
 

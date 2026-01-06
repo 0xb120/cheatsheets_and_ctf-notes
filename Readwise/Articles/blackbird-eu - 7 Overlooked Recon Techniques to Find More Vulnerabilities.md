@@ -1,9 +1,11 @@
 ---
 author: blackbird-eu
-aliases: [7 Overlooked Recon Techniques to Find More Vulnerabilities]
-tags: [readwise/articles]
+aliases:
+  - 7 Overlooked Recon Techniques to Find More Vulnerabilities
+tags:
+  - readwise/articles
 url: https://www.intigriti.com/researchers/blog/hacking-tools/7-overlooked-recon-techniques-to-find-more-vulnerabilities
-date: 2025-01-13
+created: 2025-01-13
 ---
 # 7 Overlooked Recon Techniques to Find More Vulnerabilities
 

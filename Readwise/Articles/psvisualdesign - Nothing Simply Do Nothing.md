@@ -1,9 +1,11 @@
 ---
 author: psvisualdesign
-aliases: ["Nothing: Simply Do Nothing"]
-tags: [readwise/articles]
+aliases:
+  - "Nothing: Simply Do Nothing"
+tags:
+  - readwise/articles
 url: https://usenothing.com/
-date: 2024-09-25
+created: 2024-09-25
 ---
 # Nothing: Simply Do Nothing
 

@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://swarm.ptsecurity.com/bypassing-browser-tracking-protection-for-cors-misconfiguration-abuse/?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # Bypassing Browser Tracking Protection for CORS Misconfiguration Abuse
 

@@ -1,9 +1,12 @@
 ---
 author: phrack.org
-aliases: [".:: Phrack Magazine ::."]
-tags: [readwise/articles, thoughts]
+aliases:
+  - ".:: Phrack Magazine ::."
+tags:
+  - readwise/articles
+  - thoughts
 url: https://phrack.org/issues/71/1#article
-date: 2024-12-19
+created: 2024-12-19
 ---
 # .:: Phrack Magazine ::.
 

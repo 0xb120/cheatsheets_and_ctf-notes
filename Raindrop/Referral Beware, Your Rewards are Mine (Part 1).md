@@ -21,7 +21,8 @@ source: https://rhinosecuritylabs.com/research/referral-beware-your-rewards-are-
 
 created: 1756314192000
 type: article
-tags: ["_index"]
+tags:
+  - "_index"
 
  
   - "tech-blog"

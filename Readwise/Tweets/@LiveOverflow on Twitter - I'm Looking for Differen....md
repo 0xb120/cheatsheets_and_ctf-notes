@@ -1,9 +1,11 @@
 ---
 author: "@LiveOverflow on Twitter"
-aliases: [I'm Looking for Differen...]
-tags: [readwise/tweets]
+aliases:
+  - I'm Looking for Differen...
+tags:
+  - readwise/tweets
 url: https://twitter.com/LiveOverflow/status/1782042868598661626
-date: 2024-08-20
+created: 2024-08-20
 ---
 # I'm Looking for Differen...
 

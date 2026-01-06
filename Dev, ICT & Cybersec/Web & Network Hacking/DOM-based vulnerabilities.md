@@ -402,7 +402,8 @@ Exploit code opening the vulnerable page and focusing on the clobbered form `x`.
 # Tools
 
 - [DOM Invader](https://portswigger.net/burp/documentation/desktop/tools/dom-invader)
-- [DOMC Payload Generator](https://domclob.xyz/domc_payload_generator/) - Generates DOM Clobbering Attack Payload
+- [domloggerpp](../../Clippings/kevin-mizu%20-%20kevin-mizudomloggerpp%20A%20browser%20extension%20that%20allows%20you%20to%20monitor,%20intercept,%20and%20debug%20JavaScript%20sinks%20based%20on%20customizable%20configurations..md) - A browser extension that allows you to monitor, intercept, and debug JavaScript sinks based on customizable configurations
 - [DOMspy](https://github.com/GangGreenTemperTatum/DOMspy) [^domspy]
+- [DOMC Payload Generator](https://domclob.xyz/domc_payload_generator/) - Generates DOM Clobbering Attack Payload
 
 [^domspy]: [Erik - Last Week in Security (LWiS) - 2025-01-06](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202025-01-06.md#^5d4fbd)

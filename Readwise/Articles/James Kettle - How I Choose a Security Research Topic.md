@@ -1,9 +1,11 @@
 ---
 author: James Kettle
-aliases: [How I Choose a Security Research Topic]
-tags: [readwise/articles]
+aliases:
+  - How I Choose a Security Research Topic
+tags:
+  - readwise/articles
 url: https://portswigger.net/research/how-i-choose-a-security-research-topic
-date: 2024-08-20
+created: 2024-08-20
 ---
 # How I Choose a Security Research Topic
 

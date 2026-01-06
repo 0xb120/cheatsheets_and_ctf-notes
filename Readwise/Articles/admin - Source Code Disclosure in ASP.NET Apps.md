@@ -1,9 +1,13 @@
 ---
 author: Arseniy Sharoglazov
-aliases: [Source Code Disclosure in ASP.NET Apps]
-tags: [readwise/articles, dotnet, cookieless-session]
+aliases:
+  - Source Code Disclosure in ASP.NET Apps
+tags:
+  - readwise/articles
+  - dotnet
+  - cookieless-session
 url: https://swarm.ptsecurity.com/source-code-disclosure-in-asp-net-apps/?__readwiseLocation=
-date: 2024-08-22
+created: 2024-08-22
 ---
 # Source Code Disclosure in ASP.NET Apps
 

@@ -1,9 +1,11 @@
 ---
 author: Gabor Matuz
-aliases: [Hacking HTMX Applications]
-tags: [readwise/articles]
+aliases:
+  - Hacking HTMX Applications
+tags:
+  - readwise/articles
 url: https://infosecwriteups.com/hacking-htmx-applications-f8d29665faf
-date: 2024-08-20
+created: 2024-08-20
 ---
 # Hacking HTMX Applications
 

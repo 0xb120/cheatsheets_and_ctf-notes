@@ -6,7 +6,7 @@ tags:
   - RW_inbox
   - readwise/articles
 url: https://labs.watchtowr.com/xss-to-rce-by-abusing-custom-file-handlers-kentico-xperience-cms-cve-2025-2748/?__readwiseLocation=
-date: 2025-05-12
+created: 2025-05-12
 ---
 # XSS to RCE by Abusing Custom File Handlers - Kentico Xperience CMS
 

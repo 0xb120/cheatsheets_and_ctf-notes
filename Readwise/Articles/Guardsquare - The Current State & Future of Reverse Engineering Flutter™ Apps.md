@@ -7,7 +7,7 @@ tags:
   - readwise/articles
   - Flutter
 url: https://www.guardsquare.com/blog/current-state-and-future-of-reversing-flutter-apps?__readwiseLocation=
-date: 2025-04-24
+created: 2025-04-24
 ---
 # The Current State & Future of Reverse Engineering Flutter™ Apps
 
