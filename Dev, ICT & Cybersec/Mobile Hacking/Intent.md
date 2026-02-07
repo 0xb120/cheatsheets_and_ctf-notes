@@ -65,3 +65,4 @@ Eg.
 - Exploiting other application privileges to gain access to restricted components or features
 
 [^content-provider-flag-grant]: [Arbitrary file read/write from non-exported content providers that have the `grantUriPermission` enabled.](Content%20Providers.md#^b4a712)
+

@@ -181,6 +181,7 @@ public class AttackProvider extends ContentProvider {
 - Arbitrary file read/write using exported [Content Providers](Content%20Providers.md) [^file-read-content-provider-vault][^file-read-content-provider-element]
 - Arbitrary file read/write from non-exported content providers that have the `grantUriPermission` enabled. The provider is generally not exported with `android:exported="false"` but the attribute `android:grantUriPermissions="true"` is set. This means the provider cannot be directly interacted with. But the app can allow another app to query the provider, when sending an [Intent](Intent.md) with a flag such as [`GRANT_READ_URI_PERMISSION`](https://developer.android.com/reference/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION). ^b4a712
 - [SQL Injection](../Web%20&%20Network%20Hacking/SQL%20Injection.md) in [Content Providers](Content%20Providers.md)
+	- [PT SWARM - Injection for an athlete](../../Clippings/PT%20SWARM%20-%20Injection%20for%20an%20athlete.md)
 
 
 [^file-read-content-provider-vault]: [Arbitrary file interaction using an exported content provider](https://0xbro.red/disclosures/disclosed-vulnerabilities/digital-private-vault/#arbitrary-file-interaction-using-an-exported-content-provider), 0xbro.red

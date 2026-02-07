@@ -57,7 +57,6 @@ Modern APK are not programmed using plain Java. They are built using **framework
 - [ReactNative](../Dev,%20scripting%20&%20OS/ReactNative.md)
 - Apache [Cordova](../Dev,%20scripting%20&%20OS/Cordova.md)
 
-
 ## Manifest and source code analysis
 
 Search for:
@@ -72,7 +71,7 @@ Search for:
     - Log enabled
     - Insecure protocols and deeplink
     - Weak cryptographic functions or key leaks
-    - [Weak WebView configuration](Android%20Dynamic%20application%20security%20testing%20(DAST).md#WebView%20attacks%20[%20web-view-attacks])
+    - Weak WebView configuration
 - Check Configuration of Cryptographic Standard Algorithms
     - `Cipher`
     - `Mac`

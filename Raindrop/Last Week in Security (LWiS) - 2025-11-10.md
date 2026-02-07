@@ -2,14 +2,25 @@
 raindrop_id: 1432175490
 raindrop_highlights:
   6932b41fc4ef6a3cc0a1bfff: bfae6fdfb97caa5374b5d45f433df043
-title: Last Week in Security (LWiS) - 2025-11-10
-description: "null"
+title: "Last Week in Security (LWiS) - 2025-11-10"
+
+description: |-
+  null
+
 source: https://blog.badsectorlabs.com/last-week-in-security-lwis-2025-11-10.html
-created: 1763054308200
-type: article
+
+created: 2025-11-13
+sync-date: 1769114384107
 tags:
-  - _index
-  - tech-newsletters
+  - "_index"
+
+ 
+  - "tech-newsletters" 
+  - "labs" 
+  - "MCP" 
+  - "AI" 
+  - "LLM"
+
 ---
 # Last Week in Security (LWiS) - 2025-11-10
 

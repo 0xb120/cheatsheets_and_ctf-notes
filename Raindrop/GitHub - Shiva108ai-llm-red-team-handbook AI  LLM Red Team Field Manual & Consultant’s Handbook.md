@@ -15,13 +15,12 @@ description: |-
 
 source: https://github.com/shiva108/ai-llm-red-team-handbook
 
-created: 1764871588377
-type: link
+created: 2025-12-04
+sync-date: 1769114384429
 tags:
   - "_index"
 
  
-  - "labs" 
   - "AI" 
   - "LLM"
 

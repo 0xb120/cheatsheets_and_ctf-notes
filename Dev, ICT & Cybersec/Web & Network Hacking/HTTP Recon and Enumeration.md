@@ -140,12 +140,7 @@ Use the information obtained with the [Endpoint Crawling](HTTP%20Recon%20and%20E
 - [MrmtwojApache-Vulnerability-Testing Apache HTTP Server Vulnerability Testing Tool](../../Readwise/Articles/httpsgithub.commrmtwoj%20-%20MrmtwojApache-Vulnerability-Testing%20Apache%20HTTP%20Server%20Vulnerability%20Testing%20Tool%20PoC%20for%20CVE-2024-38472%20,%20CVE-2024-39573%20,%20CVE-2024-38477%20,%20CVE-2024-38476%20,%20CVE-2024-38475%20,%20CVE-2024-38474%20,%20CVE-2024-38473%20,%20CVE-2023-38709.md) ( #apache specific )
 - [misconfig mapper](../../Readwise/Articles/novasecio%20-%20Intigriti%20Bug%20Bytes%20219%20-%20December%202024.md#^4a91a1) - automate security misconfiguration detection on your list of domains
 - [nikto](../Tools/nikto.md)
-
-#LLM based scanners:
-- cai
-- [strix](../../Raindrop/usestrixstrix%20✨%20Open-source%20AI%20hackers%20for%20your%20apps%20👨🏻‍💻.md)
-- Cyber-AutoAgent
-- PentAGI
+- [Agentic Frameworks in Offensive Cybersecurity](../AI/Agentic%20Frameworks%20in%20Offensive%20Cybersecurity.md)
 
 ## Secrets enumeration
 

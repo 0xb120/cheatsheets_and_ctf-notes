@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f75d8d85c392348d",
+        "id": "9f7023b8bc85d543",
         "type": "tabs",
         "children": [
           {
-            "id": "882299f7fa04da2a",
+            "id": "b4864a90944bd24b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
-            }
-          },
-          {
-            "id": "b58cfcbf4a3b8478",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/Flutter.md",
+                "file": "CTFs/LoveTok.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -52,10 +28,35 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Flutter"
+              "title": "LoveTok"
+            }
+          },
+          {
+            "id": "32b19ea990c6ef21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clippings/Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "raindrop",
+                "query": "\"rand(\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -116,6 +117,16 @@
               },
               "icon": "lucide-search",
               "title": "Search"
+            }
+          },
+          {
+            "id": "0b4a16855701642c",
+            "type": "leaf",
+            "state": {
+              "type": "smart-lookup-view",
+              "state": {},
+              "icon": "smart-lookup",
+              "title": "Lookup"
             }
           },
           {
@@ -128,8 +139,7 @@
               "title": "Source Control"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -142,7 +152,7 @@
       {
         "id": "497a4e903f6476bf",
         "type": "tabs",
-        "dimension": 49.629629629629626,
+        "dimension": 50.65666041275797,
         "children": [
           {
             "id": "cecdd88dce19730c",
@@ -160,10 +170,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md"
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android Static application security testing (SAST).md"
               },
               "icon": "lucide-info",
-              "title": "File properties for You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
+              "title": "File properties for Android Static application security testing (SAST)"
             }
           },
           {
@@ -201,22 +211,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Readwise/Articles/0x999.net - Exploring Javascript Events & Bypassing WAFs via Character Normalization.md",
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/WebViews.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0x999.net - Exploring Javascript Events & Bypassing WAFs via Character Normalization"
+              "title": "Outline of WebViews"
+            }
+          },
+          {
+            "id": "9e16e0c8d631e94b",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "0ca134c80578c5f2",
         "type": "tabs",
-        "dimension": 50.37037037037037,
+        "dimension": 49.34333958724203,
         "children": [
           {
             "id": "92a8f5dacbdec5e4",
@@ -224,7 +243,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
+                "file": "Dev, ICT & Cybersec/AI/Agentic Frameworks in Offensive Cybersecurity.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -234,7 +253,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
+              "title": "Backlinks for Agentic Frameworks in Offensive Cybersecurity"
             }
           },
           {
@@ -243,12 +262,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android Services.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
+              "title": "Outgoing links from Android Services"
             }
           },
           {
@@ -257,7 +276,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android Services.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -285,15 +304,25 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
+              "title": "Graph of Android Services"
+            }
+          },
+          {
+            "id": "eb80243327ea3000",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 412.5
+    "width": 470.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -308,42 +337,48 @@
       "workspaces:Manage workspace layouts": true,
       "file-tree-alternative:File Tree Alternative Plugin": true,
       "obsidian-git:Open Git source control": true,
-      "obsidian-raindrop-highlights:Sync Raindrop bookmarks from last sync time": false
+      "obsidian-raindrop-highlights:Sync Raindrop bookmarks from last sync time": false,
+      "copilot:Open Copilot Chat": true,
+      "smart-connections:Smart Connections: Open connections view": true,
+      "smart-connections:Smart Lookup: Open lookup view": true,
+      "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "a1601c5574d5b14f",
+  "active": "32b19ea990c6ef21",
   "lastOpenFiles": [
-    "Inoreader.md",
-    "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
-    "Raindrop/Last Week in Security (LWiS) - 2025-11-10.md",
-    "Raindrop/Last Week in Security (LWiS) - 2025-11-03.md",
-    "Raindrop/Last Week in Security (LWiS) - 2025-10-27.md",
-    "Raindrop/Inside PostHog How SSRF, a ClickHouse SQL Escaping 0day, and Default PostgreSQL Credentials Formed an RCE Chain (ZDI-25-099, ZDI-25-097, ZDI-25-096) [app] [exp].md",
-    "Raindrop/Hunting for DOM-based XSS vulnerabilities A complete guide.md",
-    "Raindrop/Blind trust what is hidden behind the process of creating your PDF file.md",
+    "Raindrop/Minting Next.js Authentication Cookies.md",
+    "Raindrop/1-Click RCE to steal your Moltbot data and keys.md",
+    "Raindrop/Splitting the email atom exploiting parsers to bypass access controls.md",
+    "Clippings/Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024.md",
+    "CTFs/Space pirate Going Deeper.md",
+    "Readwise/Articles/Nathan Touati - Sandwich Attacks From Reset Password to Account Takeover.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Race Condition.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
+    "Clippings/Alain Mowat - SonicDoor – Cracking SonicWall’s SMA 500 – SCRT Team Blog.md",
+    "Communities/YouTube/2025XXX_UncoveringVulnerabilitiesPentestingOutdatedWebApp.md",
+    "Communities/YouTube/2022004_ZipSlip.md",
+    "Clippings/TrustedSec - MCP in Burp Suite From Enumeration to Targeted Exploitation.md",
+    "Raindrop/XBOW - Why LLMs Hallucinate Vulnerabilities.md",
+    "Raindrop/vxcontrolpentagi ✨ Fully autonomous AI Agents system capable of performing complex penetration testing tasks.md",
+    "Raindrop/[Revised] You Don’t Need to Spend $100mo on Claude Code Your Guide to Local Coding Models.md",
+    "Clippings/PT SWARM - Injection for an athlete.md",
+    "Readwise/Articles/Summoning Team - Breaking Down Barriers Exploiting Pre-Auth SQL Injection in WhatsUp Gold CVE-2024-6670.md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Content Providers.md",
+    "Dev, ICT & Cybersec/AI/Agentic Frameworks in Offensive Cybersecurity.md",
+    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-03-03.md",
+    "Bases/Tools.base",
     "Bases/Articles inbox.base",
-    "Dev, ICT & Cybersec/Mobile Hacking/Android Dynamic application security testing (DAST).md",
-    "Dev, ICT & Cybersec/Mobile Hacking/Android Static application security testing (SAST).md",
-    "Readwise/Articles/b4dsheep - Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide..md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Flutter.md",
-    "Readwise/Articles/noreply@blogger.com (Christian Cotignola (@b4dsheep)) - Bypassing Certificate Pinning on Flutter-Based Android Apps. A New Guide..md",
-    "Readwise/Articles/admin - Fork Bomb for Flutter.md",
-    "Readwise/Articles/Michael Weber - Refresh Compromising F5 BIG-IP With Request Smuggling CVE-2023-46747.md",
-    "Raindrop/GitHub - ImAyrixfallparams Find All Parameters - Tool to crawl pages, find potential parameters and generate a custom target parameter wordlist.md",
-    "Dev, ICT & Cybersec/Reversing & Binary Exploitation/Fuzzing.md",
+    "Raindrop/aliasroboticscai Cybersecurity AI (CAI), the framework for AI Security.md",
     "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Readwise/Articles/Penetration Testing and CyberSecurity Solution – SecureLayer7 - A Deep Dive Into Application Security Testing.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-11-25.md",
-    "Readwise/Articles/blackbird-eu - Discovering Hidden Parameters An Advanced Guide.md",
+    "Raindrop/usestrixstrix ✨ Open-source AI hackers for your apps 👨🏻‍💻.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
-    "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
-    "Dev, ICT & Cybersec/Tools/Burpsuite.md",
-    "Dev, ICT & Cybersec/Tools/sqlmap.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Dictionary Generation.md",
+    "Raindrop/Struts Devmode in 2025 Critical Pre-Auth Vulnerabilities in Adobe Experience Manager Forms › Searchlight Cyber.md",
+    "Raindrop/six2dezburp-ai-agent Burp Suite extension that adds built-in MCP tooling, AI-assisted analysis, privacy controls, passive and active scanning and more.md",
+    "copilot/memory",
+    "copilot",
     "Clippings/attachments/weak-firebase-2.png",
     "Clippings/attachments/weak-firebase-1.png",
     "VR/Targets/VR targets.base",
-    "Bases/Tools.base",
     "Communities/YouTube/_YouTubeDB.base",
     "Bases/CTFs.base",
     "zzz_res/attachments/annotated-OWASP_Code_Review_Guide_v2.pdf",
@@ -352,8 +387,6 @@
     "Bases",
     "Excalibrain",
     "Untitled.canvas",
-    "Untitled 1.base",
-    "Untitled.base",
     "Personal/Book list/_book-dashboard.canvas",
     "Communities/MeetHack/Nday/Black Project.canvas",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-17.png",

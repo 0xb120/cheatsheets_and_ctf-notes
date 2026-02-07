@@ -19,23 +19,18 @@ raindrop_highlights:
   69281adaef944e55f1c296b0: 0275a63245652606c05e2418860356eb
   69281ae00b421e2b354875e0: 4d9ee8ae3113cf18360fa5268d06d134
 title: "GitHub - arm/metis: Metis is an open-source, AI-driven tool for deep security code review"
-
-description: |-
-  Metis is an open-source, AI-driven tool for deep security code review - arm/metis
-
+description: Metis is an open-source, AI-driven tool for deep security code review - arm/metis
 source: https://github.com/arm/metis
-
 created: 1764102474086
 type: link
 tags:
-  - "_index"
-
- 
-  - "AI" 
-  - "Tools" 
-  - "LLM" 
-  - "SAST"
-
+  - _index
+  - AI
+  - Tools
+  - LLM
+  - SAST
+aliases:
+  - metis
 ---
 # GitHub - arm/metis: Metis is an open-source, AI-driven tool for deep security code review
 

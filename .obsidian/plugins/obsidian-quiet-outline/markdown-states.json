@@ -1,19 +1,20 @@
 {
   "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md": {
-    "scroll": 91.35319979330765,
+    "scroll": 49.4093994140625,
     "cursor": {
       "from": {
-        "line": 113,
-        "ch": 53
+        "line": 61,
+        "ch": 0
       },
       "to": {
-        "line": 113,
-        "ch": 53
+        "line": 61,
+        "ch": 0
       }
     },
     "expandedKeys": [
       "item-1-0",
-      "item-2-5"
+      "item-2-5",
+      "item-2-3"
     ]
   },
   "Clippings/Brandon Stewart - How GitHub uses CodeQL to secure GitHub.md": {
@@ -289,18 +290,22 @@
     "expandedKeys": []
   },
   "Raindrop/usestrixstrix ✨ Open-source AI hackers for your apps 👨🏻‍💻.md": {
-    "scroll": 39.99722633637844,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 54,
-        "ch": 30
+        "line": 28,
+        "ch": 37
       },
       "to": {
-        "line": 54,
-        "ch": 30
+        "line": 28,
+        "ch": 37
       }
     },
-    "expandedKeys": []
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3",
+      "item-2-7"
+    ]
   },
   "Clippings/James Kettle - HTTP1.1 must die the desync endgame.md": {
     "scroll": 30.722689075630253,
@@ -1858,7 +1863,7 @@
     ]
   },
   "Readwise/Articles/stulle123 - 1-Click Exploit in South Korea's Biggest Mobile Chat App.md": {
-    "scroll": 0,
+    "scroll": 8.141228602482721,
     "cursor": {
       "from": {
         "line": 5,
@@ -1906,7 +1911,7 @@
     ]
   },
   "Readwise/Articles/admin - Fork Bomb for Flutter.md": {
-    "scroll": 6.473084757150698,
+    "scroll": 19.660310555330085,
     "cursor": {
       "from": {
         "line": 16,
@@ -2747,7 +2752,7 @@
     "expandedKeys": []
   },
   "Readwise/Articles/neodyme.io - HTML to PDF Renderer A Tale of Local File Access and Shellcode Execution.md": {
-    "scroll": 0,
+    "scroll": 9.509839989673132,
     "cursor": {
       "from": {
         "line": 0,
@@ -2758,7 +2763,10 @@
         "ch": 0
       }
     },
-    "expandedKeys": []
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
   },
   "Readwise/Articles/Naveen Sunkavally - Unsafe at Any Speed Abusing Python Exec for Unauth RCE in Langflow AI.md": {
     "scroll": 0,
@@ -2858,7 +2866,9 @@
         "ch": 0
       }
     },
-    "expandedKeys": []
+    "expandedKeys": [
+      "item-1-0"
+    ]
   },
   "Readwise/Tweets/@h4x0r_fr34k on Twitter - Tweets From VAIDIK PANDYA.md": {
     "scroll": 0,
@@ -3283,7 +3293,7 @@
     "expandedKeys": []
   },
   "Communities/YouTube/2025XXX_UncoveringVulnerabilitiesPentestingOutdatedWebApp.md": {
-    "scroll": 0,
+    "scroll": 307.01085607940445,
     "cursor": {
       "from": {
         "line": 0,
@@ -3331,7 +3341,7 @@
     "expandedKeys": []
   },
   "Communities/YouTube/2022004_ZipSlip.md": {
-    "scroll": 0,
+    "scroll": 52.996683139993685,
     "cursor": {
       "from": {
         "line": 0,
@@ -3431,7 +3441,7 @@
     ]
   },
   "Dev, ICT & Cybersec/Tools/Burpsuite.md": {
-    "scroll": 243.43303217174173,
+    "scroll": 182.6975024714411,
     "cursor": {
       "from": {
         "line": 705,
@@ -3445,7 +3455,8 @@
     "expandedKeys": [
       "item-2-21",
       "item-1-6",
-      "item-2-25"
+      "item-2-25",
+      "item-2-7"
     ]
   },
   "Readwise/Articles/PortSwigger Research - Bypassing Character Blocklists With Unicode Overflows.md": {
@@ -3653,25 +3664,28 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 48,
+        "line": 42,
         "ch": 0
       },
       "to": {
-        "line": 48,
+        "line": 42,
         "ch": 0
       }
     },
-    "expandedKeys": []
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
   },
   "Raindrop/anthropicsclaude-code-security-review An AI-powered security review GitHub Action using Claude to analyze code changes for security vulnerabilities.md": {
-    "scroll": 25.394202498407324,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 23,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 23,
         "ch": 0
       }
     },
@@ -3981,14 +3995,14 @@
     "expandedKeys": []
   },
   "Raindrop/GitHub - armmetis Metis is an open-source, AI-driven tool for deep security code review.md": {
-    "scroll": 41.25773050856693,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 34,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 34,
         "ch": 0
       }
     },
@@ -4353,15 +4367,15 @@
     ]
   },
   "Readwise/Articles/novasecio - Recon for Bug Bounty 8 Essential Tools for Performing Effective Reconnaissance.md": {
-    "scroll": 0,
+    "scroll": 34.09957206347278,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 47,
+        "ch": 9
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 47,
+        "ch": 9
       }
     },
     "expandedKeys": [
@@ -4385,23 +4399,21 @@
     ]
   },
   "Dev, ICT & Cybersec/Mobile Hacking/Android Application Security.md": {
-    "scroll": 28.461141882355278,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 24,
+        "ch": 70
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 24,
+        "ch": 70
       }
     },
-    "expandedKeys": [
-      "item-2-1"
-    ]
+    "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Mobile Hacking/Android Dynamic application security testing (DAST).md": {
-    "scroll": 0,
+    "scroll": 128.96739047181373,
     "cursor": {
       "from": {
         "line": 88,
@@ -4620,15 +4632,15 @@
     "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md": {
-    "scroll": 76.95242241510813,
+    "scroll": 125.10912376537397,
     "cursor": {
       "from": {
-        "line": 91,
-        "ch": 65
+        "line": 125,
+        "ch": 181
       },
       "to": {
-        "line": 91,
-        "ch": 65
+        "line": 125,
+        "ch": 181
       }
     },
     "expandedKeys": [
@@ -4716,15 +4728,15 @@
     "expandedKeys": []
   },
   "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md": {
-    "scroll": 93.29185666740014,
+    "scroll": 93.54763836679133,
     "cursor": {
       "from": {
         "line": 103,
-        "ch": 18
+        "ch": 112
       },
       "to": {
         "line": 103,
-        "ch": 18
+        "ch": 112
       }
     },
     "expandedKeys": [
@@ -4781,14 +4793,14 @@
     "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Mobile Hacking/Android Static application security testing (SAST).md": {
-    "scroll": 40.205609237938596,
+    "scroll": 53.103563606463695,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 59,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 59,
         "ch": 0
       }
     },
@@ -4867,5 +4879,578 @@
       }
     },
     "expandedKeys": []
+  },
+  "Raindrop/DNS rebinding attacks explained The lookup is coming from inside the house!.md": {
+    "scroll": 40.630375096055324,
+    "cursor": {
+      "from": {
+        "line": 103,
+        "ch": 145
+      },
+      "to": {
+        "line": 103,
+        "ch": 145
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-2"
+    ]
+  },
+  "Dev, ICT & Cybersec/Services/DNS - Domain Name System.md": {
+    "scroll": 77.59318827807418,
+    "cursor": {
+      "from": {
+        "line": 95,
+        "ch": 29
+      },
+      "to": {
+        "line": 95,
+        "ch": 29
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-2",
+      "item-1-6",
+      "item-2-7"
+    ]
+  },
+  "Clippings/Principle Breach - When The Gateway Becomes The Doorway Pre-Auth RCE in API Management.md": {
+    "scroll": 5.669408697831003,
+    "cursor": {
+      "from": {
+        "line": 50,
+        "ch": 0
+      },
+      "to": {
+        "line": 50,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/Mehmet Ince - The Story of a Perfect Exploit Chain Six Bugs That Looked Harmless Until They Became Pre-Auth RCE in a Security Appliance.md": {
+    "scroll": 58.766549059139784,
+    "cursor": {
+      "from": {
+        "line": 13,
+        "ch": 28
+      },
+      "to": {
+        "line": 13,
+        "ch": 28
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "CTFs/Mutation Lab.md": {
+    "scroll": 92.16604531198938,
+    "cursor": {
+      "from": {
+        "line": 105,
+        "ch": 232
+      },
+      "to": {
+        "line": 105,
+        "ch": 232
+      }
+    },
+    "expandedKeys": [
+      "item-1-1"
+    ]
+  },
+  "Dev, ICT & Cybersec/Tools/Untitled.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Cloud/Salesforce.md": {
+    "scroll": 33.70059779070426,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Activity.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Content Providers.md": {
+    "scroll": 147.10361594643086,
+    "cursor": {
+      "from": {
+        "line": 183,
+        "ch": 108
+      },
+      "to": {
+        "line": 183,
+        "ch": 108
+      }
+    },
+    "expandedKeys": [
+      "item-2-0",
+      "item-3-1",
+      "item-2-4"
+    ]
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Intent.md": {
+    "scroll": 22.81704742739899,
+    "cursor": {
+      "from": {
+        "line": 68,
+        "ch": 0
+      },
+      "to": {
+        "line": 68,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Broadcast Receivers.md": {
+    "scroll": 6.757863335417604,
+    "cursor": {
+      "from": {
+        "line": 15,
+        "ch": 9
+      },
+      "to": {
+        "line": 15,
+        "ch": 9
+      }
+    },
+    "expandedKeys": []
+  },
+  "CTFs/Magic.md": {
+    "scroll": 186.17735023377458,
+    "cursor": {
+      "from": {
+        "line": 199,
+        "ch": 22
+      },
+      "to": {
+        "line": 199,
+        "ch": 22
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-4",
+      "item-1-6",
+      "item-1-9",
+      "item-2-10",
+      "item-1-13"
+    ]
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Android 101.md": {
+    "scroll": 56.57835286458333,
+    "cursor": {
+      "from": {
+        "line": 67,
+        "ch": 7
+      },
+      "to": {
+        "line": 67,
+        "ch": 7
+      }
+    },
+    "expandedKeys": [
+      "item-1-1"
+    ]
+  },
+  "Communities/MeetHack/Android Application Security Slides.md": {
+    "scroll": 86.03867867066688,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-10",
+      "item-2-15",
+      "item-2-19",
+      "item-1-22"
+    ]
+  },
+  "Dev, ICT & Cybersec/Tools/qark.md": {
+    "scroll": 8.477609157562256,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 0
+      },
+      "to": {
+        "line": 4,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Services.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Android Services.md": {
+    "scroll": 70.01987711588542,
+    "cursor": {
+      "from": {
+        "line": 70,
+        "ch": 40
+      },
+      "to": {
+        "line": 70,
+        "ch": 40
+      }
+    },
+    "expandedKeys": [
+      "item-3-2",
+      "item-2-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/Attack AIDL services.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 2
+      },
+      "to": {
+        "line": 0,
+        "ch": 2
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/AIDL services.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 36,
+        "ch": 0
+      },
+      "to": {
+        "line": 36,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-1"
+    ]
+  },
+  "Dev, ICT & Cybersec/Mobile Hacking/WebViews.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 226
+      },
+      "to": {
+        "line": 0,
+        "ch": 226
+      }
+    },
+    "expandedKeys": [
+      "item-2-0"
+    ]
+  },
+  "Raindrop/Multiple XSS in Meta Conversion API Gateway Leading to Zero-Click Account Takeover  Youssef Sammouda (sam0) personal blog.md": {
+    "scroll": 83.896728515625,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Crisdeo Nuel Siahaan - Bounty of an Insecure WebView (Part 1) XSS, but With Steroids.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Raindrop/Hunting for Security Bugs in Code with AI Agents A Full Walkthrough  by Bernhard Mueller  Sep, 2025  Medium.md": {
+    "scroll": 51.46655550870028,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/AI/cyber security agents.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/AI/Agentic Frameworks in Offensive Cybersecurity.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 11,
+        "ch": 113
+      },
+      "to": {
+        "line": 11,
+        "ch": 113
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-03-03.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/PT SWARM - Injection for an athlete.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 48,
+        "ch": 316
+      },
+      "to": {
+        "line": 48,
+        "ch": 316
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Summoning Team - Breaking Down Barriers Exploiting Pre-Auth SQL Injection in WhatsUp Gold CVE-2024-6670.md": {
+    "scroll": 12.950885106646826,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/TrustedSec - MCP in Burp Suite From Enumeration to Targeted Exploitation.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 36,
+        "ch": 63
+      },
+      "to": {
+        "line": 36,
+        "ch": 63
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/Alain Mowat - SonicDoor – Cracking SonicWall’s SMA 500 – SCRT Team Blog.md": {
+    "scroll": 38.99761284722222,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md": {
+    "scroll": 67.60701171875,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Nathan Touati - Sandwich Attacks From Reset Password to Account Takeover.md": {
+    "scroll": 8.05345241840069,
+    "cursor": {
+      "from": {
+        "line": 19,
+        "ch": 372
+      },
+      "to": {
+        "line": 19,
+        "ch": 372
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Race Condition.md": {
+    "scroll": 253.39935302734375,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-2",
+      "item-2-3",
+      "item-2-7"
+    ]
+  },
+  "CTFs/Space pirate Going Deeper.md": {
+    "scroll": 125.969346973994,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1"
+    ]
+  },
+  "CTFs/LoveTok.md": {
+    "scroll": 252.77546514181728,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1"
+    ]
+  },
+  "Clippings/Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 0
+      },
+      "to": {
+        "line": 12,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
   }
 }

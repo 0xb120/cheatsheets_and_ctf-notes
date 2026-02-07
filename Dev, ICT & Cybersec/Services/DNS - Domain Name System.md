@@ -93,9 +93,10 @@ A web service that can be used to continuously change the IP associated to a DNS
 
 The tool keep changes the DNS record between the two IP chosen by the attacker, allowing to exploit the DNS rebinding vulnerability and redirect requests to that domain towards malicious IPs.
 
->[!example]
->See the writeup for [baby CachedView](../../Play%20ground/CTFs/baby%20CachedView.md)
+### Rebinding attack examples
 
+- [baby CachedView](../../CTFs/baby%20CachedView.md)
+- [DNS rebinding attacks explained The lookup is coming from inside the house!](../../Raindrop/DNS%20rebinding%20attacks%20explained%20The%20lookup%20is%20coming%20from%20inside%20the%20house!.md)
 ## Other DNS attacks
 
 - [Domain Attacks](../Web%20&%20Network%20Hacking/Domain%20Attacks.md)

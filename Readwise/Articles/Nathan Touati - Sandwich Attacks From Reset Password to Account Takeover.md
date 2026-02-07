@@ -12,9 +12,8 @@ created: 2025-01-23
 
 ![rw-book-cover](https://appsec-labs.com/wp-content/uploads/2024/12/sandwich.png)
 
-## Highlights
 
-# Time-based vs. Random: Unique Doesn’t Mean Secure
+## Time-based vs. Random: Unique Doesn’t Mean Secure
 
 “unique” isn’t always the same as “unpredictable.” If the token generation relies on something like the server’s clock rather than randomness, a clever attacker could guess the victim’s reset link and hijack their account. This sneaky tactic is known as a Sandwich Attack.
 
@@ -22,7 +21,7 @@ Many systems use **UUIDv1** to generate tokens. UUIDv1 is time-based, meaning it
 > [View Highlight](https://read.readwise.io/read/01jj96n0ynkgfn2zd6k994m0qr)
 
 
-# The Sandwich Attack Explained
+## The Sandwich Attack Explained
 
  Here’s how an attacker can exploit predictable time-based UUIDs during a password reset:
  1. **First Request (Attacker’s Email):** The attacker triggers a password reset for their own account, obtaining a UUIDv1 token. For example: `https://example.com/reset-password?token=6f3da648-bc98-11ef-9cd2-0242ac120002`

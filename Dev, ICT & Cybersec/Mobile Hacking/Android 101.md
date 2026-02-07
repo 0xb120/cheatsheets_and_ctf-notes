@@ -65,7 +65,7 @@ The main components that can be found in APKs are:
 - [AndroidManifest.xml](AndroidManifest.xml.md)
 - [Intent](Intent.md)
 - [Activity](Activity.md)
-- [Services](Services.md)
+- [Android Services](Android%20Services.md)
 - [Broadcast Receivers](../../Broadcast%20Receivers.md)
 - [Content Providers](../../Content%20Providers.md)
 - [WebViews](WebViews.md)

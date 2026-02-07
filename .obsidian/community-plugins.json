@@ -10,7 +10,6 @@
   "obsidian-reading-time",
   "settings-search",
   "omnisearch",
-  "excalibrain",
   "obsidian-paste-image-rename",
   "tag-wrangler",
   "oz-image-plugin",
@@ -19,5 +18,7 @@
   "file-tree-alternative",
   "obsidian-raindrop-highlights",
   "obsidian-mind-map",
-  "readwise-official"
+  "readwise-official",
+  "copilot",
+  "smart-connections"
 ]
