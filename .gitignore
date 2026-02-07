@@ -2,8 +2,10 @@ Communities/
 Personal/Dance
 Personal/Games
 .trash
+.obsidian
 
 # Ignore Smart Environment folder
 .smart-env
 .obsidian/copilot-index-*.json
 .obsidian/plugins/copilot/data.json
+.smtcmp*
