@@ -1,20 +1,21 @@
 {
   "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md": {
-    "scroll": 49.4093994140625,
+    "scroll": 46.8072998046875,
     "cursor": {
       "from": {
-        "line": 61,
-        "ch": 0
+        "line": 177,
+        "ch": 160
       },
       "to": {
-        "line": 61,
-        "ch": 0
+        "line": 177,
+        "ch": 160
       }
     },
     "expandedKeys": [
       "item-1-0",
       "item-2-5",
-      "item-2-3"
+      "item-2-3",
+      "item-1-7"
     ]
   },
   "Clippings/Brandon Stewart - How GitHub uses CodeQL to secure GitHub.md": {
@@ -308,23 +309,20 @@
     ]
   },
   "Clippings/James Kettle - HTTP1.1 must die the desync endgame.md": {
-    "scroll": 30.722689075630253,
+    "scroll": 322.9044140402457,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 321,
+        "ch": 48
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 321,
+        "ch": 48
       }
     },
     "expandedKeys": [
-      "item-1-0",
-      "item-2-1",
-      "item-2-4",
-      "item-2-12",
-      "item-2-17"
+      "item-2-17",
+      "item-1-0"
     ]
   },
   "Clippings/onel, KernelDeimos - HeyPuterputer 🌐 The Internet OS! Free, Open-Source, and Self-Hostable..md": {
@@ -481,7 +479,7 @@
     ]
   },
   "Dev, ICT & Cybersec/High level/Vulnerability research 101.md": {
-    "scroll": 0,
+    "scroll": 2.7159795839924454,
     "cursor": {
       "from": {
         "line": 0,
@@ -683,14 +681,14 @@
     "expandedKeys": []
   },
   "Clippings/lyra's epic blog - SVG Filters - Clickjacking 2.0.md": {
-    "scroll": 0,
+    "scroll": 10.794014408903301,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 11,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 11,
         "ch": 0
       }
     },
@@ -3556,14 +3554,14 @@
     ]
   },
   "Dev, ICT & Cybersec/Dev, scripting & OS/HTML.md": {
-    "scroll": 59.67022288929332,
+    "scroll": 55.42589065437627,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 62,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 62,
         "ch": 0
       }
     },
@@ -3967,7 +3965,7 @@
     "expandedKeys": []
   },
   "Raindrop/GitHub - 0x4m4hexstrike-ai HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and securi.md": {
-    "scroll": 0,
+    "scroll": 51.578051297169814,
     "cursor": {
       "from": {
         "line": 0,
@@ -4213,15 +4211,15 @@
     ]
   },
   "Dev, ICT & Cybersec/Tools/git.md": {
-    "scroll": 0,
+    "scroll": 50.9926360835874,
     "cursor": {
       "from": {
-        "line": 81,
-        "ch": 238
+        "line": 67,
+        "ch": 0
       },
       "to": {
-        "line": 81,
-        "ch": 238
+        "line": 67,
+        "ch": 0
       }
     },
     "expandedKeys": []
@@ -4307,15 +4305,15 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/DOM-based vulnerabilities.md": {
-    "scroll": 399.8273881263567,
+    "scroll": 391.6601902759056,
     "cursor": {
       "from": {
-        "line": 406,
-        "ch": 105
+        "line": 402,
+        "ch": 0
       },
       "to": {
-        "line": 406,
-        "ch": 105
+        "line": 402,
+        "ch": 0
       }
     },
     "expandedKeys": [
@@ -4475,15 +4473,15 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md": {
-    "scroll": 141.8701103197784,
+    "scroll": 195.89202419537872,
     "cursor": {
       "from": {
-        "line": 156,
-        "ch": 219
+        "line": 215,
+        "ch": 47
       },
       "to": {
-        "line": 156,
-        "ch": 219
+        "line": 215,
+        "ch": 47
       }
     },
     "expandedKeys": [
@@ -4632,7 +4630,7 @@
     "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md": {
-    "scroll": 125.10912376537397,
+    "scroll": 51.70537380642361,
     "cursor": {
       "from": {
         "line": 125,
@@ -4728,15 +4726,15 @@
     "expandedKeys": []
   },
   "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md": {
-    "scroll": 93.54763836679133,
+    "scroll": 50.740071614583336,
     "cursor": {
       "from": {
-        "line": 103,
-        "ch": 112
+        "line": 49,
+        "ch": 111
       },
       "to": {
-        "line": 103,
-        "ch": 112
+        "line": 49,
+        "ch": 111
       }
     },
     "expandedKeys": [
@@ -5446,6 +5444,490 @@
       },
       "to": {
         "line": 12,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/d3d (M. B. Johnson) - The Quiet Side Channel... Smuggling with CL.0 for C2.md": {
+    "scroll": 48.11492919921875,
+    "cursor": {
+      "from": {
+        "line": 134,
+        "ch": 124
+      },
+      "to": {
+        "line": 134,
+        "ch": 124
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/CL.0 smuggling vulnerabilities.md": {
+    "scroll": 19.392640950235396,
+    "cursor": {
+      "from": {
+        "line": 91,
+        "ch": 47
+      },
+      "to": {
+        "line": 91,
+        "ch": 47
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/James Kettle - Listen to the whispers web timing attacks that actually work.md": {
+    "scroll": 131.83558645575036,
+    "cursor": {
+      "from": {
+        "line": 146,
+        "ch": 0
+      },
+      "to": {
+        "line": 146,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-3-2",
+      "item-3-4",
+      "item-3-8"
+    ]
+  },
+  "Clippings/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk.md": {
+    "scroll": 150.35642132604517,
+    "cursor": {
+      "from": {
+        "line": 40,
+        "ch": 208
+      },
+      "to": {
+        "line": 40,
+        "ch": 208
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-7",
+      "item-2-2",
+      "item-2-7"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Clickjacking.md": {
+    "scroll": 102.02135318072251,
+    "cursor": {
+      "from": {
+        "line": 121,
+        "ch": 0
+      },
+      "to": {
+        "line": 121,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Pierluigi Paganini - DoubleClickjacking Allows Clickjacking on Major Websites.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 9,
+        "ch": 0
+      },
+      "to": {
+        "line": 9,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Blog - DoubleClickjacking A New Era of UI Redressing.md": {
+    "scroll": 90.41526763282481,
+    "cursor": {
+      "from": {
+        "line": 103,
+        "ch": 185
+      },
+      "to": {
+        "line": 103,
+        "ch": 185
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Clippings/SimoneAvogadro - SimoneAvogadroandroid-reverse-engineering-skill Claude Code skill to support Android app's reverse engineering.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 102,
+        "ch": 0
+      },
+      "to": {
+        "line": 102,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Spaceraccoon's Blog - Universal Code Execution by Chaining Messages in Browser Extensions.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/_NULL - Roundcube Webmail 1.5.13  1.6.13 allows attackers to force remote image loads via SVG feImage.md": {
+    "scroll": 15.601315421139907,
+    "cursor": {
+      "from": {
+        "line": 23,
+        "ch": 109
+      },
+      "to": {
+        "line": 23,
+        "ch": 109
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/blig.one - Flatt Security XSS Challenge - Writeup.md": {
+    "scroll": 10.055326641730542,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "CTFs/Templated.md": {
+    "scroll": 41.68708573430685,
+    "cursor": {
+      "from": {
+        "line": 44,
+        "ch": 96
+      },
+      "to": {
+        "line": 44,
+        "ch": 96
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/SVG.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 123
+      },
+      "to": {
+        "line": 0,
+        "ch": 123
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Tools/assetfinder.md": {
+    "scroll": 3.1637403577673737,
+    "cursor": {
+      "from": {
+        "line": 11,
+        "ch": 26
+      },
+      "to": {
+        "line": 11,
+        "ch": 26
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/KeygraphHQshannon Fully autonomous AI hacker to find actual exploits in your web apps. Shannon has achieved a 96.15% success rate on the hint-free, source-aware XBOW Benchmark.md": {
+    "scroll": 35.99409126323429,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/Piotr Bazydlo (@chudyPB) - Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 & CVE-2026-1340).md": {
+    "scroll": 117.33183123807953,
+    "cursor": {
+      "from": {
+        "line": 142,
+        "ch": 134
+      },
+      "to": {
+        "line": 142,
+        "ch": 134
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/Bash 101.md": {
+    "scroll": 485.94135303133515,
+    "cursor": {
+      "from": {
+        "line": 507,
+        "ch": 0
+      },
+      "to": {
+        "line": 507,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-2",
+      "item-1-6"
+    ]
+  },
+  "Clippings/Security Writeups - ATO via Facebook OAuth Due Unsanitized Schema Allows to Steal OAuth Token.md": {
+    "scroll": 15.874561779888936,
+    "cursor": {
+      "from": {
+        "line": 49,
+        "ch": 228
+      },
+      "to": {
+        "line": 49,
+        "ch": 228
+      }
+    },
+    "expandedKeys": [
+      "item-1-2",
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/OAuth 2.0.md": {
+    "scroll": 174.79268374526626,
+    "cursor": {
+      "from": {
+        "line": 184,
+        "ch": 0
+      },
+      "to": {
+        "line": 184,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/OAuth 2.0 attacks.md": {
+    "scroll": 332.10556640625,
+    "cursor": {
+      "from": {
+        "line": 131,
+        "ch": 0
+      },
+      "to": {
+        "line": 131,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-2-7"
+    ]
+  },
+  "Clippings/Frycos Security Diary - GFI MailEssentials - Yet Another .NET Target.md": {
+    "scroll": 320.35093663674036,
+    "cursor": {
+      "from": {
+        "line": 333,
+        "ch": 324
+      },
+      "to": {
+        "line": 333,
+        "ch": 324
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md": {
+    "scroll": 53.97501474056604,
+    "cursor": {
+      "from": {
+        "line": 54,
+        "ch": 16
+      },
+      "to": {
+        "line": 54,
+        "ch": 16
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-3"
+    ]
+  },
+  "Raindrop/GitHub - irsdlysonet Deserialization payload generator for a variety of .NET formatters [app] [exp].md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Arbitrary Object Instantiation.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md": {
+    "scroll": 782.5554255128185,
+    "cursor": {
+      "from": {
+        "line": 790,
+        "ch": 30
+      },
+      "to": {
+        "line": 790,
+        "ch": 30
+      }
+    },
+    "expandedKeys": [
+      "item-2-12",
+      "item-1-1"
+    ]
+  },
+  "Raindrop/GitHub - irsdlysonet Deserialization payload generator for a variety of .NET formatters.md": {
+    "scroll": 4.5478767642906,
+    "cursor": {
+      "from": {
+        "line": 61,
+        "ch": 0
+      },
+      "to": {
+        "line": 61,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Readwise/Articles/Assetnote - RCE in Progress WS_FTP Ad Hoc via IIS HTTP Modules.md": {
+    "scroll": 47.74858719529478,
+    "cursor": {
+      "from": {
+        "line": 78,
+        "ch": 41
+      },
+      "to": {
+        "line": 78,
+        "ch": 41
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Readwise/Articles/Arseniy Sharoglazov - Exploiting Arbitrary Object Instantiations in PHP Without Custom Classes.md": {
+    "scroll": 780.3190429025022,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2",
+      "item-2-6"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/XML External Entity Injection (XXE Injection).md": {
+    "scroll": 200.4792298045186,
+    "cursor": {
+      "from": {
+        "line": 179,
+        "ch": 0
+      },
+      "to": {
+        "line": 179,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-6",
+      "item-2-7",
+      "item-3-13",
+      "item-2-17"
+    ]
+  },
+  "Raindrop/CODE WHITE  A Retrospective Analysis of CVE-2025-59287 in Microsoft WSUS.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 114,
+        "ch": 0
+      },
+      "to": {
+        "line": 114,
         "ch": 0
       }
     },

@@ -4,59 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "9f7023b8bc85d543",
+        "id": "fa267baef4d53d6a",
         "type": "tabs",
         "children": [
           {
-            "id": "b4864a90944bd24b",
+            "id": "95f85ff1c7f37217",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CTFs/LoveTok.md",
-                "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "LoveTok"
-            }
-          },
-          {
-            "id": "32b19ea990c6ef21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"rand(\"",
+                "query": "git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -139,7 +100,8 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -152,7 +114,7 @@
       {
         "id": "497a4e903f6476bf",
         "type": "tabs",
-        "dimension": 50.65666041275797,
+        "dimension": 54.502814258911826,
         "children": [
           {
             "id": "cecdd88dce19730c",
@@ -211,13 +173,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev, ICT & Cybersec/Mobile Hacking/WebViews.md",
+                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android Services.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of WebViews"
+              "title": "Outline of Android Services"
             }
           },
           {
@@ -235,7 +197,7 @@
       {
         "id": "0ca134c80578c5f2",
         "type": "tabs",
-        "dimension": 49.34333958724203,
+        "dimension": 45.49718574108818,
         "children": [
           {
             "id": "92a8f5dacbdec5e4",
@@ -243,7 +205,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dev, ICT & Cybersec/AI/Agentic Frameworks in Offensive Cybersecurity.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -253,7 +214,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Agentic Frameworks in Offensive Cybersecurity"
+              "title": "Backlinks"
             }
           },
           {
@@ -262,12 +223,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android Services.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Android Services"
+              "title": "Outgoing links"
             }
           },
           {
@@ -317,8 +277,7 @@
               "title": "Connections"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -344,36 +303,40 @@
       "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "32b19ea990c6ef21",
+  "active": "f6c7831e85d653f1",
   "lastOpenFiles": [
-    "Raindrop/Minting Next.js Authentication Cookies.md",
-    "Raindrop/1-Click RCE to steal your Moltbot data and keys.md",
-    "Raindrop/Splitting the email atom exploiting parsers to bypass access controls.md",
-    "Clippings/Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024.md",
-    "CTFs/Space pirate Going Deeper.md",
-    "Readwise/Articles/Nathan Touati - Sandwich Attacks From Reset Password to Account Takeover.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Race Condition.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
-    "Clippings/Alain Mowat - SonicDoor – Cracking SonicWall’s SMA 500 – SCRT Team Blog.md",
-    "Communities/YouTube/2025XXX_UncoveringVulnerabilitiesPentestingOutdatedWebApp.md",
-    "Communities/YouTube/2022004_ZipSlip.md",
-    "Clippings/TrustedSec - MCP in Burp Suite From Enumeration to Targeted Exploitation.md",
-    "Raindrop/XBOW - Why LLMs Hallucinate Vulnerabilities.md",
-    "Raindrop/vxcontrolpentagi ✨ Fully autonomous AI Agents system capable of performing complex penetration testing tasks.md",
-    "Raindrop/[Revised] You Don’t Need to Spend $100mo on Claude Code Your Guide to Local Coding Models.md",
-    "Clippings/PT SWARM - Injection for an athlete.md",
-    "Readwise/Articles/Summoning Team - Breaking Down Barriers Exploiting Pre-Auth SQL Injection in WhatsUp Gold CVE-2024-6670.md",
-    "Dev, ICT & Cybersec/Mobile Hacking/Content Providers.md",
-    "Dev, ICT & Cybersec/AI/Agentic Frameworks in Offensive Cybersecurity.md",
-    "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2025-03-03.md",
+    "Dev, ICT & Cybersec/Tools/git.md",
+    "Raindrop/GitHub - irsdlysonet Deserialization payload generator for a variety of .NET formatters.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
+    "Raindrop/CODE WHITE  A Retrospective Analysis of CVE-2025-59287 in Microsoft WSUS.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
+    "Clippings/Frycos Security Diary - GFI MailEssentials - Yet Another .NET Target.md",
+    "Readwise/Articles/Assetnote - RCE in Progress WS_FTP Ad Hoc via IIS HTTP Modules.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/XML External Entity Injection (XXE Injection).md",
+    "Readwise/Articles/Arseniy Sharoglazov - Exploiting Arbitrary Object Instantiations in PHP Without Custom Classes.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Arbitrary Object Instantiation.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/OAuth 2.0 attacks.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/OAuth 2.0.md",
+    "Clippings/Security Writeups - ATO via Facebook OAuth Due Unsanitized Schema Allows to Steal OAuth Token.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Bash 101.md",
+    "Clippings/Piotr Bazydlo (@chudyPB) - Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 & CVE-2026-1340).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
+    "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
+    "Raindrop/KeygraphHQshannon Fully autonomous AI hacker to find actual exploits in your web apps. Shannon has achieved a 96.15% success rate on the hint-free, source-aware XBOW Benchmark.md",
+    "Raindrop/GitHub - 0x4m4hexstrike-ai HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and securi.md",
+    "Clippings/d3d (M. B. Johnson) - The Quiet Side Channel... Smuggling with CL.0 for C2.md",
+    "Dev, ICT & Cybersec/Mobile Hacking/Android Services.md",
+    "Dev, ICT & Cybersec/Tools/assetfinder.md",
+    "Clippings/lyra's epic blog - SVG Filters - Clickjacking 2.0.md",
+    "Clippings/_NULL - Roundcube Webmail 1.5.13  1.6.13 allows attackers to force remote image loads via SVG feImage.md",
+    "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk-poc.png",
+    "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk3.png",
+    "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk2.png",
+    "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk.png",
     "Bases/Tools.base",
     "Bases/Articles inbox.base",
-    "Raindrop/aliasroboticscai Cybersecurity AI (CAI), the framework for AI Security.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Raindrop/usestrixstrix ✨ Open-source AI hackers for your apps 👨🏻‍💻.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
-    "Raindrop/Struts Devmode in 2025 Critical Pre-Auth Vulnerabilities in Adobe Experience Manager Forms › Searchlight Cyber.md",
-    "Raindrop/six2dezburp-ai-agent Burp Suite extension that adds built-in MCP tooling, AI-assisted analysis, privacy controls, passive and active scanning and more.md",
     "copilot/memory",
     "copilot",
     "Clippings/attachments/weak-firebase-2.png",
@@ -393,10 +356,6 @@
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-16.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15.png",
     "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15-1.png",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-14.png",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-13.png",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-12.png",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-11.png",
     "VR/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it.canvas",
     "VR/Targets/uisp.it/areariservata2.uisp.it/areariservata2.uisp.it.canvas",
     "VR/Targets/Woox/Woox R4040/Woox R4040.canvas",

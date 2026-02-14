@@ -48,6 +48,7 @@ One of the important pieces of this attack is exploiting the timing difference b
 
 **How It Can Be Exploited**
 - **OAuth & API Permissions**: Attackers could trick targets into authorizing a malicious application with extensive privileges. This technique has unfortunately led to account takeovers in almost every site that supports [OAuth 2.0](../../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/OAuth%202.0.md) - which is pretty much all major websites with an API support. [](https://read.readwise.io/read/01jpyn5vdmwfjpt6h6hmmanpw7)
+	- Example: [Double Clickjacking Attack on WakaTime OAuth Authorization Flow at https://wakatime.com/oauth/authorize](https://hackerone.com/reports/3287060)
 
 - **One-Click Account Changes**: Similar to classic clickjacking, DoubleClickjacking can be used to make the user click on account-setting changes, such as disabling security settings, deleting an account, authorizing access or money transfers, or confirming transactions, etc. [](https://read.readwise.io/read/01jpyn6fye27pt0t2xejmsjx1a)
 
@@ -97,6 +98,10 @@ function openDoubleWindow(url, top, left, width, height) {
 This can also be done in mobile phones by asking target to "DoubleTap". [](https://read.readwise.io/read/01jpyqjdtx7kxsgq0839ap69vn)
 
 P.S: Note that windows can be opened on top of the whole browser (instead of as a tab), hiding the fact that the opener has changed location (and all tabs) [](https://read.readwise.io/read/01jpyqm9qemex41pp8gewhf144)
+
+### Other PoCs
+
+- [jorianwoltjer.com - The Ultimate Double-Clickjacking PoC  Jorian Woltjer](../../Clippings/jorianwoltjer.com%20-%20The%20Ultimate%20Double-Clickjacking%20PoC%20%20Jorian%20Woltjer.md)
 
 [^1]: [SameSite Cookie Attribute](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/SameSite%20Cookie%20Attribute.md)
 

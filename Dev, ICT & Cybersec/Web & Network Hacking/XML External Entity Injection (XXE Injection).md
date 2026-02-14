@@ -151,7 +151,7 @@ There are various types of XXE attacks:
 
 #### Blind XXE to SSRF to RCE
 
-A blind XXE with SSRF capabilities was used to deploy arbitrary services. After some research in PeopleSoft's `pspc.war`, which contains the Axis instance, it appears the `Deploy` class of the `org.apache.pluto.portalImpl` package contains interesting methods. First, `addToEntityReg(String[] args)` allows us to add arbitrary data at the end of an XML file. Second, `copy(file1, file2)` allows us to copy it anywhere. This is enough to get a shell, by inserting a JSP payload in our XML, and copying it into the webroot. [^xxe2shell]
+A blind XXE with [Server Side Request Forgery (SSRF)](Server%20Side%20Request%20Forgery%20(SSRF).md) capabilities was used to deploy arbitrary services. After some research in PeopleSoft's `pspc.war`, which contains the Axis instance, it appears the `Deploy` class of the `org.apache.pluto.portalImpl` package contains interesting methods. First, `addToEntityReg(String[] args)` allows us to add arbitrary data at the end of an XML file. Second, `copy(file1, file2)` allows us to copy it anywhere. This is enough to get a shell, by inserting a JSP payload in our XML, and copying it into the webroot. [^xxe2shell]
 
 [^xxe2shell]: [ORACLE PEOPLESOFT REMOTE CODE EXECUTION: BLIND XXE TO SYSTEM SHELL](https://www.ambionics.io/blog/oracle-peoplesoft-xxe-to-rce), ambionics.io
 
@@ -176,7 +176,9 @@ GET /pspc/services/SomeService?method=!--><myMethod+attr="x"><test>y</test></myM
 
 ### XXE: Remote Attack - Through External Xml Inclusion
 
-Example: [WAFfle-y Order](../../Play%20ground/CTFs/WAFfle-y%20Order.md)
+[dotNET](../Dev,%20scripting%20&%20OS/dotNET.md) XXE payload from [this gist](https://gist.github.com/staaldraad/01415b990939494879b4)
+
+Example: [WAFfle-y Order](../../CTFs/WAFfle-y%20Order.md)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

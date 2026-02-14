@@ -289,6 +289,7 @@ DOM-data manipulation vulnerabilities arise when a script writes attacker-contro
 >- `history.pushState()`
 >- `history.replaceState()`
 
+
 # DOM-based denial of service
 
 DOM-based denial-of-service vulnerabilities arise when a script passes attacker-controllable data in an unsafe way to a problematic platform API, such as an API whose invocation can cause the user's computer to consume excessive amounts of CPU or disk space.
@@ -396,6 +397,10 @@ Exploit code opening the vulnerable page and focusing on the clobbered form `x`.
 ## DOM Clobbering + Prototype Pollution + XSS
 
 ![](https://www.youtube.com/watch?v=AO7CDquZ690&t=22s&ab_channel=CryptoCat)
+
+
+## [DOM-based Extension Clickjacking](../../Clippings/Marek%20Tóth%20-%20DOM-based%20Extension%20Clickjacking%20Your%20Password%20Manager%20Data%20at%20Risk.md)
+
 
 ---
 

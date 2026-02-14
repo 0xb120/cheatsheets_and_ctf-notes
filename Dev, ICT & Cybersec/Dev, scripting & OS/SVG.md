@@ -1,0 +1,1 @@
+SVG stands for Scalable Vector Graphics, an XML-based file format used to display two-dimensional vector images on the web.

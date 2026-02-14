@@ -212,14 +212,15 @@ Extensive cheat sheets can be found at:
 - [Obfuscating attacks using encodings](https://portswigger.net/web-security/essential-skills/obfuscating-attacks-using-encodings)
 - [XSS without parentheses and semi-colons](https://portswigger.net/research/xss-without-parentheses-and-semi-colons)
 - `eval(atob("base64"))`
-	- [eXtra Safe Security layers](../../Play%20ground/CTFs/eXtra%20Safe%20Security%20layers.md)
-	- [Mutation Lab](../../Play%20ground/CTFs/Mutation%20Lab.md)
+	- [eXtra Safe Security layers](../../CTFs/eXtra%20Safe%20Security%20layers.md)
+	- [Mutation Lab](../../CTFs/Mutation%20Lab.md)
 - [Bypass CSP using MIME sniffing](MIME%20sniffing.md#Bypass%20CSP%20using%20MIME%20sniffing)
 - Bypass CSP using [JSONP](JSONP%20vulnerabilities.md#JSON%20with%20Padding%20(JSONP)) as a gadget [^CSP-JSONP]
 - [XSS + phpinfo](HttpOnly%20Cookie%20Attribute.md#XSS%20+%20phpinfo)
 - [Rhino Security Labs - Silverpeas App Multiple CVEs Leading to File Read on Server](../../Readwise/Articles/Rhino%20Security%20Labs%20-%20Silverpeas%20App%20Multiple%20CVEs%20Leading%20to%20File%20Read%20on%20Server.md)
 - [Bug Bounty Reports Explained - $25k GitHub Account Takeover & justCTF 2023 CSRF+XSS Writeup](../../Readwise/Articles/Bug%20Bounty%20Reports%20Explained%20-%20$25k%20GitHub%20Account%20Takeover%20&%20justCTF%202023%20CSRF+XSS%20Writeup.md) (parsing vs tokenization ft. html namespaces)
 - [WAF-Bypass - Encoding](../../Readwise/Articles/dojo-yeswehack.com%20-%20WAF-Bypass%20-%20Encoding.md)
+- [_NULL - Roundcube Webmail 1.5.13  1.6.13 allows attackers to force remote image loads via SVG feImage](../../Clippings/_NULL%20-%20Roundcube%20Webmail%201.5.13%20%201.6.13%20allows%20attackers%20to%20force%20remote%20image%20loads%20via%20SVG%20feImage.md)
 
 [^CSP-JSONP]: [Riding the Waves of API Versioning Unmasking a Stored XSS Vulnerability, CSP Bypass Using YouTube OEmbed](../../Readwise/Articles/SMHTahsin33%20-%20Riding%20the%20Waves%20of%20API%20Versioning%20Unmasking%20a%20Stored%20XSS%20Vulnerability,%20CSP%20Bypass%20Using%20YouTube%20OEmbed.md), SMHTahsin33
 

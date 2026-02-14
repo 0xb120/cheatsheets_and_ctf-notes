@@ -64,6 +64,7 @@ git diff v1.1 v1.0 > patch.diff
 grep +++ patch.diff
 ```
 
+Example: [CODE WHITE  A Retrospective Analysis of CVE-2025-59287 in Microsoft WSUS](../../Raindrop/CODE%20WHITE%20%20A%20Retrospective%20Analysis%20of%20CVE-2025-59287%20in%20Microsoft%20WSUS.md)
 
 ---
 

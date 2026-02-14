@@ -497,3 +497,13 @@ for port in {1..65535}; do
 done
 echo "Done"
 ```
+
+---
+
+# Bash tricks
+
+- [Bash arithmetic expansion](../../Clippings/Piotr%20Bazydlo%20(@chudyPB)%20-%20Someone%20Knows%20Bash%20Far%20Too%20Well,%20And%20We%20Love%20It%20(Ivanti%20EPMM%20Pre-Auth%20RCEs%20CVE-2026-1281%20&%20CVE-2026-1340).md) [^1][^2]
+
+[^1]: https://unix.stackexchange.com/questions/172103/security-implications-of-using-unsanitized-data-in-shell-arithmetic-evaluation?ref=labs.watchtowr.com
+
+[^2]: [Shell Arithmetic Expansion and Evaluation Abuse](https://www.nccgroup.com/research-blog/shell-arithmetic-expansion-and-evaluation-abuse/)

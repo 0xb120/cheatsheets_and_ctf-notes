@@ -127,6 +127,9 @@ By stealing a valid code or token, the attacker may be able to access the victim
 
 Depending on the grant type, either a code or token is sent via the victim's browser to the `/callback` endpoint specified in the `redirect_uri` parameter of the authorization request. If the OAuth service fails to validate this URI properly, an attacker may be able to construct a CSRF-like attack conjuncted with an [Open Redirection](Open%20Redirection.md), tricking the victim's browser into initiating an OAuth flow that will send the code or token to an attacker-controlled `redirect_uri`.
 
+Examples:
+- [Security Writeups - ATO via Facebook OAuth Due Unsanitized Schema Allows to Steal OAuth Token](../../Clippings/Security%20Writeups%20-%20ATO%20via%20Facebook%20OAuth%20Due%20Unsanitized%20Schema%20Allows%20to%20Steal%20OAuth%20Token.md)
+
 PoC containing a `redirect_url` controlled by the attacker:
 ```html
 <script>

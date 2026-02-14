@@ -116,6 +116,10 @@ Attacker manipulation of inputs to a target website may necessitate multiple act
 
 [DoubleClickjacking](../../Readwise/Articles/Blog%20-%20DoubleClickjacking%20A%20New%20Era%20of%20UI%20Redressing.md) is a new type of attack that tricks users into unintentionally authorizing malicious actions by exploiting the timing of double-clicks [^1]. Unlike traditional clickjacking, this method can bypass existing protections and affect many major websites. It can lead to serious issues like account takeovers and unauthorized changes to user settings.
 
+## DOM-based clickjacking
+
+[DOM-based Extension Clickjacking](../../Clippings/Marek%20Tóth%20-%20DOM-based%20Extension%20Clickjacking%20Your%20Password%20Manager%20Data%20at%20Risk.md) is a new attack technique where malicious scripts manipulate and hide UI elements injected into the DOM by browser extensions (e.g., password managers), making them clickable unknowingly to the user.
+
 
 ---
 

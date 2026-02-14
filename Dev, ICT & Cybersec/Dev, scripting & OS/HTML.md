@@ -58,7 +58,7 @@ Eg. `<svg><style><a alt="</style><img src=x onerror=alert(1)>">`
 
 ![](attachments/HTML-3.png)
 
-In this case, we do see an `a` element being created. The `style` element doesn’t follow the “raw text” parsing rules, because it is inside a different namespace. When residing within an SVG or MathML namespace, the parsing rules change and no longer follow the HTML language. [](https://read.readwise.io/read/01jn6dya819r3jzwxm5xk10cwg)
+In this case, we do see an `a` element being created. The `style` element doesn’t follow the “raw text” parsing rules, because it is inside a different namespace. When residing within an [SVG](SVG.md) or MathML namespace, the parsing rules change and no longer follow the HTML language. [](https://read.readwise.io/read/01jn6dya819r3jzwxm5xk10cwg)
 
 ## HTML attributes vs DOM properties
 

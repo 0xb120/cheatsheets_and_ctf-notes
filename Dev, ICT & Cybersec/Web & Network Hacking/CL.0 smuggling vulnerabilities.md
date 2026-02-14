@@ -97,3 +97,4 @@ You can also use `expect` to desync the target:
 
 - [From Akamai to F5 to NTLM... With Love.](../../Readwise/Articles/Malicious%20Group%20-%20From%20Akamai%20to%20F5%20to%20NTLM...%20With%20Love..md)
 - https://portswigger.net/web-security/request-smuggling/browser/cl-0
+- [d3d (M. B. Johnson) - The Quiet Side Channel... Smuggling with CL.0 for C2](../../Clippings/d3d%20(M.%20B.%20Johnson)%20-%20The%20Quiet%20Side%20Channel...%20Smuggling%20with%20CL.0%20for%20C2.md)

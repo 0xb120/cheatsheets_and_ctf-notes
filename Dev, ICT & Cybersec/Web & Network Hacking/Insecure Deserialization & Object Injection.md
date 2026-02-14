@@ -1,3 +1,8 @@
+---
+aliases:
+  - Deserialization
+  - Arbitrary Deserialization
+---
 
 # What are serialization and deserialization?
 
@@ -709,7 +714,7 @@ In conclusion, the weakness of customized `ObjectInputStream` contributes to S
 >[XmlSerializer Class](https://learn.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer?view=netframework-4.7.2)
 
 Serialization example:
-```dotnet
+```cs
 static void MySerializer(MyConsoleText txt)
 {
 	var ser = new XmlSerializer(typeof(MyConsoleText));
@@ -733,7 +738,7 @@ Serialized object:
 ```
 
 Deserialization example:
-```dotNET
+```cs
 using BasicXMLSerializer;
 ...
 static void Main(string[] args)
@@ -748,7 +753,7 @@ static void Main(string[] args)
 >[!warning]
 >A developer could decide to make the custom deserializing wrapper a bit more flexible. This would provide the application with the ability to deserialize multiple types of objects. If that's the case and arbitrary objects can be passed to the server, deserialization of untrusted classes can be achieved.
 
-```dotnet
+```cs
 // serializer
 xmlElement2.SetAttribute("objectType", myObj.GetType().AssemblyQualifiedName);
 XmlSerializer xmlSerializer = new XmlSerializer(myObj.GetType());
@@ -785,8 +790,19 @@ Further references:
 
 ### Other .NET Deserialization
 
+>[!tip]
+>- `BinaryFormatter`
+>- `SoapFormatter`
+
 - [RCE in Progress WS_FTP Ad Hoc via IIS HTTP Modules](../../Readwise/Articles/Assetnote%20-%20RCE%20in%20Progress%20WS_FTP%20Ad%20Hoc%20via%20IIS%20HTTP%20Modules.md)
 - [.NET Remoting](../Dev,%20scripting%20&%20OS/dotNET.md#.NET%20Remoting)
+- [Frycos Security Diary - GFI MailEssentials - Yet Another .NET Target](../../Clippings/Frycos%20Security%20Diary%20-%20GFI%20MailEssentials%20-%20Yet%20Another%20.NET%20Target.md)
+- [CODE WHITE  A Retrospective Analysis of CVE-2025-59287 in Microsoft WSUS](../../Raindrop/CODE%20WHITE%20%20A%20Retrospective%20Analysis%20of%20CVE-2025-59287%20in%20Microsoft%20WSUS.md)
+
+### .NET deserialization tools
+
+- [ysonet](../../Raindrop/GitHub%20-%20irsdlysonet%20Deserialization%20payload%20generator%20for%20a%20variety%20of%20.NET%20formatters.md)
+- https://github.com/tyranid/ExploitRemotingService
 
 ## YAML
 

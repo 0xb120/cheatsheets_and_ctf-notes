@@ -10,8 +10,6 @@ tags: ["clippings/articles", "_inbox"]
 ---
 # SVG Filters - Clickjacking 2.0
 
-![]()
-
 > [!summary]
 > > The article introduces \"SVG clickjacking,\" a novel attack technique leveraging SVG filters to perform complex, interactive clickjacking and data exfiltration on cross-origin iframes.
 > 
@@ -28,13 +26,13 @@ tags: ["clippings/articles", "_inbox"]
 > 
 > The author successfully demonstrated the technique against Google Docs, earning a bounty for a multi-step attack involving captcha input, dynamic visuals, and conditional logic. The author asserts this is a novel vulnerability class and emphasizes the creative potential of treating CSS and SVG as programming languages for exploitation.
 
-I’ve discovered a new technique that turns classic clickjacking on its head and enables the creation of complex interactive clickjacking attacks, as well as multiple forms of data exfiltration.
+I’ve discovered a new technique that turns classic [Clickjacking](../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/Clickjacking.md) on its head and enables the creation of complex interactive clickjacking attacks, as well as multiple forms of data exfiltration.
 
 Liquid Glass redesign was pretty chaotic.
 
 a thought came to mind - how hard would it be to re-create this effect? Could I do this, on the web, without resorting to canvas and shaders? I got to work, and about an hour later I had [a pretty accurate CSS/SVG recreation of the effect](https://codepen.io/rebane2001/details/OPVQXMv)[^1].
 
-A few days passed, and another thought came to mind - would this SVG effect work on top of an iframe?
+A few days passed, and another thought came to mind - would this [SVG](../Dev,%20ICT%20&%20Cybersec/Dev,%20scripting%20&%20OS/SVG.md) effect work on top of an iframe?
 
 But, to my surprise, it did.
 

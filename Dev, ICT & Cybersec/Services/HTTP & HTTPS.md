@@ -175,6 +175,7 @@ Useful tools for black-box testing, DAST and fuzzing:
 - [WebSockets](../Web%20&%20Network%20Hacking/WebSockets.md)
 - [DOM-based vulnerabilities](../Web%20&%20Network%20Hacking/DOM-based%20vulnerabilities.md)
 	- [Universal Code Execution by Chaining Messages in Browser Extensions](../../Readwise/Articles/Spaceraccoon's%20Blog%20-%20Universal%20Code%20Execution%20by%20Chaining%20Messages%20in%20Browser%20Extensions.md)
+	- [DOM-based Extension Clickjacking](../../Clippings/Marek%20Tóth%20-%20DOM-based%20Extension%20Clickjacking%20Your%20Password%20Manager%20Data%20at%20Risk.md)
 - [Client-side prototype pollution vuln](../Web%20&%20Network%20Hacking/Prototype%20Pollution.md#Client-side%20prototype%20pollution%20vuln)
 - [Browser-powered request smuggling](../Web%20&%20Network%20Hacking/HTTP%20Request%20Smuggling.md#Browser-powered%20request%20smuggling)
 - [Fetch Diversion](../Web%20&%20Network%20Hacking/Fetch%20Diversion.md)
