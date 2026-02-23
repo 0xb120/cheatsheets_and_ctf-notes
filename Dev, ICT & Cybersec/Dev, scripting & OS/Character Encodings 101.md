@@ -82,6 +82,7 @@ These files (like `CP1252.TXT`) often contain the "Best Fit" mappings. You will 
 - [Unicode escaping](../Web%20&%20Network%20Hacking/Evading%20Restrictions.md#Unicode%20escaping)
 - [Unicode normalization](../Web%20&%20Network%20Hacking/Evading%20Restrictions.md#Unicode%20normalization)
 - [DEVCORE - WorstFit Unveiling Hidden Transformers in Windows ANSI](../../Clippings/DEVCORE%20-%20WorstFit%20Unveiling%20Hidden%20Transformers%20in%20Windows%20ANSI.md)
+- [FrankenPHP - Unicode Case‑Folding Bug and PHP Sandbox Escape](../../Clippings/FrankenPHP%20-%20Unicode%20Case‑Folding%20Bug%20and%20PHP%20Sandbox%20Escape.md)
 
 
 # Tools for finding encoding variants

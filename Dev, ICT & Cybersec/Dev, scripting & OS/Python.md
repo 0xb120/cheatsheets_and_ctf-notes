@@ -468,6 +468,7 @@ p.interactive()
 - `ast` [^8]
 - [Abusing Decorators for Remote Code Execution](../../Readwise/Articles/Naveen%20Sunkavally%20-%20Unsafe%20at%20Any%20Speed%20Abusing%20Python%20Exec%20for%20Unauth%20RCE%20in%20Langflow%20AI.md#Abusing%20Decorators%20for%20Remote%20Code%20Execution)
 - [Another Path to RCE: Python Default Arguments](../../Readwise/Articles/Naveen%20Sunkavally%20-%20Unsafe%20at%20Any%20Speed%20Abusing%20Python%20Exec%20for%20Unauth%20RCE%20in%20Langflow%20AI.md#Another%20Path%20to%20RCE%20Python%20Default%20Arguments)
+- [Python 2.6 integer overflow](../../Clippings/Li%20Jiantao%20(@CurseRed)%20&%20(@swing)%20-%20Pickling%20the%20Mailbox%20A%20Deep%20Dive%20into%20CVE-2025-20393.md)
 # Python 2 vs 3 for binary exploitation
 
 <iframe width="660" height="415" src="https://www.youtube.com/embed/FxNS-zSS7MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

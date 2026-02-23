@@ -1,14 +1,14 @@
 {
   "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md": {
-    "scroll": 46.8072998046875,
+    "scroll": 119.95033296676166,
     "cursor": {
       "from": {
-        "line": 177,
-        "ch": 160
+        "line": 133,
+        "ch": 104
       },
       "to": {
-        "line": 177,
-        "ch": 160
+        "line": 133,
+        "ch": 104
       }
     },
     "expandedKeys": [
@@ -221,15 +221,15 @@
     "expandedKeys": []
   },
   "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md": {
-    "scroll": 0.33162175823828416,
+    "scroll": 10.893928654286084,
     "cursor": {
       "from": {
-        "line": 18,
-        "ch": 27
+        "line": 111,
+        "ch": 50
       },
       "to": {
-        "line": 18,
-        "ch": 27
+        "line": 111,
+        "ch": 50
       }
     },
     "expandedKeys": []
@@ -277,15 +277,15 @@
     "expandedKeys": []
   },
   "Raindrop/westonbrownCyber-AutoAgent AI agent for autonomous cyber operations.md": {
-    "scroll": 31.748161764705884,
+    "scroll": 95.30887516198612,
     "cursor": {
       "from": {
-        "line": 42,
-        "ch": 1
+        "line": 111,
+        "ch": 22
       },
       "to": {
-        "line": 42,
-        "ch": 1
+        "line": 111,
+        "ch": 22
       }
     },
     "expandedKeys": []
@@ -309,19 +309,19 @@
     ]
   },
   "Clippings/James Kettle - HTTP1.1 must die the desync endgame.md": {
-    "scroll": 322.9044140402457,
+    "scroll": 154.79631071411623,
     "cursor": {
       "from": {
-        "line": 321,
-        "ch": 48
+        "line": 148,
+        "ch": 22
       },
       "to": {
-        "line": 321,
-        "ch": 48
+        "line": 148,
+        "ch": 22
       }
     },
     "expandedKeys": [
-      "item-2-17",
+      "item-2-12",
       "item-1-0"
     ]
   },
@@ -2540,18 +2540,20 @@
     "expandedKeys": []
   },
   "Readwise/Articles/sonarsource.com - Double Dash, Double Trouble A Subtle SQL Injection Flaw.md": {
-    "scroll": 0,
+    "scroll": 13.118847043773075,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 25,
+        "ch": 302
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 25,
+        "ch": 302
       }
     },
-    "expandedKeys": []
+    "expandedKeys": [
+      "item-1-0"
+    ]
   },
   "Readwise/Articles/Spaceraccoon's Blog - Pwning Millions of Smart Weighing Machines With API and Hardware Hacking.md": {
     "scroll": 0,
@@ -2565,7 +2567,10 @@
         "ch": 0
       }
     },
-    "expandedKeys": []
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
   },
   "Readwise/Articles/zhero_web_security - Next.js, Cache, and Chains The Stale Elixir.md": {
     "scroll": 0,
@@ -3474,29 +3479,29 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Confusion Attacks.md": {
-    "scroll": 2.5552235330854143,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 26,
+        "ch": 181
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 26,
+        "ch": 181
       }
     },
     "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Dev, scripting & OS/Character Encodings 101.md": {
-    "scroll": 85.98524268897805,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 90,
-        "ch": 39
+        "line": 84,
+        "ch": 161
       },
       "to": {
-        "line": 90,
-        "ch": 39
+        "line": 84,
+        "ch": 161
       }
     },
     "expandedKeys": [
@@ -3505,7 +3510,7 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Evading Restrictions.md": {
-    "scroll": 22.94232987935564,
+    "scroll": 185.39315026835874,
     "cursor": {
       "from": {
         "line": 69,
@@ -3571,7 +3576,7 @@
     ]
   },
   "Clippings/DEVCORE - WorstFit Unveiling Hidden Transformers in Windows ANSI.md": {
-    "scroll": 0,
+    "scroll": 40.54644818072553,
     "cursor": {
       "from": {
         "line": 30,
@@ -3853,7 +3858,7 @@
     "expandedKeys": []
   },
   "Raindrop/UTF-8 is a Brilliant Design — Vishnus Pages.md": {
-    "scroll": 30.818893526613834,
+    "scroll": 30.967387727365974,
     "cursor": {
       "from": {
         "line": 0,
@@ -3993,7 +3998,7 @@
     "expandedKeys": []
   },
   "Raindrop/GitHub - armmetis Metis is an open-source, AI-driven tool for deep security code review.md": {
-    "scroll": 0,
+    "scroll": 57.92882080078125,
     "cursor": {
       "from": {
         "line": 34,
@@ -4035,20 +4040,21 @@
     "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/File Inclusion (LFI & RFI).md": {
-    "scroll": 388.18869351854175,
+    "scroll": 277.6648496931071,
     "cursor": {
       "from": {
-        "line": 406,
-        "ch": 165
+        "line": 288,
+        "ch": 0
       },
       "to": {
-        "line": 406,
-        "ch": 165
+        "line": 288,
+        "ch": 0
       }
     },
     "expandedKeys": [
       "item-2-1",
-      "item-3-4"
+      "item-3-4",
+      "item-3-8"
     ]
   },
   "Readwise/Articles/Michael Weber - Refresh Compromising F5 BIG-IP With Request Smuggling  CVE-2023-46747.md": {
@@ -4069,15 +4075,15 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Request Smuggling.md": {
-    "scroll": 0,
+    "scroll": 58.56714141059877,
     "cursor": {
       "from": {
-        "line": 77,
-        "ch": 267
+        "line": 79,
+        "ch": 0
       },
       "to": {
-        "line": 77,
-        "ch": 267
+        "line": 79,
+        "ch": 0
       }
     },
     "expandedKeys": [
@@ -4133,15 +4139,15 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP Request Smuggling.md": {
-    "scroll": 68.01723296066811,
+    "scroll": 390.8986757999402,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 400,
+        "ch": 203
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 400,
+        "ch": 203
       }
     },
     "expandedKeys": [
@@ -4712,21 +4718,21 @@
     ]
   },
   "Dev, ICT & Cybersec/Tools/sqlmap.md": {
-    "scroll": 0,
+    "scroll": 27.432943648021944,
     "cursor": {
       "from": {
-        "line": 4,
-        "ch": 0
+        "line": 43,
+        "ch": 343
       },
       "to": {
-        "line": 4,
-        "ch": 0
+        "line": 43,
+        "ch": 343
       }
     },
     "expandedKeys": []
   },
   "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md": {
-    "scroll": 50.740071614583336,
+    "scroll": 0,
     "cursor": {
       "from": {
         "line": 49,
@@ -4837,7 +4843,7 @@
     "expandedKeys": []
   },
   "Raindrop/Inside PostHog How SSRF, a ClickHouse SQL Escaping 0day, and Default PostgreSQL Credentials Formed an RCE Chain (ZDI-25-099, ZDI-25-097, ZDI-25-096) [app] [exp].md": {
-    "scroll": 2.4305188179016115,
+    "scroll": 15.532879520321156,
     "cursor": {
       "from": {
         "line": 12,
@@ -5821,31 +5827,35 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 12,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 12,
         "ch": 0
       }
     },
     "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md": {
-    "scroll": 782.5554255128185,
+    "scroll": 211.89024498566533,
     "cursor": {
       "from": {
-        "line": 790,
-        "ch": 30
+        "line": 259,
+        "ch": 0
       },
       "to": {
-        "line": 790,
-        "ch": 30
+        "line": 259,
+        "ch": 0
       }
     },
     "expandedKeys": [
-      "item-2-12",
-      "item-1-1"
+      "item-2-14",
+      "item-1-1",
+      "item-2-2",
+      "item-3-5",
+      "item-2-11",
+      "item-1-21"
     ]
   },
   "Raindrop/GitHub - irsdlysonet Deserialization payload generator for a variety of .NET formatters.md": {
@@ -5882,15 +5892,15 @@
     ]
   },
   "Readwise/Articles/Arseniy Sharoglazov - Exploiting Arbitrary Object Instantiations in PHP Without Custom Classes.md": {
-    "scroll": 780.3190429025022,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 10,
+        "ch": 23
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 10,
+        "ch": 23
       }
     },
     "expandedKeys": [
@@ -5934,5 +5944,455 @@
     "expandedKeys": [
       "item-1-0"
     ]
+  },
+  "Dev, ICT & Cybersec/Tools/CodeQL.md": {
+    "scroll": 93.90852998165943,
+    "cursor": {
+      "from": {
+        "line": 109,
+        "ch": 0
+      },
+      "to": {
+        "line": 109,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-2"
+    ]
+  },
+  "Clippings/Sebastiano Sartor - Trailing Danger exploring HTTP Trailer parsing discrepancies.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 15,
+        "ch": 0
+      },
+      "to": {
+        "line": 15,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/Shubham Shah - Novel SSRF Technique Involving HTTP Redirect Loops › Searchlight Cyber.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 42,
+        "ch": 0
+      },
+      "to": {
+        "line": 42,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Server Side Request Forgery (SSRF).md": {
+    "scroll": 121.45758833254864,
+    "cursor": {
+      "from": {
+        "line": 126,
+        "ch": 28
+      },
+      "to": {
+        "line": 126,
+        "ch": 28
+      }
+    },
+    "expandedKeys": [
+      "item-2-2"
+    ]
+  },
+  "Readwise/Articles/assetnote.io - Digging for SSRF in NextJS Apps.md": {
+    "scroll": 52.87412308673469,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/HTTP-2.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting Advanced Request Smuggling.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 3,
+        "ch": 0
+      },
+      "to": {
+        "line": 3,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/Li Jiantao (@CurseRed) & (@swing) - Pickling the Mailbox A Deep Dive into CVE-2025-20393.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 78,
+        "ch": 103
+      },
+      "to": {
+        "line": 78,
+        "ch": 103
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/Python.md": {
+    "scroll": 195.09043963096303,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-2-8",
+      "item-3-9"
+    ]
+  },
+  "Clippings/nsportsman, EvanLeleux - praetorian-incaugustus LLM security testing framework for detecting prompt injection, jailbreaks, and adversarial attacks — 190+ probes, 28 providers, single Go binary.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 49,
+        "ch": 14
+      },
+      "to": {
+        "line": 49,
+        "ch": 14
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Clippings/Mehmet Ince - Inside PostHog How SSRF, a ClickHouse SQL Escaping 0day, and Default PostgreSQL Credentials Formed an RCE Chain (ZDI-25-099, ZDI-25-097, ZDI-25-096).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 151,
+        "ch": 0
+      },
+      "to": {
+        "line": 151,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-0",
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/SQL Injection.md": {
+    "scroll": 360.404607396546,
+    "cursor": {
+      "from": {
+        "line": 374,
+        "ch": 293
+      },
+      "to": {
+        "line": 374,
+        "ch": 293
+      }
+    },
+    "expandedKeys": [
+      "item-2-0",
+      "item-2-3",
+      "item-2-7",
+      "item-2-11",
+      "item-2-15"
+    ]
+  },
+  "Dev, ICT & Cybersec/Services/PostgreSQL.md": {
+    "scroll": 15.747243844430722,
+    "cursor": {
+      "from": {
+        "line": 25,
+        "ch": 138
+      },
+      "to": {
+        "line": 25,
+        "ch": 138
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-2"
+    ]
+  },
+  "Readwise/Articles/phrack.org - . Phrack Magazine . 0x10-0x47-0x08.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 98,
+        "ch": 470
+      },
+      "to": {
+        "line": 98,
+        "ch": 470
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-7"
+    ]
+  },
+  "Readwise/Articles/STAR Labs - Analysis of NodeBB Account Takeover Vulnerability.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 21,
+        "ch": 139
+      },
+      "to": {
+        "line": 21,
+        "ch": 139
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/SQL 101.md": {
+    "scroll": 161.71645431119111,
+    "cursor": {
+      "from": {
+        "line": 257,
+        "ch": 158
+      },
+      "to": {
+        "line": 257,
+        "ch": 158
+      }
+    },
+    "expandedKeys": [
+      "item-2-0",
+      "item-2-7"
+    ]
+  },
+  "Clippings/- the internet handout.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 11,
+        "ch": 0
+      },
+      "to": {
+        "line": 11,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/FrankenPHP - Unicode Case‑Folding Bug and PHP Sandbox Escape.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 105,
+        "ch": 0
+      },
+      "to": {
+        "line": 105,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-3",
+      "item-2-7"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/PHP.md": {
+    "scroll": 99.86197265625,
+    "cursor": {
+      "from": {
+        "line": 123,
+        "ch": 0
+      },
+      "to": {
+        "line": 123,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/John Ostrowski - From Folder Deletion to Admin Lenovo Vantage (CVE‑2025‑13154) – Compass Security Blog.md": {
+    "scroll": 15.45581062048457,
+    "cursor": {
+      "from": {
+        "line": 13,
+        "ch": 14
+      },
+      "to": {
+        "line": 13,
+        "ch": 14
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Privilege Escalation.md": {
+    "scroll": 22.029637770377946,
+    "cursor": {
+      "from": {
+        "line": 40,
+        "ch": 0
+      },
+      "to": {
+        "line": 40,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-1"
+    ]
+  },
+  "Clippings/Adam Kues - Novel SQL Injection Technique in PDO Prepared Statements.md": {
+    "scroll": 14.821168964829752,
+    "cursor": {
+      "from": {
+        "line": 28,
+        "ch": 74
+      },
+      "to": {
+        "line": 28,
+        "ch": 74
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Services/MySQL.md": {
+    "scroll": 46.83008454975329,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-0",
+      "item-2-3",
+      "item-1-0",
+      "item-1-6"
+    ]
+  },
+  "Readwise/Articles/gitbook.io - 🚨Advanced SQL Injection Techniques by Nav1n0x.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 20,
+        "ch": 0
+      },
+      "to": {
+        "line": 20,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "CTFs/WAFfle-y Order.md": {
+    "scroll": 138.99859746027988,
+    "cursor": {
+      "from": {
+        "line": 154,
+        "ch": 0
+      },
+      "to": {
+        "line": 154,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-1-4"
+    ]
+  },
+  "CTFs/Toxic.md": {
+    "scroll": 65.6519701326627,
+    "cursor": {
+      "from": {
+        "line": 84,
+        "ch": 0
+      },
+      "to": {
+        "line": 84,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-1-4",
+      "item-1-6"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/PHP PDO.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 11,
+        "ch": 0
+      },
+      "to": {
+        "line": 11,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
   }
 }

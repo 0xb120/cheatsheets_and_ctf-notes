@@ -19,9 +19,14 @@ Description: PostgreSQL, also known as Postgres, is a free and open-source relat
 
 # Exploitation
 
-- [World of SELECT-only PostgreSQL Injections: (Ab)using the filesystem](../../Readwise/Articles/phrack.org%20-%20.%20Phrack%20Magazine%20.%200x10-0x47-0x08.md)
+## Postgres-related exploitation techniques
 
-## [SQL Injection](../Web%20&%20Network%20Hacking/SQL%20Injection.md)
+- [Avoid quotes and double quotes](../Web%20&%20Network%20Hacking/SQL%20Injection.md#Avoid%20quotes%20and%20double%20quotes)
+- [Abusing JSON-Based SQL to Bypass WAF](../Web%20&%20Network%20Hacking/SQL%20Injection.md#Abusing%20JSON-Based%20SQL%20to%20Bypass%20WAF)
+- [RCE loading extensions (Postgres UDF)](../Web%20&%20Network%20Hacking/SQL%20Injection.md#RCE%20loading%20extensions%20(Postgres%20UDF))
+- [World of SELECT-only PostgreSQL Injections: (Ab)using the filesystem](../../Readwise/Articles/phrack.org%20-%20.%20Phrack%20Magazine%20.%200x10-0x47-0x08.md)
+- [Mehmet Ince - Inside PostHog How SSRF, a ClickHouse SQL Escaping 0day, and Default PostgreSQL Credentials Formed an RCE Chain (ZDI-25-099, ZDI-25-097, ZDI-25-096)](../../Clippings/Mehmet%20Ince%20-%20Inside%20PostHog%20How%20SSRF,%20a%20ClickHouse%20SQL%20Escaping%200day,%20and%20Default%20PostgreSQL%20Credentials%20Formed%20an%20RCE%20Chain%20(ZDI-25-099,%20ZDI-25-097,%20ZDI-25-096).md)
+
 
 ## Build a custom PostgreSQL extension
 

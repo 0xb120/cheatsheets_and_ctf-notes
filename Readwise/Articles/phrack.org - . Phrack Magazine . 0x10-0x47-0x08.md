@@ -4,10 +4,14 @@ aliases:
   - ".:: Phrack Magazine ::."
 tags:
   - readwise/articles
+  - _inbox
 url: https://phrack.org/issues/71/8#article?__readwiseLocation=
 created: 2025-04-24
 ---
 # .:: Phrack Magazine ::.
+
+>[!summary]
+> The article demonstrates a novel approach to escalating a restricted `SELECT` SQL injection to RCE by directly manipulating DBMS files and data, including a new technique for privilege escalation within PostgreSQL.
 
 ## Intro
 

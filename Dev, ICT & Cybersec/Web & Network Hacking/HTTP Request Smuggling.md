@@ -76,6 +76,7 @@ In theory, this mechanism means there is no opportunity for an attacker to intro
 	- [0.CL desync via vanilla Expect - T-Mobile](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#0.CL%20desync%20via%20vanilla%20Expect%20-%20T-Mobile)
 	- [0.CL desync via obfuscated Expect - Gitlab](../../Clippings/James%20Kettle%20-%20HTTP1.1%20must%20die%20the%20desync%20endgame.md#0.CL%20desync%20via%20obfuscated%20Expect%20-%20Gitlab)
 - [Michael Weber - Refresh Compromising F5 BIG-IP With Request Smuggling CVE-2023-46747](../../Readwise/Articles/Michael%20Weber%20-%20Refresh%20Compromising%20F5%20BIG-IP%20With%20Request%20Smuggling%20CVE-2023-46747.md) and smuggling requests on other protocols
+- [HTTP Trailer parsing discrepancies](../../Clippings/Sebastiano%20Sartor%20-%20Trailing%20Danger%20exploring%20HTTP%20Trailer%20parsing%20discrepancies.md)
 
 ---
 

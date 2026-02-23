@@ -4,20 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "fa267baef4d53d6a",
+        "id": "56c76aaf0a940bd1",
         "type": "tabs",
         "children": [
           {
-            "id": "95f85ff1c7f37217",
+            "id": "230f3f7d0cdc9fba",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/PHP.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "PHP"
+            }
+          },
+          {
+            "id": "8834fb72b69f7cb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Insecure Deserialization & Object Injection"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git",
+                "query": "spl_autoload_register",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -114,7 +153,7 @@
       {
         "id": "497a4e903f6476bf",
         "type": "tabs",
-        "dimension": 54.502814258911826,
+        "dimension": 54.50281425891182,
         "children": [
           {
             "id": "cecdd88dce19730c",
@@ -173,13 +212,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android Services.md",
+                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Android Services"
+              "title": "Outline of You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
             }
           },
           {
@@ -205,6 +244,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,7 +254,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Insecure Deserialization & Object Injection"
             }
           },
           {
@@ -223,11 +263,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Insecure Deserialization & Object Injection"
             }
           },
           {
@@ -236,7 +277,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Dev, ICT & Cybersec/Mobile Hacking/Android Services.md",
+                "file": "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -264,7 +305,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Android Services"
+              "title": "Graph of You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
             }
           },
           {
@@ -305,42 +346,47 @@
   },
   "active": "f6c7831e85d653f1",
   "lastOpenFiles": [
-    "Dev, ICT & Cybersec/Tools/git.md",
-    "Raindrop/GitHub - irsdlysonet Deserialization payload generator for a variety of .NET formatters.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/PHP.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/dotNET.md",
-    "Raindrop/CODE WHITE  A Retrospective Analysis of CVE-2025-59287 in Microsoft WSUS.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
-    "Clippings/Frycos Security Diary - GFI MailEssentials - Yet Another .NET Target.md",
-    "Readwise/Articles/Assetnote - RCE in Progress WS_FTP Ad Hoc via IIS HTTP Modules.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/XML External Entity Injection (XXE Injection).md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/File Inclusion (LFI & RFI).md",
     "Readwise/Articles/Arseniy Sharoglazov - Exploiting Arbitrary Object Instantiations in PHP Without Custom Classes.md",
     "Dev, ICT & Cybersec/Web & Network Hacking/Arbitrary Object Instantiation.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/OAuth 2.0 attacks.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/OAuth 2.0.md",
-    "Clippings/Security Writeups - ATO via Facebook OAuth Due Unsanitized Schema Allows to Steal OAuth Token.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Bash 101.md",
-    "Clippings/Piotr Bazydlo (@chudyPB) - Someone Knows Bash Far Too Well, And We Love It (Ivanti EPMM Pre-Auth RCEs CVE-2026-1281 & CVE-2026-1340).md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md",
+    "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
+    "Raindrop/attachments/class_exists.png",
+    "Raindrop/attachments",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/PHP PDO.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/SQL Injection.md",
+    "Clippings/Adam Kues - Novel SQL Injection Technique in PDO Prepared Statements.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "CTFs/Toxic.md",
+    "CTFs/WAFfle-y Order.md",
+    "Dev, ICT & Cybersec/Services/PostgreSQL.md",
+    "Dev, ICT & Cybersec/Services/MySQL.md",
+    "Readwise/Articles/gitbook.io - 🚨Advanced SQL Injection Techniques by Nav1n0x.md",
+    "Dev, ICT & Cybersec/Tools/sqlmap.md",
+    "Clippings/John Ostrowski - From Folder Deletion to Admin Lenovo Vantage (CVE‑2025‑13154) – Compass Security Blog.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Confusion Attacks.md",
     "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
-    "Raindrop/KeygraphHQshannon Fully autonomous AI hacker to find actual exploits in your web apps. Shannon has achieved a 96.15% success rate on the hint-free, source-aware XBOW Benchmark.md",
-    "Raindrop/GitHub - 0x4m4hexstrike-ai HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and securi.md",
-    "Clippings/d3d (M. B. Johnson) - The Quiet Side Channel... Smuggling with CL.0 for C2.md",
-    "Dev, ICT & Cybersec/Mobile Hacking/Android Services.md",
-    "Dev, ICT & Cybersec/Tools/assetfinder.md",
-    "Clippings/lyra's epic blog - SVG Filters - Clickjacking 2.0.md",
-    "Clippings/_NULL - Roundcube Webmail 1.5.13  1.6.13 allows attackers to force remote image loads via SVG feImage.md",
+    "Readwise/Articles/Rafael da Costa Santos - Exploiting HTTP Parsers Inconsistencies.md",
+    "Clippings/Sebastiano Sartor - Trailing Danger exploring HTTP Trailer parsing discrepancies.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Request Smuggling.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP Request Smuggling.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Privilege Escalation.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Windows Security 101.md",
+    "Clippings/FrankenPHP - Unicode Case‑Folding Bug and PHP Sandbox Escape.md",
+    "Clippings/attachments/hide-merge-2.png",
+    "Clippings/attachments/hide-merge-1.png",
+    "Clippings/attachments/early-parsing-terminators.png",
+    "Clippings/attachments/unparsed-trailers.png",
+    "Clippings/attachments/TRMRG-bypass.png",
+    "Clippings/attachments/TRMRG-lighthttpd.png",
+    "Clippings/attachments/HTTP_trailers.png",
     "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk-poc.png",
     "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk3.png",
-    "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk2.png",
-    "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk.png",
     "Bases/Tools.base",
     "Bases/Articles inbox.base",
     "copilot/memory",
     "copilot",
-    "Clippings/attachments/weak-firebase-2.png",
-    "Clippings/attachments/weak-firebase-1.png",
     "VR/Targets/VR targets.base",
     "Communities/YouTube/_YouTubeDB.base",
     "Bases/CTFs.base",
@@ -348,14 +394,9 @@
     "Communities/YouTube/_YT-dashboard.canvas",
     "CTFs/_CTF-dashboard.canvas",
     "Bases",
-    "Excalibrain",
     "Untitled.canvas",
     "Personal/Book list/_book-dashboard.canvas",
     "Communities/MeetHack/Nday/Black Project.canvas",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-17.png",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-16.png",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15.png",
-    "Clippings/attachments/James Kettle - HTTP1.1 must die the desync endgame-15-1.png",
     "VR/Targets/uisp.it/tesseramento.uisp.it/tesseramento.uisp.it.canvas",
     "VR/Targets/uisp.it/areariservata2.uisp.it/areariservata2.uisp.it.canvas",
     "VR/Targets/Woox/Woox R4040/Woox R4040.canvas",

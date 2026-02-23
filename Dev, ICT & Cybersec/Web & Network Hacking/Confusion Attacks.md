@@ -24,3 +24,4 @@ Examples:
 	- [XSS with Charset Shenanigans by kinugawamasato - w/ strellic](../../Readwise/Articles/blig.one%20-%20Flatt%20Security%20XSS%20Challenge%20-%20Writeup.md#XSS%20with%20Charset%20Shenanigans%20by%20kinugawamasato%20-%20w/%20strellic)
 	- [PortSwigger Research - Bypassing Character Blocklists With Unicode Overflows](../../Readwise/Articles/PortSwigger%20Research%20-%20Bypassing%20Character%20Blocklists%20With%20Unicode%20Overflows.md)
 - [ChatGPT Account Takeover - Wildcard Web Cache Deception](../../Readwise/Articles/Harel%20Security%20Research%20-%20ChatGPT%20Account%20Takeover%20-%20Wildcard%20Web%20Cache%20Deception.md)
+- [Adam Kues - Novel SQL Injection Technique in PDO Prepared Statements](../../Clippings/Adam%20Kues%20-%20Novel%20SQL%20Injection%20Technique%20in%20PDO%20Prepared%20Statements.md)

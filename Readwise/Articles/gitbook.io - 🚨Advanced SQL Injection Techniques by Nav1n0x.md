@@ -15,6 +15,6 @@ created: 2025-01-07
 
 
 Creating Your Own Tamper Script
- Creating your own tamper script for SQLMap involves writing a Python script that modifies the payloads used by SQLMap to evade web application firewalls (WAFs) or other filtering mechanisms. [Here](https://nav1n0x.gitbook.io/advanced-sql-injection-techniques#creating-your-own-tamper-script) is a step-by-step guide to create a custom tamper script.
+ Creating your own tamper script for [sqlmap](../../Dev,%20ICT%20&%20Cybersec/Tools/sqlmap.md) involves writing a Python script that modifies the payloads used by SQLMap to evade web application firewalls (WAFs) or other filtering mechanisms. [Here](https://nav1n0x.gitbook.io/advanced-sql-injection-techniques#creating-your-own-tamper-script) is a step-by-step guide to create a custom tamper script.
 > [View Highlight](https://read.readwise.io/read/01jh0rg4gbnxj4e05mdja4qp5s)
 

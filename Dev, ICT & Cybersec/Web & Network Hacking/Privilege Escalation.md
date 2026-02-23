@@ -19,11 +19,6 @@ Furthermore is fundamental know **how to perform information gathering** once a 
 ## Privilege Escalation Methodologies
 
 Search for misconfigured services, insufficient file permission restrictions on binaries or services, direct kernel vulnerabilities, vulnerable software running with high privileges, sensitive information stored on local files, registry settings that always elevate privileges before executing a binary, installation scripts that may contain hard coded credentials, and many others.
-```start-multi-column
-ID: ID_6lik
-Number of Columns: 2
-Largest Column: standard
-```
 
 ### Linux Methodologies
 
@@ -34,8 +29,6 @@ Largest Column: standard
 - [Ignitetechnologies PrivEsc examples](https://github.com/Ignitetechnologies/Privilege-Escalation)
 - [Infosecsanyam checklist](https://oscp.infosecsanyam.in/priv-escalation/linux-priv-escalation/checklist-linux-privilege-escalation)
 
---- column-end ---
-
 ### Windows Methodologies
 
 - [Windows PrivEsc Methodology Mind Map](Windows%20PrivEsc%20Methodology%20Mind%20Map.md)
@@ -44,8 +37,8 @@ Largest Column: standard
 - [Infosecsanyam checklist](https://oscp.infosecsanyam.in/priv-escalation/windows-priv-escalation/checklist-local-windows-privilege-escalation)
 - [Fuzzysec - Windows Privilege Escalation Fundamentals](https://www.fuzzysecurity.com/tutorials/16.html)
 - [absolomb's PrivEsc chetasheet](https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/)
+- [John Ostrowski - From Folder Deletion to Admin Lenovo Vantage (CVE‑2025‑13154) – Compass Security Blog](../../Clippings/John%20Ostrowski%20-%20From%20Folder%20Deletion%20to%20Admin%20Lenovo%20Vantage%20(CVE‑2025‑13154)%20–%20Compass%20Security%20Blog.md)
 
-=== end-multi-column
 ## External Tools and References
 
 Here are many of the various online cheat sheets and tools dedicated to privilege escalation

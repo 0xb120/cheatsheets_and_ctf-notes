@@ -63,7 +63,7 @@ Blind SSRF can be found using [OAST](https://portswigger.net/burp/application-se
 >[!note]
 >It is common when testing for SSRF vulnerabilities to observe a DNS look-up for the supplied Collaborator domain, but no subsequent HTTP request. This typically happens because the application attempted to make an HTTP request to the domain, which caused the initial DNS lookup, but the actual HTTP request was blocked by network-level filtering. It is relatively common for infrastructure to allow outbound DNS traffic, since this is needed for so many purposes, but block HTTP connections to unexpected destinations.
 
-Identifying a blind SSRF vulnerability that can trigger out-of-band HTTP requests doesn't in itself provide a route to exploitability. However, it can still be leveraged to probe for other vulnerabilities. You can blindly sweep the internal IP address space, sending payloads designed to detect well-known vulnerabilities. If those payloads also employ blind out-of-band techniques, then you might uncover a critical vulnerability on an unpatched internal server.
+Identifying a blind SSRF vulnerability that can trigger out-of-band HTTP requests doesn't in itself provide a route to exploitability. However, it can still be leveraged to **probe for other vulnerabilities**. You can blindly sweep the internal IP address space, sending payloads designed to detect well-known vulnerabilities. If those payloads also employ blind out-of-band techniques, then you might uncover a critical vulnerability on an unpatched internal server.
 
 >[!example] Exploit a blind SSRF to exfiltrate usernames from targets vulnerable to ShellShock
 >```http
@@ -78,12 +78,13 @@ Connection: close
 
 ### Escalating Blind SSRF
 
-Another avenue for exploiting blind SSRF vulnerabilities is to induce the application to connect to a system under the attacker's control, and return malicious responses to the HTTP client that makes the connection. If you can exploit a serious client-side vulnerability in the server's HTTP implementation, you might be able to achieve remote code execution within the application infrastructure. [^1]
+Another avenue for exploiting blind SSRF vulnerabilities is to **induce the application to connect to a system under the attacker's control**, and **return malicious responses to the HTTP client that makes the connection**. If you can exploit a serious client-side vulnerability in the server's HTTP implementation, you might be able to achieve remote code execution within the application infrastructure. [^1]
 
 [^1]: https://portswigger.net/research/cracking-the-lens-targeting-https-hidden-attack-surface#remoteclient
 
-Some time, using redirection and similar tricks, it is also possible to escalate blind SSRF to more advanced ones:
+Some time, using **redirection and similar tricks**, it is also possible to escalate blind SSRF to more advanced ones:
 - [Digging for SSRF in NextJS Apps](../../Readwise/Articles/assetnote.io%20-%20Digging%20for%20SSRF%20in%20NextJS%20Apps.md)
+- [Shubham Shah - Novel SSRF Technique Involving HTTP Redirect Loops › Searchlight Cyber](../../Clippings/Shubham%20Shah%20-%20Novel%20SSRF%20Technique%20Involving%20HTTP%20Redirect%20Loops%20›%20Searchlight%20Cyber.md)
 
 ## Other attack surface
 

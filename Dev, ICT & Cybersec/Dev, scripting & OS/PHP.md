@@ -96,8 +96,28 @@ You can also set a cookie names `xDEBUG_SESSION` with any value to automatically
 
 [^xdebug-step-debug]: [Step debugging](https://xdebug.org/docs/step_debug), xdebug.org
 
+## PHP libraries and components
+
+- [PHP PDO](PHP%20PDO.md): PDO is one of the most commonly used libraries for connecting PHP services to databases like [MySQL](../Services/MySQL.md) and [PostgreSQL](../Services/PostgreSQL.md) and use prepared statements for query them.
+
 ## PHP quirks and tricks
 
 - `register_argc_argv` + `$_SERVER['argv']` [^1] 
+- FrankenPHP and Unicode Cade-folding [^2]
+- [PDO Preparaed Statements](PHP%20PDO.md#PDO%20Preparaed%20Statements) with query emulation = [Novel SQL Injection](../../Clippings/Adam%20Kues%20-%20Novel%20SQL%20Injection%20Technique%20in%20PDO%20Prepared%20Statements.md#Novel%20SQL%20Injection%20Technique%20in%20PDO%20Prepared%20Statements)
+- `spl_autoload_register` [^5] and PHP `autoload` [^6] exploitation [^3] [^4] [^7]
+
 
 [^1]: [Assetnote Research - How an Obscure PHP Footgun Led to RCE in Craft CMS](../../Readwise/Articles/Assetnote%20Research%20-%20How%20an%20Obscure%20PHP%20Footgun%20Led%20to%20RCE%20in%20Craft%20CMS.md)
+
+[^2]: [FrankenPHP - Unicode Case‑Folding Bug and PHP Sandbox Escape](../../Clippings/FrankenPHP%20-%20Unicode%20Case‑Folding%20Bug%20and%20PHP%20Sandbox%20Escape.md)
+
+[^3]: [You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)](../../Raindrop/You%20Already%20Have%20Our%20Personal%20Data,%20Take%20Our%20Phone%20Calls%20Too%20(FreePBX%20CVE-2025-57819).md)
+
+[^4]: [Arseniy Sharoglazov - Exploiting Arbitrary Object Instantiations in PHP Without Custom Classes](../../Readwise/Articles/Arseniy%20Sharoglazov%20-%20Exploiting%20Arbitrary%20Object%20Instantiations%20in%20PHP%20Without%20Custom%20Classes.md)
+
+[^5]: https://www.php.net/manual/en/function.spl-autoload-register.php
+
+[^6]: https://www.php.net/manual/en/language.oop5.autoload.php
+
+[^7]: [PHP Object Injection exploiting `spl_autoload_register`](../Web%20&%20Network%20Hacking/Insecure%20Deserialization%20&%20Object%20Injection.md#PHP%20Object%20Injection%20exploiting%20`spl_autoload_register`)

@@ -283,6 +283,15 @@ By sending this packet, the target will write a file `/tmp/hello.php`containing
 
 [^video]: [Website Vulnerabilities to Fully Hacked Server](https://www.youtube.com/watch?v=yq2rq50IMSQ&ab_channel=JohnHammond)
 
+### LFI via Autoloading
+
+In this scenario, the application takes user input and passes it to a function that triggers the autoloader (like `class_exists()`, `new $class()` [^4], or type-hinting) [^3].
+
+- **The Mechanism:** The custom autoloader registered via `spl_autoload_register` takes the user-supplied string, treats it as a class name, and maps it to a file path.
+    
+- **The Exploit:** If the autoloader doesn't strictly validate the string, an attacker can use directory traversal (e.g., `..\..\..\etc\passwd`) or point the autoloader to sensitive `.php` files that were meant to be private/internal.
+
+
 ### Blind LFI
 
 Blind lfi are vulnerabilities that occur when you have an arbitrary file read primitive, but the contents of that file are not shown in the output.
@@ -408,3 +417,7 @@ More Unix files: [wfuzz/dirTraversal-nix.txt at master · xmendez/wfuzz](https:/
 - https://github.com/synacktiv/php_filter_chain_generator
 
 [^2]: [PHP FIlter Chains: File Read From Error-based oracle](https://www.synacktiv.com/en/publications/php-filter-chains-file-read-from-error-based-oracle); www.synacktiv.com
+
+[^3]: [You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)](../../Raindrop/You%20Already%20Have%20Our%20Personal%20Data,%20Take%20Our%20Phone%20Calls%20Too%20(FreePBX%20CVE-2025-57819).md)
+
+[^4]: [Arbitrary Object Instantiation](Arbitrary%20Object%20Instantiation.md)

