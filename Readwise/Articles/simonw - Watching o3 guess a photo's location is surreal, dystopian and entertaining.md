@@ -3,7 +3,6 @@ author: simonw
 aliases:
   - Watching o3 guess a photo's location is surreal, dystopian and entertaining
 tags:
-  - RW_inbox
   - readwise/articles
 url: https://simonwillison.net/2025/Apr/26/o3-photo-locations/?__readwiseLocation=
 created: 2025-04-28

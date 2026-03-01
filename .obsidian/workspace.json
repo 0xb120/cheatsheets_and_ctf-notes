@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "56c76aaf0a940bd1",
+        "id": "fb2ee1146458b0d1",
         "type": "tabs",
         "children": [
           {
-            "id": "230f3f7d0cdc9fba",
+            "id": "71738105e34c659b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dev, ICT & Cybersec/Dev, scripting & OS/PHP.md",
+                "file": "Clippings/Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -28,35 +28,10 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "PHP"
-            }
-          },
-          {
-            "id": "8834fb72b69f7cb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Insecure Deserialization & Object Injection"
+              "title": "Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "spl_autoload_register",
+                "query": "\"crypto\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -153,7 +128,7 @@
       {
         "id": "497a4e903f6476bf",
         "type": "tabs",
-        "dimension": 54.50281425891182,
+        "dimension": 54.502814258911826,
         "children": [
           {
             "id": "cecdd88dce19730c",
@@ -220,16 +195,6 @@
               "icon": "lucide-list",
               "title": "Outline of You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819)"
             }
-          },
-          {
-            "id": "9e16e0c8d631e94b",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
-            }
           }
         ]
       },
@@ -244,7 +209,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
+                "file": "Clippings/Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -254,7 +219,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Insecure Deserialization & Object Injection"
+              "title": "Backlinks for Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024"
             }
           },
           {
@@ -263,12 +228,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
+                "file": "Clippings/Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Insecure Deserialization & Object Injection"
+              "title": "Outgoing links from Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024"
             }
           },
           {
@@ -346,34 +311,37 @@
   },
   "active": "f6c7831e85d653f1",
   "lastOpenFiles": [
+    "Dev, ICT & Cybersec/Web & Network Hacking/Session Attacks and Session Prediction.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Race Condition.md",
+    "Clippings/Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md",
+    "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md",
     "Dev, ICT & Cybersec/Dev, scripting & OS/PHP.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/File Inclusion (LFI & RFI).md",
-    "Readwise/Articles/Arseniy Sharoglazov - Exploiting Arbitrary Object Instantiations in PHP Without Custom Classes.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Arbitrary Object Instantiation.md",
-    "Raindrop/You Already Have Our Personal Data, Take Our Phone Calls Too (FreePBX CVE-2025-57819).md",
+    "Raindrop/Beware the false false-positive how to distinguish HTTP pipelining from request smuggling.md",
+    "Bases/Articles inbox.base",
+    "Clippings/onel, KernelDeimos - HeyPuterputer 🌐 The Internet OS! Free, Open-Source, and Self-Hostable..md",
+    "Clippings/Google Project Zero - Policy and Disclosure 2025 Edition.md",
+    "Dev, ICT & Cybersec/High level/Vulnerability research 101.md",
+    "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md",
+    "VR/Disclosure Policy.md",
+    "Raindrop/LABScon Replay  Is CNVD ≥ CVE A Look at Chinese Vulnerability Discovery and Disclosure.md",
+    "Clippings/John Ostrowski - From Folder Deletion to Admin Lenovo Vantage (CVE‑2025‑13154) – Compass Security Blog.md",
+    "Readwise/Articles/Daniel Stenberg - CVSS Is Dead to Us.md",
+    "Readwise/Articles/Ben Desjardins - Understanding the EU’s Cyber Resilience Act.md",
+    "Readwise/Articles/Nancy Gariché - A Maintainer’s Guide to Vulnerability Disclosure GitHub Tools to Make It Simple.md",
+    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
+    "Readwise/Articles/Marco Ivaldi - A Collection of Weggli Patterns for CC++ Vulnerability Research.md",
+    "Clippings/Puter Technologies Inc. - Free, Unlimited OpenAI API.md",
+    "Clippings/augustus.md",
+    "Readwise/Articles/0xdf hacks stuff - Python Tools and Scripts W UV CheatSheet.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/Python.md",
+    "Clippings/Martino Spagnuolo - The Forgotten Bug How a Node.js Core Design Flaw Enables HTTP Request Splitting.md",
+    "Dev, ICT & Cybersec/Dev, scripting & OS/JavaScript & NodeJS.md",
+    "Readwise/Articles/PfiatDe - Having Fun With Github.md",
+    "Bases/CTFs.base",
+    "Bases/Tools.base",
     "Raindrop/attachments/class_exists.png",
     "Raindrop/attachments",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/PHP PDO.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/SQL Injection.md",
-    "Clippings/Adam Kues - Novel SQL Injection Technique in PDO Prepared Statements.md",
-    "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md",
-    "CTFs/Toxic.md",
-    "CTFs/WAFfle-y Order.md",
-    "Dev, ICT & Cybersec/Services/PostgreSQL.md",
-    "Dev, ICT & Cybersec/Services/MySQL.md",
-    "Readwise/Articles/gitbook.io - 🚨Advanced SQL Injection Techniques by Nav1n0x.md",
-    "Dev, ICT & Cybersec/Tools/sqlmap.md",
-    "Clippings/John Ostrowski - From Folder Deletion to Admin Lenovo Vantage (CVE‑2025‑13154) – Compass Security Blog.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Confusion Attacks.md",
-    "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md",
-    "Readwise/Articles/Rafael da Costa Santos - Exploiting HTTP Parsers Inconsistencies.md",
-    "Clippings/Sebastiano Sartor - Trailing Danger exploring HTTP Trailer parsing discrepancies.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Request Smuggling.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Exploiting HTTP Request Smuggling.md",
-    "Dev, ICT & Cybersec/Web & Network Hacking/Privilege Escalation.md",
-    "Dev, ICT & Cybersec/Dev, scripting & OS/Windows Security 101.md",
-    "Clippings/FrankenPHP - Unicode Case‑Folding Bug and PHP Sandbox Escape.md",
     "Clippings/attachments/hide-merge-2.png",
     "Clippings/attachments/hide-merge-1.png",
     "Clippings/attachments/early-parsing-terminators.png",
@@ -383,13 +351,10 @@
     "Clippings/attachments/HTTP_trailers.png",
     "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk-poc.png",
     "Clippings/attachments/Marek Tóth - DOM-based Extension Clickjacking Your Password Manager Data at Risk3.png",
-    "Bases/Tools.base",
-    "Bases/Articles inbox.base",
     "copilot/memory",
     "copilot",
     "VR/Targets/VR targets.base",
     "Communities/YouTube/_YouTubeDB.base",
-    "Bases/CTFs.base",
     "zzz_res/attachments/annotated-OWASP_Code_Review_Guide_v2.pdf",
     "Communities/YouTube/_YT-dashboard.canvas",
     "CTFs/_CTF-dashboard.canvas",

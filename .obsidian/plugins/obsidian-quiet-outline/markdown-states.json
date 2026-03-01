@@ -1,14 +1,14 @@
 {
   "Dev, ICT & Cybersec/Services/HTTP & HTTPS.md": {
-    "scroll": 119.95033296676166,
+    "scroll": 109.97079525353773,
     "cursor": {
       "from": {
-        "line": 133,
-        "ch": 104
+        "line": 100,
+        "ch": 0
       },
       "to": {
-        "line": 133,
-        "ch": 104
+        "line": 100,
+        "ch": 0
       }
     },
     "expandedKeys": [
@@ -103,7 +103,7 @@
     ]
   },
   "Dev, ICT & Cybersec/Dev, ICT & Cybersec.md": {
-    "scroll": 0,
+    "scroll": 120.68175006734914,
     "cursor": {
       "from": {
         "line": 0,
@@ -326,7 +326,7 @@
     ]
   },
   "Clippings/onel, KernelDeimos - HeyPuterputer 🌐 The Internet OS! Free, Open-Source, and Self-Hostable..md": {
-    "scroll": 16.958393113342897,
+    "scroll": 0,
     "cursor": {
       "from": {
         "line": 0,
@@ -479,20 +479,20 @@
     ]
   },
   "Dev, ICT & Cybersec/High level/Vulnerability research 101.md": {
-    "scroll": 2.7159795839924454,
+    "scroll": 64.88070527753956,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 85,
+        "ch": 11
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 85,
+        "ch": 11
       }
     },
     "expandedKeys": [
       "item-1-0",
-      "item-2-2"
+      "item-1-2"
     ]
   },
   "Readwise/Articles/Jorge Rosillo - Security Research Without Ever Leaving GitHub From Code Scanning to CVE via Codespaces and Private Vulnerability Reporting.md": {
@@ -734,16 +734,18 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 6,
-        "ch": 2
+        "line": 38,
+        "ch": 6
       },
       "to": {
-        "line": 6,
-        "ch": 2
+        "line": 38,
+        "ch": 6
       }
     },
     "expandedKeys": [
-      "item-1-0"
+      "item-1-0",
+      "item-2-1",
+      "item-2-4"
     ]
   },
   "Readwise/Articles/🍊 Orange Tsai - Confusion Attacks Exploiting Hidden Semantic Ambiguity in Apache HTTP Server!.md": {
@@ -1960,7 +1962,7 @@
     ]
   },
   "Readwise/Articles/blackhat.com - Us-17-Lekies-Dont-Trust-the-Dom-Bypassing-XSS-Mitigations-via-Script-Gadgets.md": {
-    "scroll": 0,
+    "scroll": 27.64279513888889,
     "cursor": {
       "from": {
         "line": 5,
@@ -1992,15 +1994,15 @@
     ]
   },
   "Readwise/Articles/Brandon McGrath - McP An Introduction to Agentic Op Support.md": {
-    "scroll": 0,
+    "scroll": 143.37030582555957,
     "cursor": {
       "from": {
-        "line": 5,
-        "ch": 2
+        "line": 154,
+        "ch": 116
       },
       "to": {
-        "line": 5,
-        "ch": 2
+        "line": 154,
+        "ch": 116
       }
     },
     "expandedKeys": [
@@ -2358,7 +2360,7 @@
     ]
   },
   "Readwise/Articles/PfiatDe - Having Fun With Github.md": {
-    "scroll": 45.305267333984375,
+    "scroll": 0,
     "cursor": {
       "from": {
         "line": 5,
@@ -2452,7 +2454,7 @@
     ]
   },
   "Readwise/Articles/simonw - Watching o3 guess a photo's location is surreal, dystopian and entertaining.md": {
-    "scroll": 0,
+    "scroll": 13.091917627058585,
     "cursor": {
       "from": {
         "line": 5,
@@ -2526,18 +2528,20 @@
     "expandedKeys": []
   },
   "Readwise/Articles/jakearchibald.com - How to Win at CORS.md": {
-    "scroll": 0,
+    "scroll": 80.57306794138664,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 86,
+        "ch": 369
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 86,
+        "ch": 369
       }
     },
-    "expandedKeys": []
+    "expandedKeys": [
+      "item-1-0"
+    ]
   },
   "Readwise/Articles/sonarsource.com - Double Dash, Double Trouble A Subtle SQL Injection Flaw.md": {
     "scroll": 13.118847043773075,
@@ -2741,18 +2745,20 @@
     "expandedKeys": []
   },
   "Readwise/Articles/novasecio - CSRF A Complete Guide to Exploiting Advanced CSRF Vulnerabilities.md": {
-    "scroll": 0,
+    "scroll": 17.021121913881686,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 27,
+        "ch": 22
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 27,
+        "ch": 22
       }
     },
-    "expandedKeys": []
+    "expandedKeys": [
+      "item-1-0"
+    ]
   },
   "Readwise/Articles/neodyme.io - HTML to PDF Renderer A Tale of Local File Access and Shellcode Execution.md": {
     "scroll": 9.509839989673132,
@@ -2786,7 +2792,7 @@
     "expandedKeys": []
   },
   "Readwise/Articles/Nancy Gariché - A Maintainer’s Guide to Vulnerability Disclosure GitHub Tools to Make It Simple.md": {
-    "scroll": 0,
+    "scroll": 45.077491091008774,
     "cursor": {
       "from": {
         "line": 0,
@@ -2797,7 +2803,9 @@
         "ch": 0
       }
     },
-    "expandedKeys": []
+    "expandedKeys": [
+      "item-1-0"
+    ]
   },
   "Readwise/Articles/httpsgithub.comSlon104 - GitHub - Slon104Common-PIN-Analysis-from-haveibeenpwned.com.md": {
     "scroll": 0,
@@ -2939,7 +2947,7 @@
     ]
   },
   "Readwise/Articles/Marco Ivaldi - A Collection of Weggli Patterns for CC++ Vulnerability Research.md": {
-    "scroll": 0,
+    "scroll": 2.9821912325345554,
     "cursor": {
       "from": {
         "line": 0,
@@ -3608,7 +3616,7 @@
     "expandedKeys": []
   },
   "Raindrop/LABScon Replay  Is CNVD ≥ CVE A Look at Chinese Vulnerability Discovery and Disclosure.md": {
-    "scroll": 23.43689668129501,
+    "scroll": 0,
     "cursor": {
       "from": {
         "line": 20,
@@ -4176,12 +4184,12 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 5,
+        "ch": 2
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 5,
+        "ch": 2
       }
     },
     "expandedKeys": []
@@ -4231,20 +4239,19 @@
     "expandedKeys": []
   },
   "Clippings/Google Project Zero - Policy and Disclosure 2025 Edition.md": {
-    "scroll": 8.171205631953733,
+    "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 11,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 11,
         "ch": 0
       }
     },
     "expandedKeys": [
-      "item-1-0",
-      "item-3-1"
+      "item-1-0"
     ]
   },
   "Dev, ICT & Cybersec/Dev, scripting & OS/Java.md": {
@@ -4311,7 +4318,7 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/DOM-based vulnerabilities.md": {
-    "scroll": 391.6601902759056,
+    "scroll": 15.0912109375,
     "cursor": {
       "from": {
         "line": 402,
@@ -4371,7 +4378,7 @@
     ]
   },
   "Readwise/Articles/novasecio - Recon for Bug Bounty 8 Essential Tools for Performing Effective Reconnaissance.md": {
-    "scroll": 34.09957206347278,
+    "scroll": 22.57491145058284,
     "cursor": {
       "from": {
         "line": 47,
@@ -4452,11 +4459,11 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 4,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 4,
         "ch": 0
       }
     },
@@ -4479,15 +4486,15 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Scripting (XSS).md": {
-    "scroll": 195.89202419537872,
+    "scroll": 63.99508749472128,
     "cursor": {
       "from": {
-        "line": 215,
-        "ch": 47
+        "line": 233,
+        "ch": 4
       },
       "to": {
-        "line": 215,
-        "ch": 47
+        "line": 233,
+        "ch": 4
       }
     },
     "expandedKeys": [
@@ -4509,15 +4516,15 @@
     "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Cross-origin resource sharing (CORS).md": {
-    "scroll": 55.70483576218695,
+    "scroll": 59.81092503324468,
     "cursor": {
       "from": {
-        "line": 59,
-        "ch": 575
+        "line": 36,
+        "ch": 173
       },
       "to": {
-        "line": 59,
-        "ch": 575
+        "line": 36,
+        "ch": 173
       }
     },
     "expandedKeys": [
@@ -4636,15 +4643,15 @@
     "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/HTTP Recon and Enumeration.md": {
-    "scroll": 51.70537380642361,
+    "scroll": 151.42460414341517,
     "cursor": {
       "from": {
-        "line": 125,
-        "ch": 181
+        "line": 159,
+        "ch": 4
       },
       "to": {
-        "line": 125,
-        "ch": 181
+        "line": 159,
+        "ch": 14
       }
     },
     "expandedKeys": [
@@ -4732,22 +4739,19 @@
     "expandedKeys": []
   },
   "Readwise/Articles/ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty.md": {
-    "scroll": 0,
+    "scroll": 83.55071708466829,
     "cursor": {
       "from": {
-        "line": 49,
-        "ch": 111
+        "line": 85,
+        "ch": 29
       },
       "to": {
-        "line": 49,
-        "ch": 111
+        "line": 85,
+        "ch": 29
       }
     },
     "expandedKeys": [
-      "item-1-0",
-      "item-2-3",
-      "item-2-6",
-      "item-2-13"
+      "item-1-0"
     ]
   },
   "Readwise/Articles/Erik - Last Week in Security (LWiS) - 2024-11-25.md": {
@@ -5360,15 +5364,15 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Authentication Attacks.md": {
-    "scroll": 67.60701171875,
+    "scroll": 69.34800909433581,
     "cursor": {
       "from": {
-        "line": 0,
-        "ch": 0
+        "line": 83,
+        "ch": 306
       },
       "to": {
-        "line": 0,
-        "ch": 0
+        "line": 83,
+        "ch": 306
       }
     },
     "expandedKeys": [
@@ -5392,14 +5396,14 @@
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Race Condition.md": {
-    "scroll": 253.39935302734375,
+    "scroll": 239.99979690956857,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 250,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 250,
         "ch": 0
       }
     },
@@ -5445,11 +5449,11 @@
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 12,
+        "line": 28,
         "ch": 0
       },
       "to": {
-        "line": 12,
+        "line": 28,
         "ch": 0
       }
     },
@@ -5838,15 +5842,15 @@
     "expandedKeys": []
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/Insecure Deserialization & Object Injection.md": {
-    "scroll": 211.89024498566533,
+    "scroll": 844.8992690379562,
     "cursor": {
       "from": {
-        "line": 259,
-        "ch": 0
+        "line": 866,
+        "ch": 47
       },
       "to": {
-        "line": 259,
-        "ch": 0
+        "line": 866,
+        "ch": 47
       }
     },
     "expandedKeys": [
@@ -5892,21 +5896,20 @@
     ]
   },
   "Readwise/Articles/Arseniy Sharoglazov - Exploiting Arbitrary Object Instantiations in PHP Without Custom Classes.md": {
-    "scroll": 0,
+    "scroll": 82.80977115322453,
     "cursor": {
       "from": {
-        "line": 10,
-        "ch": 23
+        "line": 112,
+        "ch": 123
       },
       "to": {
-        "line": 10,
-        "ch": 23
+        "line": 112,
+        "ch": 123
       }
     },
     "expandedKeys": [
       "item-1-0",
-      "item-2-2",
-      "item-2-6"
+      "item-2-2"
     ]
   },
   "Dev, ICT & Cybersec/Web & Network Hacking/XML External Entity Injection (XXE Injection).md": {
@@ -5962,19 +5965,21 @@
     ]
   },
   "Clippings/Sebastiano Sartor - Trailing Danger exploring HTTP Trailer parsing discrepancies.md": {
-    "scroll": 0,
+    "scroll": 77.38343812174152,
     "cursor": {
       "from": {
-        "line": 15,
-        "ch": 0
+        "line": 102,
+        "ch": 57
       },
       "to": {
-        "line": 15,
-        "ch": 0
+        "line": 102,
+        "ch": 57
       }
     },
     "expandedKeys": [
-      "item-1-0"
+      "item-1-0",
+      "item-4-3",
+      "item-3-2"
     ]
   },
   "Clippings/Shubham Shah - Novel SSRF Technique Involving HTTP Redirect Loops › Searchlight Cyber.md": {
@@ -6055,7 +6060,8 @@
       }
     },
     "expandedKeys": [
-      "item-1-0"
+      "item-1-0",
+      "item-1-5"
     ]
   },
   "Clippings/Li Jiantao (@CurseRed) & (@swing) - Pickling the Mailbox A Deep Dive into CVE-2025-20393.md": {
@@ -6075,33 +6081,29 @@
     ]
   },
   "Dev, ICT & Cybersec/Dev, scripting & OS/Python.md": {
-    "scroll": 195.09043963096303,
+    "scroll": 0.9825557388422144,
     "cursor": {
       "from": {
-        "line": 0,
+        "line": 7,
         "ch": 0
       },
       "to": {
-        "line": 0,
+        "line": 7,
         "ch": 0
       }
     },
-    "expandedKeys": [
-      "item-1-1",
-      "item-2-8",
-      "item-3-9"
-    ]
+    "expandedKeys": []
   },
   "Clippings/nsportsman, EvanLeleux - praetorian-incaugustus LLM security testing framework for detecting prompt injection, jailbreaks, and adversarial attacks — 190+ probes, 28 providers, single Go binary.md": {
     "scroll": 0,
     "cursor": {
       "from": {
-        "line": 49,
-        "ch": 14
+        "line": 18,
+        "ch": 95
       },
       "to": {
-        "line": 49,
-        "ch": 14
+        "line": 18,
+        "ch": 95
       }
     },
     "expandedKeys": [
@@ -6164,7 +6166,7 @@
     ]
   },
   "Readwise/Articles/phrack.org - . Phrack Magazine . 0x10-0x47-0x08.md": {
-    "scroll": 0,
+    "scroll": 100.5467292906746,
     "cursor": {
       "from": {
         "line": 98,
@@ -6248,23 +6250,24 @@
     ]
   },
   "Dev, ICT & Cybersec/Dev, scripting & OS/PHP.md": {
-    "scroll": 99.86197265625,
+    "scroll": 185.8172515534809,
     "cursor": {
       "from": {
-        "line": 123,
+        "line": 198,
         "ch": 0
       },
       "to": {
-        "line": 123,
+        "line": 198,
         "ch": 0
       }
     },
     "expandedKeys": [
+      "item-2-3",
       "item-1-0"
     ]
   },
   "Clippings/John Ostrowski - From Folder Deletion to Admin Lenovo Vantage (CVE‑2025‑13154) – Compass Security Blog.md": {
-    "scroll": 15.45581062048457,
+    "scroll": 9.601317398191437,
     "cursor": {
       "from": {
         "line": 13,
@@ -6390,6 +6393,584 @@
       },
       "to": {
         "line": 11,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Paul Gerste - Never Underestimate CSRF Why Origin Reflection Is a Bad Idea.md": {
+    "scroll": 28.37499568716072,
+    "cursor": {
+      "from": {
+        "line": 36,
+        "ch": 310
+      },
+      "to": {
+        "line": 36,
+        "ch": 310
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/noah-tutt-praetorian - praetorian-incbrutus Fast, zero-dependency credential testing tool in Go. Brute force SSH, MySQL, PostgreSQL, Redis, MongoDB, SMB, and 20+ protocols. Hydra alternative with native fingerprintxnaabu pipeline integration..md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 0
+      },
+      "to": {
+        "line": 12,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/brutus.md": {
+    "scroll": 17.50294472660018,
+    "cursor": {
+      "from": {
+        "line": 29,
+        "ch": 288
+      },
+      "to": {
+        "line": 29,
+        "ch": 288
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2",
+      "item-2-5"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Password Attacks.md": {
+    "scroll": 154.03018750944267,
+    "cursor": {
+      "from": {
+        "line": 158,
+        "ch": 24
+      },
+      "to": {
+        "line": 158,
+        "ch": 24
+      }
+    },
+    "expandedKeys": [
+      "item-1-13",
+      "item-1-15"
+    ]
+  },
+  "Dev, ICT & Cybersec/Tools/crowbar.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 4,
+        "ch": 0
+      },
+      "to": {
+        "line": 4,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Luke Jahnke - Cross-Site POST Requests Without a Content-Type Header.md": {
+    "scroll": 45.09877068910284,
+    "cursor": {
+      "from": {
+        "line": 10,
+        "ch": 0
+      },
+      "to": {
+        "line": 10,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/Sparrrgh’s blog - CSRFing Express with simple requests.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 19,
+        "ch": 149
+      },
+      "to": {
+        "line": 19,
+        "ch": 149
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/CORS based attacks.md": {
+    "scroll": 34.38293648764725,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Request Forgery (CSRF).md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-2-2",
+      "item-3-3",
+      "item-3-5",
+      "item-3-7"
+    ]
+  },
+  "Clippings/mikepiotrowski2 - praetorian-incjulius Simple LLM service identification - translate IPPort to Ollama, vLLM, LiteLLM, or 30+ other AI services in seconds.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 0
+      },
+      "to": {
+        "line": 12,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/julius.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 80,
+        "ch": 5
+      },
+      "to": {
+        "line": 80,
+        "ch": 5
+      }
+    },
+    "expandedKeys": [
+      "item-1-1",
+      "item-2-4"
+    ]
+  },
+  "Clippings/augustus.md": {
+    "scroll": 31.655083000195006,
+    "cursor": {
+      "from": {
+        "line": 18,
+        "ch": 88
+      },
+      "to": {
+        "line": 18,
+        "ch": 88
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Clippings/anushkavirgaonkar - praetorian-incnerva Fast service fingerprinting CLI for 120+ protocols (TCPUDPSCTP) - built by Praetorian.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 0
+      },
+      "to": {
+        "line": 12,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/nerva.md": {
+    "scroll": 1.6475758082430128,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 26
+      },
+      "to": {
+        "line": 12,
+        "ch": 26
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Tools/httpx.md": {
+    "scroll": 9.971054388552297,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-3-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Tools/nmap.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 0
+      },
+      "to": {
+        "line": 6,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Active information gathering.md": {
+    "scroll": 69.71636777935606,
+    "cursor": {
+      "from": {
+        "line": 12,
+        "ch": 0
+      },
+      "to": {
+        "line": 12,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Vulnerability Scanning.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 3,
+        "ch": 0
+      },
+      "to": {
+        "line": 3,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Information Gathering.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/CharlieKolb - n8n-ion8n Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations..md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-1"
+    ]
+  },
+  "Clippings/n8n.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 18,
+        "ch": 86
+      },
+      "to": {
+        "line": 18,
+        "ch": 96
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/Elena Marchetti - Your Google Maps Key Is Now a Gemini Credential - And Google Knew for Months.md": {
+    "scroll": 18.81015240068615,
+    "cursor": {
+      "from": {
+        "line": 26,
+        "ch": 0
+      },
+      "to": {
+        "line": 26,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Cross-Site Script Inclusion (XSSI).md": {
+    "scroll": 23.61315235057911,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Clippings/Martino Spagnuolo - The Forgotten Bug How a Node.js Core Design Flaw Enables HTTP Request Splitting.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 17,
+        "ch": 446
+      },
+      "to": {
+        "line": 17,
+        "ch": 446
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Clippings/Goodbye innerHTML, Hello setHTML Stronger XSS Protection in Firefox 148 – Mozilla Hacks - the Web developer blog.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 15,
+        "ch": 73
+      },
+      "to": {
+        "line": 15,
+        "ch": 73
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/Goodbye innerHTML, Hello setHTML.md": {
+    "scroll": 1.602113434340008,
+    "cursor": {
+      "from": {
+        "line": 47,
+        "ch": 58
+      },
+      "to": {
+        "line": 47,
+        "ch": 58
+      }
+    },
+    "expandedKeys": []
+  },
+  "Raindrop/How to test NextJS applications.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Clippings/Brumens - Python pitfalls Turning developer mistakes into vulnerabilities.md": {
+    "scroll": 104.03681717519684,
+    "cursor": {
+      "from": {
+        "line": 124,
+        "ch": 324
+      },
+      "to": {
+        "line": 124,
+        "ch": 324
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/High level/Penetration Testing.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/High level/Application Security.md": {
+    "scroll": 12.389537424281023,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0"
+    ]
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Class Pollution.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-2"
+    ]
+  },
+  "Dev, ICT & Cybersec/Dev, scripting & OS/JavaScript & NodeJS.md": {
+    "scroll": 460,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-1-2",
+      "item-2-6",
+      "item-1-15"
+    ]
+  },
+  "VR/Disclosure Policy.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Daniel Stenberg - CVSS Is Dead to Us.md": {
+    "scroll": 11.019165319040281,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Readwise/Articles/Ben Desjardins - Understanding the EU’s Cyber Resilience Act.md": {
+    "scroll": 26.101971096462673,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": [
+      "item-1-0",
+      "item-2-1"
+    ]
+  },
+  "Raindrop/Beware the false false-positive how to distinguish HTTP pipelining from request smuggling.md": {
+    "scroll": 74.69202330153949,
+    "cursor": {
+      "from": {
+        "line": 0,
+        "ch": 0
+      },
+      "to": {
+        "line": 0,
+        "ch": 0
+      }
+    },
+    "expandedKeys": []
+  },
+  "Dev, ICT & Cybersec/Web & Network Hacking/Session Attacks and Session Prediction.md": {
+    "scroll": 0,
+    "cursor": {
+      "from": {
+        "line": 6,
+        "ch": 0
+      },
+      "to": {
+        "line": 6,
         "ch": 0
       }
     },

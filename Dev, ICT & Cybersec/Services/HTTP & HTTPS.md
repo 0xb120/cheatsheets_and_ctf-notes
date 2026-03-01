@@ -88,7 +88,7 @@ Black box pentesting [^black-box-pt] refers to a security test done by third par
 Pay more attention to:
 - Validation
 - Sanitization
-- Normalization
+- Normalization [^1]
 - [Web Services & APIs](../Web%20&%20Network%20Hacking/Web%20Services%20&%20APIs.md)
 	- SOAP → WSDL (`?wsdl`)
 	- REST → Swagger [^swagger-xss], OpenAPI, Postman, etc.
@@ -210,3 +210,5 @@ Useful tools for black-box testing, DAST and fuzzing:
 - [WAF](../Dev,%20scripting%20&%20OS/WAF.md)
 - [Captcha](../Dev,%20scripting%20&%20OS/Captcha.md)
 - [Character Encodings 101](../Dev,%20scripting%20&%20OS/Character%20Encodings%20101.md)
+
+[^1]: Look for small details in server responses: [Black-box testing for Python bugs](../../Clippings/Brumens%20-%20Python%20pitfalls%20Turning%20developer%20mistakes%20into%20vulnerabilities.md#Black-box%20testing%20for%20Python%20bugs)

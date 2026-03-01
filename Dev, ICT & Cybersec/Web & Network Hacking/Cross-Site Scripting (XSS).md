@@ -232,6 +232,7 @@ Extensive cheat sheets can be found at:
 - Encode data on output
 - Use appropriate response headers
 - [Content Security Policy (CSP)](Content%20Security%20Policy%20(CSP).md)
+- [Goodbye innerHTML, Hello setHTML](../../Clippings/Goodbye%20innerHTML,%20Hello%20setHTML.md)
 - [HttpOnly Cookie Attribute](HttpOnly%20Cookie%20Attribute.md)
 
 [^1]: https://portswigger.net/web-security/cross-site-scripting/preventing

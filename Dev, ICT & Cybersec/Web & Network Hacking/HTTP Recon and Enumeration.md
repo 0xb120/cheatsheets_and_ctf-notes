@@ -59,7 +59,7 @@ Active:
 - [sublist3r](https://github.com/aboul3la/Sublist3r) - Fast subdomains enumeration tool for penetration testers
 
 >[!tip]
->To validate active Web Servers from a domain list, you can use [httpx](../Tools/httpx.md#Find%20HTTP%20services%20hosted%20on%20non-standard%20ports) or [httprobe](../Tools/httprobe.md#Find%20HTTP%20services%20hosted%20on%20non-standard%20ports) 
+>To validate active Web Servers from a domain list, you can use [httpx](../Tools/httpx.md#Find%20HTTP%20services%20hosted%20on%20non-standard%20ports), [nerva](../../Clippings/nerva.md), or [httprobe](../Tools/httprobe.md#Find%20HTTP%20services%20hosted%20on%20non-standard%20ports) 
 
 ### VHOST Enumeration
 
@@ -110,6 +110,7 @@ Use the information obtained with the [Endpoint Crawling](HTTP%20Recon%20and%20E
 ### Tech. Stack and Component Enumeration
 
 - [HTTPX](../../Readwise/Articles/novasecio%20-%20Recon%20for%20Bug%20Bounty%208%20Essential%20Tools%20for%20Performing%20Effective%20Reconnaissance.md#HTTPX) ^e74b6e
+- [nerva](../../Clippings/nerva.md)
 - [webanalyze](../../Readwise/Articles/httpsgithub.comrverton%20-%20GitHub%20-%20RvertonWebanalyze%20Port%20of%20Wappalyzer%20(Uncovers%20Technologies%20Used%20on%20Websites)%20to%20Automate%20Mass%20Scanning..md)
 - [whatweb](https://github.com/urbanadventurer/WhatWeb) & [whatweb.net](https://connect.ibsa-pharma.fr/)
 - [Security Headers](https://securityheaders.com/) (online)
@@ -156,10 +157,11 @@ Use the information obtained with the [Endpoint Crawling](HTTP%20Recon%20and%20E
 [^porch-pirate]: [Plundering Postman With Porch Pirate](../../Readwise/Articles/Mand%20Consulting%20Group%20-%20Plundering%20Postman%20With%20Porch%20Pirate.md), mandconsulting.ca
 
 ---
-# Automation and Frameworks
+# [[Automation]] and Frameworks
 
 Learn how to automate everything creating custom tools:
 - [ProjectDiscovery - Building a Fast One-Shot Recon Script for Bug Bounty](../../Readwise/Articles/ProjectDiscovery%20-%20Building%20a%20Fast%20One-Shot%20Recon%20Script%20for%20Bug%20Bounty.md)
+- [n8n](../../Clippings/n8n.md)
 
 Pre-made tools:
 - [recon-ng](../Tools/recon-ng.md) (bit outdated)

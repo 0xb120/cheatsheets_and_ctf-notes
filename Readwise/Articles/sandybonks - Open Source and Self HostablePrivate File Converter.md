@@ -3,13 +3,11 @@ author: sandybonks
 aliases:
   - Open Source and Self Hostable/Private File Converter
 tags:
-  - RW_inbox
   - readwise/articles
   - tools
 url: https://vert.sh?__readwiseLocation=
 created: 2025-04-24
 Comments URL: https://news.ycombinator.com/item?id=43663865
-Points: 450
 ---
 # Open Source and Self Hostable/Private File Converter
 

@@ -2,7 +2,9 @@
 ## Versions and environment management
 
 >[!note]
->See also how to use **multiple isolated versions of Python** using [pyenv](../Tools/pyenv.md).
+>See also how to use **multiple isolated versions of Python** using:
+>-  [pyenv](../Tools/pyenv.md)
+>- [Python Tools and Scripts W/ UV CheatSheet](../../Readwise/Articles/0xdf%20hacks%20stuff%20-%20Python%20Tools%20and%20Scripts%20W%20UV%20CheatSheet.md)
 
 ```bash
 # create a virtual environemnt named .venv containing the python standalone environment
@@ -14,6 +16,7 @@ $ source .venv/bin/activate
 # disable the environment
 $ deactivate
 ```
+
 
 # Python3 snippets
 
@@ -464,7 +467,13 @@ p.interactive()
 
 # Python quirks and tricks
 
-- [`os.path.join`](../../Readwise/Tweets/@0xTib3rius%20on%20Twitter%20-%20Tweets%20From%20Tib3rius.md) [^6][^7]
+- [Brumens - Python pitfalls Turning developer mistakes into vulnerabilities](../../Clippings/Brumens%20-%20Python%20pitfalls%20Turning%20developer%20mistakes%20into%20vulnerabilities.md)
+	- [`os.path.join`](../../Readwise/Tweets/@0xTib3rius%20on%20Twitter%20-%20Tweets%20From%20Tib3rius.md) [^6][^7]
+	- [`pathlib.joinpath`](https://docs.python.org/3/library/pathlib.html#pathlib.PurePath.joinpath) (built-in)
+	- [`pickle.loads`](https://docs.python.org/3/library/pickle.html#pickle.loads) (built-in) [^9]
+	- [`urllib.parse.urljoin`](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.urljoin) (built-in)
+	- [`PyYAML's load function`](https://pyyaml.org/wiki/PyYAMLDocumentation) (external library) [^10]
+	- [`Python3 class pollution`](https://blog.abdulrah33m.com/prototype-pollution-in-python/) (built-in) [^11]
 - `ast` [^8]
 - [Abusing Decorators for Remote Code Execution](../../Readwise/Articles/Naveen%20Sunkavally%20-%20Unsafe%20at%20Any%20Speed%20Abusing%20Python%20Exec%20for%20Unauth%20RCE%20in%20Langflow%20AI.md#Abusing%20Decorators%20for%20Remote%20Code%20Execution)
 - [Another Path to RCE: Python Default Arguments](../../Readwise/Articles/Naveen%20Sunkavally%20-%20Unsafe%20at%20Any%20Speed%20Abusing%20Python%20Exec%20for%20Unauth%20RCE%20in%20Langflow%20AI.md#Another%20Path%20to%20RCE%20Python%20Default%20Arguments)
@@ -617,8 +626,14 @@ if __name__ == '__main__':
 
 Flask snippet for exploiting SSRF and redirection tricks: [From Blind SSRF to Full Read](../../Readwise/Articles/assetnote.io%20-%20Digging%20for%20SSRF%20in%20NextJS%20Apps.md#From%20Blind%20SSRF%20to%20Full%20Read)
 
-[^6]: [Path Traversal in OpenSource HTB box](../../Play%20ground/CTFs/OpenSource.md#Path%20Traversal)
+[^6]: [Path Traversal](../../CTFs/OpenSource.md#Path%20Traversal)
 
 [^7]: [Analysis of CVE-2023-37474 in CopyParty](../../Readwise/Articles/0xdf%20-%20Analysis%20of%20CVE-2023-37474%20in%20CopyParty.md)
 
 [^8]: [Naveen Sunkavally - Unsafe at Any Speed Abusing Python Exec for Unauth RCE in Langflow AI](../../Readwise/Articles/Naveen%20Sunkavally%20-%20Unsafe%20at%20Any%20Speed%20Abusing%20Python%20Exec%20for%20Unauth%20RCE%20in%20Langflow%20AI.md)
+
+[^9]: [Pickle](../Web%20&%20Network%20Hacking/Insecure%20Deserialization%20&%20Object%20Injection.md#Pickle)
+
+[^10]: [YAML](../Web%20&%20Network%20Hacking/Insecure%20Deserialization%20&%20Object%20Injection.md#YAML)
+
+[^11]: [Class Pollution](../Web%20&%20Network%20Hacking/Class%20Pollution.md)

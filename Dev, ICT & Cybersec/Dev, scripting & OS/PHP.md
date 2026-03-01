@@ -96,6 +96,95 @@ You can also set a cookie names `xDEBUG_SESSION` with any value to automatically
 
 [^xdebug-step-debug]: [Step debugging](https://xdebug.org/docs/step_debug), xdebug.org
 
+### Inspect available in-memory classes and objects
+
+While your code is paused at a breakpoint, open the **"Evaluate Expression"** or **"Debug Console"** and use:
+```php
+// every class
+get_declared_classes();
+
+// filter for namespace
+array_filter(get_declared_classes(), fn($className) => str_starts_with($className, 'App\\'));
+
+// unique root namespaces currently loaded
+array_unique(array_map(fn($c) => explode('\\', $c)[0], get_declared_classes()));
+
+// If you find a class in that list and want to see its methods, properties, or even the **file path** it was loaded from, use the **Reflection** API in your debug evaluator
+$reflector = new ReflectionClass('App\Services\MyService');
+print_r([
+    'file' => $reflector->getFileName(),
+    'methods' => $reflector->getMethods(),
+    'interfaces' => $reflector->getInterfaceNames()
+]);
+
+// inspect what the autoload.php "knows". Place a breakpoint on 
+// require 'vendor/autoload.php0 and then
+$loader = require 'vendor/autoload.php';
+print_r($loader->getPrefixesPsr4());
+```
+
+See also [Exploiting `new $a($b)` via Built-In Classes](../../Readwise/Articles/Arseniy%20Sharoglazov%20-%20Exploiting%20Arbitrary%20Object%20Instantiations%20in%20PHP%20Without%20Custom%20Classes.md#Exploiting%20`new%20$a($b)`%20via%20Built-In%20Classes)
+
+If you need to find if a specific class has already instantiated some objects, you can use this code:
+```php
+call_user_func(function() {
+    $targetClass = 'WPvividGuzzleHttp\Cookie\FileCookieJar'; // <-- SET YOUR TARGET CLASS HERE
+    $results = [];
+    $visitedObjects = [];
+    
+    // Recursive search function
+    $search = function($path, $value, $depth = 0) use (&$search, &$results, &$visitedObjects, $targetClass) {
+        // Hard limit to prevent infinite recursion on massive arrays
+        if ($depth > 10) return; 
+
+        if (is_object($value)) {
+            // Track object hashes to prevent infinite loops from circular references
+            $hash = spl_object_hash($value);
+            if (isset($visitedObjects[$hash])) return;
+            $visitedObjects[$hash] = true;
+            
+            // Check if it's our target
+            if ($value instanceof $targetClass || get_class($value) === $targetClass) {
+                $results[] = $path;
+            }
+            
+            // Reflect into the object to search its private/protected properties
+            $ref = new ReflectionObject($value);
+            foreach ($ref->getProperties() as $prop) {
+                $prop->setAccessible(true);
+                if ($prop->isInitialized($value)) {
+                    $search($path . '->' . $prop->getName(), $prop->getValue($value), $depth + 1);
+                }
+            }
+        } elseif (is_array($value)) {
+            foreach ($value as $k => $v) {
+                if (is_object($v) || is_array($v)) {
+                    $search($path . "['" . $k . "']", $v, $depth + 1);
+                }
+            }
+        }
+    };
+
+    // 1. Search all global variables
+    foreach ($GLOBALS as $k => $v) {
+        if ($k === 'GLOBALS') continue; // Skip recursive GLOBALS reference
+        $search("\$GLOBALS['$k']", $v);
+    }
+
+    // 2. Search all static properties of loaded classes
+    foreach (get_declared_classes() as $class) {
+        $ref = new ReflectionClass($class);
+        foreach ($ref->getProperties(ReflectionProperty::IS_STATIC) as $prop) {
+            $prop->setAccessible(true);
+            if ($prop->isInitialized()) {
+                $search("$class::$" . $prop->getName(), $prop->getValue());
+            }
+        }
+    }
+    
+    return $results ?: "No instances of {$targetClass} found in current scope.";
+});
+```
 ## PHP libraries and components
 
 - [PHP PDO](PHP%20PDO.md): PDO is one of the most commonly used libraries for connecting PHP services to databases like [MySQL](../Services/MySQL.md) and [PostgreSQL](../Services/PostgreSQL.md) and use prepared statements for query them.
@@ -106,6 +195,7 @@ You can also set a cookie names `xDEBUG_SESSION` with any value to automatically
 - FrankenPHP and Unicode Cade-folding [^2]
 - [PDO Preparaed Statements](PHP%20PDO.md#PDO%20Preparaed%20Statements) with query emulation = [Novel SQL Injection](../../Clippings/Adam%20Kues%20-%20Novel%20SQL%20Injection%20Technique%20in%20PDO%20Prepared%20Statements.md#Novel%20SQL%20Injection%20Technique%20in%20PDO%20Prepared%20Statements)
 - `spl_autoload_register` [^5] and PHP `autoload` [^6] exploitation [^3] [^4] [^7]
+- `mt_rand` [^8]
 
 
 [^1]: [Assetnote Research - How an Obscure PHP Footgun Led to RCE in Craft CMS](../../Readwise/Articles/Assetnote%20Research%20-%20How%20an%20Obscure%20PHP%20Footgun%20Led%20to%20RCE%20in%20Craft%20CMS.md)
@@ -121,3 +211,5 @@ You can also set a cookie names `xDEBUG_SESSION` with any value to automatically
 [^6]: https://www.php.net/manual/en/language.oop5.autoload.php
 
 [^7]: [PHP Object Injection exploiting `spl_autoload_register`](../Web%20&%20Network%20Hacking/Insecure%20Deserialization%20&%20Object%20Injection.md#PHP%20Object%20Injection%20exploiting%20`spl_autoload_register`)
+
+[^8]: [Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024](../../Clippings/Hassan%20Khafaji%20-%20Exploiting%20(GH-13690)%20mt_rand%20in%20php%20in%202024.md)

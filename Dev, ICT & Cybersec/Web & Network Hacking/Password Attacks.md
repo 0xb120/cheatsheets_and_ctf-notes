@@ -156,14 +156,15 @@ form://10.11.0.22/form/frontpage.php:user=admin&pass=^PASS^:INVALID LOGIN
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2019-06-07 15:55:29
 ```
 
-## Online Password Attack Tools
+## Password Attack Tools
 
+- [brutus](../../Clippings/brutus.md)
+- [CrackMapExec](../Tools/CrackMapExec.md)
 - [medusa](../Tools/medusa.md)
 - [crowbar](../Tools/crowbar.md)
 - [hydra](../Tools/hydra.md)
 - [spray](https://github.com/Greenwolf/Spray)
 - [msfconsole (auxiliary modules)](../Tools/msfconsole.md#Auxiliary%20Modules)
-- [CrackMapExec](../Tools/CrackMapExec.md)
 
 ---
 

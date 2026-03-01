@@ -18,5 +18,3 @@ views:
         direction: ASC
     indentProperties: false
     separator: "| "
-  - type: list
-    name: Web

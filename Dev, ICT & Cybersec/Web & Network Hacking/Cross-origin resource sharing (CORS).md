@@ -34,7 +34,7 @@ The default behavior of cross-origin resource requests is for requests to be pas
 ## Pre-flight checks
 
 >[!important]
->Under certain circumstances, when a cross-domain request includes a **non-standard HTTP method or headers**, the **cross-origin request is preceded by** a request using **the `OPTIONS` method**, and the CORS protocol necessitates an initial check on what methods and headers are permitted prior to allowing the cross-origin request. The server returns a list of allowed methods in addition to the trusted origin and the browser checks to see if the requesting website's method is allowed.
+>Under certain circumstances (aka requests that are not considered [Simple Requests](../../Clippings/Sparrrgh’s%20blog%20-%20CSRFing%20Express%20with%20simple%20requests.md)), when a cross-domain request includes a **non-standard HTTP method or headers**, the **cross-origin request is preceded by** a request using **the `OPTIONS` method**, and the CORS protocol necessitates an initial check on what methods and headers are permitted prior to allowing the cross-origin request. The server returns a list of allowed methods in addition to the trusted origin and the browser checks to see if the requesting website's method is allowed.
 
 >[!example]
 >Pre-flight request using the `PUT` method and a non-standard header:

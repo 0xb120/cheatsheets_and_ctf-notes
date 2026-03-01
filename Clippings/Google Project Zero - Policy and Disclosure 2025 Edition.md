@@ -1,16 +1,15 @@
 ---
 title: "Policy and Disclosure: 2025 Edition"
-source: "https://googleprojectzero.blogspot.com/2025/07/reporting-transparency.html"
+source: https://googleprojectzero.blogspot.com/2025/07/reporting-transparency.html
 author:
-  - "Google Project Zero"
+  - Google Project Zero
 published: 2025-07-29
 created: 2025-08-19
-description: "Posted by Tim Willis, Google Project Zero In 2021, we updated our vulnerability disclosure policy to the current \"90+30\" model. Our goals we..."
-tags: ["clippings/articles", "_inbox"]
+description: Posted by Tim Willis, Google Project Zero In 2021, we updated our vulnerability disclosure policy to the current "90+30" model. Our goals we...
+tags:
+  - clippings/articles
 ---
 # Policy and Disclosure: 2025 Edition
-
-![]()
 
 > [!summary]
 > > Google Project Zero announced a new \"Reporting Transparency\" trial policy, effective July 29, 2025, to address the \"upstream patch gap\" – the delay between an upstream vendor fixing a vulnerability and downstream products integrating it.

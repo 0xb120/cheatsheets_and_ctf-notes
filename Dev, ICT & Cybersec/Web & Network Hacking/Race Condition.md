@@ -248,6 +248,7 @@ Consider a password reset token that is only randomized using a timestamp. In th
 
 >[!example]  OpenCRX Unauthenticated Account Take Over - [CVE-2020-7378](https://github.com/ruthvikvegunta/openCRX-CVE-2020-7378)
 >The code in openCRX uses the regular Random class to generate password reset tokens; it is seeded with the results of `System.currentTimeMillis()`. This method returns “the difference, measured in milliseconds, between the current time and midnight, January 1, 1970 UTC”.
+
 ### Unsafe data structures
 
 Another angle for further research is exploring the root cause of race conditions - unsafe combinations of data structures and locking strategies:

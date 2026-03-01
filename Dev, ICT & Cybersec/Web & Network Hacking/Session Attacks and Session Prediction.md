@@ -1,3 +1,10 @@
+---
+aliases:
+  - Session Prediction
+  - Session Attacks
+  - Session Hijacking
+---
+
 Session Hijacking consists of taking over the identity of a user, bypassing authentication mechanisms.
 
 Remembering that the server generates a session token which it sends in the HTTP header with the cookies, if an attacker managed to replicate it, he could pretend to be another user. The most common session attacks are:
@@ -10,7 +17,7 @@ Remembering that the server generates a session token which it sends in the HTTP
 	- sniffing (MITM/MITB)
 	- from web logs or session data (eg. `PHP.ini`, `Manager` [^manager], `StateServer` [^asp-net-sessions], etc.)
 	- from database access
-- [Session Prediction](Session%20Attacks%20and%20Session%20Prediction.md#Session%20Prediction) [^sonicwall-wxa-auth-bypass]
+- [Session Prediction](Session%20Attacks%20and%20Session%20Prediction.md#Session%20Prediction)
 - [Session Fixation](Session%20Fixation.md)
 - [SQL Injection](SQL%20Injection.md) 
 	- Exfiltration of credentials, tokens, and session ids
@@ -18,8 +25,12 @@ Remembering that the server generates a session token which it sends in the HTTP
 
 [^manager]: [The Manager Component](https://tomcat.apache.org/tomcat-6.0-doc/config/manager.html), tomcat.apache.org
 [^asp-net-sessions]: [Introduction to ASP.NET Sessions](https://www.c-sharpcorner.com/UploadFile/225740/introduction-of-session-in-Asp-Net/), c-sharpcorner.com
-[^sonicwall-wxa-auth-bypass]: [Adam Crosser - SonicWall WXA – Authentication Bypass and Remote Code Execution Vulnerability](../../Readwise/Articles/Adam%20Crosser%20-%20SonicWall%20WXA%20–%20Authentication%20Bypass%20and%20Remote%20Code%20Execution%20Vulnerability.md)
+[^sonicwall-wxa-auth-bypass]: 
 
 # Session Prediction
 
-The practice of guessing a Session ID in order to bypass authentication. There are no special practices for exploiting these vulnerabilities other than by analyzing tokens and their encryption mechanisms. [^sonicwall-wxa-auth-bypass]
+The practice of guessing a Session ID in order to bypass authentication. There are no special practices for exploiting these vulnerabilities other than by analyzing tokens and their encryption mechanisms.
+
+Examples:
+- [Adam Crosser - SonicWall WXA – Authentication Bypass and Remote Code Execution Vulnerability](../../Readwise/Articles/Adam%20Crosser%20-%20SonicWall%20WXA%20–%20Authentication%20Bypass%20and%20Remote%20Code%20Execution%20Vulnerability.md)
+- [Hassan Khafaji - Exploiting (GH-13690) mt_rand in php in 2024](../../Clippings/Hassan%20Khafaji%20-%20Exploiting%20(GH-13690)%20mt_rand%20in%20php%20in%202024.md)

